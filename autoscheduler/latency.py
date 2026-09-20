@@ -17,8 +17,8 @@ from simulator.engine import simulate
 
 
 SIZES = {"small": 12, "medium": 100, "large": 1_000}
-POLICIES = ("SJF", "Round Robin", "Priority", "Priority RR", "Adaptive")
-_ENGINE_POLICIES = {"SJF": "sjf", "Round Robin": "rr", "Priority": "priority", "Priority RR": "priority_rr"}
+POLICIES = ("SJF", "SRTF", "Round Robin", "Priority", "Priority RR", "Adaptive")
+_ENGINE_POLICIES = {"SJF": "sjf", "SRTF": "srtf", "Round Robin": "rr", "Priority": "priority", "Priority RR": "priority_rr"}
 
 
 def percentile(values: list[float], fraction: float) -> float:
@@ -90,7 +90,7 @@ def run_latency_experiment(model, score_summary: dict, samples_per_profile: int 
                 if name == "Priority RR":
                     kwargs = {**kwargs, **priority_rr_config}
                 decision_times_ns: list[int] = []
-                simulate(workload.processes, policy, decision_times_ns=decision_times_ns, **kwargs)
+                simulate(workload.processes, policy, decision_times_ns=decision_times_ns, preemptive=policy == "srtf", **kwargs)
                 if measured:
                     samples = [value / 1_000_000 for value in decision_times_ns]
                     measurements[name][size].extend(samples)

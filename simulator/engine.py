@@ -29,6 +29,7 @@ def simulate(
     aging_interval: int | None = None,
     context_switch_cost: int = 0,
     decision_times_ns: list[int] | None = None,
+    preemptive: bool = False,
 ) -> tuple[List[Process], Timeline]:
     """Run a supported single-CPU policy with CPU/I/O bursts."""
     if policy in {"rr", "priority_rr"} and (quantum is None or quantum <= 0):
@@ -37,6 +38,8 @@ def simulate(
         raise ValueError("aging_interval must be positive")
     if context_switch_cost < 0:
         raise ValueError("context_switch_cost must be non-negative")
+    if (policy == "srtf") != preemptive:
+        raise ValueError("preemptive=True is supported only for SRTF")
 
     # ponytail: list queues suit small synthetic workloads; use deque/heap for large traces.
     pending = sorted(copy.deepcopy(list(processes)), key=lambda p: (p.arrival_time, p.pid))
@@ -81,11 +84,11 @@ def simulate(
                     ready[i].sequence,
                 ),
             )
-        elif policy == "sjf":
+        elif policy in {"sjf", "srtf"}:
             index = min(
                 range(len(ready)),
                 key=lambda i: (
-                    ready[i].process.remaining_time,
+                    ready[i].process.remaining_time if policy == "srtf" else ready[i].process.burst_time,
                     ready[i].time,
                     ready[i].process.pid,
                 ),
@@ -125,15 +128,32 @@ def simulate(
         if process.start_time == -1:
             process.start_time = current_time
 
-        run_for = process.remaining_time
-        if policy in {"rr", "priority_rr"}:
-            run_for = min(run_for, quantum or run_for)
-        end_time = current_time + run_for
-        timeline.append((process.pid, current_time, end_time))
-        process.remaining_time -= run_for
-        current_time = end_time
-        last_pid = process.pid
-        release(current_time)
+        while process.remaining_time:
+            run_for = process.remaining_time
+            if policy in {"rr", "priority_rr"}:
+                run_for = min(run_for, quantum or run_for)
+            elif preemptive:
+                next_events = ([pending[0].arrival_time] if pending else [])
+                next_events.extend(wake_time for wake_time, *_ in blocked)
+                if next_events:
+                    run_for = min(run_for, min(next_events) - current_time)
+            end_time = current_time + run_for
+            if preemptive and timeline and timeline[-1][0] == process.pid and timeline[-1][2] == current_time:
+                timeline[-1] = (process.pid, timeline[-1][1], end_time)
+            else:
+                timeline.append((process.pid, current_time, end_time))
+            process.remaining_time -= run_for
+            current_time = end_time
+            last_pid = process.pid
+            release(current_time)
+            if not preemptive or not process.remaining_time:
+                break
+            started = perf_counter_ns()
+            should_preempt = any(item.process.remaining_time < process.remaining_time for item in ready)
+            if decision_times_ns is not None:
+                decision_times_ns.append(perf_counter_ns() - started)
+            if should_preempt:
+                break
 
         if process.remaining_time:
             ready.append(_Ready(current_time, sequence, process, process.priority, False))

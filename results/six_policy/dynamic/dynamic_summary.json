@@ -1,0 +1,340 @@
+{
+  "traces": 1000,
+  "seed": 2026,
+  "config": {
+    "epoch_ticks": 20,
+    "dwell_epochs": 3,
+    "confidence_threshold": 0.8
+  },
+  "p95_response_difference": {
+    "mean": 176.07074999999995,
+    "ci_low": 168.74648999999994,
+    "ci_high": 183.58616999999995
+  },
+  "weighted_score_difference": {
+    "mean": -0.13403183035327623,
+    "ci_low": -0.13647426619351016,
+    "ci_high": -0.131494334098143
+  },
+  "mean_transition_p99_ms": 0.21861376254999998,
+  "max_transition_p99_ms": 2.0758919799999993,
+  "mean_accepted_switches": 1.942,
+  "mean_held_decisions": 23.269,
+  "mean_dwell_blocked_decisions": 1.663,
+  "mean_low_confidence_decisions": 3.057,
+  "mean_confidence": 0.8153767301888456,
+  "mean_static_scores": {
+    "FCFS": 0.3908254416020786,
+    "SJF": 0.15889542832418743,
+    "SRTF": 0.1683011997257399,
+    "Round Robin": 0.22069514379441127,
+    "Priority": 0.4059968049950706,
+    "Priority RR": 0.775106211497211
+  },
+  "per_transition": {
+    "batch/cpu_intensive/interactive": {
+      "traces": 17,
+      "mean_p95_response_difference": 47.4147058823529,
+      "mean_weighted_score_difference": -0.18766533322049572
+    },
+    "batch/cpu_intensive/io_intensive": {
+      "traces": 22,
+      "mean_p95_response_difference": 99.37499999999987,
+      "mean_weighted_score_difference": -0.17856370819400566
+    },
+    "batch/cpu_intensive/mixed": {
+      "traces": 23,
+      "mean_p95_response_difference": 62.88260869565212,
+      "mean_weighted_score_difference": -0.1560081498770521
+    },
+    "batch/interactive/cpu_intensive": {
+      "traces": 16,
+      "mean_p95_response_difference": 323.3156249999999,
+      "mean_weighted_score_difference": -0.10931581205072051
+    },
+    "batch/interactive/io_intensive": {
+      "traces": 20,
+      "mean_p95_response_difference": 150.22999999999996,
+      "mean_weighted_score_difference": -0.121268734454592
+    },
+    "batch/interactive/mixed": {
+      "traces": 13,
+      "mean_p95_response_difference": 282.5576923076922,
+      "mean_weighted_score_difference": -0.11286616067902507
+    },
+    "batch/io_intensive/cpu_intensive": {
+      "traces": 21,
+      "mean_p95_response_difference": 372.76428571428556,
+      "mean_weighted_score_difference": -0.10700004369191826
+    },
+    "batch/io_intensive/interactive": {
+      "traces": 21,
+      "mean_p95_response_difference": 111.22857142857139,
+      "mean_weighted_score_difference": -0.14248978484473113
+    },
+    "batch/io_intensive/mixed": {
+      "traces": 19,
+      "mean_p95_response_difference": 325.3263157894736,
+      "mean_weighted_score_difference": -0.11076032035379671
+    },
+    "batch/mixed/cpu_intensive": {
+      "traces": 9,
+      "mean_p95_response_difference": 48.86111111111107,
+      "mean_weighted_score_difference": -0.13670144442369941
+    },
+    "batch/mixed/interactive": {
+      "traces": 20,
+      "mean_p95_response_difference": 148.7499999999999,
+      "mean_weighted_score_difference": -0.15599886991034292
+    },
+    "batch/mixed/io_intensive": {
+      "traces": 18,
+      "mean_p95_response_difference": 184.53055555555545,
+      "mean_weighted_score_difference": -0.14268319115257272
+    },
+    "cpu_intensive/batch/interactive": {
+      "traces": 26,
+      "mean_p95_response_difference": 37.95769230769227,
+      "mean_weighted_score_difference": -0.1959425623465794
+    },
+    "cpu_intensive/batch/io_intensive": {
+      "traces": 23,
+      "mean_p95_response_difference": 72.24999999999994,
+      "mean_weighted_score_difference": -0.1906714373066805
+    },
+    "cpu_intensive/batch/mixed": {
+      "traces": 16,
+      "mean_p95_response_difference": 155.56562499999978,
+      "mean_weighted_score_difference": -0.16998848333055325
+    },
+    "cpu_intensive/interactive/batch": {
+      "traces": 14,
+      "mean_p95_response_difference": 256.29642857142846,
+      "mean_weighted_score_difference": -0.13036435101499808
+    },
+    "cpu_intensive/interactive/io_intensive": {
+      "traces": 16,
+      "mean_p95_response_difference": 121.61562499999998,
+      "mean_weighted_score_difference": -0.14477540042892198
+    },
+    "cpu_intensive/interactive/mixed": {
+      "traces": 13,
+      "mean_p95_response_difference": 236.4807692307692,
+      "mean_weighted_score_difference": -0.14314787568593537
+    },
+    "cpu_intensive/io_intensive/batch": {
+      "traces": 15,
+      "mean_p95_response_difference": 257.4999999999999,
+      "mean_weighted_score_difference": -0.13149166713502053
+    },
+    "cpu_intensive/io_intensive/interactive": {
+      "traces": 21,
+      "mean_p95_response_difference": 91.32857142857141,
+      "mean_weighted_score_difference": -0.16504641071997614
+    },
+    "cpu_intensive/io_intensive/mixed": {
+      "traces": 22,
+      "mean_p95_response_difference": 244.44999999999996,
+      "mean_weighted_score_difference": -0.145346360513223
+    },
+    "cpu_intensive/mixed/batch": {
+      "traces": 9,
+      "mean_p95_response_difference": 273.31666666666655,
+      "mean_weighted_score_difference": -0.1544650092917998
+    },
+    "cpu_intensive/mixed/interactive": {
+      "traces": 21,
+      "mean_p95_response_difference": 88.97380952380949,
+      "mean_weighted_score_difference": -0.17802808314777732
+    },
+    "cpu_intensive/mixed/io_intensive": {
+      "traces": 27,
+      "mean_p95_response_difference": 130.58333333333331,
+      "mean_weighted_score_difference": -0.16682136417293503
+    },
+    "interactive/batch/cpu_intensive": {
+      "traces": 14,
+      "mean_p95_response_difference": 49.43928571428569,
+      "mean_weighted_score_difference": -0.13742239354621089
+    },
+    "interactive/batch/io_intensive": {
+      "traces": 15,
+      "mean_p95_response_difference": 119.13666666666663,
+      "mean_weighted_score_difference": -0.13120475912008908
+    },
+    "interactive/batch/mixed": {
+      "traces": 18,
+      "mean_p95_response_difference": 246.15277777777766,
+      "mean_weighted_score_difference": -0.11442071610021486
+    },
+    "interactive/cpu_intensive/batch": {
+      "traces": 15,
+      "mean_p95_response_difference": 32.69999999999999,
+      "mean_weighted_score_difference": -0.15209440630659588
+    },
+    "interactive/cpu_intensive/io_intensive": {
+      "traces": 17,
+      "mean_p95_response_difference": 100.80588235294115,
+      "mean_weighted_score_difference": -0.14564023434910764
+    },
+    "interactive/cpu_intensive/mixed": {
+      "traces": 14,
+      "mean_p95_response_difference": 164.19642857142853,
+      "mean_weighted_score_difference": -0.13168570437871102
+    },
+    "interactive/io_intensive/batch": {
+      "traces": 10,
+      "mean_p95_response_difference": 276.48499999999996,
+      "mean_weighted_score_difference": -0.051721820918691826
+    },
+    "interactive/io_intensive/cpu_intensive": {
+      "traces": 16,
+      "mean_p95_response_difference": 273.94374999999997,
+      "mean_weighted_score_difference": -0.05673502255494613
+    },
+    "interactive/io_intensive/mixed": {
+      "traces": 18,
+      "mean_p95_response_difference": 268.47222222222223,
+      "mean_weighted_score_difference": -0.060007717599940454
+    },
+    "interactive/mixed/batch": {
+      "traces": 17,
+      "mean_p95_response_difference": 281.6705882352941,
+      "mean_weighted_score_difference": -0.08593677405783139
+    },
+    "interactive/mixed/cpu_intensive": {
+      "traces": 15,
+      "mean_p95_response_difference": 240.99999999999997,
+      "mean_weighted_score_difference": -0.09104054805413266
+    },
+    "interactive/mixed/io_intensive": {
+      "traces": 14,
+      "mean_p95_response_difference": 168.08928571428572,
+      "mean_weighted_score_difference": -0.08188122077447628
+    },
+    "io_intensive/batch/cpu_intensive": {
+      "traces": 14,
+      "mean_p95_response_difference": 76.93214285714284,
+      "mean_weighted_score_difference": -0.15281229988981473
+    },
+    "io_intensive/batch/interactive": {
+      "traces": 13,
+      "mean_p95_response_difference": 81.31153846153842,
+      "mean_weighted_score_difference": -0.15476103500812174
+    },
+    "io_intensive/batch/mixed": {
+      "traces": 16,
+      "mean_p95_response_difference": 300.2749999999999,
+      "mean_weighted_score_difference": -0.12320005566958193
+    },
+    "io_intensive/cpu_intensive/batch": {
+      "traces": 12,
+      "mean_p95_response_difference": 86.6166666666666,
+      "mean_weighted_score_difference": -0.15153742559637257
+    },
+    "io_intensive/cpu_intensive/interactive": {
+      "traces": 19,
+      "mean_p95_response_difference": 57.99210526315788,
+      "mean_weighted_score_difference": -0.16531825978910836
+    },
+    "io_intensive/cpu_intensive/mixed": {
+      "traces": 14,
+      "mean_p95_response_difference": 182.05714285714282,
+      "mean_weighted_score_difference": -0.14267078415569112
+    },
+    "io_intensive/interactive/batch": {
+      "traces": 13,
+      "mean_p95_response_difference": 258.84230769230766,
+      "mean_weighted_score_difference": -0.06027489234801469
+    },
+    "io_intensive/interactive/cpu_intensive": {
+      "traces": 14,
+      "mean_p95_response_difference": 274.10714285714283,
+      "mean_weighted_score_difference": -0.06712602077114746
+    },
+    "io_intensive/interactive/mixed": {
+      "traces": 20,
+      "mean_p95_response_difference": 255.675,
+      "mean_weighted_score_difference": -0.07230400752345842
+    },
+    "io_intensive/mixed/batch": {
+      "traces": 13,
+      "mean_p95_response_difference": 290.99615384615373,
+      "mean_weighted_score_difference": -0.0905568045652725
+    },
+    "io_intensive/mixed/cpu_intensive": {
+      "traces": 21,
+      "mean_p95_response_difference": 319.2190476190476,
+      "mean_weighted_score_difference": -0.09374209775029575
+    },
+    "io_intensive/mixed/interactive": {
+      "traces": 13,
+      "mean_p95_response_difference": 109.5,
+      "mean_weighted_score_difference": -0.13920426525403412
+    },
+    "mixed/batch/cpu_intensive": {
+      "traces": 21,
+      "mean_p95_response_difference": 119.29523809523802,
+      "mean_weighted_score_difference": -0.15114191041426725
+    },
+    "mixed/batch/interactive": {
+      "traces": 11,
+      "mean_p95_response_difference": 85.45909090909086,
+      "mean_weighted_score_difference": -0.16967986195355003
+    },
+    "mixed/batch/io_intensive": {
+      "traces": 15,
+      "mean_p95_response_difference": 123.05999999999992,
+      "mean_weighted_score_difference": -0.16897723185640473
+    },
+    "mixed/cpu_intensive/batch": {
+      "traces": 11,
+      "mean_p95_response_difference": 61.84999999999996,
+      "mean_weighted_score_difference": -0.16790529813511654
+    },
+    "mixed/cpu_intensive/interactive": {
+      "traces": 18,
+      "mean_p95_response_difference": 62.48611111111109,
+      "mean_weighted_score_difference": -0.1742745490849974
+    },
+    "mixed/cpu_intensive/io_intensive": {
+      "traces": 15,
+      "mean_p95_response_difference": 118.67999999999996,
+      "mean_weighted_score_difference": -0.16710376264768254
+    },
+    "mixed/interactive/batch": {
+      "traces": 18,
+      "mean_p95_response_difference": 251.02222222222215,
+      "mean_weighted_score_difference": -0.10955055034707058
+    },
+    "mixed/interactive/cpu_intensive": {
+      "traces": 20,
+      "mean_p95_response_difference": 304.84999999999997,
+      "mean_weighted_score_difference": -0.10700285507346963
+    },
+    "mixed/interactive/io_intensive": {
+      "traces": 12,
+      "mean_p95_response_difference": 158.97916666666666,
+      "mean_weighted_score_difference": -0.11368465659776729
+    },
+    "mixed/io_intensive/batch": {
+      "traces": 16,
+      "mean_p95_response_difference": 289.4874999999999,
+      "mean_weighted_score_difference": -0.1074956945490967
+    },
+    "mixed/io_intensive/cpu_intensive": {
+      "traces": 18,
+      "mean_p95_response_difference": 300.5083333333333,
+      "mean_weighted_score_difference": -0.10661905292351047
+    },
+    "mixed/io_intensive/interactive": {
+      "traces": 18,
+      "mean_p95_response_difference": 138.69444444444446,
+      "mean_weighted_score_difference": -0.1407933521090562
+    }
+  },
+  "p95_response_gate": false,
+  "weighted_score_gate": true,
+  "latency_gate": true,
+  "eligible": false
+}

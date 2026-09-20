@@ -1,0 +1,222 @@
+{
+  "rows": 2500,
+  "random_state": 42,
+  "split": {
+    "train": 0.7,
+    "validation": 0.15,
+    "test": 0.15
+  },
+  "class_distribution": {
+    "Round Robin": 1857,
+    "FCFS": 72,
+    "SRTF": 537,
+    "SJF": 34
+  },
+  "max_depth": 3,
+  "min_samples_leaf": 10,
+  "validation_accuracy": 0.768,
+  "validation_mean_regret": 0.005696578226037969,
+  "test_accuracy": 0.7306666666666667,
+  "test_mean_regret": 0.007314804217322725,
+  "validation_static_scores": {
+    "FCFS": 0.2260401822526801,
+    "SJF": 0.2134778060450031,
+    "SRTF": 0.16879491826886656,
+    "Round Robin": 0.1322752384067891,
+    "Priority": 0.3253172186260683,
+    "Priority RR": 0.7740633457805582
+  },
+  "static_baseline": "Round Robin",
+  "priority_rr_config": {
+    "quantum": 1,
+    "aging_interval": 4,
+    "context_switch_cost": 1
+  },
+  "policy_set": [
+    "FCFS",
+    "SJF",
+    "SRTF",
+    "Round Robin",
+    "Priority",
+    "Priority RR"
+  ],
+  "feature_importance": {
+    "process_count": 0.0,
+    "arrival_rate": 0.0,
+    "burst_mean": 0.02213317962207315,
+    "burst_variance": 0.28429189811910544,
+    "short_job_ratio": 0.6935749222588214,
+    "priority_mean": 0.0,
+    "priority_variance": 0.0,
+    "io_frequency": 0.0,
+    "io_cpu_ratio": 0.0
+  },
+  "candidate_metrics": [
+    {
+      "max_depth": 3,
+      "min_samples_leaf": 10,
+      "validation_accuracy": 0.768,
+      "validation_mean_regret": 0.005696578226037969
+    },
+    {
+      "max_depth": 3,
+      "min_samples_leaf": 5,
+      "validation_accuracy": 0.768,
+      "validation_mean_regret": 0.005696578226037969
+    },
+    {
+      "max_depth": 3,
+      "min_samples_leaf": 1,
+      "validation_accuracy": 0.7653333333333333,
+      "validation_mean_regret": 0.005816708492718251
+    },
+    {
+      "max_depth": 5,
+      "min_samples_leaf": 10,
+      "validation_accuracy": 0.7493333333333333,
+      "validation_mean_regret": 0.00742546166242736
+    },
+    {
+      "max_depth": 5,
+      "min_samples_leaf": 5,
+      "validation_accuracy": 0.7626666666666667,
+      "validation_mean_regret": 0.007148201003626748
+    },
+    {
+      "max_depth": 5,
+      "min_samples_leaf": 1,
+      "validation_accuracy": 0.7573333333333333,
+      "validation_mean_regret": 0.0074280901565562775
+    },
+    {
+      "max_depth": 8,
+      "min_samples_leaf": 10,
+      "validation_accuracy": 0.7333333333333333,
+      "validation_mean_regret": 0.0072654366370801665
+    },
+    {
+      "max_depth": 8,
+      "min_samples_leaf": 5,
+      "validation_accuracy": 0.7333333333333333,
+      "validation_mean_regret": 0.00843215974436717
+    },
+    {
+      "max_depth": 8,
+      "min_samples_leaf": 1,
+      "validation_accuracy": 0.7226666666666667,
+      "validation_mean_regret": 0.008634678754900905
+    },
+    {
+      "max_depth": null,
+      "min_samples_leaf": 10,
+      "validation_accuracy": 0.7226666666666667,
+      "validation_mean_regret": 0.00786491738010925
+    },
+    {
+      "max_depth": null,
+      "min_samples_leaf": 5,
+      "validation_accuracy": 0.7253333333333334,
+      "validation_mean_regret": 0.009184781997077824
+    },
+    {
+      "max_depth": null,
+      "min_samples_leaf": 1,
+      "validation_accuracy": 0.6853333333333333,
+      "validation_mean_regret": 0.011853748622423424
+    }
+  ],
+  "priority_rr_tuning": {
+    "samples": 375,
+    "seed": 42,
+    "policy_set": [
+      "FCFS",
+      "SJF",
+      "SRTF",
+      "Round Robin",
+      "Priority",
+      "Priority RR"
+    ],
+    "candidates": [
+      {
+        "quantum": 1,
+        "aging_interval": 4,
+        "context_switch_cost": 1,
+        "validation_mean_score": 0.7742580802175002,
+        "validation_sjf_mean_score": 0.21013977272428322,
+        "validation_max_waiting_time": 626
+      },
+      {
+        "quantum": 1,
+        "aging_interval": 8,
+        "context_switch_cost": 1,
+        "validation_mean_score": 0.8049409934985767,
+        "validation_sjf_mean_score": 0.21061823844399882,
+        "validation_max_waiting_time": 596
+      },
+      {
+        "quantum": 1,
+        "aging_interval": 12,
+        "context_switch_cost": 1,
+        "validation_mean_score": 0.8404160243908985,
+        "validation_sjf_mean_score": 0.21072365712283217,
+        "validation_max_waiting_time": 587
+      },
+      {
+        "quantum": 2,
+        "aging_interval": 4,
+        "context_switch_cost": 1,
+        "validation_mean_score": 0.792367284131368,
+        "validation_sjf_mean_score": 0.21871565747364002,
+        "validation_max_waiting_time": 468
+      },
+      {
+        "quantum": 2,
+        "aging_interval": 8,
+        "context_switch_cost": 1,
+        "validation_mean_score": 0.8158342104468213,
+        "validation_sjf_mean_score": 0.21877375856340922,
+        "validation_max_waiting_time": 458
+      },
+      {
+        "quantum": 2,
+        "aging_interval": 12,
+        "context_switch_cost": 1,
+        "validation_mean_score": 0.8509115037671862,
+        "validation_sjf_mean_score": 0.2180587993478552,
+        "validation_max_waiting_time": 446
+      },
+      {
+        "quantum": 4,
+        "aging_interval": 4,
+        "context_switch_cost": 1,
+        "validation_mean_score": 0.8176925429958287,
+        "validation_sjf_mean_score": 0.2297638265466156,
+        "validation_max_waiting_time": 382
+      },
+      {
+        "quantum": 4,
+        "aging_interval": 8,
+        "context_switch_cost": 1,
+        "validation_mean_score": 0.8343677600373421,
+        "validation_sjf_mean_score": 0.229443763122347,
+        "validation_max_waiting_time": 381
+      },
+      {
+        "quantum": 4,
+        "aging_interval": 12,
+        "context_switch_cost": 1,
+        "validation_mean_score": 0.8646740107286294,
+        "validation_sjf_mean_score": 0.22749206645983844,
+        "validation_max_waiting_time": 377
+      }
+    ],
+    "selected": {
+      "quantum": 1,
+      "aging_interval": 4,
+      "context_switch_cost": 1,
+      "validation_mean_score": 0.7742580802175002,
+      "validation_sjf_mean_score": 0.21013977272428322,
+      "validation_max_waiting_time": 626
+    }
+  }
+}

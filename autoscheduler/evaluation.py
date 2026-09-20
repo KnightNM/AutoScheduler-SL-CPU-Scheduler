@@ -9,6 +9,7 @@ from scheduler.priority import priority_scheduling
 from scheduler.priority_rr import priority_round_robin
 from scheduler.round_robin import round_robin
 from scheduler.sjf import sjf
+from scheduler.srtf import srtf
 from simulator.process import Process
 from simulator.simulator import SimulationResult, run_simulation
 
@@ -16,6 +17,7 @@ from simulator.simulator import SimulationResult, run_simulation
 ALGORITHMS = {
     "FCFS": (fcfs, {}),
     "SJF": (sjf, {}),
+    "SRTF": (srtf, {}),
     "Round Robin": (round_robin, {"quantum": 2}),
     "Priority": (priority_scheduling, {}),
     "Priority RR": (

@@ -39,6 +39,10 @@ class CliTests(unittest.TestCase):
             model_report = json.loads(model.with_suffix(".json").read_text())
             self.assertEqual(len(model_report["priority_rr_tuning"]["candidates"]), 9)
             self.assertIn(model_report["static_baseline"], model_report["policy_set"])
+            self.assertEqual(len(model_report["policy_set"]), 6)
+            self.assertIn("SRTF", model_report["policy_set"])
+            with dataset.open(newline="", encoding="utf-8") as file:
+                self.assertIn("score_srtf", next(csv.DictReader(file)))
 
             compared = self.run_cli(
                 "compare", "--profile", "mixed", "--seed", 77, "--model", model
@@ -69,6 +73,7 @@ class CliTests(unittest.TestCase):
             self.assertTrue((results / "fairness.png").exists())
             summary = json.loads((results / "summary.json").read_text())
             self.assertEqual(summary["frozen_static_baseline"], model_report["static_baseline"])
+            self.assertIn("SRTF", summary["static_policies"])
 
             latency = self.run_cli(
                 "latency",
@@ -88,7 +93,7 @@ class CliTests(unittest.TestCase):
             self.assertTrue((results / "latency_summary.json").exists())
             self.assertTrue((results / "latency.png").exists())
             with (results / "latency.csv").open(newline="", encoding="utf-8") as file:
-                self.assertEqual(len(list(csv.DictReader(file))), 15)
+                self.assertEqual(len(list(csv.DictReader(file))), 18)
 
             dynamic_model = root / "dynamic.joblib"
             dynamic_dataset = root / "dynamic.csv"

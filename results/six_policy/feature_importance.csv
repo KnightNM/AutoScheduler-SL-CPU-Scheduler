@@ -1,0 +1,10 @@
+feature,importance
+short_job_ratio,0.6935749222588214
+burst_variance,0.28429189811910544
+burst_mean,0.02213317962207315
+process_count,0.0
+arrival_rate,0.0
+priority_mean,0.0
+priority_variance,0.0
+io_frequency,0.0
+io_cpu_ratio,0.0

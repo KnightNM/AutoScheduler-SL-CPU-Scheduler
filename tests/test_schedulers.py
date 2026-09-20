@@ -5,11 +5,60 @@ from scheduler.priority import priority_scheduling
 from scheduler.priority_rr import priority_round_robin
 from scheduler.round_robin import round_robin
 from scheduler.sjf import sjf
+from scheduler.srtf import srtf
 from simulator.process import Process
+from simulator.engine import simulate
 from simulator.simulator import run_simulation
 
 
 class SchedulerTests(unittest.TestCase):
+    def test_sjf_uses_total_cpu_burst_and_never_preempts(self):
+        processes = [
+            Process("A", 0, 9, cpu_bursts=(2, 7), io_bursts=(10,)),
+            Process("B", 0, 4),
+            Process("C", 1, 1),
+        ]
+        _, timeline = sjf(processes)
+        self.assertEqual(timeline[:2], [("B", 0, 4), ("C", 4, 5)])
+        self.assertEqual(timeline[2], ("A", 5, 7))
+
+    def test_srtf_preempts_on_shorter_arrival_but_not_equal_or_longer(self):
+        processes = [
+            Process("A", 0, 9), Process("B", 1, 8),
+            Process("C", 2, 2), Process("D", 3, 10),
+        ]
+        result = run_simulation("SRTF", srtf, processes)
+        self.assertEqual(result.timeline, [("A", 0, 2), ("C", 2, 4), ("A", 4, 11), ("B", 11, 19), ("D", 19, 29)])
+        self.assertEqual(result.context_switches, 4)
+        self.assertEqual(len(result.process_metrics), len(processes))
+
+    def test_srtf_preempts_on_shorter_io_return(self):
+        processes = [
+            Process("A", 0, 3, cpu_bursts=(1, 2), io_bursts=(2,)),
+            Process("B", 0, 8),
+        ]
+        result = run_simulation("SRTF", srtf, processes)
+        self.assertEqual(result.timeline, [("A", 0, 1), ("B", 1, 3), ("A", 3, 5), ("B", 5, 11)])
+        self.assertEqual(result.process_metrics[0].post_io_response_times, (0,))
+        self.assertTrue(all(metric.waiting_time >= 0 for metric in result.process_metrics))
+
+    def test_srtf_does_not_preempt_on_equal_io_return(self):
+        processes = [
+            Process("A", 0, 3, cpu_bursts=(1, 2), io_bursts=(2,)),
+            Process("B", 0, 4),
+        ]
+        result = run_simulation("SRTF", srtf, processes)
+        self.assertEqual(result.timeline, [("A", 0, 1), ("B", 1, 5), ("A", 5, 7)])
+        self.assertEqual(result.process_metrics[-1].post_io_response_times, (2,))
+
+    def test_srtf_context_switch_cost_is_charged_only_on_process_change(self):
+        completed, timeline = simulate(
+            [Process("A", 0, 6), Process("B", 1, 2)],
+            "srtf", preemptive=True, context_switch_cost=1,
+        )
+        self.assertEqual(timeline, [("A", 0, 1), ("CS", 1, 2), ("B", 2, 4), ("CS", 4, 5), ("A", 5, 10)])
+        self.assertEqual(len(completed), 2)
+
     def test_fcfs_preserves_phase_one_schedule(self):
         processes = [
             Process("P1", 0, 5, 2),

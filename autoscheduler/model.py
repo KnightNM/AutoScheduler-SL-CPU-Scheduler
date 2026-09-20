@@ -151,6 +151,8 @@ def load_model(path: str | Path, feature_names: tuple[str, ...] = FEATURE_NAMES)
     bundle = joblib.load(path)
     if tuple(bundle.get("features", ())) != tuple(feature_names):
         raise ValueError("model feature schema does not match current code")
+    if bundle.get("metadata", {}).get("policy_set") != list(ALGORITHMS):
+        raise ValueError("model policy set does not match current schedulers; retrain the model")
     return bundle["model"]
 
 

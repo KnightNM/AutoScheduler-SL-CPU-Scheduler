@@ -7,7 +7,12 @@ from autoscheduler.dynamic import (
     evaluate_dynamic,
     generate_dynamic_workload,
     run_dynamic,
+    _new_state,
+    _run_to_completion,
+    _simulation,
 )
+from autoscheduler.evaluation import ALGORITHMS, run_algorithm
+from simulator.process import Process
 
 
 class _RoundRobinModel:
@@ -28,7 +33,35 @@ class _SjfModel(_RoundRobinModel):
         return [[0.0, 0.0, 0.0, 0.0, 1.0] for _ in rows]
 
 
+class _SrtfModel(_RoundRobinModel):
+    def predict(self, rows):
+        return ["SRTF" for _ in rows]
+
+
 class DynamicRoutingTests(unittest.TestCase):
+    def test_static_and_dynamic_dispatch_agree_for_sjf_and_srtf(self):
+        processes = [
+            Process("A", 0, 10, cpu_bursts=(2, 8), io_bursts=(3,)),
+            Process("B", 0, 6),
+            Process("C", 2, 1),
+        ]
+        for policy in ("SJF", "SRTF"):
+            with self.subTest(policy=policy):
+                state = _new_state(processes)
+                _run_to_completion(state, policy, ALGORITHMS["Priority RR"][1])
+                actual = _simulation(state, policy)
+                expected = run_algorithm(policy, processes)
+                self.assertEqual(actual.timeline, expected.timeline)
+                self.assertEqual(actual.context_switches, expected.context_switches)
+                self.assertEqual(actual.process_metrics, expected.process_metrics)
+
+    def test_dynamic_router_accepts_srtf(self):
+        workload = generate_dynamic_workload(14, process_count=3)
+        result = run_dynamic(workload.processes, _SrtfModel(), DynamicRouterConfig(epoch_ticks=5, confidence_threshold=0.6))
+        self.assertEqual(result.final_policy, "SRTF")
+        self.assertEqual(len(result.simulation.process_metrics), len(workload.processes))
+        self.assertTrue(any(decision.accepted for decision in result.decisions))
+
     def test_three_distinct_cohorts_are_reproducible(self):
         first = generate_dynamic_workload(42)
         second = generate_dynamic_workload(42)

@@ -147,6 +147,8 @@ def _ready_key(item: _Ready, policy: str, now: int, aging_interval: int) -> tupl
     if policy == "Priority RR":
         return (max(1, item.priority - (now - item.time) // aging_interval), item.sequence)
     if policy == "SJF":
+        return (item.process.burst_time, item.time, item.process.pid)
+    if policy == "SRTF":
         return (item.process.remaining_time, item.time, item.process.pid)
     if policy == "Priority":
         return (item.process.priority, item.time, item.process.pid)
@@ -182,15 +184,28 @@ def _dispatch(state: _State, policy: str, priority_rr_config: dict) -> None:
         process.post_io_response_times.append(state.current_time - ready.time)
     if process.start_time == -1:
         process.start_time = state.current_time
-    run_for = process.remaining_time
-    if policy in {"Round Robin", "Priority RR"}:
-        run_for = min(run_for, priority_rr_config["quantum"])
-    end_time = state.current_time + run_for
-    state.timeline.append((process.pid, state.current_time, end_time))
-    process.remaining_time -= run_for
-    state.current_time = end_time
-    state.last_pid = process.pid
-    _release(state, state.current_time)
+    while process.remaining_time:
+        run_for = process.remaining_time
+        if policy in {"Round Robin", "Priority RR"}:
+            run_for = min(run_for, priority_rr_config["quantum"])
+        elif policy == "SRTF":
+            next_events = [state.pending[0].arrival_time] if state.pending else []
+            next_events.extend(wake_time for wake_time, *_ in state.blocked)
+            if next_events:
+                run_for = min(run_for, min(next_events) - state.current_time)
+        end_time = state.current_time + run_for
+        if policy == "SRTF" and state.timeline and state.timeline[-1][0] == process.pid and state.timeline[-1][2] == state.current_time:
+            state.timeline[-1] = (process.pid, state.timeline[-1][1], end_time)
+        else:
+            state.timeline.append((process.pid, state.current_time, end_time))
+        process.remaining_time -= run_for
+        state.current_time = end_time
+        state.last_pid = process.pid
+        _release(state, state.current_time)
+        if policy != "SRTF" or not process.remaining_time:
+            break
+        if any(item.process.remaining_time < process.remaining_time for item in state.ready):
+            break
     if process.remaining_time:
         state.ready.append(_Ready(state.current_time, state.sequence, process, process.priority, False))
         state.sequence += 1

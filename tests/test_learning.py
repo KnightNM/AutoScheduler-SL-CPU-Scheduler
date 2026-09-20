@@ -19,6 +19,11 @@ class _FixedPriorityRrModel:
         return ["Priority RR" for _ in rows]
 
 
+class _FixedSrtfModel:
+    def predict(self, rows):
+        return ["SRTF" for _ in rows]
+
+
 class LearningTests(unittest.TestCase):
     def test_candidate_selection_prefers_regret_over_accuracy(self):
         from autoscheduler.model import _candidate_key
@@ -70,6 +75,11 @@ class LearningTests(unittest.TestCase):
         direct = run_algorithm("Priority RR", workload.processes, config)
         self.assertEqual(adaptive.simulation, direct)
 
+    def test_adaptive_srtf_matches_direct_execution(self):
+        workload = generate_workload("interactive", 92, 8)
+        adaptive = run_adaptive(workload.processes, _FixedSrtfModel())
+        self.assertEqual(adaptive.simulation, run_algorithm("SRTF", workload.processes))
+
     def test_small_decision_tree_can_train_save_and_load(self):
         try:
             from autoscheduler.model import load_model, load_model_metadata, train_model
@@ -93,6 +103,12 @@ class LearningTests(unittest.TestCase):
             self.assertEqual(set(report["feature_importance"]), set(FEATURE_NAMES))
             self.assertEqual(metadata["priority_rr_config"], config)
             self.assertIn(metadata["static_baseline"], ALGORITHMS)
+            import joblib
+            saved = joblib.load(model_path)
+            saved["metadata"]["policy_set"].remove("SRTF")
+            joblib.dump(saved, model_path)
+            with self.assertRaisesRegex(ValueError, "retrain"):
+                load_model(model_path)
 
 
 if __name__ == "__main__":
