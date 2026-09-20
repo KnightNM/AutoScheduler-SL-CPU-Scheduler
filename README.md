@@ -33,7 +33,11 @@ pip install -r requirements.txt
 Run the original Phase 1 demonstration:
 
 ```bash
+# Run the demo
 python main.py
+
+# Run the test suite
+python -m unittest discover -s tests
 ```
 
 Tune Priority-RR, generate 2,500 six-policy oracle labels, and train the model:

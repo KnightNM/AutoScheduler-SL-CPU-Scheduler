@@ -10,10 +10,11 @@ workload and prints the Gantt chart plus key performance metrics for each.
 
 from simulator.process   import Process
 from simulator.simulator import run_simulation, SimulationResult
-from scheduler.fcfs       import fcfs
-from scheduler.sjf        import sjf
+from scheduler.fcfs        import fcfs
+from scheduler.sjf         import sjf
 from scheduler.round_robin import round_robin
-from scheduler.priority   import priority_scheduling
+from scheduler.priority    import priority_scheduling
+from scheduler.srtf        import srtf
 
 
 # ---------------------------------------------------------------------------
@@ -116,10 +117,11 @@ def demo():
     print()
 
     runs = [
-        ("FCFS",              fcfs,              {}),
-        ("SJF (non-preemptive)", sjf,            {}),
-        ("Round Robin (q=2)", round_robin,        {"quantum": 2}),
-        ("Priority (non-preemptive)", priority_scheduling, {}),
+        ("FCFS",                        fcfs,               {}),
+        ("SJF (non-preemptive)",        sjf,                {}),
+        ("SRTF (preemptive SJF)",       srtf,               {}),
+        ("Round Robin (q=2)",           round_robin,        {"quantum": 2}),
+        ("Priority (non-preemptive)",   priority_scheduling, {}),
     ]
 
     for name, fn, kwargs in runs:
