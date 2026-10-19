@@ -1,0 +1,426 @@
+{
+  "actions": [
+    "FCFS",
+    "Round Robin",
+    "Priority",
+    "Priority RR",
+    "MLFQ"
+  ],
+  "bakeoff": {
+    "families": {
+      "Decision Tree": [
+        {
+          "family": "Decision Tree",
+          "settings": {
+            "max_depth": 3,
+            "min_samples_leaf": 5
+          },
+          "validation_score": 0.0
+        },
+        {
+          "family": "Decision Tree",
+          "settings": {
+            "max_depth": 3,
+            "min_samples_leaf": 10
+          },
+          "validation_score": 0.0
+        },
+        {
+          "family": "Decision Tree",
+          "settings": {
+            "max_depth": 3,
+            "min_samples_leaf": 25
+          },
+          "validation_score": 0.0
+        },
+        {
+          "family": "Decision Tree",
+          "settings": {
+            "max_depth": 5,
+            "min_samples_leaf": 5
+          },
+          "validation_score": 0.0
+        },
+        {
+          "family": "Decision Tree",
+          "settings": {
+            "max_depth": 5,
+            "min_samples_leaf": 10
+          },
+          "validation_score": 0.0
+        },
+        {
+          "family": "Decision Tree",
+          "settings": {
+            "max_depth": 5,
+            "min_samples_leaf": 25
+          },
+          "validation_score": 0.0
+        },
+        {
+          "family": "Decision Tree",
+          "settings": {
+            "max_depth": 8,
+            "min_samples_leaf": 5
+          },
+          "validation_score": 0.06911627824035406
+        },
+        {
+          "family": "Decision Tree",
+          "settings": {
+            "max_depth": 8,
+            "min_samples_leaf": 10
+          },
+          "validation_score": 0.0
+        },
+        {
+          "family": "Decision Tree",
+          "settings": {
+            "max_depth": 8,
+            "min_samples_leaf": 25
+          },
+          "validation_score": 0.0
+        },
+        {
+          "family": "Decision Tree",
+          "settings": {
+            "max_depth": null,
+            "min_samples_leaf": 5
+          },
+          "validation_score": 0.05565206819353184
+        },
+        {
+          "family": "Decision Tree",
+          "settings": {
+            "max_depth": null,
+            "min_samples_leaf": 10
+          },
+          "validation_score": 0.0
+        },
+        {
+          "family": "Decision Tree",
+          "settings": {
+            "max_depth": null,
+            "min_samples_leaf": 25
+          },
+          "validation_score": 0.0
+        }
+      ],
+      "Dummy": [
+        {
+          "family": "Dummy",
+          "settings": {
+            "strategy": "mean"
+          },
+          "validation_score": 0.6856898716969407
+        }
+      ],
+      "Histogram Gradient Boosting": [
+        {
+          "family": "Histogram Gradient Boosting",
+          "settings": {
+            "learning_rate": 0.05,
+            "max_iter": 100,
+            "max_leaf_nodes": 7
+          },
+          "validation_score": 0.0
+        },
+        {
+          "family": "Histogram Gradient Boosting",
+          "settings": {
+            "learning_rate": 0.05,
+            "max_iter": 100,
+            "max_leaf_nodes": 15
+          },
+          "validation_score": 0.0
+        },
+        {
+          "family": "Histogram Gradient Boosting",
+          "settings": {
+            "learning_rate": 0.05,
+            "max_iter": 100,
+            "max_leaf_nodes": 31
+          },
+          "validation_score": 0.0
+        },
+        {
+          "family": "Histogram Gradient Boosting",
+          "settings": {
+            "learning_rate": 0.1,
+            "max_iter": 100,
+            "max_leaf_nodes": 7
+          },
+          "validation_score": 0.0
+        },
+        {
+          "family": "Histogram Gradient Boosting",
+          "settings": {
+            "learning_rate": 0.1,
+            "max_iter": 100,
+            "max_leaf_nodes": 15
+          },
+          "validation_score": 0.0
+        },
+        {
+          "family": "Histogram Gradient Boosting",
+          "settings": {
+            "learning_rate": 0.1,
+            "max_iter": 100,
+            "max_leaf_nodes": 31
+          },
+          "validation_score": 0.0
+        }
+      ],
+      "Random Forest": [
+        {
+          "family": "Random Forest",
+          "settings": {
+            "max_depth": 5,
+            "min_samples_leaf": 1,
+            "n_estimators": 100
+          },
+          "validation_score": 0.0
+        },
+        {
+          "family": "Random Forest",
+          "settings": {
+            "max_depth": 5,
+            "min_samples_leaf": 5,
+            "n_estimators": 100
+          },
+          "validation_score": 0.0
+        },
+        {
+          "family": "Random Forest",
+          "settings": {
+            "max_depth": 10,
+            "min_samples_leaf": 1,
+            "n_estimators": 100
+          },
+          "validation_score": 0.051163998177924434
+        },
+        {
+          "family": "Random Forest",
+          "settings": {
+            "max_depth": 10,
+            "min_samples_leaf": 5,
+            "n_estimators": 100
+          },
+          "validation_score": 0.0
+        },
+        {
+          "family": "Random Forest",
+          "settings": {
+            "max_depth": null,
+            "min_samples_leaf": 1,
+            "n_estimators": 100
+          },
+          "validation_score": 0.051163998177924434
+        },
+        {
+          "family": "Random Forest",
+          "settings": {
+            "max_depth": null,
+            "min_samples_leaf": 5,
+            "n_estimators": 100
+          },
+          "validation_score": 0.0
+        }
+      ],
+      "Ridge": [
+        {
+          "family": "Ridge",
+          "settings": {
+            "alpha": 0.01
+          },
+          "validation_score": 0.0
+        },
+        {
+          "family": "Ridge",
+          "settings": {
+            "alpha": 0.1
+          },
+          "validation_score": 0.0
+        },
+        {
+          "family": "Ridge",
+          "settings": {
+            "alpha": 1
+          },
+          "validation_score": 0.0
+        },
+        {
+          "family": "Ridge",
+          "settings": {
+            "alpha": 10
+          },
+          "validation_score": 0.0
+        },
+        {
+          "family": "Ridge",
+          "settings": {
+            "alpha": 100
+          },
+          "validation_score": 0.0
+        }
+      ]
+    },
+    "maximum_configurations_per_family": 12,
+    "selected": {
+      "family": "Ridge",
+      "settings": {
+        "alpha": 0.01
+      },
+      "test_score": 0.0,
+      "validation_score": 0.0
+    },
+    "selection_basis": "caller_supplied_validation_scheduler_score",
+    "tie_margin_fraction": 0.005
+  },
+  "comparison": {
+    "locked_test_fixed_action_cost": {
+      "FCFS": 0.75,
+      "MLFQ": 0.0,
+      "Priority": 0.75,
+      "Priority RR": 0.2552069908860113,
+      "Round Robin": 0.0011789896567735568
+    },
+    "locked_test_oracle_cost": 0.0
+  },
+  "dataset": {
+    "event_count": 2590010,
+    "process_count": 25,
+    "profiles": [
+      "compression",
+      "cpu"
+    ],
+    "seeds": {
+      "bootstrap": 7003,
+      "generation": [],
+      "model_tuning": 7002,
+      "split": 7001
+    }
+  },
+  "gates": {
+    "confidence_gate": false,
+    "data_sufficient": false,
+    "decision_p99_ms": 0.334916,
+    "fairness": {
+      "comparator_mean_post_io_max_response_time": 0.0,
+      "comparator_mean_starvation_count": 0.0,
+      "passes": true,
+      "selected_mean_post_io_max_response_time": 0.0,
+      "selected_mean_starvation_count": 0.0
+    },
+    "fairness_gate": true,
+    "fixed_comparator": "MLFQ",
+    "improvement_gate": false,
+    "latency_gate": true,
+    "locked_test_comparator_cost": 0.0,
+    "locked_test_model_cost": 0.0,
+    "locked_test_trace_count": 2,
+    "mean_improvement_fraction": null,
+    "minimum_locked_test_trace_count": 60,
+    "paired_difference_model_minus_comparator": {
+      "bootstrap_samples": 10000,
+      "ci_high": 0.0,
+      "ci_low": 0.0,
+      "mean": 0.0
+    },
+    "status": "INSUFFICIENT_DATA"
+  },
+  "label_provenance": "pilot_offline_replay_development_only",
+  "limitation": "Offline replay labels from pilot traces are not real kernel measurements and cannot select a final deployable model.",
+  "model_comparison": {
+    "Decision Tree": {
+      "action_selection_accuracy": 1.0,
+      "decision_p99_ms": 0.134416,
+      "locked_test_realized_cost": 0.0,
+      "selected": false,
+      "settings": {
+        "max_depth": 3,
+        "min_samples_leaf": 5
+      },
+      "test_cost_mae": 0.28677332431621294,
+      "test_cost_r2": -0.21291044619005595,
+      "validation_realized_cost": 0.0
+    },
+    "Dummy": {
+      "action_selection_accuracy": 0.0,
+      "decision_p99_ms": 0.062875,
+      "locked_test_realized_cost": 0.75,
+      "selected": false,
+      "settings": {
+        "strategy": "mean"
+      },
+      "test_cost_mae": 0.30852527745591934,
+      "test_cost_r2": -0.02382965765073841,
+      "validation_realized_cost": 0.6856898716969407
+    },
+    "Histogram Gradient Boosting": {
+      "action_selection_accuracy": 0.9576271186440678,
+      "decision_p99_ms": 17.6905,
+      "locked_test_realized_cost": 4.858780735556044e-05,
+      "selected": false,
+      "settings": {
+        "learning_rate": 0.05,
+        "max_iter": 100,
+        "max_leaf_nodes": 7
+      },
+      "test_cost_mae": 0.24682298765173447,
+      "test_cost_r2": -0.011734859106435236,
+      "validation_realized_cost": 0.0
+    },
+    "Random Forest": {
+      "action_selection_accuracy": 1.0,
+      "decision_p99_ms": 5.203917,
+      "locked_test_realized_cost": 0.0,
+      "selected": false,
+      "settings": {
+        "max_depth": 5,
+        "min_samples_leaf": 1,
+        "n_estimators": 100
+      },
+      "test_cost_mae": 0.26865924100195154,
+      "test_cost_r2": -0.21975569198560096,
+      "validation_realized_cost": 0.0
+    },
+    "Ridge": {
+      "action_selection_accuracy": 1.0,
+      "decision_p99_ms": 0.271209,
+      "locked_test_realized_cost": 0.0,
+      "selected": true,
+      "settings": {
+        "alpha": 0.01
+      },
+      "test_cost_mae": 0.3794986462605443,
+      "test_cost_r2": -1.0489882557663641,
+      "validation_realized_cost": 0.0
+    }
+  },
+  "prototype_sufficiency": {
+    "data_sufficient": false,
+    "minimum_total_trace_groups": 15,
+    "minimum_trace_groups_per_split": 3,
+    "scope": "offline_replay_model_comparison_only",
+    "status": "INSUFFICIENT_FOR_PROTOTYPE_COMPARISON",
+    "total_trace_groups": 6,
+    "trace_group_counts": {
+      "test": 1,
+      "train": 4,
+      "validation": 1
+    }
+  },
+  "row_counts": {
+    "test": 1180,
+    "train": 3500,
+    "validation": 585
+  },
+  "selection_metric": "realized_cost_of_lowest_predicted_action_per_observed_state",
+  "status": "prototype_development_only",
+  "trace_counts": {
+    "test": 2,
+    "train": 6,
+    "validation": 1
+  }
+}

@@ -89,6 +89,24 @@ def _comparison(rows: list[dict[str, Any]], actions: tuple[str, ...]) -> dict[st
     }
 
 
+def _prototype_sufficiency(
+    splits: dict[str, list[dict[str, Any]]], group_by: tuple[str, ...]
+) -> dict[str, Any]:
+    group_counts = {
+        name: len({tuple(row[field] for field in group_by) for row in rows})
+        for name, rows in splits.items()
+    }
+    total_groups = sum(group_counts.values())
+    sufficient = total_groups >= 15 and all(count >= 3 for count in group_counts.values())
+    return {
+        "status": "SUFFICIENT_FOR_PROTOTYPE_COMPARISON" if sufficient else "INSUFFICIENT_FOR_PROTOTYPE_COMPARISON",
+        "data_sufficient": sufficient,
+        "trace_group_counts": group_counts,
+        "total_trace_groups": total_groups,
+        "minimum_total_trace_groups": 15,
+        "minimum_trace_groups_per_split": 3,
+        "scope": "offline_replay_model_comparison_only",
+    }
 def _matrix(rows: list[dict[str, Any]], features: tuple[str, ...]) -> list[list[float]]:
     return [[float(row[name]) for name in features] for row in rows]
 
@@ -276,6 +294,8 @@ def _write_markdown_report(report: dict[str, Any], output: Path) -> None:
         "",
         "## Status",
         "",
+        f"**{report['prototype_sufficiency']['status'].replace('_', ' ')}**",
+        "",
         "Development-only offline replay screening. This is not evidence of Linux kernel scheduler performance.",
         "",
         "## Data",
@@ -358,6 +378,7 @@ def run_prototype_bakeoff(rows: Iterable[dict[str, Any]], config: dict[str, Any]
         "selection_metric": "realized_cost_of_lowest_predicted_action_per_observed_state",
         "row_counts": {name: len(split) for name, split in splits.items()},
         "trace_counts": {name: len({row["trace_id"] for row in split}) for name, split in splits.items()},
+        "prototype_sufficiency": _prototype_sufficiency(splits, tuple(dataset["group_by"])),
         "dataset": {
             "profiles": sorted({str(row.get("workload_family", "unknown")) for row in rows}),
             "process_count": sum(len(trace["processes"]) for trace in traces) if traces is not None else None,

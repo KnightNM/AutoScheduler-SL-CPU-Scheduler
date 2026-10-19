@@ -4,6 +4,7 @@ import sys
 import tempfile
 import unittest
 from pathlib import Path
+from unittest.mock import patch
 
 
 REPORT = """cpus=4
@@ -96,6 +97,28 @@ class LinuxTraceImportTests(unittest.TestCase):
             import_trace_files(report, metadata, output, "capture-3")
 
             self.assertEqual(read_traces(output)[0]["metadata"]["trace_id"], "capture-3")
+
+    def test_file_import_streams_report_instead_of_reading_it_whole(self):
+        from autoscheduler.linux_trace import import_trace_files
+
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            report = root / "trace.txt"
+            metadata = root / "metadata.json"
+            output = root / "canonical.jsonl"
+            report.write_text(REPORT, encoding="utf-8")
+            metadata.write_text(json.dumps(METADATA), encoding="utf-8")
+            original_read_text = Path.read_text
+
+            def guarded_read_text(path, *args, **kwargs):
+                if path == report:
+                    raise AssertionError("report must not be loaded into memory at once")
+                return original_read_text(path, *args, **kwargs)
+
+            with patch.object(Path, "read_text", guarded_read_text):
+                trace = import_trace_files(report, metadata, output, "capture-streamed")
+
+            self.assertEqual(trace["metadata"]["trace_id"], "capture-streamed")
 
     def test_cli_imports_and_validates_trace(self):
         with tempfile.TemporaryDirectory() as directory:

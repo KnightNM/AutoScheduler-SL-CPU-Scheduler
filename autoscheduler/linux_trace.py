@@ -6,7 +6,7 @@ import json
 import re
 from decimal import Decimal
 from pathlib import Path
-from typing import Any, Iterable
+from typing import Any, Callable, Iterable
 
 from autoscheduler.real_traces import write_traces
 
@@ -57,6 +57,14 @@ def import_trace_report(
     lines: Iterable[str], metadata: dict[str, Any], trace_id: str
 ) -> dict[str, Any]:
     records = [record for line in lines if (record := _record(line)) is not None]
+    return _import_trace_records(lambda: iter(records), metadata, trace_id)
+
+
+def _import_trace_records(
+    records: Callable[[], Iterable[dict[str, Any]]],
+    metadata: dict[str, Any],
+    trace_id: str,
+) -> dict[str, Any]:
     command = metadata.get("command") or []
     if not command:
         raise ValueError("capture metadata requires a workload command")
@@ -64,7 +72,7 @@ def import_trace_report(
 
     exec_records: dict[int, list[dict[str, Any]]] = {}
     forks: list[tuple[int, int, dict[str, Any]]] = []
-    for record in records:
+    for record in records():
         if record["name"] == "sched_process_exec" and (match := EXEC.search(record["body"])):
             exec_records.setdefault(int(match["pid"]), []).append(
                 {**record, "filename": match["filename"]}
@@ -107,7 +115,7 @@ def import_trace_report(
     for pid, record in arrivals.items():
         events.append(_event(record, pid, "arrival"))
 
-    for record in records:
+    for record in records():
         name, body = record["name"], record["body"]
         if name in {"sched_wakeup", "sched_wakeup_new"} and (match := WAKEUP.match(body)):
             pid, priority = int(match["pid"]), int(match["priority"])
@@ -187,6 +195,14 @@ def import_trace_files(
     trace_id: str,
 ) -> dict[str, Any]:
     metadata = json.loads(Path(metadata_path).read_text(encoding="utf-8"))
-    trace = import_trace_report(Path(report_path).read_text(encoding="utf-8").splitlines(), metadata, trace_id)
+    report_path = Path(report_path)
+
+    def records() -> Iterable[dict[str, Any]]:
+        with report_path.open(encoding="utf-8") as report:
+            for line in report:
+                if (record := _record(line)) is not None:
+                    yield record
+
+    trace = _import_trace_records(records, metadata, trace_id)
     write_traces([trace], output_path)
     return trace

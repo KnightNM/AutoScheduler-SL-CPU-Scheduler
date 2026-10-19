@@ -6,9 +6,9 @@ from tempfile import TemporaryDirectory
 from autoscheduler.real_features import FEATURE_NAMES
 
 
-def _rows():
+def _rows(trace_count=6):
     rows = []
-    for trace in range(6):
+    for trace in range(trace_count):
         for decision in range(3):
             for action, cost in (("FCFS", 0.8), ("Round Robin", 0.2), ("Priority", 0.6), ("Priority RR", 0.5), ("MLFQ", 0.4)):
                 rows.append({
@@ -22,6 +22,22 @@ def _rows():
 
 
 class ModelBakeoffReportTests(unittest.TestCase):
+    def test_balanced_small_dataset_is_sufficient_for_prototype_comparison_only(self):
+        from autoscheduler.real_bakeoff import run_prototype_bakeoff
+        from autoscheduler.real_config import load_real_config
+
+        with TemporaryDirectory() as directory:
+            root = Path(directory)
+            report = run_prototype_bakeoff(_rows(18), load_real_config(), root)
+
+            self.assertEqual(
+                report["prototype_sufficiency"]["status"],
+                "SUFFICIENT_FOR_PROTOTYPE_COMPARISON",
+            )
+            self.assertEqual(report["gates"]["status"], "INSUFFICIENT_DATA")
+            markdown = (root / "prototype_comparison_report.md").read_text(encoding="utf-8")
+            self.assertIn("SUFFICIENT FOR PROTOTYPE COMPARISON", markdown)
+
     def test_report_selects_an_action_per_snapshot_and_writes_json_csv(self):
         from autoscheduler.real_bakeoff import run_prototype_bakeoff
         from autoscheduler.real_config import load_real_config

@@ -1,0 +1,117 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1080" viewBox="0 0 1600 1080" role="img" aria-labelledby="title desc">
+  <title id="title">AutoScheduler system architecture</title>
+  <desc id="desc">IEEE-style layered architecture showing the simulator, synthetic research path, real Linux trace path, model validation, and research artifacts.</desc>
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto"><path d="M0,0 L10,4 L0,8 Z" fill="#365f91"/></marker>
+    <marker id="dashArrow" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto"><path d="M0,0 L10,4 L0,8 Z" fill="#8a5a00"/></marker>
+    <style>
+      .title{font:700 28px Arial,sans-serif;fill:#1f2937}.subtitle{font:16px Arial,sans-serif;fill:#4b5563}
+      .layer{fill:#f8fafc;stroke:#9ca3af;stroke-width:1.5}.layer-title{font:700 17px Arial,sans-serif;fill:#1f2937}
+      .box{fill:#fff;stroke:#365f91;stroke-width:1.5}.box-real{fill:#f0fdf4;stroke:#15803d;stroke-width:1.5}.box-ml{fill:#fff7ed;stroke:#b45309;stroke-width:1.5}.box-output{fill:#eff6ff;stroke:#2563eb;stroke-width:1.5}.box-oracle{fill:#fef2f2;stroke:#b91c1c;stroke-width:1.5}
+      .num{font:700 15px Arial,sans-serif;fill:#fff}.node-title{font:700 15px Arial,sans-serif;fill:#111827}.node-text{font:12px Arial,sans-serif;fill:#374151}.small{font:11px Arial,sans-serif;fill:#4b5563}.edge{fill:none;stroke:#365f91;stroke-width:2;marker-end:url(#arrow)}.edge-dash{fill:none;stroke:#8a5a00;stroke-width:2;stroke-dasharray:7 5;marker-end:url(#dashArrow)}.edge-label{font:11px Arial,sans-serif;fill:#365f91}.legend{font:12px Arial,sans-serif;fill:#374151}
+    </style>
+  </defs>
+
+  <rect width="1600" height="1080" fill="#ffffff"/>
+  <text x="800" y="42" text-anchor="middle" class="title">AutoScheduler: Layered System Architecture</text>
+  <text x="800" y="68" text-anchor="middle" class="subtitle">Single-CPU event simulation, historical synthetic experiments, and real Linux trace ML validation</text>
+
+  <!-- Control layer -->
+  <rect x="40" y="95" width="1520" height="105" rx="8" class="layer"/>
+  <text x="62" y="121" class="layer-title">A. Control and Presentation Layer</text>
+  <rect x="110" y="138" width="250" height="45" rx="5" class="box"/>
+  <circle cx="132" cy="160" r="13" fill="#365f91"/><text x="132" y="165" text-anchor="middle" class="num">1</text>
+  <text x="154" y="157" class="node-title">main.py and autoscheduler.cli</text><text x="154" y="174" class="node-text">CLI command routing and parameter validation</text>
+  <rect x="490" y="138" width="250" height="45" rx="5" class="box"/>
+  <circle cx="512" cy="160" r="13" fill="#365f91"/><text x="512" y="165" text-anchor="middle" class="num">2</text>
+  <text x="534" y="157" class="node-title">Demo and reporting interface</text><text x="534" y="174" class="node-text">Terminal views; reads saved results</text>
+  <rect x="870" y="138" width="250" height="45" rx="5" class="box-output"/>
+  <circle cx="892" cy="160" r="13" fill="#2563eb"/><text x="892" y="165" text-anchor="middle" class="num">3</text>
+  <text x="914" y="157" class="node-title">Saved-result viewer</text><text x="914" y="174" class="node-text">Demo reads CSV, JSON, plots, reports, timelines</text>
+  <rect x="1250" y="138" width="250" height="45" rx="5" class="box-oracle"/>
+  <circle cx="1272" cy="160" r="13" fill="#b91c1c"/><text x="1272" y="165" text-anchor="middle" class="num">4</text>
+  <text x="1294" y="157" class="node-title">Research guardrails</text><text x="1294" y="174" class="node-text">Frozen config; leakage and latency gates</text>
+
+  <!-- Input layer -->
+  <rect x="40" y="225" width="430" height="625" rx="8" class="layer"/>
+  <text x="62" y="251" class="layer-title">B. Workload and Trace Inputs</text>
+  <rect x="75" y="278" width="360" height="75" rx="5" class="box"/>
+  <circle cx="98" cy="302" r="13" fill="#365f91"/><text x="98" y="307" text-anchor="middle" class="num">5</text>
+  <text x="120" y="300" class="node-title">Synthetic workload generator</text><text x="120" y="319" class="node-text">workloads.py creates seeded interactive, batch,</text><text x="120" y="335" class="node-text">CPU, I/O, and mixed process workloads</text>
+  <rect x="75" y="383" width="360" height="95" rx="5" class="box-real"/>
+  <circle cx="98" cy="407" r="13" fill="#15803d"/><text x="98" y="412" text-anchor="middle" class="num">6</text>
+  <text x="120" y="405" class="node-title">Linux collection tools</text><text x="120" y="424" class="node-text">capture_linux_trace/full/pilot; Firefox and</text><text x="120" y="440" class="node-text">wakeup probes; trace-cmd scheduler events</text><text x="120" y="456" class="small">Raw data stays on VM until anonymized</text>
+  <rect x="75" y="508" width="360" height="125" rx="5" class="box-real"/>
+  <circle cx="98" cy="532" r="13" fill="#15803d"/><text x="98" y="537" text-anchor="middle" class="num">7</text>
+  <text x="120" y="530" class="node-title">Trace import, validation, and cleaning</text><text x="120" y="549" class="node-text">linux_trace.py → real_traces.py → real_clean.py</text><text x="120" y="565" class="node-text">Canonical JSONL; monotonic events; anonymized IDs;</text><text x="120" y="581" class="node-text">rejects incomplete or malformed captures</text><text x="120" y="603" class="small">Real data path; not a kernel controller</text>
+  <rect x="75" y="663" width="360" height="135" rx="5" class="box-real"/>
+  <circle cx="98" cy="687" r="13" fill="#15803d"/><text x="98" y="692" text-anchor="middle" class="num">8</text>
+  <text x="120" y="685" class="node-title">Observed-state data preparation</text><text x="120" y="704" class="node-text">real_features.py uses only past events;</text><text x="120" y="720" class="node-text">real_split.py separates whole application/scenario/</text><text x="120" y="736" class="node-text">session groups; real_replay.py creates offline labels</text><text x="120" y="758" class="small">No future arrivals, true remaining burst, or oracle ID</text>
+
+  <!-- Core simulation -->
+  <rect x="500" y="225" width="550" height="625" rx="8" class="layer"/>
+  <text x="522" y="251" class="layer-title">C. Shared Scheduling Simulation Kernel</text>
+  <rect x="535" y="278" width="480" height="83" rx="5" class="box"/>
+  <circle cx="558" cy="302" r="13" fill="#365f91"/><text x="558" y="307" text-anchor="middle" class="num">9</text>
+  <text x="580" y="300" class="node-title">Process model — simulator.process.Process</text><text x="580" y="319" class="node-text">Arrival, priority, alternating CPU/I/O bursts, state reset,</text><text x="580" y="335" class="node-text">remaining current burst, response tracking</text>
+  <rect x="535" y="391" width="480" height="120" rx="5" class="box"/>
+  <circle cx="558" cy="415" r="13" fill="#365f91"/><text x="558" y="420" text-anchor="middle" class="num">10</text>
+  <text x="580" y="413" class="node-title">Policy adapters — scheduler/</text><text x="580" y="432" class="node-text">FCFS · non-preemptive SJF · preemptive SRTF · RR ·</text><text x="580" y="448" class="node-text">Priority · Priority-RR with aging · MLFQ (2,4,8)</text><text x="580" y="470" class="small">Each policy chooses the next ready process; it does not own time/events</text>
+  <rect x="535" y="541" width="480" height="125" rx="5" class="box"/>
+  <circle cx="558" cy="565" r="13" fill="#365f91"/><text x="558" y="570" text-anchor="middle" class="num">11</text>
+  <text x="580" y="563" class="node-title">Event-driven engine — simulator.engine.simulate</text><text x="580" y="582" class="node-text">One CPU clock; ready, running, blocked, completed states;</text><text x="580" y="598" class="node-text">arrival/I/O release; preemption; quanta; aging; switches;</text><text x="580" y="614" class="node-text">deterministic ties and Gantt timeline</text><text x="580" y="636" class="small">The reusable core used by every simulator policy</text>
+  <rect x="535" y="696" width="480" height="105" rx="5" class="box-output"/>
+  <circle cx="558" cy="720" r="13" fill="#2563eb"/><text x="558" y="725" text-anchor="middle" class="num">12</text>
+  <text x="580" y="718" class="node-title">Result and metric layer — simulator.simulator</text><text x="580" y="737" class="node-text">Per-process waiting, response, turnaround, post-I/O delay;</text><text x="580" y="753" class="node-text">utilization, throughput, makespan, idle time, switches</text><text x="580" y="775" class="small">gantt.py renders the schedule timeline</text>
+
+  <!-- Research & ML -->
+  <rect x="1080" y="225" width="480" height="625" rx="8" class="layer"/>
+  <text x="1102" y="251" class="layer-title">D. Research, Evaluation, and ML Layers</text>
+  <rect x="1115" y="278" width="410" height="108" rx="5" class="box-ml"/>
+  <circle cx="1138" cy="302" r="13" fill="#b45309"/><text x="1138" y="307" text-anchor="middle" class="num">13</text>
+  <text x="1160" y="300" class="node-title">Historical synthetic experiment path</text><text x="1160" y="319" class="node-text">features.py → dataset.py → model.py → adaptive.py</text><text x="1160" y="335" class="node-text">Oracle-labels static outcomes; trains one-time</text><text x="1160" y="351" class="node-text">selector; evaluation.py scores comparisons</text><text x="1160" y="370" class="small">Development evidence only; not final model proof</text>
+  <rect x="1115" y="416" width="410" height="108" rx="5" class="box-ml"/>
+  <circle cx="1138" cy="440" r="13" fill="#b45309"/><text x="1138" y="445" text-anchor="middle" class="num">14</text>
+  <text x="1160" y="438" class="node-title">Hybrid and dynamic research branches</text><text x="1160" y="457" class="node-text">benefit.py: conservative RR/SRTF selection;</text><text x="1160" y="473" class="node-text">dynamic.py: epoch router; priority_rr.py and</text><text x="1160" y="489" class="node-text">mlfq_experiment.py: static-hybrid baselines</text><text x="1160" y="508" class="small">Separate experiments; not silently promoted to production</text>
+  <rect x="1115" y="554" width="410" height="130" rx="5" class="box-real"/>
+  <circle cx="1138" cy="578" r="13" fill="#15803d"/><text x="1138" y="583" text-anchor="middle" class="num">15</text>
+  <text x="1160" y="576" class="node-title">Real-trace model bake-off and locked gates</text><text x="1160" y="595" class="node-text">real_dataset.py makes action-cost rows; model_bakeoff.py</text><text x="1160" y="611" class="node-text">compares Dummy, Ridge, Tree, Forest, HGB; real_bakeoff.py</text><text x="1160" y="627" class="node-text">requires score, confidence, fairness, and &lt;10 ms P99 gates</text><text x="1160" y="649" class="small">Only passing locked real evidence can justify sched_ext research</text>
+  <rect x="1115" y="714" width="410" height="87" rx="5" class="box-output"/>
+  <circle cx="1138" cy="738" r="13" fill="#2563eb"/><text x="1138" y="743" text-anchor="middle" class="num">16</text>
+  <text x="1160" y="736" class="node-title">Diagnostics and decision evidence</text><text x="1160" y="755" class="node-text">fairness.py · latency.py · experiments.py</text><text x="1160" y="771" class="node-text">reports score, regret, fairness, latency, CI, gates</text>
+
+  <!-- Evidence layer -->
+  <rect x="40" y="880" width="1520" height="135" rx="8" class="layer"/>
+  <text x="62" y="906" class="layer-title">E. Reproducibility and Decision Boundary</text>
+  <rect x="110" y="932" width="370" height="50" rx="5" class="box-output"/>
+  <text x="130" y="953" class="node-title">Saved artifacts</text><text x="130" y="971" class="node-text">results/, manifests, model metadata, reports, plots</text>
+  <rect x="615" y="932" width="370" height="50" rx="5" class="box-real"/>
+  <text x="635" y="953" class="node-title">Scientific boundary</text><text x="635" y="971" class="node-text">Synthetic = testing/prototype; real traces = final evidence</text>
+  <rect x="1120" y="932" width="370" height="50" rx="5" class="box-oracle"/>
+  <text x="1140" y="953" class="node-title">Deployment boundary</text><text x="1140" y="971" class="node-text">No sched_ext pilot until all locked real-data gates pass</text>
+
+  <!-- Flow arrows: every arrow starts and ends on a component boundary. -->
+  <path d="M360 160 H490" class="edge"/><text x="392" y="151" class="edge-label">opens</text>
+  <path d="M870 160 H740" class="edge"/><text x="775" y="151" class="edge-label">reads</text>
+  <path d="M435 316 H535" class="edge"/><text x="455" y="306" class="edge-label">process definitions</text>
+  <path d="M255 478 V508" class="edge"/><text x="265" y="497" class="edge-label">raw scheduler events</text>
+  <path d="M255 633 V663" class="edge"/><text x="265" y="652" class="edge-label">sanitized canonical traces</text>
+  <path d="M255 798 V830 H1065 V619 H1115" class="edge"/><text x="620" y="821" class="edge-label">observed-only features and replay action-cost rows</text>
+  <path d="M775 361 V391" class="edge"/><text x="786" y="382" class="edge-label">state</text>
+  <path d="M775 511 V541" class="edge"/><text x="786" y="532" class="edge-label">next-process rule</text>
+  <path d="M775 666 V696" class="edge"/><text x="786" y="687" class="edge-label">timeline</text>
+  <path d="M1015 710 H1065 V332 H1115" class="edge-dash"/><text x="1034" y="321" class="edge-label">synthetic outcomes</text>
+  <path d="M1015 760 H1115" class="edge"/><text x="1032" y="751" class="edge-label">metrics/timeline</text>
+  <path d="M1320 386 V405 H1065 V757 H1115" class="edge-dash"/>
+  <path d="M1525 470 H1540 V757 H1525" class="edge-dash"/>
+  <path d="M1320 684 V714" class="edge"/><text x="1330" y="703" class="edge-label">locked-test measures</text>
+  <path d="M1375 183 V245 H1545 V619 H1525" class="edge-dash"/><text x="1433" y="236" class="edge-label">constrains</text>
+  <path d="M1320 801 V875 H295 V932" class="edge"/>
+  <path d="M1320 801 V895 H800 V932" class="edge"/>
+  <path d="M1320 801 V932" class="edge"/>
+
+  <!-- Legend -->
+  <line x1="65" y1="1045" x2="135" y2="1045" class="edge"/><text x="150" y="1049" class="legend">solid: runtime/data flow</text>
+  <line x1="360" y1="1045" x2="430" y2="1045" class="edge-dash"/><text x="445" y="1049" class="legend">dashed: experimental/reporting flow</text>
+  <text x="870" y="1049" class="legend">Blue: simulator · Green: real-trace path · Amber: experimental ML · Red: guardrail/oracle-only</text>
+</svg>
