@@ -1,0 +1,434 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AutoScheduler IEEE System Architecture</title>
+  <style>
+    :root {
+      --paper: #f8f8f6;
+      --ink: #121212;
+      --muted: #555550;
+      --line: #202020;
+      --panel: #eeeeea;
+      --box: #fdfdfb;
+      --soft: #d7d7d1;
+      --focus: #44443f;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      color: var(--ink);
+      background: #e8e8e3;
+      font-family: Aptos, "IBM Plex Sans", "Inter Tight", sans-serif;
+      line-height: 1.5;
+    }
+
+    .page {
+      width: min(100%, 1660px);
+      margin: 0 auto;
+      padding: 20px 30px 56px;
+    }
+
+    .toolbar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      margin-bottom: 14px;
+    }
+
+    .toolbar p {
+      margin: 0;
+      color: var(--muted);
+      font-size: 14px;
+      letter-spacing: 0.01em;
+    }
+
+    .actions { display: flex; gap: 8px; }
+
+    button {
+      min-height: 44px;
+      padding: 9px 14px;
+      border: 1.4px solid var(--ink);
+      border-radius: 2px;
+      color: var(--ink);
+      background: var(--paper);
+      font: 650 14px/1 Aptos, "IBM Plex Sans", "Inter Tight", sans-serif;
+      cursor: pointer;
+    }
+
+    button:hover { background: var(--ink); color: var(--paper); }
+    button:focus-visible { outline: 3px solid var(--focus); outline-offset: 3px; }
+
+    .slide {
+      width: 100%;
+      aspect-ratio: 16 / 9;
+      overflow: hidden;
+      border: 1px solid #a4a49e;
+      background: var(--paper);
+      box-shadow: 0 20px 48px rgba(45, 45, 40, 0.14);
+    }
+
+    svg { display: block; width: 100%; height: 100%; }
+
+    .notes {
+      max-width: 1180px;
+      margin: 34px auto 0;
+      padding: 0 8px;
+    }
+
+    .notes h2 {
+      margin: 0 0 10px;
+      font-size: 24px;
+      letter-spacing: -0.02em;
+    }
+
+    .notes-intro {
+      max-width: 65ch;
+      margin: 0 0 22px;
+      color: var(--muted);
+    }
+
+    .note-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      border-top: 1px solid var(--line);
+    }
+
+    .note {
+      display: grid;
+      grid-template-columns: 34px 1fr;
+      gap: 10px;
+      padding: 16px 18px 16px 0;
+      border-bottom: 1px solid var(--soft);
+    }
+
+    .note:nth-child(odd) { border-right: 1px solid var(--soft); }
+    .note:nth-child(even) { padding-left: 18px; }
+
+    .note-number {
+      font: 700 13px/28px "IBM Plex Mono", "JetBrains Mono", monospace;
+      text-align: center;
+      border: 1px solid var(--ink);
+      width: 28px;
+      height: 28px;
+    }
+
+    .note h3 { margin: 1px 0 3px; font-size: 16px; }
+    .note p { margin: 0; color: var(--muted); font-size: 14px; max-width: 65ch; }
+
+    @media (max-width: 760px) {
+      .page { padding: 14px 12px 40px; }
+      .toolbar { align-items: flex-start; flex-direction: column; }
+      .note-grid { grid-template-columns: 1fr; }
+      .note:nth-child(odd) { border-right: 0; }
+      .note:nth-child(even) { padding-left: 0; }
+    }
+
+    @media print {
+      @page { size: 16in 9in; margin: 0; }
+      body, .page { width: 16in; height: 9in; margin: 0; padding: 0; background: var(--paper); }
+      .toolbar, .notes { display: none; }
+      .slide { width: 16in; height: 9in; border: 0; box-shadow: none; }
+    }
+  </style>
+</head>
+<body>
+  <main class="page">
+    <header class="toolbar">
+      <p>16:9 IEEE-style figure · print at 16 × 9 in or export the SVG for PowerPoint</p>
+      <div class="actions">
+        <button id="download" type="button">Download SVG</button>
+        <button type="button" onclick="window.print()">Print / Save PDF</button>
+      </div>
+    </header>
+
+    <figure class="slide" aria-labelledby="diagram-title diagram-caption">
+      <svg id="architecture" viewBox="0 0 1600 900" role="img" xmlns="http://www.w3.org/2000/svg">
+        <title id="diagram-title">AutoScheduler complete system architecture</title>
+        <desc id="diagram-caption">Five-stage architecture showing workload inputs, leakage-safe data preparation, model selection, guarded Dynamic V3 routing, shared scheduling simulation, and research outputs.</desc>
+
+        <defs>
+          <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto" markerUnits="strokeWidth">
+            <path d="M0,0 L9,5 L0,10 Z" fill="#202020"/>
+          </marker>
+          <style>
+            .title { font: 700 28px Aptos, 'IBM Plex Sans', sans-serif; fill: #121212; letter-spacing: -.35px; }
+            .subtitle { font: 400 13px Aptos, 'IBM Plex Sans', sans-serif; fill: #555550; letter-spacing: .16px; }
+            .stage { fill: #eeeeea; stroke: #202020; stroke-width: 1.3; }
+            .stage-head { fill: #1a1a1a; }
+            .stage-name { font: 700 15px Aptos, 'IBM Plex Sans', sans-serif; fill: #f8f8f6; letter-spacing: .75px; }
+            .module { fill: #fdfdfb; stroke: #202020; stroke-width: 1.2; }
+            .module-ref { fill: #fdfdfb; stroke: #202020; stroke-width: 1.2; stroke-dasharray: 6 4; }
+            .module-title { font: 700 14px Aptos, 'IBM Plex Sans', sans-serif; fill: #121212; }
+            .module-copy { font: 400 11.5px Aptos, 'IBM Plex Sans', sans-serif; fill: #444440; }
+            .module-mono { font: 600 10.5px 'IBM Plex Mono', 'JetBrains Mono', monospace; fill: #333330; }
+            .connector { fill: none; stroke: #202020; stroke-width: 1.7; marker-end: url(#arrow); }
+            .connector-dashed { fill: none; stroke: #202020; stroke-width: 1.5; stroke-dasharray: 7 5; marker-end: url(#arrow); }
+            .flow-label { font: 650 10px Aptos, 'IBM Plex Sans', sans-serif; fill: #333330; }
+            .footer-title { font: 700 12px Aptos, 'IBM Plex Sans', sans-serif; fill: #121212; }
+            .footer-copy { font: 400 10.5px Aptos, 'IBM Plex Sans', sans-serif; fill: #444440; }
+            .footer-number { font: 700 12px 'IBM Plex Mono', 'JetBrains Mono', monospace; fill: #f8f8f6; }
+          </style>
+        </defs>
+
+        <rect x="0" y="0" width="1600" height="900" fill="#f8f8f6"/>
+        <text x="34" y="38" class="title">AutoScheduler — Workload-Adaptive CPU Scheduling Architecture</text>
+        <text x="34" y="62" class="subtitle">Offline evidence and model selection feed a guarded runtime router; all scheduler policies execute through one event-driven engine.</text>
+        <text x="1566" y="38" text-anchor="end" class="module-mono">FIG. 1 · SINGLE CPU · DYNAMIC V3</text>
+
+        <!-- Stage containers -->
+        <g aria-label="Stage one inputs">
+          <rect x="32" y="90" width="280" height="620" class="stage"/>
+          <rect x="32" y="90" width="280" height="38" class="stage-head"/>
+          <text x="46" y="115" class="stage-name">1 · INPUTS &amp; ORCHESTRATION</text>
+
+          <rect x="49" y="150" width="246" height="66" class="module"/>
+          <text x="61" y="174" class="module-title">CLI / Experiment Orchestrator</text>
+          <text x="61" y="193" class="module-copy">Starts train, bake-off, evaluate, demo;</text>
+          <text x="61" y="208" class="module-copy">freezes seeds, paths, and run configuration.</text>
+
+          <rect x="49" y="252" width="246" height="86" class="module"/>
+          <text x="61" y="276" class="module-title">Seeded Workload Generator</text>
+          <text x="61" y="295" class="module-copy">Synthetic arrivals, priorities, CPU/I/O bursts,</text>
+          <text x="61" y="310" class="module-copy">profiles, and changing workload phases.</text>
+          <text x="61" y="328" class="module-mono">tests · stress · development only</text>
+
+          <rect x="49" y="374" width="246" height="96" class="module"/>
+          <text x="61" y="398" class="module-title">Linux Trace Acquisition</text>
+          <text x="61" y="417" class="module-copy">trace-cmd records wakeups, switches, blocks,</text>
+          <text x="61" y="432" class="module-copy">exits, priorities, and CPU activity.</text>
+          <text x="61" y="452" class="module-mono">capture → import → canonical JSONL</text>
+
+          <rect x="49" y="522" width="246" height="88" class="module-ref"/>
+          <text x="61" y="546" class="module-title">Research Contract</text>
+          <text x="61" y="565" class="module-copy">Fixes policies, weights, and feature rules.</text>
+          <text x="61" y="580" class="module-copy">Freezes seeds, latency gate, evidence scope.</text>
+          <text x="61" y="599" class="module-mono">configs/real_desktop_ml.json</text>
+        </g>
+
+        <g aria-label="Stage two data preparation">
+          <rect x="334" y="90" width="292" height="620" class="stage"/>
+          <rect x="334" y="90" width="292" height="38" class="stage-head"/>
+          <text x="348" y="115" class="stage-name">2 · DATA PREPARATION</text>
+
+          <rect x="351" y="252" width="258" height="86" class="module"/>
+          <text x="363" y="276" class="module-title">Process Model &amp; Offline Replay</text>
+          <text x="363" y="295" class="module-copy">Represents each job with arrival, priority, and</text>
+          <text x="363" y="310" class="module-copy">alternating CPU/I/O bursts on one CPU.</text>
+          <text x="363" y="328" class="module-mono">Process · replay workload · completion</text>
+
+          <rect x="351" y="374" width="258" height="96" class="module"/>
+          <text x="363" y="398" class="module-title">Clean &amp; Validate Real Traces</text>
+          <text x="363" y="417" class="module-copy">Rejects incomplete captures; removes paths,</text>
+          <text x="363" y="432" class="module-copy">commands, usernames, and machine identifiers.</text>
+          <text x="363" y="452" class="module-mono">real-trace-clean · real-trace-validate</text>
+
+          <rect x="351" y="502" width="258" height="96" class="module"/>
+          <text x="363" y="526" class="module-title">Observed-Only Feature Extraction</text>
+          <text x="363" y="545" class="module-copy">Queue, wait, service, I/O, priority, arrival,</text>
+          <text x="363" y="560" class="module-copy">and context-switch history before decision time.</text>
+          <text x="363" y="580" class="module-mono">observed-only · no hidden future data</text>
+
+          <rect x="351" y="622" width="258" height="66" class="module"/>
+          <text x="363" y="646" class="module-title">Group-Safe Train / Val / Test Split</text>
+          <text x="363" y="665" class="module-copy">Keeps an entire trace/application in one split.</text>
+          <text x="363" y="680" class="module-mono">prevents related-row leakage</text>
+        </g>
+
+        <g aria-label="Stage three machine learning">
+          <rect x="648" y="90" width="300" height="620" class="stage"/>
+          <rect x="648" y="90" width="300" height="38" class="stage-head"/>
+          <text x="662" y="115" class="stage-name">3 · LABELS &amp; MODEL SELECTION</text>
+
+          <rect x="665" y="196" width="266" height="98" class="module"/>
+          <text x="677" y="220" class="module-title">Counterfactual Action-Cost Labels</text>
+          <text x="677" y="239" class="module-copy">Replays each legal scheduler from the same</text>
+          <text x="677" y="254" class="module-copy">observed state on fixed normalization bounds.</text>
+          <text x="677" y="273" class="module-mono">target = estimated cost for each action</text>
+          <text x="677" y="287" class="module-mono">offline estimate, not kernel proof</text>
+
+          <rect x="665" y="330" width="266" height="116" class="module"/>
+          <text x="677" y="354" class="module-title">Equal-Budget Model Bake-Off</text>
+          <text x="677" y="373" class="module-copy">Same rows and split for every candidate:</text>
+          <text x="677" y="391" class="module-mono">Dummy · Ridge · Decision Tree</text>
+          <text x="677" y="408" class="module-mono">Random Forest · Hist. Gradient Boosting</text>
+          <text x="677" y="431" class="module-copy">Winner uses validation scheduling cost.</text>
+
+          <rect x="665" y="478" width="266" height="82" class="module"/>
+          <text x="677" y="502" class="module-title">Dynamic V3 Tree Formulation Check</text>
+          <text x="677" y="521" class="module-copy">Compares direct policy classification against</text>
+          <text x="677" y="536" class="module-copy">multi-output policy-cost prediction.</text>
+          <text x="677" y="552" class="module-mono">accuracy · regret · realized cost</text>
+
+          <rect x="665" y="590" width="266" height="78" class="module"/>
+          <text x="677" y="614" class="module-title">Frozen Model Bundle</text>
+          <text x="677" y="633" class="module-copy">Chosen estimator, feature order, policy set,</text>
+          <text x="677" y="648" class="module-copy">router thresholds, and versioned metadata.</text>
+          <text x="677" y="662" class="module-mono">joblib + JSON evidence</text>
+        </g>
+
+        <g aria-label="Stage four runtime controller">
+          <rect x="970" y="90" width="290" height="620" class="stage"/>
+          <rect x="970" y="90" width="290" height="38" class="stage-head"/>
+          <text x="984" y="115" class="stage-name">4 · GUARDED DYNAMIC ROUTING</text>
+
+          <rect x="987" y="156" width="256" height="76" class="module"/>
+          <text x="999" y="180" class="module-title">Unseen Changing Workload</text>
+          <text x="999" y="199" class="module-copy">Jobs and workload phases arrive while</text>
+          <text x="999" y="214" class="module-copy">the simulation is already running.</text>
+
+          <rect x="987" y="268" width="256" height="94" class="module"/>
+          <text x="999" y="292" class="module-title">Dynamic V3 Router</text>
+          <text x="999" y="311" class="module-copy">Every 10 ticks, extracts current observed state</text>
+          <text x="999" y="326" class="module-copy">and asks the frozen model for a policy.</text>
+          <text x="999" y="346" class="module-mono">features → model → proposed scheduler</text>
+
+          <rect x="987" y="398" width="256" height="112" class="module"/>
+          <text x="999" y="422" class="module-title">Safety &amp; Stability Controller</text>
+          <text x="999" y="441" class="module-copy">Accepts a switch only at a dispatch boundary:</text>
+          <text x="999" y="460" class="module-mono">confidence ≥ 0.80 · dwell ≥ 20 ticks</text>
+          <text x="999" y="477" class="module-mono">gain ≥ margin · eligible policy</text>
+          <text x="999" y="497" class="module-copy">Otherwise holds current policy or uses MLFQ.</text>
+
+          <rect x="987" y="546" width="256" height="124" class="module"/>
+          <text x="999" y="570" class="module-title">Scheduler Policy Bank</text>
+          <text x="999" y="589" class="module-copy">Deployable actions:</text>
+          <text x="999" y="606" class="module-mono">FCFS · RR · Priority · PRR · MLFQ</text>
+          <line x1="999" y1="619" x2="1231" y2="619" stroke="#b4b4ae" stroke-width="1"/>
+          <text x="999" y="638" class="module-copy">Oracle-only references:</text>
+          <text x="999" y="655" class="module-mono">SJF · SRTF · RR20-SRTF</text>
+        </g>
+
+        <g aria-label="Stage five execution and evidence">
+          <rect x="1282" y="90" width="286" height="620" class="stage"/>
+          <rect x="1282" y="90" width="286" height="38" class="stage-head"/>
+          <text x="1296" y="115" class="stage-name">5 · EXECUTION &amp; EVIDENCE</text>
+
+          <rect x="1299" y="194" width="252" height="122" class="module"/>
+          <text x="1311" y="218" class="module-title">Shared Event-Driven Simulator</text>
+          <text x="1311" y="237" class="module-copy">One clock and dispatch engine for every policy:</text>
+          <text x="1311" y="255" class="module-mono">arrivals · CPU · preempt · I/O return</text>
+          <text x="1311" y="272" class="module-mono">idle · switch cost · completion</text>
+          <text x="1311" y="298" class="module-copy">Policies choose; the engine performs execution.</text>
+
+          <rect x="1299" y="350" width="252" height="82" class="module"/>
+          <text x="1311" y="374" class="module-title">Process State Machine</text>
+          <text x="1311" y="394" class="module-mono">READY → RUNNING → BLOCKED → READY</text>
+          <text x="1311" y="412" class="module-mono">RUNNING → COMPLETED</text>
+          <text x="1311" y="426" class="module-copy">Each process completes exactly once.</text>
+
+          <rect x="1299" y="466" width="252" height="108" class="module"/>
+          <text x="1311" y="490" class="module-title">Metrics &amp; Evaluation</text>
+          <text x="1311" y="509" class="module-copy">Wait, response, turnaround, utilization,</text>
+          <text x="1311" y="524" class="module-copy">throughput, fairness, regret, and latency.</text>
+          <text x="1311" y="544" class="module-mono">paired tests · P50/P95/P99 · gates</text>
+          <text x="1311" y="561" class="module-mono">fixed weighted score normalization</text>
+
+          <rect x="1299" y="608" width="252" height="72" class="module"/>
+          <text x="1311" y="632" class="module-title">Research Artifacts</text>
+          <text x="1311" y="651" class="module-copy">Models, CSV/JSON, decision log, Gantt chart,</text>
+          <text x="1311" y="666" class="module-copy">plots, summaries, and presentation report.</text>
+        </g>
+
+        <!-- Internal and cross-stage connectors; every path remains in gutters -->
+        <path d="M172 216 V238 H172 V252" class="connector"/>
+        <path d="M229 216 V230 H306 V357 H172 V374" class="connector"/>
+        <path d="M295 295 H351" class="connector"/>
+        <path d="M295 422 H351" class="connector"/>
+        <path d="M480 338 V356 H618 V486 H462 V502" class="connector"/>
+        <path d="M480 470 V486 H498 V502" class="connector"/>
+        <path d="M480 598 V622" class="connector"/>
+        <path d="M609 295 H637 V245 H665" class="connector"/>
+        <path d="M609 655 H637 V388 H665" class="connector"/>
+        <path d="M798 294 V330" class="connector"/>
+        <path d="M798 446 V478" class="connector"/>
+        <path d="M798 560 V590" class="connector"/>
+        <path d="M931 629 H959 V315 H987" class="connector"/>
+        <path d="M1115 232 V268" class="connector"/>
+        <path d="M1115 362 V398" class="connector"/>
+        <path d="M1115 510 V546" class="connector"/>
+        <path d="M1243 608 H1271 V255 H1299" class="connector"/>
+        <path d="M1425 316 V350" class="connector"/>
+        <path d="M1425 432 V466" class="connector"/>
+        <path d="M1425 574 V608" class="connector"/>
+
+        <!-- Contract control is intentionally dashed and enters preparation + runtime without touching data paths -->
+        <path d="M295 566 H321 V140 H957 V454 H987" class="connector-dashed"/>
+        <text x="654" y="152" class="flow-label">FROZEN EXPERIMENT + SAFETY CONTRACT</text>
+
+        <!-- Footer flow summary -->
+        <line x1="32" y1="744" x2="1568" y2="744" stroke="#202020" stroke-width="1.2"/>
+
+        <g transform="translate(32 768)">
+          <rect x="0" y="0" width="24" height="24" fill="#1a1a1a"/>
+          <text x="12" y="17" text-anchor="middle" class="footer-number">1</text>
+          <text x="34" y="11" class="footer-title">Collect or generate work</text>
+          <text x="34" y="29" class="footer-copy">Create reproducible jobs or capture Linux events.</text>
+        </g>
+        <g transform="translate(340 768)">
+          <rect x="0" y="0" width="24" height="24" fill="#1a1a1a"/>
+          <text x="12" y="17" text-anchor="middle" class="footer-number">2</text>
+          <text x="34" y="11" class="footer-title">Build honest observations</text>
+          <text x="34" y="29" class="footer-copy">Use only information available before a decision.</text>
+        </g>
+        <g transform="translate(648 768)">
+          <rect x="0" y="0" width="24" height="24" fill="#1a1a1a"/>
+          <text x="12" y="17" text-anchor="middle" class="footer-number">3</text>
+          <text x="34" y="11" class="footer-title">Choose and freeze the model</text>
+          <text x="34" y="29" class="footer-copy">Compare candidates fairly, then lock one bundle.</text>
+        </g>
+        <g transform="translate(970 768)">
+          <rect x="0" y="0" width="24" height="24" fill="#1a1a1a"/>
+          <text x="12" y="17" text-anchor="middle" class="footer-number">4</text>
+          <text x="34" y="11" class="footer-title">Route with safety checks</text>
+          <text x="34" y="29" class="footer-copy">Model proposes; guard rules control switching.</text>
+        </g>
+        <g transform="translate(1282 768)">
+          <rect x="0" y="0" width="24" height="24" fill="#1a1a1a"/>
+          <text x="12" y="17" text-anchor="middle" class="footer-number">5</text>
+          <text x="34" y="11" class="footer-title">Execute and preserve evidence</text>
+          <text x="34" y="29" class="footer-copy">Run one engine; publish metrics and decisions.</text>
+        </g>
+
+        <line x1="32" y1="836" x2="1568" y2="836" stroke="#b4b4ae" stroke-width="1"/>
+        <text x="32" y="860" class="module-mono">SOLID ARROW = DATA / CONTROL FLOW</text>
+        <line x1="303" y1="856" x2="349" y2="856" stroke="#202020" stroke-width="1.5" stroke-dasharray="7 5"/>
+        <text x="360" y="860" class="module-mono">DASHED = CONFIGURATION / REFERENCE CONTROL</text>
+        <text x="1568" y="860" text-anchor="end" class="module-mono">LOWER SCORE IS BETTER · ROUTING P99 TARGET &lt; 10 ms</text>
+      </svg>
+    </figure>
+
+    <section class="notes" aria-labelledby="notes-title">
+      <h2 id="notes-title">How to explain the figure</h2>
+      <p class="notes-intro">Read it from left to right. The upper half creates trustworthy evidence and selects a model. The lower runtime path uses that frozen model to recommend a scheduler, while hard rules retain final control.</p>
+      <div class="note-grid">
+        <article class="note"><span class="note-number">1</span><div><h3>Inputs and orchestration</h3><p>Technical: the CLI fixes commands, seeds, paths, and configuration while workloads come from seeded generation or Linux traces. Analogy: this is the test organizer collecting exam questions and setting the rules.</p></div></article>
+        <article class="note"><span class="note-number">2</span><div><h3>Data preparation</h3><p>Technical: traces become replayable process histories and observed-only feature rows, then complete traces are split without leakage. Analogy: the system writes study notes using only facts known at that moment.</p></div></article>
+        <article class="note"><span class="note-number">3</span><div><h3>Model selection</h3><p>Technical: legal scheduling actions receive replay-based cost labels; five model families and two tree formulations are compared on common validation evidence. Analogy: several advisers answer the same practice tests, and the most useful one is sealed for the final demonstration.</p></div></article>
+        <article class="note"><span class="note-number">4</span><div><h3>Guarded runtime routing</h3><p>Technical: Dynamic V3 reviews observed state every 10 ticks, but confidence, dwell, margin, and safe-boundary checks decide whether a policy switch is allowed. Analogy: the adviser recommends a driver, but a safety officer decides whether changing drivers is safe.</p></div></article>
+        <article class="note"><span class="note-number">5</span><div><h3>Execution and evidence</h3><p>Technical: every policy shares one event engine and one metric implementation, producing comparable scores, fairness measures, latency, decisions, and a Gantt timeline. Analogy: every driver uses the same track and stopwatch, so the race is fair.</p></div></article>
+        <article class="note"><span class="note-number">R</span><div><h3>Research boundary</h3><p>The simulator and offline replay provide controlled evidence, not proof of real kernel speed. Final deployment claims require the separate real-trace and sched_ext validation path.</p></div></article>
+      </div>
+    </section>
+  </main>
+
+  <script>
+    document.getElementById("download").addEventListener("click", () => {
+      const svg = document.getElementById("architecture").cloneNode(true);
+      svg.setAttribute("width", "1600");
+      svg.setAttribute("height", "900");
+      const source = new XMLSerializer().serializeToString(svg);
+      const blob = new Blob([source], { type: "image/svg+xml;charset=utf-8" });
+      const link = document.createElement("a");
+      link.href = URL.createObjectURL(blob);
+      link.download = "autoscheduler-ieee-architecture.svg";
+      link.click();
+      URL.revokeObjectURL(link.href);
+    });
+  </script>
+</body>
+</html>

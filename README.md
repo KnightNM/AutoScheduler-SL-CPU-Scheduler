@@ -505,6 +505,38 @@ Reproduce it into fresh versioned paths with:
   --output results/dynamic_v3_reproduction --artifacts artifacts/dynamic_v3_reproduction
 ```
 
+### One-command Dynamic V3 demonstration
+
+The command below runs the complete presentation workflow: grouped training rows,
+the five-family policy-cost bake-off, classifier-tree versus policy-cost-tree
+selection, one unseen changing workload, safe 10-tick reviews with a 20-tick
+minimum dwell, and final CSV/JSON/Markdown/Gantt artifacts.
+
+```bash
+cd /Users/knightnm/Documents/AutoScheduler-SL-CPU-Scheduler
+source .venv/bin/activate
+
+python main.py dynamic-demo \
+  --output results/dynamic_v3_demo \
+  --artifacts artifacts/dynamic_v3_demo
+```
+
+Use fresh output paths for every run; the command refuses to overwrite old
+evidence. The default experiment uses 144 training traces, 60 validation traces,
+and unseen seed `9090`. For a quick presentation smoke test only:
+
+```bash
+python main.py dynamic-demo \
+  --train-traces 12 \
+  --validation-traces 6 \
+  --output results/dynamic_v3_demo_smoke \
+  --artifacts artifacts/dynamic_v3_demo_smoke
+```
+
+Read `REPORT.md`, `decision_log.csv`, `gantt.png`, and `summary.json` in the
+chosen output directory. This path is synthetic development evidence and does
+not replace the separate real-Linux-trace bake-off.
+
 It remains **SYNTHETIC_DEVELOPMENT_ONLY**. Final real-data selection still
 requires cleaned captures, the real grouped split, and the frozen real-desktop
 gates. The Azure pipeline and real replay label provenance are unchanged.

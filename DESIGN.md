@@ -55,3 +55,4 @@ Technical research console: restrained, evidence-first, and readable at 80 colum
 ## Last updated
 
 2026-09-22: added interactive AutoScheduler experiment demo.
+2026-10-20: added a print-first 16:9 IEEE architecture figure using off-white paper, black rules, orthogonal connectors, Aptos/IBM Plex typography, and no motion.

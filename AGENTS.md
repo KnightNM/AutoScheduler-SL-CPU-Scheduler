@@ -37,6 +37,7 @@ tools/run_firefox_probe.sh --dry-run 8
 .venv/bin/python main.py real-dataset <cleaned.jsonl> --output <pilot_action_costs.csv>
 .venv/bin/python main.py real-synthetic-capture --output <synthetic_raw.jsonl>
 .venv/bin/python main.py model-bakeoff <pilot_action_costs.csv> --output <prototype_bakeoff_dir>
+.venv/bin/python main.py dynamic-demo --output results/dynamic_v3_demo --artifacts artifacts/dynamic_v3_demo
 bash tools/capture_linux_full.sh --dry-run /tmp/full-collection 60 1
 ```
 

@@ -164,6 +164,16 @@ def _model_bakeoff(arguments) -> None:
     print(f"Results: {arguments.output}")
 
 
+def _dynamic_demo(arguments) -> None:
+    from autoscheduler.dynamic_demo import run
+
+    run(
+        Path(arguments.output), Path(arguments.artifacts), arguments.train_traces,
+        arguments.validation_traces, arguments.train_seed, arguments.validation_seed,
+        arguments.demo_seed, arguments.config,
+    )
+
+
 def _real_replay_build(arguments) -> None:
     from autoscheduler.real_replay import write_replay_manifest
     from autoscheduler.real_traces import read_traces
@@ -502,6 +512,17 @@ def build_parser() -> argparse.ArgumentParser:
     dynamic_evaluate.add_argument("--model", default=str(DEFAULT_DYNAMIC_MODEL))
     dynamic_evaluate.add_argument("--output", default="results/dynamic_v3")
     dynamic_evaluate.set_defaults(handler=_dynamic_evaluate)
+
+    dynamic_demo = commands.add_parser("dynamic-demo", help="train, select, and demonstrate Dynamic V3 end to end")
+    dynamic_demo.add_argument("--train-traces", type=int, default=144)
+    dynamic_demo.add_argument("--validation-traces", type=int, default=60)
+    dynamic_demo.add_argument("--train-seed", type=int, default=7301)
+    dynamic_demo.add_argument("--validation-seed", type=int, default=7302)
+    dynamic_demo.add_argument("--demo-seed", type=int, default=9090)
+    dynamic_demo.add_argument("--config", default="configs/real_desktop_ml.json")
+    dynamic_demo.add_argument("--output", default="results/dynamic_v3_demo")
+    dynamic_demo.add_argument("--artifacts", default="artifacts/dynamic_v3_demo")
+    dynamic_demo.set_defaults(handler=_dynamic_demo)
 
     benefit_train = commands.add_parser("benefit-train", help="train conservative RR-versus-SRTF benefit regressor")
     benefit_train.add_argument("--samples-per-profile", type=int, default=500)
