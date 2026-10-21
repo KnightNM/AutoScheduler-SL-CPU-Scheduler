@@ -1,0 +1,25 @@
+{
+  "classifier": {
+    "scheduling_metrics_identical": true,
+    "decision_p99_ms": 0.460366,
+    "max_transition_p99_ms": 2.3544030799999995,
+    "beats_frozen_static_baseline": false
+  },
+  "policy_cost": {
+    "scheduling_metrics_identical": true,
+    "decision_p99_ms": 0.45165720000000087,
+    "max_transition_p99_ms": 3.6765095,
+    "beats_frozen_static_baseline": false
+  },
+  "final_source_sha256": {
+    "autoscheduler/dynamic.py": "4fb0d5879890f44f8c7f31ce0013692e91f4f4e5155ebd93fc4571684e4df2d5",
+    "autoscheduler/model.py": "a55753f6facdecbac73b2c4bc1d7a218957052808c1b2d028a76011c01a97c8c",
+    "autoscheduler/dynamic_training.py": "b0da7ba96b5c24cc1e2a7519111c740afb8058cf879e1fee6da065e61b1c0d33",
+    "autoscheduler/evaluation.py": "96d26272501c110da3d20ecde9c22f86e567220756943e2643a7d18606957c5f",
+    "autoscheduler/workloads.py": "dcd37ee06a64fd43a75fd72dfee4c5a36b9b477d8bfed4f6bd3ed698f22d1736",
+    "simulator/engine.py": "fbc7466bd8ee5dca261c0233ee1e772693a00efcaebea81ddd4a6f65bd94226c",
+    "configs/real_desktop_ml.json": "b12ea718f41279c3758d4c6172560ac0af01776537ef93092091a19cf2446067",
+    "autoscheduler/dynamic_research.py": "58b4a8d7c809677a250f2460e994c258db8113491985df3a48de4f34d47eff9b"
+  },
+  "post_protocol_change": "Estimator width/output validation and reporting cost confidence as unavailable. Scheduling metrics reproduced after loader validation; confidence reporting covered by regression test."
+}

@@ -1,0 +1,3185 @@
+{
+  "rows": [
+    {
+      "workload_id": "azure-refined-d14-0223",
+      "source_group": "azure-refined-d13-0194",
+      "complete": false,
+      "partial_model_invocations": 4289,
+      "partial_raw_actions": {
+        "Priority": 4289
+      },
+      "feature_outside_training_range_counts": {
+        "priority_mean": 4289,
+        "recent_arrivals": 77,
+        "dwell_remaining_ticks": 1947,
+        "ready_count": 4288,
+        "first_service_ready_count": 270,
+        "first_service_wait_max": 269,
+        "ready_wait_max": 4274,
+        "ready_wait_p95": 4270,
+        "ready_wait_mean": 4267,
+        "ready_wait_p50": 4267,
+        "completed_burst_mean": 4013,
+        "arrival_quiet_ticks": 3973,
+        "observed_service_variance": 3285
+      },
+      "predicted_cost_examples": [
+        {
+          "features": {
+            "ready_count": 27.0,
+            "blocked_count": 0.0,
+            "completed_burst_mean": 0.0,
+            "completed_burst_variance": 0.0,
+            "observed_service_mean": 1,
+            "observed_service_variance": 0,
+            "priority_mean": 0,
+            "ready_wait_mean": 4,
+            "ready_wait_max": 9.0,
+            "recent_arrivals": 27.0,
+            "io_returns": 0.0,
+            "io_return_ratio": 0.0,
+            "active_policy_index": 4.0,
+            "dwell_remaining_ticks": 10.0,
+            "first_service_ready_count": 17.0,
+            "first_service_wait_max": 8.0,
+            "ready_wait_p50": 4.0,
+            "ready_wait_p95": 8.0,
+            "arrival_quiet_ticks": 0.0
+          },
+          "raw_action": "Priority",
+          "predicted_action_costs": {
+            "FCFS": -0.025779046837439347,
+            "Round Robin": -0.012537820299704443,
+            "Priority": -0.026641829750063375,
+            "Priority RR": -0.006605916722426975,
+            "MLFQ": 0.0,
+            "No Switch": 0.0
+          }
+        },
+        {
+          "features": {
+            "ready_count": 55.0,
+            "blocked_count": 0.0,
+            "completed_burst_mean": 0.0,
+            "completed_burst_variance": 0.0,
+            "observed_service_mean": 1,
+            "observed_service_variance": 0,
+            "priority_mean": 0,
+            "ready_wait_mean": 7.036363636363636,
+            "ready_wait_max": 19.0,
+            "recent_arrivals": 28.0,
+            "io_returns": 0.0,
+            "io_return_ratio": 0.0,
+            "active_policy_index": 4.0,
+            "dwell_remaining_ticks": 0.0,
+            "first_service_ready_count": 35.0,
+            "first_service_wait_max": 13.0,
+            "ready_wait_p50": 6.0,
+            "ready_wait_p95": 16.299999999999997,
+            "arrival_quiet_ticks": 0.0
+          },
+          "raw_action": "Priority",
+          "predicted_action_costs": {
+            "FCFS": -0.025779046837439347,
+            "Round Robin": -0.012537820299704443,
+            "Priority": -0.026641829750063375,
+            "Priority RR": -0.006605916722426975,
+            "MLFQ": 0.0,
+            "No Switch": 0.0
+          }
+        },
+        {
+          "features": {
+            "ready_count": 88.0,
+            "blocked_count": 0.0,
+            "completed_burst_mean": 0.0,
+            "completed_burst_variance": 0.0,
+            "observed_service_mean": 1,
+            "observed_service_variance": 0,
+            "priority_mean": 0,
+            "ready_wait_mean": 10.25,
+            "ready_wait_max": 29.0,
+            "recent_arrivals": 33.0,
+            "io_returns": 0.0,
+            "io_return_ratio": 0.0,
+            "active_policy_index": 4.0,
+            "dwell_remaining_ticks": 0.0,
+            "first_service_ready_count": 58.0,
+            "first_service_wait_max": 18.0,
+            "ready_wait_p50": 10.0,
+            "ready_wait_p95": 24.64999999999999,
+            "arrival_quiet_ticks": 0.0
+          },
+          "raw_action": "Priority",
+          "predicted_action_costs": {
+            "FCFS": -0.025779046837439347,
+            "Round Robin": -0.012537820299704443,
+            "Priority": -0.026641829750063375,
+            "Priority RR": -0.006605916722426975,
+            "MLFQ": 0.0,
+            "No Switch": 0.0
+          }
+        }
+      ]
+    },
+    {
+      "workload_id": "azure-refined-d07-0112",
+      "source_group": "azure-d03-0057",
+      "complete": false,
+      "partial_model_invocations": 12800,
+      "partial_raw_actions": {
+        "Priority": 12610,
+        "FCFS": 190
+      },
+      "feature_outside_training_range_counts": {
+        "priority_mean": 12800,
+        "completed_burst_mean": 12796,
+        "observed_service_mean": 12779,
+        "observed_service_variance": 12785,
+        "dwell_remaining_ticks": 2,
+        "completed_burst_variance": 1178,
+        "arrival_quiet_ticks": 2380
+      },
+      "predicted_cost_examples": [
+        {
+          "features": {
+            "ready_count": 1.0,
+            "blocked_count": 0.0,
+            "completed_burst_mean": 0.0,
+            "completed_burst_variance": 0.0,
+            "observed_service_mean": 0.0,
+            "observed_service_variance": 0.0,
+            "priority_mean": 0,
+            "ready_wait_mean": 0,
+            "ready_wait_max": 0.0,
+            "recent_arrivals": 1.0,
+            "io_returns": 0.0,
+            "io_return_ratio": 0.0,
+            "active_policy_index": 4.0,
+            "dwell_remaining_ticks": 0.0,
+            "first_service_ready_count": 1.0,
+            "first_service_wait_max": 0.0,
+            "ready_wait_p50": 0.0,
+            "ready_wait_p95": 0.0,
+            "arrival_quiet_ticks": 0.0
+          },
+          "raw_action": "Priority",
+          "predicted_action_costs": {
+            "FCFS": -0.034500258605412455,
+            "Round Robin": -0.006467365789219947,
+            "Priority": -0.03475547251787958,
+            "Priority RR": 0.0053451692470629095,
+            "MLFQ": 0.0,
+            "No Switch": 0.0
+          }
+        },
+        {
+          "features": {
+            "ready_count": 1.0,
+            "blocked_count": 0.0,
+            "completed_burst_mean": 0.0,
+            "completed_burst_variance": 0.0,
+            "observed_service_mean": 7,
+            "observed_service_variance": 0,
+            "priority_mean": 0,
+            "ready_wait_mean": 0,
+            "ready_wait_max": 0.0,
+            "recent_arrivals": 0.0,
+            "io_returns": 0.0,
+            "io_return_ratio": 0.0,
+            "active_policy_index": 4.0,
+            "dwell_remaining_ticks": 0.0,
+            "first_service_ready_count": 0.0,
+            "first_service_wait_max": 0.0,
+            "ready_wait_p50": 0.0,
+            "ready_wait_p95": 0.0,
+            "arrival_quiet_ticks": 7.0
+          },
+          "raw_action": "Priority",
+          "predicted_action_costs": {
+            "FCFS": -0.034500258605412455,
+            "Round Robin": -0.006467365789219947,
+            "Priority": -0.03475547251787958,
+            "Priority RR": 0.0053451692470629095,
+            "MLFQ": 0.0,
+            "No Switch": 0.0
+          }
+        },
+        {
+          "features": {
+            "ready_count": 1.0,
+            "blocked_count": 0.0,
+            "completed_burst_mean": 0.0,
+            "completed_burst_variance": 0.0,
+            "observed_service_mean": 19,
+            "observed_service_variance": 0,
+            "priority_mean": 0,
+            "ready_wait_mean": 0,
+            "ready_wait_max": 0.0,
+            "recent_arrivals": 0.0,
+            "io_returns": 0.0,
+            "io_return_ratio": 0.0,
+            "active_policy_index": 4.0,
+            "dwell_remaining_ticks": 0.0,
+            "first_service_ready_count": 0.0,
+            "first_service_wait_max": 0.0,
+            "ready_wait_p50": 0.0,
+            "ready_wait_p95": 0.0,
+            "arrival_quiet_ticks": 19.0
+          },
+          "raw_action": "Priority",
+          "predicted_action_costs": {
+            "FCFS": -0.034500258605412455,
+            "Round Robin": -0.006467365789219947,
+            "Priority": -0.03475547251787958,
+            "Priority RR": 0.0053451692470629095,
+            "MLFQ": 0.0,
+            "No Switch": 0.0
+          }
+        }
+      ]
+    },
+    {
+      "workload_id": "azure-d03-0059",
+      "source_group": "azure-d03-0045",
+      "complete": true,
+      "decisions": 7191,
+      "raw_actions": {
+        "Priority": 6985,
+        "FCFS": 206
+      },
+      "reasons": {
+        "first_service_protection": 71,
+        "arrival_risk": 140,
+        "accepted": 2,
+        "excursion_expired": 2,
+        "dwell_blocked": 2,
+        "cost_margin": 6974
+      },
+      "accepted_switches": 4,
+      "accepted_with_competition": 0,
+      "reviews_with_competition": 1530,
+      "feature_outside_training_range_counts": {
+        "priority_mean": 7191,
+        "completed_burst_mean": 7187,
+        "observed_service_mean": 7187,
+        "observed_service_variance": 7186,
+        "dwell_remaining_ticks": 4,
+        "completed_burst_variance": 7183,
+        "ready_wait_mean": 1,
+        "ready_wait_max": 1,
+        "first_service_wait_max": 1,
+        "ready_wait_p50": 1,
+        "ready_wait_p95": 1,
+        "arrival_quiet_ticks": 3490
+      },
+      "predicted_cost_examples": [
+        {
+          "features": {
+            "ready_count": 1.0,
+            "blocked_count": 0.0,
+            "completed_burst_mean": 0.0,
+            "completed_burst_variance": 0.0,
+            "observed_service_mean": 0.0,
+            "observed_service_variance": 0.0,
+            "priority_mean": 0,
+            "ready_wait_mean": 0,
+            "ready_wait_max": 0.0,
+            "recent_arrivals": 1.0,
+            "io_returns": 0.0,
+            "io_return_ratio": 0.0,
+            "active_policy_index": 4.0,
+            "dwell_remaining_ticks": 0.0,
+            "first_service_ready_count": 1.0,
+            "first_service_wait_max": 0.0,
+            "ready_wait_p50": 0.0,
+            "ready_wait_p95": 0.0,
+            "arrival_quiet_ticks": 0.0
+          },
+          "raw_action": "Priority",
+          "predicted_action_costs": {
+            "FCFS": -0.034500258605412455,
+            "Round Robin": -0.006467365789219947,
+            "Priority": -0.03475547251787958,
+            "Priority RR": 0.0053451692470629095,
+            "MLFQ": 0.0,
+            "No Switch": 0.0
+          }
+        },
+        {
+          "features": {
+            "ready_count": 1.0,
+            "blocked_count": 0.0,
+            "completed_burst_mean": 0.0,
+            "completed_burst_variance": 0.0,
+            "observed_service_mean": 11,
+            "observed_service_variance": 0,
+            "priority_mean": 0,
+            "ready_wait_mean": 0,
+            "ready_wait_max": 0.0,
+            "recent_arrivals": 0.0,
+            "io_returns": 0.0,
+            "io_return_ratio": 0.0,
+            "active_policy_index": 4.0,
+            "dwell_remaining_ticks": 0.0,
+            "first_service_ready_count": 0.0,
+            "first_service_wait_max": 0.0,
+            "ready_wait_p50": 0.0,
+            "ready_wait_p95": 0.0,
+            "arrival_quiet_ticks": 11.0
+          },
+          "raw_action": "Priority",
+          "predicted_action_costs": {
+            "FCFS": -0.034500258605412455,
+            "Round Robin": -0.006467365789219947,
+            "Priority": -0.03475547251787958,
+            "Priority RR": 0.0053451692470629095,
+            "MLFQ": 0.0,
+            "No Switch": 0.0
+          }
+        },
+        {
+          "features": {
+            "ready_count": 1.0,
+            "blocked_count": 0.0,
+            "completed_burst_mean": 0.0,
+            "completed_burst_variance": 0.0,
+            "observed_service_mean": 19,
+            "observed_service_variance": 0,
+            "priority_mean": 0,
+            "ready_wait_mean": 0,
+            "ready_wait_max": 0.0,
+            "recent_arrivals": 0.0,
+            "io_returns": 0.0,
+            "io_return_ratio": 0.0,
+            "active_policy_index": 4.0,
+            "dwell_remaining_ticks": 0.0,
+            "first_service_ready_count": 0.0,
+            "first_service_wait_max": 0.0,
+            "ready_wait_p50": 0.0,
+            "ready_wait_p95": 0.0,
+            "arrival_quiet_ticks": 19.0
+          },
+          "raw_action": "Priority",
+          "predicted_action_costs": {
+            "FCFS": -0.034500258605412455,
+            "Round Robin": -0.006467365789219947,
+            "Priority": -0.03475547251787958,
+            "Priority RR": 0.0053451692470629095,
+            "MLFQ": 0.0,
+            "No Switch": 0.0
+          }
+        }
+      ],
+      "accepted_events": [
+        {
+          "time": 10762,
+          "active": "Priority",
+          "reason": "accepted",
+          "ready_count": 1.0
+        },
+        {
+          "time": 65291,
+          "active": "MLFQ",
+          "reason": "excursion_expired",
+          "ready_count": 1.0
+        },
+        {
+          "time": 65322,
+          "active": "Priority",
+          "reason": "accepted",
+          "ready_count": 1.0
+        },
+        {
+          "time": 71666,
+          "active": "MLFQ",
+          "reason": "excursion_expired",
+          "ready_count": 1.0
+        }
+      ]
+    },
+    {
+      "workload_id": "azure-refined-d12-0185",
+      "source_group": "azure-refined-d12-0185",
+      "complete": true,
+      "decisions": 7775,
+      "raw_actions": {
+        "Priority": 7775
+      },
+      "reasons": {
+        "first_service_protection": 79,
+        "arrival_risk": 1827,
+        "accepted": 2000,
+        "excursion_expired": 1999,
+        "dwell_blocked": 1870
+      },
+      "accepted_switches": 3999,
+      "accepted_with_competition": 1062,
+      "reviews_with_competition": 2059,
+      "feature_outside_training_range_counts": {
+        "priority_mean": 7775,
+        "completed_burst_mean": 7771,
+        "observed_service_mean": 7771,
+        "ready_wait_mean": 1124,
+        "ready_wait_max": 1093,
+        "first_service_wait_max": 802,
+        "ready_wait_p50": 1098,
+        "ready_wait_p95": 1097,
+        "observed_service_variance": 4401,
+        "dwell_remaining_ticks": 3724,
+        "arrival_quiet_ticks": 47
+      },
+      "predicted_cost_examples": [
+        {
+          "features": {
+            "ready_count": 1.0,
+            "blocked_count": 0.0,
+            "completed_burst_mean": 0.0,
+            "completed_burst_variance": 0.0,
+            "observed_service_mean": 0.0,
+            "observed_service_variance": 0.0,
+            "priority_mean": 0,
+            "ready_wait_mean": 0,
+            "ready_wait_max": 0.0,
+            "recent_arrivals": 1.0,
+            "io_returns": 0.0,
+            "io_return_ratio": 0.0,
+            "active_policy_index": 4.0,
+            "dwell_remaining_ticks": 0.0,
+            "first_service_ready_count": 1.0,
+            "first_service_wait_max": 0.0,
+            "ready_wait_p50": 0.0,
+            "ready_wait_p95": 0.0,
+            "arrival_quiet_ticks": 0.0
+          },
+          "raw_action": "Priority",
+          "predicted_action_costs": {
+            "FCFS": -0.034500258605412455,
+            "Round Robin": -0.006467365789219947,
+            "Priority": -0.03475547251787958,
+            "Priority RR": 0.0053451692470629095,
+            "MLFQ": 0.0,
+            "No Switch": 0.0
+          }
+        },
+        {
+          "features": {
+            "ready_count": 1.0,
+            "blocked_count": 0.0,
+            "completed_burst_mean": 0.0,
+            "completed_burst_variance": 0.0,
+            "observed_service_mean": 3,
+            "observed_service_variance": 0,
+            "priority_mean": 0,
+            "ready_wait_mean": 0,
+            "ready_wait_max": 0.0,
+            "recent_arrivals": 0.0,
+            "io_returns": 0.0,
+            "io_return_ratio": 0.0,
+            "active_policy_index": 4.0,
+            "dwell_remaining_ticks": 0.0,
+            "first_service_ready_count": 0.0,
+            "first_service_wait_max": 0.0,
+            "ready_wait_p50": 0.0,
+            "ready_wait_p95": 0.0,
+            "arrival_quiet_ticks": 3.0
+          },
+          "raw_action": "Priority",
+          "predicted_action_costs": {
+            "FCFS": -0.034500258605412455,
+            "Round Robin": -0.006467365789219947,
+            "Priority": -0.03475547251787958,
+            "Priority RR": 0.0053451692470629095,
+            "MLFQ": 0.0,
+            "No Switch": 0.0
+          }
+        },
+        {
+          "features": {
+            "ready_count": 1.0,
+            "blocked_count": 0.0,
+            "completed_burst_mean": 0.0,
+            "completed_burst_variance": 0.0,
+            "observed_service_mean": 15,
+            "observed_service_variance": 0,
+            "priority_mean": 0,
+            "ready_wait_mean": 0,
+            "ready_wait_max": 0.0,
+            "recent_arrivals": 0.0,
+            "io_returns": 0.0,
+            "io_return_ratio": 0.0,
+            "active_policy_index": 4.0,
+            "dwell_remaining_ticks": 0.0,
+            "first_service_ready_count": 0.0,
+            "first_service_wait_max": 0.0,
+            "ready_wait_p50": 0.0,
+            "ready_wait_p95": 0.0,
+            "arrival_quiet_ticks": 15.0
+          },
+          "raw_action": "Priority",
+          "predicted_action_costs": {
+            "FCFS": -0.034500258605412455,
+            "Round Robin": -0.006467365789219947,
+            "Priority": -0.03475547251787958,
+            "Priority RR": 0.0053451692470629095,
+            "MLFQ": 0.0,
+            "No Switch": 0.0
+          }
+        }
+      ],
+      "accepted_events": [
+        {
+          "time": 1710,
+          "active": "Priority",
+          "reason": "accepted",
+          "ready_count": 1.0
+        },
+        {
+          "time": 2423,
+          "active": "MLFQ",
+          "reason": "excursion_expired",
+          "ready_count": 1.0
+        },
+        {
+          "time": 2450,
+          "active": "Priority",
+          "reason": "accepted",
+          "ready_count": 1.0
+        },
+        {
+          "time": 12634,
+          "active": "MLFQ",
+          "reason": "excursion_expired",
+          "ready_count": 1.0
+        },
+        {
+          "time": 12661,
+          "active": "Priority",
+          "reason": "accepted",
+          "ready_count": 1.0
+        },
+        {
+          "time": 29889,
+          "active": "MLFQ",
+          "reason": "excursion_expired",
+          "ready_count": 1.0
+        },
+        {
+          "time": 29912,
+          "active": "Priority",
+          "reason": "accepted",
+          "ready_count": 1.0
+        },
+        {
+          "time": 33618,
+          "active": "MLFQ",
+          "reason": "excursion_expired",
+          "ready_count": 1.0
+        },
+        {
+          "time": 33641,
+          "active": "Priority",
+          "reason": "accepted",
+          "ready_count": 1.0
+        },
+        {
+          "time": 40382,
+          "active": "MLFQ",
+          "reason": "excursion_expired",
+          "ready_count": 1.0
+        },
+        {
+          "time": 40413,
+          "active": "Priority",
+          "reason": "accepted",
+          "ready_count": 1.0
+        },
+        {
+          "time": 41118,
+          "active": "MLFQ",
+          "reason": "excursion_expired",
+          "ready_count": 1.0
+        },
+        {
+          "time": 41141,
+          "active": "Priority",
+          "reason": "accepted",
+          "ready_count": 1.0
+        },
+        {
+          "time": 53544,
+          "active": "MLFQ",
+          "reason": "excursion_expired",
+          "ready_count": 1.0
+        },
+        {
+          "time": 53571,
+          "active": "Priority",
+          "reason": "accepted",
+          "ready_count": 1.0
+        },
+        {
+          "time": 60909,
+          "active": "MLFQ",
+          "reason": "excursion_expired",
+          "ready_count": 1.0
+        },
+        {
+          "time": 60932,
+          "active": "Priority",
+          "reason": "accepted",
+          "ready_count": 1.0
+        },
+        {
+          "time": 61645,
+          "active": "MLFQ",
+          "reason": "excursion_expired",
+          "ready_count": 1.0
+        },
+        {
+          "time": 61672,
+          "active": "Priority",
+          "reason": "accepted",
+          "ready_count": 1.0
+        },
+        {
+          "time": 63719,
+          "active": "MLFQ",
+          "reason": "excursion_expired",
+          "ready_count": 1.0
+        }
+      ]
+    },
+    {
+      "workload_id": "azure-d04-0080",
+      "source_group": "azure-d04-0080",
+      "complete": false,
+      "partial_model_invocations": 12535,
+      "partial_raw_actions": {
+        "Priority": 12175,
+        "FCFS": 360
+      },
+      "feature_outside_training_range_counts": {
+        "priority_mean": 12535,
+        "completed_burst_mean": 12526,
+        "completed_burst_variance": 12526,
+        "observed_service_mean": 12526,
+        "observed_service_variance": 12526,
+        "ready_wait_mean": 1,
+        "ready_wait_max": 1,
+        "first_service_wait_max": 1,
+        "ready_wait_p50": 1,
+        "ready_wait_p95": 1,
+        "arrival_quiet_ticks": 9183,
+        "dwell_remaining_ticks": 1
+      },
+      "predicted_cost_examples": [
+        {
+          "features": {
+            "ready_count": 1.0,
+            "blocked_count": 0.0,
+            "completed_burst_mean": 0.0,
+            "completed_burst_variance": 0.0,
+            "observed_service_mean": 0.0,
+            "observed_service_variance": 0.0,
+            "priority_mean": 0,
+            "ready_wait_mean": 0,
+            "ready_wait_max": 0.0,
+            "recent_arrivals": 1.0,
+            "io_returns": 0.0,
+            "io_return_ratio": 0.0,
+            "active_policy_index": 4.0,
+            "dwell_remaining_ticks": 0.0,
+            "first_service_ready_count": 1.0,
+            "first_service_wait_max": 0.0,
+            "ready_wait_p50": 0.0,
+            "ready_wait_p95": 0.0,
+            "arrival_quiet_ticks": 0.0
+          },
+          "raw_action": "Priority",
+          "predicted_action_costs": {
+            "FCFS": -0.034500258605412455,
+            "Round Robin": -0.006467365789219947,
+            "Priority": -0.03475547251787958,
+            "Priority RR": 0.0053451692470629095,
+            "MLFQ": 0.0,
+            "No Switch": 0.0
+          }
+        },
+        {
+          "features": {
+            "ready_count": 1.0,
+            "blocked_count": 0.0,
+            "completed_burst_mean": 0.0,
+            "completed_burst_variance": 0.0,
+            "observed_service_mean": 1,
+            "observed_service_variance": 0,
+            "priority_mean": 0,
+            "ready_wait_mean": 0,
+            "ready_wait_max": 0.0,
+            "recent_arrivals": 0.0,
+            "io_returns": 0.0,
+            "io_return_ratio": 0.0,
+            "active_policy_index": 4.0,
+            "dwell_remaining_ticks": 0.0,
+            "first_service_ready_count": 0.0,
+            "first_service_wait_max": 0.0,
+            "ready_wait_p50": 0.0,
+            "ready_wait_p95": 0.0,
+            "arrival_quiet_ticks": 1.0
+          },
+          "raw_action": "Priority",
+          "predicted_action_costs": {
+            "FCFS": -0.034500258605412455,
+            "Round Robin": -0.006467365789219947,
+            "Priority": -0.03475547251787958,
+            "Priority RR": 0.0053451692470629095,
+            "MLFQ": 0.0,
+            "No Switch": 0.0
+          }
+        },
+        {
+          "features": {
+            "ready_count": 1.0,
+            "blocked_count": 0.0,
+            "completed_burst_mean": 0.0,
+            "completed_burst_variance": 0.0,
+            "observed_service_mean": 11,
+            "observed_service_variance": 0,
+            "priority_mean": 0,
+            "ready_wait_mean": 0,
+            "ready_wait_max": 0.0,
+            "recent_arrivals": 0.0,
+            "io_returns": 0.0,
+            "io_return_ratio": 0.0,
+            "active_policy_index": 4.0,
+            "dwell_remaining_ticks": 0.0,
+            "first_service_ready_count": 0.0,
+            "first_service_wait_max": 0.0,
+            "ready_wait_p50": 0.0,
+            "ready_wait_p95": 0.0,
+            "arrival_quiet_ticks": 11.0
+          },
+          "raw_action": "Priority",
+          "predicted_action_costs": {
+            "FCFS": -0.034500258605412455,
+            "Round Robin": -0.006467365789219947,
+            "Priority": -0.03475547251787958,
+            "Priority RR": 0.0053451692470629095,
+            "MLFQ": 0.0,
+            "No Switch": 0.0
+          }
+        }
+      ]
+    },
+    {
+      "workload_id": "azure-d13-0255",
+      "source_group": "azure-d13-0255",
+      "complete": true,
+      "decisions": 345,
+      "raw_actions": {
+        "Priority": 345
+      },
+      "reasons": {
+        "first_service_protection": 7,
+        "arrival_risk": 43,
+        "accepted": 90,
+        "excursion_expired": 89,
+        "dwell_blocked": 116
+      },
+      "accepted_switches": 179,
+      "accepted_with_competition": 70,
+      "reviews_with_competition": 133,
+      "feature_outside_training_range_counts": {
+        "priority_mean": 345,
+        "completed_burst_mean": 341,
+        "observed_service_mean": 341,
+        "ready_wait_mean": 75,
+        "ready_wait_max": 74,
+        "first_service_wait_max": 55,
+        "ready_wait_p50": 70,
+        "ready_wait_p95": 74,
+        "observed_service_variance": 287,
+        "dwell_remaining_ticks": 163,
+        "arrival_quiet_ticks": 79
+      },
+      "predicted_cost_examples": [
+        {
+          "features": {
+            "ready_count": 1.0,
+            "blocked_count": 0.0,
+            "completed_burst_mean": 0.0,
+            "completed_burst_variance": 0.0,
+            "observed_service_mean": 0.0,
+            "observed_service_variance": 0.0,
+            "priority_mean": 0,
+            "ready_wait_mean": 0,
+            "ready_wait_max": 0.0,
+            "recent_arrivals": 1.0,
+            "io_returns": 0.0,
+            "io_return_ratio": 0.0,
+            "active_policy_index": 4.0,
+            "dwell_remaining_ticks": 0.0,
+            "first_service_ready_count": 1.0,
+            "first_service_wait_max": 0.0,
+            "ready_wait_p50": 0.0,
+            "ready_wait_p95": 0.0,
+            "arrival_quiet_ticks": 0.0
+          },
+          "raw_action": "Priority",
+          "predicted_action_costs": {
+            "FCFS": -0.034500258605412455,
+            "Round Robin": -0.006467365789219947,
+            "Priority": -0.03475547251787958,
+            "Priority RR": 0.0053451692470629095,
+            "MLFQ": 0.0,
+            "No Switch": 0.0
+          }
+        },
+        {
+          "features": {
+            "ready_count": 1.0,
+            "blocked_count": 0.0,
+            "completed_burst_mean": 0.0,
+            "completed_burst_variance": 0.0,
+            "observed_service_mean": 1,
+            "observed_service_variance": 0,
+            "priority_mean": 0,
+            "ready_wait_mean": 0,
+            "ready_wait_max": 0.0,
+            "recent_arrivals": 0.0,
+            "io_returns": 0.0,
+            "io_return_ratio": 0.0,
+            "active_policy_index": 4.0,
+            "dwell_remaining_ticks": 0.0,
+            "first_service_ready_count": 0.0,
+            "first_service_wait_max": 0.0,
+            "ready_wait_p50": 0.0,
+            "ready_wait_p95": 0.0,
+            "arrival_quiet_ticks": 1.0
+          },
+          "raw_action": "Priority",
+          "predicted_action_costs": {
+            "FCFS": -0.034500258605412455,
+            "Round Robin": -0.006467365789219947,
+            "Priority": -0.03475547251787958,
+            "Priority RR": 0.0053451692470629095,
+            "MLFQ": 0.0,
+            "No Switch": 0.0
+          }
+        },
+        {
+          "features": {
+            "ready_count": 1.0,
+            "blocked_count": 0.0,
+            "completed_burst_mean": 0.0,
+            "completed_burst_variance": 0.0,
+            "observed_service_mean": 11,
+            "observed_service_variance": 0,
+            "priority_mean": 0,
+            "ready_wait_mean": 0,
+            "ready_wait_max": 0.0,
+            "recent_arrivals": 0.0,
+            "io_returns": 0.0,
+            "io_return_ratio": 0.0,
+            "active_policy_index": 4.0,
+            "dwell_remaining_ticks": 0.0,
+            "first_service_ready_count": 0.0,
+            "first_service_wait_max": 0.0,
+            "ready_wait_p50": 0.0,
+            "ready_wait_p95": 0.0,
+            "arrival_quiet_ticks": 11.0
+          },
+          "raw_action": "Priority",
+          "predicted_action_costs": {
+            "FCFS": -0.034500258605412455,
+            "Round Robin": -0.006467365789219947,
+            "Priority": -0.03475547251787958,
+            "Priority RR": 0.0053451692470629095,
+            "MLFQ": 0.0,
+            "No Switch": 0.0
+          }
+        }
+      ],
+      "accepted_events": [
+        {
+          "time": 17882,
+          "active": "Priority",
+          "reason": "accepted",
+          "ready_count": 1.0
+        },
+        {
+          "time": 21227,
+          "active": "MLFQ",
+          "reason": "excursion_expired",
+          "ready_count": 1.0
+        },
+        {
+          "time": 21250,
+          "active": "Priority",
+          "reason": "accepted",
+          "ready_count": 1.0
+        },
+        {
+          "time": 25570,
+          "active": "MLFQ",
+          "reason": "excursion_expired",
+          "ready_count": 1.0
+        },
+        {
+          "time": 25593,
+          "active": "Priority",
+          "reason": "accepted",
+          "ready_count": 1.0
+        },
+        {
+          "time": 34753,
+          "active": "MLFQ",
+          "reason": "excursion_expired",
+          "ready_count": 1.0
+        },
+        {
+          "time": 34780,
+          "active": "Priority",
+          "reason": "accepted",
+          "ready_count": 1.0
+        },
+        {
+          "time": 38121,
+          "active": "MLFQ",
+          "reason": "excursion_expired",
+          "ready_count": 2.0
+        },
+        {
+          "time": 38143,
+          "active": "Priority",
+          "reason": "accepted",
+          "ready_count": 2.0
+        },
+        {
+          "time": 41500,
+          "active": "MLFQ",
+          "reason": "excursion_expired",
+          "ready_count": 2.0
+        },
+        {
+          "time": 41522,
+          "active": "Priority",
+          "reason": "accepted",
+          "ready_count": 2.0
+        },
+        {
+          "time": 44868,
+          "active": "MLFQ",
+          "reason": "excursion_expired",
+          "ready_count": 2.0
+        },
+        {
+          "time": 44890,
+          "active": "Priority",
+          "reason": "accepted",
+          "ready_count": 2.0
+        },
+        {
+          "time": 48236,
+          "active": "MLFQ",
+          "reason": "excursion_expired",
+          "ready_count": 4.0
+        },
+        {
+          "time": 48260,
+          "active": "Priority",
+          "reason": "accepted",
+          "ready_count": 4.0
+        },
+        {
+          "time": 51625,
+          "active": "MLFQ",
+          "reason": "excursion_expired",
+          "ready_count": 4.0
+        },
+        {
+          "time": 51653,
+          "active": "Priority",
+          "reason": "accepted",
+          "ready_count": 4.0
+        },
+        {
+          "time": 54996,
+          "active": "MLFQ",
+          "reason": "excursion_expired",
+          "ready_count": 4.0
+        },
+        {
+          "time": 55020,
+          "active": "Priority",
+          "reason": "accepted",
+          "ready_count": 4.0
+        },
+        {
+          "time": 58385,
+          "active": "MLFQ",
+          "reason": "excursion_expired",
+          "ready_count": 5.0
+        }
+      ]
+    },
+    {
+      "workload_id": "azure-d07-0132",
+      "source_group": "azure-d07-0132",
+      "complete": true,
+      "decisions": 97,
+      "raw_actions": {
+        "Priority": 97
+      },
+      "reasons": {
+        "first_service_protection": 6,
+        "arrival_risk": 2,
+        "accepted": 25,
+        "excursion_expired": 24,
+        "dwell_blocked": 40
+      },
+      "accepted_switches": 49,
+      "accepted_with_competition": 46,
+      "reviews_with_competition": 89,
+      "feature_outside_training_range_counts": {
+        "priority_mean": 97,
+        "completed_burst_mean": 93,
+        "observed_service_mean": 93,
+        "ready_wait_mean": 50,
+        "ready_wait_max": 50,
+        "first_service_wait_max": 8,
+        "ready_wait_p50": 38,
+        "ready_wait_p95": 49,
+        "observed_service_variance": 92,
+        "dwell_remaining_ticks": 44,
+        "arrival_quiet_ticks": 85
+      },
+      "predicted_cost_examples": [
+        {
+          "features": {
+            "ready_count": 1.0,
+            "blocked_count": 0.0,
+            "completed_burst_mean": 0.0,
+            "completed_burst_variance": 0.0,
+            "observed_service_mean": 0.0,
+            "observed_service_variance": 0.0,
+            "priority_mean": 0,
+            "ready_wait_mean": 0,
+            "ready_wait_max": 0.0,
+            "recent_arrivals": 1.0,
+            "io_returns": 0.0,
+            "io_return_ratio": 0.0,
+            "active_policy_index": 4.0,
+            "dwell_remaining_ticks": 0.0,
+            "first_service_ready_count": 1.0,
+            "first_service_wait_max": 0.0,
+            "ready_wait_p50": 0.0,
+            "ready_wait_p95": 0.0,
+            "arrival_quiet_ticks": 0.0
+          },
+          "raw_action": "Priority",
+          "predicted_action_costs": {
+            "FCFS": -0.034500258605412455,
+            "Round Robin": -0.006467365789219947,
+            "Priority": -0.03475547251787958,
+            "Priority RR": 0.0053451692470629095,
+            "MLFQ": 0.0,
+            "No Switch": 0.0
+          }
+        },
+        {
+          "features": {
+            "ready_count": 1.0,
+            "blocked_count": 0.0,
+            "completed_burst_mean": 0.0,
+            "completed_burst_variance": 0.0,
+            "observed_service_mean": 7,
+            "observed_service_variance": 0,
+            "priority_mean": 0,
+            "ready_wait_mean": 0,
+            "ready_wait_max": 0.0,
+            "recent_arrivals": 0.0,
+            "io_returns": 0.0,
+            "io_return_ratio": 0.0,
+            "active_policy_index": 4.0,
+            "dwell_remaining_ticks": 0.0,
+            "first_service_ready_count": 0.0,
+            "first_service_wait_max": 0.0,
+            "ready_wait_p50": 0.0,
+            "ready_wait_p95": 0.0,
+            "arrival_quiet_ticks": 7.0
+          },
+          "raw_action": "Priority",
+          "predicted_action_costs": {
+            "FCFS": -0.034500258605412455,
+            "Round Robin": -0.006467365789219947,
+            "Priority": -0.03475547251787958,
+            "Priority RR": 0.0053451692470629095,
+            "MLFQ": 0.0,
+            "No Switch": 0.0
+          }
+        },
+        {
+          "features": {
+            "ready_count": 1.0,
+            "blocked_count": 0.0,
+            "completed_burst_mean": 0.0,
+            "completed_burst_variance": 0.0,
+            "observed_service_mean": 15,
+            "observed_service_variance": 0,
+            "priority_mean": 0,
+            "ready_wait_mean": 0,
+            "ready_wait_max": 0.0,
+            "recent_arrivals": 0.0,
+            "io_returns": 0.0,
+            "io_return_ratio": 0.0,
+            "active_policy_index": 4.0,
+            "dwell_remaining_ticks": 0.0,
+            "first_service_ready_count": 0.0,
+            "first_service_wait_max": 0.0,
+            "ready_wait_p50": 0.0,
+            "ready_wait_p95": 0.0,
+            "arrival_quiet_ticks": 15.0
+          },
+          "raw_action": "Priority",
+          "predicted_action_costs": {
+            "FCFS": -0.034500258605412455,
+            "Round Robin": -0.006467365789219947,
+            "Priority": -0.03475547251787958,
+            "Priority RR": 0.0053451692470629095,
+            "MLFQ": 0.0,
+            "No Switch": 0.0
+          }
+        }
+      ],
+      "accepted_events": [
+        {
+          "time": 2715262,
+          "active": "Priority",
+          "reason": "accepted",
+          "ready_count": 1.0
+        },
+        {
+          "time": 2731966,
+          "active": "MLFQ",
+          "reason": "excursion_expired",
+          "ready_count": 13.0
+        },
+        {
+          "time": 2731991,
+          "active": "Priority",
+          "reason": "accepted",
+          "ready_count": 13.0
+        },
+        {
+          "time": 2748721,
+          "active": "MLFQ",
+          "reason": "excursion_expired",
+          "ready_count": 19.0
+        },
+        {
+          "time": 2748750,
+          "active": "Priority",
+          "reason": "accepted",
+          "ready_count": 19.0
+        },
+        {
+          "time": 2765479,
+          "active": "MLFQ",
+          "reason": "excursion_expired",
+          "ready_count": 22.0
+        },
+        {
+          "time": 2765511,
+          "active": "Priority",
+          "reason": "accepted",
+          "ready_count": 22.0
+        },
+        {
+          "time": 2782237,
+          "active": "MLFQ",
+          "reason": "excursion_expired",
+          "ready_count": 21.0
+        },
+        {
+          "time": 2782260,
+          "active": "Priority",
+          "reason": "accepted",
+          "ready_count": 21.0
+        },
+        {
+          "time": 2798988,
+          "active": "MLFQ",
+          "reason": "excursion_expired",
+          "ready_count": 20.0
+        },
+        {
+          "time": 2799010,
+          "active": "Priority",
+          "reason": "accepted",
+          "ready_count": 20.0
+        },
+        {
+          "time": 2815737,
+          "active": "MLFQ",
+          "reason": "excursion_expired",
+          "ready_count": 19.0
+        },
+        {
+          "time": 2815760,
+          "active": "Priority",
+          "reason": "accepted",
+          "ready_count": 19.0
+        },
+        {
+          "time": 2832486,
+          "active": "MLFQ",
+          "reason": "excursion_expired",
+          "ready_count": 18.0
+        },
+        {
+          "time": 2832510,
+          "active": "Priority",
+          "reason": "accepted",
+          "ready_count": 18.0
+        },
+        {
+          "time": 2849232,
+          "active": "MLFQ",
+          "reason": "excursion_expired",
+          "ready_count": 17.0
+        },
+        {
+          "time": 2849261,
+          "active": "Priority",
+          "reason": "accepted",
+          "ready_count": 17.0
+        },
+        {
+          "time": 2865980,
+          "active": "MLFQ",
+          "reason": "excursion_expired",
+          "ready_count": 16.0
+        },
+        {
+          "time": 2866000,
+          "active": "Priority",
+          "reason": "accepted",
+          "ready_count": 16.0
+        },
+        {
+          "time": 2882718,
+          "active": "MLFQ",
+          "reason": "excursion_expired",
+          "ready_count": 15.0
+        }
+      ]
+    },
+    {
+      "workload_id": "azure-refined-d13-0197",
+      "source_group": "azure-refined-d13-0197",
+      "complete": false,
+      "partial_model_invocations": 5666,
+      "partial_raw_actions": {
+        "Priority": 5666
+      },
+      "feature_outside_training_range_counts": {
+        "priority_mean": 5666,
+        "completed_burst_mean": 5662,
+        "observed_service_mean": 5662,
+        "ready_wait_mean": 4799,
+        "ready_wait_max": 4927,
+        "first_service_wait_max": 4511,
+        "ready_wait_p50": 4388,
+        "ready_wait_p95": 4875,
+        "observed_service_variance": 5557,
+        "dwell_remaining_ticks": 841,
+        "ready_count": 4815
+      },
+      "predicted_cost_examples": [
+        {
+          "features": {
+            "ready_count": 1.0,
+            "blocked_count": 0.0,
+            "completed_burst_mean": 0.0,
+            "completed_burst_variance": 0.0,
+            "observed_service_mean": 0.0,
+            "observed_service_variance": 0.0,
+            "priority_mean": 0,
+            "ready_wait_mean": 0,
+            "ready_wait_max": 0.0,
+            "recent_arrivals": 1.0,
+            "io_returns": 0.0,
+            "io_return_ratio": 0.0,
+            "active_policy_index": 4.0,
+            "dwell_remaining_ticks": 0.0,
+            "first_service_ready_count": 1.0,
+            "first_service_wait_max": 0.0,
+            "ready_wait_p50": 0.0,
+            "ready_wait_p95": 0.0,
+            "arrival_quiet_ticks": 0.0
+          },
+          "raw_action": "Priority",
+          "predicted_action_costs": {
+            "FCFS": -0.034500258605412455,
+            "Round Robin": -0.006467365789219947,
+            "Priority": -0.03475547251787958,
+            "Priority RR": 0.0053451692470629095,
+            "MLFQ": 0.0,
+            "No Switch": 0.0
+          }
+        },
+        {
+          "features": {
+            "ready_count": 1.0,
+            "blocked_count": 0.0,
+            "completed_burst_mean": 0.0,
+            "completed_burst_variance": 0.0,
+            "observed_service_mean": 7,
+            "observed_service_variance": 0,
+            "priority_mean": 0,
+            "ready_wait_mean": 0,
+            "ready_wait_max": 0.0,
+            "recent_arrivals": 0.0,
+            "io_returns": 0.0,
+            "io_return_ratio": 0.0,
+            "active_policy_index": 4.0,
+            "dwell_remaining_ticks": 0.0,
+            "first_service_ready_count": 0.0,
+            "first_service_wait_max": 0.0,
+            "ready_wait_p50": 0.0,
+            "ready_wait_p95": 0.0,
+            "arrival_quiet_ticks": 7.0
+          },
+          "raw_action": "Priority",
+          "predicted_action_costs": {
+            "FCFS": -0.034500258605412455,
+            "Round Robin": -0.006467365789219947,
+            "Priority": -0.03475547251787958,
+            "Priority RR": 0.0053451692470629095,
+            "MLFQ": 0.0,
+            "No Switch": 0.0
+          }
+        },
+        {
+          "features": {
+            "ready_count": 1.0,
+            "blocked_count": 0.0,
+            "completed_burst_mean": 0.0,
+            "completed_burst_variance": 0.0,
+            "observed_service_mean": 19,
+            "observed_service_variance": 0,
+            "priority_mean": 0,
+            "ready_wait_mean": 0,
+            "ready_wait_max": 0.0,
+            "recent_arrivals": 0.0,
+            "io_returns": 0.0,
+            "io_return_ratio": 0.0,
+            "active_policy_index": 4.0,
+            "dwell_remaining_ticks": 0.0,
+            "first_service_ready_count": 0.0,
+            "first_service_wait_max": 0.0,
+            "ready_wait_p50": 0.0,
+            "ready_wait_p95": 0.0,
+            "arrival_quiet_ticks": 19.0
+          },
+          "raw_action": "Priority",
+          "predicted_action_costs": {
+            "FCFS": -0.034500258605412455,
+            "Round Robin": -0.006467365789219947,
+            "Priority": -0.03475547251787958,
+            "Priority RR": 0.0053451692470629095,
+            "MLFQ": 0.0,
+            "No Switch": 0.0
+          }
+        }
+      ]
+    },
+    {
+      "workload_id": "azure-d10-0191",
+      "source_group": "azure-d10-0191",
+      "complete": true,
+      "decisions": 3052,
+      "raw_actions": {
+        "Priority": 3052
+      },
+      "reasons": {
+        "first_service_protection": 353,
+        "arrival_risk": 274,
+        "accepted": 762,
+        "excursion_expired": 761,
+        "dwell_blocked": 902
+      },
+      "accepted_switches": 1523,
+      "accepted_with_competition": 1105,
+      "reviews_with_competition": 2236,
+      "feature_outside_training_range_counts": {
+        "priority_mean": 3052,
+        "completed_burst_mean": 3048,
+        "observed_service_mean": 3048,
+        "observed_service_variance": 2839,
+        "dwell_remaining_ticks": 1400,
+        "first_service_wait_max": 687,
+        "ready_wait_p50": 932,
+        "ready_wait_mean": 1148,
+        "ready_wait_max": 1202,
+        "ready_wait_p95": 1181,
+        "arrival_quiet_ticks": 278,
+        "ready_count": 210
+      },
+      "predicted_cost_examples": [
+        {
+          "features": {
+            "ready_count": 1.0,
+            "blocked_count": 0.0,
+            "completed_burst_mean": 0.0,
+            "completed_burst_variance": 0.0,
+            "observed_service_mean": 0.0,
+            "observed_service_variance": 0.0,
+            "priority_mean": 0,
+            "ready_wait_mean": 0,
+            "ready_wait_max": 0.0,
+            "recent_arrivals": 1.0,
+            "io_returns": 0.0,
+            "io_return_ratio": 0.0,
+            "active_policy_index": 4.0,
+            "dwell_remaining_ticks": 0.0,
+            "first_service_ready_count": 1.0,
+            "first_service_wait_max": 0.0,
+            "ready_wait_p50": 0.0,
+            "ready_wait_p95": 0.0,
+            "arrival_quiet_ticks": 0.0
+          },
+          "raw_action": "Priority",
+          "predicted_action_costs": {
+            "FCFS": -0.034500258605412455,
+            "Round Robin": -0.006467365789219947,
+            "Priority": -0.03475547251787958,
+            "Priority RR": 0.0053451692470629095,
+            "MLFQ": 0.0,
+            "No Switch": 0.0
+          }
+        },
+        {
+          "features": {
+            "ready_count": 1.0,
+            "blocked_count": 0.0,
+            "completed_burst_mean": 0.0,
+            "completed_burst_variance": 0.0,
+            "observed_service_mean": 7,
+            "observed_service_variance": 0,
+            "priority_mean": 0,
+            "ready_wait_mean": 0,
+            "ready_wait_max": 0.0,
+            "recent_arrivals": 0.0,
+            "io_returns": 0.0,
+            "io_return_ratio": 0.0,
+            "active_policy_index": 4.0,
+            "dwell_remaining_ticks": 0.0,
+            "first_service_ready_count": 0.0,
+            "first_service_wait_max": 0.0,
+            "ready_wait_p50": 0.0,
+            "ready_wait_p95": 0.0,
+            "arrival_quiet_ticks": 7.0
+          },
+          "raw_action": "Priority",
+          "predicted_action_costs": {
+            "FCFS": -0.034500258605412455,
+            "Round Robin": -0.006467365789219947,
+            "Priority": -0.03475547251787958,
+            "Priority RR": 0.0053451692470629095,
+            "MLFQ": 0.0,
+            "No Switch": 0.0
+          }
+        },
+        {
+          "features": {
+            "ready_count": 1.0,
+            "blocked_count": 0.0,
+            "completed_burst_mean": 0.0,
+            "completed_burst_variance": 0.0,
+            "observed_service_mean": 15,
+            "observed_service_variance": 0,
+            "priority_mean": 0,
+            "ready_wait_mean": 0,
+            "ready_wait_max": 0.0,
+            "recent_arrivals": 0.0,
+            "io_returns": 0.0,
+            "io_return_ratio": 0.0,
+            "active_policy_index": 4.0,
+            "dwell_remaining_ticks": 0.0,
+            "first_service_ready_count": 0.0,
+            "first_service_wait_max": 0.0,
+            "ready_wait_p50": 0.0,
+            "ready_wait_p95": 0.0,
+            "arrival_quiet_ticks": 15.0
+          },
+          "raw_action": "Priority",
+          "predicted_action_costs": {
+            "FCFS": -0.034500258605412455,
+            "Round Robin": -0.006467365789219947,
+            "Priority": -0.03475547251787958,
+            "Priority RR": 0.0053451692470629095,
+            "MLFQ": 0.0,
+            "No Switch": 0.0
+          }
+        }
+      ],
+      "accepted_events": [
+        {
+          "time": 142,
+          "active": "Priority",
+          "reason": "accepted",
+          "ready_count": 1.0
+        },
+        {
+          "time": 970,
+          "active": "MLFQ",
+          "reason": "excursion_expired",
+          "ready_count": 1.0
+        },
+        {
+          "time": 993,
+          "active": "Priority",
+          "reason": "accepted",
+          "ready_count": 1.0
+        },
+        {
+          "time": 1635,
+          "active": "MLFQ",
+          "reason": "excursion_expired",
+          "ready_count": 1.0
+        },
+        {
+          "time": 1662,
+          "active": "Priority",
+          "reason": "accepted",
+          "ready_count": 1.0
+        },
+        {
+          "time": 4634,
+          "active": "MLFQ",
+          "reason": "excursion_expired",
+          "ready_count": 1.0
+        },
+        {
+          "time": 4661,
+          "active": "Priority",
+          "reason": "accepted",
+          "ready_count": 1.0
+        },
+        {
+          "time": 5598,
+          "active": "MLFQ",
+          "reason": "excursion_expired",
+          "ready_count": 1.0
+        },
+        {
+          "time": 5621,
+          "active": "Priority",
+          "reason": "accepted",
+          "ready_count": 1.0
+        },
+        {
+          "time": 6263,
+          "active": "MLFQ",
+          "reason": "excursion_expired",
+          "ready_count": 2.0
+        },
+        {
+          "time": 6293,
+          "active": "Priority",
+          "reason": "accepted",
+          "ready_count": 2.0
+        },
+        {
+          "time": 6943,
+          "active": "MLFQ",
+          "reason": "excursion_expired",
+          "ready_count": 4.0
+        },
+        {
+          "time": 6963,
+          "active": "Priority",
+          "reason": "accepted",
+          "ready_count": 4.0
+        },
+        {
+          "time": 7625,
+          "active": "MLFQ",
+          "reason": "excursion_expired",
+          "ready_count": 3.0
+        },
+        {
+          "time": 7650,
+          "active": "Priority",
+          "reason": "accepted",
+          "ready_count": 3.0
+        },
+        {
+          "time": 8286,
+          "active": "MLFQ",
+          "reason": "excursion_expired",
+          "ready_count": 3.0
+        },
+        {
+          "time": 8311,
+          "active": "Priority",
+          "reason": "accepted",
+          "ready_count": 3.0
+        },
+        {
+          "time": 8955,
+          "active": "MLFQ",
+          "reason": "excursion_expired",
+          "ready_count": 3.0
+        },
+        {
+          "time": 8980,
+          "active": "Priority",
+          "reason": "accepted",
+          "ready_count": 3.0
+        },
+        {
+          "time": 9613,
+          "active": "MLFQ",
+          "reason": "excursion_expired",
+          "ready_count": 2.0
+        }
+      ]
+    },
+    {
+      "workload_id": "azure-d11-0224",
+      "source_group": "azure-d11-0210",
+      "complete": true,
+      "decisions": 5612,
+      "raw_actions": {
+        "Priority": 5564,
+        "FCFS": 48
+      },
+      "reasons": {
+        "first_service_protection": 23,
+        "arrival_risk": 30,
+        "accepted": 2,
+        "excursion_expired": 2,
+        "cost_margin": 5555
+      },
+      "accepted_switches": 4,
+      "accepted_with_competition": 0,
+      "reviews_with_competition": 0,
+      "feature_outside_training_range_counts": {
+        "priority_mean": 5612,
+        "completed_burst_mean": 5608,
+        "observed_service_mean": 5608,
+        "observed_service_variance": 5607,
+        "dwell_remaining_ticks": 2,
+        "completed_burst_variance": 5604,
+        "ready_wait_mean": 1,
+        "ready_wait_max": 1,
+        "first_service_wait_max": 1,
+        "ready_wait_p50": 1,
+        "ready_wait_p95": 1,
+        "arrival_quiet_ticks": 4289
+      },
+      "predicted_cost_examples": [
+        {
+          "features": {
+            "ready_count": 1.0,
+            "blocked_count": 0.0,
+            "completed_burst_mean": 0.0,
+            "completed_burst_variance": 0.0,
+            "observed_service_mean": 0.0,
+            "observed_service_variance": 0.0,
+            "priority_mean": 0,
+            "ready_wait_mean": 0,
+            "ready_wait_max": 0.0,
+            "recent_arrivals": 1.0,
+            "io_returns": 0.0,
+            "io_return_ratio": 0.0,
+            "active_policy_index": 4.0,
+            "dwell_remaining_ticks": 0.0,
+            "first_service_ready_count": 1.0,
+            "first_service_wait_max": 0.0,
+            "ready_wait_p50": 0.0,
+            "ready_wait_p95": 0.0,
+            "arrival_quiet_ticks": 0.0
+          },
+          "raw_action": "Priority",
+          "predicted_action_costs": {
+            "FCFS": -0.034500258605412455,
+            "Round Robin": -0.006467365789219947,
+            "Priority": -0.03475547251787958,
+            "Priority RR": 0.0053451692470629095,
+            "MLFQ": 0.0,
+            "No Switch": 0.0
+          }
+        },
+        {
+          "features": {
+            "ready_count": 1.0,
+            "blocked_count": 0.0,
+            "completed_burst_mean": 0.0,
+            "completed_burst_variance": 0.0,
+            "observed_service_mean": 3,
+            "observed_service_variance": 0,
+            "priority_mean": 0,
+            "ready_wait_mean": 0,
+            "ready_wait_max": 0.0,
+            "recent_arrivals": 0.0,
+            "io_returns": 0.0,
+            "io_return_ratio": 0.0,
+            "active_policy_index": 4.0,
+            "dwell_remaining_ticks": 0.0,
+            "first_service_ready_count": 0.0,
+            "first_service_wait_max": 0.0,
+            "ready_wait_p50": 0.0,
+            "ready_wait_p95": 0.0,
+            "arrival_quiet_ticks": 3.0
+          },
+          "raw_action": "Priority",
+          "predicted_action_costs": {
+            "FCFS": -0.034500258605412455,
+            "Round Robin": -0.006467365789219947,
+            "Priority": -0.03475547251787958,
+            "Priority RR": 0.0053451692470629095,
+            "MLFQ": 0.0,
+            "No Switch": 0.0
+          }
+        },
+        {
+          "features": {
+            "ready_count": 1.0,
+            "blocked_count": 0.0,
+            "completed_burst_mean": 0.0,
+            "completed_burst_variance": 0.0,
+            "observed_service_mean": 15,
+            "observed_service_variance": 0,
+            "priority_mean": 0,
+            "ready_wait_mean": 0,
+            "ready_wait_max": 0.0,
+            "recent_arrivals": 0.0,
+            "io_returns": 0.0,
+            "io_return_ratio": 0.0,
+            "active_policy_index": 4.0,
+            "dwell_remaining_ticks": 0.0,
+            "first_service_ready_count": 0.0,
+            "first_service_wait_max": 0.0,
+            "ready_wait_p50": 0.0,
+            "ready_wait_p95": 0.0,
+            "arrival_quiet_ticks": 15.0
+          },
+          "raw_action": "Priority",
+          "predicted_action_costs": {
+            "FCFS": -0.034500258605412455,
+            "Round Robin": -0.006467365789219947,
+            "Priority": -0.03475547251787958,
+            "Priority RR": 0.0053451692470629095,
+            "MLFQ": 0.0,
+            "No Switch": 0.0
+          }
+        }
+      ],
+      "accepted_events": [
+        {
+          "time": 16820,
+          "active": "Priority",
+          "reason": "accepted",
+          "ready_count": 1.0
+        },
+        {
+          "time": 41255,
+          "active": "MLFQ",
+          "reason": "excursion_expired",
+          "ready_count": 1.0
+        },
+        {
+          "time": 41282,
+          "active": "Priority",
+          "reason": "accepted",
+          "ready_count": 1.0
+        },
+        {
+          "time": 87104,
+          "active": "MLFQ",
+          "reason": "excursion_expired",
+          "ready_count": 1.0
+        }
+      ]
+    },
+    {
+      "workload_id": "azure-d05-0094",
+      "source_group": "azure-d05-0094",
+      "complete": true,
+      "decisions": 208,
+      "raw_actions": {
+        "Priority": 208
+      },
+      "reasons": {
+        "first_service_protection": 1,
+        "arrival_risk": 92,
+        "accepted": 53,
+        "excursion_expired": 52,
+        "dwell_blocked": 10
+      },
+      "accepted_switches": 105,
+      "accepted_with_competition": 0,
+      "reviews_with_competition": 0,
+      "feature_outside_training_range_counts": {
+        "priority_mean": 208,
+        "completed_burst_mean": 204,
+        "observed_service_mean": 204,
+        "observed_service_variance": 152,
+        "dwell_remaining_ticks": 100,
+        "ready_wait_mean": 5,
+        "ready_wait_max": 5,
+        "first_service_wait_max": 5,
+        "ready_wait_p50": 5,
+        "ready_wait_p95": 5
+      },
+      "predicted_cost_examples": [
+        {
+          "features": {
+            "ready_count": 1.0,
+            "blocked_count": 0.0,
+            "completed_burst_mean": 0.0,
+            "completed_burst_variance": 0.0,
+            "observed_service_mean": 0.0,
+            "observed_service_variance": 0.0,
+            "priority_mean": 0,
+            "ready_wait_mean": 0,
+            "ready_wait_max": 0.0,
+            "recent_arrivals": 1.0,
+            "io_returns": 0.0,
+            "io_return_ratio": 0.0,
+            "active_policy_index": 4.0,
+            "dwell_remaining_ticks": 0.0,
+            "first_service_ready_count": 1.0,
+            "first_service_wait_max": 0.0,
+            "ready_wait_p50": 0.0,
+            "ready_wait_p95": 0.0,
+            "arrival_quiet_ticks": 0.0
+          },
+          "raw_action": "Priority",
+          "predicted_action_costs": {
+            "FCFS": -0.034500258605412455,
+            "Round Robin": -0.006467365789219947,
+            "Priority": -0.03475547251787958,
+            "Priority RR": 0.0053451692470629095,
+            "MLFQ": 0.0,
+            "No Switch": 0.0
+          }
+        },
+        {
+          "features": {
+            "ready_count": 1.0,
+            "blocked_count": 0.0,
+            "completed_burst_mean": 0.0,
+            "completed_burst_variance": 0.0,
+            "observed_service_mean": 7,
+            "observed_service_variance": 0,
+            "priority_mean": 0,
+            "ready_wait_mean": 0,
+            "ready_wait_max": 0.0,
+            "recent_arrivals": 0.0,
+            "io_returns": 0.0,
+            "io_return_ratio": 0.0,
+            "active_policy_index": 4.0,
+            "dwell_remaining_ticks": 0.0,
+            "first_service_ready_count": 0.0,
+            "first_service_wait_max": 0.0,
+            "ready_wait_p50": 0.0,
+            "ready_wait_p95": 0.0,
+            "arrival_quiet_ticks": 7.0
+          },
+          "raw_action": "Priority",
+          "predicted_action_costs": {
+            "FCFS": -0.034500258605412455,
+            "Round Robin": -0.006467365789219947,
+            "Priority": -0.03475547251787958,
+            "Priority RR": 0.0053451692470629095,
+            "MLFQ": 0.0,
+            "No Switch": 0.0
+          }
+        },
+        {
+          "features": {
+            "ready_count": 1.0,
+            "blocked_count": 0.0,
+            "completed_burst_mean": 0.0,
+            "completed_burst_variance": 0.0,
+            "observed_service_mean": 15,
+            "observed_service_variance": 0,
+            "priority_mean": 0,
+            "ready_wait_mean": 0,
+            "ready_wait_max": 0.0,
+            "recent_arrivals": 0.0,
+            "io_returns": 0.0,
+            "io_return_ratio": 0.0,
+            "active_policy_index": 4.0,
+            "dwell_remaining_ticks": 0.0,
+            "first_service_ready_count": 0.0,
+            "first_service_wait_max": 0.0,
+            "ready_wait_p50": 0.0,
+            "ready_wait_p95": 0.0,
+            "arrival_quiet_ticks": 15.0
+          },
+          "raw_action": "Priority",
+          "predicted_action_costs": {
+            "FCFS": -0.034500258605412455,
+            "Round Robin": -0.006467365789219947,
+            "Priority": -0.03475547251787958,
+            "Priority RR": 0.0053451692470629095,
+            "MLFQ": 0.0,
+            "No Switch": 0.0
+          }
+        }
+      ],
+      "accepted_events": [
+        {
+          "time": 373253,
+          "active": "Priority",
+          "reason": "accepted",
+          "ready_count": 1.0
+        },
+        {
+          "time": 380885,
+          "active": "MLFQ",
+          "reason": "excursion_expired",
+          "ready_count": 1.0
+        },
+        {
+          "time": 380912,
+          "active": "Priority",
+          "reason": "accepted",
+          "ready_count": 1.0
+        },
+        {
+          "time": 1560553,
+          "active": "MLFQ",
+          "reason": "excursion_expired",
+          "ready_count": 1.0
+        },
+        {
+          "time": 1560580,
+          "active": "Priority",
+          "reason": "accepted",
+          "ready_count": 1.0
+        },
+        {
+          "time": 1561896,
+          "active": "MLFQ",
+          "reason": "excursion_expired",
+          "ready_count": 1.0
+        },
+        {
+          "time": 1561923,
+          "active": "Priority",
+          "reason": "accepted",
+          "ready_count": 1.0
+        },
+        {
+          "time": 1565612,
+          "active": "MLFQ",
+          "reason": "excursion_expired",
+          "ready_count": 1.0
+        },
+        {
+          "time": 1565643,
+          "active": "Priority",
+          "reason": "accepted",
+          "ready_count": 1.0
+        },
+        {
+          "time": 1566955,
+          "active": "MLFQ",
+          "reason": "excursion_expired",
+          "ready_count": 1.0
+        },
+        {
+          "time": 1566982,
+          "active": "Priority",
+          "reason": "accepted",
+          "ready_count": 1.0
+        },
+        {
+          "time": 1588783,
+          "active": "MLFQ",
+          "reason": "excursion_expired",
+          "ready_count": 1.0
+        },
+        {
+          "time": 1588810,
+          "active": "Priority",
+          "reason": "accepted",
+          "ready_count": 1.0
+        },
+        {
+          "time": 1605416,
+          "active": "MLFQ",
+          "reason": "excursion_expired",
+          "ready_count": 1.0
+        },
+        {
+          "time": 1605443,
+          "active": "Priority",
+          "reason": "accepted",
+          "ready_count": 1.0
+        },
+        {
+          "time": 1741620,
+          "active": "MLFQ",
+          "reason": "excursion_expired",
+          "ready_count": 1.0
+        },
+        {
+          "time": 1741643,
+          "active": "Priority",
+          "reason": "accepted",
+          "ready_count": 1.0
+        },
+        {
+          "time": 1746295,
+          "active": "MLFQ",
+          "reason": "excursion_expired",
+          "ready_count": 1.0
+        },
+        {
+          "time": 1746322,
+          "active": "Priority",
+          "reason": "accepted",
+          "ready_count": 1.0
+        },
+        {
+          "time": 1754202,
+          "active": "MLFQ",
+          "reason": "excursion_expired",
+          "ready_count": 1.0
+        }
+      ]
+    },
+    {
+      "workload_id": "azure-d10-0187",
+      "source_group": "azure-d10-0187",
+      "complete": true,
+      "decisions": 40,
+      "raw_actions": {
+        "Priority": 40
+      },
+      "reasons": {
+        "first_service_protection": 1,
+        "arrival_risk": 16,
+        "accepted": 10,
+        "excursion_expired": 9,
+        "dwell_blocked": 4
+      },
+      "accepted_switches": 19,
+      "accepted_with_competition": 0,
+      "reviews_with_competition": 0,
+      "feature_outside_training_range_counts": {
+        "priority_mean": 40,
+        "completed_burst_mean": 36,
+        "observed_service_mean": 36,
+        "observed_service_variance": 27,
+        "dwell_remaining_ticks": 18,
+        "ready_wait_mean": 2,
+        "ready_wait_max": 2,
+        "first_service_wait_max": 2,
+        "ready_wait_p50": 2,
+        "ready_wait_p95": 2,
+        "arrival_quiet_ticks": 8
+      },
+      "predicted_cost_examples": [
+        {
+          "features": {
+            "ready_count": 1.0,
+            "blocked_count": 0.0,
+            "completed_burst_mean": 0.0,
+            "completed_burst_variance": 0.0,
+            "observed_service_mean": 0.0,
+            "observed_service_variance": 0.0,
+            "priority_mean": 0,
+            "ready_wait_mean": 0,
+            "ready_wait_max": 0.0,
+            "recent_arrivals": 1.0,
+            "io_returns": 0.0,
+            "io_return_ratio": 0.0,
+            "active_policy_index": 4.0,
+            "dwell_remaining_ticks": 0.0,
+            "first_service_ready_count": 1.0,
+            "first_service_wait_max": 0.0,
+            "ready_wait_p50": 0.0,
+            "ready_wait_p95": 0.0,
+            "arrival_quiet_ticks": 0.0
+          },
+          "raw_action": "Priority",
+          "predicted_action_costs": {
+            "FCFS": -0.034500258605412455,
+            "Round Robin": -0.006467365789219947,
+            "Priority": -0.03475547251787958,
+            "Priority RR": 0.0053451692470629095,
+            "MLFQ": 0.0,
+            "No Switch": 0.0
+          }
+        },
+        {
+          "features": {
+            "ready_count": 1.0,
+            "blocked_count": 0.0,
+            "completed_burst_mean": 0.0,
+            "completed_burst_variance": 0.0,
+            "observed_service_mean": 3,
+            "observed_service_variance": 0,
+            "priority_mean": 0,
+            "ready_wait_mean": 0,
+            "ready_wait_max": 0.0,
+            "recent_arrivals": 0.0,
+            "io_returns": 0.0,
+            "io_return_ratio": 0.0,
+            "active_policy_index": 4.0,
+            "dwell_remaining_ticks": 0.0,
+            "first_service_ready_count": 0.0,
+            "first_service_wait_max": 0.0,
+            "ready_wait_p50": 0.0,
+            "ready_wait_p95": 0.0,
+            "arrival_quiet_ticks": 3.0
+          },
+          "raw_action": "Priority",
+          "predicted_action_costs": {
+            "FCFS": -0.034500258605412455,
+            "Round Robin": -0.006467365789219947,
+            "Priority": -0.03475547251787958,
+            "Priority RR": 0.0053451692470629095,
+            "MLFQ": 0.0,
+            "No Switch": 0.0
+          }
+        },
+        {
+          "features": {
+            "ready_count": 1.0,
+            "blocked_count": 0.0,
+            "completed_burst_mean": 0.0,
+            "completed_burst_variance": 0.0,
+            "observed_service_mean": 15,
+            "observed_service_variance": 0,
+            "priority_mean": 0,
+            "ready_wait_mean": 0,
+            "ready_wait_max": 0.0,
+            "recent_arrivals": 0.0,
+            "io_returns": 0.0,
+            "io_return_ratio": 0.0,
+            "active_policy_index": 4.0,
+            "dwell_remaining_ticks": 0.0,
+            "first_service_ready_count": 0.0,
+            "first_service_wait_max": 0.0,
+            "ready_wait_p50": 0.0,
+            "ready_wait_p95": 0.0,
+            "arrival_quiet_ticks": 15.0
+          },
+          "raw_action": "Priority",
+          "predicted_action_costs": {
+            "FCFS": -0.034500258605412455,
+            "Round Robin": -0.006467365789219947,
+            "Priority": -0.03475547251787958,
+            "Priority RR": 0.0053451692470629095,
+            "MLFQ": 0.0,
+            "No Switch": 0.0
+          }
+        }
+      ],
+      "accepted_events": [
+        {
+          "time": 16501,
+          "active": "Priority",
+          "reason": "accepted",
+          "ready_count": 1.0
+        },
+        {
+          "time": 39796,
+          "active": "MLFQ",
+          "reason": "excursion_expired",
+          "ready_count": 1.0
+        },
+        {
+          "time": 39823,
+          "active": "Priority",
+          "reason": "accepted",
+          "ready_count": 1.0
+        },
+        {
+          "time": 52444,
+          "active": "MLFQ",
+          "reason": "excursion_expired",
+          "ready_count": 1.0
+        },
+        {
+          "time": 52471,
+          "active": "Priority",
+          "reason": "accepted",
+          "ready_count": 1.0
+        },
+        {
+          "time": 61196,
+          "active": "MLFQ",
+          "reason": "excursion_expired",
+          "ready_count": 1.0
+        },
+        {
+          "time": 61223,
+          "active": "Priority",
+          "reason": "accepted",
+          "ready_count": 1.0
+        },
+        {
+          "time": 69948,
+          "active": "MLFQ",
+          "reason": "excursion_expired",
+          "ready_count": 1.0
+        },
+        {
+          "time": 69971,
+          "active": "Priority",
+          "reason": "accepted",
+          "ready_count": 1.0
+        },
+        {
+          "time": 101761,
+          "active": "MLFQ",
+          "reason": "excursion_expired",
+          "ready_count": 1.0
+        },
+        {
+          "time": 101792,
+          "active": "Priority",
+          "reason": "accepted",
+          "ready_count": 1.0
+        },
+        {
+          "time": 117906,
+          "active": "MLFQ",
+          "reason": "excursion_expired",
+          "ready_count": 1.0
+        },
+        {
+          "time": 117933,
+          "active": "Priority",
+          "reason": "accepted",
+          "ready_count": 1.0
+        },
+        {
+          "time": 131844,
+          "active": "MLFQ",
+          "reason": "excursion_expired",
+          "ready_count": 1.0
+        },
+        {
+          "time": 131871,
+          "active": "Priority",
+          "reason": "accepted",
+          "ready_count": 1.0
+        },
+        {
+          "time": 157916,
+          "active": "MLFQ",
+          "reason": "excursion_expired",
+          "ready_count": 1.0
+        },
+        {
+          "time": 157943,
+          "active": "Priority",
+          "reason": "accepted",
+          "ready_count": 1.0
+        },
+        {
+          "time": 177601,
+          "active": "MLFQ",
+          "reason": "excursion_expired",
+          "ready_count": 1.0
+        },
+        {
+          "time": 177632,
+          "active": "Priority",
+          "reason": "accepted",
+          "ready_count": 1.0
+        }
+      ]
+    },
+    {
+      "workload_id": "azure-d04-0082",
+      "source_group": "azure-d04-0082",
+      "complete": false,
+      "partial_model_invocations": 12970,
+      "partial_raw_actions": {
+        "Priority": 12950,
+        "FCFS": 20
+      },
+      "feature_outside_training_range_counts": {
+        "priority_mean": 12970,
+        "completed_burst_mean": 12966,
+        "observed_service_mean": 12966,
+        "observed_service_variance": 12965,
+        "dwell_remaining_ticks": 4,
+        "completed_burst_variance": 12962,
+        "arrival_quiet_ticks": 10600
+      },
+      "predicted_cost_examples": [
+        {
+          "features": {
+            "ready_count": 1.0,
+            "blocked_count": 0.0,
+            "completed_burst_mean": 0.0,
+            "completed_burst_variance": 0.0,
+            "observed_service_mean": 0.0,
+            "observed_service_variance": 0.0,
+            "priority_mean": 0,
+            "ready_wait_mean": 0,
+            "ready_wait_max": 0.0,
+            "recent_arrivals": 1.0,
+            "io_returns": 0.0,
+            "io_return_ratio": 0.0,
+            "active_policy_index": 4.0,
+            "dwell_remaining_ticks": 0.0,
+            "first_service_ready_count": 1.0,
+            "first_service_wait_max": 0.0,
+            "ready_wait_p50": 0.0,
+            "ready_wait_p95": 0.0,
+            "arrival_quiet_ticks": 0.0
+          },
+          "raw_action": "Priority",
+          "predicted_action_costs": {
+            "FCFS": -0.034500258605412455,
+            "Round Robin": -0.006467365789219947,
+            "Priority": -0.03475547251787958,
+            "Priority RR": 0.0053451692470629095,
+            "MLFQ": 0.0,
+            "No Switch": 0.0
+          }
+        },
+        {
+          "features": {
+            "ready_count": 1.0,
+            "blocked_count": 0.0,
+            "completed_burst_mean": 0.0,
+            "completed_burst_variance": 0.0,
+            "observed_service_mean": 11,
+            "observed_service_variance": 0,
+            "priority_mean": 0,
+            "ready_wait_mean": 0,
+            "ready_wait_max": 0.0,
+            "recent_arrivals": 0.0,
+            "io_returns": 0.0,
+            "io_return_ratio": 0.0,
+            "active_policy_index": 4.0,
+            "dwell_remaining_ticks": 0.0,
+            "first_service_ready_count": 0.0,
+            "first_service_wait_max": 0.0,
+            "ready_wait_p50": 0.0,
+            "ready_wait_p95": 0.0,
+            "arrival_quiet_ticks": 11.0
+          },
+          "raw_action": "Priority",
+          "predicted_action_costs": {
+            "FCFS": -0.034500258605412455,
+            "Round Robin": -0.006467365789219947,
+            "Priority": -0.03475547251787958,
+            "Priority RR": 0.0053451692470629095,
+            "MLFQ": 0.0,
+            "No Switch": 0.0
+          }
+        },
+        {
+          "features": {
+            "ready_count": 1.0,
+            "blocked_count": 0.0,
+            "completed_burst_mean": 0.0,
+            "completed_burst_variance": 0.0,
+            "observed_service_mean": 19,
+            "observed_service_variance": 0,
+            "priority_mean": 0,
+            "ready_wait_mean": 0,
+            "ready_wait_max": 0.0,
+            "recent_arrivals": 0.0,
+            "io_returns": 0.0,
+            "io_return_ratio": 0.0,
+            "active_policy_index": 4.0,
+            "dwell_remaining_ticks": 0.0,
+            "first_service_ready_count": 0.0,
+            "first_service_wait_max": 0.0,
+            "ready_wait_p50": 0.0,
+            "ready_wait_p95": 0.0,
+            "arrival_quiet_ticks": 19.0
+          },
+          "raw_action": "Priority",
+          "predicted_action_costs": {
+            "FCFS": -0.034500258605412455,
+            "Round Robin": -0.006467365789219947,
+            "Priority": -0.03475547251787958,
+            "Priority RR": 0.0053451692470629095,
+            "MLFQ": 0.0,
+            "No Switch": 0.0
+          }
+        }
+      ]
+    },
+    {
+      "workload_id": "azure-d12-0231",
+      "source_group": "azure-d12-0231",
+      "complete": true,
+      "decisions": 48,
+      "raw_actions": {
+        "Priority": 48
+      },
+      "reasons": {
+        "first_service_protection": 1,
+        "arrival_risk": 24,
+        "accepted": 12,
+        "excursion_expired": 11
+      },
+      "accepted_switches": 23,
+      "accepted_with_competition": 0,
+      "reviews_with_competition": 0,
+      "feature_outside_training_range_counts": {
+        "priority_mean": 48,
+        "completed_burst_mean": 44,
+        "observed_service_mean": 44,
+        "observed_service_variance": 33,
+        "dwell_remaining_ticks": 22
+      },
+      "predicted_cost_examples": [
+        {
+          "features": {
+            "ready_count": 1.0,
+            "blocked_count": 0.0,
+            "completed_burst_mean": 0.0,
+            "completed_burst_variance": 0.0,
+            "observed_service_mean": 0.0,
+            "observed_service_variance": 0.0,
+            "priority_mean": 0,
+            "ready_wait_mean": 0,
+            "ready_wait_max": 0.0,
+            "recent_arrivals": 1.0,
+            "io_returns": 0.0,
+            "io_return_ratio": 0.0,
+            "active_policy_index": 4.0,
+            "dwell_remaining_ticks": 0.0,
+            "first_service_ready_count": 1.0,
+            "first_service_wait_max": 0.0,
+            "ready_wait_p50": 0.0,
+            "ready_wait_p95": 0.0,
+            "arrival_quiet_ticks": 0.0
+          },
+          "raw_action": "Priority",
+          "predicted_action_costs": {
+            "FCFS": -0.034500258605412455,
+            "Round Robin": -0.006467365789219947,
+            "Priority": -0.03475547251787958,
+            "Priority RR": 0.0053451692470629095,
+            "MLFQ": 0.0,
+            "No Switch": 0.0
+          }
+        },
+        {
+          "features": {
+            "ready_count": 1.0,
+            "blocked_count": 0.0,
+            "completed_burst_mean": 0.0,
+            "completed_burst_variance": 0.0,
+            "observed_service_mean": 11,
+            "observed_service_variance": 0,
+            "priority_mean": 0,
+            "ready_wait_mean": 0,
+            "ready_wait_max": 0.0,
+            "recent_arrivals": 0.0,
+            "io_returns": 0.0,
+            "io_return_ratio": 0.0,
+            "active_policy_index": 4.0,
+            "dwell_remaining_ticks": 0.0,
+            "first_service_ready_count": 0.0,
+            "first_service_wait_max": 0.0,
+            "ready_wait_p50": 0.0,
+            "ready_wait_p95": 0.0,
+            "arrival_quiet_ticks": 11.0
+          },
+          "raw_action": "Priority",
+          "predicted_action_costs": {
+            "FCFS": -0.034500258605412455,
+            "Round Robin": -0.006467365789219947,
+            "Priority": -0.03475547251787958,
+            "Priority RR": 0.0053451692470629095,
+            "MLFQ": 0.0,
+            "No Switch": 0.0
+          }
+        },
+        {
+          "features": {
+            "ready_count": 1.0,
+            "blocked_count": 0.0,
+            "completed_burst_mean": 0.0,
+            "completed_burst_variance": 0.0,
+            "observed_service_mean": 19,
+            "observed_service_variance": 0,
+            "priority_mean": 0,
+            "ready_wait_mean": 0,
+            "ready_wait_max": 0.0,
+            "recent_arrivals": 0.0,
+            "io_returns": 0.0,
+            "io_return_ratio": 0.0,
+            "active_policy_index": 4.0,
+            "dwell_remaining_ticks": 0.0,
+            "first_service_ready_count": 0.0,
+            "first_service_wait_max": 0.0,
+            "ready_wait_p50": 0.0,
+            "ready_wait_p95": 0.0,
+            "arrival_quiet_ticks": 19.0
+          },
+          "raw_action": "Priority",
+          "predicted_action_costs": {
+            "FCFS": -0.034500258605412455,
+            "Round Robin": -0.006467365789219947,
+            "Priority": -0.03475547251787958,
+            "Priority RR": 0.0053451692470629095,
+            "MLFQ": 0.0,
+            "No Switch": 0.0
+          }
+        }
+      ],
+      "accepted_events": [
+        {
+          "time": 53882,
+          "active": "Priority",
+          "reason": "accepted",
+          "ready_count": 1.0
+        },
+        {
+          "time": 359487,
+          "active": "MLFQ",
+          "reason": "excursion_expired",
+          "ready_count": 1.0
+        },
+        {
+          "time": 359510,
+          "active": "Priority",
+          "reason": "accepted",
+          "ready_count": 1.0
+        },
+        {
+          "time": 618283,
+          "active": "MLFQ",
+          "reason": "excursion_expired",
+          "ready_count": 1.0
+        },
+        {
+          "time": 618310,
+          "active": "Priority",
+          "reason": "accepted",
+          "ready_count": 1.0
+        },
+        {
+          "time": 907011,
+          "active": "MLFQ",
+          "reason": "excursion_expired",
+          "ready_count": 1.0
+        },
+        {
+          "time": 907042,
+          "active": "Priority",
+          "reason": "accepted",
+          "ready_count": 1.0
+        },
+        {
+          "time": 1245066,
+          "active": "MLFQ",
+          "reason": "excursion_expired",
+          "ready_count": 1.0
+        },
+        {
+          "time": 1245093,
+          "active": "Priority",
+          "reason": "accepted",
+          "ready_count": 1.0
+        },
+        {
+          "time": 1537405,
+          "active": "MLFQ",
+          "reason": "excursion_expired",
+          "ready_count": 1.0
+        },
+        {
+          "time": 1537432,
+          "active": "Priority",
+          "reason": "accepted",
+          "ready_count": 1.0
+        },
+        {
+          "time": 1828774,
+          "active": "MLFQ",
+          "reason": "excursion_expired",
+          "ready_count": 1.0
+        },
+        {
+          "time": 1828801,
+          "active": "Priority",
+          "reason": "accepted",
+          "ready_count": 1.0
+        },
+        {
+          "time": 2107068,
+          "active": "MLFQ",
+          "reason": "excursion_expired",
+          "ready_count": 1.0
+        },
+        {
+          "time": 2107091,
+          "active": "Priority",
+          "reason": "accepted",
+          "ready_count": 1.0
+        },
+        {
+          "time": 2424961,
+          "active": "MLFQ",
+          "reason": "excursion_expired",
+          "ready_count": 1.0
+        },
+        {
+          "time": 2424992,
+          "active": "Priority",
+          "reason": "accepted",
+          "ready_count": 1.0
+        },
+        {
+          "time": 2757772,
+          "active": "MLFQ",
+          "reason": "excursion_expired",
+          "ready_count": 1.0
+        },
+        {
+          "time": 2757803,
+          "active": "Priority",
+          "reason": "accepted",
+          "ready_count": 1.0
+        },
+        {
+          "time": 3059447,
+          "active": "MLFQ",
+          "reason": "excursion_expired",
+          "ready_count": 1.0
+        }
+      ]
+    },
+    {
+      "workload_id": "azure-d07-0126",
+      "source_group": "azure-d07-0126",
+      "complete": true,
+      "decisions": 126,
+      "raw_actions": {
+        "Priority": 126
+      },
+      "reasons": {
+        "first_service_protection": 60,
+        "arrival_risk": 66
+      },
+      "accepted_switches": 0,
+      "accepted_with_competition": 0,
+      "reviews_with_competition": 0,
+      "feature_outside_training_range_counts": {
+        "priority_mean": 126
+      },
+      "predicted_cost_examples": [
+        {
+          "features": {
+            "ready_count": 1.0,
+            "blocked_count": 0.0,
+            "completed_burst_mean": 0.0,
+            "completed_burst_variance": 0.0,
+            "observed_service_mean": 0.0,
+            "observed_service_variance": 0.0,
+            "priority_mean": 0,
+            "ready_wait_mean": 0,
+            "ready_wait_max": 0.0,
+            "recent_arrivals": 1.0,
+            "io_returns": 0.0,
+            "io_return_ratio": 0.0,
+            "active_policy_index": 4.0,
+            "dwell_remaining_ticks": 0.0,
+            "first_service_ready_count": 1.0,
+            "first_service_wait_max": 0.0,
+            "ready_wait_p50": 0.0,
+            "ready_wait_p95": 0.0,
+            "arrival_quiet_ticks": 0.0
+          },
+          "raw_action": "Priority",
+          "predicted_action_costs": {
+            "FCFS": -0.034500258605412455,
+            "Round Robin": -0.006467365789219947,
+            "Priority": -0.03475547251787958,
+            "Priority RR": 0.0053451692470629095,
+            "MLFQ": 0.0,
+            "No Switch": 0.0
+          }
+        },
+        {
+          "features": {
+            "ready_count": 1.0,
+            "blocked_count": 0.0,
+            "completed_burst_mean": 0.0,
+            "completed_burst_variance": 0.0,
+            "observed_service_mean": 3,
+            "observed_service_variance": 0,
+            "priority_mean": 0,
+            "ready_wait_mean": 0,
+            "ready_wait_max": 0.0,
+            "recent_arrivals": 0.0,
+            "io_returns": 0.0,
+            "io_return_ratio": 0.0,
+            "active_policy_index": 4.0,
+            "dwell_remaining_ticks": 0.0,
+            "first_service_ready_count": 0.0,
+            "first_service_wait_max": 0.0,
+            "ready_wait_p50": 0.0,
+            "ready_wait_p95": 0.0,
+            "arrival_quiet_ticks": 3.0
+          },
+          "raw_action": "Priority",
+          "predicted_action_costs": {
+            "FCFS": -0.034500258605412455,
+            "Round Robin": -0.006467365789219947,
+            "Priority": -0.03475547251787958,
+            "Priority RR": 0.0053451692470629095,
+            "MLFQ": 0.0,
+            "No Switch": 0.0
+          }
+        },
+        {
+          "features": {
+            "ready_count": 1.0,
+            "blocked_count": 0.0,
+            "completed_burst_mean": 12,
+            "completed_burst_variance": 0,
+            "observed_service_mean": 12,
+            "observed_service_variance": 0,
+            "priority_mean": 0,
+            "ready_wait_mean": 0,
+            "ready_wait_max": 0.0,
+            "recent_arrivals": 1.0,
+            "io_returns": 0.0,
+            "io_return_ratio": 0.0,
+            "active_policy_index": 4.0,
+            "dwell_remaining_ticks": 0.0,
+            "first_service_ready_count": 1.0,
+            "first_service_wait_max": 0.0,
+            "ready_wait_p50": 0.0,
+            "ready_wait_p95": 0.0,
+            "arrival_quiet_ticks": 0.0
+          },
+          "raw_action": "Priority",
+          "predicted_action_costs": {
+            "FCFS": -0.034500258605412455,
+            "Round Robin": -0.006467365789219947,
+            "Priority": -0.03475547251787958,
+            "Priority RR": 0.0053451692470629095,
+            "MLFQ": 0.0,
+            "No Switch": 0.0
+          }
+        }
+      ],
+      "accepted_events": []
+    },
+    {
+      "workload_id": "azure-d06-0122",
+      "source_group": "azure-d06-0122",
+      "complete": true,
+      "decisions": 591,
+      "raw_actions": {
+        "Priority": 567,
+        "FCFS": 24
+      },
+      "reasons": {
+        "first_service_protection": 8,
+        "arrival_risk": 19,
+        "accepted": 2,
+        "excursion_expired": 2,
+        "cost_margin": 560
+      },
+      "accepted_switches": 4,
+      "accepted_with_competition": 0,
+      "reviews_with_competition": 0,
+      "feature_outside_training_range_counts": {
+        "priority_mean": 591,
+        "completed_burst_mean": 588,
+        "observed_service_mean": 588,
+        "observed_service_variance": 587,
+        "dwell_remaining_ticks": 4,
+        "completed_burst_variance": 584
+      },
+      "predicted_cost_examples": [
+        {
+          "features": {
+            "ready_count": 1.0,
+            "blocked_count": 0.0,
+            "completed_burst_mean": 0.0,
+            "completed_burst_variance": 0.0,
+            "observed_service_mean": 0.0,
+            "observed_service_variance": 0.0,
+            "priority_mean": 0,
+            "ready_wait_mean": 0,
+            "ready_wait_max": 0.0,
+            "recent_arrivals": 1.0,
+            "io_returns": 0.0,
+            "io_return_ratio": 0.0,
+            "active_policy_index": 4.0,
+            "dwell_remaining_ticks": 0.0,
+            "first_service_ready_count": 1.0,
+            "first_service_wait_max": 0.0,
+            "ready_wait_p50": 0.0,
+            "ready_wait_p95": 0.0,
+            "arrival_quiet_ticks": 0.0
+          },
+          "raw_action": "Priority",
+          "predicted_action_costs": {
+            "FCFS": -0.034500258605412455,
+            "Round Robin": -0.006467365789219947,
+            "Priority": -0.03475547251787958,
+            "Priority RR": 0.0053451692470629095,
+            "MLFQ": 0.0,
+            "No Switch": 0.0
+          }
+        },
+        {
+          "features": {
+            "ready_count": 1.0,
+            "blocked_count": 0.0,
+            "completed_burst_mean": 0.0,
+            "completed_burst_variance": 0.0,
+            "observed_service_mean": 11,
+            "observed_service_variance": 0,
+            "priority_mean": 0,
+            "ready_wait_mean": 0,
+            "ready_wait_max": 0.0,
+            "recent_arrivals": 0.0,
+            "io_returns": 0.0,
+            "io_return_ratio": 0.0,
+            "active_policy_index": 4.0,
+            "dwell_remaining_ticks": 0.0,
+            "first_service_ready_count": 0.0,
+            "first_service_wait_max": 0.0,
+            "ready_wait_p50": 0.0,
+            "ready_wait_p95": 0.0,
+            "arrival_quiet_ticks": 11.0
+          },
+          "raw_action": "Priority",
+          "predicted_action_costs": {
+            "FCFS": -0.034500258605412455,
+            "Round Robin": -0.006467365789219947,
+            "Priority": -0.03475547251787958,
+            "Priority RR": 0.0053451692470629095,
+            "MLFQ": 0.0,
+            "No Switch": 0.0
+          }
+        },
+        {
+          "features": {
+            "ready_count": 1.0,
+            "blocked_count": 0.0,
+            "completed_burst_mean": 0.0,
+            "completed_burst_variance": 0.0,
+            "observed_service_mean": 23,
+            "observed_service_variance": 0,
+            "priority_mean": 0,
+            "ready_wait_mean": 0,
+            "ready_wait_max": 0.0,
+            "recent_arrivals": 0.0,
+            "io_returns": 0.0,
+            "io_return_ratio": 0.0,
+            "active_policy_index": 4.0,
+            "dwell_remaining_ticks": 0.0,
+            "first_service_ready_count": 0.0,
+            "first_service_wait_max": 0.0,
+            "ready_wait_p50": 0.0,
+            "ready_wait_p95": 0.0,
+            "arrival_quiet_ticks": 23.0
+          },
+          "raw_action": "Priority",
+          "predicted_action_costs": {
+            "FCFS": -0.034500258605412455,
+            "Round Robin": -0.006467365789219947,
+            "Priority": -0.03475547251787958,
+            "Priority RR": 0.0053451692470629095,
+            "MLFQ": 0.0,
+            "No Switch": 0.0
+          }
+        }
+      ],
+      "accepted_events": [
+        {
+          "time": 2273,
+          "active": "Priority",
+          "reason": "accepted",
+          "ready_count": 1.0
+        },
+        {
+          "time": 43547,
+          "active": "MLFQ",
+          "reason": "excursion_expired",
+          "ready_count": 1.0
+        },
+        {
+          "time": 43570,
+          "active": "Priority",
+          "reason": "accepted",
+          "ready_count": 1.0
+        },
+        {
+          "time": 385621,
+          "active": "MLFQ",
+          "reason": "excursion_expired",
+          "ready_count": 1.0
+        }
+      ]
+    },
+    {
+      "workload_id": "azure-d05-0093",
+      "source_group": "azure-d05-0093",
+      "complete": true,
+      "decisions": 47,
+      "raw_actions": {
+        "Priority": 47
+      },
+      "reasons": {
+        "first_service_protection": 1,
+        "arrival_risk": 23,
+        "accepted": 12,
+        "excursion_expired": 11
+      },
+      "accepted_switches": 23,
+      "accepted_with_competition": 0,
+      "reviews_with_competition": 0,
+      "feature_outside_training_range_counts": {
+        "priority_mean": 47,
+        "completed_burst_mean": 43,
+        "observed_service_mean": 43,
+        "observed_service_variance": 32,
+        "dwell_remaining_ticks": 21
+      },
+      "predicted_cost_examples": [
+        {
+          "features": {
+            "ready_count": 1.0,
+            "blocked_count": 0.0,
+            "completed_burst_mean": 0.0,
+            "completed_burst_variance": 0.0,
+            "observed_service_mean": 0.0,
+            "observed_service_variance": 0.0,
+            "priority_mean": 0,
+            "ready_wait_mean": 0,
+            "ready_wait_max": 0.0,
+            "recent_arrivals": 1.0,
+            "io_returns": 0.0,
+            "io_return_ratio": 0.0,
+            "active_policy_index": 4.0,
+            "dwell_remaining_ticks": 0.0,
+            "first_service_ready_count": 1.0,
+            "first_service_wait_max": 0.0,
+            "ready_wait_p50": 0.0,
+            "ready_wait_p95": 0.0,
+            "arrival_quiet_ticks": 0.0
+          },
+          "raw_action": "Priority",
+          "predicted_action_costs": {
+            "FCFS": -0.034500258605412455,
+            "Round Robin": -0.006467365789219947,
+            "Priority": -0.03475547251787958,
+            "Priority RR": 0.0053451692470629095,
+            "MLFQ": 0.0,
+            "No Switch": 0.0
+          }
+        },
+        {
+          "features": {
+            "ready_count": 1.0,
+            "blocked_count": 0.0,
+            "completed_burst_mean": 0.0,
+            "completed_burst_variance": 0.0,
+            "observed_service_mean": 7,
+            "observed_service_variance": 0,
+            "priority_mean": 0,
+            "ready_wait_mean": 0,
+            "ready_wait_max": 0.0,
+            "recent_arrivals": 0.0,
+            "io_returns": 0.0,
+            "io_return_ratio": 0.0,
+            "active_policy_index": 4.0,
+            "dwell_remaining_ticks": 0.0,
+            "first_service_ready_count": 0.0,
+            "first_service_wait_max": 0.0,
+            "ready_wait_p50": 0.0,
+            "ready_wait_p95": 0.0,
+            "arrival_quiet_ticks": 7.0
+          },
+          "raw_action": "Priority",
+          "predicted_action_costs": {
+            "FCFS": -0.034500258605412455,
+            "Round Robin": -0.006467365789219947,
+            "Priority": -0.03475547251787958,
+            "Priority RR": 0.0053451692470629095,
+            "MLFQ": 0.0,
+            "No Switch": 0.0
+          }
+        },
+        {
+          "features": {
+            "ready_count": 1.0,
+            "blocked_count": 0.0,
+            "completed_burst_mean": 0.0,
+            "completed_burst_variance": 0.0,
+            "observed_service_mean": 19,
+            "observed_service_variance": 0,
+            "priority_mean": 0,
+            "ready_wait_mean": 0,
+            "ready_wait_max": 0.0,
+            "recent_arrivals": 0.0,
+            "io_returns": 0.0,
+            "io_return_ratio": 0.0,
+            "active_policy_index": 4.0,
+            "dwell_remaining_ticks": 0.0,
+            "first_service_ready_count": 0.0,
+            "first_service_wait_max": 0.0,
+            "ready_wait_p50": 0.0,
+            "ready_wait_p95": 0.0,
+            "arrival_quiet_ticks": 19.0
+          },
+          "raw_action": "Priority",
+          "predicted_action_costs": {
+            "FCFS": -0.034500258605412455,
+            "Round Robin": -0.006467365789219947,
+            "Priority": -0.03475547251787958,
+            "Priority RR": 0.0053451692470629095,
+            "MLFQ": 0.0,
+            "No Switch": 0.0
+          }
+        }
+      ],
+      "accepted_events": [
+        {
+          "time": 38630,
+          "active": "Priority",
+          "reason": "accepted",
+          "ready_count": 1.0
+        },
+        {
+          "time": 302023,
+          "active": "MLFQ",
+          "reason": "excursion_expired",
+          "ready_count": 1.0
+        },
+        {
+          "time": 302050,
+          "active": "Priority",
+          "reason": "accepted",
+          "ready_count": 1.0
+        },
+        {
+          "time": 613382,
+          "active": "MLFQ",
+          "reason": "excursion_expired",
+          "ready_count": 1.0
+        },
+        {
+          "time": 613413,
+          "active": "Priority",
+          "reason": "accepted",
+          "ready_count": 1.0
+        },
+        {
+          "time": 935625,
+          "active": "MLFQ",
+          "reason": "excursion_expired",
+          "ready_count": 1.0
+        },
+        {
+          "time": 935652,
+          "active": "Priority",
+          "reason": "accepted",
+          "ready_count": 1.0
+        },
+        {
+          "time": 1237088,
+          "active": "MLFQ",
+          "reason": "excursion_expired",
+          "ready_count": 1.0
+        },
+        {
+          "time": 1237111,
+          "active": "Priority",
+          "reason": "accepted",
+          "ready_count": 1.0
+        },
+        {
+          "time": 1512438,
+          "active": "MLFQ",
+          "reason": "excursion_expired",
+          "ready_count": 1.0
+        },
+        {
+          "time": 1512461,
+          "active": "Priority",
+          "reason": "accepted",
+          "ready_count": 1.0
+        },
+        {
+          "time": 1854327,
+          "active": "MLFQ",
+          "reason": "excursion_expired",
+          "ready_count": 1.0
+        },
+        {
+          "time": 1854350,
+          "active": "Priority",
+          "reason": "accepted",
+          "ready_count": 1.0
+        },
+        {
+          "time": 2126862,
+          "active": "MLFQ",
+          "reason": "excursion_expired",
+          "ready_count": 1.0
+        },
+        {
+          "time": 2126893,
+          "active": "Priority",
+          "reason": "accepted",
+          "ready_count": 1.0
+        },
+        {
+          "time": 2437806,
+          "active": "MLFQ",
+          "reason": "excursion_expired",
+          "ready_count": 1.0
+        },
+        {
+          "time": 2437833,
+          "active": "Priority",
+          "reason": "accepted",
+          "ready_count": 1.0
+        },
+        {
+          "time": 2755090,
+          "active": "MLFQ",
+          "reason": "excursion_expired",
+          "ready_count": 1.0
+        },
+        {
+          "time": 2755113,
+          "active": "Priority",
+          "reason": "accepted",
+          "ready_count": 1.0
+        },
+        {
+          "time": 3007114,
+          "active": "MLFQ",
+          "reason": "excursion_expired",
+          "ready_count": 1.0
+        }
+      ]
+    }
+  ]
+}

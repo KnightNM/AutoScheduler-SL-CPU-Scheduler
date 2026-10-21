@@ -1,0 +1,416 @@
+{
+  "rows": 2874,
+  "random_state": 8401,
+  "split": {
+    "train": 0.7,
+    "validation": 0.15,
+    "test": 0.15
+  },
+  "class_distribution": {
+    "No Switch": 1021,
+    "Priority": 653,
+    "MLFQ": 164,
+    "FCFS": 821,
+    "Round Robin": 200,
+    "Priority RR": 15
+  },
+  "max_depth": 8,
+  "min_samples_leaf": 10,
+  "class_weight": null,
+  "model_kind": "policy_cost",
+  "refit_train_plus_validation": false,
+  "validation_accuracy": 0.15920398009950248,
+  "validation_mean_regret": 0.008181392762968519,
+  "test_accuracy": 0.27735368956743,
+  "test_mean_regret": 0.0021381373210558065,
+  "validation_action_costs": {
+    "FCFS": 0.0023249158440591397,
+    "Round Robin": 0.0010284364216310291,
+    "Priority": -0.006583469932772395,
+    "Priority RR": 0.0222758596653102,
+    "MLFQ": 0.0,
+    "No Switch": 0.00989401405792387
+  },
+  "static_baseline": "MLFQ",
+  "priority_rr_config": {
+    "quantum": 2,
+    "aging_interval": 8,
+    "context_switch_cost": 1
+  },
+  "policy_set": [
+    "FCFS",
+    "Round Robin",
+    "Priority",
+    "Priority RR",
+    "MLFQ"
+  ],
+  "feature_importance": {
+    "ready_count": 0.05478711998717121,
+    "blocked_count": 0.015604705771840473,
+    "completed_burst_mean": 0.08528963661308135,
+    "completed_burst_variance": 0.1974939743505295,
+    "observed_service_mean": 0.15035820105155367,
+    "observed_service_variance": 0.03432387093060795,
+    "priority_mean": 0.19331514586465517,
+    "ready_wait_mean": 0.002627599125063365,
+    "ready_wait_max": 0.005663206119484599,
+    "recent_arrivals": 0.0002711795612679671,
+    "io_returns": 0.01782819377977585,
+    "io_return_ratio": 0.0858364008460029,
+    "active_policy_index": 0.005694430250969307,
+    "dwell_remaining_ticks": 0.0,
+    "first_service_ready_count": 0.010987622457777861,
+    "first_service_wait_max": 0.008920383805796071,
+    "ready_wait_p50": 0.04031127679601676,
+    "ready_wait_p95": 0.09068705268840586
+  },
+  "candidate_metrics": [
+    {
+      "max_depth": 3,
+      "min_samples_leaf": 10,
+      "class_weight": null,
+      "validation_accuracy": 0.18407960199004975,
+      "validation_mean_regret": 0.005186105964537406,
+      "validation_schedule_score": 0.18997412869443084,
+      "validation_schedule_p95_response": 84.09027777777777,
+      "validation_schedule_starvation": 13.555555555555555,
+      "validation_schedule_eligible": false,
+      "validation_schedule_gates": {
+        "score": false,
+        "p95_response": false,
+        "starvation": true,
+        "latency": true,
+        "original_rr_score": false,
+        "original_rr_p95": false
+      },
+      "validation_schedule_intervals": {
+        "score": {
+          "mean": 0.014626076436114861,
+          "ci_low": -0.044089247137432785,
+          "ci_high": 0.07261269880560545
+        },
+        "p95_response": {
+          "mean": 77.10972222222222,
+          "ci_low": 32.31107638888888,
+          "ci_high": 128.27791666666664
+        },
+        "starvation": {
+          "mean": -2.2777777777777777,
+          "ci_low": -3.7222222222222223,
+          "ci_high": -1.0555555555555556
+        },
+        "rr_score": {
+          "mean": -0.018135021200271616,
+          "ci_low": -0.07623313556153495,
+          "ci_high": 0.03929632716680591
+        },
+        "rr_p95_response": {
+          "mean": 62.88055555555555,
+          "ci_low": 19.728263888888886,
+          "ci_high": 111.87850694444444
+        }
+      },
+      "validation_schedule_max_workload_p99_ms": 0.4296518000000002
+    },
+    {
+      "max_depth": 5,
+      "min_samples_leaf": 10,
+      "class_weight": null,
+      "validation_accuracy": 0.20398009950248755,
+      "validation_mean_regret": 0.00520145366157976,
+      "validation_schedule_score": 0.13347122700238773,
+      "validation_schedule_p95_response": 17.134722222222223,
+      "validation_schedule_starvation": 14.805555555555555,
+      "validation_schedule_eligible": false,
+      "validation_schedule_gates": {
+        "score": false,
+        "p95_response": false,
+        "starvation": true,
+        "latency": true,
+        "original_rr_score": true,
+        "original_rr_p95": false
+      },
+      "validation_schedule_intervals": {
+        "score": {
+          "mean": -0.04187682525592827,
+          "ci_low": -0.08580232557868524,
+          "ci_high": 0.0009932923431024672
+        },
+        "p95_response": {
+          "mean": 10.154166666666667,
+          "ci_low": 4.405520833333333,
+          "ci_high": 16.643229166666664
+        },
+        "starvation": {
+          "mean": -1.0277777777777777,
+          "ci_low": -1.9166666666666667,
+          "ci_high": -0.2222222222222222
+        },
+        "rr_score": {
+          "mean": -0.07463792289231475,
+          "ci_low": -0.12109389107127735,
+          "ci_high": -0.025607530980572574
+        },
+        "rr_p95_response": {
+          "mean": -4.075,
+          "ci_low": -10.652812500000001,
+          "ci_high": 1.8723263888888877
+        }
+      },
+      "validation_schedule_max_workload_p99_ms": 0.4851195199999999
+    },
+    {
+      "max_depth": 8,
+      "min_samples_leaf": 10,
+      "class_weight": null,
+      "validation_accuracy": 0.15920398009950248,
+      "validation_mean_regret": 0.008181392762968519,
+      "validation_schedule_score": 0.13313715228352102,
+      "validation_schedule_p95_response": 16.379166666666666,
+      "validation_schedule_starvation": 14.916666666666666,
+      "validation_schedule_eligible": false,
+      "validation_schedule_gates": {
+        "score": true,
+        "p95_response": false,
+        "starvation": true,
+        "latency": true,
+        "original_rr_score": true,
+        "original_rr_p95": false
+      },
+      "validation_schedule_intervals": {
+        "score": {
+          "mean": -0.04221089997479498,
+          "ci_low": -0.0840882069662896,
+          "ci_high": -0.0011395055110386102
+        },
+        "p95_response": {
+          "mean": 9.39861111111111,
+          "ci_low": 4.201388888888889,
+          "ci_high": 15.321041666666662
+        },
+        "starvation": {
+          "mean": -0.9166666666666666,
+          "ci_low": -1.6666666666666667,
+          "ci_high": -0.25
+        },
+        "rr_score": {
+          "mean": -0.07497199761118145,
+          "ci_low": -0.12077823833717051,
+          "ci_high": -0.026690921114784803
+        },
+        "rr_p95_response": {
+          "mean": -4.830555555555555,
+          "ci_low": -11.073611111111111,
+          "ci_high": 0.9584027777777769
+        }
+      },
+      "validation_schedule_max_workload_p99_ms": 0.5024215999999992
+    }
+  ],
+  "selection_basis": "safety_eligibility_then_realized_validation_schedule_score",
+  "validation_schedule_score": 0.13313715228352102,
+  "validation_schedule_p95_response": 16.379166666666666,
+  "validation_schedule_starvation": 14.916666666666666,
+  "validation_schedule_eligible": false,
+  "validation_schedule_gates": {
+    "score": true,
+    "p95_response": false,
+    "starvation": true,
+    "latency": true,
+    "original_rr_score": true,
+    "original_rr_p95": false
+  },
+  "validation_schedule_intervals": {
+    "score": {
+      "mean": -0.04221089997479498,
+      "ci_low": -0.0840882069662896,
+      "ci_high": -0.0011395055110386102
+    },
+    "p95_response": {
+      "mean": 9.39861111111111,
+      "ci_low": 4.201388888888889,
+      "ci_high": 15.321041666666662
+    },
+    "starvation": {
+      "mean": -0.9166666666666666,
+      "ci_low": -1.6666666666666667,
+      "ci_high": -0.25
+    },
+    "rr_score": {
+      "mean": -0.07497199761118145,
+      "ci_low": -0.12077823833717051,
+      "ci_high": -0.026690921114784803
+    },
+    "rr_p95_response": {
+      "mean": -4.830555555555555,
+      "ci_low": -11.073611111111111,
+      "ci_high": 0.9584027777777769
+    }
+  },
+  "validation_schedule_max_workload_p99_ms": 0.5024215999999992,
+  "status": "SYNTHETIC_DEVELOPMENT_ONLY",
+  "test_confusion_matrix": {
+    "FCFS": {
+      "FCFS": 23,
+      "Round Robin": 2,
+      "Priority": 109,
+      "Priority RR": 0,
+      "MLFQ": 7,
+      "No Switch": 7
+    },
+    "Round Robin": {
+      "FCFS": 4,
+      "Round Robin": 0,
+      "Priority": 1,
+      "Priority RR": 0,
+      "MLFQ": 0,
+      "No Switch": 1
+    },
+    "Priority": {
+      "FCFS": 13,
+      "Round Robin": 0,
+      "Priority": 62,
+      "Priority RR": 0,
+      "MLFQ": 4,
+      "No Switch": 0
+    },
+    "Priority RR": {
+      "FCFS": 0,
+      "Round Robin": 0,
+      "Priority": 1,
+      "Priority RR": 0,
+      "MLFQ": 0,
+      "No Switch": 0
+    },
+    "MLFQ": {
+      "FCFS": 2,
+      "Round Robin": 0,
+      "Priority": 14,
+      "Priority RR": 0,
+      "MLFQ": 0,
+      "No Switch": 6
+    },
+    "No Switch": {
+      "FCFS": 51,
+      "Round Robin": 10,
+      "Priority": 47,
+      "Priority RR": 0,
+      "MLFQ": 5,
+      "No Switch": 24
+    }
+  },
+  "test_tie_aware_accuracy": 0.6946564885496184,
+  "ambiguous_label_fraction": 0.4683368128044537,
+  "split_class_distribution": {
+    "train": {
+      "No Switch": 776,
+      "Priority": 538,
+      "MLFQ": 118,
+      "FCFS": 652,
+      "Round Robin": 182,
+      "Priority RR": 14
+    },
+    "validation": {
+      "FCFS": 21,
+      "MLFQ": 24,
+      "Round Robin": 12,
+      "No Switch": 108,
+      "Priority": 36
+    },
+    "test": {
+      "No Switch": 137,
+      "FCFS": 148,
+      "MLFQ": 22,
+      "Priority": 79,
+      "Round Robin": 6,
+      "Priority RR": 1
+    }
+  },
+  "internal_test_model": "train_only_saved_without_refit",
+  "split_group_key": "seed",
+  "split_trace_counts": {
+    "train": 50,
+    "validation": 11,
+    "test": 11
+  },
+  "split_groups": {
+    "train": [
+      8401000000,
+      8401000001,
+      8401000002,
+      8401000004,
+      8401000005,
+      8401000006,
+      8401000007,
+      8401000009,
+      8401000012,
+      8401000014,
+      8401000015,
+      8401000016,
+      8401000017,
+      8401000018,
+      8401000021,
+      8401000022,
+      8401000023,
+      8401000024,
+      8401000027,
+      8401000028,
+      8401000029,
+      8401000032,
+      8401000033,
+      8401000034,
+      8401000035,
+      8401000036,
+      8401000037,
+      8401000038,
+      8401000039,
+      8401000040,
+      8401000041,
+      8401000042,
+      8401000043,
+      8401000044,
+      8401000046,
+      8401000047,
+      8401000048,
+      8401000049,
+      8401000051,
+      8401000053,
+      8401000054,
+      8401000056,
+      8401000057,
+      8401000058,
+      8401000059,
+      8401000063,
+      8401000064,
+      8401000066,
+      8401000068,
+      8401000070
+    ],
+    "validation": [
+      8401000008,
+      8401000010,
+      8401000011,
+      8401000045,
+      8401000050,
+      8401000052,
+      8401000055,
+      8401000060,
+      8401000061,
+      8401000062,
+      8401000065
+    ],
+    "test": [
+      8401000003,
+      8401000013,
+      8401000019,
+      8401000020,
+      8401000025,
+      8401000026,
+      8401000030,
+      8401000031,
+      8401000067,
+      8401000069,
+      8401000071
+    ]
+  }
+}

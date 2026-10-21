@@ -6,16 +6,10 @@ import csv
 from pathlib import Path
 from typing import Any, Iterable
 
-from autoscheduler.evaluation import score_results
+from autoscheduler.evaluation import DEPLOYABLE_ALGORITHMS, compare_algorithms, score_results
 from autoscheduler.fairness import FAIRNESS_FIELDS, aggregate_fairness
 from autoscheduler.real_features import FEATURE_NAMES, IDENTIFIER_NAMES, extract_feature_rows
 from autoscheduler.real_replay import build_replay_workload
-from scheduler.fcfs import fcfs
-from scheduler.mlfq import mlfq
-from scheduler.priority import priority_scheduling
-from scheduler.priority_rr import priority_round_robin
-from scheduler.round_robin import round_robin
-from simulator.simulator import run_simulation
 
 
 LABEL_PROVENANCE = "pilot_offline_replay_development_only"
@@ -23,13 +17,7 @@ SYNTHETIC_LABEL_PROVENANCE = "synthetic_development_only"
 
 
 def _results(processes):
-    return {
-        "FCFS": run_simulation("FCFS", fcfs, processes),
-        "Round Robin": run_simulation("Round Robin", round_robin, processes, quantum=2),
-        "Priority": run_simulation("Priority", priority_scheduling, processes),
-        "Priority RR": run_simulation("Priority RR", priority_round_robin, processes, quantum=2, aging_interval=8, context_switch_cost=1),
-        "MLFQ": run_simulation("MLFQ", mlfq, processes, quanta=(2, 4, 8), aging_threshold=20),
-    }
+    return compare_algorithms(processes, algorithms=DEPLOYABLE_ALGORITHMS)
 
 
 def build_development_action_rows(

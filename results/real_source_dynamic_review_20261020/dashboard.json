@@ -1,0 +1,700 @@
+{
+  "schema_version": 1,
+  "dataset": "Microsoft Azure Functions 2019 revision 2 \u00b7 cleaned schema 2",
+  "source_url": "https://github.com/Azure/AzurePublicDataset/blob/master/AzureFunctionsDataset2019.md",
+  "attribution": "CC-BY \u00b7 Mohammad Shahrad et al., Serverless in the Wild, USENIX ATC 2020",
+  "dataset_workloads": 510,
+  "dataset_processes": 520408,
+  "genuine_scheduler_events": false,
+  "model": "artifacts/dynamic_v5_20261019/policy_cost/model.joblib",
+  "model_sha256": "a8783b65b60aaf381694910affd7e2c2acce4c7c871911b782514d8e37064a64",
+  "training": {
+    "occurred": false,
+    "reason": "No local cleaned Linux captures, fitted Linux model or compatible observed-state/finite-action cost rows. Azure saved static-policy costs are not v5 decision-cost targets; saved predicted vectors lack paired actual action costs.",
+    "splits": {
+      "train": {
+        "workloads": 0,
+        "decision_examples": 0,
+        "mae": null,
+        "rmse": null,
+        "r_squared": null
+      },
+      "validation": {
+        "workloads": 0,
+        "decision_examples": 0,
+        "mae": null,
+        "rmse": null,
+        "r_squared": null
+      },
+      "test": {
+        "workloads": 0,
+        "decision_examples": 0,
+        "mae": null,
+        "rmse": null,
+        "r_squared": null
+      }
+    }
+  },
+  "label_eligibility": {
+    "azure": "Inputs support proxy-only simulated static-policy costs. Compatible feasible-duration dynamic action-cost rows would require a separately designed development-label experiment; none are saved here.",
+    "linux": "Complete cleaned switch/wakeup/exit captures can support observed metrics and development replay labels, subject to the frozen contract; source captures and labels are unavailable locally.",
+    "fixtures": "tests/fixtures/real_traces/source_tiers.jsonl contains source-tier examples, not eligible real-capture research observations."
+  },
+  "linux": {
+    "local_cleaned_captures_available": false,
+    "compatible_fitted_model_available": false,
+    "source": "results/real_desktop_ml/decision-tree-demo/summary.json",
+    "saved_summary_only": true,
+    "reported_processes": 25,
+    "reported_events": 2590010,
+    "trace_splits": {
+      "test": 2,
+      "train": 6,
+      "validation": 1
+    },
+    "action_row_splits": {
+      "test": 1180,
+      "train": 3500,
+      "validation": 585
+    },
+    "status": "INSUFFICIENT_DATA",
+    "limitation": "Saved pilot Linux replay summary concerns a different model; source captures/labels are unavailable locally for verification. Not a Dynamic ML v5 result or kernel scheduler validation."
+  },
+  "external": {
+    "source": "results/dynamic_azure_generalization/summary.json",
+    "report": "results/dynamic_azure_generalization/REPORT.md",
+    "selected_workloads": 17,
+    "completed_workloads": 12,
+    "selected_processes": 9413,
+    "completed_processes": 3135,
+    "policy_attempts": 119,
+    "timeouts": 8,
+    "failures": [
+      {
+        "workload_id": "azure-refined-d14-0223",
+        "source_group": "azure-refined-d13-0194",
+        "stratum": "peak_rate_snapshot",
+        "policy": "Tuned MLFQ",
+        "status": "TIMEOUT",
+        "reason": "20-second per-policy limit; result unavailable, workload retained",
+        "wall_seconds": 20.003687242002343,
+        "weighted_score": null,
+        "score_status": "fixed five-policy bounds available"
+      },
+      {
+        "workload_id": "azure-refined-d14-0223",
+        "source_group": "azure-refined-d13-0194",
+        "stratum": "peak_rate_snapshot",
+        "policy": "Dynamic v5",
+        "status": "TIMEOUT",
+        "reason": "20-second per-policy limit; result unavailable, workload retained",
+        "wall_seconds": 20.016791972993815,
+        "weighted_score": null,
+        "score_status": "fixed five-policy bounds available"
+      },
+      {
+        "workload_id": "azure-refined-d07-0112",
+        "source_group": "azure-d03-0057",
+        "stratum": "mixed_high_hour",
+        "policy": "Dynamic v5",
+        "status": "TIMEOUT",
+        "reason": "20-second per-policy limit; result unavailable, workload retained",
+        "wall_seconds": 20.009068321000086,
+        "weighted_score": null,
+        "score_status": "fixed five-policy bounds available"
+      },
+      {
+        "workload_id": "azure-d04-0080",
+        "source_group": "azure-d04-0080",
+        "stratum": "sustained_arrivals",
+        "policy": "Dynamic v5",
+        "status": "TIMEOUT",
+        "reason": "20-second per-policy limit; result unavailable, workload retained",
+        "wall_seconds": 20.011856106000778,
+        "weighted_score": null,
+        "score_status": "fixed five-policy bounds available"
+      },
+      {
+        "workload_id": "azure-refined-d13-0197",
+        "source_group": "azure-refined-d13-0197",
+        "stratum": "high_contention",
+        "policy": "Priority RR",
+        "status": "TIMEOUT",
+        "reason": "20-second per-policy limit; result unavailable, workload retained",
+        "wall_seconds": 20.03958927599888,
+        "weighted_score": null,
+        "score_status": "unavailable: one or more fixed references timed out"
+      },
+      {
+        "workload_id": "azure-refined-d13-0197",
+        "source_group": "azure-refined-d13-0197",
+        "stratum": "high_contention",
+        "policy": "Tuned MLFQ",
+        "status": "TIMEOUT",
+        "reason": "20-second per-policy limit; result unavailable, workload retained",
+        "wall_seconds": 20.02607150699623,
+        "weighted_score": null,
+        "score_status": "unavailable: one or more fixed references timed out"
+      },
+      {
+        "workload_id": "azure-refined-d13-0197",
+        "source_group": "azure-refined-d13-0197",
+        "stratum": "high_contention",
+        "policy": "Dynamic v5",
+        "status": "TIMEOUT",
+        "reason": "20-second per-policy limit; result unavailable, workload retained",
+        "wall_seconds": 20.09303148100298,
+        "weighted_score": null,
+        "score_status": "unavailable: one or more fixed references timed out"
+      },
+      {
+        "workload_id": "azure-d04-0082",
+        "source_group": "azure-d04-0082",
+        "stratum": "medium_contention",
+        "policy": "Dynamic v5",
+        "status": "TIMEOUT",
+        "reason": "20-second per-policy limit; result unavailable, workload retained",
+        "wall_seconds": 20.075054095002997,
+        "weighted_score": null,
+        "score_status": "fixed five-policy bounds available"
+      }
+    ],
+    "decision_examples": 25132,
+    "accepted_switches": 5932,
+    "nonaccepted_reviews": 19200,
+    "rejected_switch_reviews": 19200,
+    "rejection_reasons": {
+      "first_service_protection": 611,
+      "arrival_risk": 2556,
+      "dwell_blocked": 2944,
+      "cost_margin": 13089
+    },
+    "switch_count_scope": "Completed v5 runs only. Rejected switching reviews derive from saved margin/dwell/arrival/first-service reason counts; no same-policy holds occur in this subset. Accepted transitions include mandatory MLFQ returns, not just learned departures.",
+    "max_workload_decision_p99_ms": 4.254609940000007,
+    "metrics": {
+      "FCFS": {
+        "weighted_score": 0.20833333333333334,
+        "avg_waiting_ms": 16263.73538900587,
+        "avg_response_ms": 16263.73538900587,
+        "p95_response_ms": 32729.837499999994,
+        "avg_turnaround_ms": 20017.265389005872,
+        "throughput_jobs_per_ms": 7.87050867474848e-05,
+        "utilization_fraction": 0.1134538505664198,
+        "starvation": 47.416666666666664,
+        "context_switches": 260.25,
+        "accepted_switches": 0,
+        "decision_p99_ms": null
+      },
+      "Round Robin": {
+        "weighted_score": 0.0763041962307965,
+        "avg_waiting_ms": 32298.883514647172,
+        "avg_response_ms": 4.905751219587815,
+        "p95_response_ms": 18.15833333333332,
+        "avg_turnaround_ms": 36052.413514647174,
+        "throughput_jobs_per_ms": 7.87050867474848e-05,
+        "utilization_fraction": 0.1134538505664198,
+        "starvation": 73.08333333333333,
+        "context_switches": 79994.83333333333,
+        "accepted_switches": 0,
+        "decision_p99_ms": null
+      },
+      "Priority": {
+        "weighted_score": 0.20833333333333334,
+        "avg_waiting_ms": 16263.73538900587,
+        "avg_response_ms": 16263.73538900587,
+        "p95_response_ms": 32729.837499999994,
+        "avg_turnaround_ms": 20017.265389005872,
+        "throughput_jobs_per_ms": 7.87050867474848e-05,
+        "utilization_fraction": 0.1134538505664198,
+        "starvation": 47.416666666666664,
+        "context_switches": 260.25,
+        "accepted_switches": 0,
+        "decision_p99_ms": null
+      },
+      "Priority RR": {
+        "weighted_score": 0.7930425875270207,
+        "avg_waiting_ms": 53886.885683814755,
+        "avg_response_ms": 13.554872627700384,
+        "p95_response_ms": 38.42499999999998,
+        "avg_turnaround_ms": 57640.415683814754,
+        "throughput_jobs_per_ms": 7.8648927505323e-05,
+        "utilization_fraction": 0.11271065730661482,
+        "starvation": 153.83333333333334,
+        "context_switches": 92330.16666666667,
+        "accepted_switches": 0,
+        "decision_p99_ms": null
+      },
+      "MLFQ": {
+        "weighted_score": 0.07677794604008514,
+        "avg_waiting_ms": 32311.521599514206,
+        "avg_response_ms": 2.221561898512686,
+        "p95_response_ms": 12.874999999999988,
+        "avg_turnaround_ms": 36065.051599514205,
+        "throughput_jobs_per_ms": 7.87050867474848e-05,
+        "utilization_fraction": 0.1134538505664198,
+        "starvation": 74.16666666666667,
+        "context_switches": 44659.75,
+        "accepted_switches": 0,
+        "decision_p99_ms": 0.0032380983333333323
+      },
+      "Tuned MLFQ": {
+        "weighted_score": 0.0760815724105808,
+        "avg_waiting_ms": 32262.49343229523,
+        "avg_response_ms": 0.30192060367454066,
+        "p95_response_ms": 2.9124999999999943,
+        "avg_turnaround_ms": 36016.02343229523,
+        "throughput_jobs_per_ms": 7.87050867474848e-05,
+        "utilization_fraction": 0.1134538505664198,
+        "starvation": 73.33333333333333,
+        "context_switches": 55169.583333333336,
+        "accepted_switches": 0,
+        "decision_p99_ms": 0.003393620833333333
+      },
+      "Dynamic v5": {
+        "weighted_score": 0.13204287183414262,
+        "avg_waiting_ms": 16304.782739817387,
+        "avg_response_ms": 991.3553160730786,
+        "p95_response_ms": 2197.9083333333333,
+        "avg_turnaround_ms": 20058.312739817386,
+        "throughput_jobs_per_ms": 7.87050867474848e-05,
+        "utilization_fraction": 0.1134538505664198,
+        "starvation": 44.166666666666664,
+        "context_switches": 1915.3333333333333,
+        "accepted_switches": 494.3333333333333,
+        "decision_p99_ms": 1.1576572033333343
+      }
+    },
+    "gates": {
+      "conditional_primary_score_ci_upper_lt_zero": false,
+      "conditional_primary_p95_ci_upper_le_zero": false,
+      "conditional_primary_mean_starvation_le_zero": true,
+      "completed_workload_max_routing_p99_strictly_lt_10ms": true,
+      "conditional_rr_score_ci_upper_le_zero": false,
+      "conditional_rr_p95_ci_upper_lt_zero": false,
+      "all_selected_workloads_complete": false,
+      "independent_untouched_holdout_improvement_established": false,
+      "promoted": false
+    },
+    "paired_vs_tuned": {
+      "weighted_score": {
+        "mean": 0.05596129942356181,
+        "ci_low": -0.045447236294564534,
+        "ci_high": 0.19934518369088206,
+        "pairs": 12,
+        "workload_ids": [
+          "azure-d03-0059",
+          "azure-refined-d12-0185",
+          "azure-d13-0255",
+          "azure-d07-0132",
+          "azure-d10-0191",
+          "azure-d11-0224",
+          "azure-d05-0094",
+          "azure-d10-0187",
+          "azure-d12-0231",
+          "azure-d07-0126",
+          "azure-d06-0122",
+          "azure-d05-0093"
+        ]
+      },
+      "avg_waiting_ms": {
+        "mean": -15957.710692477842,
+        "ci_low": -46619.74858025057,
+        "ci_high": -133.7605269109829,
+        "pairs": 12,
+        "workload_ids": [
+          "azure-d03-0059",
+          "azure-refined-d12-0185",
+          "azure-d13-0255",
+          "azure-d07-0132",
+          "azure-d10-0191",
+          "azure-d11-0224",
+          "azure-d05-0094",
+          "azure-d10-0187",
+          "azure-d12-0231",
+          "azure-d07-0126",
+          "azure-d06-0122",
+          "azure-d05-0093"
+        ]
+      },
+      "avg_response_ms": {
+        "mean": 991.053395469404,
+        "ci_low": 164.67368464319318,
+        "ci_high": 2348.279185476392,
+        "pairs": 12,
+        "workload_ids": [
+          "azure-d03-0059",
+          "azure-refined-d12-0185",
+          "azure-d13-0255",
+          "azure-d07-0132",
+          "azure-d10-0191",
+          "azure-d11-0224",
+          "azure-d05-0094",
+          "azure-d10-0187",
+          "azure-d12-0231",
+          "azure-d07-0126",
+          "azure-d06-0122",
+          "azure-d05-0093"
+        ]
+      },
+      "p95_response_ms": {
+        "mean": 2194.995833333333,
+        "ci_low": 257.86864583333346,
+        "ci_high": 5092.239895833332,
+        "pairs": 12,
+        "workload_ids": [
+          "azure-d03-0059",
+          "azure-refined-d12-0185",
+          "azure-d13-0255",
+          "azure-d07-0132",
+          "azure-d10-0191",
+          "azure-d11-0224",
+          "azure-d05-0094",
+          "azure-d10-0187",
+          "azure-d12-0231",
+          "azure-d07-0126",
+          "azure-d06-0122",
+          "azure-d05-0093"
+        ]
+      },
+      "avg_turnaround_ms": {
+        "mean": -15957.710692477842,
+        "ci_low": -46619.74858025057,
+        "ci_high": -133.76052691098292,
+        "pairs": 12,
+        "workload_ids": [
+          "azure-d03-0059",
+          "azure-refined-d12-0185",
+          "azure-d13-0255",
+          "azure-d07-0132",
+          "azure-d10-0191",
+          "azure-d11-0224",
+          "azure-d05-0094",
+          "azure-d10-0187",
+          "azure-d12-0231",
+          "azure-d07-0126",
+          "azure-d06-0122",
+          "azure-d05-0093"
+        ]
+      },
+      "throughput_jobs_per_ms": {
+        "mean": 0.0,
+        "ci_low": 0.0,
+        "ci_high": 0.0,
+        "pairs": 12,
+        "workload_ids": [
+          "azure-d03-0059",
+          "azure-refined-d12-0185",
+          "azure-d13-0255",
+          "azure-d07-0132",
+          "azure-d10-0191",
+          "azure-d11-0224",
+          "azure-d05-0094",
+          "azure-d10-0187",
+          "azure-d12-0231",
+          "azure-d07-0126",
+          "azure-d06-0122",
+          "azure-d05-0093"
+        ]
+      },
+      "utilization_fraction": {
+        "mean": 0.0,
+        "ci_low": 0.0,
+        "ci_high": 0.0,
+        "pairs": 12,
+        "workload_ids": [
+          "azure-d03-0059",
+          "azure-refined-d12-0185",
+          "azure-d13-0255",
+          "azure-d07-0132",
+          "azure-d10-0191",
+          "azure-d11-0224",
+          "azure-d05-0094",
+          "azure-d10-0187",
+          "azure-d12-0231",
+          "azure-d07-0126",
+          "azure-d06-0122",
+          "azure-d05-0093"
+        ]
+      },
+      "starvation": {
+        "mean": -29.166666666666668,
+        "ci_low": -70.41666666666667,
+        "ci_high": -0.75,
+        "pairs": 12,
+        "workload_ids": [
+          "azure-d03-0059",
+          "azure-refined-d12-0185",
+          "azure-d13-0255",
+          "azure-d07-0132",
+          "azure-d10-0191",
+          "azure-d11-0224",
+          "azure-d05-0094",
+          "azure-d10-0187",
+          "azure-d12-0231",
+          "azure-d07-0126",
+          "azure-d06-0122",
+          "azure-d05-0093"
+        ]
+      },
+      "context_switches": {
+        "mean": -53254.25,
+        "ci_low": -102936.91875000001,
+        "ci_high": -10228.9,
+        "pairs": 12,
+        "workload_ids": [
+          "azure-d03-0059",
+          "azure-refined-d12-0185",
+          "azure-d13-0255",
+          "azure-d07-0132",
+          "azure-d10-0191",
+          "azure-d11-0224",
+          "azure-d05-0094",
+          "azure-d10-0187",
+          "azure-d12-0231",
+          "azure-d07-0126",
+          "azure-d06-0122",
+          "azure-d05-0093"
+        ]
+      },
+      "accepted_switches": {
+        "mean": 494.3333333333333,
+        "ci_low": 28.666666666666668,
+        "ci_high": 1274.5916666666665,
+        "pairs": 12,
+        "workload_ids": [
+          "azure-d03-0059",
+          "azure-refined-d12-0185",
+          "azure-d13-0255",
+          "azure-d07-0132",
+          "azure-d10-0191",
+          "azure-d11-0224",
+          "azure-d05-0094",
+          "azure-d10-0187",
+          "azure-d12-0231",
+          "azure-d07-0126",
+          "azure-d06-0122",
+          "azure-d05-0093"
+        ]
+      },
+      "decision_p99_ms": {
+        "mean": 1.154263582500001,
+        "ci_low": 0.5424057064999998,
+        "ci_high": 1.936569230583334,
+        "pairs": 12,
+        "workload_ids": [
+          "azure-d03-0059",
+          "azure-refined-d12-0185",
+          "azure-d13-0255",
+          "azure-d07-0132",
+          "azure-d10-0191",
+          "azure-d11-0224",
+          "azure-d05-0094",
+          "azure-d10-0187",
+          "azure-d12-0231",
+          "azure-d07-0126",
+          "azure-d06-0122",
+          "azure-d05-0093"
+        ]
+      }
+    },
+    "improved_over_tuned_mlfq": false
+  },
+  "candidate": {
+    "name": "Non-preemptive admission guard v1",
+    "source": "results/real_source_dynamic_review_20261020/audit.json",
+    "selected_workloads": 6,
+    "completed_workloads": 4,
+    "processes": 198,
+    "completed_processes": 145,
+    "timeouts": [
+      {
+        "workload_id": "azure-d05-0090",
+        "stratum": "low",
+        "policy": "Guard candidate",
+        "status": "TIMEOUT",
+        "reason": "Fixed 20-second per-policy budget; no replacement",
+        "wall_seconds": 20.016004949997296,
+        "weighted_score": null
+      },
+      {
+        "workload_id": "azure-d10-0204",
+        "stratum": "medium",
+        "policy": "Dynamic v5",
+        "status": "TIMEOUT",
+        "reason": "Fixed 20-second per-policy budget; no replacement",
+        "wall_seconds": 20.014612306003983,
+        "weighted_score": null
+      },
+      {
+        "workload_id": "azure-d10-0204",
+        "stratum": "medium",
+        "policy": "Guard candidate",
+        "status": "TIMEOUT",
+        "reason": "Fixed 20-second per-policy budget; no replacement",
+        "wall_seconds": 20.009279309000704,
+        "weighted_score": null
+      }
+    ],
+    "metrics": {
+      "FCFS": {
+        "weighted_score": 0.0625,
+        "avg_waiting_ms": 94.16666666666667,
+        "avg_response_ms": 94.16666666666667,
+        "p95_response_ms": 729.8999999999995,
+        "starvation": 0,
+        "accepted_switches": 0,
+        "nonaccepted_reviews": 0,
+        "decision_examples": 0,
+        "decision_p99_ms": null
+      },
+      "Round Robin": {
+        "weighted_score": 0.017697522063589755,
+        "avg_waiting_ms": 188.33333333333334,
+        "avg_response_ms": 0.027777777777777776,
+        "p95_response_ms": 0.25,
+        "starvation": 0,
+        "accepted_switches": 0,
+        "nonaccepted_reviews": 0,
+        "decision_examples": 0,
+        "decision_p99_ms": null
+      },
+      "Priority": {
+        "weighted_score": 0.0625,
+        "avg_waiting_ms": 94.16666666666667,
+        "avg_response_ms": 94.16666666666667,
+        "p95_response_ms": 729.8999999999995,
+        "starvation": 0,
+        "accepted_switches": 0,
+        "nonaccepted_reviews": 0,
+        "decision_examples": 0,
+        "decision_p99_ms": null
+      },
+      "Priority RR": {
+        "weighted_score": 0.9377304572271387,
+        "avg_waiting_ms": 760.6936507936507,
+        "avg_response_ms": 1.0686507936507936,
+        "p95_response_ms": 2.0,
+        "starvation": 0,
+        "accepted_switches": 0,
+        "nonaccepted_reviews": 0,
+        "decision_examples": 0,
+        "decision_p99_ms": null
+      },
+      "MLFQ": {
+        "weighted_score": 0.017720806041136468,
+        "avg_waiting_ms": 188.55555555555554,
+        "avg_response_ms": 0.0,
+        "p95_response_ms": 0.0,
+        "starvation": 0,
+        "accepted_switches": 0,
+        "nonaccepted_reviews": 0,
+        "decision_examples": 0,
+        "decision_p99_ms": null
+      },
+      "Tuned MLFQ": {
+        "weighted_score": 0.017684300554883393,
+        "avg_waiting_ms": 188.36111111111111,
+        "avg_response_ms": 0.0,
+        "p95_response_ms": 0.0,
+        "starvation": 0,
+        "accepted_switches": 0,
+        "nonaccepted_reviews": 0,
+        "decision_examples": 0,
+        "decision_p99_ms": null
+      },
+      "Dynamic v5": {
+        "weighted_score": 0.017684300554883393,
+        "avg_waiting_ms": 188.36111111111111,
+        "avg_response_ms": 0.0,
+        "p95_response_ms": 0.0,
+        "starvation": 0,
+        "accepted_switches": 4,
+        "nonaccepted_reviews": 5156.5,
+        "decision_examples": 5160.5,
+        "decision_p99_ms": 1.9233841849999949
+      },
+      "Guard candidate": {
+        "weighted_score": 0.017684300554883393,
+        "avg_waiting_ms": 188.36111111111111,
+        "avg_response_ms": 0.0,
+        "p95_response_ms": 0.0,
+        "starvation": 0,
+        "accepted_switches": 0,
+        "nonaccepted_reviews": 5776.5,
+        "decision_examples": 5776.5,
+        "decision_p99_ms": 3.188675109999995
+      }
+    },
+    "paired": {
+      "Tuned MLFQ": {
+        "weighted_score": {
+          "mean": 0.0,
+          "ci_low": 0.0,
+          "ci_high": 0.0
+        },
+        "p95_response_ms": {
+          "mean": 0.0,
+          "ci_low": 0.0,
+          "ci_high": 0.0
+        },
+        "starvation": {
+          "mean": 0,
+          "ci_low": 0.0,
+          "ci_high": 0.0
+        }
+      },
+      "Dynamic v5": {
+        "weighted_score": {
+          "mean": 0.0,
+          "ci_low": 0.0,
+          "ci_high": 0.0
+        },
+        "p95_response_ms": {
+          "mean": 0.0,
+          "ci_low": 0.0,
+          "ci_high": 0.0
+        },
+        "starvation": {
+          "mean": 0,
+          "ci_low": 0.0,
+          "ci_high": 0.0
+        }
+      },
+      "Round Robin": {
+        "weighted_score": {
+          "mean": -1.3221508706362517e-05,
+          "ci_low": -3.966452611908755e-05,
+          "ci_high": 0.0
+        },
+        "p95_response_ms": {
+          "mean": -0.25,
+          "ci_low": -0.75,
+          "ci_high": 0.0
+        },
+        "starvation": {
+          "mean": 0,
+          "ci_low": 0.0,
+          "ci_high": 0.0
+        }
+      }
+    },
+    "gates": {
+      "Weighted score improvement (CI upper < 0)": false,
+      "P95 response non-regression (CI upper \u2264 0)": true,
+      "Mean starvation non-regression": true,
+      "Maximum workload routing P99 < 10 ms": true,
+      "Original RR score gate": true,
+      "Original RR P95 gate": false,
+      "All selected workloads complete": false,
+      "Untouched holdout improvement established": false
+    },
+    "admission_vetoes": 23106,
+    "maximum_workload_p99_ms": 6.487174049999997,
+    "all_completed_schedules_match_tuned": true,
+    "promoted": false,
+    "training": false,
+    "limitation": "Fresh development audit only; 145 processes in the common completed subset. Four low and two medium contention groups selected; no eligible fresh high-contention groups under fixed caps. Reserved holdout untouched. Veto is a controller safety rule, not a learned improvement."
+  },
+  "limitations": "One tick = 1 ms. Daily wall-clock means are CPU-demand proxies; within-minute arrivals are reconstructed. I/O, actual CPU bursts and OS ready queues are unavailable. Means use identical all-policy-complete workloads; eight older timeouts are retained. Azure scores use five static reference bounds, separate from synthetic scores. No real-kernel or population-wide superiority claim.",
+  "recommendation": "Retain tuned static MLFQ (1,2,4), aging 40. V5 remains experimental. Guard candidate is not promoted."
+}

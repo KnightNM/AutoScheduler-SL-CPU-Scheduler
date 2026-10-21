@@ -440,35 +440,123 @@ one-sample latency smoke artifacts remain in `results/six_policy/`.
 
 ## Dynamic Routing Experiment
 
-`dynamic-train` creates traces with three distinct workload cohorts injected at
-simulated times `0`, `20`, and `40`. Existing processes continue running, so a
-policy change must preserve remaining CPU work, I/O events, priority, wait
-history, and completed work. Reviews occur at fixed epochs but take effect only
-at a dispatch boundary. SRTF can interrupt its own running burst at an
-arrival or I/O return; policy changes still wait for a dispatch boundary.
+The corrected router defaults to the deployable policy set: FCFS, Round Robin
+quantum 2, Priority, Priority RR `(2, 8, 1)`, and MLFQ `(2, 4, 8)` with aging 20.
+The six-policy simulation comparison remains available. Pass
+`dynamic-train --policy-track oracle_simulation` to explicitly train its oracle
+simulation router; SJF and SRTF are never deployable claims.
 
-The router starts with Round Robin. It observes ready and blocked queue state,
-remaining CPU work, priorities, recent arrivals, and I/O returns. A decision
-tree selects among all six policies. Low-confidence or dwell-time-blocked
-decisions keep the active policy.
+Inputs contain observed completed-burst statistics, cumulative CPU service,
+ready/blocked queue sizes, priorities, waits, arrivals, I/O returns, and current
+router policy/dwell state. They exclude remaining work and future events. The
+schema-5 inputs include first-service ready count/wait, ready-wait quantiles,
+and elapsed time since the last observed arrival.
+Departures from MLFQ are blocked while an observed ready job has received no CPU;
+switching remains possible after first service. An explicit `No Switch` action
+holds the current policy. The cost tree exposes benefits relative to MLFQ continuation.
+With `--response-tail-protection`, departures also require a quiet arrival
+interval and avoid I/O-return pressure. Excursions return to MLFQ at the first
+legal review after minimum dwell; learned margins and no-switch cannot renew
+them. Safety returns retain dwell and dispatch boundaries. This option requires
+`--fallback-policy MLFQ`; historical RR/hold defaults remain available.
+The router starts with Round Robin by default and switches only at safe dispatch
+boundaries. `--initial-policy MLFQ --fallback-policy MLFQ` explicitly selects
+MLFQ startup and low-confidence/unavailable-model fallback. The historical
+default fallback, `hold`, keeps the current policy. Fallback also respects dwell.
+Classifiers retain confidence and dwell safeguards. Cost trees retain dwell and
+a predicted cost-improvement margin of 0.005; that margin is not a probability.
 
-Training labels run a next-epoch counterfactual from the same state for every
-static policy, then complete each trial with Round Robin. `dynamic-train` tunes
-epoch length `{5, 10, 20}`, dwell time `{1, 2, 3}` epochs, and confidence
-threshold `{0.0, 0.6, 0.8}` on seed-42 development traces. It selects lowest
-P95 response among candidates whose paired weighted-score confidence interval
-is not worse than Round Robin, then freezes the configuration.
-Dynamic training and tuning now split by trace seed: all epochs from one trace
-stay together across the 70/15/15 train, validation, and test trace groups.
-The saved dynamic model predates this split and has not been retrained; its
-reported accuracy and regret are not leakage-corrected evidence.
+Development traces include mixed cohorts, sustained arrivals, low load, long
+I/O, repeated changes, and homogeneous batch controls. Family and rollout policy
+are crossed independently. The default `--workload-suite v4` adds counts
+3/6/12/24/48, stochastic arrivals, and sparse long-I/O controls, without outcome
+filtering. `--workload-suite development` retains the v3 development generator;
+`--workload-suite historical` retains the older
+cohort-only development generator. Training
+includes each eligible static rollout, exploration, and train-only pilot model
+rollouts. Whole trace seeds stay in disjoint 70/15/15 groups, recorded before
+fitting. Candidate selection prioritizes safety eligibility, then realized scheduling scores on separate
+development workloads. The static comparator is selected from whole-workload
+development performance. Accuracy, confusion, tie ambiguity, and regret remain
+diagnostics rather than the optimization target.
 
-`dynamic-evaluate` writes `dynamic_evaluation.csv`, `dynamic_summary.json`, and
-`dynamic_diagnostics.png`. Success requires a negative paired 95% confidence
-interval for Adaptive-minus-RR P95 response, a non-positive upper confidence
-limit for weighted-score difference, and a full routing-path P99 below 10 ms.
-On the 1,000-trace six-policy evaluation (seed 2026), the P95 response gate
-fails, so dynamic routing is ineligible despite passing the other two gates.
+`dynamic-train --model-kind policy_cost` is the default. Use
+`--model-kind classifier` to compare the decision-tree classifier, including
+balanced-class candidates. Router settings are explicit by default; the optional
+`--tune-router` retains the older synthetic router search. New models use schema
+version 5 and paths under `artifacts/dynamic_v5/`; evaluation defaults to
+`results/dynamic_v5/`. Dynamic training saves the evaluated train-only model
+without a refit that could invalidate its measured safety. Loading
+checks features, estimator dimensions, policy order/parameters, and frozen
+router configuration. Schema-2/3/4 and historical five/six-policy dynamic models require
+retraining and are deliberately rejected by the active loader.
+If every candidate fails development constraints, saved models are explicitly
+diagnostic-only and family selection returns no ML candidate. Original RR-relative
+eligibility does not imply development eligibility or authorize promotion.
+
+Corrected labels exclude dwell-blocked states. Each action persists through
+minimum dwell until the next legal global review and dispatch boundary, then
+continues with MLFQ. Idle jumps are reviewed before late jobs dispatch. Costs
+use fixed full-workload reference bounds and subtract immediate MLFQ continuation
+from the same prefix. Future simulator outcomes supply offline targets only;
+they are never inputs. Queue aging has its own clock and preserves observed
+ready waiting time. MLFQ reselects after nonzero dispatch overhead without
+charging twice or recording a zero-service dispatch.
+
+Evaluation preserves the original seed-2026 workload generator. Score weights
+and gate thresholds are unchanged. Metric normalization uses bounds fixed by
+the six static simulation references, so adding a candidate cannot change the
+scale. Reports retain the original Adaptive-minus-RR gates and add comparisons
+against the frozen eligible static comparator, starvation, signed regret to
+the best eligible static policy on each workload, switching, and decision time.
+Synthetic ticks are not kernel measurements.
+
+The historical schema-2 comparison is documented in
+[`results/dynamic_v2_20261019/REPORT.md`](results/dynamic_v2_20261019/REPORT.md).
+The historical schema-3 corrective experiment is documented in
+[`results/dynamic_v3_20261019/REPORT.md`](results/dynamic_v3_20261019/REPORT.md).
+The historical focused safety-constrained experiment is documented in
+[`results/dynamic_v4_20261019/REPORT.md`](results/dynamic_v4_20261019/REPORT.md).
+The response-tail investigation and v5 experiment are documented in
+[`results/dynamic_v5_20261019/DIAGNOSIS.md`](results/dynamic_v5_20261019/DIAGNOSIS.md)
+and [`results/dynamic_v5_20261019/REPORT.md`](results/dynamic_v5_20261019/REPORT.md).
+V5 uses 144/84/240 fresh training/validation/audit workloads with the unchanged
+balanced development generator. It does not tune on the previous 1,000-workload
+benchmark or locked real traces. Experimental MLFQ parameters match the
+development-selected static control; registry and real-contract defaults remain
+unchanged. Reproduce with the preserved local v4 cost model and original source:
+
+```bash
+mkdir -p artifacts/dynamic_v5_reproduction
+cp -a artifacts/dynamic_v5_20261019/before_source artifacts/dynamic_v5_reproduction/
+.venv/bin/python -m autoscheduler.dynamic_v5_experiment \
+  --output results/dynamic_v5_reproduction --artifacts artifacts/dynamic_v5_reproduction
+```
+
+It remains **SYNTHETIC_DEVELOPMENT_ONLY**. Final real-data selection still
+requires cleaned captures, the real grouped split, and the frozen real-desktop
+gates. The Azure pipeline and real replay label provenance are unchanged.
+
+The final synthetic checkpoint is
+[`results/dynamic_v6_20261019/REPORT.md`](results/dynamic_v6_20261019/REPORT.md).
+V6 tests a longer observed arrival-quiet admission window. It is **not promoted**:
+the new model regresses against v5 and the prior frozen static response envelope,
+despite passing its own development-selected-comparator gates. Keep v5 as a
+research candidate and MLFQ `(1,2,4)`, aging 40, as the simulator recommendation.
+Synthetic tuning is closed; the next phase is the interactive dashboard.
+
+Future backend/frontend integrations should read
+[`configs/research_status.json`](configs/research_status.json) for versioned
+model status, artifact checksums, dataset-scoped metrics with units, gates, and
+recommendations. Regenerate it with
+`.venv/bin/python -m autoscheduler.research_status`; no ML model is approved for
+deployment and simulator ticks are not Linux response-time measurements.
+
+`artifacts/dynamic_model.json`, `results/dynamic/`, and
+`results/six_policy/dynamic*` are preserved historical artifacts. Their old
+accuracy uses a different label set/split, and their scores used candidate-
+dependent normalization. They must not be compared directly with corrected
+scores or presented as deployable-policy evidence.
 
 ## RR-versus-SRTF Benefit Experiment
 

@@ -1,0 +1,628 @@
+{
+  "rows": 7080,
+  "random_state": 10601,
+  "split": {
+    "train": 0.7,
+    "validation": 0.15,
+    "test": 0.15
+  },
+  "class_distribution": {
+    "No Switch": 4108,
+    "Priority": 1403,
+    "Round Robin": 124,
+    "FCFS": 1426,
+    "Priority RR": 19
+  },
+  "max_depth": 8,
+  "min_samples_leaf": 10,
+  "class_weight": null,
+  "model_kind": "classifier",
+  "selected_for_development": false,
+  "diagnostic_only": true,
+  "refit_train_plus_validation": false,
+  "validation_accuracy": 0.8787061994609164,
+  "validation_mean_regret": 0.0011559998165280748,
+  "test_accuracy": 0.8064,
+  "test_mean_regret": 0.001989578082054874,
+  "validation_action_costs": {
+    "FCFS": -0.0007900963929695344,
+    "Round Robin": 0.0008672872759479221,
+    "Priority": -0.0019561835231257318,
+    "Priority RR": 0.00545738606922216,
+    "MLFQ": 0.0,
+    "No Switch": 0.0
+  },
+  "static_baseline": "MLFQ",
+  "priority_rr_config": {
+    "quantum": 2,
+    "aging_interval": 8,
+    "context_switch_cost": 1
+  },
+  "policy_set": [
+    "FCFS",
+    "Round Robin",
+    "Priority",
+    "Priority RR",
+    "MLFQ"
+  ],
+  "feature_importance": {
+    "ready_count": 0.05683869899309381,
+    "blocked_count": 0.012936843911786256,
+    "completed_burst_mean": 0.027099527283302404,
+    "completed_burst_variance": 0.027859226651090155,
+    "observed_service_mean": 0.02548692565212246,
+    "observed_service_variance": 0.08371584791876857,
+    "priority_mean": 0.004414354306283506,
+    "ready_wait_mean": 0.001069190390177041,
+    "ready_wait_max": 0.05178922056021917,
+    "recent_arrivals": 0.0,
+    "io_returns": 0.21399566543472276,
+    "io_return_ratio": 0.0,
+    "active_policy_index": 0.13834718821455383,
+    "dwell_remaining_ticks": 0.0,
+    "first_service_ready_count": 0.0,
+    "first_service_wait_max": 0.0,
+    "ready_wait_p50": 0.0,
+    "ready_wait_p95": 0.026173837758844576,
+    "arrival_quiet_ticks": 0.3302734729250354
+  },
+  "candidate_metrics": [
+    {
+      "max_depth": 3,
+      "min_samples_leaf": 10,
+      "class_weight": null,
+      "validation_accuracy": 0.8328840970350404,
+      "validation_mean_regret": 0.002213643610801479,
+      "validation_schedule_score": 0.1816887544309308,
+      "validation_schedule_p95_response": 11.878571428571428,
+      "validation_schedule_starvation": 10.369047619047619,
+      "validation_schedule_eligible": false,
+      "validation_schedule_gates": {
+        "score": false,
+        "p95_response": true,
+        "starvation": true,
+        "latency": true,
+        "original_rr_score": true,
+        "original_rr_p95": true
+      },
+      "validation_schedule_intervals": {
+        "score": {
+          "mean": 0.0,
+          "ci_low": 0.0,
+          "ci_high": 0.0
+        },
+        "p95_response": {
+          "mean": 0.0,
+          "ci_low": 0.0,
+          "ci_high": 0.0
+        },
+        "starvation": {
+          "mean": 0,
+          "ci_low": 0,
+          "ci_high": 0
+        },
+        "rr_score": {
+          "mean": -0.041622437988267744,
+          "ci_low": -0.06176764673406565,
+          "ci_high": -0.022206809021360355
+        },
+        "rr_p95_response": {
+          "mean": -5.410119047619047,
+          "ci_low": -7.479196428571429,
+          "ci_high": -3.518452380952381
+        }
+      },
+      "validation_schedule_max_workload_p99_ms": 0.5418267399999998
+    },
+    {
+      "max_depth": 3,
+      "min_samples_leaf": 10,
+      "class_weight": "balanced",
+      "validation_accuracy": 0.568733153638814,
+      "validation_mean_regret": 0.0035650152558325066,
+      "validation_schedule_score": 0.20304921956288788,
+      "validation_schedule_p95_response": 11.848809523809523,
+      "validation_schedule_starvation": 10.511904761904763,
+      "validation_schedule_eligible": false,
+      "validation_schedule_gates": {
+        "score": false,
+        "p95_response": true,
+        "starvation": false,
+        "latency": true,
+        "original_rr_score": false,
+        "original_rr_p95": true
+      },
+      "validation_schedule_intervals": {
+        "score": {
+          "mean": 0.02136046513195709,
+          "ci_low": 0.012081806976172926,
+          "ci_high": 0.032444237149560635
+        },
+        "p95_response": {
+          "mean": -0.02976190476190472,
+          "ci_low": -0.07916666666666657,
+          "ci_high": 0.0
+        },
+        "starvation": {
+          "mean": 0.14285714285714285,
+          "ci_low": 0.023809523809523808,
+          "ci_high": 0.2857142857142857
+        },
+        "rr_score": {
+          "mean": -0.020261972856310654,
+          "ci_low": -0.04154548986895797,
+          "ci_high": 0.0015088149677036085
+        },
+        "rr_p95_response": {
+          "mean": -5.439880952380952,
+          "ci_low": -7.510714285714285,
+          "ci_high": -3.544598214285714
+        }
+      },
+      "validation_schedule_max_workload_p99_ms": 0.5708526999999995
+    },
+    {
+      "max_depth": 5,
+      "min_samples_leaf": 10,
+      "class_weight": null,
+      "validation_accuracy": 0.8463611859838275,
+      "validation_mean_regret": 0.0010638182208377676,
+      "validation_schedule_score": 0.1816887544309308,
+      "validation_schedule_p95_response": 11.878571428571428,
+      "validation_schedule_starvation": 10.369047619047619,
+      "validation_schedule_eligible": false,
+      "validation_schedule_gates": {
+        "score": false,
+        "p95_response": true,
+        "starvation": true,
+        "latency": true,
+        "original_rr_score": true,
+        "original_rr_p95": true
+      },
+      "validation_schedule_intervals": {
+        "score": {
+          "mean": 0.0,
+          "ci_low": 0.0,
+          "ci_high": 0.0
+        },
+        "p95_response": {
+          "mean": 0.0,
+          "ci_low": 0.0,
+          "ci_high": 0.0
+        },
+        "starvation": {
+          "mean": 0,
+          "ci_low": 0,
+          "ci_high": 0
+        },
+        "rr_score": {
+          "mean": -0.041622437988267744,
+          "ci_low": -0.06176764673406565,
+          "ci_high": -0.022206809021360355
+        },
+        "rr_p95_response": {
+          "mean": -5.410119047619047,
+          "ci_low": -7.479196428571429,
+          "ci_high": -3.518452380952381
+        }
+      },
+      "validation_schedule_max_workload_p99_ms": 1.1904646199999993
+    },
+    {
+      "max_depth": 5,
+      "min_samples_leaf": 10,
+      "class_weight": "balanced",
+      "validation_accuracy": 0.7358490566037735,
+      "validation_mean_regret": 0.001411091524737373,
+      "validation_schedule_score": 0.1866300995763104,
+      "validation_schedule_p95_response": 11.878571428571428,
+      "validation_schedule_starvation": 10.380952380952381,
+      "validation_schedule_eligible": false,
+      "validation_schedule_gates": {
+        "score": false,
+        "p95_response": true,
+        "starvation": false,
+        "latency": true,
+        "original_rr_score": true,
+        "original_rr_p95": true
+      },
+      "validation_schedule_intervals": {
+        "score": {
+          "mean": 0.004941345145379611,
+          "ci_low": 2.6874950342992618e-05,
+          "ci_high": 0.012734625529801879
+        },
+        "p95_response": {
+          "mean": 0.0,
+          "ci_low": 0.0,
+          "ci_high": 0.0
+        },
+        "starvation": {
+          "mean": 0.011904761904761904,
+          "ci_low": -0.023809523809523808,
+          "ci_high": 0.047619047619047616
+        },
+        "rr_score": {
+          "mean": -0.03668109284288813,
+          "ci_low": -0.058523077971795706,
+          "ci_high": -0.014768028189975182
+        },
+        "rr_p95_response": {
+          "mean": -5.410119047619047,
+          "ci_low": -7.479196428571429,
+          "ci_high": -3.518452380952381
+        }
+      },
+      "validation_schedule_max_workload_p99_ms": 0.6995744000000008
+    },
+    {
+      "max_depth": 8,
+      "min_samples_leaf": 10,
+      "class_weight": null,
+      "validation_accuracy": 0.8787061994609164,
+      "validation_mean_regret": 0.0011559998165280748,
+      "validation_schedule_score": 0.1686367982351222,
+      "validation_schedule_p95_response": 11.878571428571428,
+      "validation_schedule_starvation": 10.380952380952381,
+      "validation_schedule_eligible": false,
+      "validation_schedule_gates": {
+        "score": true,
+        "p95_response": true,
+        "starvation": false,
+        "latency": true,
+        "original_rr_score": true,
+        "original_rr_p95": true
+      },
+      "validation_schedule_intervals": {
+        "score": {
+          "mean": -0.01305195619580859,
+          "ci_low": -0.020888636087079877,
+          "ci_high": -0.006217697334139939
+        },
+        "p95_response": {
+          "mean": 0.0,
+          "ci_low": 0.0,
+          "ci_high": 0.0
+        },
+        "starvation": {
+          "mean": 0.011904761904761904,
+          "ci_low": 0.0,
+          "ci_high": 0.03571428571428571
+        },
+        "rr_score": {
+          "mean": -0.05467439418407633,
+          "ci_low": -0.07460896787286546,
+          "ci_high": -0.035464981020315166
+        },
+        "rr_p95_response": {
+          "mean": -5.410119047619047,
+          "ci_low": -7.479196428571429,
+          "ci_high": -3.518452380952381
+        }
+      },
+      "validation_schedule_max_workload_p99_ms": 0.5026681500000006
+    },
+    {
+      "max_depth": 8,
+      "min_samples_leaf": 10,
+      "class_weight": "balanced",
+      "validation_accuracy": 0.7547169811320755,
+      "validation_mean_regret": 0.002043009899283738,
+      "validation_schedule_score": 0.17627481803317674,
+      "validation_schedule_p95_response": 11.878571428571428,
+      "validation_schedule_starvation": 10.369047619047619,
+      "validation_schedule_eligible": false,
+      "validation_schedule_gates": {
+        "score": false,
+        "p95_response": true,
+        "starvation": true,
+        "latency": true,
+        "original_rr_score": true,
+        "original_rr_p95": true
+      },
+      "validation_schedule_intervals": {
+        "score": {
+          "mean": -0.005413936397754039,
+          "ci_low": -0.013006656248537368,
+          "ci_high": 0.0014006750654555423
+        },
+        "p95_response": {
+          "mean": 0.0,
+          "ci_low": 0.0,
+          "ci_high": 0.0
+        },
+        "starvation": {
+          "mean": 0,
+          "ci_low": -0.05952380952380952,
+          "ci_high": 0.05952380952380952
+        },
+        "rr_score": {
+          "mean": -0.04703637438602178,
+          "ci_low": -0.06775651984538222,
+          "ci_high": -0.026363437973931553
+        },
+        "rr_p95_response": {
+          "mean": -5.410119047619047,
+          "ci_low": -7.479196428571429,
+          "ci_high": -3.518452380952381
+        }
+      },
+      "validation_schedule_max_workload_p99_ms": 0.7309219999999972
+    }
+  ],
+  "selection_basis": "safety_eligibility_then_realized_validation_schedule_score",
+  "validation_schedule_score": 0.1686367982351222,
+  "validation_schedule_p95_response": 11.878571428571428,
+  "validation_schedule_starvation": 10.380952380952381,
+  "validation_schedule_eligible": false,
+  "validation_schedule_gates": {
+    "score": true,
+    "p95_response": true,
+    "starvation": false,
+    "latency": true,
+    "original_rr_score": true,
+    "original_rr_p95": true
+  },
+  "validation_schedule_intervals": {
+    "score": {
+      "mean": -0.01305195619580859,
+      "ci_low": -0.020888636087079877,
+      "ci_high": -0.006217697334139939
+    },
+    "p95_response": {
+      "mean": 0.0,
+      "ci_low": 0.0,
+      "ci_high": 0.0
+    },
+    "starvation": {
+      "mean": 0.011904761904761904,
+      "ci_low": 0.0,
+      "ci_high": 0.03571428571428571
+    },
+    "rr_score": {
+      "mean": -0.05467439418407633,
+      "ci_low": -0.07460896787286546,
+      "ci_high": -0.035464981020315166
+    },
+    "rr_p95_response": {
+      "mean": -5.410119047619047,
+      "ci_low": -7.479196428571429,
+      "ci_high": -3.518452380952381
+    }
+  },
+  "validation_schedule_max_workload_p99_ms": 0.5026681500000006,
+  "status": "SYNTHETIC_DEVELOPMENT_ONLY",
+  "test_confusion_matrix": {
+    "FCFS": {
+      "FCFS": 28,
+      "Round Robin": 0,
+      "Priority": 60,
+      "Priority RR": 0,
+      "MLFQ": 0,
+      "No Switch": 3
+    },
+    "Round Robin": {
+      "FCFS": 4,
+      "Round Robin": 0,
+      "Priority": 10,
+      "Priority RR": 0,
+      "MLFQ": 0,
+      "No Switch": 0
+    },
+    "Priority": {
+      "FCFS": 19,
+      "Round Robin": 0,
+      "Priority": 123,
+      "Priority RR": 0,
+      "MLFQ": 0,
+      "No Switch": 1
+    },
+    "Priority RR": {
+      "FCFS": 2,
+      "Round Robin": 0,
+      "Priority": 3,
+      "Priority RR": 0,
+      "MLFQ": 0,
+      "No Switch": 3
+    },
+    "MLFQ": {
+      "FCFS": 0,
+      "Round Robin": 0,
+      "Priority": 0,
+      "Priority RR": 0,
+      "MLFQ": 0,
+      "No Switch": 0
+    },
+    "No Switch": {
+      "FCFS": 7,
+      "Round Robin": 0,
+      "Priority": 9,
+      "Priority RR": 0,
+      "MLFQ": 0,
+      "No Switch": 353
+    }
+  },
+  "test_tie_aware_accuracy": 0.8496,
+  "ambiguous_label_fraction": 0.6820621468926553,
+  "split_class_distribution": {
+    "train": {
+      "No Switch": 3428,
+      "Priority": 1231,
+      "Round Robin": 104,
+      "FCFS": 1310,
+      "Priority RR": 11
+    },
+    "validation": {
+      "No Switch": 311,
+      "FCFS": 25,
+      "Priority": 29,
+      "Round Robin": 6
+    },
+    "test": {
+      "No Switch": 369,
+      "FCFS": 91,
+      "Priority": 143,
+      "Priority RR": 8,
+      "Round Robin": 14
+    }
+  },
+  "internal_test_model": "train_only_saved_without_refit",
+  "split_group_key": "seed",
+  "split_trace_counts": {
+    "train": 100,
+    "validation": 22,
+    "test": 22
+  },
+  "split_groups": {
+    "train": [
+      10601000002,
+      10601000003,
+      10601000004,
+      10601000005,
+      10601000006,
+      10601000007,
+      10601000008,
+      10601000009,
+      10601000011,
+      10601000012,
+      10601000014,
+      10601000015,
+      10601000016,
+      10601000017,
+      10601000018,
+      10601000019,
+      10601000020,
+      10601000021,
+      10601000023,
+      10601000024,
+      10601000025,
+      10601000026,
+      10601000028,
+      10601000030,
+      10601000031,
+      10601000032,
+      10601000038,
+      10601000039,
+      10601000040,
+      10601000041,
+      10601000042,
+      10601000043,
+      10601000044,
+      10601000045,
+      10601000047,
+      10601000048,
+      10601000049,
+      10601000050,
+      10601000052,
+      10601000053,
+      10601000056,
+      10601000058,
+      10601000059,
+      10601000060,
+      10601000061,
+      10601000062,
+      10601000063,
+      10601000064,
+      10601000066,
+      10601000067,
+      10601000068,
+      10601000069,
+      10601000070,
+      10601000071,
+      10601000072,
+      10601000073,
+      10601000074,
+      10601000075,
+      10601000077,
+      10601000078,
+      10601000079,
+      10601000080,
+      10601000082,
+      10601000083,
+      10601000084,
+      10601000085,
+      10601000088,
+      10601000091,
+      10601000092,
+      10601000093,
+      10601000095,
+      10601000097,
+      10601000098,
+      10601000100,
+      10601000101,
+      10601000102,
+      10601000104,
+      10601000105,
+      10601000106,
+      10601000107,
+      10601000108,
+      10601000111,
+      10601000114,
+      10601000115,
+      10601000118,
+      10601000119,
+      10601000121,
+      10601000122,
+      10601000124,
+      10601000126,
+      10601000128,
+      10601000130,
+      10601000131,
+      10601000132,
+      10601000134,
+      10601000137,
+      10601000138,
+      10601000139,
+      10601000140,
+      10601000141
+    ],
+    "validation": [
+      10601000000,
+      10601000027,
+      10601000033,
+      10601000036,
+      10601000037,
+      10601000055,
+      10601000065,
+      10601000076,
+      10601000081,
+      10601000086,
+      10601000090,
+      10601000099,
+      10601000103,
+      10601000109,
+      10601000110,
+      10601000112,
+      10601000113,
+      10601000116,
+      10601000120,
+      10601000133,
+      10601000135,
+      10601000142
+    ],
+    "test": [
+      10601000001,
+      10601000010,
+      10601000013,
+      10601000022,
+      10601000029,
+      10601000034,
+      10601000035,
+      10601000046,
+      10601000051,
+      10601000054,
+      10601000057,
+      10601000087,
+      10601000089,
+      10601000094,
+      10601000096,
+      10601000117,
+      10601000123,
+      10601000125,
+      10601000127,
+      10601000129,
+      10601000136,
+      10601000143
+    ]
+  }
+}

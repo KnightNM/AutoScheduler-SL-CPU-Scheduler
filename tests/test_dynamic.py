@@ -57,7 +57,7 @@ class DynamicRoutingTests(unittest.TestCase):
 
     def test_dynamic_router_accepts_srtf(self):
         workload = generate_dynamic_workload(14, process_count=3)
-        result = run_dynamic(workload.processes, _SrtfModel(), DynamicRouterConfig(epoch_ticks=5, confidence_threshold=0.6))
+        result = run_dynamic(workload.processes, _SrtfModel(), DynamicRouterConfig(epoch_ticks=5, confidence_threshold=0.6, policy_track="oracle_simulation"))
         self.assertEqual(result.final_policy, "SRTF")
         self.assertEqual(len(result.simulation.process_metrics), len(workload.processes))
         self.assertTrue(any(decision.accepted for decision in result.decisions))
@@ -91,7 +91,7 @@ class DynamicRoutingTests(unittest.TestCase):
         from autoscheduler.model import load_model, train_model
 
         config = DynamicRouterConfig(epoch_ticks=5, dwell_epochs=1, confidence_threshold=0.0)
-        rows = build_dynamic_dataset(traces=2, seed=12, config=config)
+        rows = build_dynamic_dataset(traces=4, seed=12, config=config)
         self.assertTrue(rows)
         self.assertEqual(tuple(name for name in DYNAMIC_FEATURE_NAMES if name in rows[0]), DYNAMIC_FEATURE_NAMES)
         with __import__("tempfile").TemporaryDirectory() as directory:
@@ -106,7 +106,7 @@ class DynamicRoutingTests(unittest.TestCase):
     def test_accepted_switch_keeps_every_process_and_records_full_path_timing(self):
         workload = generate_dynamic_workload(14, process_count=3)
         result = run_dynamic(
-            workload.processes, _SjfModel(), DynamicRouterConfig(epoch_ticks=5, confidence_threshold=0.6)
+            workload.processes, _SjfModel(), DynamicRouterConfig(epoch_ticks=5, confidence_threshold=0.6, policy_track="oracle_simulation")
         )
         self.assertTrue(any(decision.accepted for decision in result.decisions))
         self.assertEqual(result.final_policy, "SJF")

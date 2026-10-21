@@ -1,0 +1,43 @@
+{
+  "status": "DIAGNOSTIC_ONLY_NO_RETUNING",
+  "seed": 8403000040,
+  "family": "repeated_changes",
+  "audit_p95_cost": 152.65,
+  "audit_p95_tuned_mlfq": 6.0,
+  "late_job": {
+    "pid": "P26",
+    "observed_arrival": 245,
+    "first_start": 399,
+    "response": 154
+  },
+  "preceding_switches": [
+    {
+      "time": 120,
+      "policy": "Priority",
+      "unserved_ready": 0.0
+    },
+    {
+      "time": 192,
+      "policy": "MLFQ",
+      "unserved_ready": 2.0
+    },
+    {
+      "time": 231,
+      "policy": "FCFS",
+      "unserved_ready": 0.0
+    },
+    {
+      "time": 394,
+      "policy": "MLFQ",
+      "unserved_ready": 16.0
+    }
+  ],
+  "running_dispatch_at_arrival": [
+    {
+      "pid": "P5",
+      "start": 242,
+      "end": 249
+    }
+  ],
+  "note": "Arrival is used only for retrospective explanation, never for routing features; decision timing from this replay is not substituted for the audit."
+}

@@ -1,0 +1,326 @@
+[
+  {
+    "stratum": "low_load",
+    "workload_id": "azure-d12-0227",
+    "cohort": "retained_control",
+    "day": 12,
+    "start_minute": 0,
+    "job_count": 2,
+    "reasons": [
+      "low_rate_block_0"
+    ],
+    "observed_count": 2,
+    "exposure_ms": 3600000,
+    "sampling_fraction": 1.0,
+    "reference_arrival_rate_per_second": 0.0005555555555555556,
+    "realized_arrival_rate_per_second": 0.0005555555555555556,
+    "source_rows": [
+      46316
+    ],
+    "total_proxy_cpu_ms": 208,
+    "function_count": 1
+  },
+  {
+    "stratum": "low_load",
+    "workload_id": "azure-d07-0124",
+    "cohort": "retained_control",
+    "day": 7,
+    "start_minute": 180,
+    "job_count": 4,
+    "reasons": [
+      "low_rate_block_0"
+    ],
+    "observed_count": 4,
+    "exposure_ms": 3600000,
+    "sampling_fraction": 1.0,
+    "reference_arrival_rate_per_second": 0.0011111111111111111,
+    "realized_arrival_rate_per_second": 0.0011111111111111111,
+    "source_rows": [
+      20291
+    ],
+    "total_proxy_cpu_ms": 1080,
+    "function_count": 1
+  },
+  {
+    "stratum": "low_load",
+    "workload_id": "azure-d14-0273",
+    "cohort": "retained_control",
+    "day": 14,
+    "start_minute": 900,
+    "job_count": 1,
+    "reasons": [
+      "low_rate_block_2"
+    ],
+    "observed_count": 1,
+    "exposure_ms": 3600000,
+    "sampling_fraction": 1.0,
+    "reference_arrival_rate_per_second": 0.0002777777777777778,
+    "realized_arrival_rate_per_second": 0.0002777777777777778,
+    "source_rows": [
+      5080
+    ],
+    "total_proxy_cpu_ms": 606,
+    "function_count": 1
+  },
+  {
+    "stratum": "medium_load",
+    "workload_id": "azure-d03-0052",
+    "cohort": "retained_control",
+    "day": 3,
+    "start_minute": 1200,
+    "job_count": 5,
+    "reasons": [
+      "medium_rate_block_3"
+    ],
+    "observed_count": 5,
+    "exposure_ms": 3600000,
+    "sampling_fraction": 1.0,
+    "reference_arrival_rate_per_second": 0.001388888888888889,
+    "realized_arrival_rate_per_second": 0.001388888888888889,
+    "source_rows": [
+      28174
+    ],
+    "total_proxy_cpu_ms": 2880,
+    "function_count": 1
+  },
+  {
+    "stratum": "medium_load",
+    "workload_id": "azure-d06-0104",
+    "cohort": "retained_control",
+    "day": 6,
+    "start_minute": 60,
+    "job_count": 12,
+    "reasons": [
+      "medium_rate_block_0"
+    ],
+    "observed_count": 12,
+    "exposure_ms": 3600000,
+    "sampling_fraction": 1.0,
+    "reference_arrival_rate_per_second": 0.0033333333333333335,
+    "realized_arrival_rate_per_second": 0.0033333333333333335,
+    "source_rows": [
+      29131
+    ],
+    "total_proxy_cpu_ms": 7560,
+    "function_count": 1
+  },
+  {
+    "stratum": "medium_load",
+    "workload_id": "azure-d12-0234",
+    "cohort": "retained_control",
+    "day": 12,
+    "start_minute": 1020,
+    "job_count": 12,
+    "reasons": [
+      "medium_rate_block_2"
+    ],
+    "observed_count": 12,
+    "exposure_ms": 3600000,
+    "sampling_fraction": 1.0,
+    "reference_arrival_rate_per_second": 0.0033333333333333335,
+    "realized_arrival_rate_per_second": 0.0033333333333333335,
+    "source_rows": [
+      20760
+    ],
+    "total_proxy_cpu_ms": 204,
+    "function_count": 1
+  },
+  {
+    "stratum": "high_rate_control",
+    "workload_id": "azure-d09-0170",
+    "cohort": "retained_control",
+    "day": 9,
+    "start_minute": 660,
+    "job_count": 24,
+    "reasons": [
+      "high_rate_block_1"
+    ],
+    "observed_count": 24,
+    "exposure_ms": 3600000,
+    "sampling_fraction": 1.0,
+    "reference_arrival_rate_per_second": 0.006666666666666667,
+    "realized_arrival_rate_per_second": 0.006666666666666667,
+    "source_rows": [
+      7987
+    ],
+    "total_proxy_cpu_ms": 864,
+    "function_count": 1
+  },
+  {
+    "stratum": "high_rate_control",
+    "workload_id": "azure-d06-0108",
+    "cohort": "retained_control",
+    "day": 6,
+    "start_minute": 660,
+    "job_count": 60,
+    "reasons": [
+      "high_rate_block_1"
+    ],
+    "observed_count": 60,
+    "exposure_ms": 3600000,
+    "sampling_fraction": 1.0,
+    "reference_arrival_rate_per_second": 0.016666666666666666,
+    "realized_arrival_rate_per_second": 0.016666666666666666,
+    "source_rows": [
+      34197
+    ],
+    "total_proxy_cpu_ms": 3120,
+    "function_count": 1
+  },
+  {
+    "stratum": "high_rate_control",
+    "workload_id": "azure-d13-0258",
+    "cohort": "retained_control",
+    "day": 13,
+    "start_minute": 1320,
+    "job_count": 36,
+    "reasons": [
+      "high_rate_block_3"
+    ],
+    "observed_count": 36,
+    "exposure_ms": 3600000,
+    "sampling_fraction": 1.0,
+    "reference_arrival_rate_per_second": 0.01,
+    "realized_arrival_rate_per_second": 0.01,
+    "source_rows": [
+      30363
+    ],
+    "total_proxy_cpu_ms": 432,
+    "function_count": 1
+  },
+  {
+    "stratum": "mixed_functions",
+    "workload_id": "azure-d01-0019",
+    "cohort": "retained_control",
+    "day": 1,
+    "start_minute": 480,
+    "job_count": 48,
+    "reasons": [
+      "mixed_observed_durations"
+    ],
+    "observed_count": 48,
+    "exposure_ms": 3600000,
+    "sampling_fraction": 1.0,
+    "reference_arrival_rate_per_second": 0.013333333333333334,
+    "realized_arrival_rate_per_second": 0.013333333333333334,
+    "source_rows": [
+      45150,
+      15649,
+      27408
+    ],
+    "total_proxy_cpu_ms": 13518,
+    "function_count": 3
+  },
+  {
+    "stratum": "mixed_functions",
+    "workload_id": "azure-d05-0101",
+    "cohort": "retained_control",
+    "day": 5,
+    "start_minute": 780,
+    "job_count": 15,
+    "reasons": [
+      "mixed_observed_durations"
+    ],
+    "observed_count": 15,
+    "exposure_ms": 3600000,
+    "sampling_fraction": 1.0,
+    "reference_arrival_rate_per_second": 0.004166666666666667,
+    "realized_arrival_rate_per_second": 0.004166666666666667,
+    "source_rows": [
+      33794,
+      13088,
+      33536
+    ],
+    "total_proxy_cpu_ms": 8031,
+    "function_count": 3
+  },
+  {
+    "stratum": "mixed_functions",
+    "workload_id": "azure-d02-0040",
+    "cohort": "retained_control",
+    "day": 2,
+    "start_minute": 960,
+    "job_count": 26,
+    "reasons": [
+      "mixed_observed_durations"
+    ],
+    "observed_count": 26,
+    "exposure_ms": 3600000,
+    "sampling_fraction": 1.0,
+    "reference_arrival_rate_per_second": 0.007222222222222222,
+    "realized_arrival_rate_per_second": 0.007222222222222222,
+    "source_rows": [
+      3120,
+      5392,
+      4618
+    ],
+    "total_proxy_cpu_ms": 18102,
+    "function_count": 3
+  },
+  {
+    "stratum": "high_load_hour_sample",
+    "workload_id": "azure-refined-d02-0021",
+    "cohort": "high_load_hour_sample",
+    "day": 2,
+    "start_minute": 480,
+    "job_count": 2000,
+    "reasons": [
+      "over_cap_middle_volume",
+      "block_1"
+    ],
+    "observed_count": 3600,
+    "exposure_ms": 3600000,
+    "sampling_fraction": 0.5555555555555556,
+    "reference_arrival_rate_per_second": 1.0,
+    "realized_arrival_rate_per_second": 0.5555555555555556,
+    "source_rows": [
+      44718
+    ],
+    "total_proxy_cpu_ms": 2000,
+    "function_count": 1
+  },
+  {
+    "stratum": "high_load_hour_sample",
+    "workload_id": "azure-refined-d09-0129",
+    "cohort": "high_load_hour_sample",
+    "day": 9,
+    "start_minute": 300,
+    "job_count": 2000,
+    "reasons": [
+      "over_cap_middle_volume",
+      "block_0"
+    ],
+    "observed_count": 6840,
+    "exposure_ms": 3600000,
+    "sampling_fraction": 0.29239766081871343,
+    "reference_arrival_rate_per_second": 1.9,
+    "realized_arrival_rate_per_second": 0.5555555555555556,
+    "source_rows": [
+      19907
+    ],
+    "total_proxy_cpu_ms": 10000,
+    "function_count": 1
+  },
+  {
+    "stratum": "peak_rate_snapshot",
+    "workload_id": "azure-refined-d13-0207",
+    "cohort": "local_rate_snapshot",
+    "day": 13,
+    "start_minute": 1140,
+    "job_count": 2000,
+    "reasons": [
+      "peak_minute_contiguous_reconstructed_ranks",
+      "block_3"
+    ],
+    "observed_count": 7037107,
+    "exposure_ms": 926,
+    "sampling_fraction": 0.00028420770069291257,
+    "reference_arrival_rate_per_second": 2081.5333333333333,
+    "realized_arrival_rate_per_second": 2159.827213822894,
+    "source_rows": [
+      7213
+    ],
+    "total_proxy_cpu_ms": 130000,
+    "function_count": 1
+  }
+]

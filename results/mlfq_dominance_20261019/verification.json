@@ -1,0 +1,12 @@
+{
+  "models_fitted": false,
+  "protected_files_unchanged": true,
+  "targeted_tests_passed": 51,
+  "randomized_accounting_cases": 1750,
+  "exact_frozen_router_replays": 1000,
+  "completed_trial_timing_regression": "Early-tail count118/179;18 additional short actions completed before any tail switch. Full rerun confirmed all scheduling/control metrics unchanged.",
+  "diagnostic_tool_sha256": {
+    "tools/diagnose_mlfq.py": "4253383196822bb78cb24635e55df3f3c7610f79fdbc1a39ff7ae964035d52ee",
+    "tools/audit_mlfq_accounting.py": "35e5f35fbc5f91aa7f6a4b2d9c5ba5a1bb1efbaad371fc464f987c7e866ee7cf"
+  }
+}

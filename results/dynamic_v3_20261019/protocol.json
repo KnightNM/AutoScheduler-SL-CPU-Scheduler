@@ -1,0 +1,72 @@
+{
+  "status": "SYNTHETIC_DEVELOPMENT_ONLY",
+  "config": {
+    "epoch_ticks": 10,
+    "dwell_epochs": 2,
+    "confidence_threshold": 0.8,
+    "policy_track": "realistic",
+    "initial_policy": "MLFQ",
+    "fallback_policy": "MLFQ",
+    "label_horizon_ticks": null,
+    "label_continuation": "MLFQ"
+  },
+  "train": {
+    "traces": 144,
+    "seed": 7301
+  },
+  "validation": {
+    "traces": 60,
+    "seed": 7302
+  },
+  "development_audit": {
+    "traces": 120,
+    "seed": 7303
+  },
+  "frozen_audit": {
+    "traces": 1000,
+    "seed": 2026
+  },
+  "static_grid": {
+    "quanta": [
+      [
+        1,
+        2,
+        4
+      ],
+      [
+        2,
+        4,
+        8
+      ],
+      [
+        4,
+        8,
+        16
+      ]
+    ],
+    "aging": [
+      10,
+      20,
+      40
+    ],
+    "switch_cost": 0
+  },
+  "selection": "realized_validation_schedule_score_then_action_regret_then_simpler_tree",
+  "normalization": "unchanged_six_static_policy_bounds",
+  "cost_switch_margin": 0.005,
+  "original_gates": "P95_vs_RR_CI_high<0; score_vs_RR_CI_high<=0; max_workload_routing_P99<10ms",
+  "comparator_gates": "score_CI_high<0; response_CI_high<=0; mean_starvation<=baseline; original_latency",
+  "promotion": "NEVER_SYNTHETIC_ONLY",
+  "python": "3.12.3",
+  "sklearn": "1.9.1",
+  "source_sha256": {
+    "autoscheduler/dynamic.py": "37ece31a11bd361b99e5f0f0781ca626cb3db4bfdf9c53d1b50d054a20e8a493",
+    "autoscheduler/model.py": "bf0feb44e24d4a95988b9fa71645b34e607f309522b95aa0a10043c18d10079d",
+    "autoscheduler/dynamic_training.py": "f747da81628e4f16bbf0773fe56dd971da3c8e4afa53209ddd70e52f37125f75",
+    "autoscheduler/development_workloads.py": "50dfb8ff91ec47f292bd26c0bef705f0c36feb8e35cec65e43533ed837cf22d1",
+    "autoscheduler/dynamic_v3_experiment.py": "3647cad1a33d97f1b4778683df890c7a7351302d2f368a054a8cbee03fd2614d",
+    "autoscheduler/evaluation.py": "96d26272501c110da3d20ecde9c22f86e567220756943e2643a7d18606957c5f",
+    "simulator/engine.py": "4710963b08df4cf4e773d4e80e76e4313d0f5b8571c35532a6a4c298f65fa5ce",
+    "configs/real_desktop_ml.json": "b12ea718f41279c3758d4c6172560ac0af01776537ef93092091a19cf2446067"
+  }
+}

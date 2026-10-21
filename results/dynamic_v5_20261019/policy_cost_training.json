@@ -1,0 +1,487 @@
+{
+  "rows": 7282,
+  "random_state": 9701,
+  "split": {
+    "train": 0.7,
+    "validation": 0.15,
+    "test": 0.15
+  },
+  "class_distribution": {
+    "No Switch": 3710,
+    "Priority": 1640,
+    "FCFS": 1479,
+    "Round Robin": 305,
+    "Priority RR": 148
+  },
+  "max_depth": 3,
+  "min_samples_leaf": 10,
+  "class_weight": null,
+  "model_kind": "policy_cost",
+  "selected_for_development": true,
+  "diagnostic_only": false,
+  "refit_train_plus_validation": false,
+  "validation_accuracy": 0.11379310344827587,
+  "validation_mean_regret": 0.0017471749852715351,
+  "test_accuracy": 0.19083969465648856,
+  "test_mean_regret": 0.001773018607400375,
+  "validation_action_costs": {
+    "FCFS": -0.002139760763868685,
+    "Round Robin": -0.0001587825737321402,
+    "Priority": -0.00249897576765409,
+    "Priority RR": 0.00506980261583284,
+    "MLFQ": 0.0,
+    "No Switch": 0.0
+  },
+  "static_baseline": "MLFQ",
+  "priority_rr_config": {
+    "quantum": 2,
+    "aging_interval": 8,
+    "context_switch_cost": 1
+  },
+  "policy_set": [
+    "FCFS",
+    "Round Robin",
+    "Priority",
+    "Priority RR",
+    "MLFQ"
+  ],
+  "feature_importance": {
+    "ready_count": 0.5775271744220638,
+    "blocked_count": 0.0,
+    "completed_burst_mean": 0.0,
+    "completed_burst_variance": 0.3942694339134164,
+    "observed_service_mean": 0.0,
+    "observed_service_variance": 0.0,
+    "priority_mean": 0.0,
+    "ready_wait_mean": 0.0,
+    "ready_wait_max": 0.0,
+    "recent_arrivals": 0.0,
+    "io_returns": 0.0,
+    "io_return_ratio": 0.0,
+    "active_policy_index": 0.0,
+    "dwell_remaining_ticks": 0.0,
+    "first_service_ready_count": 0.0,
+    "first_service_wait_max": 0.0,
+    "ready_wait_p50": 0.0,
+    "ready_wait_p95": 0.0,
+    "arrival_quiet_ticks": 0.02820339166451966
+  },
+  "candidate_metrics": [
+    {
+      "max_depth": 3,
+      "min_samples_leaf": 10,
+      "class_weight": null,
+      "validation_accuracy": 0.11379310344827587,
+      "validation_mean_regret": 0.0017471749852715351,
+      "validation_schedule_score": 0.13705959404673804,
+      "validation_schedule_p95_response": 6.564880952380952,
+      "validation_schedule_starvation": 11.857142857142858,
+      "validation_schedule_eligible": true,
+      "validation_schedule_gates": {
+        "score": true,
+        "p95_response": true,
+        "starvation": true,
+        "latency": true,
+        "original_rr_score": true,
+        "original_rr_p95": true
+      },
+      "validation_schedule_intervals": {
+        "score": {
+          "mean": -0.029345067941047846,
+          "ci_low": -0.04171347851659248,
+          "ci_high": -0.017912763410400396
+        },
+        "p95_response": {
+          "mean": 0.0,
+          "ci_low": 0.0,
+          "ci_high": 0.0
+        },
+        "starvation": {
+          "mean": -0.35714285714285715,
+          "ci_low": -0.5238095238095238,
+          "ci_high": -0.20238095238095238
+        },
+        "rr_score": {
+          "mean": -0.08106810252520065,
+          "ci_low": -0.1003849238013025,
+          "ci_high": -0.06296744239945509
+        },
+        "rr_p95_response": {
+          "mean": -12.712499999999999,
+          "ci_low": -16.17799107142857,
+          "ci_high": -9.429732142857143
+        }
+      },
+      "validation_schedule_max_workload_p99_ms": 0.8554652699999999
+    },
+    {
+      "max_depth": 5,
+      "min_samples_leaf": 10,
+      "class_weight": null,
+      "validation_accuracy": 0.11551724137931034,
+      "validation_mean_regret": 0.0015526693417670498,
+      "validation_schedule_score": 0.13577861993847626,
+      "validation_schedule_p95_response": 7.313690476190476,
+      "validation_schedule_starvation": 11.94047619047619,
+      "validation_schedule_eligible": false,
+      "validation_schedule_gates": {
+        "score": true,
+        "p95_response": false,
+        "starvation": true,
+        "latency": true,
+        "original_rr_score": true,
+        "original_rr_p95": true
+      },
+      "validation_schedule_intervals": {
+        "score": {
+          "mean": -0.03062604204930962,
+          "ci_low": -0.04271860091733476,
+          "ci_high": -0.019170091878711416
+        },
+        "p95_response": {
+          "mean": 0.7488095238095236,
+          "ci_low": 0.0,
+          "ci_high": 1.7601190476190471
+        },
+        "starvation": {
+          "mean": -0.27380952380952384,
+          "ci_low": -0.47619047619047616,
+          "ci_high": -0.07142857142857142
+        },
+        "rr_score": {
+          "mean": -0.08234907663346243,
+          "ci_low": -0.10130240729316985,
+          "ci_high": -0.06370166508119829
+        },
+        "rr_p95_response": {
+          "mean": -11.963690476190475,
+          "ci_low": -15.451785714285712,
+          "ci_high": -8.69934523809524
+        }
+      },
+      "validation_schedule_max_workload_p99_ms": 1.0105254000000001
+    },
+    {
+      "max_depth": 8,
+      "min_samples_leaf": 10,
+      "class_weight": null,
+      "validation_accuracy": 0.13620689655172413,
+      "validation_mean_regret": 0.0014515337165059037,
+      "validation_schedule_score": 0.1344924785039677,
+      "validation_schedule_p95_response": 7.452380952380952,
+      "validation_schedule_starvation": 11.833333333333334,
+      "validation_schedule_eligible": false,
+      "validation_schedule_gates": {
+        "score": true,
+        "p95_response": false,
+        "starvation": true,
+        "latency": true,
+        "original_rr_score": true,
+        "original_rr_p95": true
+      },
+      "validation_schedule_intervals": {
+        "score": {
+          "mean": -0.03191218348381817,
+          "ci_low": -0.04374446730955658,
+          "ci_high": -0.021039696097165973
+        },
+        "p95_response": {
+          "mean": 0.8874999999999998,
+          "ci_low": 0.11488095238095236,
+          "ci_high": 1.9422619047619045
+        },
+        "starvation": {
+          "mean": -0.38095238095238093,
+          "ci_low": -0.5952380952380952,
+          "ci_high": -0.17857142857142858
+        },
+        "rr_score": {
+          "mean": -0.08363521806797099,
+          "ci_low": -0.10191962680195116,
+          "ci_high": -0.06550503813059605
+        },
+        "rr_p95_response": {
+          "mean": -11.825,
+          "ci_low": -15.29050595238095,
+          "ci_high": -8.578541666666666
+        }
+      },
+      "validation_schedule_max_workload_p99_ms": 0.7890361299999985
+    }
+  ],
+  "selection_basis": "safety_eligibility_then_realized_validation_schedule_score",
+  "validation_schedule_score": 0.13705959404673804,
+  "validation_schedule_p95_response": 6.564880952380952,
+  "validation_schedule_starvation": 11.857142857142858,
+  "validation_schedule_eligible": true,
+  "validation_schedule_gates": {
+    "score": true,
+    "p95_response": true,
+    "starvation": true,
+    "latency": true,
+    "original_rr_score": true,
+    "original_rr_p95": true
+  },
+  "validation_schedule_intervals": {
+    "score": {
+      "mean": -0.029345067941047846,
+      "ci_low": -0.04171347851659248,
+      "ci_high": -0.017912763410400396
+    },
+    "p95_response": {
+      "mean": 0.0,
+      "ci_low": 0.0,
+      "ci_high": 0.0
+    },
+    "starvation": {
+      "mean": -0.35714285714285715,
+      "ci_low": -0.5238095238095238,
+      "ci_high": -0.20238095238095238
+    },
+    "rr_score": {
+      "mean": -0.08106810252520065,
+      "ci_low": -0.1003849238013025,
+      "ci_high": -0.06296744239945509
+    },
+    "rr_p95_response": {
+      "mean": -12.712499999999999,
+      "ci_low": -16.17799107142857,
+      "ci_high": -9.429732142857143
+    }
+  },
+  "validation_schedule_max_workload_p99_ms": 0.8554652699999999,
+  "status": "SYNTHETIC_DEVELOPMENT_ONLY",
+  "test_confusion_matrix": {
+    "FCFS": {
+      "FCFS": 0,
+      "Round Robin": 0,
+      "Priority": 43,
+      "Priority RR": 0,
+      "MLFQ": 0,
+      "No Switch": 0
+    },
+    "Round Robin": {
+      "FCFS": 0,
+      "Round Robin": 0,
+      "Priority": 11,
+      "Priority RR": 0,
+      "MLFQ": 0,
+      "No Switch": 0
+    },
+    "Priority": {
+      "FCFS": 0,
+      "Round Robin": 0,
+      "Priority": 50,
+      "Priority RR": 0,
+      "MLFQ": 0,
+      "No Switch": 0
+    },
+    "Priority RR": {
+      "FCFS": 0,
+      "Round Robin": 0,
+      "Priority": 0,
+      "Priority RR": 0,
+      "MLFQ": 0,
+      "No Switch": 0
+    },
+    "MLFQ": {
+      "FCFS": 0,
+      "Round Robin": 0,
+      "Priority": 0,
+      "Priority RR": 0,
+      "MLFQ": 0,
+      "No Switch": 0
+    },
+    "No Switch": {
+      "FCFS": 52,
+      "Round Robin": 0,
+      "Priority": 106,
+      "Priority RR": 0,
+      "MLFQ": 0,
+      "No Switch": 0
+    }
+  },
+  "test_tie_aware_accuracy": 0.8320610687022901,
+  "ambiguous_label_fraction": 0.5789618236748146,
+  "split_class_distribution": {
+    "train": {
+      "No Switch": 3138,
+      "Priority": 1524,
+      "FCFS": 1351,
+      "Round Robin": 281,
+      "Priority RR": 146
+    },
+    "validation": {
+      "No Switch": 414,
+      "Round Robin": 13,
+      "FCFS": 85,
+      "Priority": 66,
+      "Priority RR": 2
+    },
+    "test": {
+      "No Switch": 158,
+      "FCFS": 43,
+      "Priority": 50,
+      "Round Robin": 11
+    }
+  },
+  "internal_test_model": "train_only_saved_without_refit",
+  "split_group_key": "seed",
+  "split_trace_counts": {
+    "train": 100,
+    "validation": 22,
+    "test": 22
+  },
+  "split_groups": {
+    "train": [
+      9701000000,
+      9701000003,
+      9701000004,
+      9701000005,
+      9701000007,
+      9701000008,
+      9701000009,
+      9701000010,
+      9701000011,
+      9701000017,
+      9701000018,
+      9701000020,
+      9701000022,
+      9701000023,
+      9701000026,
+      9701000028,
+      9701000030,
+      9701000031,
+      9701000032,
+      9701000033,
+      9701000034,
+      9701000035,
+      9701000036,
+      9701000037,
+      9701000038,
+      9701000039,
+      9701000041,
+      9701000043,
+      9701000046,
+      9701000047,
+      9701000048,
+      9701000050,
+      9701000051,
+      9701000052,
+      9701000053,
+      9701000055,
+      9701000058,
+      9701000059,
+      9701000060,
+      9701000061,
+      9701000062,
+      9701000063,
+      9701000065,
+      9701000066,
+      9701000067,
+      9701000068,
+      9701000071,
+      9701000073,
+      9701000074,
+      9701000075,
+      9701000076,
+      9701000078,
+      9701000079,
+      9701000081,
+      9701000083,
+      9701000084,
+      9701000087,
+      9701000088,
+      9701000090,
+      9701000091,
+      9701000092,
+      9701000093,
+      9701000094,
+      9701000095,
+      9701000097,
+      9701000098,
+      9701000100,
+      9701000102,
+      9701000103,
+      9701000105,
+      9701000106,
+      9701000107,
+      9701000108,
+      9701000109,
+      9701000110,
+      9701000111,
+      9701000112,
+      9701000114,
+      9701000115,
+      9701000116,
+      9701000117,
+      9701000119,
+      9701000120,
+      9701000122,
+      9701000123,
+      9701000124,
+      9701000127,
+      9701000128,
+      9701000129,
+      9701000130,
+      9701000131,
+      9701000132,
+      9701000133,
+      9701000134,
+      9701000135,
+      9701000137,
+      9701000138,
+      9701000139,
+      9701000141,
+      9701000143
+    ],
+    "validation": [
+      9701000002,
+      9701000013,
+      9701000016,
+      9701000021,
+      9701000027,
+      9701000042,
+      9701000045,
+      9701000049,
+      9701000054,
+      9701000057,
+      9701000064,
+      9701000069,
+      9701000072,
+      9701000077,
+      9701000080,
+      9701000082,
+      9701000085,
+      9701000096,
+      9701000113,
+      9701000126,
+      9701000136,
+      9701000142
+    ],
+    "test": [
+      9701000001,
+      9701000006,
+      9701000012,
+      9701000014,
+      9701000015,
+      9701000019,
+      9701000024,
+      9701000025,
+      9701000029,
+      9701000040,
+      9701000044,
+      9701000056,
+      9701000070,
+      9701000086,
+      9701000089,
+      9701000099,
+      9701000101,
+      9701000104,
+      9701000118,
+      9701000121,
+      9701000125,
+      9701000140
+    ]
+  }
+}

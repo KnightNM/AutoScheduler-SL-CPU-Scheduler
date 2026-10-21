@@ -1,0 +1,35 @@
+{
+  "focused_tests": {
+    "count": 53,
+    "result": "PASS"
+  },
+  "frontend_build": "PASS",
+  "existing_dashboard_api_smoke": "PASS",
+  "graphify_ast_update": "PASS",
+  "protected_files": 234,
+  "protected_hashes_unchanged": true,
+  "development_states": 288,
+  "source_groups": 24,
+  "nonzero_state_replays": 7,
+  "replay_timeouts": 0,
+  "replay_features_and_costs_reproduced": true,
+  "alternative_choices_replayed": 14,
+  "lower_cost_choices": 4,
+  "higher_cost_choices": 10,
+  "p95_regressions_among_replayed_choices": 0,
+  "old_test_re_evaluated": false,
+  "final_holdout_groups": 73,
+  "final_holdout_evaluated": false,
+  "new_training": false,
+  "new_model": false,
+  "dashboard_sources_changed": false,
+  "promoted": false,
+  "pushed_or_merged": false,
+  "not_established": [
+    "Safe switching headroom in unsampled/high-contention Azure workloads",
+    "Counterfactual response changes in tied-objective states",
+    "Untouched final-test generalization",
+    "Real Linux scheduler performance",
+    "Full repository test suite"
+  ]
+}

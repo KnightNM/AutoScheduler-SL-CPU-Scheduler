@@ -4,6 +4,13 @@ __pycache__/
 .cache/
 artifacts/*.joblib
 artifacts/*.csv
+/artifacts/dynamic_v2*/
+/artifacts/dynamic_v3*/
+/artifacts/dynamic_v4*/
+/artifacts/dynamic_v5*/
+/artifacts/dynamic_v6*/
+/artifacts/dynamic_azure_generalization/
+/artifacts/dynamic_azure_adapted_20261020/
 results/evaluation.csv
 results/latency.csv
 data/raw/

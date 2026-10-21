@@ -5,6 +5,7 @@ from __future__ import annotations
 from typing import Iterable
 
 from scheduler.fcfs import fcfs
+from scheduler.mlfq import mlfq
 from scheduler.priority import priority_scheduling
 from scheduler.priority_rr import priority_round_robin
 from scheduler.round_robin import round_robin
@@ -28,6 +29,12 @@ ALGORITHMS = {
 
 SELECTOR_ALGORITHMS = ALGORITHMS
 
+# The historical six-policy simulation registry intentionally includes oracles.
+DEPLOYABLE_ALGORITHMS = {
+    name: ALGORITHMS[name] for name in ("FCFS", "Round Robin", "Priority", "Priority RR")
+}
+DEPLOYABLE_ALGORITHMS["MLFQ"] = (mlfq, {"quanta": (2, 4, 8), "aging_threshold": 20})
+
 SCORE_WEIGHTS = {
     "avg_waiting_time": 0.30,
     "avg_response_time": 0.25,
@@ -40,7 +47,7 @@ SCORE_WEIGHTS = {
 def run_algorithm(
     name: str, processes: Iterable[Process], priority_rr_config: dict | None = None
 ) -> SimulationResult:
-    scheduler, kwargs = ALGORITHMS[name]
+    scheduler, kwargs = {**ALGORITHMS, **DEPLOYABLE_ALGORITHMS}[name]
     if name == "Priority RR" and priority_rr_config:
         kwargs = {**kwargs, **priority_rr_config}
     return run_simulation(name, scheduler, list(processes), **kwargs)
@@ -97,5 +104,6 @@ def score_result_against_reference(
 
 def oracle_label(results: dict[str, SimulationResult]) -> tuple[str, dict[str, float]]:
     scores = score_results(results)
-    label = min(results, key=lambda name: (scores[name], tuple(ALGORITHMS).index(name)))
+    order = tuple(dict.fromkeys((*ALGORITHMS, *DEPLOYABLE_ALGORITHMS)))
+    label = min(results, key=lambda name: (scores[name], order.index(name)))
     return label, scores

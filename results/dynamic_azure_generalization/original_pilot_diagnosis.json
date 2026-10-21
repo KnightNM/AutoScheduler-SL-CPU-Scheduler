@@ -1,0 +1,3300 @@
+{
+  "rows": [
+    {
+      "workload_id": "azure-d12-0227",
+      "stratum": "low_load",
+      "cohort": "retained_control",
+      "processes": 2,
+      "arrival_first_ms": 110902,
+      "arrival_last_ms": 2466823,
+      "arrival_span_ms": 2355921,
+      "distinct_arrivals": 2,
+      "interarrival_mean_ms": 2355921,
+      "interarrival_p95_ms": 2355921.0,
+      "interarrival_cv": 0.0,
+      "total_cpu_proxy_ms": 208,
+      "burst_mean_ms": 104,
+      "burst_cv": 0.0,
+      "burst_min_ms": 104,
+      "burst_max_ms": 104,
+      "arrival_work_pending_fraction": 0.0,
+      "max_aggregate_pending_work_ms": 104,
+      "cpu_per_exposure": 5.7777777777777776e-05,
+      "neutral_priorities_only": true,
+      "io_observed": false,
+      "makespan_ms": 2466927,
+      "idle_ms": 2466719,
+      "wall_seconds_instrumented": 0.01944780499616172,
+      "decision_opportunities": 8,
+      "model_invocations": 8,
+      "raw_actions": {
+        "Priority": 8
+      },
+      "accepted_switches": 3,
+      "reasons": {
+        "first_service_protection": 1,
+        "arrival_risk": 4,
+        "accepted": 2,
+        "excursion_expired": 1
+      },
+      "reviews_with_competing_ready_jobs": 0,
+      "reviews_with_unserved_ready_jobs": 2,
+      "fallback_reviews": 0,
+      "decision_p99_ms_instrumented": 6.790492189999998,
+      "postguard_rejected_switches": 1,
+      "raw_proposed_departures": 7,
+      "raw_departure_disposition": {
+        "first_service_protection": 1,
+        "arrival_risk": 4,
+        "accepted": 2
+      },
+      "raw_no_switch_decisions": 0,
+      "jobs_finishing_before_first_review": 0,
+      "active_policy_timeline": [
+        {
+          "start_ms": 0,
+          "end_ms": 110933,
+          "policy": "MLFQ"
+        },
+        {
+          "start_ms": 110933,
+          "end_ms": 2466823,
+          "policy": "Priority"
+        },
+        {
+          "start_ms": 2466823,
+          "end_ms": 2466850,
+          "policy": "MLFQ"
+        },
+        {
+          "start_ms": 2466850,
+          "end_ms": 2466927,
+          "policy": "Priority"
+        }
+      ],
+      "original_metrics_reproduced": true
+    },
+    {
+      "workload_id": "azure-d07-0124",
+      "stratum": "low_load",
+      "cohort": "retained_control",
+      "processes": 4,
+      "arrival_first_ms": 62103,
+      "arrival_last_ms": 2802633,
+      "arrival_span_ms": 2740530,
+      "distinct_arrivals": 4,
+      "interarrival_mean_ms": 913510,
+      "interarrival_p95_ms": 924007.7,
+      "interarrival_cv": 0.00952413386143253,
+      "total_cpu_proxy_ms": 1080,
+      "burst_mean_ms": 270,
+      "burst_cv": 0.0,
+      "burst_min_ms": 270,
+      "burst_max_ms": 270,
+      "arrival_work_pending_fraction": 0.0,
+      "max_aggregate_pending_work_ms": 270,
+      "cpu_per_exposure": 0.0003,
+      "neutral_priorities_only": true,
+      "io_observed": false,
+      "makespan_ms": 2802903,
+      "idle_ms": 2801823,
+      "wall_seconds_instrumented": 0.01478661599685438,
+      "decision_opportunities": 15,
+      "model_invocations": 15,
+      "raw_actions": {
+        "Priority": 15
+      },
+      "accepted_switches": 7,
+      "reasons": {
+        "first_service_protection": 1,
+        "arrival_risk": 7,
+        "accepted": 4,
+        "excursion_expired": 3
+      },
+      "reviews_with_competing_ready_jobs": 0,
+      "reviews_with_unserved_ready_jobs": 4,
+      "fallback_reviews": 0,
+      "decision_p99_ms_instrumented": 0.35879493999999995,
+      "postguard_rejected_switches": 1,
+      "raw_proposed_departures": 12,
+      "raw_departure_disposition": {
+        "first_service_protection": 1,
+        "arrival_risk": 7,
+        "accepted": 4
+      },
+      "raw_no_switch_decisions": 0,
+      "jobs_finishing_before_first_review": 0,
+      "active_policy_timeline": [
+        {
+          "start_ms": 0,
+          "end_ms": 62130,
+          "policy": "MLFQ"
+        },
+        {
+          "start_ms": 62130,
+          "end_ms": 987903,
+          "policy": "Priority"
+        },
+        {
+          "start_ms": 987903,
+          "end_ms": 987930,
+          "policy": "MLFQ"
+        },
+        {
+          "start_ms": 987930,
+          "end_ms": 1895780,
+          "policy": "Priority"
+        },
+        {
+          "start_ms": 1895780,
+          "end_ms": 1895803,
+          "policy": "MLFQ"
+        },
+        {
+          "start_ms": 1895803,
+          "end_ms": 2802633,
+          "policy": "Priority"
+        },
+        {
+          "start_ms": 2802633,
+          "end_ms": 2802660,
+          "policy": "MLFQ"
+        },
+        {
+          "start_ms": 2802660,
+          "end_ms": 2802903,
+          "policy": "Priority"
+        }
+      ],
+      "original_metrics_reproduced": true
+    },
+    {
+      "workload_id": "azure-d14-0273",
+      "stratum": "low_load",
+      "cohort": "retained_control",
+      "processes": 1,
+      "arrival_first_ms": 2028612,
+      "arrival_last_ms": 2028612,
+      "arrival_span_ms": 0,
+      "distinct_arrivals": 1,
+      "interarrival_mean_ms": null,
+      "interarrival_p95_ms": null,
+      "interarrival_cv": null,
+      "total_cpu_proxy_ms": 606,
+      "burst_mean_ms": 606,
+      "burst_cv": 0.0,
+      "burst_min_ms": 606,
+      "burst_max_ms": 606,
+      "arrival_work_pending_fraction": 0.0,
+      "max_aggregate_pending_work_ms": 606,
+      "cpu_per_exposure": 0.00016833333333333332,
+      "neutral_priorities_only": true,
+      "io_observed": false,
+      "makespan_ms": 2029218,
+      "idle_ms": 2028612,
+      "wall_seconds_instrumented": 0.008987314999103546,
+      "decision_opportunities": 4,
+      "model_invocations": 4,
+      "raw_actions": {
+        "Priority": 4
+      },
+      "accepted_switches": 1,
+      "reasons": {
+        "first_service_protection": 1,
+        "arrival_risk": 2,
+        "accepted": 1
+      },
+      "reviews_with_competing_ready_jobs": 0,
+      "reviews_with_unserved_ready_jobs": 1,
+      "fallback_reviews": 0,
+      "decision_p99_ms_instrumented": 0.31252104999999997,
+      "postguard_rejected_switches": 1,
+      "raw_proposed_departures": 4,
+      "raw_departure_disposition": {
+        "first_service_protection": 1,
+        "arrival_risk": 2,
+        "accepted": 1
+      },
+      "raw_no_switch_decisions": 0,
+      "jobs_finishing_before_first_review": 0,
+      "active_policy_timeline": [
+        {
+          "start_ms": 0,
+          "end_ms": 2028643,
+          "policy": "MLFQ"
+        },
+        {
+          "start_ms": 2028643,
+          "end_ms": 2029218,
+          "policy": "Priority"
+        }
+      ],
+      "original_metrics_reproduced": true
+    },
+    {
+      "workload_id": "azure-d03-0052",
+      "stratum": "medium_load",
+      "cohort": "retained_control",
+      "processes": 5,
+      "arrival_first_ms": 82466,
+      "arrival_last_ms": 3405960,
+      "arrival_span_ms": 3323494,
+      "distinct_arrivals": 5,
+      "interarrival_mean_ms": 830873.5,
+      "interarrival_p95_ms": 1152678.0,
+      "interarrival_cv": 0.316639431323045,
+      "total_cpu_proxy_ms": 2880,
+      "burst_mean_ms": 576,
+      "burst_cv": 0.0,
+      "burst_min_ms": 576,
+      "burst_max_ms": 576,
+      "arrival_work_pending_fraction": 0.0,
+      "max_aggregate_pending_work_ms": 576,
+      "cpu_per_exposure": 0.0008,
+      "neutral_priorities_only": true,
+      "io_observed": false,
+      "makespan_ms": 3406536,
+      "idle_ms": 3403656,
+      "wall_seconds_instrumented": 0.017858505998447072,
+      "decision_opportunities": 19,
+      "model_invocations": 19,
+      "raw_actions": {
+        "Priority": 19
+      },
+      "accepted_switches": 9,
+      "reasons": {
+        "first_service_protection": 1,
+        "arrival_risk": 9,
+        "accepted": 5,
+        "excursion_expired": 4
+      },
+      "reviews_with_competing_ready_jobs": 0,
+      "reviews_with_unserved_ready_jobs": 5,
+      "fallback_reviews": 0,
+      "decision_p99_ms_instrumented": 0.35693656,
+      "postguard_rejected_switches": 1,
+      "raw_proposed_departures": 15,
+      "raw_departure_disposition": {
+        "first_service_protection": 1,
+        "arrival_risk": 9,
+        "accepted": 5
+      },
+      "raw_no_switch_decisions": 0,
+      "jobs_finishing_before_first_review": 0,
+      "active_policy_timeline": [
+        {
+          "start_ms": 0,
+          "end_ms": 82493,
+          "policy": "MLFQ"
+        },
+        {
+          "start_ms": 82493,
+          "end_ms": 870687,
+          "policy": "Priority"
+        },
+        {
+          "start_ms": 870687,
+          "end_ms": 870710,
+          "policy": "MLFQ"
+        },
+        {
+          "start_ms": 870710,
+          "end_ms": 2073309,
+          "policy": "Priority"
+        },
+        {
+          "start_ms": 2073309,
+          "end_ms": 2073332,
+          "policy": "MLFQ"
+        },
+        {
+          "start_ms": 2073332,
+          "end_ms": 2942971,
+          "policy": "Priority"
+        },
+        {
+          "start_ms": 2942971,
+          "end_ms": 2943002,
+          "policy": "MLFQ"
+        },
+        {
+          "start_ms": 2943002,
+          "end_ms": 3405960,
+          "policy": "Priority"
+        },
+        {
+          "start_ms": 3405960,
+          "end_ms": 3405983,
+          "policy": "MLFQ"
+        },
+        {
+          "start_ms": 3405983,
+          "end_ms": 3406536,
+          "policy": "Priority"
+        }
+      ],
+      "original_metrics_reproduced": true
+    },
+    {
+      "workload_id": "azure-d06-0104",
+      "stratum": "medium_load",
+      "cohort": "retained_control",
+      "processes": 12,
+      "arrival_first_ms": 50127,
+      "arrival_last_ms": 3355462,
+      "arrival_span_ms": 3305335,
+      "distinct_arrivals": 12,
+      "interarrival_mean_ms": 300485,
+      "interarrival_p95_ms": 328837.5,
+      "interarrival_cv": 0.06654580087430924,
+      "total_cpu_proxy_ms": 7560,
+      "burst_mean_ms": 630,
+      "burst_cv": 0.0,
+      "burst_min_ms": 630,
+      "burst_max_ms": 630,
+      "arrival_work_pending_fraction": 0.0,
+      "max_aggregate_pending_work_ms": 630,
+      "cpu_per_exposure": 0.0021,
+      "neutral_priorities_only": true,
+      "io_observed": false,
+      "makespan_ms": 3356092,
+      "idle_ms": 3348532,
+      "wall_seconds_instrumented": 0.024337121001735795,
+      "decision_opportunities": 47,
+      "model_invocations": 47,
+      "raw_actions": {
+        "Priority": 47
+      },
+      "accepted_switches": 23,
+      "reasons": {
+        "first_service_protection": 1,
+        "arrival_risk": 23,
+        "accepted": 12,
+        "excursion_expired": 11
+      },
+      "reviews_with_competing_ready_jobs": 0,
+      "reviews_with_unserved_ready_jobs": 12,
+      "fallback_reviews": 0,
+      "decision_p99_ms_instrumented": 0.28221694,
+      "postguard_rejected_switches": 1,
+      "raw_proposed_departures": 36,
+      "raw_departure_disposition": {
+        "first_service_protection": 1,
+        "arrival_risk": 23,
+        "accepted": 12
+      },
+      "raw_no_switch_decisions": 0,
+      "jobs_finishing_before_first_review": 0,
+      "active_policy_timeline": [
+        {
+          "start_ms": 0,
+          "end_ms": 50150,
+          "policy": "MLFQ"
+        },
+        {
+          "start_ms": 50150,
+          "end_ms": 339136,
+          "policy": "Priority"
+        },
+        {
+          "start_ms": 339136,
+          "end_ms": 339163,
+          "policy": "MLFQ"
+        },
+        {
+          "start_ms": 339163,
+          "end_ms": 617753,
+          "policy": "Priority"
+        },
+        {
+          "start_ms": 617753,
+          "end_ms": 617780,
+          "policy": "MLFQ"
+        },
+        {
+          "start_ms": 617780,
+          "end_ms": 952300,
+          "policy": "Priority"
+        },
+        {
+          "start_ms": 952300,
+          "end_ms": 952323,
+          "policy": "MLFQ"
+        },
+        {
+          "start_ms": 952323,
+          "end_ms": 1226321,
+          "policy": "Priority"
+        },
+        {
+          "start_ms": 1226321,
+          "end_ms": 1226352,
+          "policy": "MLFQ"
+        },
+        {
+          "start_ms": 1226352,
+          "end_ms": 1502806,
+          "policy": "Priority"
+        },
+        {
+          "start_ms": 1502806,
+          "end_ms": 1502833,
+          "policy": "MLFQ"
+        },
+        {
+          "start_ms": 1502833,
+          "end_ms": 1808346,
+          "policy": "Priority"
+        },
+        {
+          "start_ms": 1808346,
+          "end_ms": 1808373,
+          "policy": "MLFQ"
+        },
+        {
+          "start_ms": 1808373,
+          "end_ms": 2131474,
+          "policy": "Priority"
+        },
+        {
+          "start_ms": 2131474,
+          "end_ms": 2131501,
+          "policy": "MLFQ"
+        },
+        {
+          "start_ms": 2131501,
+          "end_ms": 2417501,
+          "policy": "Priority"
+        },
+        {
+          "start_ms": 2417501,
+          "end_ms": 2417532,
+          "policy": "MLFQ"
+        },
+        {
+          "start_ms": 2417532,
+          "end_ms": 2737209,
+          "policy": "Priority"
+        },
+        {
+          "start_ms": 2737209,
+          "end_ms": 2737232,
+          "policy": "MLFQ"
+        },
+        {
+          "start_ms": 2737232,
+          "end_ms": 3052878,
+          "policy": "Priority"
+        },
+        {
+          "start_ms": 3052878,
+          "end_ms": 3052901,
+          "policy": "MLFQ"
+        },
+        {
+          "start_ms": 3052901,
+          "end_ms": 3355462,
+          "policy": "Priority"
+        },
+        {
+          "start_ms": 3355462,
+          "end_ms": 3355493,
+          "policy": "MLFQ"
+        },
+        {
+          "start_ms": 3355493,
+          "end_ms": 3356092,
+          "policy": "Priority"
+        }
+      ],
+      "original_metrics_reproduced": true
+    },
+    {
+      "workload_id": "azure-d12-0234",
+      "stratum": "medium_load",
+      "cohort": "retained_control",
+      "processes": 12,
+      "arrival_first_ms": 31193,
+      "arrival_last_ms": 3335003,
+      "arrival_span_ms": 3303810,
+      "distinct_arrivals": 12,
+      "interarrival_mean_ms": 300346.36363636365,
+      "interarrival_p95_ms": 337581.5,
+      "interarrival_cv": 0.09376153018895078,
+      "total_cpu_proxy_ms": 204,
+      "burst_mean_ms": 17,
+      "burst_cv": 0.0,
+      "burst_min_ms": 17,
+      "burst_max_ms": 17,
+      "arrival_work_pending_fraction": 0.0,
+      "max_aggregate_pending_work_ms": 17,
+      "cpu_per_exposure": 5.6666666666666664e-05,
+      "neutral_priorities_only": true,
+      "io_observed": false,
+      "makespan_ms": 3335020,
+      "idle_ms": 3334816,
+      "wall_seconds_instrumented": 0.020639344002120197,
+      "decision_opportunities": 31,
+      "model_invocations": 31,
+      "raw_actions": {
+        "Priority": 31
+      },
+      "accepted_switches": 0,
+      "reasons": {
+        "first_service_protection": 12,
+        "arrival_risk": 19
+      },
+      "reviews_with_competing_ready_jobs": 0,
+      "reviews_with_unserved_ready_jobs": 12,
+      "fallback_reviews": 0,
+      "decision_p99_ms_instrumented": 0.30745039999999996,
+      "postguard_rejected_switches": 12,
+      "raw_proposed_departures": 31,
+      "raw_departure_disposition": {
+        "first_service_protection": 12,
+        "arrival_risk": 19
+      },
+      "raw_no_switch_decisions": 0,
+      "jobs_finishing_before_first_review": 0,
+      "active_policy_timeline": [
+        {
+          "start_ms": 0,
+          "end_ms": 3335020,
+          "policy": "MLFQ"
+        }
+      ],
+      "original_metrics_reproduced": true
+    },
+    {
+      "workload_id": "azure-d09-0170",
+      "stratum": "high_rate_control",
+      "cohort": "retained_control",
+      "processes": 24,
+      "arrival_first_ms": 8907,
+      "arrival_last_ms": 3595765,
+      "arrival_span_ms": 3586858,
+      "distinct_arrivals": 24,
+      "interarrival_mean_ms": 155950.34782608695,
+      "interarrival_p95_ms": 15610.19999999999,
+      "interarrival_cv": 4.5498085178475565,
+      "total_cpu_proxy_ms": 864,
+      "burst_mean_ms": 36,
+      "burst_cv": 0.0,
+      "burst_min_ms": 36,
+      "burst_max_ms": 36,
+      "arrival_work_pending_fraction": 0.0,
+      "max_aggregate_pending_work_ms": 36,
+      "cpu_per_exposure": 0.00024,
+      "neutral_priorities_only": true,
+      "io_observed": false,
+      "makespan_ms": 3595801,
+      "idle_ms": 3594937,
+      "wall_seconds_instrumented": 0.034704211000644136,
+      "decision_opportunities": 93,
+      "model_invocations": 93,
+      "raw_actions": {
+        "Priority": 93
+      },
+      "accepted_switches": 47,
+      "reasons": {
+        "first_service_protection": 1,
+        "arrival_risk": 45,
+        "accepted": 24,
+        "excursion_expired": 23
+      },
+      "reviews_with_competing_ready_jobs": 0,
+      "reviews_with_unserved_ready_jobs": 24,
+      "fallback_reviews": 0,
+      "decision_p99_ms_instrumented": 0.41333331999999984,
+      "postguard_rejected_switches": 1,
+      "raw_proposed_departures": 70,
+      "raw_departure_disposition": {
+        "first_service_protection": 1,
+        "arrival_risk": 45,
+        "accepted": 24
+      },
+      "raw_no_switch_decisions": 0,
+      "jobs_finishing_before_first_review": 0,
+      "active_policy_timeline": [
+        {
+          "start_ms": 0,
+          "end_ms": 8930,
+          "policy": "MLFQ"
+        },
+        {
+          "start_ms": 8930,
+          "end_ms": 13926,
+          "policy": "Priority"
+        },
+        {
+          "start_ms": 13926,
+          "end_ms": 13953,
+          "policy": "MLFQ"
+        },
+        {
+          "start_ms": 13953,
+          "end_ms": 15380,
+          "policy": "Priority"
+        },
+        {
+          "start_ms": 15380,
+          "end_ms": 15403,
+          "policy": "MLFQ"
+        },
+        {
+          "start_ms": 15403,
+          "end_ms": 17995,
+          "policy": "Priority"
+        },
+        {
+          "start_ms": 17995,
+          "end_ms": 18022,
+          "policy": "MLFQ"
+        },
+        {
+          "start_ms": 18022,
+          "end_ms": 24681,
+          "policy": "Priority"
+        },
+        {
+          "start_ms": 24681,
+          "end_ms": 24712,
+          "policy": "MLFQ"
+        },
+        {
+          "start_ms": 24712,
+          "end_ms": 33766,
+          "policy": "Priority"
+        },
+        {
+          "start_ms": 33766,
+          "end_ms": 33793,
+          "policy": "MLFQ"
+        },
+        {
+          "start_ms": 33793,
+          "end_ms": 37665,
+          "policy": "Priority"
+        },
+        {
+          "start_ms": 37665,
+          "end_ms": 37692,
+          "policy": "MLFQ"
+        },
+        {
+          "start_ms": 37692,
+          "end_ms": 42751,
+          "policy": "Priority"
+        },
+        {
+          "start_ms": 42751,
+          "end_ms": 42782,
+          "policy": "MLFQ"
+        },
+        {
+          "start_ms": 42782,
+          "end_ms": 45500,
+          "policy": "Priority"
+        },
+        {
+          "start_ms": 45500,
+          "end_ms": 45523,
+          "policy": "MLFQ"
+        },
+        {
+          "start_ms": 45523,
+          "end_ms": 46233,
+          "policy": "Priority"
+        },
+        {
+          "start_ms": 46233,
+          "end_ms": 46260,
+          "policy": "MLFQ"
+        },
+        {
+          "start_ms": 46260,
+          "end_ms": 51388,
+          "policy": "Priority"
+        },
+        {
+          "start_ms": 51388,
+          "end_ms": 51411,
+          "policy": "MLFQ"
+        },
+        {
+          "start_ms": 51411,
+          "end_ms": 51631,
+          "policy": "Priority"
+        },
+        {
+          "start_ms": 51631,
+          "end_ms": 51662,
+          "policy": "MLFQ"
+        },
+        {
+          "start_ms": 51662,
+          "end_ms": 58467,
+          "policy": "Priority"
+        },
+        {
+          "start_ms": 58467,
+          "end_ms": 58490,
+          "policy": "MLFQ"
+        },
+        {
+          "start_ms": 58490,
+          "end_ms": 58906,
+          "policy": "Priority"
+        },
+        {
+          "start_ms": 58906,
+          "end_ms": 58933,
+          "policy": "MLFQ"
+        },
+        {
+          "start_ms": 58933,
+          "end_ms": 3542868,
+          "policy": "Priority"
+        },
+        {
+          "start_ms": 3542868,
+          "end_ms": 3542891,
+          "policy": "MLFQ"
+        },
+        {
+          "start_ms": 3542891,
+          "end_ms": 3549330,
+          "policy": "Priority"
+        },
+        {
+          "start_ms": 3549330,
+          "end_ms": 3549353,
+          "policy": "MLFQ"
+        },
+        {
+          "start_ms": 3549353,
+          "end_ms": 3558384,
+          "policy": "Priority"
+        },
+        {
+          "start_ms": 3558384,
+          "end_ms": 3558411,
+          "policy": "MLFQ"
+        },
+        {
+          "start_ms": 3558411,
+          "end_ms": 3561109,
+          "policy": "Priority"
+        },
+        {
+          "start_ms": 3561109,
+          "end_ms": 3561132,
+          "policy": "MLFQ"
+        },
+        {
+          "start_ms": 3561132,
+          "end_ms": 3577422,
+          "policy": "Priority"
+        },
+        {
+          "start_ms": 3577422,
+          "end_ms": 3577453,
+          "policy": "MLFQ"
+        },
+        {
+          "start_ms": 3577453,
+          "end_ms": 3580371,
+          "policy": "Priority"
+        },
+        {
+          "start_ms": 3580371,
+          "end_ms": 3580402,
+          "policy": "MLFQ"
+        },
+        {
+          "start_ms": 3580402,
+          "end_ms": 3589656,
+          "policy": "Priority"
+        },
+        {
+          "start_ms": 3589656,
+          "end_ms": 3589683,
+          "policy": "MLFQ"
+        },
+        {
+          "start_ms": 3589683,
+          "end_ms": 3594346,
+          "policy": "Priority"
+        },
+        {
+          "start_ms": 3594346,
+          "end_ms": 3594373,
+          "policy": "MLFQ"
+        },
+        {
+          "start_ms": 3594373,
+          "end_ms": 3595431,
+          "policy": "Priority"
+        },
+        {
+          "start_ms": 3595431,
+          "end_ms": 3595462,
+          "policy": "MLFQ"
+        },
+        {
+          "start_ms": 3595462,
+          "end_ms": 3595765,
+          "policy": "Priority"
+        },
+        {
+          "start_ms": 3595765,
+          "end_ms": 3595792,
+          "policy": "MLFQ"
+        },
+        {
+          "start_ms": 3595792,
+          "end_ms": 3595801,
+          "policy": "Priority"
+        }
+      ],
+      "original_metrics_reproduced": true
+    },
+    {
+      "workload_id": "azure-d06-0108",
+      "stratum": "high_rate_control",
+      "cohort": "retained_control",
+      "processes": 60,
+      "arrival_first_ms": 14904,
+      "arrival_last_ms": 3572171,
+      "arrival_span_ms": 3557267,
+      "distinct_arrivals": 60,
+      "interarrival_mean_ms": 60292.661016949154,
+      "interarrival_p95_ms": 92115.9,
+      "interarrival_cv": 0.3403440862561275,
+      "total_cpu_proxy_ms": 3120,
+      "burst_mean_ms": 52,
+      "burst_cv": 0.0,
+      "burst_min_ms": 52,
+      "burst_max_ms": 52,
+      "arrival_work_pending_fraction": 0.0,
+      "max_aggregate_pending_work_ms": 52,
+      "cpu_per_exposure": 0.0008666666666666666,
+      "neutral_priorities_only": true,
+      "io_observed": false,
+      "makespan_ms": 3572223,
+      "idle_ms": 3569103,
+      "wall_seconds_instrumented": 0.07370270699902903,
+      "decision_opportunities": 233,
+      "model_invocations": 233,
+      "raw_actions": {
+        "Priority": 233
+      },
+      "accepted_switches": 119,
+      "reasons": {
+        "first_service_protection": 1,
+        "arrival_risk": 113,
+        "accepted": 60,
+        "excursion_expired": 59
+      },
+      "reviews_with_competing_ready_jobs": 0,
+      "reviews_with_unserved_ready_jobs": 60,
+      "fallback_reviews": 0,
+      "decision_p99_ms_instrumented": 0.4252883200000002,
+      "postguard_rejected_switches": 1,
+      "raw_proposed_departures": 174,
+      "raw_departure_disposition": {
+        "first_service_protection": 1,
+        "arrival_risk": 113,
+        "accepted": 60
+      },
+      "raw_no_switch_decisions": 0,
+      "jobs_finishing_before_first_review": 0,
+      "active_policy_timeline": [
+        {
+          "start_ms": 0,
+          "end_ms": 14931,
+          "policy": "MLFQ"
+        },
+        {
+          "start_ms": 14931,
+          "end_ms": 91520,
+          "policy": "Priority"
+        },
+        {
+          "start_ms": 91520,
+          "end_ms": 91543,
+          "policy": "MLFQ"
+        },
+        {
+          "start_ms": 91543,
+          "end_ms": 154841,
+          "policy": "Priority"
+        },
+        {
+          "start_ms": 154841,
+          "end_ms": 154872,
+          "policy": "MLFQ"
+        },
+        {
+          "start_ms": 154872,
+          "end_ms": 229974,
+          "policy": "Priority"
+        },
+        {
+          "start_ms": 229974,
+          "end_ms": 230001,
+          "policy": "MLFQ"
+        },
+        {
+          "start_ms": 230001,
+          "end_ms": 277549,
+          "policy": "Priority"
+        },
+        {
+          "start_ms": 277549,
+          "end_ms": 277572,
+          "policy": "MLFQ"
+        },
+        {
+          "start_ms": 277572,
+          "end_ms": 304997,
+          "policy": "Priority"
+        },
+        {
+          "start_ms": 304997,
+          "end_ms": 305020,
+          "policy": "MLFQ"
+        },
+        {
+          "start_ms": 305020,
+          "end_ms": 383138,
+          "policy": "Priority"
+        },
+        {
+          "start_ms": 383138,
+          "end_ms": 383161,
+          "policy": "MLFQ"
+        },
+        {
+          "start_ms": 383161,
+          "end_ms": 431733,
+          "policy": "Priority"
+        },
+        {
+          "start_ms": 431733,
+          "end_ms": 431760,
+          "policy": "MLFQ"
+        },
+        {
+          "start_ms": 431760,
+          "end_ms": 524190,
+          "policy": "Priority"
+        },
+        {
+          "start_ms": 524190,
+          "end_ms": 524213,
+          "policy": "MLFQ"
+        },
+        {
+          "start_ms": 524213,
+          "end_ms": 579958,
+          "policy": "Priority"
+        },
+        {
+          "start_ms": 579958,
+          "end_ms": 579981,
+          "policy": "MLFQ"
+        },
+        {
+          "start_ms": 579981,
+          "end_ms": 632648,
+          "policy": "Priority"
+        },
+        {
+          "start_ms": 632648,
+          "end_ms": 632671,
+          "policy": "MLFQ"
+        },
+        {
+          "start_ms": 632671,
+          "end_ms": 682272,
+          "policy": "Priority"
+        },
+        {
+          "start_ms": 682272,
+          "end_ms": 682303,
+          "policy": "MLFQ"
+        },
+        {
+          "start_ms": 682303,
+          "end_ms": 745611,
+          "policy": "Priority"
+        },
+        {
+          "start_ms": 745611,
+          "end_ms": 745642,
+          "policy": "MLFQ"
+        },
+        {
+          "start_ms": 745642,
+          "end_ms": 796864,
+          "policy": "Priority"
+        },
+        {
+          "start_ms": 796864,
+          "end_ms": 796891,
+          "policy": "MLFQ"
+        },
+        {
+          "start_ms": 796891,
+          "end_ms": 863947,
+          "policy": "Priority"
+        },
+        {
+          "start_ms": 863947,
+          "end_ms": 863970,
+          "policy": "MLFQ"
+        },
+        {
+          "start_ms": 863970,
+          "end_ms": 952882,
+          "policy": "Priority"
+        },
+        {
+          "start_ms": 952882,
+          "end_ms": 952913,
+          "policy": "MLFQ"
+        },
+        {
+          "start_ms": 952913,
+          "end_ms": 1015484,
+          "policy": "Priority"
+        },
+        {
+          "start_ms": 1015484,
+          "end_ms": 1015511,
+          "policy": "MLFQ"
+        },
+        {
+          "start_ms": 1015511,
+          "end_ms": 1055923,
+          "policy": "Priority"
+        },
+        {
+          "start_ms": 1055923,
+          "end_ms": 1055950,
+          "policy": "MLFQ"
+        },
+        {
+          "start_ms": 1055950,
+          "end_ms": 1114635,
+          "policy": "Priority"
+        },
+        {
+          "start_ms": 1114635,
+          "end_ms": 1114662,
+          "policy": "MLFQ"
+        },
+        {
+          "start_ms": 1114662,
+          "end_ms": 1158984,
+          "policy": "Priority"
+        },
+        {
+          "start_ms": 1158984,
+          "end_ms": 1159011,
+          "policy": "MLFQ"
+        },
+        {
+          "start_ms": 1159011,
+          "end_ms": 1211330,
+          "policy": "Priority"
+        },
+        {
+          "start_ms": 1211330,
+          "end_ms": 1211353,
+          "policy": "MLFQ"
+        },
+        {
+          "start_ms": 1211353,
+          "end_ms": 1276531,
+          "policy": "Priority"
+        },
+        {
+          "start_ms": 1276531,
+          "end_ms": 1276562,
+          "policy": "MLFQ"
+        },
+        {
+          "start_ms": 1276562,
+          "end_ms": 1355585,
+          "policy": "Priority"
+        },
+        {
+          "start_ms": 1355585,
+          "end_ms": 1355612,
+          "policy": "MLFQ"
+        },
+        {
+          "start_ms": 1355612,
+          "end_ms": 1432520,
+          "policy": "Priority"
+        },
+        {
+          "start_ms": 1432520,
+          "end_ms": 1432543,
+          "policy": "MLFQ"
+        },
+        {
+          "start_ms": 1432543,
+          "end_ms": 1496034,
+          "policy": "Priority"
+        },
+        {
+          "start_ms": 1496034,
+          "end_ms": 1496061,
+          "policy": "MLFQ"
+        },
+        {
+          "start_ms": 1496061,
+          "end_ms": 1509135,
+          "policy": "Priority"
+        },
+        {
+          "start_ms": 1509135,
+          "end_ms": 1509162,
+          "policy": "MLFQ"
+        },
+        {
+          "start_ms": 1509162,
+          "end_ms": 1619211,
+          "policy": "Priority"
+        },
+        {
+          "start_ms": 1619211,
+          "end_ms": 1619242,
+          "policy": "MLFQ"
+        },
+        {
+          "start_ms": 1619242,
+          "end_ms": 1677760,
+          "policy": "Priority"
+        },
+        {
+          "start_ms": 1677760,
+          "end_ms": 1677783,
+          "policy": "MLFQ"
+        },
+        {
+          "start_ms": 1677783,
+          "end_ms": 1727964,
+          "policy": "Priority"
+        },
+        {
+          "start_ms": 1727964,
+          "end_ms": 1727991,
+          "policy": "MLFQ"
+        },
+        {
+          "start_ms": 1727991,
+          "end_ms": 1762371,
+          "policy": "Priority"
+        },
+        {
+          "start_ms": 1762371,
+          "end_ms": 1762402,
+          "policy": "MLFQ"
+        },
+        {
+          "start_ms": 1762402,
+          "end_ms": 1817129,
+          "policy": "Priority"
+        },
+        {
+          "start_ms": 1817129,
+          "end_ms": 1817152,
+          "policy": "MLFQ"
+        },
+        {
+          "start_ms": 1817152,
+          "end_ms": 1886376,
+          "policy": "Priority"
+        },
+        {
+          "start_ms": 1886376,
+          "end_ms": 1886403,
+          "policy": "MLFQ"
+        },
+        {
+          "start_ms": 1886403,
+          "end_ms": 1930205,
+          "policy": "Priority"
+        },
+        {
+          "start_ms": 1930205,
+          "end_ms": 1930232,
+          "policy": "MLFQ"
+        },
+        {
+          "start_ms": 1930232,
+          "end_ms": 2018669,
+          "policy": "Priority"
+        },
+        {
+          "start_ms": 2018669,
+          "end_ms": 2018692,
+          "policy": "MLFQ"
+        },
+        {
+          "start_ms": 2018692,
+          "end_ms": 2069850,
+          "policy": "Priority"
+        },
+        {
+          "start_ms": 2069850,
+          "end_ms": 2069873,
+          "policy": "MLFQ"
+        },
+        {
+          "start_ms": 2069873,
+          "end_ms": 2103377,
+          "policy": "Priority"
+        },
+        {
+          "start_ms": 2103377,
+          "end_ms": 2103400,
+          "policy": "MLFQ"
+        },
+        {
+          "start_ms": 2103400,
+          "end_ms": 2212266,
+          "policy": "Priority"
+        },
+        {
+          "start_ms": 2212266,
+          "end_ms": 2212293,
+          "policy": "MLFQ"
+        },
+        {
+          "start_ms": 2212293,
+          "end_ms": 2231193,
+          "policy": "Priority"
+        },
+        {
+          "start_ms": 2231193,
+          "end_ms": 2231220,
+          "policy": "MLFQ"
+        },
+        {
+          "start_ms": 2231220,
+          "end_ms": 2323271,
+          "policy": "Priority"
+        },
+        {
+          "start_ms": 2323271,
+          "end_ms": 2323302,
+          "policy": "MLFQ"
+        },
+        {
+          "start_ms": 2323302,
+          "end_ms": 2374332,
+          "policy": "Priority"
+        },
+        {
+          "start_ms": 2374332,
+          "end_ms": 2374363,
+          "policy": "MLFQ"
+        },
+        {
+          "start_ms": 2374363,
+          "end_ms": 2438463,
+          "policy": "Priority"
+        },
+        {
+          "start_ms": 2438463,
+          "end_ms": 2438490,
+          "policy": "MLFQ"
+        },
+        {
+          "start_ms": 2438490,
+          "end_ms": 2515075,
+          "policy": "Priority"
+        },
+        {
+          "start_ms": 2515075,
+          "end_ms": 2515102,
+          "policy": "MLFQ"
+        },
+        {
+          "start_ms": 2515102,
+          "end_ms": 2572602,
+          "policy": "Priority"
+        },
+        {
+          "start_ms": 2572602,
+          "end_ms": 2572633,
+          "policy": "MLFQ"
+        },
+        {
+          "start_ms": 2572633,
+          "end_ms": 2607443,
+          "policy": "Priority"
+        },
+        {
+          "start_ms": 2607443,
+          "end_ms": 2607470,
+          "policy": "MLFQ"
+        },
+        {
+          "start_ms": 2607470,
+          "end_ms": 2676869,
+          "policy": "Priority"
+        },
+        {
+          "start_ms": 2676869,
+          "end_ms": 2676892,
+          "policy": "MLFQ"
+        },
+        {
+          "start_ms": 2676892,
+          "end_ms": 2734028,
+          "policy": "Priority"
+        },
+        {
+          "start_ms": 2734028,
+          "end_ms": 2734051,
+          "policy": "MLFQ"
+        },
+        {
+          "start_ms": 2734051,
+          "end_ms": 2809369,
+          "policy": "Priority"
+        },
+        {
+          "start_ms": 2809369,
+          "end_ms": 2809392,
+          "policy": "MLFQ"
+        },
+        {
+          "start_ms": 2809392,
+          "end_ms": 2826868,
+          "policy": "Priority"
+        },
+        {
+          "start_ms": 2826868,
+          "end_ms": 2826891,
+          "policy": "MLFQ"
+        },
+        {
+          "start_ms": 2826891,
+          "end_ms": 2918628,
+          "policy": "Priority"
+        },
+        {
+          "start_ms": 2918628,
+          "end_ms": 2918651,
+          "policy": "MLFQ"
+        },
+        {
+          "start_ms": 2918651,
+          "end_ms": 2977192,
+          "policy": "Priority"
+        },
+        {
+          "start_ms": 2977192,
+          "end_ms": 2977223,
+          "policy": "MLFQ"
+        },
+        {
+          "start_ms": 2977223,
+          "end_ms": 3025704,
+          "policy": "Priority"
+        },
+        {
+          "start_ms": 3025704,
+          "end_ms": 3025731,
+          "policy": "MLFQ"
+        },
+        {
+          "start_ms": 3025731,
+          "end_ms": 3109618,
+          "policy": "Priority"
+        },
+        {
+          "start_ms": 3109618,
+          "end_ms": 3109641,
+          "policy": "MLFQ"
+        },
+        {
+          "start_ms": 3109641,
+          "end_ms": 3160540,
+          "policy": "Priority"
+        },
+        {
+          "start_ms": 3160540,
+          "end_ms": 3160563,
+          "policy": "MLFQ"
+        },
+        {
+          "start_ms": 3160563,
+          "end_ms": 3218794,
+          "policy": "Priority"
+        },
+        {
+          "start_ms": 3218794,
+          "end_ms": 3218821,
+          "policy": "MLFQ"
+        },
+        {
+          "start_ms": 3218821,
+          "end_ms": 3264188,
+          "policy": "Priority"
+        },
+        {
+          "start_ms": 3264188,
+          "end_ms": 3264211,
+          "policy": "MLFQ"
+        },
+        {
+          "start_ms": 3264211,
+          "end_ms": 3354605,
+          "policy": "Priority"
+        },
+        {
+          "start_ms": 3354605,
+          "end_ms": 3354632,
+          "policy": "MLFQ"
+        },
+        {
+          "start_ms": 3354632,
+          "end_ms": 3400075,
+          "policy": "Priority"
+        },
+        {
+          "start_ms": 3400075,
+          "end_ms": 3400102,
+          "policy": "MLFQ"
+        },
+        {
+          "start_ms": 3400102,
+          "end_ms": 3449209,
+          "policy": "Priority"
+        },
+        {
+          "start_ms": 3449209,
+          "end_ms": 3449232,
+          "policy": "MLFQ"
+        },
+        {
+          "start_ms": 3449232,
+          "end_ms": 3503083,
+          "policy": "Priority"
+        },
+        {
+          "start_ms": 3503083,
+          "end_ms": 3503110,
+          "policy": "MLFQ"
+        },
+        {
+          "start_ms": 3503110,
+          "end_ms": 3572171,
+          "policy": "Priority"
+        },
+        {
+          "start_ms": 3572171,
+          "end_ms": 3572202,
+          "policy": "MLFQ"
+        },
+        {
+          "start_ms": 3572202,
+          "end_ms": 3572223,
+          "policy": "Priority"
+        }
+      ],
+      "original_metrics_reproduced": true
+    },
+    {
+      "workload_id": "azure-d13-0258",
+      "stratum": "high_rate_control",
+      "cohort": "retained_control",
+      "processes": 36,
+      "arrival_first_ms": 21679,
+      "arrival_last_ms": 3371184,
+      "arrival_span_ms": 3349505,
+      "distinct_arrivals": 36,
+      "interarrival_mean_ms": 95700.14285714286,
+      "interarrival_p95_ms": 257052.89999999994,
+      "interarrival_cv": 1.0295103691170715,
+      "total_cpu_proxy_ms": 432,
+      "burst_mean_ms": 12,
+      "burst_cv": 0.0,
+      "burst_min_ms": 12,
+      "burst_max_ms": 12,
+      "arrival_work_pending_fraction": 0.0,
+      "max_aggregate_pending_work_ms": 12,
+      "cpu_per_exposure": 0.00012,
+      "neutral_priorities_only": true,
+      "io_observed": false,
+      "makespan_ms": 3371196,
+      "idle_ms": 3370764,
+      "wall_seconds_instrumented": 0.03221816299628699,
+      "decision_opportunities": 74,
+      "model_invocations": 74,
+      "raw_actions": {
+        "Priority": 74
+      },
+      "accepted_switches": 0,
+      "reasons": {
+        "first_service_protection": 36,
+        "arrival_risk": 38
+      },
+      "reviews_with_competing_ready_jobs": 0,
+      "reviews_with_unserved_ready_jobs": 36,
+      "fallback_reviews": 0,
+      "decision_p99_ms_instrumented": 0.37120225999999956,
+      "postguard_rejected_switches": 36,
+      "raw_proposed_departures": 74,
+      "raw_departure_disposition": {
+        "first_service_protection": 36,
+        "arrival_risk": 38
+      },
+      "raw_no_switch_decisions": 0,
+      "jobs_finishing_before_first_review": 0,
+      "active_policy_timeline": [
+        {
+          "start_ms": 0,
+          "end_ms": 3371196,
+          "policy": "MLFQ"
+        }
+      ],
+      "original_metrics_reproduced": true
+    },
+    {
+      "workload_id": "azure-d01-0019",
+      "stratum": "mixed_functions",
+      "cohort": "retained_control",
+      "processes": 48,
+      "arrival_first_ms": 4373,
+      "arrival_last_ms": 3555913,
+      "arrival_span_ms": 3551540,
+      "distinct_arrivals": 48,
+      "interarrival_mean_ms": 75564.68085106384,
+      "interarrival_p95_ms": 353321.2999999997,
+      "interarrival_cv": 2.1198118205092498,
+      "total_cpu_proxy_ms": 13518,
+      "burst_mean_ms": 281.625,
+      "burst_cv": 1.6270406258150945,
+      "burst_min_ms": 196,
+      "burst_max_ms": 3422,
+      "arrival_work_pending_fraction": 0.020833333333333332,
+      "max_aggregate_pending_work_ms": 3422,
+      "cpu_per_exposure": 0.003755,
+      "neutral_priorities_only": true,
+      "io_observed": false,
+      "makespan_ms": 3556109,
+      "idle_ms": 3542591,
+      "wall_seconds_instrumented": 0.35274043300159974,
+      "decision_opportunities": 1030,
+      "model_invocations": 1030,
+      "raw_actions": {
+        "Priority": 897,
+        "FCFS": 133
+      },
+      "accepted_switches": 4,
+      "reasons": {
+        "first_service_protection": 45,
+        "arrival_risk": 92,
+        "accepted": 2,
+        "excursion_expired": 2,
+        "cost_margin": 889
+      },
+      "reviews_with_competing_ready_jobs": 36,
+      "reviews_with_unserved_ready_jobs": 47,
+      "fallback_reviews": 0,
+      "decision_p99_ms_instrumented": 0.62298911,
+      "postguard_rejected_switches": 934,
+      "raw_proposed_departures": 1029,
+      "raw_departure_disposition": {
+        "first_service_protection": 45,
+        "arrival_risk": 92,
+        "accepted": 2,
+        "excursion_expired": 1,
+        "cost_margin": 889
+      },
+      "raw_no_switch_decisions": 0,
+      "jobs_finishing_before_first_review": 0,
+      "active_policy_timeline": [
+        {
+          "start_ms": 0,
+          "end_ms": 4400,
+          "policy": "MLFQ"
+        },
+        {
+          "start_ms": 4400,
+          "end_ms": 78275,
+          "policy": "Priority"
+        },
+        {
+          "start_ms": 78275,
+          "end_ms": 78302,
+          "policy": "MLFQ"
+        },
+        {
+          "start_ms": 78302,
+          "end_ms": 81547,
+          "policy": "Priority"
+        },
+        {
+          "start_ms": 81547,
+          "end_ms": 3556109,
+          "policy": "MLFQ"
+        }
+      ],
+      "original_metrics_reproduced": true
+    },
+    {
+      "workload_id": "azure-d05-0101",
+      "stratum": "mixed_functions",
+      "cohort": "retained_control",
+      "processes": 15,
+      "arrival_first_ms": 13463,
+      "arrival_last_ms": 3319800,
+      "arrival_span_ms": 3306337,
+      "distinct_arrivals": 15,
+      "interarrival_mean_ms": 236166.92857142858,
+      "interarrival_p95_ms": 324174.35,
+      "interarrival_cv": 0.43600476807042376,
+      "total_cpu_proxy_ms": 8031,
+      "burst_mean_ms": 535.4,
+      "burst_cv": 1.0173505594432448,
+      "burst_min_ms": 100,
+      "burst_max_ms": 2527,
+      "arrival_work_pending_fraction": 0.0,
+      "max_aggregate_pending_work_ms": 2527,
+      "cpu_per_exposure": 0.0022308333333333334,
+      "neutral_priorities_only": true,
+      "io_observed": false,
+      "makespan_ms": 3320242,
+      "idle_ms": 3312211,
+      "wall_seconds_instrumented": 0.138472348000505,
+      "decision_opportunities": 524,
+      "model_invocations": 524,
+      "raw_actions": {
+        "Priority": 486,
+        "FCFS": 38
+      },
+      "accepted_switches": 4,
+      "reasons": {
+        "first_service_protection": 13,
+        "arrival_risk": 29,
+        "accepted": 2,
+        "excursion_expired": 2,
+        "cost_margin": 478
+      },
+      "reviews_with_competing_ready_jobs": 0,
+      "reviews_with_unserved_ready_jobs": 15,
+      "fallback_reviews": 0,
+      "decision_p99_ms_instrumented": 0.36821768999999993,
+      "postguard_rejected_switches": 491,
+      "raw_proposed_departures": 523,
+      "raw_departure_disposition": {
+        "first_service_protection": 13,
+        "arrival_risk": 29,
+        "accepted": 2,
+        "excursion_expired": 1,
+        "cost_margin": 478
+      },
+      "raw_no_switch_decisions": 0,
+      "jobs_finishing_before_first_review": 0,
+      "active_policy_timeline": [
+        {
+          "start_ms": 0,
+          "end_ms": 13490,
+          "policy": "MLFQ"
+        },
+        {
+          "start_ms": 13490,
+          "end_ms": 21512,
+          "policy": "Priority"
+        },
+        {
+          "start_ms": 21512,
+          "end_ms": 21543,
+          "policy": "MLFQ"
+        },
+        {
+          "start_ms": 21543,
+          "end_ms": 304252,
+          "policy": "Priority"
+        },
+        {
+          "start_ms": 304252,
+          "end_ms": 3320242,
+          "policy": "MLFQ"
+        }
+      ],
+      "original_metrics_reproduced": true
+    },
+    {
+      "workload_id": "azure-d02-0040",
+      "stratum": "mixed_functions",
+      "cohort": "retained_control",
+      "processes": 26,
+      "arrival_first_ms": 19680,
+      "arrival_last_ms": 3584053,
+      "arrival_span_ms": 3564373,
+      "distinct_arrivals": 26,
+      "interarrival_mean_ms": 142574.92,
+      "interarrival_p95_ms": 227114.39999999997,
+      "interarrival_cv": 0.411122231576816,
+      "total_cpu_proxy_ms": 18102,
+      "burst_mean_ms": 696.2307692307693,
+      "burst_cv": 2.0637059164327844,
+      "burst_min_ms": 10,
+      "burst_max_ms": 4019,
+      "arrival_work_pending_fraction": 0.0,
+      "max_aggregate_pending_work_ms": 4019,
+      "cpu_per_exposure": 0.0050283333333333334,
+      "neutral_priorities_only": true,
+      "io_observed": false,
+      "makespan_ms": 3584063,
+      "idle_ms": 3565961,
+      "wall_seconds_instrumented": 0.49715663099777885,
+      "decision_opportunities": 1339,
+      "model_invocations": 1339,
+      "raw_actions": {
+        "Priority": 1295,
+        "FCFS": 44
+      },
+      "accepted_switches": 4,
+      "reasons": {
+        "first_service_protection": 24,
+        "arrival_risk": 23,
+        "accepted": 2,
+        "excursion_expired": 2,
+        "cost_margin": 1288
+      },
+      "reviews_with_competing_ready_jobs": 0,
+      "reviews_with_unserved_ready_jobs": 26,
+      "fallback_reviews": 0,
+      "decision_p99_ms_instrumented": 0.7282736399999998,
+      "postguard_rejected_switches": 1312,
+      "raw_proposed_departures": 1338,
+      "raw_departure_disposition": {
+        "first_service_protection": 24,
+        "arrival_risk": 23,
+        "accepted": 2,
+        "excursion_expired": 1,
+        "cost_margin": 1288
+      },
+      "raw_no_switch_decisions": 0,
+      "jobs_finishing_before_first_review": 0,
+      "active_policy_timeline": [
+        {
+          "start_ms": 0,
+          "end_ms": 19703,
+          "policy": "MLFQ"
+        },
+        {
+          "start_ms": 19703,
+          "end_ms": 40724,
+          "policy": "Priority"
+        },
+        {
+          "start_ms": 40724,
+          "end_ms": 40751,
+          "policy": "MLFQ"
+        },
+        {
+          "start_ms": 40751,
+          "end_ms": 131450,
+          "policy": "Priority"
+        },
+        {
+          "start_ms": 131450,
+          "end_ms": 3584063,
+          "policy": "MLFQ"
+        }
+      ],
+      "original_metrics_reproduced": true
+    },
+    {
+      "workload_id": "azure-refined-d02-0021",
+      "stratum": "high_load_hour_sample",
+      "cohort": "high_load_hour_sample",
+      "processes": 2000,
+      "arrival_first_ms": 541,
+      "arrival_last_ms": 3599431,
+      "arrival_span_ms": 3598890,
+      "distinct_arrivals": 2000,
+      "interarrival_mean_ms": 1800.345172586293,
+      "interarrival_p95_ms": 5077.599999999999,
+      "interarrival_cv": 0.9290994101947513,
+      "total_cpu_proxy_ms": 2000,
+      "burst_mean_ms": 1,
+      "burst_cv": 0.0,
+      "burst_min_ms": 1,
+      "burst_max_ms": 1,
+      "arrival_work_pending_fraction": 0.0,
+      "max_aggregate_pending_work_ms": 1,
+      "cpu_per_exposure": 0.0005555555555555556,
+      "neutral_priorities_only": true,
+      "io_observed": false,
+      "makespan_ms": 3599432,
+      "idle_ms": 3597432,
+      "wall_seconds_instrumented": 1.9628257020012825,
+      "decision_opportunities": 1998,
+      "model_invocations": 1998,
+      "raw_actions": {
+        "Priority": 1998
+      },
+      "accepted_switches": 0,
+      "reasons": {
+        "first_service_protection": 1998
+      },
+      "reviews_with_competing_ready_jobs": 0,
+      "reviews_with_unserved_ready_jobs": 1998,
+      "fallback_reviews": 0,
+      "decision_p99_ms_instrumented": 2.28217018,
+      "postguard_rejected_switches": 1998,
+      "raw_proposed_departures": 1998,
+      "raw_departure_disposition": {
+        "first_service_protection": 1998
+      },
+      "raw_no_switch_decisions": 0,
+      "jobs_finishing_before_first_review": 0,
+      "active_policy_timeline": [
+        {
+          "start_ms": 0,
+          "end_ms": 3599432,
+          "policy": "MLFQ"
+        }
+      ],
+      "original_metrics_reproduced": true
+    },
+    {
+      "workload_id": "azure-refined-d09-0129",
+      "stratum": "high_load_hour_sample",
+      "cohort": "high_load_hour_sample",
+      "processes": 2000,
+      "arrival_first_ms": 180428,
+      "arrival_last_ms": 3465104,
+      "arrival_span_ms": 3284676,
+      "distinct_arrivals": 1991,
+      "interarrival_mean_ms": 1643.159579789895,
+      "interarrival_p95_ms": 1401.1,
+      "interarrival_cv": 12.000352752441998,
+      "total_cpu_proxy_ms": 10000,
+      "burst_mean_ms": 5,
+      "burst_cv": 0.0,
+      "burst_min_ms": 5,
+      "burst_max_ms": 5,
+      "arrival_work_pending_fraction": 0.045,
+      "max_aggregate_pending_work_ms": 12,
+      "cpu_per_exposure": 0.002777777777777778,
+      "neutral_priorities_only": true,
+      "io_observed": false,
+      "makespan_ms": 3465109,
+      "idle_ms": 3455109,
+      "wall_seconds_instrumented": 2.7681933479980216,
+      "decision_opportunities": 2463,
+      "model_invocations": 2463,
+      "raw_actions": {
+        "Priority": 2463
+      },
+      "accepted_switches": 0,
+      "reasons": {
+        "first_service_protection": 1869,
+        "arrival_risk": 594
+      },
+      "reviews_with_competing_ready_jobs": 56,
+      "reviews_with_unserved_ready_jobs": 1869,
+      "fallback_reviews": 0,
+      "decision_p99_ms_instrumented": 2.856504620000002,
+      "postguard_rejected_switches": 1869,
+      "raw_proposed_departures": 2463,
+      "raw_departure_disposition": {
+        "first_service_protection": 1869,
+        "arrival_risk": 594
+      },
+      "raw_no_switch_decisions": 0,
+      "jobs_finishing_before_first_review": 0,
+      "active_policy_timeline": [
+        {
+          "start_ms": 0,
+          "end_ms": 3465109,
+          "policy": "MLFQ"
+        }
+      ],
+      "original_metrics_reproduced": true
+    }
+  ],
+  "examples": [
+    {
+      "workload_id": "azure-d12-0227",
+      "raw_model_action": "Priority",
+      "time": 110902,
+      "selected": "Priority",
+      "active": "MLFQ",
+      "confidence": 1.0,
+      "accepted": false,
+      "reason": "first_service_protection",
+      "features": {
+        "ready_count": 1.0,
+        "blocked_count": 0.0,
+        "completed_burst_mean": 0.0,
+        "completed_burst_variance": 0.0,
+        "observed_service_mean": 0.0,
+        "observed_service_variance": 0.0,
+        "priority_mean": 0,
+        "ready_wait_mean": 0,
+        "ready_wait_max": 0.0,
+        "recent_arrivals": 1.0,
+        "io_returns": 0.0,
+        "io_return_ratio": 0.0,
+        "active_policy_index": 4.0,
+        "dwell_remaining_ticks": 0.0,
+        "first_service_ready_count": 1.0,
+        "first_service_wait_max": 0.0,
+        "ready_wait_p50": 0.0,
+        "ready_wait_p95": 0.0,
+        "arrival_quiet_ticks": 0.0
+      },
+      "transition_ms": 7.253387
+    },
+    {
+      "workload_id": "azure-d12-0227",
+      "raw_model_action": "Priority",
+      "time": 110913,
+      "selected": "MLFQ",
+      "active": "MLFQ",
+      "confidence": 1.0,
+      "accepted": false,
+      "reason": "arrival_risk",
+      "features": {
+        "ready_count": 1.0,
+        "blocked_count": 0.0,
+        "completed_burst_mean": 0.0,
+        "completed_burst_variance": 0.0,
+        "observed_service_mean": 11,
+        "observed_service_variance": 0,
+        "priority_mean": 0,
+        "ready_wait_mean": 0,
+        "ready_wait_max": 0.0,
+        "recent_arrivals": 0.0,
+        "io_returns": 0.0,
+        "io_return_ratio": 0.0,
+        "active_policy_index": 4.0,
+        "dwell_remaining_ticks": 0.0,
+        "first_service_ready_count": 0.0,
+        "first_service_wait_max": 0.0,
+        "ready_wait_p50": 0.0,
+        "ready_wait_p95": 0.0,
+        "arrival_quiet_ticks": 11.0
+      },
+      "transition_ms": 0.322156
+    },
+    {
+      "workload_id": "azure-d12-0227",
+      "raw_model_action": "Priority",
+      "time": 110921,
+      "selected": "MLFQ",
+      "active": "MLFQ",
+      "confidence": 1.0,
+      "accepted": false,
+      "reason": "arrival_risk",
+      "features": {
+        "ready_count": 1.0,
+        "blocked_count": 0.0,
+        "completed_burst_mean": 0.0,
+        "completed_burst_variance": 0.0,
+        "observed_service_mean": 19,
+        "observed_service_variance": 0,
+        "priority_mean": 0,
+        "ready_wait_mean": 0,
+        "ready_wait_max": 0.0,
+        "recent_arrivals": 0.0,
+        "io_returns": 0.0,
+        "io_return_ratio": 0.0,
+        "active_policy_index": 4.0,
+        "dwell_remaining_ticks": 0.0,
+        "first_service_ready_count": 0.0,
+        "first_service_wait_max": 0.0,
+        "ready_wait_p50": 0.0,
+        "ready_wait_p95": 0.0,
+        "arrival_quiet_ticks": 19.0
+      },
+      "transition_ms": 0.191023
+    },
+    {
+      "workload_id": "azure-d07-0124",
+      "raw_model_action": "Priority",
+      "time": 62103,
+      "selected": "Priority",
+      "active": "MLFQ",
+      "confidence": 1.0,
+      "accepted": false,
+      "reason": "first_service_protection",
+      "features": {
+        "ready_count": 1.0,
+        "blocked_count": 0.0,
+        "completed_burst_mean": 0.0,
+        "completed_burst_variance": 0.0,
+        "observed_service_mean": 0.0,
+        "observed_service_variance": 0.0,
+        "priority_mean": 0,
+        "ready_wait_mean": 0,
+        "ready_wait_max": 0.0,
+        "recent_arrivals": 1.0,
+        "io_returns": 0.0,
+        "io_return_ratio": 0.0,
+        "active_policy_index": 4.0,
+        "dwell_remaining_ticks": 0.0,
+        "first_service_ready_count": 1.0,
+        "first_service_wait_max": 0.0,
+        "ready_wait_p50": 0.0,
+        "ready_wait_p95": 0.0,
+        "arrival_quiet_ticks": 0.0
+      },
+      "transition_ms": 0.246801
+    },
+    {
+      "workload_id": "azure-d07-0124",
+      "raw_model_action": "Priority",
+      "time": 62110,
+      "selected": "MLFQ",
+      "active": "MLFQ",
+      "confidence": 1.0,
+      "accepted": false,
+      "reason": "arrival_risk",
+      "features": {
+        "ready_count": 1.0,
+        "blocked_count": 0.0,
+        "completed_burst_mean": 0.0,
+        "completed_burst_variance": 0.0,
+        "observed_service_mean": 7,
+        "observed_service_variance": 0,
+        "priority_mean": 0,
+        "ready_wait_mean": 0,
+        "ready_wait_max": 0.0,
+        "recent_arrivals": 0.0,
+        "io_returns": 0.0,
+        "io_return_ratio": 0.0,
+        "active_policy_index": 4.0,
+        "dwell_remaining_ticks": 0.0,
+        "first_service_ready_count": 0.0,
+        "first_service_wait_max": 0.0,
+        "ready_wait_p50": 0.0,
+        "ready_wait_p95": 0.0,
+        "arrival_quiet_ticks": 7.0
+      },
+      "transition_ms": 0.176688
+    },
+    {
+      "workload_id": "azure-d07-0124",
+      "raw_model_action": "Priority",
+      "time": 62122,
+      "selected": "MLFQ",
+      "active": "MLFQ",
+      "confidence": 1.0,
+      "accepted": false,
+      "reason": "arrival_risk",
+      "features": {
+        "ready_count": 1.0,
+        "blocked_count": 0.0,
+        "completed_burst_mean": 0.0,
+        "completed_burst_variance": 0.0,
+        "observed_service_mean": 19,
+        "observed_service_variance": 0,
+        "priority_mean": 0,
+        "ready_wait_mean": 0,
+        "ready_wait_max": 0.0,
+        "recent_arrivals": 0.0,
+        "io_returns": 0.0,
+        "io_return_ratio": 0.0,
+        "active_policy_index": 4.0,
+        "dwell_remaining_ticks": 0.0,
+        "first_service_ready_count": 0.0,
+        "first_service_wait_max": 0.0,
+        "ready_wait_p50": 0.0,
+        "ready_wait_p95": 0.0,
+        "arrival_quiet_ticks": 19.0
+      },
+      "transition_ms": 0.209761
+    },
+    {
+      "workload_id": "azure-d14-0273",
+      "raw_model_action": "Priority",
+      "time": 2028612,
+      "selected": "Priority",
+      "active": "MLFQ",
+      "confidence": 1.0,
+      "accepted": false,
+      "reason": "first_service_protection",
+      "features": {
+        "ready_count": 1.0,
+        "blocked_count": 0.0,
+        "completed_burst_mean": 0.0,
+        "completed_burst_variance": 0.0,
+        "observed_service_mean": 0.0,
+        "observed_service_variance": 0.0,
+        "priority_mean": 0,
+        "ready_wait_mean": 0,
+        "ready_wait_max": 0.0,
+        "recent_arrivals": 1.0,
+        "io_returns": 0.0,
+        "io_return_ratio": 0.0,
+        "active_policy_index": 4.0,
+        "dwell_remaining_ticks": 0.0,
+        "first_service_ready_count": 1.0,
+        "first_service_wait_max": 0.0,
+        "ready_wait_p50": 0.0,
+        "ready_wait_p95": 0.0,
+        "arrival_quiet_ticks": 0.0
+      },
+      "transition_ms": 0.312907
+    },
+    {
+      "workload_id": "azure-d14-0273",
+      "raw_model_action": "Priority",
+      "time": 2028623,
+      "selected": "MLFQ",
+      "active": "MLFQ",
+      "confidence": 1.0,
+      "accepted": false,
+      "reason": "arrival_risk",
+      "features": {
+        "ready_count": 1.0,
+        "blocked_count": 0.0,
+        "completed_burst_mean": 0.0,
+        "completed_burst_variance": 0.0,
+        "observed_service_mean": 11,
+        "observed_service_variance": 0,
+        "priority_mean": 0,
+        "ready_wait_mean": 0,
+        "ready_wait_max": 0.0,
+        "recent_arrivals": 0.0,
+        "io_returns": 0.0,
+        "io_return_ratio": 0.0,
+        "active_policy_index": 4.0,
+        "dwell_remaining_ticks": 0.0,
+        "first_service_ready_count": 0.0,
+        "first_service_wait_max": 0.0,
+        "ready_wait_p50": 0.0,
+        "ready_wait_p95": 0.0,
+        "arrival_quiet_ticks": 11.0
+      },
+      "transition_ms": 0.179899
+    },
+    {
+      "workload_id": "azure-d14-0273",
+      "raw_model_action": "Priority",
+      "time": 2028631,
+      "selected": "MLFQ",
+      "active": "MLFQ",
+      "confidence": 1.0,
+      "accepted": false,
+      "reason": "arrival_risk",
+      "features": {
+        "ready_count": 1.0,
+        "blocked_count": 0.0,
+        "completed_burst_mean": 0.0,
+        "completed_burst_variance": 0.0,
+        "observed_service_mean": 19,
+        "observed_service_variance": 0,
+        "priority_mean": 0,
+        "ready_wait_mean": 0,
+        "ready_wait_max": 0.0,
+        "recent_arrivals": 0.0,
+        "io_returns": 0.0,
+        "io_return_ratio": 0.0,
+        "active_policy_index": 4.0,
+        "dwell_remaining_ticks": 0.0,
+        "first_service_ready_count": 0.0,
+        "first_service_wait_max": 0.0,
+        "ready_wait_p50": 0.0,
+        "ready_wait_p95": 0.0,
+        "arrival_quiet_ticks": 19.0
+      },
+      "transition_ms": 0.144972
+    },
+    {
+      "workload_id": "azure-d03-0052",
+      "raw_model_action": "Priority",
+      "time": 82466,
+      "selected": "Priority",
+      "active": "MLFQ",
+      "confidence": 1.0,
+      "accepted": false,
+      "reason": "first_service_protection",
+      "features": {
+        "ready_count": 1.0,
+        "blocked_count": 0.0,
+        "completed_burst_mean": 0.0,
+        "completed_burst_variance": 0.0,
+        "observed_service_mean": 0.0,
+        "observed_service_variance": 0.0,
+        "priority_mean": 0,
+        "ready_wait_mean": 0,
+        "ready_wait_max": 0.0,
+        "recent_arrivals": 1.0,
+        "io_returns": 0.0,
+        "io_return_ratio": 0.0,
+        "active_policy_index": 4.0,
+        "dwell_remaining_ticks": 0.0,
+        "first_service_ready_count": 1.0,
+        "first_service_wait_max": 0.0,
+        "ready_wait_p50": 0.0,
+        "ready_wait_p95": 0.0,
+        "arrival_quiet_ticks": 0.0
+      },
+      "transition_ms": 0.198782
+    },
+    {
+      "workload_id": "azure-d03-0052",
+      "raw_model_action": "Priority",
+      "time": 82473,
+      "selected": "MLFQ",
+      "active": "MLFQ",
+      "confidence": 1.0,
+      "accepted": false,
+      "reason": "arrival_risk",
+      "features": {
+        "ready_count": 1.0,
+        "blocked_count": 0.0,
+        "completed_burst_mean": 0.0,
+        "completed_burst_variance": 0.0,
+        "observed_service_mean": 7,
+        "observed_service_variance": 0,
+        "priority_mean": 0,
+        "ready_wait_mean": 0,
+        "ready_wait_max": 0.0,
+        "recent_arrivals": 0.0,
+        "io_returns": 0.0,
+        "io_return_ratio": 0.0,
+        "active_policy_index": 4.0,
+        "dwell_remaining_ticks": 0.0,
+        "first_service_ready_count": 0.0,
+        "first_service_wait_max": 0.0,
+        "ready_wait_p50": 0.0,
+        "ready_wait_p95": 0.0,
+        "arrival_quiet_ticks": 7.0
+      },
+      "transition_ms": 0.164901
+    },
+    {
+      "workload_id": "azure-d03-0052",
+      "raw_model_action": "Priority",
+      "time": 82481,
+      "selected": "MLFQ",
+      "active": "MLFQ",
+      "confidence": 1.0,
+      "accepted": false,
+      "reason": "arrival_risk",
+      "features": {
+        "ready_count": 1.0,
+        "blocked_count": 0.0,
+        "completed_burst_mean": 0.0,
+        "completed_burst_variance": 0.0,
+        "observed_service_mean": 15,
+        "observed_service_variance": 0,
+        "priority_mean": 0,
+        "ready_wait_mean": 0,
+        "ready_wait_max": 0.0,
+        "recent_arrivals": 0.0,
+        "io_returns": 0.0,
+        "io_return_ratio": 0.0,
+        "active_policy_index": 4.0,
+        "dwell_remaining_ticks": 0.0,
+        "first_service_ready_count": 0.0,
+        "first_service_wait_max": 0.0,
+        "ready_wait_p50": 0.0,
+        "ready_wait_p95": 0.0,
+        "arrival_quiet_ticks": 15.0
+      },
+      "transition_ms": 0.14202
+    },
+    {
+      "workload_id": "azure-d06-0104",
+      "raw_model_action": "Priority",
+      "time": 50127,
+      "selected": "Priority",
+      "active": "MLFQ",
+      "confidence": 1.0,
+      "accepted": false,
+      "reason": "first_service_protection",
+      "features": {
+        "ready_count": 1.0,
+        "blocked_count": 0.0,
+        "completed_burst_mean": 0.0,
+        "completed_burst_variance": 0.0,
+        "observed_service_mean": 0.0,
+        "observed_service_variance": 0.0,
+        "priority_mean": 0,
+        "ready_wait_mean": 0,
+        "ready_wait_max": 0.0,
+        "recent_arrivals": 1.0,
+        "io_returns": 0.0,
+        "io_return_ratio": 0.0,
+        "active_policy_index": 4.0,
+        "dwell_remaining_ticks": 0.0,
+        "first_service_ready_count": 1.0,
+        "first_service_wait_max": 0.0,
+        "ready_wait_p50": 0.0,
+        "ready_wait_p95": 0.0,
+        "arrival_quiet_ticks": 0.0
+      },
+      "transition_ms": 0.173166
+    },
+    {
+      "workload_id": "azure-d06-0104",
+      "raw_model_action": "Priority",
+      "time": 50130,
+      "selected": "MLFQ",
+      "active": "MLFQ",
+      "confidence": 1.0,
+      "accepted": false,
+      "reason": "arrival_risk",
+      "features": {
+        "ready_count": 1.0,
+        "blocked_count": 0.0,
+        "completed_burst_mean": 0.0,
+        "completed_burst_variance": 0.0,
+        "observed_service_mean": 3,
+        "observed_service_variance": 0,
+        "priority_mean": 0,
+        "ready_wait_mean": 0,
+        "ready_wait_max": 0.0,
+        "recent_arrivals": 0.0,
+        "io_returns": 0.0,
+        "io_return_ratio": 0.0,
+        "active_policy_index": 4.0,
+        "dwell_remaining_ticks": 0.0,
+        "first_service_ready_count": 0.0,
+        "first_service_wait_max": 0.0,
+        "ready_wait_p50": 0.0,
+        "ready_wait_p95": 0.0,
+        "arrival_quiet_ticks": 3.0
+      },
+      "transition_ms": 0.145407
+    },
+    {
+      "workload_id": "azure-d06-0104",
+      "raw_model_action": "Priority",
+      "time": 50142,
+      "selected": "MLFQ",
+      "active": "MLFQ",
+      "confidence": 1.0,
+      "accepted": false,
+      "reason": "arrival_risk",
+      "features": {
+        "ready_count": 1.0,
+        "blocked_count": 0.0,
+        "completed_burst_mean": 0.0,
+        "completed_burst_variance": 0.0,
+        "observed_service_mean": 15,
+        "observed_service_variance": 0,
+        "priority_mean": 0,
+        "ready_wait_mean": 0,
+        "ready_wait_max": 0.0,
+        "recent_arrivals": 0.0,
+        "io_returns": 0.0,
+        "io_return_ratio": 0.0,
+        "active_policy_index": 4.0,
+        "dwell_remaining_ticks": 0.0,
+        "first_service_ready_count": 0.0,
+        "first_service_wait_max": 0.0,
+        "ready_wait_p50": 0.0,
+        "ready_wait_p95": 0.0,
+        "arrival_quiet_ticks": 15.0
+      },
+      "transition_ms": 0.224408
+    },
+    {
+      "workload_id": "azure-d12-0234",
+      "raw_model_action": "Priority",
+      "time": 31193,
+      "selected": "Priority",
+      "active": "MLFQ",
+      "confidence": 1.0,
+      "accepted": false,
+      "reason": "first_service_protection",
+      "features": {
+        "ready_count": 1.0,
+        "blocked_count": 0.0,
+        "completed_burst_mean": 0.0,
+        "completed_burst_variance": 0.0,
+        "observed_service_mean": 0.0,
+        "observed_service_variance": 0.0,
+        "priority_mean": 0,
+        "ready_wait_mean": 0,
+        "ready_wait_max": 0.0,
+        "recent_arrivals": 1.0,
+        "io_returns": 0.0,
+        "io_return_ratio": 0.0,
+        "active_policy_index": 4.0,
+        "dwell_remaining_ticks": 0.0,
+        "first_service_ready_count": 1.0,
+        "first_service_wait_max": 0.0,
+        "ready_wait_p50": 0.0,
+        "ready_wait_p95": 0.0,
+        "arrival_quiet_ticks": 0.0
+      },
+      "transition_ms": 0.227784
+    },
+    {
+      "workload_id": "azure-d12-0234",
+      "raw_model_action": "Priority",
+      "time": 31200,
+      "selected": "MLFQ",
+      "active": "MLFQ",
+      "confidence": 1.0,
+      "accepted": false,
+      "reason": "arrival_risk",
+      "features": {
+        "ready_count": 1.0,
+        "blocked_count": 0.0,
+        "completed_burst_mean": 0.0,
+        "completed_burst_variance": 0.0,
+        "observed_service_mean": 7,
+        "observed_service_variance": 0,
+        "priority_mean": 0,
+        "ready_wait_mean": 0,
+        "ready_wait_max": 0.0,
+        "recent_arrivals": 0.0,
+        "io_returns": 0.0,
+        "io_return_ratio": 0.0,
+        "active_policy_index": 4.0,
+        "dwell_remaining_ticks": 0.0,
+        "first_service_ready_count": 0.0,
+        "first_service_wait_max": 0.0,
+        "ready_wait_p50": 0.0,
+        "ready_wait_p95": 0.0,
+        "arrival_quiet_ticks": 7.0
+      },
+      "transition_ms": 0.148141
+    },
+    {
+      "workload_id": "azure-d12-0234",
+      "raw_model_action": "Priority",
+      "time": 348665,
+      "selected": "Priority",
+      "active": "MLFQ",
+      "confidence": 1.0,
+      "accepted": false,
+      "reason": "first_service_protection",
+      "features": {
+        "ready_count": 1.0,
+        "blocked_count": 0.0,
+        "completed_burst_mean": 17,
+        "completed_burst_variance": 0,
+        "observed_service_mean": 17,
+        "observed_service_variance": 0,
+        "priority_mean": 0,
+        "ready_wait_mean": 0,
+        "ready_wait_max": 0.0,
+        "recent_arrivals": 1.0,
+        "io_returns": 0.0,
+        "io_return_ratio": 0.0,
+        "active_policy_index": 4.0,
+        "dwell_remaining_ticks": 0.0,
+        "first_service_ready_count": 1.0,
+        "first_service_wait_max": 0.0,
+        "ready_wait_p50": 0.0,
+        "ready_wait_p95": 0.0,
+        "arrival_quiet_ticks": 0.0
+      },
+      "transition_ms": 0.231824
+    },
+    {
+      "workload_id": "azure-d09-0170",
+      "raw_model_action": "Priority",
+      "time": 8907,
+      "selected": "Priority",
+      "active": "MLFQ",
+      "confidence": 1.0,
+      "accepted": false,
+      "reason": "first_service_protection",
+      "features": {
+        "ready_count": 1.0,
+        "blocked_count": 0.0,
+        "completed_burst_mean": 0.0,
+        "completed_burst_variance": 0.0,
+        "observed_service_mean": 0.0,
+        "observed_service_variance": 0.0,
+        "priority_mean": 0,
+        "ready_wait_mean": 0,
+        "ready_wait_max": 0.0,
+        "recent_arrivals": 1.0,
+        "io_returns": 0.0,
+        "io_return_ratio": 0.0,
+        "active_policy_index": 4.0,
+        "dwell_remaining_ticks": 0.0,
+        "first_service_ready_count": 1.0,
+        "first_service_wait_max": 0.0,
+        "ready_wait_p50": 0.0,
+        "ready_wait_p95": 0.0,
+        "arrival_quiet_ticks": 0.0
+      },
+      "transition_ms": 0.230167
+    },
+    {
+      "workload_id": "azure-d09-0170",
+      "raw_model_action": "Priority",
+      "time": 8910,
+      "selected": "MLFQ",
+      "active": "MLFQ",
+      "confidence": 1.0,
+      "accepted": false,
+      "reason": "arrival_risk",
+      "features": {
+        "ready_count": 1.0,
+        "blocked_count": 0.0,
+        "completed_burst_mean": 0.0,
+        "completed_burst_variance": 0.0,
+        "observed_service_mean": 3,
+        "observed_service_variance": 0,
+        "priority_mean": 0,
+        "ready_wait_mean": 0,
+        "ready_wait_max": 0.0,
+        "recent_arrivals": 0.0,
+        "io_returns": 0.0,
+        "io_return_ratio": 0.0,
+        "active_policy_index": 4.0,
+        "dwell_remaining_ticks": 0.0,
+        "first_service_ready_count": 0.0,
+        "first_service_wait_max": 0.0,
+        "ready_wait_p50": 0.0,
+        "ready_wait_p95": 0.0,
+        "arrival_quiet_ticks": 3.0
+      },
+      "transition_ms": 0.228644
+    },
+    {
+      "workload_id": "azure-d09-0170",
+      "raw_model_action": "Priority",
+      "time": 8922,
+      "selected": "MLFQ",
+      "active": "MLFQ",
+      "confidence": 1.0,
+      "accepted": false,
+      "reason": "arrival_risk",
+      "features": {
+        "ready_count": 1.0,
+        "blocked_count": 0.0,
+        "completed_burst_mean": 0.0,
+        "completed_burst_variance": 0.0,
+        "observed_service_mean": 15,
+        "observed_service_variance": 0,
+        "priority_mean": 0,
+        "ready_wait_mean": 0,
+        "ready_wait_max": 0.0,
+        "recent_arrivals": 0.0,
+        "io_returns": 0.0,
+        "io_return_ratio": 0.0,
+        "active_policy_index": 4.0,
+        "dwell_remaining_ticks": 0.0,
+        "first_service_ready_count": 0.0,
+        "first_service_wait_max": 0.0,
+        "ready_wait_p50": 0.0,
+        "ready_wait_p95": 0.0,
+        "arrival_quiet_ticks": 15.0
+      },
+      "transition_ms": 0.16314
+    },
+    {
+      "workload_id": "azure-d06-0108",
+      "raw_model_action": "Priority",
+      "time": 14904,
+      "selected": "Priority",
+      "active": "MLFQ",
+      "confidence": 1.0,
+      "accepted": false,
+      "reason": "first_service_protection",
+      "features": {
+        "ready_count": 1.0,
+        "blocked_count": 0.0,
+        "completed_burst_mean": 0.0,
+        "completed_burst_variance": 0.0,
+        "observed_service_mean": 0.0,
+        "observed_service_variance": 0.0,
+        "priority_mean": 0,
+        "ready_wait_mean": 0,
+        "ready_wait_max": 0.0,
+        "recent_arrivals": 1.0,
+        "io_returns": 0.0,
+        "io_return_ratio": 0.0,
+        "active_policy_index": 4.0,
+        "dwell_remaining_ticks": 0.0,
+        "first_service_ready_count": 1.0,
+        "first_service_wait_max": 0.0,
+        "ready_wait_p50": 0.0,
+        "ready_wait_p95": 0.0,
+        "arrival_quiet_ticks": 0.0
+      },
+      "transition_ms": 0.3266
+    },
+    {
+      "workload_id": "azure-d06-0108",
+      "raw_model_action": "Priority",
+      "time": 14911,
+      "selected": "MLFQ",
+      "active": "MLFQ",
+      "confidence": 1.0,
+      "accepted": false,
+      "reason": "arrival_risk",
+      "features": {
+        "ready_count": 1.0,
+        "blocked_count": 0.0,
+        "completed_burst_mean": 0.0,
+        "completed_burst_variance": 0.0,
+        "observed_service_mean": 7,
+        "observed_service_variance": 0,
+        "priority_mean": 0,
+        "ready_wait_mean": 0,
+        "ready_wait_max": 0.0,
+        "recent_arrivals": 0.0,
+        "io_returns": 0.0,
+        "io_return_ratio": 0.0,
+        "active_policy_index": 4.0,
+        "dwell_remaining_ticks": 0.0,
+        "first_service_ready_count": 0.0,
+        "first_service_wait_max": 0.0,
+        "ready_wait_p50": 0.0,
+        "ready_wait_p95": 0.0,
+        "arrival_quiet_ticks": 7.0
+      },
+      "transition_ms": 0.176563
+    },
+    {
+      "workload_id": "azure-d06-0108",
+      "raw_model_action": "Priority",
+      "time": 14923,
+      "selected": "MLFQ",
+      "active": "MLFQ",
+      "confidence": 1.0,
+      "accepted": false,
+      "reason": "arrival_risk",
+      "features": {
+        "ready_count": 1.0,
+        "blocked_count": 0.0,
+        "completed_burst_mean": 0.0,
+        "completed_burst_variance": 0.0,
+        "observed_service_mean": 19,
+        "observed_service_variance": 0,
+        "priority_mean": 0,
+        "ready_wait_mean": 0,
+        "ready_wait_max": 0.0,
+        "recent_arrivals": 0.0,
+        "io_returns": 0.0,
+        "io_return_ratio": 0.0,
+        "active_policy_index": 4.0,
+        "dwell_remaining_ticks": 0.0,
+        "first_service_ready_count": 0.0,
+        "first_service_wait_max": 0.0,
+        "ready_wait_p50": 0.0,
+        "ready_wait_p95": 0.0,
+        "arrival_quiet_ticks": 19.0
+      },
+      "transition_ms": 0.142848
+    },
+    {
+      "workload_id": "azure-d13-0258",
+      "raw_model_action": "Priority",
+      "time": 21679,
+      "selected": "Priority",
+      "active": "MLFQ",
+      "confidence": 1.0,
+      "accepted": false,
+      "reason": "first_service_protection",
+      "features": {
+        "ready_count": 1.0,
+        "blocked_count": 0.0,
+        "completed_burst_mean": 0.0,
+        "completed_burst_variance": 0.0,
+        "observed_service_mean": 0.0,
+        "observed_service_variance": 0.0,
+        "priority_mean": 0,
+        "ready_wait_mean": 0,
+        "ready_wait_max": 0.0,
+        "recent_arrivals": 1.0,
+        "io_returns": 0.0,
+        "io_return_ratio": 0.0,
+        "active_policy_index": 4.0,
+        "dwell_remaining_ticks": 0.0,
+        "first_service_ready_count": 1.0,
+        "first_service_wait_max": 0.0,
+        "ready_wait_p50": 0.0,
+        "ready_wait_p95": 0.0,
+        "arrival_quiet_ticks": 0.0
+      },
+      "transition_ms": 0.30662
+    },
+    {
+      "workload_id": "azure-d13-0258",
+      "raw_model_action": "Priority",
+      "time": 21680,
+      "selected": "MLFQ",
+      "active": "MLFQ",
+      "confidence": 1.0,
+      "accepted": false,
+      "reason": "arrival_risk",
+      "features": {
+        "ready_count": 1.0,
+        "blocked_count": 0.0,
+        "completed_burst_mean": 0.0,
+        "completed_burst_variance": 0.0,
+        "observed_service_mean": 1,
+        "observed_service_variance": 0,
+        "priority_mean": 0,
+        "ready_wait_mean": 0,
+        "ready_wait_max": 0.0,
+        "recent_arrivals": 0.0,
+        "io_returns": 0.0,
+        "io_return_ratio": 0.0,
+        "active_policy_index": 4.0,
+        "dwell_remaining_ticks": 0.0,
+        "first_service_ready_count": 0.0,
+        "first_service_wait_max": 0.0,
+        "ready_wait_p50": 0.0,
+        "ready_wait_p95": 0.0,
+        "arrival_quiet_ticks": 1.0
+      },
+      "transition_ms": 0.168909
+    },
+    {
+      "workload_id": "azure-d13-0258",
+      "raw_model_action": "Priority",
+      "time": 21690,
+      "selected": "MLFQ",
+      "active": "MLFQ",
+      "confidence": 1.0,
+      "accepted": false,
+      "reason": "arrival_risk",
+      "features": {
+        "ready_count": 1.0,
+        "blocked_count": 0.0,
+        "completed_burst_mean": 0.0,
+        "completed_burst_variance": 0.0,
+        "observed_service_mean": 11,
+        "observed_service_variance": 0,
+        "priority_mean": 0,
+        "ready_wait_mean": 0,
+        "ready_wait_max": 0.0,
+        "recent_arrivals": 0.0,
+        "io_returns": 0.0,
+        "io_return_ratio": 0.0,
+        "active_policy_index": 4.0,
+        "dwell_remaining_ticks": 0.0,
+        "first_service_ready_count": 0.0,
+        "first_service_wait_max": 0.0,
+        "ready_wait_p50": 0.0,
+        "ready_wait_p95": 0.0,
+        "arrival_quiet_ticks": 11.0
+      },
+      "transition_ms": 0.146535
+    },
+    {
+      "workload_id": "azure-d01-0019",
+      "raw_model_action": "Priority",
+      "time": 4373,
+      "selected": "Priority",
+      "active": "MLFQ",
+      "confidence": 1.0,
+      "accepted": false,
+      "reason": "first_service_protection",
+      "features": {
+        "ready_count": 1.0,
+        "blocked_count": 0.0,
+        "completed_burst_mean": 0.0,
+        "completed_burst_variance": 0.0,
+        "observed_service_mean": 0.0,
+        "observed_service_variance": 0.0,
+        "priority_mean": 0,
+        "ready_wait_mean": 0,
+        "ready_wait_max": 0.0,
+        "recent_arrivals": 1.0,
+        "io_returns": 0.0,
+        "io_return_ratio": 0.0,
+        "active_policy_index": 4.0,
+        "dwell_remaining_ticks": 0.0,
+        "first_service_ready_count": 1.0,
+        "first_service_wait_max": 0.0,
+        "ready_wait_p50": 0.0,
+        "ready_wait_p95": 0.0,
+        "arrival_quiet_ticks": 0.0
+      },
+      "transition_ms": 0.244222
+    },
+    {
+      "workload_id": "azure-d01-0019",
+      "raw_model_action": "Priority",
+      "time": 4380,
+      "selected": "MLFQ",
+      "active": "MLFQ",
+      "confidence": 1.0,
+      "accepted": false,
+      "reason": "arrival_risk",
+      "features": {
+        "ready_count": 1.0,
+        "blocked_count": 0.0,
+        "completed_burst_mean": 0.0,
+        "completed_burst_variance": 0.0,
+        "observed_service_mean": 7,
+        "observed_service_variance": 0,
+        "priority_mean": 0,
+        "ready_wait_mean": 0,
+        "ready_wait_max": 0.0,
+        "recent_arrivals": 0.0,
+        "io_returns": 0.0,
+        "io_return_ratio": 0.0,
+        "active_policy_index": 4.0,
+        "dwell_remaining_ticks": 0.0,
+        "first_service_ready_count": 0.0,
+        "first_service_wait_max": 0.0,
+        "ready_wait_p50": 0.0,
+        "ready_wait_p95": 0.0,
+        "arrival_quiet_ticks": 7.0
+      },
+      "transition_ms": 0.324643
+    },
+    {
+      "workload_id": "azure-d01-0019",
+      "raw_model_action": "Priority",
+      "time": 4392,
+      "selected": "MLFQ",
+      "active": "MLFQ",
+      "confidence": 1.0,
+      "accepted": false,
+      "reason": "arrival_risk",
+      "features": {
+        "ready_count": 1.0,
+        "blocked_count": 0.0,
+        "completed_burst_mean": 0.0,
+        "completed_burst_variance": 0.0,
+        "observed_service_mean": 19,
+        "observed_service_variance": 0,
+        "priority_mean": 0,
+        "ready_wait_mean": 0,
+        "ready_wait_max": 0.0,
+        "recent_arrivals": 0.0,
+        "io_returns": 0.0,
+        "io_return_ratio": 0.0,
+        "active_policy_index": 4.0,
+        "dwell_remaining_ticks": 0.0,
+        "first_service_ready_count": 0.0,
+        "first_service_wait_max": 0.0,
+        "ready_wait_p50": 0.0,
+        "ready_wait_p95": 0.0,
+        "arrival_quiet_ticks": 19.0
+      },
+      "transition_ms": 0.391711
+    },
+    {
+      "workload_id": "azure-d05-0101",
+      "raw_model_action": "Priority",
+      "time": 13463,
+      "selected": "Priority",
+      "active": "MLFQ",
+      "confidence": 1.0,
+      "accepted": false,
+      "reason": "first_service_protection",
+      "features": {
+        "ready_count": 1.0,
+        "blocked_count": 0.0,
+        "completed_burst_mean": 0.0,
+        "completed_burst_variance": 0.0,
+        "observed_service_mean": 0.0,
+        "observed_service_variance": 0.0,
+        "priority_mean": 0,
+        "ready_wait_mean": 0,
+        "ready_wait_max": 0.0,
+        "recent_arrivals": 1.0,
+        "io_returns": 0.0,
+        "io_return_ratio": 0.0,
+        "active_policy_index": 4.0,
+        "dwell_remaining_ticks": 0.0,
+        "first_service_ready_count": 1.0,
+        "first_service_wait_max": 0.0,
+        "ready_wait_p50": 0.0,
+        "ready_wait_p95": 0.0,
+        "arrival_quiet_ticks": 0.0
+      },
+      "transition_ms": 0.300734
+    },
+    {
+      "workload_id": "azure-d05-0101",
+      "raw_model_action": "Priority",
+      "time": 13470,
+      "selected": "MLFQ",
+      "active": "MLFQ",
+      "confidence": 1.0,
+      "accepted": false,
+      "reason": "arrival_risk",
+      "features": {
+        "ready_count": 1.0,
+        "blocked_count": 0.0,
+        "completed_burst_mean": 0.0,
+        "completed_burst_variance": 0.0,
+        "observed_service_mean": 7,
+        "observed_service_variance": 0,
+        "priority_mean": 0,
+        "ready_wait_mean": 0,
+        "ready_wait_max": 0.0,
+        "recent_arrivals": 0.0,
+        "io_returns": 0.0,
+        "io_return_ratio": 0.0,
+        "active_policy_index": 4.0,
+        "dwell_remaining_ticks": 0.0,
+        "first_service_ready_count": 0.0,
+        "first_service_wait_max": 0.0,
+        "ready_wait_p50": 0.0,
+        "ready_wait_p95": 0.0,
+        "arrival_quiet_ticks": 7.0
+      },
+      "transition_ms": 0.197109
+    },
+    {
+      "workload_id": "azure-d05-0101",
+      "raw_model_action": "Priority",
+      "time": 13482,
+      "selected": "MLFQ",
+      "active": "MLFQ",
+      "confidence": 1.0,
+      "accepted": false,
+      "reason": "arrival_risk",
+      "features": {
+        "ready_count": 1.0,
+        "blocked_count": 0.0,
+        "completed_burst_mean": 0.0,
+        "completed_burst_variance": 0.0,
+        "observed_service_mean": 19,
+        "observed_service_variance": 0,
+        "priority_mean": 0,
+        "ready_wait_mean": 0,
+        "ready_wait_max": 0.0,
+        "recent_arrivals": 0.0,
+        "io_returns": 0.0,
+        "io_return_ratio": 0.0,
+        "active_policy_index": 4.0,
+        "dwell_remaining_ticks": 0.0,
+        "first_service_ready_count": 0.0,
+        "first_service_wait_max": 0.0,
+        "ready_wait_p50": 0.0,
+        "ready_wait_p95": 0.0,
+        "arrival_quiet_ticks": 19.0
+      },
+      "transition_ms": 0.19713
+    },
+    {
+      "workload_id": "azure-d02-0040",
+      "raw_model_action": "Priority",
+      "time": 19680,
+      "selected": "Priority",
+      "active": "MLFQ",
+      "confidence": 1.0,
+      "accepted": false,
+      "reason": "first_service_protection",
+      "features": {
+        "ready_count": 1.0,
+        "blocked_count": 0.0,
+        "completed_burst_mean": 0.0,
+        "completed_burst_variance": 0.0,
+        "observed_service_mean": 0.0,
+        "observed_service_variance": 0.0,
+        "priority_mean": 0,
+        "ready_wait_mean": 0,
+        "ready_wait_max": 0.0,
+        "recent_arrivals": 1.0,
+        "io_returns": 0.0,
+        "io_return_ratio": 0.0,
+        "active_policy_index": 4.0,
+        "dwell_remaining_ticks": 0.0,
+        "first_service_ready_count": 1.0,
+        "first_service_wait_max": 0.0,
+        "ready_wait_p50": 0.0,
+        "ready_wait_p95": 0.0,
+        "arrival_quiet_ticks": 0.0
+      },
+      "transition_ms": 0.252463
+    },
+    {
+      "workload_id": "azure-d02-0040",
+      "raw_model_action": "Priority",
+      "time": 19691,
+      "selected": "MLFQ",
+      "active": "MLFQ",
+      "confidence": 1.0,
+      "accepted": false,
+      "reason": "arrival_risk",
+      "features": {
+        "ready_count": 1.0,
+        "blocked_count": 0.0,
+        "completed_burst_mean": 0.0,
+        "completed_burst_variance": 0.0,
+        "observed_service_mean": 11,
+        "observed_service_variance": 0,
+        "priority_mean": 0,
+        "ready_wait_mean": 0,
+        "ready_wait_max": 0.0,
+        "recent_arrivals": 0.0,
+        "io_returns": 0.0,
+        "io_return_ratio": 0.0,
+        "active_policy_index": 4.0,
+        "dwell_remaining_ticks": 0.0,
+        "first_service_ready_count": 0.0,
+        "first_service_wait_max": 0.0,
+        "ready_wait_p50": 0.0,
+        "ready_wait_p95": 0.0,
+        "arrival_quiet_ticks": 11.0
+      },
+      "transition_ms": 0.16589
+    },
+    {
+      "workload_id": "azure-d02-0040",
+      "raw_model_action": "Priority",
+      "time": 19703,
+      "selected": "Priority",
+      "active": "Priority",
+      "confidence": 1.0,
+      "accepted": true,
+      "reason": "accepted",
+      "features": {
+        "ready_count": 1.0,
+        "blocked_count": 0.0,
+        "completed_burst_mean": 0.0,
+        "completed_burst_variance": 0.0,
+        "observed_service_mean": 23,
+        "observed_service_variance": 0,
+        "priority_mean": 0,
+        "ready_wait_mean": 0,
+        "ready_wait_max": 0.0,
+        "recent_arrivals": 0.0,
+        "io_returns": 0.0,
+        "io_return_ratio": 0.0,
+        "active_policy_index": 4.0,
+        "dwell_remaining_ticks": 0.0,
+        "first_service_ready_count": 0.0,
+        "first_service_wait_max": 0.0,
+        "ready_wait_p50": 0.0,
+        "ready_wait_p95": 0.0,
+        "arrival_quiet_ticks": 23.0
+      },
+      "transition_ms": 0.147927
+    },
+    {
+      "workload_id": "azure-refined-d02-0021",
+      "raw_model_action": "Priority",
+      "time": 541,
+      "selected": "Priority",
+      "active": "MLFQ",
+      "confidence": 1.0,
+      "accepted": false,
+      "reason": "first_service_protection",
+      "features": {
+        "ready_count": 1.0,
+        "blocked_count": 0.0,
+        "completed_burst_mean": 0.0,
+        "completed_burst_variance": 0.0,
+        "observed_service_mean": 0.0,
+        "observed_service_variance": 0.0,
+        "priority_mean": 0,
+        "ready_wait_mean": 0,
+        "ready_wait_max": 0.0,
+        "recent_arrivals": 1.0,
+        "io_returns": 0.0,
+        "io_return_ratio": 0.0,
+        "active_policy_index": 4.0,
+        "dwell_remaining_ticks": 0.0,
+        "first_service_ready_count": 1.0,
+        "first_service_wait_max": 0.0,
+        "ready_wait_p50": 0.0,
+        "ready_wait_p95": 0.0,
+        "arrival_quiet_ticks": 0.0
+      },
+      "transition_ms": 0.753771
+    },
+    {
+      "workload_id": "azure-refined-d02-0021",
+      "raw_model_action": "Priority",
+      "time": 6225,
+      "selected": "Priority",
+      "active": "MLFQ",
+      "confidence": 1.0,
+      "accepted": false,
+      "reason": "first_service_protection",
+      "features": {
+        "ready_count": 1.0,
+        "blocked_count": 0.0,
+        "completed_burst_mean": 1,
+        "completed_burst_variance": 0,
+        "observed_service_mean": 1,
+        "observed_service_variance": 0,
+        "priority_mean": 0,
+        "ready_wait_mean": 0,
+        "ready_wait_max": 0.0,
+        "recent_arrivals": 1.0,
+        "io_returns": 0.0,
+        "io_return_ratio": 0.0,
+        "active_policy_index": 4.0,
+        "dwell_remaining_ticks": 0.0,
+        "first_service_ready_count": 1.0,
+        "first_service_wait_max": 0.0,
+        "ready_wait_p50": 0.0,
+        "ready_wait_p95": 0.0,
+        "arrival_quiet_ticks": 0.0
+      },
+      "transition_ms": 0.322193
+    },
+    {
+      "workload_id": "azure-refined-d02-0021",
+      "raw_model_action": "Priority",
+      "time": 6400,
+      "selected": "Priority",
+      "active": "MLFQ",
+      "confidence": 1.0,
+      "accepted": false,
+      "reason": "first_service_protection",
+      "features": {
+        "ready_count": 1.0,
+        "blocked_count": 0.0,
+        "completed_burst_mean": 1,
+        "completed_burst_variance": 0,
+        "observed_service_mean": 1,
+        "observed_service_variance": 0,
+        "priority_mean": 0,
+        "ready_wait_mean": 0,
+        "ready_wait_max": 0.0,
+        "recent_arrivals": 1.0,
+        "io_returns": 0.0,
+        "io_return_ratio": 0.0,
+        "active_policy_index": 4.0,
+        "dwell_remaining_ticks": 0.0,
+        "first_service_ready_count": 1.0,
+        "first_service_wait_max": 0.0,
+        "ready_wait_p50": 0.0,
+        "ready_wait_p95": 0.0,
+        "arrival_quiet_ticks": 0.0
+      },
+      "transition_ms": 0.196178
+    },
+    {
+      "workload_id": "azure-refined-d09-0129",
+      "raw_model_action": "Priority",
+      "time": 180428,
+      "selected": "Priority",
+      "active": "MLFQ",
+      "confidence": 1.0,
+      "accepted": false,
+      "reason": "first_service_protection",
+      "features": {
+        "ready_count": 1.0,
+        "blocked_count": 0.0,
+        "completed_burst_mean": 0.0,
+        "completed_burst_variance": 0.0,
+        "observed_service_mean": 0.0,
+        "observed_service_variance": 0.0,
+        "priority_mean": 0,
+        "ready_wait_mean": 0,
+        "ready_wait_max": 0.0,
+        "recent_arrivals": 1.0,
+        "io_returns": 0.0,
+        "io_return_ratio": 0.0,
+        "active_policy_index": 4.0,
+        "dwell_remaining_ticks": 0.0,
+        "first_service_ready_count": 1.0,
+        "first_service_wait_max": 0.0,
+        "ready_wait_p50": 0.0,
+        "ready_wait_p95": 0.0,
+        "arrival_quiet_ticks": 0.0
+      },
+      "transition_ms": 0.403138
+    },
+    {
+      "workload_id": "azure-refined-d09-0129",
+      "raw_model_action": "Priority",
+      "time": 180431,
+      "selected": "MLFQ",
+      "active": "MLFQ",
+      "confidence": 1.0,
+      "accepted": false,
+      "reason": "arrival_risk",
+      "features": {
+        "ready_count": 1.0,
+        "blocked_count": 0.0,
+        "completed_burst_mean": 0.0,
+        "completed_burst_variance": 0.0,
+        "observed_service_mean": 3,
+        "observed_service_variance": 0,
+        "priority_mean": 0,
+        "ready_wait_mean": 0,
+        "ready_wait_max": 0.0,
+        "recent_arrivals": 0.0,
+        "io_returns": 0.0,
+        "io_return_ratio": 0.0,
+        "active_policy_index": 4.0,
+        "dwell_remaining_ticks": 0.0,
+        "first_service_ready_count": 0.0,
+        "first_service_wait_max": 0.0,
+        "ready_wait_p50": 0.0,
+        "ready_wait_p95": 0.0,
+        "arrival_quiet_ticks": 3.0
+      },
+      "transition_ms": 0.239385
+    },
+    {
+      "workload_id": "azure-refined-d09-0129",
+      "raw_model_action": "Priority",
+      "time": 181084,
+      "selected": "Priority",
+      "active": "MLFQ",
+      "confidence": 1.0,
+      "accepted": false,
+      "reason": "first_service_protection",
+      "features": {
+        "ready_count": 1.0,
+        "blocked_count": 0.0,
+        "completed_burst_mean": 5,
+        "completed_burst_variance": 0,
+        "observed_service_mean": 5,
+        "observed_service_variance": 0,
+        "priority_mean": 0,
+        "ready_wait_mean": 0,
+        "ready_wait_max": 0.0,
+        "recent_arrivals": 1.0,
+        "io_returns": 0.0,
+        "io_return_ratio": 0.0,
+        "active_policy_index": 4.0,
+        "dwell_remaining_ticks": 0.0,
+        "first_service_ready_count": 1.0,
+        "first_service_wait_max": 0.0,
+        "ready_wait_p50": 0.0,
+        "ready_wait_p95": 0.0,
+        "arrival_quiet_ticks": 0.0
+      },
+      "transition_ms": 0.195814
+    }
+  ],
+  "config": {
+    "epoch_ticks": 10,
+    "dwell_epochs": 2,
+    "confidence_threshold": 0.8,
+    "policy_track": "realistic",
+    "initial_policy": "MLFQ",
+    "fallback_policy": "MLFQ",
+    "label_horizon_ticks": null,
+    "label_continuation": "MLFQ",
+    "first_service_protection": true,
+    "explicit_no_switch": true,
+    "mlfq_quanta": [
+      1,
+      2,
+      4
+    ],
+    "mlfq_aging_threshold": 40,
+    "response_tail_protection": true,
+    "arrival_quiet_dwell_periods": 1
+  },
+  "model_sha256": "a8783b65b60aaf381694910affd7e2c2acce4c7c871911b782514d8e37064a64",
+  "measurement_note": "Raw model.predict actions recorded before safety processing; actual algorithms and safeguards unchanged. Instrumented latency is diagnostic only."
+}

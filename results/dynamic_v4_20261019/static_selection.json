@@ -1,0 +1,148 @@
+{
+  "config": {
+    "epoch_ticks": 10,
+    "dwell_epochs": 2,
+    "confidence_threshold": 0.8,
+    "policy_track": "realistic",
+    "initial_policy": "MLFQ",
+    "fallback_policy": "MLFQ",
+    "label_horizon_ticks": null,
+    "label_continuation": "MLFQ",
+    "first_service_protection": true,
+    "explicit_no_switch": true,
+    "mlfq_quanta": [
+      1,
+      2,
+      4
+    ],
+    "mlfq_aging_threshold": 40
+  },
+  "primary_baseline": "Tuned MLFQ",
+  "validation_scores": {
+    "FCFS": 0.25543393616876264,
+    "Round Robin": 0.20810914989470247,
+    "Priority": 0.2514158787099131,
+    "Priority RR": 0.8618621380572996,
+    "MLFQ": 0.18732154930428208,
+    "Tuned MLFQ": 0.17534805225831598
+  },
+  "grid": [
+    {
+      "parameters": {
+        "quanta": [
+          1,
+          2,
+          4
+        ],
+        "aging_threshold": 10,
+        "context_switch_cost": 0
+      },
+      "validation_score": 0.18093075184632107
+    },
+    {
+      "parameters": {
+        "quanta": [
+          1,
+          2,
+          4
+        ],
+        "aging_threshold": 20,
+        "context_switch_cost": 0
+      },
+      "validation_score": 0.1781707839906077
+    },
+    {
+      "parameters": {
+        "quanta": [
+          1,
+          2,
+          4
+        ],
+        "aging_threshold": 40,
+        "context_switch_cost": 0
+      },
+      "validation_score": 0.17534805225831598
+    },
+    {
+      "parameters": {
+        "quanta": [
+          2,
+          4,
+          8
+        ],
+        "aging_threshold": 10,
+        "context_switch_cost": 0
+      },
+      "validation_score": 0.1927260373115941
+    },
+    {
+      "parameters": {
+        "quanta": [
+          2,
+          4,
+          8
+        ],
+        "aging_threshold": 20,
+        "context_switch_cost": 0
+      },
+      "validation_score": 0.18732154930428208
+    },
+    {
+      "parameters": {
+        "quanta": [
+          2,
+          4,
+          8
+        ],
+        "aging_threshold": 40,
+        "context_switch_cost": 0
+      },
+      "validation_score": 0.18382441206523273
+    },
+    {
+      "parameters": {
+        "quanta": [
+          4,
+          8,
+          16
+        ],
+        "aging_threshold": 10,
+        "context_switch_cost": 0
+      },
+      "validation_score": 0.21838115723488785
+    },
+    {
+      "parameters": {
+        "quanta": [
+          4,
+          8,
+          16
+        ],
+        "aging_threshold": 20,
+        "context_switch_cost": 0
+      },
+      "validation_score": 0.2070227704541694
+    },
+    {
+      "parameters": {
+        "quanta": [
+          4,
+          8,
+          16
+        ],
+        "aging_threshold": 40,
+        "context_switch_cost": 0
+      },
+      "validation_score": 0.19500946193975768
+    }
+  ],
+  "tuned_parameters": {
+    "quanta": [
+      1,
+      2,
+      4
+    ],
+    "aging_threshold": 40,
+    "context_switch_cost": 0
+  }
+}

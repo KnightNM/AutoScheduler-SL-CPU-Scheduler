@@ -1,0 +1,484 @@
+{
+  "workload_id": "azure-refined-d13-0207",
+  "profiling_seconds_per_policy": 8,
+  "characteristics": {
+    "processes": 2000,
+    "arrival_first_ms": 0,
+    "arrival_last_ms": 925,
+    "arrival_span_ms": 925,
+    "distinct_arrivals": 823,
+    "interarrival_mean_ms": 0.4627313656828414,
+    "interarrival_p95_ms": 1.0,
+    "interarrival_cv": 1.2978494320542036,
+    "total_cpu_proxy_ms": 130000,
+    "burst_mean_ms": 65,
+    "burst_cv": 0.0,
+    "burst_min_ms": 65,
+    "burst_max_ms": 65,
+    "arrival_work_pending_fraction": 0.9995,
+    "max_aggregate_pending_work_ms": 129075,
+    "cpu_per_exposure": 140.3887688984881,
+    "neutral_priorities_only": true,
+    "io_observed": false
+  },
+  "source_sha256": {
+    "simulator/engine.py": "ebf56d6924e34c6dbb1e03a8fd9fb930d01cf6962d1610a86fc7c7565cdce8a9",
+    "autoscheduler/dynamic.py": "9943aae3cff89410c2d12410cd787fd5372040dd251222163dcffe99690aa875"
+  },
+  "rows": [
+    {
+      "policy": "Priority RR",
+      "completed_with_profiler": false,
+      "seconds": 8.012142366002081,
+      "top_cumulative": [
+        {
+          "file": "simulator.py",
+          "line": 89,
+          "function": "run_simulation",
+          "calls": 1,
+          "self_seconds": 4.717e-06,
+          "cumulative_seconds": 8.003638005
+        },
+        {
+          "file": "priority_rr.py",
+          "line": 9,
+          "function": "priority_round_robin",
+          "calls": 1,
+          "self_seconds": 1.6499000000000002e-05,
+          "cumulative_seconds": 8.003633288
+        },
+        {
+          "file": "engine.py",
+          "line": 32,
+          "function": "simulate",
+          "calls": 1,
+          "self_seconds": 0.114358967,
+          "cumulative_seconds": 8.003616789
+        },
+        {
+          "file": "engine.py",
+          "line": 103,
+          "function": "take_ready",
+          "calls": 26884,
+          "self_seconds": 0.035609624,
+          "cumulative_seconds": 7.685749821000001
+        },
+        {
+          "file": "~",
+          "line": 0,
+          "function": "<built-in method builtins.min>",
+          "calls": 53767,
+          "self_seconds": 4.576496357,
+          "cumulative_seconds": 7.641052469000001
+        },
+        {
+          "file": "engine.py",
+          "line": 110,
+          "function": "<lambda>",
+          "calls": 53457425,
+          "self_seconds": 3.064551894,
+          "cumulative_seconds": 3.064556112
+        },
+        {
+          "file": "engine.py",
+          "line": 73,
+          "function": "release",
+          "calls": 80649,
+          "self_seconds": 0.089840687,
+          "cumulative_seconds": 0.107530843
+        },
+        {
+          "file": "copy.py",
+          "line": 118,
+          "function": "deepcopy",
+          "calls": 40001,
+          "self_seconds": 0.024050182,
+          "cumulative_seconds": 0.056001589000000004
+        },
+        {
+          "file": "copy.py",
+          "line": 191,
+          "function": "_deepcopy_list",
+          "calls": 2001,
+          "self_seconds": 0.001388127,
+          "cumulative_seconds": 0.05598566000000001
+        },
+        {
+          "file": "copy.py",
+          "line": 247,
+          "function": "_reconstruct",
+          "calls": 2000,
+          "self_seconds": 0.003088706,
+          "cumulative_seconds": 0.048017486000000005
+        },
+        {
+          "file": "copy.py",
+          "line": 217,
+          "function": "_deepcopy_dict",
+          "calls": 2000,
+          "self_seconds": 0.006257335,
+          "cumulative_seconds": 0.037634048
+        },
+        {
+          "file": "~",
+          "line": 0,
+          "function": "<built-in method builtins.sorted>",
+          "calls": 80650,
+          "self_seconds": 0.01623828,
+          "cumulative_seconds": 0.016539781
+        },
+        {
+          "file": "~",
+          "line": 0,
+          "function": "<method 'pop' of 'list' objects>",
+          "calls": 28883,
+          "self_seconds": 0.013362622000000001,
+          "cumulative_seconds": 0.013362622000000001
+        },
+        {
+          "file": "~",
+          "line": 0,
+          "function": "<method 'append' of 'list' objects>",
+          "calls": 92648,
+          "self_seconds": 0.008825956000000001,
+          "cumulative_seconds": 0.008825956000000001
+        },
+        {
+          "file": "~",
+          "line": 0,
+          "function": "<method 'get' of 'dict' objects>",
+          "calls": 82002,
+          "self_seconds": 0.006834288,
+          "cumulative_seconds": 0.006834288
+        },
+        {
+          "file": "~",
+          "line": 0,
+          "function": "<built-in method time.perf_counter_ns>",
+          "calls": 26884,
+          "self_seconds": 0.006599978,
+          "cumulative_seconds": 0.006599978
+        },
+        {
+          "file": "<string>",
+          "line": 2,
+          "function": "__init__",
+          "calls": 2000,
+          "self_seconds": 0.0006101450000000001,
+          "cumulative_seconds": 0.005130748
+        },
+        {
+          "file": "copy.py",
+          "line": 200,
+          "function": "_deepcopy_tuple",
+          "calls": 4000,
+          "self_seconds": 0.002807747,
+          "cumulative_seconds": 0.004778366
+        }
+      ]
+    },
+    {
+      "policy": "MLFQ",
+      "completed_with_profiler": false,
+      "seconds": 8.00128023599973,
+      "top_cumulative": [
+        {
+          "file": "simulator.py",
+          "line": 89,
+          "function": "run_simulation",
+          "calls": 1,
+          "self_seconds": 3.5440000000000003e-06,
+          "cumulative_seconds": 7.995052429
+        },
+        {
+          "file": "mlfq.py",
+          "line": 9,
+          "function": "mlfq",
+          "calls": 1,
+          "self_seconds": 2.539e-06,
+          "cumulative_seconds": 7.995048885
+        },
+        {
+          "file": "engine.py",
+          "line": 32,
+          "function": "simulate",
+          "calls": 1,
+          "self_seconds": 0.10961374800000001,
+          "cumulative_seconds": 7.9950463460000005
+        },
+        {
+          "file": "engine.py",
+          "line": 103,
+          "function": "take_ready",
+          "calls": 23432,
+          "self_seconds": 0.030664338000000003,
+          "cumulative_seconds": 7.757078248000001
+        },
+        {
+          "file": "~",
+          "line": 0,
+          "function": "<built-in method builtins.min>",
+          "calls": 70294,
+          "self_seconds": 3.9013848550000003,
+          "cumulative_seconds": 6.768956696
+        },
+        {
+          "file": "engine.py",
+          "line": 134,
+          "function": "<lambda>",
+          "calls": 46402176,
+          "self_seconds": 2.867568711,
+          "cumulative_seconds": 2.867571841
+        },
+        {
+          "file": "engine.py",
+          "line": 90,
+          "function": "age_ready",
+          "calls": 23432,
+          "self_seconds": 0.018432659,
+          "cumulative_seconds": 0.9574041400000001
+        },
+        {
+          "file": "~",
+          "line": 0,
+          "function": "<built-in method builtins.sorted>",
+          "calls": 70296,
+          "self_seconds": 0.031237367000000002,
+          "cumulative_seconds": 0.949800874
+        },
+        {
+          "file": "engine.py",
+          "line": 94,
+          "function": "<genexpr>",
+          "calls": 46853,
+          "self_seconds": 0.9163464790000001,
+          "cumulative_seconds": 0.9163464790000001
+        },
+        {
+          "file": "copy.py",
+          "line": 118,
+          "function": "deepcopy",
+          "calls": 40001,
+          "self_seconds": 0.023664228000000002,
+          "cumulative_seconds": 0.053777982
+        },
+        {
+          "file": "copy.py",
+          "line": 191,
+          "function": "_deepcopy_list",
+          "calls": 2001,
+          "self_seconds": 0.00118866,
+          "cumulative_seconds": 0.053771257
+        },
+        {
+          "file": "copy.py",
+          "line": 247,
+          "function": "_reconstruct",
+          "calls": 2000,
+          "self_seconds": 0.003130705,
+          "cumulative_seconds": 0.046196691000000005
+        },
+        {
+          "file": "engine.py",
+          "line": 73,
+          "function": "release",
+          "calls": 46863,
+          "self_seconds": 0.0257571,
+          "cumulative_seconds": 0.037663023000000004
+        },
+        {
+          "file": "copy.py",
+          "line": 217,
+          "function": "_deepcopy_dict",
+          "calls": 2000,
+          "self_seconds": 0.005672508000000001,
+          "cumulative_seconds": 0.036266658
+        },
+        {
+          "file": "~",
+          "line": 0,
+          "function": "<method 'pop' of 'list' objects>",
+          "calls": 25431,
+          "self_seconds": 0.010331642,
+          "cumulative_seconds": 0.010331642
+        },
+        {
+          "file": "~",
+          "line": 0,
+          "function": "<method 'get' of 'dict' objects>",
+          "calls": 82002,
+          "self_seconds": 0.0066394060000000005,
+          "cumulative_seconds": 0.0066394060000000005
+        },
+        {
+          "file": "~",
+          "line": 0,
+          "function": "<method 'append' of 'list' objects>",
+          "calls": 58862,
+          "self_seconds": 0.0058915470000000005,
+          "cumulative_seconds": 0.0058915470000000005
+        },
+        {
+          "file": "~",
+          "line": 0,
+          "function": "<built-in method builtins.len>",
+          "calls": 50865,
+          "self_seconds": 0.005049049,
+          "cumulative_seconds": 0.005049049
+        }
+      ]
+    },
+    {
+      "policy": "Dynamic v5",
+      "completed_with_profiler": false,
+      "seconds": 8.004366567998659,
+      "top_cumulative": [
+        {
+          "file": "dynamic.py",
+          "line": 481,
+          "function": "run_dynamic",
+          "calls": 1,
+          "self_seconds": 0.0388966,
+          "cumulative_seconds": 7.944635439000001
+        },
+        {
+          "file": "dynamic.py",
+          "line": 422,
+          "function": "extract_dynamic_features",
+          "calls": 1015,
+          "self_seconds": 1.066013911,
+          "cumulative_seconds": 4.565418399
+        },
+        {
+          "file": "dynamic.py",
+          "line": 272,
+          "function": "_rebuild_ready",
+          "calls": 8366,
+          "self_seconds": 0.007797288,
+          "cumulative_seconds": 2.712195932
+        },
+        {
+          "file": "dynamic.py",
+          "line": 302,
+          "function": "_dispatch",
+          "calls": 8000,
+          "self_seconds": 0.047839471,
+          "cumulative_seconds": 2.5566031920000003
+        },
+        {
+          "file": "~",
+          "line": 0,
+          "function": "<method 'sort' of 'list' objects>",
+          "calls": 8366,
+          "self_seconds": 1.2398390510000001,
+          "cumulative_seconds": 2.359879211
+        },
+        {
+          "file": "statistics.py",
+          "line": 468,
+          "function": "mean",
+          "calls": 3771,
+          "self_seconds": 0.0067917410000000004,
+          "cumulative_seconds": 2.2352483430000003
+        },
+        {
+          "file": "statistics.py",
+          "line": 154,
+          "function": "_sum",
+          "calls": 3771,
+          "self_seconds": 1.007842249,
+          "cumulative_seconds": 2.204049862
+        },
+        {
+          "file": "statistics.py",
+          "line": 287,
+          "function": "_exact_ratio",
+          "calls": 7371248,
+          "self_seconds": 0.726640966,
+          "cumulative_seconds": 1.184331934
+        },
+        {
+          "file": "dynamic.py",
+          "line": 275,
+          "function": "<lambda>",
+          "calls": 14603728,
+          "self_seconds": 0.9036725210000001,
+          "cumulative_seconds": 0.9036725210000001
+        },
+        {
+          "file": "statistics.py",
+          "line": 918,
+          "function": "pvariance",
+          "calls": 1741,
+          "self_seconds": 0.0030880200000000003,
+          "cumulative_seconds": 0.692432724
+        },
+        {
+          "file": "statistics.py",
+          "line": 208,
+          "function": "_ss",
+          "calls": 1741,
+          "self_seconds": 0.350104939,
+          "cumulative_seconds": 0.681239675
+        },
+        {
+          "file": "~",
+          "line": 0,
+          "function": "<method 'get' of 'dict' objects>",
+          "calls": 10051639,
+          "self_seconds": 0.591181359,
+          "cumulative_seconds": 0.591181359
+        },
+        {
+          "file": "~",
+          "line": 0,
+          "function": "<method 'as_integer_ratio' of 'int' objects>",
+          "calls": 7371248,
+          "self_seconds": 0.45769096800000003,
+          "cumulative_seconds": 0.45769096800000003
+        },
+        {
+          "file": "_classes.py",
+          "line": 501,
+          "function": "predict",
+          "calls": 2029,
+          "self_seconds": 0.028514215000000002,
+          "cumulative_seconds": 0.42649939600000003
+        },
+        {
+          "file": "~",
+          "line": 0,
+          "function": "<built-in method builtins.sorted>",
+          "calls": 34032,
+          "self_seconds": 0.046179166,
+          "cumulative_seconds": 0.377518968
+        },
+        {
+          "file": "_classes.py",
+          "line": 477,
+          "function": "_validate_X_predict",
+          "calls": 2029,
+          "self_seconds": 0.0055233090000000006,
+          "cumulative_seconds": 0.348952753
+        },
+        {
+          "file": "dynamic.py",
+          "line": 280,
+          "function": "_age_mlfq",
+          "calls": 8000,
+          "self_seconds": 0.00655443,
+          "cumulative_seconds": 0.34451943300000004
+        },
+        {
+          "file": "dynamic.py",
+          "line": 281,
+          "function": "<genexpr>",
+          "calls": 10849,
+          "self_seconds": 0.330697515,
+          "cumulative_seconds": 0.330697515
+        }
+      ]
+    }
+  ],
+  "note": "Bounded partial profiles, not scheduling results. No CPU-time rescaling or process subsampling."
+}

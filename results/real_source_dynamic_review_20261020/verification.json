@@ -1,0 +1,45 @@
+{
+  "focused_tests": {
+    "count": 38,
+    "result": "PASS",
+    "modules": [
+      "test_real_source_dashboard",
+      "test_dashboard",
+      "test_azure_external_pilot",
+      "test_azure_generalization",
+      "test_azure_runtime_equivalence",
+      "test_dynamic_v5",
+      "test_dynamic_v6"
+    ]
+  },
+  "frontend_build": "PASS",
+  "live_api_catalog_smoke": "PASS",
+  "live_simulation_playback_smoke": "PASS",
+  "new_frontend_asset_served": "PASS",
+  "graphify_ast_update": "PASS",
+  "protected_files": 207,
+  "protected_files_unchanged": true,
+  "training_occurred": false,
+  "models_promoted": false,
+  "research_status_changed": false,
+  "new_audit": {
+    "selected_workloads": 6,
+    "common_complete_workloads": 4,
+    "selected_processes": 198,
+    "common_complete_processes": 145,
+    "policy_attempts": 48,
+    "policy_timeouts": 3,
+    "reserved_holdout_evaluated": false
+  },
+  "not_verified": [
+    "Complete results beyond fixed runtime caps",
+    "Untouched holdout performance",
+    "Raw Linux capture provenance and observed metrics (captures unavailable locally)",
+    "External regression MAE/RMSE/R2 (no compatible paired targets)",
+    "Full repository test suite",
+    "Browser interaction beyond build/served-asset and API/simulation smoke"
+  ],
+  "url": "http://127.0.0.1:8000",
+  "start_command": "bash dashboard/start.sh",
+  "pushed_or_merged": false
+}

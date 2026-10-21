@@ -1,0 +1,28 @@
+{
+  "selected": "policy_cost",
+  "static_baseline": "MLFQ",
+  "validation": {
+    "seed": 4242,
+    "traces": 60,
+    "static_scores": {
+      "FCFS": 0.39530829701055403,
+      "Round Robin": 0.2200634315260412,
+      "Priority": 0.4061212848610071,
+      "Priority RR": 0.7753976861553451,
+      "MLFQ": 0.1923745821648246
+    },
+    "static_baseline": "MLFQ"
+  },
+  "family_validation": {
+    "classifier": {
+      "validation_schedule_score": 0.2200634315260412,
+      "validation_schedule_p95_response": 51.593333333333334,
+      "validation_schedule_starvation": 32.583333333333336
+    },
+    "policy_cost": {
+      "validation_schedule_score": 0.21562462972345015,
+      "validation_schedule_p95_response": 51.593333333333334,
+      "validation_schedule_starvation": 32.56666666666667
+    }
+  }
+}

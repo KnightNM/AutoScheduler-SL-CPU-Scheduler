@@ -1,0 +1,93 @@
+{
+  "selected": "policy_cost",
+  "fallback": "Tuned MLFQ",
+  "diagnostic_models": [
+    "classifier"
+  ],
+  "validation": {
+    "classifier": {
+      "validation_schedule_score": 0.16444788504233254,
+      "validation_schedule_p95_response": 6.564880952380952,
+      "validation_schedule_starvation": 12.214285714285714,
+      "validation_schedule_eligible": false,
+      "validation_schedule_gates": {
+        "score": false,
+        "p95_response": true,
+        "starvation": true,
+        "latency": true,
+        "original_rr_score": true,
+        "original_rr_p95": true
+      },
+      "validation_schedule_intervals": {
+        "score": {
+          "mean": -0.001956776945453339,
+          "ci_low": -0.006514118071010416,
+          "ci_high": 0.0012645398630128687
+        },
+        "p95_response": {
+          "mean": 0.0,
+          "ci_low": 0.0,
+          "ci_high": 0.0
+        },
+        "starvation": {
+          "mean": 0,
+          "ci_low": 0,
+          "ci_high": 0
+        },
+        "rr_score": {
+          "mean": -0.05367981152960615,
+          "ci_low": -0.07070140585634374,
+          "ci_high": -0.03772309351953991
+        },
+        "rr_p95_response": {
+          "mean": -12.712499999999999,
+          "ci_low": -16.17799107142857,
+          "ci_high": -9.429732142857143
+        }
+      },
+      "validation_schedule_max_workload_p99_ms": 0.5942212099999999
+    },
+    "policy_cost": {
+      "validation_schedule_score": 0.13705959404673804,
+      "validation_schedule_p95_response": 6.564880952380952,
+      "validation_schedule_starvation": 11.857142857142858,
+      "validation_schedule_eligible": true,
+      "validation_schedule_gates": {
+        "score": true,
+        "p95_response": true,
+        "starvation": true,
+        "latency": true,
+        "original_rr_score": true,
+        "original_rr_p95": true
+      },
+      "validation_schedule_intervals": {
+        "score": {
+          "mean": -0.029345067941047846,
+          "ci_low": -0.04171347851659248,
+          "ci_high": -0.017912763410400396
+        },
+        "p95_response": {
+          "mean": 0.0,
+          "ci_low": 0.0,
+          "ci_high": 0.0
+        },
+        "starvation": {
+          "mean": -0.35714285714285715,
+          "ci_low": -0.5238095238095238,
+          "ci_high": -0.20238095238095238
+        },
+        "rr_score": {
+          "mean": -0.08106810252520065,
+          "ci_low": -0.1003849238013025,
+          "ci_high": -0.06296744239945509
+        },
+        "rr_p95_response": {
+          "mean": -12.712499999999999,
+          "ci_low": -16.17799107142857,
+          "ci_high": -9.429732142857143
+        }
+      },
+      "validation_schedule_max_workload_p99_ms": 0.8554652699999999
+    }
+  }
+}

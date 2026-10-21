@@ -1,0 +1,41 @@
+{
+  "status": "PASS",
+  "regression_tests": 255,
+  "focused_v6_and_manifest_tests": 10,
+  "failures": 0,
+  "preserved_manifest_paths": 309,
+  "changed_preserved_paths": [],
+  "modified_existing_python_sources_since_v5": [
+    "autoscheduler/dynamic.py",
+    "autoscheduler/dynamic_v5_experiment.py"
+  ],
+  "prefit_source_drift": [],
+  "model_hashes_verified": true,
+  "catalog_model_artifacts_hash_verified": 10,
+  "exact_mlfq_control_matches": 240,
+  "group_overlap": false,
+  "fresh_seed_prefixes": {
+    "train": 10601,
+    "validation": 10602,
+    "audit": 10603
+  },
+  "previous_v5_seed_prefixes": {
+    "train": 9701,
+    "validation": 9702,
+    "audit": 9703
+  },
+  "seeds_disjoint_from_previous_v5": true,
+  "old_1000_used_for_selection": false,
+  "locked_real_tests_accessed": false,
+  "azure_and_real_linux_source_changes": [],
+  "real_config_validation": "PASS",
+  "real_config_sha256": "b12ea718f41279c3758d4c6172560ac0af01776537ef93092091a19cf2446067",
+  "graphify_update": "PASS_AST_ONLY",
+  "prespecified_v6_cost_gates_pass": true,
+  "previous_frozen_static_p95_sensitivity_pass": false,
+  "promoted": false,
+  "synthetic_tuning": "closed",
+  "training_data_sha256": "02b0f4e014acd807b2eca994085b2d9414d665683c23c47cdd94b67a75760de1",
+  "split_sha256": "9a2fb97f44ac8e8664f3ea6fac3bd6b49672cb1dd30a96ad568f878c0934423b",
+  "regression_log_sha256": "c682666baccf25de58d7ed45d088a4d97edf79f451e8d93e66c720ed5e23310d"
+}

@@ -1,0 +1,45 @@
+{
+  "status": "EXISTING_ARTIFACT_ANALYSIS_ONLY",
+  "model": "artifacts/dynamic_v5_20261019/policy_cost/model.joblib",
+  "evaluation_source": "results/dynamic_v5_20261019/policy_cost_training.json",
+  "evaluation_scope": "Internal held-out development decision rows, not scheduling-audit workloads or Azure.",
+  "mae": null,
+  "rmse": null,
+  "r_squared": null,
+  "regression_metrics_status": "Not recorded",
+  "regression_metrics_reason": "Saved training rows contain reference action costs, and the report contains action-cost averages, but paired numerical predictions and reference costs are not recorded. No inference was rerun.",
+  "policy_action_agreement": 0.19083969465648856,
+  "agreement_correct": 50,
+  "agreement_rows": 262,
+  "held_out_trace_groups": 22,
+  "tie_aware_agreement": 0.8320610687022901,
+  "tie_aware_provenance": "Copied from saved test_tie_aware_accuracy; not recomputed without per-row predictions.",
+  "example_source": "results/dynamic_v5_20261019/residual_diagnosis.json",
+  "example": {
+    "workload_seed": 9703000019,
+    "family": "sustained_arrivals",
+    "time": 13,
+    "current_policy": "MLFQ",
+    "proposed_action": "Priority",
+    "predicted_policy_cost": null,
+    "accepted": false,
+    "reason": "first_service_protection",
+    "explanation": "A ready process has not received its first CPU allocation. First-service protection rejects departure from MLFQ.",
+    "features": {
+      "ready_count": 1.0,
+      "blocked_count": 0.0,
+      "first_service_ready_count": 1.0,
+      "first_service_wait_max": 0.0,
+      "recent_arrivals": 1.0,
+      "arrival_quiet_ticks": 0.0
+    }
+  },
+  "example_scope": "One selected saved failure-diagnostic event; not live execution or a representative sample.",
+  "source_sha256": {
+    "results/dynamic_v5_20261019/policy_cost_training.json": "fd6f5d7c3ec5ae368ea2be0389e58606a8b849345c5f479cba2095db8912a108",
+    "results/dynamic_v5_20261019/residual_diagnosis.json": "4f38212cb655b904ac626f8c55842e833dfa53277b7f0d5156735123079d1c16",
+    "configs/research_status.json": "214344cb90ab8f9850b1b38185b62e12f07cc19d8b05a538ac9bb7d64a2fafc7",
+    "dashboard/web/src/Simulation.jsx": "0e47755573831600f120569d2e6fd2f7e911ad443df5444d9550eb6ed44c2cd1",
+    "results/azure_external_pilot/summary.json": "6b3f7168287191673b1630eafbeb99b1b29d5c66a228ac0d21f0e9b3e7d7102d"
+  }
+}

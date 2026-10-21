@@ -1,0 +1,129 @@
+{
+  "status": "SYNTHETIC_DEVELOPMENT_ONLY",
+  "promotion": false,
+  "seeds": {
+    "train": 8401,
+    "validation": 8402,
+    "audit": 8403
+  },
+  "traces": {
+    "train": 72,
+    "validation": 36,
+    "audit": 120
+  },
+  "workload_suite": "v4_balanced_six_families_no_outcome_filtering",
+  "counts": [
+    3,
+    6,
+    12,
+    24,
+    48
+  ],
+  "base_config": {
+    "epoch_ticks": 10,
+    "dwell_epochs": 2,
+    "confidence_threshold": 0.8,
+    "policy_track": "realistic",
+    "initial_policy": "MLFQ",
+    "fallback_policy": "MLFQ",
+    "label_horizon_ticks": null,
+    "label_continuation": "MLFQ",
+    "first_service_protection": true,
+    "explicit_no_switch": true,
+    "mlfq_quanta": [
+      2,
+      4,
+      8
+    ],
+    "mlfq_aging_threshold": 20
+  },
+  "python": "3.12.3 (main, Aug 31 2026, 10:18:26) [GCC 13.3.0]",
+  "classifier_grid": [
+    [
+      3,
+      10,
+      null
+    ],
+    [
+      3,
+      10,
+      "balanced"
+    ],
+    [
+      5,
+      10,
+      null
+    ],
+    [
+      5,
+      10,
+      "balanced"
+    ],
+    [
+      8,
+      10,
+      null
+    ],
+    [
+      8,
+      10,
+      "balanced"
+    ]
+  ],
+  "cost_grid": [
+    [
+      3,
+      10,
+      null
+    ],
+    [
+      5,
+      10,
+      null
+    ],
+    [
+      8,
+      10,
+      null
+    ]
+  ],
+  "refit": false,
+  "selection": "safety_eligible_first_then_realized_score; no audit retuning",
+  "static_grid": {
+    "quanta": [
+      [
+        1,
+        2,
+        4
+      ],
+      [
+        2,
+        4,
+        8
+      ],
+      [
+        4,
+        8,
+        16
+      ]
+    ],
+    "aging": [
+      10,
+      20,
+      40
+    ]
+  },
+  "gates": "primary score CI_high<0; primary P95 CI_high<=0; mean starvation<=baseline; max workload routing P99<10ms; original RR gates unchanged",
+  "old_1000_workload_audit": "NOT_RUN; historical numbers are context only",
+  "source_sha256": {
+    "autoscheduler/dynamic.py": "354f7477634754f1a4a5423389eb61828f0a6fae314fb3231fc940073536caa1",
+    "autoscheduler/model.py": "f809d3f39176860c4b91809d4defb34b42b147f4d2937cba8b931c90b7dc2621",
+    "autoscheduler/dynamic_training.py": "6301b9035b7b5e17326d27c971835a7bbe9d23d9dcac78c48ebca993c900a1b6",
+    "autoscheduler/development_workloads.py": "217ce16276d63400018a617249c190d9fc6989c9334a2fbb11a6a55c07fa33ee",
+    "autoscheduler/dynamic_v4_experiment.py": "d4ad4971d831f8c769e959af719a46ef03b06f25a9d697db8e992ca3ba1aa901",
+    "autoscheduler/dynamic_v3_experiment.py": "3647cad1a33d97f1b4778683df890c7a7351302d2f368a054a8cbee03fd2614d",
+    "autoscheduler/evaluation.py": "96d26272501c110da3d20ecde9c22f86e567220756943e2643a7d18606957c5f",
+    "simulator/engine.py": "4710963b08df4cf4e773d4e80e76e4313d0f5b8571c35532a6a4c298f65fa5ce",
+    "configs/real_desktop_ml.json": "b12ea718f41279c3758d4c6172560ac0af01776537ef93092091a19cf2446067"
+  }
+}

@@ -1,0 +1,59 @@
+{
+  "status": "POST_HOC_DIAGNOSTIC_NO_MODEL_FITTING",
+  "route_safety": {
+    "adaptive": {
+      "mean_starvation": 32.287,
+      "starvation_increased_workloads": 26,
+      "p95_increased_workloads": 997,
+      "weighted_score_wins": 92,
+      "weighted_score_ties": 0,
+      "weighted_score_losses": 908
+    },
+    "rr_then_mlfq": {
+      "mean_starvation": 32.32,
+      "starvation_increased_workloads": 26,
+      "p95_increased_workloads": 598,
+      "weighted_score_wins": 65,
+      "weighted_score_ties": 0,
+      "weighted_score_losses": 935
+    },
+    "mlfq_start_model": {
+      "mean_starvation": 32.307,
+      "starvation_increased_workloads": 0,
+      "p95_increased_workloads": 0,
+      "weighted_score_wins": 699,
+      "weighted_score_ties": 102,
+      "weighted_score_losses": 199
+    },
+    "sticky_mlfq": {
+      "mean_starvation": 32.287,
+      "starvation_increased_workloads": 26,
+      "p95_increased_workloads": 997,
+      "weighted_score_wins": 58,
+      "weighted_score_ties": 0,
+      "weighted_score_losses": 942
+    }
+  },
+  "oracle_realized_margin_filter": {
+    "one_switch_safe": {
+      "minimum_realized_gain": 0.005,
+      "accepted_workloads": 91,
+      "score_minus_mlfq": {
+        "mean": -0.025932877685607966,
+        "ci_low": -0.030159380948600018,
+        "ci_high": -0.021791062801751675
+      },
+      "caveat": "Hindsight realized advantage is not a model confidence or predicted cost margin. All candidates satisfy safe dispatch and dwell20; p95 and starvation are constrained not to regress."
+    },
+    "excursion_safe": {
+      "minimum_realized_gain": 0.005,
+      "accepted_workloads": 66,
+      "score_minus_mlfq": {
+        "mean": -0.006218156336369892,
+        "ci_low": -0.00726577653553073,
+        "ci_high": -0.005181047319849385
+      },
+      "caveat": "Hindsight realized advantage is not a model confidence or predicted cost margin. All candidates satisfy safe dispatch and dwell20; p95 and starvation are constrained not to regress."
+    }
+  }
+}

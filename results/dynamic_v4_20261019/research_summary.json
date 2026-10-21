@@ -1,0 +1,1268 @@
+{
+  "status": "SYNTHETIC_DEVELOPMENT_ONLY",
+  "promotion": false,
+  "protocol": {
+    "status": "SYNTHETIC_DEVELOPMENT_ONLY",
+    "promotion": false,
+    "seeds": {
+      "train": 8401,
+      "validation": 8402,
+      "audit": 8403
+    },
+    "traces": {
+      "train": 72,
+      "validation": 36,
+      "audit": 120
+    },
+    "workload_suite": "v4_balanced_six_families_no_outcome_filtering",
+    "counts": [
+      3,
+      6,
+      12,
+      24,
+      48
+    ],
+    "base_config": {
+      "epoch_ticks": 10,
+      "dwell_epochs": 2,
+      "confidence_threshold": 0.8,
+      "policy_track": "realistic",
+      "initial_policy": "MLFQ",
+      "fallback_policy": "MLFQ",
+      "label_horizon_ticks": null,
+      "label_continuation": "MLFQ",
+      "first_service_protection": true,
+      "explicit_no_switch": true,
+      "mlfq_quanta": [
+        2,
+        4,
+        8
+      ],
+      "mlfq_aging_threshold": 20
+    },
+    "python": "3.12.3 (main, Aug 31 2026, 10:18:26) [GCC 13.3.0]",
+    "classifier_grid": [
+      [
+        3,
+        10,
+        null
+      ],
+      [
+        3,
+        10,
+        "balanced"
+      ],
+      [
+        5,
+        10,
+        null
+      ],
+      [
+        5,
+        10,
+        "balanced"
+      ],
+      [
+        8,
+        10,
+        null
+      ],
+      [
+        8,
+        10,
+        "balanced"
+      ]
+    ],
+    "cost_grid": [
+      [
+        3,
+        10,
+        null
+      ],
+      [
+        5,
+        10,
+        null
+      ],
+      [
+        8,
+        10,
+        null
+      ]
+    ],
+    "refit": false,
+    "selection": "safety_eligible_first_then_realized_score; no audit retuning",
+    "static_grid": {
+      "quanta": [
+        [
+          1,
+          2,
+          4
+        ],
+        [
+          2,
+          4,
+          8
+        ],
+        [
+          4,
+          8,
+          16
+        ]
+      ],
+      "aging": [
+        10,
+        20,
+        40
+      ]
+    },
+    "gates": "primary score CI_high<0; primary P95 CI_high<=0; mean starvation<=baseline; max workload routing P99<10ms; original RR gates unchanged",
+    "old_1000_workload_audit": "NOT_RUN; historical numbers are context only",
+    "source_sha256": {
+      "autoscheduler/dynamic.py": "354f7477634754f1a4a5423389eb61828f0a6fae314fb3231fc940073536caa1",
+      "autoscheduler/model.py": "f809d3f39176860c4b91809d4defb34b42b147f4d2937cba8b931c90b7dc2621",
+      "autoscheduler/dynamic_training.py": "6301b9035b7b5e17326d27c971835a7bbe9d23d9dcac78c48ebca993c900a1b6",
+      "autoscheduler/development_workloads.py": "217ce16276d63400018a617249c190d9fc6989c9334a2fbb11a6a55c07fa33ee",
+      "autoscheduler/dynamic_v4_experiment.py": "d4ad4971d831f8c769e959af719a46ef03b06f25a9d697db8e992ca3ba1aa901",
+      "autoscheduler/dynamic_v3_experiment.py": "3647cad1a33d97f1b4778683df890c7a7351302d2f368a054a8cbee03fd2614d",
+      "autoscheduler/evaluation.py": "96d26272501c110da3d20ecde9c22f86e567220756943e2643a7d18606957c5f",
+      "simulator/engine.py": "4710963b08df4cf4e773d4e80e76e4313d0f5b8571c35532a6a4c298f65fa5ce",
+      "configs/real_desktop_ml.json": "b12ea718f41279c3758d4c6172560ac0af01776537ef93092091a19cf2446067"
+    }
+  },
+  "selected": "policy_cost",
+  "validation": {
+    "classifier": {
+      "validation_schedule_score": 0.17488771241513232,
+      "validation_schedule_p95_response": 7.031944444444444,
+      "validation_schedule_starvation": 15.86111111111111,
+      "validation_schedule_eligible": false,
+      "validation_schedule_gates": {
+        "score": false,
+        "p95_response": false,
+        "starvation": false,
+        "latency": true,
+        "original_rr_score": true,
+        "original_rr_p95": true
+      },
+      "validation_schedule_intervals": {
+        "score": {
+          "mean": -0.0004603398431836626,
+          "ci_low": -0.0013207027501067382,
+          "ci_high": 6.585978373947292e-05
+        },
+        "p95_response": {
+          "mean": 0.05138888888888883,
+          "ci_low": 0.0,
+          "ci_high": 0.13055555555555542
+        },
+        "starvation": {
+          "mean": 0.027777777777777776,
+          "ci_low": 0.0,
+          "ci_high": 0.08333333333333333
+        },
+        "rr_score": {
+          "mean": -0.03322143747957014,
+          "ci_low": -0.051178650419027485,
+          "ci_high": -0.01617690284690146
+        },
+        "rr_p95_response": {
+          "mean": -14.177777777777777,
+          "ci_low": -19.680590277777778,
+          "ci_high": -8.992951388888889
+        }
+      },
+      "validation_schedule_max_workload_p99_ms": 1.0684683999999998
+    },
+    "policy_cost": {
+      "validation_schedule_score": 0.13313715228352102,
+      "validation_schedule_p95_response": 16.379166666666666,
+      "validation_schedule_starvation": 14.916666666666666,
+      "validation_schedule_eligible": false,
+      "validation_schedule_gates": {
+        "score": true,
+        "p95_response": false,
+        "starvation": true,
+        "latency": true,
+        "original_rr_score": true,
+        "original_rr_p95": false
+      },
+      "validation_schedule_intervals": {
+        "score": {
+          "mean": -0.04221089997479498,
+          "ci_low": -0.0840882069662896,
+          "ci_high": -0.0011395055110386102
+        },
+        "p95_response": {
+          "mean": 9.39861111111111,
+          "ci_low": 4.201388888888889,
+          "ci_high": 15.321041666666662
+        },
+        "starvation": {
+          "mean": -0.9166666666666666,
+          "ci_low": -1.6666666666666667,
+          "ci_high": -0.25
+        },
+        "rr_score": {
+          "mean": -0.07497199761118145,
+          "ci_low": -0.12077823833717051,
+          "ci_high": -0.026690921114784803
+        },
+        "rr_p95_response": {
+          "mean": -4.830555555555555,
+          "ci_low": -11.073611111111111,
+          "ci_high": 0.9584027777777769
+        }
+      },
+      "validation_schedule_max_workload_p99_ms": 0.5024215999999992
+    }
+  },
+  "primary_baseline": "Tuned MLFQ",
+  "config": {
+    "epoch_ticks": 10,
+    "dwell_epochs": 2,
+    "confidence_threshold": 0.8,
+    "policy_track": "realistic",
+    "initial_policy": "MLFQ",
+    "fallback_policy": "MLFQ",
+    "label_horizon_ticks": null,
+    "label_continuation": "MLFQ",
+    "first_service_protection": true,
+    "explicit_no_switch": true,
+    "mlfq_quanta": [
+      1,
+      2,
+      4
+    ],
+    "mlfq_aging_threshold": 40
+  },
+  "tuned_parameters": {
+    "quanta": [
+      1,
+      2,
+      4
+    ],
+    "aging_threshold": 40,
+    "context_switch_cost": 0
+  },
+  "occupancy": {
+    "status": "SYNTHETIC_DEVELOPMENT_ONLY",
+    "seed": 8401,
+    "group_key": "seed",
+    "groups": {
+      "train": [
+        8401000000,
+        8401000001,
+        8401000002,
+        8401000004,
+        8401000005,
+        8401000006,
+        8401000007,
+        8401000009,
+        8401000012,
+        8401000014,
+        8401000015,
+        8401000016,
+        8401000017,
+        8401000018,
+        8401000021,
+        8401000022,
+        8401000023,
+        8401000024,
+        8401000027,
+        8401000028,
+        8401000029,
+        8401000032,
+        8401000033,
+        8401000034,
+        8401000035,
+        8401000036,
+        8401000037,
+        8401000038,
+        8401000039,
+        8401000040,
+        8401000041,
+        8401000042,
+        8401000043,
+        8401000044,
+        8401000046,
+        8401000047,
+        8401000048,
+        8401000049,
+        8401000051,
+        8401000053,
+        8401000054,
+        8401000056,
+        8401000057,
+        8401000058,
+        8401000059,
+        8401000063,
+        8401000064,
+        8401000066,
+        8401000068,
+        8401000070
+      ],
+      "validation": [
+        8401000008,
+        8401000010,
+        8401000011,
+        8401000045,
+        8401000050,
+        8401000052,
+        8401000055,
+        8401000060,
+        8401000061,
+        8401000062,
+        8401000065
+      ],
+      "test": [
+        8401000003,
+        8401000013,
+        8401000019,
+        8401000020,
+        8401000025,
+        8401000026,
+        8401000030,
+        8401000031,
+        8401000067,
+        8401000069,
+        8401000071
+      ]
+    },
+    "occupancy": "mixed_static_and_exploration_plus_train_only_pilot_rollouts",
+    "pilot": {
+      "max_depth": 5,
+      "min_samples_leaf": 10
+    },
+    "mixed_rows": 1626,
+    "on_policy_rows": 1248
+  },
+  "label_distribution": {
+    "No Switch": 1021,
+    "Priority": 653,
+    "MLFQ": 164,
+    "FCFS": 821,
+    "Round Robin": 200,
+    "Priority RR": 15
+  },
+  "audit": {
+    "FCFS": {
+      "mean_score": 0.3029201296870927,
+      "mean_p95_response": 155.12541666666667,
+      "mean_starvation": 11.108333333333333,
+      "mean_switches": 0,
+      "mean_regret_to_best_static": 0.16773154653181313,
+      "by_family": {
+        "cohort_mix": {
+          "traces": 20,
+          "mean_score": 0.5974628628676338,
+          "mean_p95_response": 95.0475,
+          "mean_starvation": 13.3,
+          "mean_switches": 0
+        },
+        "homogeneous_batch": {
+          "traces": 20,
+          "mean_score": 0.25,
+          "mean_p95_response": 453.9575,
+          "mean_starvation": 17.7,
+          "mean_switches": 0
+        },
+        "long_io": {
+          "traces": 20,
+          "mean_score": 0.266726448341133,
+          "mean_p95_response": 215.635,
+          "mean_starvation": 15.1,
+          "mean_switches": 0
+        },
+        "low_load": {
+          "traces": 20,
+          "mean_score": 0.0,
+          "mean_p95_response": 0.0,
+          "mean_starvation": 0,
+          "mean_switches": 0
+        },
+        "repeated_changes": {
+          "traces": 20,
+          "mean_score": 0.28787800956322807,
+          "mean_p95_response": 107.23499999999997,
+          "mean_starvation": 10.85,
+          "mean_switches": 0
+        },
+        "sustained_arrivals": {
+          "traces": 20,
+          "mean_score": 0.41545345735056144,
+          "mean_p95_response": 58.8775,
+          "mean_starvation": 9.7,
+          "mean_switches": 0
+        }
+      }
+    },
+    "Round Robin": {
+      "mean_score": 0.2128239053656239,
+      "mean_p95_response": 19.242083333333333,
+      "mean_starvation": 12.3,
+      "mean_switches": 0,
+      "mean_regret_to_best_static": 0.07763532221034433,
+      "by_family": {
+        "cohort_mix": {
+          "traces": 20,
+          "mean_score": 0.28231018568659844,
+          "mean_p95_response": 23.0475,
+          "mean_starvation": 14.1,
+          "mean_switches": 0
+        },
+        "homogeneous_batch": {
+          "traces": 20,
+          "mean_score": 0.2723188085662543,
+          "mean_p95_response": 39.14,
+          "mean_starvation": 21.3,
+          "mean_switches": 0
+        },
+        "long_io": {
+          "traces": 20,
+          "mean_score": 0.2975315615412634,
+          "mean_p95_response": 30.169999999999998,
+          "mean_starvation": 15.6,
+          "mean_switches": 0
+        },
+        "low_load": {
+          "traces": 20,
+          "mean_score": 0.0,
+          "mean_p95_response": 0.0,
+          "mean_starvation": 0,
+          "mean_switches": 0
+        },
+        "repeated_changes": {
+          "traces": 20,
+          "mean_score": 0.18826873087893992,
+          "mean_p95_response": 11.1375,
+          "mean_starvation": 13.6,
+          "mean_switches": 0
+        },
+        "sustained_arrivals": {
+          "traces": 20,
+          "mean_score": 0.23651414552068747,
+          "mean_p95_response": 11.9575,
+          "mean_starvation": 9.2,
+          "mean_switches": 0
+        }
+      }
+    },
+    "Priority": {
+      "mean_score": 0.29474864632825815,
+      "mean_p95_response": 225.9395833333333,
+      "mean_starvation": 10.008333333333333,
+      "mean_switches": 0,
+      "mean_regret_to_best_static": 0.15956006317297858,
+      "by_family": {
+        "cohort_mix": {
+          "traces": 20,
+          "mean_score": 0.4786600256120088,
+          "mean_p95_response": 123.82,
+          "mean_starvation": 12.4,
+          "mean_switches": 0
+        },
+        "homogeneous_batch": {
+          "traces": 20,
+          "mean_score": 0.25,
+          "mean_p95_response": 453.9575,
+          "mean_starvation": 17.7,
+          "mean_switches": 0
+        },
+        "long_io": {
+          "traces": 20,
+          "mean_score": 0.36151912800602454,
+          "mean_p95_response": 529.755,
+          "mean_starvation": 12.8,
+          "mean_switches": 0
+        },
+        "low_load": {
+          "traces": 20,
+          "mean_score": 0.0,
+          "mean_p95_response": 0.0,
+          "mean_starvation": 0,
+          "mean_switches": 0
+        },
+        "repeated_changes": {
+          "traces": 20,
+          "mean_score": 0.2472871029754239,
+          "mean_p95_response": 145.96999999999997,
+          "mean_starvation": 9.8,
+          "mean_switches": 0
+        },
+        "sustained_arrivals": {
+          "traces": 20,
+          "mean_score": 0.4310256213760917,
+          "mean_p95_response": 102.13499999999998,
+          "mean_starvation": 7.35,
+          "mean_switches": 0
+        }
+      }
+    },
+    "Priority RR": {
+      "mean_score": 0.8450310849749527,
+      "mean_p95_response": 36.80083333333333,
+      "mean_starvation": 13.375,
+      "mean_switches": 0,
+      "mean_regret_to_best_static": 0.7098425018196731,
+      "by_family": {
+        "cohort_mix": {
+          "traces": 20,
+          "mean_score": 0.8260869875778802,
+          "mean_p95_response": 41.394999999999996,
+          "mean_starvation": 14.95,
+          "mean_switches": 0
+        },
+        "homogeneous_batch": {
+          "traces": 20,
+          "mean_score": 0.7731792584405108,
+          "mean_p95_response": 65.3325,
+          "mean_starvation": 21.3,
+          "mean_switches": 0
+        },
+        "long_io": {
+          "traces": 20,
+          "mean_score": 0.7800353272354549,
+          "mean_p95_response": 54.412499999999994,
+          "mean_starvation": 16.3,
+          "mean_switches": 0
+        },
+        "low_load": {
+          "traces": 20,
+          "mean_score": 1.0,
+          "mean_p95_response": 1.0,
+          "mean_starvation": 0,
+          "mean_switches": 0
+        },
+        "repeated_changes": {
+          "traces": 20,
+          "mean_score": 0.8474769049287105,
+          "mean_p95_response": 27.122499999999995,
+          "mean_starvation": 15.75,
+          "mean_switches": 0
+        },
+        "sustained_arrivals": {
+          "traces": 20,
+          "mean_score": 0.8434080316671602,
+          "mean_p95_response": 31.542499999999997,
+          "mean_starvation": 11.95,
+          "mean_switches": 0
+        }
+      }
+    },
+    "MLFQ": {
+      "mean_score": 0.16851629093808984,
+      "mean_p95_response": 15.597083333333332,
+      "mean_starvation": 11.708333333333334,
+      "mean_switches": 0,
+      "mean_regret_to_best_static": 0.033327707782810266,
+      "by_family": {
+        "cohort_mix": {
+          "traces": 20,
+          "mean_score": 0.0824236034725633,
+          "mean_p95_response": 15.089999999999998,
+          "mean_starvation": 12.2,
+          "mean_switches": 0
+        },
+        "homogeneous_batch": {
+          "traces": 20,
+          "mean_score": 0.26606788044032614,
+          "mean_p95_response": 39.14,
+          "mean_starvation": 21.3,
+          "mean_switches": 0
+        },
+        "long_io": {
+          "traces": 20,
+          "mean_score": 0.30445271516618533,
+          "mean_p95_response": 28.77,
+          "mean_starvation": 15.7,
+          "mean_switches": 0
+        },
+        "low_load": {
+          "traces": 20,
+          "mean_score": 0.0,
+          "mean_p95_response": 0.0,
+          "mean_starvation": 0,
+          "mean_switches": 0
+        },
+        "repeated_changes": {
+          "traces": 20,
+          "mean_score": 0.143356358041683,
+          "mean_p95_response": 5.692499999999999,
+          "mean_starvation": 12.25,
+          "mean_switches": 0
+        },
+        "sustained_arrivals": {
+          "traces": 20,
+          "mean_score": 0.21479718850778132,
+          "mean_p95_response": 4.889999999999999,
+          "mean_starvation": 8.8,
+          "mean_switches": 0
+        }
+      }
+    },
+    "Tuned MLFQ": {
+      "mean_score": 0.15890946555914212,
+      "mean_p95_response": 6.639166666666666,
+      "mean_starvation": 11.291666666666666,
+      "mean_switches": 0,
+      "mean_regret_to_best_static": 0.02372088240386254,
+      "by_family": {
+        "cohort_mix": {
+          "traces": 20,
+          "mean_score": 0.06826531442047866,
+          "mean_p95_response": 4.6025,
+          "mean_starvation": 11.5,
+          "mean_switches": 0
+        },
+        "homogeneous_batch": {
+          "traces": 20,
+          "mean_score": 0.24848321855971572,
+          "mean_p95_response": 19.57,
+          "mean_starvation": 21.3,
+          "mean_switches": 0
+        },
+        "long_io": {
+          "traces": 20,
+          "mean_score": 0.2911280940501209,
+          "mean_p95_response": 13.0475,
+          "mean_starvation": 15.6,
+          "mean_switches": 0
+        },
+        "low_load": {
+          "traces": 20,
+          "mean_score": 0.0,
+          "mean_p95_response": 0.0,
+          "mean_starvation": 0,
+          "mean_switches": 0
+        },
+        "repeated_changes": {
+          "traces": 20,
+          "mean_score": 0.14806710558572322,
+          "mean_p95_response": 1.9949999999999997,
+          "mean_starvation": 10.85,
+          "mean_switches": 0
+        },
+        "sustained_arrivals": {
+          "traces": 20,
+          "mean_score": 0.1975130607388142,
+          "mean_p95_response": 0.6199999999999997,
+          "mean_starvation": 8.5,
+          "mean_switches": 0
+        }
+      }
+    },
+    "classifier": {
+      "mean_score": 0.18149865792120223,
+      "mean_p95_response": 7.135833333333333,
+      "mean_starvation": 11.333333333333334,
+      "mean_switches": 0.3333333333333333,
+      "mean_regret_to_best_static": 0.04631007476592265,
+      "by_family": {
+        "cohort_mix": {
+          "traces": 20,
+          "mean_score": 0.17686874942075367,
+          "mean_p95_response": 6.364999999999999,
+          "mean_starvation": 11.7,
+          "mean_switches": 0.45
+        },
+        "homogeneous_batch": {
+          "traces": 20,
+          "mean_score": 0.24675843222255053,
+          "mean_p95_response": 19.57,
+          "mean_starvation": 21.3,
+          "mean_switches": 0.65
+        },
+        "long_io": {
+          "traces": 20,
+          "mean_score": 0.2911280940501209,
+          "mean_p95_response": 13.0475,
+          "mean_starvation": 15.6,
+          "mean_switches": 0.05
+        },
+        "low_load": {
+          "traces": 20,
+          "mean_score": 0.0,
+          "mean_p95_response": 0.0,
+          "mean_starvation": 0,
+          "mean_switches": 0
+        },
+        "repeated_changes": {
+          "traces": 20,
+          "mean_score": 0.15036426582913093,
+          "mean_p95_response": 1.9949999999999997,
+          "mean_starvation": 10.85,
+          "mean_switches": 0.2
+        },
+        "sustained_arrivals": {
+          "traces": 20,
+          "mean_score": 0.22387240600465733,
+          "mean_p95_response": 1.8374999999999995,
+          "mean_starvation": 8.55,
+          "mean_switches": 0.65
+        }
+      },
+      "decision_p99_ms": 0.46659154,
+      "max_workload_decision_p99_ms": 0.8423658399999981,
+      "comparisons": {
+        "FCFS": {
+          "score_difference": {
+            "mean": -0.12142147176589049,
+            "ci_low": -0.16236461469374278,
+            "ci_high": -0.08228259478403899
+          },
+          "p95_response_difference": {
+            "mean": -147.98958333333331,
+            "ci_low": -189.49631250000002,
+            "ci_high": -109.63036458333333
+          },
+          "starvation_difference": {
+            "mean": 0.225,
+            "ci_low": -0.20833333333333334,
+            "ci_high": 0.6583333333333333
+          },
+          "wins": 78,
+          "ties": 25,
+          "losses": 17
+        },
+        "Round Robin": {
+          "score_difference": {
+            "mean": -0.03132524744442168,
+            "ci_low": -0.050448946987461454,
+            "ci_high": -0.010147044205175072
+          },
+          "p95_response_difference": {
+            "mean": -12.10625,
+            "ci_low": -14.920031249999997,
+            "ci_high": -9.359010416666667
+          },
+          "starvation_difference": {
+            "mean": -0.9666666666666667,
+            "ci_low": -1.3833333333333333,
+            "ci_high": -0.5833333333333334
+          },
+          "wins": 77,
+          "ties": 25,
+          "losses": 18
+        },
+        "Priority": {
+          "score_difference": {
+            "mean": -0.11324998840705593,
+            "ci_low": -0.1454142425506655,
+            "ci_high": -0.0817982969215099
+          },
+          "p95_response_difference": {
+            "mean": -218.80374999999998,
+            "ci_low": -288.7251145833333,
+            "ci_high": -155.48498958333332
+          },
+          "starvation_difference": {
+            "mean": 1.325,
+            "ci_low": 0.825,
+            "ci_high": 1.8583333333333334
+          },
+          "wins": 81,
+          "ties": 25,
+          "losses": 14
+        },
+        "Priority RR": {
+          "score_difference": {
+            "mean": -0.6635324270537505,
+            "ci_low": -0.709295869354945,
+            "ci_high": -0.6147346738281549
+          },
+          "p95_response_difference": {
+            "mean": -29.664999999999996,
+            "ci_low": -34.90628124999999,
+            "ci_high": -24.529145833333327
+          },
+          "starvation_difference": {
+            "mean": -2.0416666666666665,
+            "ci_low": -2.675,
+            "ci_high": -1.4583333333333333
+          },
+          "wins": 118,
+          "ties": 0,
+          "losses": 2
+        },
+        "MLFQ": {
+          "score_difference": {
+            "mean": 0.01298236698311238,
+            "ci_low": -0.008058260626001132,
+            "ci_high": 0.041454623632764184
+          },
+          "p95_response_difference": {
+            "mean": -8.46125,
+            "ci_low": -11.058354166666668,
+            "ci_high": -5.982479166666667
+          },
+          "starvation_difference": {
+            "mean": -0.375,
+            "ci_low": -0.7,
+            "ci_high": -0.09166666666666666
+          },
+          "wins": 57,
+          "ties": 27,
+          "losses": 36
+        },
+        "Tuned MLFQ": {
+          "score_difference": {
+            "mean": 0.02258919236206011,
+            "ci_low": 0.004828497103600632,
+            "ci_high": 0.04876713391834832
+          },
+          "p95_response_difference": {
+            "mean": 0.49666666666666665,
+            "ci_low": 0.09791666666666667,
+            "ci_high": 1.0204374999999997
+          },
+          "starvation_difference": {
+            "mean": 0.041666666666666664,
+            "ci_low": -0.008333333333333333,
+            "ci_high": 0.10833333333333334
+          },
+          "wins": 5,
+          "ties": 103,
+          "losses": 12
+        }
+      }
+    },
+    "policy_cost": {
+      "mean_score": 0.12167591400238983,
+      "mean_p95_response": 15.108333333333333,
+      "mean_starvation": 10.816666666666666,
+      "mean_switches": 4.383333333333334,
+      "mean_regret_to_best_static": -0.013512669152889742,
+      "by_family": {
+        "cohort_mix": {
+          "traces": 20,
+          "mean_score": 0.08432102004170215,
+          "mean_p95_response": 8.417499999999999,
+          "mean_starvation": 11.65,
+          "mean_switches": 1.65
+        },
+        "homogeneous_batch": {
+          "traces": 20,
+          "mean_score": 0.04635700330575615,
+          "mean_p95_response": 19.57,
+          "mean_starvation": 19.15,
+          "mean_switches": 5.85
+        },
+        "long_io": {
+          "traces": 20,
+          "mean_score": 0.202048551352604,
+          "mean_p95_response": 13.0475,
+          "mean_starvation": 14.45,
+          "mean_switches": 8.3
+        },
+        "low_load": {
+          "traces": 20,
+          "mean_score": 0.0,
+          "mean_p95_response": 0.0,
+          "mean_starvation": 0,
+          "mean_switches": 0
+        },
+        "repeated_changes": {
+          "traces": 20,
+          "mean_score": 0.14363248585768873,
+          "mean_p95_response": 32.302499999999995,
+          "mean_starvation": 10.7,
+          "mean_switches": 7.05
+        },
+        "sustained_arrivals": {
+          "traces": 20,
+          "mean_score": 0.25369642345658805,
+          "mean_p95_response": 17.312499999999996,
+          "mean_starvation": 8.95,
+          "mean_switches": 3.45
+        }
+      },
+      "decision_p99_ms": 0.3942846300000002,
+      "max_workload_decision_p99_ms": 0.5009615199999999,
+      "comparisons": {
+        "FCFS": {
+          "score_difference": {
+            "mean": -0.1812442156847029,
+            "ci_low": -0.2189185749123633,
+            "ci_high": -0.14322886516738143
+          },
+          "p95_response_difference": {
+            "mean": -140.01708333333332,
+            "ci_low": -181.23771874999997,
+            "ci_high": -101.48272916666666
+          },
+          "starvation_difference": {
+            "mean": -0.2916666666666667,
+            "ci_low": -0.6166666666666667,
+            "ci_high": 0.025
+          },
+          "wins": 87,
+          "ties": 25,
+          "losses": 8
+        },
+        "Round Robin": {
+          "score_difference": {
+            "mean": -0.09114799136323408,
+            "ci_low": -0.11687036683694546,
+            "ci_high": -0.06284032004945549
+          },
+          "p95_response_difference": {
+            "mean": -4.13375,
+            "ci_low": -8.233458333333333,
+            "ci_high": 0.17086458333333288
+          },
+          "starvation_difference": {
+            "mean": -1.4833333333333334,
+            "ci_low": -1.9333333333333333,
+            "ci_high": -1.0583333333333333
+          },
+          "wins": 81,
+          "ties": 25,
+          "losses": 14
+        },
+        "Priority": {
+          "score_difference": {
+            "mean": -0.1730727323258683,
+            "ci_low": -0.20324307430964986,
+            "ci_high": -0.1415577093068101
+          },
+          "p95_response_difference": {
+            "mean": -210.83124999999998,
+            "ci_low": -280.77396874999994,
+            "ci_high": -148.022875
+          },
+          "starvation_difference": {
+            "mean": 0.8083333333333333,
+            "ci_low": 0.3997916666666669,
+            "ci_high": 1.2583333333333333
+          },
+          "wins": 90,
+          "ties": 25,
+          "losses": 5
+        },
+        "Priority RR": {
+          "score_difference": {
+            "mean": -0.7233551709725629,
+            "ci_low": -0.7579131462530523,
+            "ci_high": -0.686412374586548
+          },
+          "p95_response_difference": {
+            "mean": -21.692499999999995,
+            "ci_low": -27.348083333333328,
+            "ci_high": -16.096510416666668
+          },
+          "starvation_difference": {
+            "mean": -2.558333333333333,
+            "ci_low": -3.158333333333333,
+            "ci_high": -2.0
+          },
+          "wins": 118,
+          "ties": 0,
+          "losses": 2
+        },
+        "MLFQ": {
+          "score_difference": {
+            "mean": -0.046840376935700014,
+            "ci_low": -0.06997002897113638,
+            "ci_high": -0.02269600000579041
+          },
+          "p95_response_difference": {
+            "mean": -0.48874999999999996,
+            "ci_low": -4.79590625,
+            "ci_high": 4.08835416666666
+          },
+          "starvation_difference": {
+            "mean": -0.8916666666666667,
+            "ci_low": -1.3,
+            "ci_high": -0.5
+          },
+          "wins": 60,
+          "ties": 27,
+          "losses": 33
+        },
+        "Tuned MLFQ": {
+          "score_difference": {
+            "mean": -0.03723355155675228,
+            "ci_low": -0.06096481623647651,
+            "ci_high": -0.01145206125258875
+          },
+          "p95_response_difference": {
+            "mean": 8.469166666666666,
+            "ci_low": 5.177427083333333,
+            "ci_high": 12.28933333333333
+          },
+          "starvation_difference": {
+            "mean": -0.475,
+            "ci_low": -0.775,
+            "ci_high": -0.18333333333333332
+          },
+          "wins": 55,
+          "ties": 39,
+          "losses": 26
+        }
+      }
+    },
+    "Protected MLFQ control": {
+      "mean_score": 0.15890946555914212,
+      "mean_p95_response": 6.639166666666666,
+      "mean_starvation": 11.291666666666666,
+      "mean_switches": 0,
+      "mean_regret_to_best_static": 0.02372088240386254,
+      "by_family": {
+        "cohort_mix": {
+          "traces": 20,
+          "mean_score": 0.06826531442047866,
+          "mean_p95_response": 4.6025,
+          "mean_starvation": 11.5,
+          "mean_switches": 0
+        },
+        "homogeneous_batch": {
+          "traces": 20,
+          "mean_score": 0.24848321855971572,
+          "mean_p95_response": 19.57,
+          "mean_starvation": 21.3,
+          "mean_switches": 0
+        },
+        "long_io": {
+          "traces": 20,
+          "mean_score": 0.2911280940501209,
+          "mean_p95_response": 13.0475,
+          "mean_starvation": 15.6,
+          "mean_switches": 0
+        },
+        "low_load": {
+          "traces": 20,
+          "mean_score": 0.0,
+          "mean_p95_response": 0.0,
+          "mean_starvation": 0,
+          "mean_switches": 0
+        },
+        "repeated_changes": {
+          "traces": 20,
+          "mean_score": 0.14806710558572322,
+          "mean_p95_response": 1.9949999999999997,
+          "mean_starvation": 10.85,
+          "mean_switches": 0
+        },
+        "sustained_arrivals": {
+          "traces": 20,
+          "mean_score": 0.1975130607388142,
+          "mean_p95_response": 0.6199999999999997,
+          "mean_starvation": 8.5,
+          "mean_switches": 0
+        }
+      },
+      "decision_p99_ms": 0.28973399999999994,
+      "max_workload_decision_p99_ms": 0.35267825000000014,
+      "comparisons": {
+        "FCFS": {
+          "score_difference": {
+            "mean": -0.1440106641279506,
+            "ci_low": -0.1860486766491314,
+            "ci_high": -0.10370923701825993
+          },
+          "p95_response_difference": {
+            "mean": -148.48624999999998,
+            "ci_low": -189.93253124999998,
+            "ci_high": -110.09708333333333
+          },
+          "starvation_difference": {
+            "mean": 0.18333333333333332,
+            "ci_low": -0.25833333333333336,
+            "ci_high": 0.625
+          },
+          "wins": 81,
+          "ties": 25,
+          "losses": 14
+        },
+        "Round Robin": {
+          "score_difference": {
+            "mean": -0.05391443980648179,
+            "ci_low": -0.07110298041674006,
+            "ci_high": -0.03830239632509973
+          },
+          "p95_response_difference": {
+            "mean": -12.602916666666665,
+            "ci_low": -15.359239583333332,
+            "ci_high": -9.923312500000002
+          },
+          "starvation_difference": {
+            "mean": -1.0083333333333333,
+            "ci_low": -1.425,
+            "ci_high": -0.625
+          },
+          "wins": 85,
+          "ties": 25,
+          "losses": 10
+        },
+        "Priority": {
+          "score_difference": {
+            "mean": -0.13583918076911602,
+            "ci_low": -0.1698697781475269,
+            "ci_high": -0.10332849559854726
+          },
+          "p95_response_difference": {
+            "mean": -219.30041666666665,
+            "ci_low": -289.05434375,
+            "ci_high": -156.15861458333333
+          },
+          "starvation_difference": {
+            "mean": 1.2833333333333334,
+            "ci_low": 0.775,
+            "ci_high": 1.825
+          },
+          "wins": 83,
+          "ties": 25,
+          "losses": 12
+        },
+        "Priority RR": {
+          "score_difference": {
+            "mean": -0.6861216194158106,
+            "ci_low": -0.7255118875169116,
+            "ci_high": -0.6456844155003547
+          },
+          "p95_response_difference": {
+            "mean": -30.16166666666666,
+            "ci_low": -35.38429166666666,
+            "ci_high": -25.088979166666668
+          },
+          "starvation_difference": {
+            "mean": -2.0833333333333335,
+            "ci_low": -2.716666666666667,
+            "ci_high": -1.5
+          },
+          "wins": 119,
+          "ties": 0,
+          "losses": 1
+        },
+        "MLFQ": {
+          "score_difference": {
+            "mean": -0.009606825378947728,
+            "ci_low": -0.01669565871603796,
+            "ci_high": -0.00268729898129354
+          },
+          "p95_response_difference": {
+            "mean": -8.957916666666666,
+            "ci_low": -11.425520833333334,
+            "ci_high": -6.577489583333334
+          },
+          "starvation_difference": {
+            "mean": -0.4166666666666667,
+            "ci_low": -0.7333333333333333,
+            "ci_high": -0.14166666666666666
+          },
+          "wins": 60,
+          "ties": 27,
+          "losses": 33
+        },
+        "Tuned MLFQ": {
+          "score_difference": {
+            "mean": 0.0,
+            "ci_low": 0.0,
+            "ci_high": 0.0
+          },
+          "p95_response_difference": {
+            "mean": 0.0,
+            "ci_low": 0.0,
+            "ci_high": 0.0
+          },
+          "starvation_difference": {
+            "mean": 0,
+            "ci_low": 0.0,
+            "ci_high": 0.0
+          },
+          "wins": 0,
+          "ties": 120,
+          "losses": 0
+        }
+      }
+    }
+  },
+  "before_v3_same_audit": {
+    "mean_score": 0.15163438197611864,
+    "mean_p95_response": 24.10583333333333,
+    "mean_starvation": 11.225,
+    "mean_switches": 4.358333333333333,
+    "decision_p99_ms": 0.438699,
+    "max_workload_decision_p99_ms": 2.2046252000000015
+  },
+  "changes_vs_v3": {
+    "classifier": {
+      "score": {
+        "mean": 0.029864275945083577,
+        "ci_low": 0.009350356585425547,
+        "ci_high": 0.05405337633966284
+      },
+      "p95_response": {
+        "mean": -16.97,
+        "ci_low": -21.480135416666666,
+        "ci_high": -12.677375
+      },
+      "starvation": {
+        "mean": 0.10833333333333334,
+        "ci_low": -0.20833333333333334,
+        "ci_high": 0.4166666666666667
+      },
+      "switches": {
+        "mean": -4.025,
+        "ci_low": -5.191875,
+        "ci_high": -2.966666666666667
+      }
+    },
+    "policy_cost": {
+      "score": {
+        "mean": -0.029958467973728815,
+        "ci_low": -0.05124731139777393,
+        "ci_high": -0.00804154075235309
+      },
+      "p95_response": {
+        "mean": -8.997499999999999,
+        "ci_low": -13.956302083333332,
+        "ci_high": -4.107416666666666
+      },
+      "starvation": {
+        "mean": -0.4083333333333333,
+        "ci_low": -0.7083333333333334,
+        "ci_high": -0.10833333333333334
+      },
+      "switches": {
+        "mean": 0.025,
+        "ci_low": -0.875,
+        "ci_high": 1.0583333333333333
+      }
+    }
+  },
+  "acceptance": {
+    "classifier": {
+      "audit_gates": {
+        "primary_score": false,
+        "primary_response": false,
+        "primary_starvation": false,
+        "latency": true,
+        "original_rr_score": true,
+        "original_rr_p95": true
+      },
+      "audit_eligible": false,
+      "development_validation_eligible": false,
+      "accepted": false
+    },
+    "policy_cost": {
+      "audit_gates": {
+        "primary_score": true,
+        "primary_response": false,
+        "primary_starvation": true,
+        "latency": true,
+        "original_rr_score": true,
+        "original_rr_p95": false
+      },
+      "audit_eligible": false,
+      "development_validation_eligible": false,
+      "accepted": false
+    }
+  },
+  "recommendation": "Tuned MLFQ",
+  "model_sha256": {
+    "classifier": "33967a3e390de93856d36d710ce3f3111a1d0529362df9691a3c747dccd7acbb",
+    "policy_cost": "dee9d9ff71a26b01a1c11072f5aa58254c23c46911273b1a568244db1e114744"
+  }
+}

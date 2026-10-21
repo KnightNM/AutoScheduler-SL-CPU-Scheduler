@@ -1,0 +1,155 @@
+{
+  "purpose": "simulation_based_evaluation_reference_only; not training labels or observed Azure outcomes",
+  "candidates": "six eligible static configurations; Dynamic v5 excluded from static label construction",
+  "tie_tolerance": 1e-12,
+  "rows": [
+    {
+      "workload_id": "azure-d01-0019",
+      "minimum_static_score": 0.15221088435374086,
+      "tied_best_eligible_static_policies": [
+        "Tuned MLFQ"
+      ]
+    },
+    {
+      "workload_id": "azure-d02-0040",
+      "minimum_static_score": 0.0,
+      "tied_best_eligible_static_policies": [
+        "FCFS",
+        "Round Robin",
+        "Priority",
+        "MLFQ",
+        "Tuned MLFQ"
+      ]
+    },
+    {
+      "workload_id": "azure-d03-0052",
+      "minimum_static_score": 0.0,
+      "tied_best_eligible_static_policies": [
+        "FCFS",
+        "Round Robin",
+        "Priority",
+        "MLFQ",
+        "Tuned MLFQ"
+      ]
+    },
+    {
+      "workload_id": "azure-d05-0101",
+      "minimum_static_score": 0.0,
+      "tied_best_eligible_static_policies": [
+        "FCFS",
+        "Round Robin",
+        "Priority",
+        "MLFQ",
+        "Tuned MLFQ"
+      ]
+    },
+    {
+      "workload_id": "azure-d06-0104",
+      "minimum_static_score": 0.0,
+      "tied_best_eligible_static_policies": [
+        "FCFS",
+        "Round Robin",
+        "Priority",
+        "MLFQ",
+        "Tuned MLFQ"
+      ]
+    },
+    {
+      "workload_id": "azure-d06-0108",
+      "minimum_static_score": 0.0,
+      "tied_best_eligible_static_policies": [
+        "FCFS",
+        "Round Robin",
+        "Priority",
+        "MLFQ",
+        "Tuned MLFQ"
+      ]
+    },
+    {
+      "workload_id": "azure-d07-0124",
+      "minimum_static_score": 0.0,
+      "tied_best_eligible_static_policies": [
+        "FCFS",
+        "Round Robin",
+        "Priority",
+        "MLFQ",
+        "Tuned MLFQ"
+      ]
+    },
+    {
+      "workload_id": "azure-d09-0170",
+      "minimum_static_score": 0.0,
+      "tied_best_eligible_static_policies": [
+        "FCFS",
+        "Round Robin",
+        "Priority",
+        "MLFQ",
+        "Tuned MLFQ"
+      ]
+    },
+    {
+      "workload_id": "azure-d12-0227",
+      "minimum_static_score": 0.0,
+      "tied_best_eligible_static_policies": [
+        "FCFS",
+        "Round Robin",
+        "Priority",
+        "MLFQ",
+        "Tuned MLFQ"
+      ]
+    },
+    {
+      "workload_id": "azure-d12-0234",
+      "minimum_static_score": 0.0,
+      "tied_best_eligible_static_policies": [
+        "FCFS",
+        "Round Robin",
+        "Priority",
+        "MLFQ",
+        "Tuned MLFQ"
+      ]
+    },
+    {
+      "workload_id": "azure-d13-0258",
+      "minimum_static_score": 0.0,
+      "tied_best_eligible_static_policies": [
+        "FCFS",
+        "Round Robin",
+        "Priority",
+        "MLFQ",
+        "Tuned MLFQ"
+      ]
+    },
+    {
+      "workload_id": "azure-d14-0273",
+      "minimum_static_score": 0.0,
+      "tied_best_eligible_static_policies": [
+        "FCFS",
+        "Round Robin",
+        "Priority",
+        "Priority RR",
+        "MLFQ",
+        "Tuned MLFQ"
+      ]
+    },
+    {
+      "workload_id": "azure-refined-d02-0021",
+      "minimum_static_score": 0.0,
+      "tied_best_eligible_static_policies": [
+        "FCFS",
+        "Round Robin",
+        "Priority",
+        "MLFQ",
+        "Tuned MLFQ"
+      ]
+    },
+    {
+      "workload_id": "azure-refined-d09-0129",
+      "minimum_static_score": 0.025604551920341393,
+      "tied_best_eligible_static_policies": [
+        "FCFS",
+        "Priority"
+      ]
+    }
+  ]
+}

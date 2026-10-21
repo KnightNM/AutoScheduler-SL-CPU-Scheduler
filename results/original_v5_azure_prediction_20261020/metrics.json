@@ -1,0 +1,168 @@
+{
+  "model": "artifacts/dynamic_v5_20261019/policy_cost/model.joblib",
+  "model_sha256": "a8783b65b60aaf381694910affd7e2c2acce4c7c871911b782514d8e37064a64",
+  "data_source": "artifacts/dynamic_v5_azure_retrained/decision_costs.json",
+  "data_sha256": "07e46c24a1201b0d771b9feeb5e92a5f376cf3b1b3db32cbebec02b6086cbb42",
+  "split": "Previously inspected Azure internal-test development partition",
+  "independent_validation": false,
+  "decision_examples": 72,
+  "provenance_groups": 6,
+  "source_groups": [
+    "azure-d03-0058",
+    "azure-d05-0087",
+    "azure-d05-0094",
+    "azure-d05-0101",
+    "azure-d09-0172",
+    "azure-d11-0207"
+  ],
+  "feature_names": [
+    "ready_count",
+    "blocked_count",
+    "completed_burst_mean",
+    "completed_burst_variance",
+    "observed_service_mean",
+    "observed_service_variance",
+    "priority_mean",
+    "ready_wait_mean",
+    "ready_wait_max",
+    "recent_arrivals",
+    "io_returns",
+    "io_return_ratio",
+    "active_policy_index",
+    "dwell_remaining_ticks",
+    "first_service_ready_count",
+    "first_service_wait_max",
+    "ready_wait_p50",
+    "ready_wait_p95",
+    "arrival_quiet_ticks"
+  ],
+  "actions": [
+    "FCFS",
+    "Round Robin",
+    "Priority",
+    "Priority RR",
+    "MLFQ",
+    "No Switch"
+  ],
+  "target_units": "Dimensionless frozen-five-static weighted-score deltas versus tuned MLFQ continuation; feasible minimum-dwell excursion then MLFQ.",
+  "aggregation": "MAE/RMSE and R2 pooled over 72 x 6 raw cost pairs; no target scaling/masking. Constant per-output R2 is undefined.",
+  "metrics": {
+    "mae": 0.012602638025133114,
+    "rmse": 0.019537636092657934,
+    "r_squared": -3161.553846361896,
+    "outputs": [
+      {
+        "mae": 0.031754042710625416,
+        "rmse": 0.03311129844928905,
+        "r_squared": -3139.4255183952373,
+        "absolute_error_share": 0.41993909856146994,
+        "squared_error_share": 0.4786930706350348
+      },
+      {
+        "mae": 0.006078307955619085,
+        "rmse": 0.0062449097996633484,
+        "r_squared": -865073.9934529396,
+        "absolute_error_share": 0.08038406910650076,
+        "squared_error_share": 0.017027741834324994
+      },
+      {
+        "mae": 0.03201616841148905,
+        "rmse": 0.03335595323848191,
+        "r_squared": -3186.0053074552616,
+        "absolute_error_share": 0.4234056439564483,
+        "squared_error_share": 0.4857931983483229
+      },
+      {
+        "mae": 0.005767309073065126,
+        "rmse": 0.006506822933134522,
+        "r_squared": -2128.6135735803446,
+        "absolute_error_share": 0.076271188375581,
+        "squared_error_share": 0.01848598918231734
+      },
+      {
+        "mae": 0.0,
+        "rmse": 0.0,
+        "r_squared": null,
+        "absolute_error_share": 0.0,
+        "squared_error_share": 0.0
+      },
+      {
+        "mae": 0.0,
+        "rmse": 0.0,
+        "r_squared": null,
+        "absolute_error_share": 0.0,
+        "squared_error_share": 0.0
+      }
+    ],
+    "nonconstant_outputs": {
+      "mae": 0.01890395703769967,
+      "rmse": 0.023928619603598007,
+      "r_squared": -3170.4555350563946
+    }
+  },
+  "dummy_mean_cost": {
+    "mae": 9.674624551565438e-05,
+    "rmse": 0.0003558694914704992,
+    "r_squared": -0.04924138425297975,
+    "outputs": [
+      {
+        "mae": 0.0002784967257201785,
+        "rmse": 0.0006081997303161846,
+        "r_squared": -0.059567235956280884,
+        "absolute_error_share": 0.4797718061922367,
+        "squared_error_share": 0.48681021268873387
+      },
+      {
+        "mae": 1.0273259752712337e-06,
+        "rmse": 6.792416497922422e-06,
+        "r_squared": -0.023410891736619366,
+        "absolute_error_share": 0.0017697947343169398,
+        "squared_error_share": 6.071777527759333e-05
+      },
+      {
+        "mae": 0.0002784967257201785,
+        "rmse": 0.0006081997303161846,
+        "r_squared": -0.059567235956280884,
+        "absolute_error_share": 0.4797718061922367,
+        "squared_error_share": 0.48681021268873387
+      },
+      {
+        "mae": 2.2456695678298025e-05,
+        "rmse": 0.0001414164379469016,
+        "r_squared": -0.0059180859246648065,
+        "absolute_error_share": 0.038686592881209604,
+        "squared_error_share": 0.026318856847254903
+      },
+      {
+        "mae": 0.0,
+        "rmse": 0.0,
+        "r_squared": null,
+        "absolute_error_share": 0.0,
+        "squared_error_share": 0.0
+      },
+      {
+        "mae": 0.0,
+        "rmse": 0.0,
+        "r_squared": null,
+        "absolute_error_share": 0.0,
+        "squared_error_share": 0.0
+      }
+    ],
+    "nonconstant_outputs": {
+      "mae": 0.00014511936827348157,
+      "rmse": 0.00043584933456322677,
+      "r_squared": -0.052194700029326135
+    }
+  },
+  "dummy_reference": {
+    "training_states": 216,
+    "groups": 18,
+    "fitted": false
+  },
+  "training_occurred": false,
+  "holdout_evaluated": false,
+  "model_leaf_admissible_proposals": [
+    "Priority"
+  ],
+  "limitation": "Azure reconstructed arrivals/wall-clock demand proxies, not measured Linux scheduling. These state trajectories were collected under MLFQ/preemptive exploration, not necessarily the original-model trajectory. No scheduling improvement is inferred."
+}

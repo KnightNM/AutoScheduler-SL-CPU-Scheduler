@@ -1,0 +1,37 @@
+{
+  "status": "SYNTHETIC_DEVELOPMENT_ONLY",
+  "config": {
+    "epoch_ticks": 10,
+    "dwell_epochs": 2,
+    "confidence_threshold": 0.8,
+    "policy_track": "realistic"
+  },
+  "train": {
+    "traces": 120,
+    "seed": 42
+  },
+  "validation": {
+    "traces": 60,
+    "seed": 4242
+  },
+  "evaluation": {
+    "traces": 1000,
+    "seed": 2026
+  },
+  "family_selection": "lowest_realized_whole_workload_validation_score_before_evaluation",
+  "hyperparameter_selection": "realized_validation_schedule_score_then_action_regret_then_simpler_tree",
+  "cost_switch_margin": 0.005,
+  "python": "3.12.3",
+  "sklearn": "1.9.1",
+  "base_revision": "3e01e947ba72e111da44317706014fb3f1c01075",
+  "source_sha256": {
+    "autoscheduler/dynamic.py": "731af861728e8ab3e386b23e195b67141e9e18714f601bafe2ba45a30d3eb7f5",
+    "autoscheduler/model.py": "8567e68b3d4763bc7705dd93ded24e00d15a83bf6a15ce06e03ad3bf8562a7c6",
+    "autoscheduler/dynamic_training.py": "b0da7ba96b5c24cc1e2a7519111c740afb8058cf879e1fee6da065e61b1c0d33",
+    "autoscheduler/evaluation.py": "96d26272501c110da3d20ecde9c22f86e567220756943e2643a7d18606957c5f",
+    "autoscheduler/workloads.py": "dcd37ee06a64fd43a75fd72dfee4c5a36b9b477d8bfed4f6bd3ed698f22d1736",
+    "simulator/engine.py": "fbc7466bd8ee5dca261c0233ee1e772693a00efcaebea81ddd4a6f65bd94226c",
+    "configs/real_desktop_ml.json": "b12ea718f41279c3758d4c6172560ac0af01776537ef93092091a19cf2446067",
+    "autoscheduler/dynamic_research.py": "58b4a8d7c809677a250f2460e994c258db8113491985df3a48de4f34d47eff9b"
+  }
+}

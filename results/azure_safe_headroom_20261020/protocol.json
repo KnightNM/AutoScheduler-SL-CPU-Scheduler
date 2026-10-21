@@ -1,0 +1,67 @@
+{
+  "scope": "Training/validation groups only; no old test re-evaluation or final-holdout consumption",
+  "input_protocol_sha256": "87b08859f7ecd7b8b7fcffbf2944b5a8699ac2dfa7774032d5ccfe58d57bedf7",
+  "model_sha256": "c5b49844df05be069ed9daa718e5d22eb423c63aeede339d9ddc3172aaa31fc8",
+  "margin": 0.005,
+  "states": [
+    {
+      "workload_id": "azure-d03-0059",
+      "source_group": "azure-d03-0045",
+      "split": "train",
+      "behavior": "MLFQ",
+      "time": 1923820,
+      "active": "MLFQ"
+    },
+    {
+      "workload_id": "azure-d03-0059",
+      "source_group": "azure-d03-0045",
+      "split": "train",
+      "behavior": "preemptive_probe",
+      "time": 71602,
+      "active": "MLFQ"
+    },
+    {
+      "workload_id": "azure-d07-0142",
+      "source_group": "azure-d07-0128",
+      "split": "train",
+      "behavior": "MLFQ",
+      "time": 2120030,
+      "active": "MLFQ"
+    },
+    {
+      "workload_id": "azure-d07-0142",
+      "source_group": "azure-d07-0128",
+      "split": "train",
+      "behavior": "MLFQ",
+      "time": 2110531,
+      "active": "MLFQ"
+    },
+    {
+      "workload_id": "azure-d07-0142",
+      "source_group": "azure-d07-0128",
+      "split": "train",
+      "behavior": "preemptive_probe",
+      "time": 2111822,
+      "active": "MLFQ"
+    },
+    {
+      "workload_id": "azure-d10-0187",
+      "source_group": "azure-d10-0187",
+      "split": "validation",
+      "behavior": "MLFQ",
+      "time": 69313,
+      "active": "MLFQ"
+    },
+    {
+      "workload_id": "azure-d10-0187",
+      "source_group": "azure-d10-0187",
+      "split": "validation",
+      "behavior": "preemptive_probe",
+      "time": 73192,
+      "active": "MLFQ"
+    }
+  ],
+  "selection": "Replay every development state with any nonzero feasible cost difference (>1e-12), including losses; no favorable-only sample.",
+  "budgets": "30 seconds per state collection/reference run or counterfactual replay; retain all failures, no replacements",
+  "stop_rule": "If no sampled feasible benefit clears unchanged margin, stop before dataset expansion/fitting; preserve dashboard."
+}

@@ -1,0 +1,119 @@
+{
+  "scope": "Training trace groups only; no validation or test rows",
+  "bounds": {
+    "ready_count": {
+      "min": 1.0,
+      "p05": 1.0,
+      "p95": 48.0,
+      "max": 48.0
+    },
+    "blocked_count": {
+      "min": 0.0,
+      "p05": 0.0,
+      "p95": 8.0,
+      "max": 47.0
+    },
+    "completed_burst_mean": {
+      "min": 0.0,
+      "p05": 0.0,
+      "p95": 20.0,
+      "max": 30.0
+    },
+    "completed_burst_variance": {
+      "min": 0.0,
+      "p05": 0.0,
+      "p95": 92.81632653061224,
+      "max": 355.25
+    },
+    "observed_service_mean": {
+      "min": 0.0,
+      "p05": 2.0,
+      "p95": 45.754166666666606,
+      "max": 59.791666666666664
+    },
+    "observed_service_variance": {
+      "min": 0.0,
+      "p05": 0.0763888888888889,
+      "p95": 161.62792968749966,
+      "max": 430.65972222222223
+    },
+    "priority_mean": {
+      "min": 1.0,
+      "p05": 2.0,
+      "p95": 4.454545454545454,
+      "max": 5.0
+    },
+    "ready_wait_mean": {
+      "min": 0.0,
+      "p05": 0.0,
+      "p95": 32.37045454545445,
+      "max": 82.3409090909091
+    },
+    "ready_wait_max": {
+      "min": 0.0,
+      "p05": 0.0,
+      "p95": 62.04999999999927,
+      "max": 145.0
+    },
+    "recent_arrivals": {
+      "min": 0.0,
+      "p05": 0.0,
+      "p95": 1.0,
+      "max": 16.0
+    },
+    "io_returns": {
+      "min": 0.0,
+      "p05": 0.0,
+      "p95": 2.0,
+      "max": 15.0
+    },
+    "io_return_ratio": {
+      "min": 0.0,
+      "p05": 0.0,
+      "p95": 1.0,
+      "max": 1.0
+    },
+    "active_policy_index": {
+      "min": 0.0,
+      "p05": 2.0,
+      "p95": 4.0,
+      "max": 4.0
+    },
+    "dwell_remaining_ticks": {
+      "min": 0.0,
+      "p05": 0.0,
+      "p95": 0.0,
+      "max": 0.0
+    },
+    "first_service_ready_count": {
+      "min": 0.0,
+      "p05": 0.0,
+      "p95": 1.0,
+      "max": 28.0
+    },
+    "first_service_wait_max": {
+      "min": 0.0,
+      "p05": 0.0,
+      "p95": 0.0,
+      "max": 40.0
+    },
+    "ready_wait_p50": {
+      "min": 0.0,
+      "p05": 0.0,
+      "p95": 32.0,
+      "max": 78.5
+    },
+    "ready_wait_p95": {
+      "min": 0.0,
+      "p05": 0.0,
+      "p95": 55.504999999999924,
+      "max": 142.85
+    },
+    "arrival_quiet_ticks": {
+      "min": 0.0,
+      "p05": 0.0,
+      "p95": 1907.0,
+      "max": 2967.0
+    }
+  }
+}

@@ -1,0 +1,487 @@
+{
+  "rows": 7080,
+  "random_state": 10601,
+  "split": {
+    "train": 0.7,
+    "validation": 0.15,
+    "test": 0.15
+  },
+  "class_distribution": {
+    "No Switch": 4108,
+    "Priority": 1403,
+    "Round Robin": 124,
+    "FCFS": 1426,
+    "Priority RR": 19
+  },
+  "max_depth": 5,
+  "min_samples_leaf": 10,
+  "class_weight": null,
+  "model_kind": "policy_cost",
+  "selected_for_development": true,
+  "diagnostic_only": false,
+  "refit_train_plus_validation": false,
+  "validation_accuracy": 0.05121293800539083,
+  "validation_mean_regret": 0.000903187022872085,
+  "test_accuracy": 0.2368,
+  "test_mean_regret": 0.0016885396790343528,
+  "validation_action_costs": {
+    "FCFS": -0.0007900963929695344,
+    "Round Robin": 0.0008672872759479221,
+    "Priority": -0.0019561835231257318,
+    "Priority RR": 0.00545738606922216,
+    "MLFQ": 0.0,
+    "No Switch": 0.0
+  },
+  "static_baseline": "MLFQ",
+  "priority_rr_config": {
+    "quantum": 2,
+    "aging_interval": 8,
+    "context_switch_cost": 1
+  },
+  "policy_set": [
+    "FCFS",
+    "Round Robin",
+    "Priority",
+    "Priority RR",
+    "MLFQ"
+  ],
+  "feature_importance": {
+    "ready_count": 0.007504981839742319,
+    "blocked_count": 0.001839156679129172,
+    "completed_burst_mean": 0.015284169870653515,
+    "completed_burst_variance": 0.1462165640531214,
+    "observed_service_mean": 0.0,
+    "observed_service_variance": 0.0051557188567857536,
+    "priority_mean": 0.0,
+    "ready_wait_mean": 0.31333648815429294,
+    "ready_wait_max": 0.0,
+    "recent_arrivals": 0.0,
+    "io_returns": 0.0,
+    "io_return_ratio": 0.014321530264404664,
+    "active_policy_index": 0.00258589474874339,
+    "dwell_remaining_ticks": 0.0,
+    "first_service_ready_count": 0.0,
+    "first_service_wait_max": 0.0,
+    "ready_wait_p50": 0.0,
+    "ready_wait_p95": 0.0013181755388576785,
+    "arrival_quiet_ticks": 0.49243731999426915
+  },
+  "candidate_metrics": [
+    {
+      "max_depth": 3,
+      "min_samples_leaf": 10,
+      "class_weight": null,
+      "validation_accuracy": 0.07547169811320754,
+      "validation_mean_regret": 0.0010556665623972432,
+      "validation_schedule_score": 0.17535079951573784,
+      "validation_schedule_p95_response": 11.878571428571428,
+      "validation_schedule_starvation": 10.25,
+      "validation_schedule_eligible": true,
+      "validation_schedule_gates": {
+        "score": true,
+        "p95_response": true,
+        "starvation": true,
+        "latency": true,
+        "original_rr_score": true,
+        "original_rr_p95": true
+      },
+      "validation_schedule_intervals": {
+        "score": {
+          "mean": -0.006337954915192955,
+          "ci_low": -0.012625717417406075,
+          "ci_high": -0.0006636094133833354
+        },
+        "p95_response": {
+          "mean": 0.0,
+          "ci_low": 0.0,
+          "ci_high": 0.0
+        },
+        "starvation": {
+          "mean": -0.11904761904761904,
+          "ci_low": -0.23809523809523808,
+          "ci_high": 0.0
+        },
+        "rr_score": {
+          "mean": -0.0479603929034607,
+          "ci_low": -0.06933746471387611,
+          "ci_high": -0.02645977061747951
+        },
+        "rr_p95_response": {
+          "mean": -5.410119047619047,
+          "ci_low": -7.479196428571429,
+          "ci_high": -3.518452380952381
+        }
+      },
+      "validation_schedule_max_workload_p99_ms": 0.8219565599999997
+    },
+    {
+      "max_depth": 5,
+      "min_samples_leaf": 10,
+      "class_weight": null,
+      "validation_accuracy": 0.05121293800539083,
+      "validation_mean_regret": 0.000903187022872085,
+      "validation_schedule_score": 0.1741313622583352,
+      "validation_schedule_p95_response": 11.878571428571428,
+      "validation_schedule_starvation": 10.25,
+      "validation_schedule_eligible": true,
+      "validation_schedule_gates": {
+        "score": true,
+        "p95_response": true,
+        "starvation": true,
+        "latency": true,
+        "original_rr_score": true,
+        "original_rr_p95": true
+      },
+      "validation_schedule_intervals": {
+        "score": {
+          "mean": -0.007557392172595588,
+          "ci_low": -0.01407144055339849,
+          "ci_high": -0.0015542490850131085
+        },
+        "p95_response": {
+          "mean": 0.0,
+          "ci_low": 0.0,
+          "ci_high": 0.0
+        },
+        "starvation": {
+          "mean": -0.11904761904761904,
+          "ci_low": -0.23809523809523808,
+          "ci_high": 0.0
+        },
+        "rr_score": {
+          "mean": -0.04917983016086333,
+          "ci_low": -0.07057743502358774,
+          "ci_high": -0.027554038812042957
+        },
+        "rr_p95_response": {
+          "mean": -5.410119047619047,
+          "ci_low": -7.479196428571429,
+          "ci_high": -3.518452380952381
+        }
+      },
+      "validation_schedule_max_workload_p99_ms": 1.1586166999999974
+    },
+    {
+      "max_depth": 8,
+      "min_samples_leaf": 10,
+      "class_weight": null,
+      "validation_accuracy": 0.07008086253369272,
+      "validation_mean_regret": 0.001309208801347277,
+      "validation_schedule_score": 0.16467538041877905,
+      "validation_schedule_p95_response": 11.890476190476189,
+      "validation_schedule_starvation": 10.226190476190476,
+      "validation_schedule_eligible": false,
+      "validation_schedule_gates": {
+        "score": true,
+        "p95_response": false,
+        "starvation": true,
+        "latency": true,
+        "original_rr_score": true,
+        "original_rr_p95": true
+      },
+      "validation_schedule_intervals": {
+        "score": {
+          "mean": -0.017013374012151753,
+          "ci_low": -0.026820142792609344,
+          "ci_high": -0.007929188411139395
+        },
+        "p95_response": {
+          "mean": 0.011904761904761904,
+          "ci_low": 0.0,
+          "ci_high": 0.03571428571428571
+        },
+        "starvation": {
+          "mean": -0.14285714285714285,
+          "ci_low": -0.2619047619047619,
+          "ci_high": -0.03571428571428571
+        },
+        "rr_score": {
+          "mean": -0.05863581200041949,
+          "ci_low": -0.07996877803275496,
+          "ci_high": -0.03693121254073644
+        },
+        "rr_p95_response": {
+          "mean": -5.398214285714285,
+          "ci_low": -7.471443452380952,
+          "ci_high": -3.508898809523809
+        }
+      },
+      "validation_schedule_max_workload_p99_ms": 1.0903486000000007
+    }
+  ],
+  "selection_basis": "safety_eligibility_then_realized_validation_schedule_score",
+  "validation_schedule_score": 0.1741313622583352,
+  "validation_schedule_p95_response": 11.878571428571428,
+  "validation_schedule_starvation": 10.25,
+  "validation_schedule_eligible": true,
+  "validation_schedule_gates": {
+    "score": true,
+    "p95_response": true,
+    "starvation": true,
+    "latency": true,
+    "original_rr_score": true,
+    "original_rr_p95": true
+  },
+  "validation_schedule_intervals": {
+    "score": {
+      "mean": -0.007557392172595588,
+      "ci_low": -0.01407144055339849,
+      "ci_high": -0.0015542490850131085
+    },
+    "p95_response": {
+      "mean": 0.0,
+      "ci_low": 0.0,
+      "ci_high": 0.0
+    },
+    "starvation": {
+      "mean": -0.11904761904761904,
+      "ci_low": -0.23809523809523808,
+      "ci_high": 0.0
+    },
+    "rr_score": {
+      "mean": -0.04917983016086333,
+      "ci_low": -0.07057743502358774,
+      "ci_high": -0.027554038812042957
+    },
+    "rr_p95_response": {
+      "mean": -5.410119047619047,
+      "ci_low": -7.479196428571429,
+      "ci_high": -3.518452380952381
+    }
+  },
+  "validation_schedule_max_workload_p99_ms": 1.1586166999999974,
+  "status": "SYNTHETIC_DEVELOPMENT_ONLY",
+  "test_confusion_matrix": {
+    "FCFS": {
+      "FCFS": 7,
+      "Round Robin": 0,
+      "Priority": 76,
+      "Priority RR": 0,
+      "MLFQ": 8,
+      "No Switch": 0
+    },
+    "Round Robin": {
+      "FCFS": 4,
+      "Round Robin": 0,
+      "Priority": 8,
+      "Priority RR": 0,
+      "MLFQ": 2,
+      "No Switch": 0
+    },
+    "Priority": {
+      "FCFS": 1,
+      "Round Robin": 0,
+      "Priority": 139,
+      "Priority RR": 0,
+      "MLFQ": 3,
+      "No Switch": 0
+    },
+    "Priority RR": {
+      "FCFS": 0,
+      "Round Robin": 0,
+      "Priority": 3,
+      "Priority RR": 2,
+      "MLFQ": 3,
+      "No Switch": 0
+    },
+    "MLFQ": {
+      "FCFS": 0,
+      "Round Robin": 0,
+      "Priority": 0,
+      "Priority RR": 0,
+      "MLFQ": 0,
+      "No Switch": 0
+    },
+    "No Switch": {
+      "FCFS": 293,
+      "Round Robin": 0,
+      "Priority": 65,
+      "Priority RR": 2,
+      "MLFQ": 9,
+      "No Switch": 0
+    }
+  },
+  "test_tie_aware_accuracy": 0.8672,
+  "ambiguous_label_fraction": 0.6820621468926553,
+  "split_class_distribution": {
+    "train": {
+      "No Switch": 3428,
+      "Priority": 1231,
+      "Round Robin": 104,
+      "FCFS": 1310,
+      "Priority RR": 11
+    },
+    "validation": {
+      "No Switch": 311,
+      "FCFS": 25,
+      "Priority": 29,
+      "Round Robin": 6
+    },
+    "test": {
+      "No Switch": 369,
+      "FCFS": 91,
+      "Priority": 143,
+      "Priority RR": 8,
+      "Round Robin": 14
+    }
+  },
+  "internal_test_model": "train_only_saved_without_refit",
+  "split_group_key": "seed",
+  "split_trace_counts": {
+    "train": 100,
+    "validation": 22,
+    "test": 22
+  },
+  "split_groups": {
+    "train": [
+      10601000002,
+      10601000003,
+      10601000004,
+      10601000005,
+      10601000006,
+      10601000007,
+      10601000008,
+      10601000009,
+      10601000011,
+      10601000012,
+      10601000014,
+      10601000015,
+      10601000016,
+      10601000017,
+      10601000018,
+      10601000019,
+      10601000020,
+      10601000021,
+      10601000023,
+      10601000024,
+      10601000025,
+      10601000026,
+      10601000028,
+      10601000030,
+      10601000031,
+      10601000032,
+      10601000038,
+      10601000039,
+      10601000040,
+      10601000041,
+      10601000042,
+      10601000043,
+      10601000044,
+      10601000045,
+      10601000047,
+      10601000048,
+      10601000049,
+      10601000050,
+      10601000052,
+      10601000053,
+      10601000056,
+      10601000058,
+      10601000059,
+      10601000060,
+      10601000061,
+      10601000062,
+      10601000063,
+      10601000064,
+      10601000066,
+      10601000067,
+      10601000068,
+      10601000069,
+      10601000070,
+      10601000071,
+      10601000072,
+      10601000073,
+      10601000074,
+      10601000075,
+      10601000077,
+      10601000078,
+      10601000079,
+      10601000080,
+      10601000082,
+      10601000083,
+      10601000084,
+      10601000085,
+      10601000088,
+      10601000091,
+      10601000092,
+      10601000093,
+      10601000095,
+      10601000097,
+      10601000098,
+      10601000100,
+      10601000101,
+      10601000102,
+      10601000104,
+      10601000105,
+      10601000106,
+      10601000107,
+      10601000108,
+      10601000111,
+      10601000114,
+      10601000115,
+      10601000118,
+      10601000119,
+      10601000121,
+      10601000122,
+      10601000124,
+      10601000126,
+      10601000128,
+      10601000130,
+      10601000131,
+      10601000132,
+      10601000134,
+      10601000137,
+      10601000138,
+      10601000139,
+      10601000140,
+      10601000141
+    ],
+    "validation": [
+      10601000000,
+      10601000027,
+      10601000033,
+      10601000036,
+      10601000037,
+      10601000055,
+      10601000065,
+      10601000076,
+      10601000081,
+      10601000086,
+      10601000090,
+      10601000099,
+      10601000103,
+      10601000109,
+      10601000110,
+      10601000112,
+      10601000113,
+      10601000116,
+      10601000120,
+      10601000133,
+      10601000135,
+      10601000142
+    ],
+    "test": [
+      10601000001,
+      10601000010,
+      10601000013,
+      10601000022,
+      10601000029,
+      10601000034,
+      10601000035,
+      10601000046,
+      10601000051,
+      10601000054,
+      10601000057,
+      10601000087,
+      10601000089,
+      10601000094,
+      10601000096,
+      10601000117,
+      10601000123,
+      10601000125,
+      10601000127,
+      10601000129,
+      10601000136,
+      10601000143
+    ]
+  }
+}

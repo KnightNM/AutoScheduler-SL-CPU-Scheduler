@@ -1,0 +1,165 @@
+{
+  "nodes": [
+    {
+      "node": 0,
+      "training_samples": 6440,
+      "feature": "completed_burst_variance",
+      "threshold": 0.031111111864447594,
+      "left": 1,
+      "right": 8
+    },
+    {
+      "node": 1,
+      "training_samples": 3112,
+      "feature": "ready_count",
+      "threshold": 6.5,
+      "left": 2,
+      "right": 5
+    },
+    {
+      "node": 2,
+      "training_samples": 599,
+      "feature": "ready_count",
+      "threshold": 5.5,
+      "left": 3,
+      "right": 4
+    },
+    {
+      "node": 3,
+      "training_samples": 430,
+      "predicted_costs": {
+        "FCFS": -0.034500258605412455,
+        "Round Robin": -0.006467365789219947,
+        "Priority": -0.03475547251787958,
+        "Priority RR": 0.0053451692470629095,
+        "MLFQ": 0.0,
+        "No Switch": 0.0
+      },
+      "minimum_action": "Priority"
+    },
+    {
+      "node": 4,
+      "training_samples": 169,
+      "predicted_costs": {
+        "FCFS": -0.11180888111942357,
+        "Round Robin": -0.022615769077122774,
+        "Priority": -0.11806003976224144,
+        "Priority RR": -0.019683495510626443,
+        "MLFQ": 0.0,
+        "No Switch": 0.0
+      },
+      "minimum_action": "Priority"
+    },
+    {
+      "node": 5,
+      "training_samples": 2513,
+      "feature": "ready_count",
+      "threshold": 23.5,
+      "left": 6,
+      "right": 7
+    },
+    {
+      "node": 6,
+      "training_samples": 740,
+      "predicted_costs": {
+        "FCFS": -0.007365776365600152,
+        "Round Robin": 0.004206218620007135,
+        "Priority": -0.008368775445198092,
+        "Priority RR": 0.019846730370095596,
+        "MLFQ": 0.0,
+        "No Switch": 0.0
+      },
+      "minimum_action": "Priority"
+    },
+    {
+      "node": 7,
+      "training_samples": 1773,
+      "predicted_costs": {
+        "FCFS": -0.025779046837439347,
+        "Round Robin": -0.012537820299704443,
+        "Priority": -0.026641829750063375,
+        "Priority RR": -0.006605916722426975,
+        "MLFQ": 0.0,
+        "No Switch": 0.0
+      },
+      "minimum_action": "Priority"
+    },
+    {
+      "node": 8,
+      "training_samples": 3328,
+      "feature": "arrival_quiet_ticks",
+      "threshold": 19.5,
+      "left": 9,
+      "right": 10
+    },
+    {
+      "node": 9,
+      "training_samples": 1064,
+      "predicted_costs": {
+        "FCFS": 0.0,
+        "Round Robin": 0.0,
+        "Priority": 0.0,
+        "Priority RR": 0.0,
+        "MLFQ": 0.0,
+        "No Switch": 0.0
+      },
+      "minimum_action": "FCFS"
+    },
+    {
+      "node": 10,
+      "training_samples": 2264,
+      "feature": "arrival_quiet_ticks",
+      "threshold": 39.5,
+      "left": 11,
+      "right": 12
+    },
+    {
+      "node": 11,
+      "training_samples": 231,
+      "predicted_costs": {
+        "FCFS": 0.002308291677236801,
+        "Round Robin": 0.006601353828196587,
+        "Priority": -0.0015676422265186929,
+        "Priority RR": 0.02978382739210979,
+        "MLFQ": 0.0,
+        "No Switch": 0.0
+      },
+      "minimum_action": "Priority"
+    },
+    {
+      "node": 12,
+      "training_samples": 2033,
+      "predicted_costs": {
+        "FCFS": -0.00047923725900538315,
+        "Round Robin": 0.0010620123085974531,
+        "Priority": -0.0011716326815226102,
+        "Priority RR": 0.008471518709883927,
+        "MLFQ": 0.0,
+        "No Switch": 0.0
+      },
+      "minimum_action": "Priority"
+    }
+  ],
+  "feature_importances": {
+    "ready_count": 0.5775271744220638,
+    "blocked_count": 0.0,
+    "completed_burst_mean": 0.0,
+    "completed_burst_variance": 0.3942694339134164,
+    "observed_service_mean": 0.0,
+    "observed_service_variance": 0.0,
+    "priority_mean": 0.0,
+    "ready_wait_mean": 0.0,
+    "ready_wait_max": 0.0,
+    "recent_arrivals": 0.0,
+    "io_returns": 0.0,
+    "io_return_ratio": 0.0,
+    "active_policy_index": 0.0,
+    "dwell_remaining_ticks": 0.0,
+    "first_service_ready_count": 0.0,
+    "first_service_wait_max": 0.0,
+    "ready_wait_p50": 0.0,
+    "ready_wait_p95": 0.0,
+    "arrival_quiet_ticks": 0.02820339166451966
+  },
+  "note": "Inspection of unchanged fitted tree only; no holdout predictions or training."
+}

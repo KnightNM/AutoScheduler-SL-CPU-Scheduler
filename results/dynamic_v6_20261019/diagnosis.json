@@ -1,0 +1,6023 @@
+[
+  {
+    "seed": 9703000019,
+    "family": "sustained_arrivals",
+    "p95": 1.0,
+    "baseline_p95": 0.0,
+    "witnesses": [
+      {
+        "departure": 52,
+        "observed_arrival_timestamps": [
+          13,
+          23,
+          28,
+          31
+        ],
+        "observed_ready_count": 3.0,
+        "observed_first_service_ready_count": 0.0,
+        "quiet_ticks": 21.0,
+        "v6_would_block": true
+      }
+    ],
+    "processes": [
+      {
+        "pid": "P3",
+        "arrival": 28,
+        "first_dispatch": 28,
+        "response": 0,
+        "baseline_first_dispatch": 28,
+        "baseline_response": 0,
+        "crosses_baseline_p95": false
+      },
+      {
+        "pid": "P2",
+        "arrival": 23,
+        "first_dispatch": 23,
+        "response": 0,
+        "baseline_first_dispatch": 23,
+        "baseline_response": 0,
+        "crosses_baseline_p95": false
+      },
+      {
+        "pid": "P5",
+        "arrival": 54,
+        "first_dispatch": 59,
+        "response": 5,
+        "baseline_first_dispatch": 54,
+        "baseline_response": 0,
+        "crosses_baseline_p95": true
+      },
+      {
+        "pid": "P6",
+        "arrival": 80,
+        "first_dispatch": 81,
+        "response": 1,
+        "baseline_first_dispatch": 80,
+        "baseline_response": 0,
+        "crosses_baseline_p95": true
+      },
+      {
+        "pid": "P1",
+        "arrival": 13,
+        "first_dispatch": 13,
+        "response": 0,
+        "baseline_first_dispatch": 13,
+        "baseline_response": 0,
+        "crosses_baseline_p95": false
+      },
+      {
+        "pid": "P4",
+        "arrival": 31,
+        "first_dispatch": 31,
+        "response": 0,
+        "baseline_first_dispatch": 31,
+        "baseline_response": 0,
+        "crosses_baseline_p95": false
+      },
+      {
+        "pid": "P7",
+        "arrival": 103,
+        "first_dispatch": 103,
+        "response": 0,
+        "baseline_first_dispatch": 103,
+        "baseline_response": 0,
+        "crosses_baseline_p95": false
+      },
+      {
+        "pid": "P8",
+        "arrival": 118,
+        "first_dispatch": 118,
+        "response": 0,
+        "baseline_first_dispatch": 118,
+        "baseline_response": 0,
+        "crosses_baseline_p95": false
+      },
+      {
+        "pid": "P9",
+        "arrival": 127,
+        "first_dispatch": 127,
+        "response": 0,
+        "baseline_first_dispatch": 127,
+        "baseline_response": 0,
+        "crosses_baseline_p95": false
+      },
+      {
+        "pid": "P10",
+        "arrival": 129,
+        "first_dispatch": 129,
+        "response": 0,
+        "baseline_first_dispatch": 129,
+        "baseline_response": 0,
+        "crosses_baseline_p95": false
+      },
+      {
+        "pid": "P11",
+        "arrival": 164,
+        "first_dispatch": 164,
+        "response": 0,
+        "baseline_first_dispatch": 164,
+        "baseline_response": 0,
+        "crosses_baseline_p95": false
+      },
+      {
+        "pid": "P12",
+        "arrival": 168,
+        "first_dispatch": 168,
+        "response": 0,
+        "baseline_first_dispatch": 168,
+        "baseline_response": 0,
+        "crosses_baseline_p95": false
+      },
+      {
+        "pid": "P14",
+        "arrival": 176,
+        "first_dispatch": 176,
+        "response": 0,
+        "baseline_first_dispatch": 176,
+        "baseline_response": 0,
+        "crosses_baseline_p95": false
+      },
+      {
+        "pid": "P15",
+        "arrival": 177,
+        "first_dispatch": 177,
+        "response": 0,
+        "baseline_first_dispatch": 177,
+        "baseline_response": 0,
+        "crosses_baseline_p95": false
+      },
+      {
+        "pid": "P17",
+        "arrival": 191,
+        "first_dispatch": 191,
+        "response": 0,
+        "baseline_first_dispatch": 191,
+        "baseline_response": 0,
+        "crosses_baseline_p95": false
+      },
+      {
+        "pid": "P23",
+        "arrival": 216,
+        "first_dispatch": 216,
+        "response": 0,
+        "baseline_first_dispatch": 216,
+        "baseline_response": 0,
+        "crosses_baseline_p95": false
+      },
+      {
+        "pid": "P18",
+        "arrival": 192,
+        "first_dispatch": 192,
+        "response": 0,
+        "baseline_first_dispatch": 192,
+        "baseline_response": 0,
+        "crosses_baseline_p95": false
+      },
+      {
+        "pid": "P24",
+        "arrival": 228,
+        "first_dispatch": 228,
+        "response": 0,
+        "baseline_first_dispatch": 228,
+        "baseline_response": 0,
+        "crosses_baseline_p95": false
+      },
+      {
+        "pid": "P20",
+        "arrival": 194,
+        "first_dispatch": 194,
+        "response": 0,
+        "baseline_first_dispatch": 194,
+        "baseline_response": 0,
+        "crosses_baseline_p95": false
+      },
+      {
+        "pid": "P21",
+        "arrival": 195,
+        "first_dispatch": 195,
+        "response": 0,
+        "baseline_first_dispatch": 195,
+        "baseline_response": 0,
+        "crosses_baseline_p95": false
+      },
+      {
+        "pid": "P16",
+        "arrival": 183,
+        "first_dispatch": 183,
+        "response": 0,
+        "baseline_first_dispatch": 183,
+        "baseline_response": 0,
+        "crosses_baseline_p95": false
+      },
+      {
+        "pid": "P19",
+        "arrival": 192,
+        "first_dispatch": 193,
+        "response": 1,
+        "baseline_first_dispatch": 193,
+        "baseline_response": 1,
+        "crosses_baseline_p95": true
+      },
+      {
+        "pid": "P13",
+        "arrival": 170,
+        "first_dispatch": 170,
+        "response": 0,
+        "baseline_first_dispatch": 170,
+        "baseline_response": 0,
+        "crosses_baseline_p95": false
+      },
+      {
+        "pid": "P22",
+        "arrival": 204,
+        "first_dispatch": 204,
+        "response": 0,
+        "baseline_first_dispatch": 204,
+        "baseline_response": 0,
+        "crosses_baseline_p95": false
+      }
+    ],
+    "decisions": [
+      {
+        "time": 13,
+        "selected": "Priority",
+        "active": "MLFQ",
+        "accepted": false,
+        "reason": "first_service_protection",
+        "features": {
+          "ready_count": 1.0,
+          "blocked_count": 0.0,
+          "completed_burst_mean": 0.0,
+          "completed_burst_variance": 0.0,
+          "observed_service_mean": 0.0,
+          "observed_service_variance": 0.0,
+          "priority_mean": 1,
+          "ready_wait_mean": 0,
+          "ready_wait_max": 0.0,
+          "recent_arrivals": 1.0,
+          "io_returns": 0.0,
+          "io_return_ratio": 0.0,
+          "active_policy_index": 4.0,
+          "dwell_remaining_ticks": 7.0,
+          "first_service_ready_count": 1.0,
+          "first_service_wait_max": 0.0,
+          "ready_wait_p50": 0.0,
+          "ready_wait_p95": 0.0,
+          "arrival_quiet_ticks": 0.0
+        }
+      },
+      {
+        "time": 20,
+        "selected": "MLFQ",
+        "active": "MLFQ",
+        "accepted": false,
+        "reason": "arrival_risk",
+        "features": {
+          "ready_count": 1.0,
+          "blocked_count": 0.0,
+          "completed_burst_mean": 0.0,
+          "completed_burst_variance": 0.0,
+          "observed_service_mean": 7,
+          "observed_service_variance": 0,
+          "priority_mean": 1,
+          "ready_wait_mean": 0,
+          "ready_wait_max": 0.0,
+          "recent_arrivals": 0.0,
+          "io_returns": 0.0,
+          "io_return_ratio": 0.0,
+          "active_policy_index": 4.0,
+          "dwell_remaining_ticks": 0.0,
+          "first_service_ready_count": 0.0,
+          "first_service_wait_max": 0.0,
+          "ready_wait_p50": 0.0,
+          "ready_wait_p95": 0.0,
+          "arrival_quiet_ticks": 7.0
+        }
+      },
+      {
+        "time": 31,
+        "selected": "Priority",
+        "active": "MLFQ",
+        "accepted": false,
+        "reason": "first_service_protection",
+        "features": {
+          "ready_count": 4.0,
+          "blocked_count": 0.0,
+          "completed_burst_mean": 0.0,
+          "completed_burst_variance": 0.0,
+          "observed_service_mean": 6,
+          "observed_service_variance": 12.666666666666666,
+          "priority_mean": 1.75,
+          "ready_wait_mean": 1.75,
+          "ready_wait_max": 4.0,
+          "recent_arrivals": 3.0,
+          "io_returns": 0.0,
+          "io_return_ratio": 0.0,
+          "active_policy_index": 4.0,
+          "dwell_remaining_ticks": 0.0,
+          "first_service_ready_count": 1.0,
+          "first_service_wait_max": 0.0,
+          "ready_wait_p50": 1.5,
+          "ready_wait_p95": 3.8499999999999996,
+          "arrival_quiet_ticks": 0.0
+        }
+      },
+      {
+        "time": 41,
+        "selected": "MLFQ",
+        "active": "MLFQ",
+        "accepted": false,
+        "reason": "arrival_risk",
+        "features": {
+          "ready_count": 4.0,
+          "blocked_count": 0.0,
+          "completed_burst_mean": 0.0,
+          "completed_burst_variance": 0.0,
+          "observed_service_mean": 7,
+          "observed_service_variance": 24,
+          "priority_mean": 1.75,
+          "ready_wait_mean": 5,
+          "ready_wait_max": 10.0,
+          "recent_arrivals": 0.0,
+          "io_returns": 0.0,
+          "io_return_ratio": 0.0,
+          "active_policy_index": 4.0,
+          "dwell_remaining_ticks": 0.0,
+          "first_service_ready_count": 0.0,
+          "first_service_wait_max": 0.0,
+          "ready_wait_p50": 5.0,
+          "ready_wait_p95": 9.549999999999999,
+          "arrival_quiet_ticks": 10.0
+        }
+      },
+      {
+        "time": 52,
+        "selected": "Priority",
+        "active": "Priority",
+        "accepted": true,
+        "reason": "accepted",
+        "features": {
+          "ready_count": 3.0,
+          "blocked_count": 0.0,
+          "completed_burst_mean": 6,
+          "completed_burst_variance": 0,
+          "observed_service_mean": 9.75,
+          "observed_service_variance": 28.6875,
+          "priority_mean": 1.6666666666666667,
+          "ready_wait_mean": 5,
+          "ready_wait_max": 11.0,
+          "recent_arrivals": 0.0,
+          "io_returns": 0.0,
+          "io_return_ratio": 0.0,
+          "active_policy_index": 4.0,
+          "dwell_remaining_ticks": 0.0,
+          "first_service_ready_count": 0.0,
+          "first_service_wait_max": 0.0,
+          "ready_wait_p50": 4.0,
+          "ready_wait_p95": 10.299999999999999,
+          "arrival_quiet_ticks": 21.0
+        }
+      },
+      {
+        "time": 71,
+        "selected": "FCFS",
+        "active": "Priority",
+        "accepted": false,
+        "reason": "dwell_blocked",
+        "features": {
+          "ready_count": 1.0,
+          "blocked_count": 1.0,
+          "completed_burst_mean": 12.75,
+          "completed_burst_variance": 33.6875,
+          "observed_service_mean": 11.6,
+          "observed_service_variance": 32.24,
+          "priority_mean": 2,
+          "ready_wait_mean": 23,
+          "ready_wait_max": 23.0,
+          "recent_arrivals": 1.0,
+          "io_returns": 0.0,
+          "io_return_ratio": 0.0,
+          "active_policy_index": 2.0,
+          "dwell_remaining_ticks": 1.0,
+          "first_service_ready_count": 0.0,
+          "first_service_wait_max": 0.0,
+          "ready_wait_p50": 23.0,
+          "ready_wait_p95": 23.0,
+          "arrival_quiet_ticks": 17.0
+        }
+      },
+      {
+        "time": 80,
+        "selected": "MLFQ",
+        "active": "MLFQ",
+        "accepted": true,
+        "reason": "excursion_expired",
+        "features": {
+          "ready_count": 2.0,
+          "blocked_count": 1.0,
+          "completed_burst_mean": 13.4,
+          "completed_burst_variance": 28.64,
+          "observed_service_mean": 13.4,
+          "observed_service_variance": 28.64,
+          "priority_mean": 2.6666666666666665,
+          "ready_wait_mean": 3,
+          "ready_wait_max": 6.0,
+          "recent_arrivals": 1.0,
+          "io_returns": 1.0,
+          "io_return_ratio": 0.5,
+          "active_policy_index": 2.0,
+          "dwell_remaining_ticks": 0.0,
+          "first_service_ready_count": 1.0,
+          "first_service_wait_max": 0.0,
+          "ready_wait_p50": 3.0,
+          "ready_wait_p95": 5.699999999999999,
+          "arrival_quiet_ticks": 0.0
+        }
+      },
+      {
+        "time": 91,
+        "selected": "MLFQ",
+        "active": "MLFQ",
+        "accepted": false,
+        "reason": "arrival_risk",
+        "features": {
+          "ready_count": 1.0,
+          "blocked_count": 0.0,
+          "completed_burst_mean": 10.428571428571429,
+          "completed_burst_variance": 42.816326530612244,
+          "observed_service_mean": 12.666666666666666,
+          "observed_service_variance": 63.22222222222222,
+          "priority_mean": 3,
+          "ready_wait_mean": 0,
+          "ready_wait_max": 0.0,
+          "recent_arrivals": 0.0,
+          "io_returns": 1.0,
+          "io_return_ratio": 1.0,
+          "active_policy_index": 4.0,
+          "dwell_remaining_ticks": 9.0,
+          "first_service_ready_count": 0.0,
+          "first_service_wait_max": 0.0,
+          "ready_wait_p50": 0.0,
+          "ready_wait_p95": 0.0,
+          "arrival_quiet_ticks": 11.0
+        }
+      },
+      {
+        "time": 103,
+        "selected": "FCFS",
+        "active": "MLFQ",
+        "accepted": false,
+        "reason": "first_service_protection",
+        "features": {
+          "ready_count": 1.0,
+          "blocked_count": 0.0,
+          "completed_burst_mean": 9.625,
+          "completed_burst_variance": 41.984375,
+          "observed_service_mean": 12.833333333333334,
+          "observed_service_variance": 65.47222222222223,
+          "priority_mean": 3,
+          "ready_wait_mean": 0,
+          "ready_wait_max": 0.0,
+          "recent_arrivals": 1.0,
+          "io_returns": 0.0,
+          "io_return_ratio": 0.0,
+          "active_policy_index": 4.0,
+          "dwell_remaining_ticks": 0.0,
+          "first_service_ready_count": 1.0,
+          "first_service_wait_max": 0.0,
+          "ready_wait_p50": 0.0,
+          "ready_wait_p95": 0.0,
+          "arrival_quiet_ticks": 0.0
+        }
+      },
+      {
+        "time": 110,
+        "selected": "MLFQ",
+        "active": "MLFQ",
+        "accepted": false,
+        "reason": "arrival_risk",
+        "features": {
+          "ready_count": 1.0,
+          "blocked_count": 0.0,
+          "completed_burst_mean": 9.625,
+          "completed_burst_variance": 41.984375,
+          "observed_service_mean": 12,
+          "observed_service_variance": 60.285714285714285,
+          "priority_mean": 3,
+          "ready_wait_mean": 0,
+          "ready_wait_max": 0.0,
+          "recent_arrivals": 0.0,
+          "io_returns": 0.0,
+          "io_return_ratio": 0.0,
+          "active_policy_index": 4.0,
+          "dwell_remaining_ticks": 0.0,
+          "first_service_ready_count": 0.0,
+          "first_service_wait_max": 0.0,
+          "ready_wait_p50": 0.0,
+          "ready_wait_p95": 0.0,
+          "arrival_quiet_ticks": 7.0
+        }
+      },
+      {
+        "time": 121,
+        "selected": "MLFQ",
+        "active": "MLFQ",
+        "accepted": false,
+        "reason": "arrival_risk",
+        "features": {
+          "ready_count": 1.0,
+          "blocked_count": 1.0,
+          "completed_burst_mean": 10.222222222222221,
+          "completed_burst_variance": 40.17283950617284,
+          "observed_service_mean": 11.875,
+          "observed_service_variance": 60.859375,
+          "priority_mean": 3,
+          "ready_wait_mean": 0,
+          "ready_wait_max": 0.0,
+          "recent_arrivals": 1.0,
+          "io_returns": 0.0,
+          "io_return_ratio": 0.0,
+          "active_policy_index": 4.0,
+          "dwell_remaining_ticks": 0.0,
+          "first_service_ready_count": 0.0,
+          "first_service_wait_max": 0.0,
+          "ready_wait_p50": 0.0,
+          "ready_wait_p95": 0.0,
+          "arrival_quiet_ticks": 3.0
+        }
+      },
+      {
+        "time": 130,
+        "selected": "MLFQ",
+        "active": "MLFQ",
+        "accepted": false,
+        "reason": "arrival_risk",
+        "features": {
+          "ready_count": 4.0,
+          "blocked_count": 0.0,
+          "completed_burst_mean": 10.222222222222221,
+          "completed_burst_variance": 40.17283950617284,
+          "observed_service_mean": 10.4,
+          "observed_service_variance": 63.84,
+          "priority_mean": 2.75,
+          "ready_wait_mean": 1.5,
+          "ready_wait_max": 3.0,
+          "recent_arrivals": 2.0,
+          "io_returns": 1.0,
+          "io_return_ratio": 0.3333333333333333,
+          "active_policy_index": 4.0,
+          "dwell_remaining_ticks": 0.0,
+          "first_service_ready_count": 0.0,
+          "first_service_wait_max": 0.0,
+          "ready_wait_p50": 1.5,
+          "ready_wait_p95": 2.8499999999999996,
+          "arrival_quiet_ticks": 1.0
+        }
+      },
+      {
+        "time": 142,
+        "selected": "MLFQ",
+        "active": "MLFQ",
+        "accepted": false,
+        "reason": "arrival_risk",
+        "features": {
+          "ready_count": 1.0,
+          "blocked_count": 0.0,
+          "completed_burst_mean": 9.083333333333334,
+          "completed_burst_variance": 36.40972222222222,
+          "observed_service_mean": 11.6,
+          "observed_service_variance": 52.44,
+          "priority_mean": 3,
+          "ready_wait_mean": 0,
+          "ready_wait_max": 0.0,
+          "recent_arrivals": 0.0,
+          "io_returns": 0.0,
+          "io_return_ratio": 0.0,
+          "active_policy_index": 4.0,
+          "dwell_remaining_ticks": 0.0,
+          "first_service_ready_count": 0.0,
+          "first_service_wait_max": 0.0,
+          "ready_wait_p50": 0.0,
+          "ready_wait_p95": 0.0,
+          "arrival_quiet_ticks": 13.0
+        }
+      },
+      {
+        "time": 162,
+        "selected": "Priority",
+        "active": "MLFQ",
+        "accepted": false,
+        "reason": "cost_margin",
+        "features": {
+          "ready_count": 1.0,
+          "blocked_count": 0.0,
+          "completed_burst_mean": 9.461538461538462,
+          "completed_burst_variance": 35.32544378698225,
+          "observed_service_mean": 12.3,
+          "observed_service_variance": 50.41,
+          "priority_mean": 3,
+          "ready_wait_mean": 0,
+          "ready_wait_max": 0.0,
+          "recent_arrivals": 0.0,
+          "io_returns": 1.0,
+          "io_return_ratio": 1.0,
+          "active_policy_index": 4.0,
+          "dwell_remaining_ticks": 0.0,
+          "first_service_ready_count": 0.0,
+          "first_service_wait_max": 0.0,
+          "ready_wait_p50": 0.0,
+          "ready_wait_p95": 0.0,
+          "arrival_quiet_ticks": 33.0
+        }
+      },
+      {
+        "time": 170,
+        "selected": "FCFS",
+        "active": "MLFQ",
+        "accepted": false,
+        "reason": "first_service_protection",
+        "features": {
+          "ready_count": 2.0,
+          "blocked_count": 0.0,
+          "completed_burst_mean": 8.6,
+          "completed_burst_variance": 35.44,
+          "observed_service_mean": 10.916666666666666,
+          "observed_service_variance": 57.74305555555556,
+          "priority_mean": 2.5,
+          "ready_wait_mean": 0,
+          "ready_wait_max": 0.0,
+          "recent_arrivals": 3.0,
+          "io_returns": 0.0,
+          "io_return_ratio": 0.0,
+          "active_policy_index": 4.0,
+          "dwell_remaining_ticks": 0.0,
+          "first_service_ready_count": 1.0,
+          "first_service_wait_max": 0.0,
+          "ready_wait_p50": 0.0,
+          "ready_wait_p95": 0.0,
+          "arrival_quiet_ticks": 0.0
+        }
+      },
+      {
+        "time": 180,
+        "selected": "MLFQ",
+        "active": "MLFQ",
+        "accepted": false,
+        "reason": "arrival_risk",
+        "features": {
+          "ready_count": 4.0,
+          "blocked_count": 0.0,
+          "completed_burst_mean": 8.6,
+          "completed_burst_variance": 35.44,
+          "observed_service_mean": 9.4,
+          "observed_service_variance": 55.84,
+          "priority_mean": 2.5,
+          "ready_wait_mean": 3,
+          "ready_wait_max": 6.0,
+          "recent_arrivals": 2.0,
+          "io_returns": 0.0,
+          "io_return_ratio": 0.0,
+          "active_policy_index": 4.0,
+          "dwell_remaining_ticks": 0.0,
+          "first_service_ready_count": 0.0,
+          "first_service_wait_max": 0.0,
+          "ready_wait_p50": 3.0,
+          "ready_wait_p95": 5.699999999999999,
+          "arrival_quiet_ticks": 3.0
+        }
+      },
+      {
+        "time": 190,
+        "selected": "MLFQ",
+        "active": "MLFQ",
+        "accepted": false,
+        "reason": "arrival_risk",
+        "features": {
+          "ready_count": 3.0,
+          "blocked_count": 0.0,
+          "completed_burst_mean": 8.294117647058824,
+          "completed_burst_variance": 31.972318339100347,
+          "observed_service_mean": 9.4375,
+          "observed_service_variance": 49.99609375,
+          "priority_mean": 2,
+          "ready_wait_mean": 6.333333333333333,
+          "ready_wait_max": 8.0,
+          "recent_arrivals": 1.0,
+          "io_returns": 0.0,
+          "io_return_ratio": 0.0,
+          "active_policy_index": 4.0,
+          "dwell_remaining_ticks": 0.0,
+          "first_service_ready_count": 0.0,
+          "first_service_wait_max": 0.0,
+          "ready_wait_p50": 7.0,
+          "ready_wait_p95": 7.9,
+          "arrival_quiet_ticks": 7.0
+        }
+      },
+      {
+        "time": 200,
+        "selected": "MLFQ",
+        "active": "MLFQ",
+        "accepted": false,
+        "reason": "arrival_risk",
+        "features": {
+          "ready_count": 8.0,
+          "blocked_count": 0.0,
+          "completed_burst_mean": 8.294117647058824,
+          "completed_burst_variance": 31.972318339100347,
+          "observed_service_mean": 7.666666666666667,
+          "observed_service_variance": 48.507936507936506,
+          "priority_mean": 3,
+          "ready_wait_mean": 7.125,
+          "ready_wait_max": 17.0,
+          "recent_arrivals": 5.0,
+          "io_returns": 0.0,
+          "io_return_ratio": 0.0,
+          "active_policy_index": 4.0,
+          "dwell_remaining_ticks": 0.0,
+          "first_service_ready_count": 0.0,
+          "first_service_wait_max": 0.0,
+          "ready_wait_p50": 5.5,
+          "ready_wait_p95": 15.95,
+          "arrival_quiet_ticks": 5.0
+        }
+      },
+      {
+        "time": 212,
+        "selected": "MLFQ",
+        "active": "MLFQ",
+        "accepted": false,
+        "reason": "arrival_risk",
+        "features": {
+          "ready_count": 9.0,
+          "blocked_count": 0.0,
+          "completed_burst_mean": 8.294117647058824,
+          "completed_burst_variance": 31.972318339100347,
+          "observed_service_mean": 7.863636363636363,
+          "observed_service_variance": 43.57231404958678,
+          "priority_mean": 3,
+          "ready_wait_mean": 11,
+          "ready_wait_max": 26.0,
+          "recent_arrivals": 1.0,
+          "io_returns": 0.0,
+          "io_return_ratio": 0.0,
+          "active_policy_index": 4.0,
+          "dwell_remaining_ticks": 0.0,
+          "first_service_ready_count": 0.0,
+          "first_service_wait_max": 0.0,
+          "ready_wait_p50": 10.0,
+          "ready_wait_p95": 24.0,
+          "arrival_quiet_ticks": 8.0
+        }
+      },
+      {
+        "time": 222,
+        "selected": "MLFQ",
+        "active": "MLFQ",
+        "accepted": false,
+        "reason": "arrival_risk",
+        "features": {
+          "ready_count": 9.0,
+          "blocked_count": 0.0,
+          "completed_burst_mean": 8.222222222222221,
+          "completed_burst_variance": 30.28395061728395,
+          "observed_service_mean": 7.956521739130435,
+          "observed_service_variance": 41.08506616257089,
+          "priority_mean": 3.2222222222222223,
+          "ready_wait_mean": 14.555555555555555,
+          "ready_wait_max": 24.0,
+          "recent_arrivals": 1.0,
+          "io_returns": 0.0,
+          "io_return_ratio": 0.0,
+          "active_policy_index": 4.0,
+          "dwell_remaining_ticks": 0.0,
+          "first_service_ready_count": 0.0,
+          "first_service_wait_max": 0.0,
+          "ready_wait_p50": 15.0,
+          "ready_wait_p95": 23.2,
+          "arrival_quiet_ticks": 6.0
+        }
+      },
+      {
+        "time": 231,
+        "selected": "MLFQ",
+        "active": "MLFQ",
+        "accepted": false,
+        "reason": "arrival_risk",
+        "features": {
+          "ready_count": 9.0,
+          "blocked_count": 0.0,
+          "completed_burst_mean": 8.105263157894736,
+          "completed_burst_variance": 28.93628808864266,
+          "observed_service_mean": 8,
+          "observed_service_variance": 38.666666666666664,
+          "priority_mean": 3.3333333333333335,
+          "ready_wait_mean": 16.77777777777778,
+          "ready_wait_max": 29.0,
+          "recent_arrivals": 1.0,
+          "io_returns": 0.0,
+          "io_return_ratio": 0.0,
+          "active_policy_index": 4.0,
+          "dwell_remaining_ticks": 0.0,
+          "first_service_ready_count": 0.0,
+          "first_service_wait_max": 0.0,
+          "ready_wait_p50": 19.0,
+          "ready_wait_p95": 28.2,
+          "arrival_quiet_ticks": 3.0
+        }
+      },
+      {
+        "time": 243,
+        "selected": "MLFQ",
+        "active": "MLFQ",
+        "accepted": false,
+        "reason": "arrival_risk",
+        "features": {
+          "ready_count": 9.0,
+          "blocked_count": 0.0,
+          "completed_burst_mean": 8.105263157894736,
+          "completed_burst_variance": 28.93628808864266,
+          "observed_service_mean": 8.5,
+          "observed_service_variance": 35.416666666666664,
+          "priority_mean": 3.3333333333333335,
+          "ready_wait_mean": 17.22222222222222,
+          "ready_wait_max": 34.0,
+          "recent_arrivals": 0.0,
+          "io_returns": 0.0,
+          "io_return_ratio": 0.0,
+          "active_policy_index": 4.0,
+          "dwell_remaining_ticks": 0.0,
+          "first_service_ready_count": 0.0,
+          "first_service_wait_max": 0.0,
+          "ready_wait_p50": 15.0,
+          "ready_wait_p95": 32.8,
+          "arrival_quiet_ticks": 15.0
+        }
+      },
+      {
+        "time": 251,
+        "selected": "Priority",
+        "active": "MLFQ",
+        "accepted": false,
+        "reason": "cost_margin",
+        "features": {
+          "ready_count": 9.0,
+          "blocked_count": 0.0,
+          "completed_burst_mean": 8.105263157894736,
+          "completed_burst_variance": 28.93628808864266,
+          "observed_service_mean": 8.833333333333334,
+          "observed_service_variance": 34.30555555555556,
+          "priority_mean": 3.3333333333333335,
+          "ready_wait_mean": 16.666666666666668,
+          "ready_wait_max": 35.0,
+          "recent_arrivals": 0.0,
+          "io_returns": 0.0,
+          "io_return_ratio": 0.0,
+          "active_policy_index": 4.0,
+          "dwell_remaining_ticks": 0.0,
+          "first_service_ready_count": 0.0,
+          "first_service_wait_max": 0.0,
+          "ready_wait_p50": 16.0,
+          "ready_wait_p95": 33.8,
+          "arrival_quiet_ticks": 23.0
+        }
+      },
+      {
+        "time": 263,
+        "selected": "Priority",
+        "active": "MLFQ",
+        "accepted": false,
+        "reason": "cost_margin",
+        "features": {
+          "ready_count": 6.0,
+          "blocked_count": 0.0,
+          "completed_burst_mean": 7.7272727272727275,
+          "completed_burst_variance": 26.107438016528924,
+          "observed_service_mean": 9.333333333333334,
+          "observed_service_variance": 32.72222222222222,
+          "priority_mean": 3.3333333333333335,
+          "ready_wait_mean": 13.333333333333334,
+          "ready_wait_max": 24.0,
+          "recent_arrivals": 0.0,
+          "io_returns": 0.0,
+          "io_return_ratio": 0.0,
+          "active_policy_index": 4.0,
+          "dwell_remaining_ticks": 0.0,
+          "first_service_ready_count": 0.0,
+          "first_service_wait_max": 0.0,
+          "ready_wait_p50": 14.0,
+          "ready_wait_p95": 23.0,
+          "arrival_quiet_ticks": 35.0
+        }
+      },
+      {
+        "time": 273,
+        "selected": "Priority",
+        "active": "MLFQ",
+        "accepted": false,
+        "reason": "cost_margin",
+        "features": {
+          "ready_count": 4.0,
+          "blocked_count": 0.0,
+          "completed_burst_mean": 7.916666666666667,
+          "completed_burst_variance": 24.40972222222222,
+          "observed_service_mean": 9.75,
+          "observed_service_variance": 32.104166666666664,
+          "priority_mean": 2.75,
+          "ready_wait_mean": 12.5,
+          "ready_wait_max": 22.0,
+          "recent_arrivals": 0.0,
+          "io_returns": 0.0,
+          "io_return_ratio": 0.0,
+          "active_policy_index": 4.0,
+          "dwell_remaining_ticks": 0.0,
+          "first_service_ready_count": 0.0,
+          "first_service_wait_max": 0.0,
+          "ready_wait_p50": 14.0,
+          "ready_wait_p95": 21.4,
+          "arrival_quiet_ticks": 45.0
+        }
+      },
+      {
+        "time": 281,
+        "selected": "Priority",
+        "active": "MLFQ",
+        "accepted": false,
+        "reason": "cost_margin",
+        "features": {
+          "ready_count": 3.0,
+          "blocked_count": 1.0,
+          "completed_burst_mean": 8.2,
+          "completed_burst_variance": 25.36,
+          "observed_service_mean": 10.083333333333334,
+          "observed_service_variance": 34.15972222222222,
+          "priority_mean": 2.75,
+          "ready_wait_mean": 10,
+          "ready_wait_max": 18.0,
+          "recent_arrivals": 0.0,
+          "io_returns": 0.0,
+          "io_return_ratio": 0.0,
+          "active_policy_index": 4.0,
+          "dwell_remaining_ticks": 0.0,
+          "first_service_ready_count": 0.0,
+          "first_service_wait_max": 0.0,
+          "ready_wait_p50": 8.0,
+          "ready_wait_p95": 17.0,
+          "arrival_quiet_ticks": 53.0
+        }
+      },
+      {
+        "time": 291,
+        "selected": "Priority",
+        "active": "MLFQ",
+        "accepted": false,
+        "reason": "cost_margin",
+        "features": {
+          "ready_count": 4.0,
+          "blocked_count": 0.0,
+          "completed_burst_mean": 8.2,
+          "completed_burst_variance": 25.36,
+          "observed_service_mean": 10.5,
+          "observed_service_variance": 36.916666666666664,
+          "priority_mean": 2.75,
+          "ready_wait_mean": 2,
+          "ready_wait_max": 6.0,
+          "recent_arrivals": 0.0,
+          "io_returns": 1.0,
+          "io_return_ratio": 1.0,
+          "active_policy_index": 4.0,
+          "dwell_remaining_ticks": 0.0,
+          "first_service_ready_count": 0.0,
+          "first_service_wait_max": 0.0,
+          "ready_wait_p50": 1.0,
+          "ready_wait_p95": 5.399999999999999,
+          "arrival_quiet_ticks": 63.0
+        }
+      },
+      {
+        "time": 302,
+        "selected": "Priority",
+        "active": "MLFQ",
+        "accepted": false,
+        "reason": "cost_margin",
+        "features": {
+          "ready_count": 2.0,
+          "blocked_count": 1.0,
+          "completed_burst_mean": 8.407407407407407,
+          "completed_burst_variance": 28.7599451303155,
+          "observed_service_mean": 10.958333333333334,
+          "observed_service_variance": 42.53993055555556,
+          "priority_mean": 2.6666666666666665,
+          "ready_wait_mean": 5.5,
+          "ready_wait_max": 11.0,
+          "recent_arrivals": 0.0,
+          "io_returns": 0.0,
+          "io_return_ratio": 0.0,
+          "active_policy_index": 4.0,
+          "dwell_remaining_ticks": 0.0,
+          "first_service_ready_count": 0.0,
+          "first_service_wait_max": 0.0,
+          "ready_wait_p50": 5.5,
+          "ready_wait_p95": 10.45,
+          "arrival_quiet_ticks": 74.0
+        }
+      },
+      {
+        "time": 316,
+        "selected": "Priority",
+        "active": "MLFQ",
+        "accepted": false,
+        "reason": "cost_margin",
+        "features": {
+          "ready_count": 1.0,
+          "blocked_count": 1.0,
+          "completed_burst_mean": 9,
+          "completed_burst_variance": 38,
+          "observed_service_mean": 11.25,
+          "observed_service_variance": 47.4375,
+          "priority_mean": 2.5,
+          "ready_wait_mean": 0,
+          "ready_wait_max": 0.0,
+          "recent_arrivals": 0.0,
+          "io_returns": 2.0,
+          "io_return_ratio": 1.0,
+          "active_policy_index": 4.0,
+          "dwell_remaining_ticks": 0.0,
+          "first_service_ready_count": 0.0,
+          "first_service_wait_max": 0.0,
+          "ready_wait_p50": 0.0,
+          "ready_wait_p95": 0.0,
+          "arrival_quiet_ticks": 88.0
+        }
+      },
+      {
+        "time": 325,
+        "selected": "Priority",
+        "active": "MLFQ",
+        "accepted": false,
+        "reason": "cost_margin",
+        "features": {
+          "ready_count": 1.0,
+          "blocked_count": 0.0,
+          "completed_burst_mean": 8.870967741935484,
+          "completed_burst_variance": 37.27367325702394,
+          "observed_service_mean": 11.458333333333334,
+          "observed_service_variance": 52.08159722222222,
+          "priority_mean": 3,
+          "ready_wait_mean": 0,
+          "ready_wait_max": 0.0,
+          "recent_arrivals": 0.0,
+          "io_returns": 1.0,
+          "io_return_ratio": 1.0,
+          "active_policy_index": 4.0,
+          "dwell_remaining_ticks": 0.0,
+          "first_service_ready_count": 0.0,
+          "first_service_wait_max": 0.0,
+          "ready_wait_p50": 0.0,
+          "ready_wait_p95": 0.0,
+          "arrival_quiet_ticks": 97.0
+        }
+      }
+    ],
+    "dynamic_timeline": [
+      [
+        "P1",
+        13,
+        14
+      ],
+      [
+        "P1",
+        14,
+        16
+      ],
+      [
+        "P1",
+        16,
+        20
+      ],
+      [
+        "P1",
+        20,
+        23
+      ],
+      [
+        "P2",
+        23,
+        24
+      ],
+      [
+        "P2",
+        24,
+        26
+      ],
+      [
+        "P1",
+        26,
+        27
+      ],
+      [
+        "P2",
+        27,
+        28
+      ],
+      [
+        "P3",
+        28,
+        29
+      ],
+      [
+        "P3",
+        29,
+        31
+      ],
+      [
+        "P4",
+        31,
+        32
+      ],
+      [
+        "P4",
+        32,
+        34
+      ],
+      [
+        "P1",
+        34,
+        38
+      ],
+      [
+        "P2",
+        38,
+        41
+      ],
+      [
+        "P3",
+        41,
+        44
+      ],
+      [
+        "P4",
+        44,
+        48
+      ],
+      [
+        "P1",
+        48,
+        52
+      ],
+      [
+        "P2",
+        52,
+        56
+      ],
+      [
+        "P1",
+        56,
+        59
+      ],
+      [
+        "P5",
+        59,
+        71
+      ],
+      [
+        "P4",
+        71,
+        80
+      ],
+      [
+        "P1",
+        80,
+        81
+      ],
+      [
+        "P6",
+        81,
+        82
+      ],
+      [
+        "P1",
+        82,
+        84
+      ],
+      [
+        "P6",
+        84,
+        85
+      ],
+      [
+        "P1",
+        85,
+        86
+      ],
+      [
+        "P4",
+        88,
+        89
+      ],
+      [
+        "P4",
+        89,
+        91
+      ],
+      [
+        "P4",
+        91,
+        92
+      ],
+      [
+        "P7",
+        103,
+        104
+      ],
+      [
+        "P7",
+        104,
+        106
+      ],
+      [
+        "P7",
+        106,
+        110
+      ],
+      [
+        "P7",
+        110,
+        114
+      ],
+      [
+        "P7",
+        114,
+        118
+      ],
+      [
+        "P8",
+        118,
+        119
+      ],
+      [
+        "P8",
+        119,
+        121
+      ],
+      [
+        "P8",
+        121,
+        125
+      ],
+      [
+        "P8",
+        125,
+        127
+      ],
+      [
+        "P9",
+        127,
+        128
+      ],
+      [
+        "P7",
+        128,
+        129
+      ],
+      [
+        "P10",
+        129,
+        130
+      ],
+      [
+        "P9",
+        130,
+        132
+      ],
+      [
+        "P7",
+        132,
+        134
+      ],
+      [
+        "P10",
+        134,
+        136
+      ],
+      [
+        "P8",
+        136,
+        137
+      ],
+      [
+        "P9",
+        137,
+        138
+      ],
+      [
+        "P10",
+        138,
+        142
+      ],
+      [
+        "P10",
+        142,
+        146
+      ],
+      [
+        "P10",
+        146,
+        149
+      ],
+      [
+        "P10",
+        162,
+        163
+      ],
+      [
+        "P10",
+        163,
+        164
+      ],
+      [
+        "P11",
+        164,
+        165
+      ],
+      [
+        "P10",
+        165,
+        166
+      ],
+      [
+        "P11",
+        166,
+        168
+      ],
+      [
+        "P12",
+        168,
+        169
+      ],
+      [
+        "P12",
+        169,
+        170
+      ],
+      [
+        "P13",
+        170,
+        171
+      ],
+      [
+        "P12",
+        171,
+        172
+      ],
+      [
+        "P13",
+        172,
+        174
+      ],
+      [
+        "P12",
+        174,
+        176
+      ],
+      [
+        "P14",
+        176,
+        177
+      ],
+      [
+        "P15",
+        177,
+        178
+      ],
+      [
+        "P14",
+        178,
+        180
+      ],
+      [
+        "P15",
+        180,
+        182
+      ],
+      [
+        "P13",
+        182,
+        183
+      ],
+      [
+        "P16",
+        183,
+        184
+      ],
+      [
+        "P16",
+        184,
+        186
+      ],
+      [
+        "P12",
+        186,
+        187
+      ],
+      [
+        "P14",
+        187,
+        190
+      ],
+      [
+        "P15",
+        190,
+        191
+      ],
+      [
+        "P17",
+        191,
+        192
+      ],
+      [
+        "P18",
+        192,
+        193
+      ],
+      [
+        "P19",
+        193,
+        194
+      ],
+      [
+        "P20",
+        194,
+        195
+      ],
+      [
+        "P21",
+        195,
+        196
+      ],
+      [
+        "P17",
+        196,
+        198
+      ],
+      [
+        "P18",
+        198,
+        200
+      ],
+      [
+        "P19",
+        200,
+        202
+      ],
+      [
+        "P20",
+        202,
+        204
+      ],
+      [
+        "P22",
+        204,
+        205
+      ],
+      [
+        "P21",
+        205,
+        207
+      ],
+      [
+        "P22",
+        207,
+        209
+      ],
+      [
+        "P13",
+        209,
+        212
+      ],
+      [
+        "P16",
+        212,
+        216
+      ],
+      [
+        "P23",
+        216,
+        217
+      ],
+      [
+        "P23",
+        217,
+        219
+      ],
+      [
+        "P15",
+        219,
+        222
+      ],
+      [
+        "P17",
+        222,
+        225
+      ],
+      [
+        "P18",
+        225,
+        228
+      ],
+      [
+        "P24",
+        228,
+        229
+      ],
+      [
+        "P24",
+        229,
+        231
+      ],
+      [
+        "P19",
+        231,
+        235
+      ],
+      [
+        "P20",
+        235,
+        239
+      ],
+      [
+        "P21",
+        239,
+        243
+      ],
+      [
+        "P22",
+        243,
+        247
+      ],
+      [
+        "P13",
+        247,
+        251
+      ],
+      [
+        "P16",
+        251,
+        255
+      ],
+      [
+        "P23",
+        255,
+        257
+      ],
+      [
+        "P18",
+        257,
+        258
+      ],
+      [
+        "P24",
+        258,
+        259
+      ],
+      [
+        "P19",
+        259,
+        263
+      ],
+      [
+        "P20",
+        263,
+        267
+      ],
+      [
+        "P21",
+        267,
+        269
+      ],
+      [
+        "P22",
+        269,
+        273
+      ],
+      [
+        "P13",
+        273,
+        277
+      ],
+      [
+        "P16",
+        277,
+        281
+      ],
+      [
+        "P19",
+        281,
+        285
+      ],
+      [
+        "P22",
+        285,
+        289
+      ],
+      [
+        "P13",
+        289,
+        291
+      ],
+      [
+        "P16",
+        291,
+        292
+      ],
+      [
+        "P16",
+        292,
+        294
+      ],
+      [
+        "P19",
+        294,
+        298
+      ],
+      [
+        "P22",
+        298,
+        302
+      ],
+      [
+        "P13",
+        302,
+        304
+      ],
+      [
+        "P22",
+        304,
+        306
+      ],
+      [
+        "P19",
+        306,
+        307
+      ],
+      [
+        "P13",
+        307,
+        308
+      ],
+      [
+        "P22",
+        308,
+        309
+      ],
+      [
+        "P13",
+        316,
+        317
+      ],
+      [
+        "P13",
+        317,
+        319
+      ],
+      [
+        "P13",
+        319,
+        321
+      ],
+      [
+        "P22",
+        325,
+        326
+      ],
+      [
+        "P22",
+        326,
+        327
+      ]
+    ],
+    "baseline_timeline": [
+      [
+        "P1",
+        13,
+        14
+      ],
+      [
+        "P1",
+        14,
+        16
+      ],
+      [
+        "P1",
+        16,
+        20
+      ],
+      [
+        "P1",
+        20,
+        23
+      ],
+      [
+        "P2",
+        23,
+        24
+      ],
+      [
+        "P2",
+        24,
+        26
+      ],
+      [
+        "P1",
+        26,
+        27
+      ],
+      [
+        "P2",
+        27,
+        28
+      ],
+      [
+        "P3",
+        28,
+        29
+      ],
+      [
+        "P3",
+        29,
+        31
+      ],
+      [
+        "P4",
+        31,
+        32
+      ],
+      [
+        "P4",
+        32,
+        34
+      ],
+      [
+        "P1",
+        34,
+        38
+      ],
+      [
+        "P2",
+        38,
+        41
+      ],
+      [
+        "P3",
+        41,
+        44
+      ],
+      [
+        "P4",
+        44,
+        48
+      ],
+      [
+        "P1",
+        48,
+        52
+      ],
+      [
+        "P2",
+        52,
+        54
+      ],
+      [
+        "P5",
+        54,
+        55
+      ],
+      [
+        "P5",
+        55,
+        57
+      ],
+      [
+        "P4",
+        57,
+        61
+      ],
+      [
+        "P1",
+        61,
+        64
+      ],
+      [
+        "P2",
+        64,
+        66
+      ],
+      [
+        "P5",
+        66,
+        70
+      ],
+      [
+        "P4",
+        70,
+        74
+      ],
+      [
+        "P5",
+        74,
+        78
+      ],
+      [
+        "P4",
+        78,
+        79
+      ],
+      [
+        "P1",
+        79,
+        80
+      ],
+      [
+        "P6",
+        80,
+        81
+      ],
+      [
+        "P1",
+        81,
+        83
+      ],
+      [
+        "P6",
+        83,
+        84
+      ],
+      [
+        "P5",
+        84,
+        85
+      ],
+      [
+        "P1",
+        85,
+        86
+      ],
+      [
+        "P4",
+        87,
+        88
+      ],
+      [
+        "P4",
+        88,
+        90
+      ],
+      [
+        "P4",
+        90,
+        91
+      ],
+      [
+        "P7",
+        103,
+        104
+      ],
+      [
+        "P7",
+        104,
+        106
+      ],
+      [
+        "P7",
+        106,
+        110
+      ],
+      [
+        "P7",
+        110,
+        114
+      ],
+      [
+        "P7",
+        114,
+        118
+      ],
+      [
+        "P8",
+        118,
+        119
+      ],
+      [
+        "P8",
+        119,
+        121
+      ],
+      [
+        "P8",
+        121,
+        125
+      ],
+      [
+        "P8",
+        125,
+        127
+      ],
+      [
+        "P9",
+        127,
+        128
+      ],
+      [
+        "P7",
+        128,
+        129
+      ],
+      [
+        "P10",
+        129,
+        130
+      ],
+      [
+        "P9",
+        130,
+        132
+      ],
+      [
+        "P7",
+        132,
+        134
+      ],
+      [
+        "P10",
+        134,
+        136
+      ],
+      [
+        "P8",
+        136,
+        137
+      ],
+      [
+        "P9",
+        137,
+        138
+      ],
+      [
+        "P10",
+        138,
+        142
+      ],
+      [
+        "P10",
+        142,
+        146
+      ],
+      [
+        "P10",
+        146,
+        149
+      ],
+      [
+        "P10",
+        162,
+        163
+      ],
+      [
+        "P10",
+        163,
+        164
+      ],
+      [
+        "P11",
+        164,
+        165
+      ],
+      [
+        "P10",
+        165,
+        166
+      ],
+      [
+        "P11",
+        166,
+        168
+      ],
+      [
+        "P12",
+        168,
+        169
+      ],
+      [
+        "P12",
+        169,
+        170
+      ],
+      [
+        "P13",
+        170,
+        171
+      ],
+      [
+        "P12",
+        171,
+        172
+      ],
+      [
+        "P13",
+        172,
+        174
+      ],
+      [
+        "P12",
+        174,
+        176
+      ],
+      [
+        "P14",
+        176,
+        177
+      ],
+      [
+        "P15",
+        177,
+        178
+      ],
+      [
+        "P14",
+        178,
+        180
+      ],
+      [
+        "P15",
+        180,
+        182
+      ],
+      [
+        "P13",
+        182,
+        183
+      ],
+      [
+        "P16",
+        183,
+        184
+      ],
+      [
+        "P16",
+        184,
+        186
+      ],
+      [
+        "P12",
+        186,
+        187
+      ],
+      [
+        "P14",
+        187,
+        190
+      ],
+      [
+        "P15",
+        190,
+        191
+      ],
+      [
+        "P17",
+        191,
+        192
+      ],
+      [
+        "P18",
+        192,
+        193
+      ],
+      [
+        "P19",
+        193,
+        194
+      ],
+      [
+        "P20",
+        194,
+        195
+      ],
+      [
+        "P21",
+        195,
+        196
+      ],
+      [
+        "P17",
+        196,
+        198
+      ],
+      [
+        "P18",
+        198,
+        200
+      ],
+      [
+        "P19",
+        200,
+        202
+      ],
+      [
+        "P20",
+        202,
+        204
+      ],
+      [
+        "P22",
+        204,
+        205
+      ],
+      [
+        "P21",
+        205,
+        207
+      ],
+      [
+        "P22",
+        207,
+        209
+      ],
+      [
+        "P13",
+        209,
+        212
+      ],
+      [
+        "P16",
+        212,
+        216
+      ],
+      [
+        "P23",
+        216,
+        217
+      ],
+      [
+        "P23",
+        217,
+        219
+      ],
+      [
+        "P15",
+        219,
+        222
+      ],
+      [
+        "P17",
+        222,
+        225
+      ],
+      [
+        "P18",
+        225,
+        228
+      ],
+      [
+        "P24",
+        228,
+        229
+      ],
+      [
+        "P24",
+        229,
+        231
+      ],
+      [
+        "P19",
+        231,
+        235
+      ],
+      [
+        "P20",
+        235,
+        239
+      ],
+      [
+        "P21",
+        239,
+        243
+      ],
+      [
+        "P22",
+        243,
+        247
+      ],
+      [
+        "P13",
+        247,
+        251
+      ],
+      [
+        "P16",
+        251,
+        255
+      ],
+      [
+        "P23",
+        255,
+        257
+      ],
+      [
+        "P18",
+        257,
+        258
+      ],
+      [
+        "P24",
+        258,
+        259
+      ],
+      [
+        "P19",
+        259,
+        263
+      ],
+      [
+        "P20",
+        263,
+        267
+      ],
+      [
+        "P21",
+        267,
+        269
+      ],
+      [
+        "P22",
+        269,
+        273
+      ],
+      [
+        "P13",
+        273,
+        277
+      ],
+      [
+        "P16",
+        277,
+        281
+      ],
+      [
+        "P19",
+        281,
+        285
+      ],
+      [
+        "P22",
+        285,
+        289
+      ],
+      [
+        "P13",
+        289,
+        291
+      ],
+      [
+        "P16",
+        291,
+        292
+      ],
+      [
+        "P16",
+        292,
+        294
+      ],
+      [
+        "P19",
+        294,
+        298
+      ],
+      [
+        "P22",
+        298,
+        302
+      ],
+      [
+        "P13",
+        302,
+        304
+      ],
+      [
+        "P22",
+        304,
+        306
+      ],
+      [
+        "P19",
+        306,
+        307
+      ],
+      [
+        "P13",
+        307,
+        308
+      ],
+      [
+        "P22",
+        308,
+        309
+      ],
+      [
+        "P13",
+        316,
+        317
+      ],
+      [
+        "P13",
+        317,
+        319
+      ],
+      [
+        "P13",
+        319,
+        321
+      ],
+      [
+        "P22",
+        325,
+        326
+      ],
+      [
+        "P22",
+        326,
+        327
+      ]
+    ]
+  },
+  {
+    "seed": 9703000085,
+    "family": "sustained_arrivals",
+    "p95": 19.29999999999999,
+    "baseline_p95": 1.0,
+    "witnesses": [
+      {
+        "departure": 43,
+        "observed_arrival_timestamps": [
+          6
+        ],
+        "observed_ready_count": 1.0,
+        "observed_first_service_ready_count": 0.0,
+        "quiet_ticks": 37.0,
+        "v6_would_block": true
+      }
+    ],
+    "processes": [
+      {
+        "pid": "P1",
+        "arrival": 6,
+        "first_dispatch": 6,
+        "response": 0,
+        "baseline_first_dispatch": 6,
+        "baseline_response": 0,
+        "crosses_baseline_p95": false
+      },
+      {
+        "pid": "P2",
+        "arrival": 46,
+        "first_dispatch": 46,
+        "response": 0,
+        "baseline_first_dispatch": 46,
+        "baseline_response": 0,
+        "crosses_baseline_p95": false
+      },
+      {
+        "pid": "P3",
+        "arrival": 53,
+        "first_dispatch": 54,
+        "response": 1,
+        "baseline_first_dispatch": 53,
+        "baseline_response": 0,
+        "crosses_baseline_p95": false
+      },
+      {
+        "pid": "P6",
+        "arrival": 58,
+        "first_dispatch": 62,
+        "response": 4,
+        "baseline_first_dispatch": 58,
+        "baseline_response": 0,
+        "crosses_baseline_p95": true
+      },
+      {
+        "pid": "P12",
+        "arrival": 91,
+        "first_dispatch": 91,
+        "response": 0,
+        "baseline_first_dispatch": 91,
+        "baseline_response": 0,
+        "crosses_baseline_p95": false
+      },
+      {
+        "pid": "P5",
+        "arrival": 54,
+        "first_dispatch": 81,
+        "response": 27,
+        "baseline_first_dispatch": 55,
+        "baseline_response": 1,
+        "crosses_baseline_p95": true
+      },
+      {
+        "pid": "P4",
+        "arrival": 53,
+        "first_dispatch": 64,
+        "response": 11,
+        "baseline_first_dispatch": 54,
+        "baseline_response": 1,
+        "crosses_baseline_p95": true
+      },
+      {
+        "pid": "P8",
+        "arrival": 75,
+        "first_dispatch": 83,
+        "response": 8,
+        "baseline_first_dispatch": 75,
+        "baseline_response": 0,
+        "crosses_baseline_p95": true
+      },
+      {
+        "pid": "P9",
+        "arrival": 76,
+        "first_dispatch": 84,
+        "response": 8,
+        "baseline_first_dispatch": 76,
+        "baseline_response": 0,
+        "crosses_baseline_p95": true
+      },
+      {
+        "pid": "P11",
+        "arrival": 82,
+        "first_dispatch": 86,
+        "response": 4,
+        "baseline_first_dispatch": 82,
+        "baseline_response": 0,
+        "crosses_baseline_p95": true
+      },
+      {
+        "pid": "P10",
+        "arrival": 79,
+        "first_dispatch": 85,
+        "response": 6,
+        "baseline_first_dispatch": 79,
+        "baseline_response": 0,
+        "crosses_baseline_p95": true
+      },
+      {
+        "pid": "P7",
+        "arrival": 69,
+        "first_dispatch": 82,
+        "response": 13,
+        "baseline_first_dispatch": 69,
+        "baseline_response": 0,
+        "crosses_baseline_p95": true
+      }
+    ],
+    "decisions": [
+      {
+        "time": 13,
+        "selected": "MLFQ",
+        "active": "MLFQ",
+        "accepted": false,
+        "reason": "arrival_risk",
+        "features": {
+          "ready_count": 1.0,
+          "blocked_count": 0.0,
+          "completed_burst_mean": 0.0,
+          "completed_burst_variance": 0.0,
+          "observed_service_mean": 7,
+          "observed_service_variance": 0,
+          "priority_mean": 5,
+          "ready_wait_mean": 0,
+          "ready_wait_max": 0.0,
+          "recent_arrivals": 1.0,
+          "io_returns": 0.0,
+          "io_return_ratio": 0.0,
+          "active_policy_index": 4.0,
+          "dwell_remaining_ticks": 7.0,
+          "first_service_ready_count": 0.0,
+          "first_service_wait_max": 0.0,
+          "ready_wait_p50": 0.0,
+          "ready_wait_p95": 0.0,
+          "arrival_quiet_ticks": 7.0
+        }
+      },
+      {
+        "time": 21,
+        "selected": "MLFQ",
+        "active": "MLFQ",
+        "accepted": false,
+        "reason": "arrival_risk",
+        "features": {
+          "ready_count": 1.0,
+          "blocked_count": 0.0,
+          "completed_burst_mean": 0.0,
+          "completed_burst_variance": 0.0,
+          "observed_service_mean": 15,
+          "observed_service_variance": 0,
+          "priority_mean": 5,
+          "ready_wait_mean": 0,
+          "ready_wait_max": 0.0,
+          "recent_arrivals": 0.0,
+          "io_returns": 0.0,
+          "io_return_ratio": 0.0,
+          "active_policy_index": 4.0,
+          "dwell_remaining_ticks": 0.0,
+          "first_service_ready_count": 0.0,
+          "first_service_wait_max": 0.0,
+          "ready_wait_p50": 0.0,
+          "ready_wait_p95": 0.0,
+          "arrival_quiet_ticks": 15.0
+        }
+      },
+      {
+        "time": 43,
+        "selected": "Priority",
+        "active": "Priority",
+        "accepted": true,
+        "reason": "accepted",
+        "features": {
+          "ready_count": 1.0,
+          "blocked_count": 0.0,
+          "completed_burst_mean": 21,
+          "completed_burst_variance": 0,
+          "observed_service_mean": 21,
+          "observed_service_variance": 0,
+          "priority_mean": 5,
+          "ready_wait_mean": 0,
+          "ready_wait_max": 0.0,
+          "recent_arrivals": 0.0,
+          "io_returns": 1.0,
+          "io_return_ratio": 1.0,
+          "active_policy_index": 4.0,
+          "dwell_remaining_ticks": 0.0,
+          "first_service_ready_count": 0.0,
+          "first_service_wait_max": 0.0,
+          "ready_wait_p50": 0.0,
+          "ready_wait_p95": 0.0,
+          "arrival_quiet_ticks": 37.0
+        }
+      },
+      {
+        "time": 54,
+        "selected": "MLFQ",
+        "active": "Priority",
+        "accepted": false,
+        "reason": "response_dwell_blocked",
+        "features": {
+          "ready_count": 3.0,
+          "blocked_count": 0.0,
+          "completed_burst_mean": 10,
+          "completed_burst_variance": 68.66666666666667,
+          "observed_service_mean": 15,
+          "observed_service_variance": 49,
+          "priority_mean": 3.6666666666666665,
+          "ready_wait_mean": 0.6666666666666666,
+          "ready_wait_max": 1.0,
+          "recent_arrivals": 4.0,
+          "io_returns": 0.0,
+          "io_return_ratio": 0.0,
+          "active_policy_index": 2.0,
+          "dwell_remaining_ticks": 9.0,
+          "first_service_ready_count": 3.0,
+          "first_service_wait_max": 1.0,
+          "ready_wait_p50": 1.0,
+          "ready_wait_p95": 1.0,
+          "arrival_quiet_ticks": 0.0
+        }
+      },
+      {
+        "time": 62,
+        "selected": "MLFQ",
+        "active": "Priority",
+        "accepted": false,
+        "reason": "response_dwell_blocked",
+        "features": {
+          "ready_count": 3.0,
+          "blocked_count": 0.0,
+          "completed_burst_mean": 9.5,
+          "completed_burst_variance": 52.25,
+          "observed_service_mean": 12.666666666666666,
+          "observed_service_variance": 43.55555555555556,
+          "priority_mean": 4.666666666666667,
+          "ready_wait_mean": 7,
+          "ready_wait_max": 9.0,
+          "recent_arrivals": 1.0,
+          "io_returns": 0.0,
+          "io_return_ratio": 0.0,
+          "active_policy_index": 2.0,
+          "dwell_remaining_ticks": 1.0,
+          "first_service_ready_count": 3.0,
+          "first_service_wait_max": 9.0,
+          "ready_wait_p50": 8.0,
+          "ready_wait_p95": 8.9,
+          "arrival_quiet_ticks": 4.0
+        }
+      },
+      {
+        "time": 81,
+        "selected": "MLFQ",
+        "active": "MLFQ",
+        "accepted": true,
+        "reason": "excursion_expired",
+        "features": {
+          "ready_count": 5.0,
+          "blocked_count": 1.0,
+          "completed_burst_mean": 9.5,
+          "completed_burst_variance": 53.583333333333336,
+          "observed_service_mean": 11.4,
+          "observed_service_variance": 51.04,
+          "priority_mean": 3.8333333333333335,
+          "ready_wait_mean": 10.4,
+          "ready_wait_max": 27.0,
+          "recent_arrivals": 4.0,
+          "io_returns": 0.0,
+          "io_return_ratio": 0.0,
+          "active_policy_index": 2.0,
+          "dwell_remaining_ticks": 0.0,
+          "first_service_ready_count": 5.0,
+          "first_service_wait_max": 27.0,
+          "ready_wait_p50": 6.0,
+          "ready_wait_p95": 23.999999999999996,
+          "arrival_quiet_ticks": 2.0
+        }
+      },
+      {
+        "time": 91,
+        "selected": "FCFS",
+        "active": "MLFQ",
+        "accepted": false,
+        "reason": "first_service_protection",
+        "features": {
+          "ready_count": 7.0,
+          "blocked_count": 1.0,
+          "completed_burst_mean": 9.5,
+          "completed_burst_variance": 53.583333333333336,
+          "observed_service_mean": 6.090909090909091,
+          "observed_service_variance": 47.17355371900826,
+          "priority_mean": 3.625,
+          "ready_wait_mean": 3.4285714285714284,
+          "ready_wait_max": 7.0,
+          "recent_arrivals": 2.0,
+          "io_returns": 0.0,
+          "io_return_ratio": 0.0,
+          "active_policy_index": 4.0,
+          "dwell_remaining_ticks": 10.0,
+          "first_service_ready_count": 1.0,
+          "first_service_wait_max": 0.0,
+          "ready_wait_p50": 4.0,
+          "ready_wait_p95": 6.699999999999999,
+          "arrival_quiet_ticks": 0.0
+        }
+      },
+      {
+        "time": 100,
+        "selected": "MLFQ",
+        "active": "MLFQ",
+        "accepted": false,
+        "reason": "arrival_risk",
+        "features": {
+          "ready_count": 8.0,
+          "blocked_count": 0.0,
+          "completed_burst_mean": 9.5,
+          "completed_burst_variance": 53.583333333333336,
+          "observed_service_mean": 6.333333333333333,
+          "observed_service_variance": 42.388888888888886,
+          "priority_mean": 3.625,
+          "ready_wait_mean": 5.375,
+          "ready_wait_max": 11.0,
+          "recent_arrivals": 0.0,
+          "io_returns": 1.0,
+          "io_return_ratio": 1.0,
+          "active_policy_index": 4.0,
+          "dwell_remaining_ticks": 1.0,
+          "first_service_ready_count": 0.0,
+          "first_service_wait_max": 0.0,
+          "ready_wait_p50": 5.0,
+          "ready_wait_p95": 10.299999999999999,
+          "arrival_quiet_ticks": 9.0
+        }
+      },
+      {
+        "time": 111,
+        "selected": "Priority",
+        "active": "MLFQ",
+        "accepted": false,
+        "reason": "cost_margin",
+        "features": {
+          "ready_count": 6.0,
+          "blocked_count": 0.0,
+          "completed_burst_mean": 8.125,
+          "completed_burst_variance": 46.109375,
+          "observed_service_mean": 7.25,
+          "observed_service_variance": 42.020833333333336,
+          "priority_mean": 3.6666666666666665,
+          "ready_wait_mean": 9.5,
+          "ready_wait_max": 17.0,
+          "recent_arrivals": 0.0,
+          "io_returns": 0.0,
+          "io_return_ratio": 0.0,
+          "active_policy_index": 4.0,
+          "dwell_remaining_ticks": 0.0,
+          "first_service_ready_count": 0.0,
+          "first_service_wait_max": 0.0,
+          "ready_wait_p50": 9.5,
+          "ready_wait_p95": 16.5,
+          "arrival_quiet_ticks": 20.0
+        }
+      },
+      {
+        "time": 123,
+        "selected": "Priority",
+        "active": "MLFQ",
+        "accepted": false,
+        "reason": "cost_margin",
+        "features": {
+          "ready_count": 6.0,
+          "blocked_count": 0.0,
+          "completed_burst_mean": 8.125,
+          "completed_burst_variance": 46.109375,
+          "observed_service_mean": 8.25,
+          "observed_service_variance": 36.520833333333336,
+          "priority_mean": 3.6666666666666665,
+          "ready_wait_mean": 10.333333333333334,
+          "ready_wait_max": 20.0,
+          "recent_arrivals": 0.0,
+          "io_returns": 0.0,
+          "io_return_ratio": 0.0,
+          "active_policy_index": 4.0,
+          "dwell_remaining_ticks": 0.0,
+          "first_service_ready_count": 0.0,
+          "first_service_wait_max": 0.0,
+          "ready_wait_p50": 10.0,
+          "ready_wait_p95": 19.5,
+          "arrival_quiet_ticks": 32.0
+        }
+      },
+      {
+        "time": 133,
+        "selected": "Priority",
+        "active": "MLFQ",
+        "accepted": false,
+        "reason": "cost_margin",
+        "features": {
+          "ready_count": 5.0,
+          "blocked_count": 0.0,
+          "completed_burst_mean": 7.777777777777778,
+          "completed_burst_variance": 41.95061728395062,
+          "observed_service_mean": 9.083333333333334,
+          "observed_service_variance": 38.40972222222222,
+          "priority_mean": 3.4,
+          "ready_wait_mean": 9.6,
+          "ready_wait_max": 18.0,
+          "recent_arrivals": 0.0,
+          "io_returns": 0.0,
+          "io_return_ratio": 0.0,
+          "active_policy_index": 4.0,
+          "dwell_remaining_ticks": 0.0,
+          "first_service_ready_count": 0.0,
+          "first_service_wait_max": 0.0,
+          "ready_wait_p50": 10.0,
+          "ready_wait_p95": 17.2,
+          "arrival_quiet_ticks": 42.0
+        }
+      },
+      {
+        "time": 140,
+        "selected": "Priority",
+        "active": "MLFQ",
+        "accepted": false,
+        "reason": "cost_margin",
+        "features": {
+          "ready_count": 2.0,
+          "blocked_count": 0.0,
+          "completed_burst_mean": 8.166666666666666,
+          "completed_burst_variance": 32.138888888888886,
+          "observed_service_mean": 9.666666666666666,
+          "observed_service_variance": 37.22222222222222,
+          "priority_mean": 4,
+          "ready_wait_mean": 10,
+          "ready_wait_max": 13.0,
+          "recent_arrivals": 0.0,
+          "io_returns": 0.0,
+          "io_return_ratio": 0.0,
+          "active_policy_index": 4.0,
+          "dwell_remaining_ticks": 0.0,
+          "first_service_ready_count": 0.0,
+          "first_service_wait_max": 0.0,
+          "ready_wait_p50": 10.0,
+          "ready_wait_p95": 12.7,
+          "arrival_quiet_ticks": 49.0
+        }
+      },
+      {
+        "time": 150,
+        "selected": "Priority",
+        "active": "MLFQ",
+        "accepted": false,
+        "reason": "cost_margin",
+        "features": {
+          "ready_count": 1.0,
+          "blocked_count": 1.0,
+          "completed_burst_mean": 8.538461538461538,
+          "completed_burst_variance": 31.325443786982248,
+          "observed_service_mean": 10.5,
+          "observed_service_variance": 39.083333333333336,
+          "priority_mean": 4,
+          "ready_wait_mean": 2,
+          "ready_wait_max": 2.0,
+          "recent_arrivals": 0.0,
+          "io_returns": 0.0,
+          "io_return_ratio": 0.0,
+          "active_policy_index": 4.0,
+          "dwell_remaining_ticks": 0.0,
+          "first_service_ready_count": 0.0,
+          "first_service_wait_max": 0.0,
+          "ready_wait_p50": 2.0,
+          "ready_wait_p95": 2.0,
+          "arrival_quiet_ticks": 59.0
+        }
+      },
+      {
+        "time": 164,
+        "selected": "Priority",
+        "active": "MLFQ",
+        "accepted": false,
+        "reason": "cost_margin",
+        "features": {
+          "ready_count": 1.0,
+          "blocked_count": 1.0,
+          "completed_burst_mean": 9.571428571428571,
+          "completed_burst_variance": 42.95918367346939,
+          "observed_service_mean": 11.166666666666666,
+          "observed_service_variance": 49.97222222222222,
+          "priority_mean": 4,
+          "ready_wait_mean": 0,
+          "ready_wait_max": 0.0,
+          "recent_arrivals": 0.0,
+          "io_returns": 1.0,
+          "io_return_ratio": 1.0,
+          "active_policy_index": 4.0,
+          "dwell_remaining_ticks": 0.0,
+          "first_service_ready_count": 0.0,
+          "first_service_wait_max": 0.0,
+          "ready_wait_p50": 0.0,
+          "ready_wait_p95": 0.0,
+          "arrival_quiet_ticks": 73.0
+        }
+      },
+      {
+        "time": 174,
+        "selected": "Priority",
+        "active": "MLFQ",
+        "accepted": false,
+        "reason": "cost_margin",
+        "features": {
+          "ready_count": 1.0,
+          "blocked_count": 0.0,
+          "completed_burst_mean": 9,
+          "completed_burst_variance": 44.666666666666664,
+          "observed_service_mean": 11.25,
+          "observed_service_variance": 50.354166666666664,
+          "priority_mean": 4,
+          "ready_wait_mean": 0,
+          "ready_wait_max": 0.0,
+          "recent_arrivals": 0.0,
+          "io_returns": 1.0,
+          "io_return_ratio": 1.0,
+          "active_policy_index": 4.0,
+          "dwell_remaining_ticks": 0.0,
+          "first_service_ready_count": 0.0,
+          "first_service_wait_max": 0.0,
+          "ready_wait_p50": 0.0,
+          "ready_wait_p95": 0.0,
+          "arrival_quiet_ticks": 83.0
+        }
+      }
+    ],
+    "dynamic_timeline": [
+      [
+        "P1",
+        6,
+        7
+      ],
+      [
+        "P1",
+        7,
+        9
+      ],
+      [
+        "P1",
+        9,
+        13
+      ],
+      [
+        "P1",
+        13,
+        17
+      ],
+      [
+        "P1",
+        17,
+        21
+      ],
+      [
+        "P1",
+        21,
+        25
+      ],
+      [
+        "P1",
+        25,
+        27
+      ],
+      [
+        "P1",
+        43,
+        44
+      ],
+      [
+        "P2",
+        46,
+        54
+      ],
+      [
+        "P3",
+        54,
+        62
+      ],
+      [
+        "P6",
+        62,
+        64
+      ],
+      [
+        "P4",
+        64,
+        81
+      ],
+      [
+        "P5",
+        81,
+        82
+      ],
+      [
+        "P7",
+        82,
+        83
+      ],
+      [
+        "P8",
+        83,
+        84
+      ],
+      [
+        "P9",
+        84,
+        85
+      ],
+      [
+        "P10",
+        85,
+        86
+      ],
+      [
+        "P11",
+        86,
+        87
+      ],
+      [
+        "P5",
+        87,
+        89
+      ],
+      [
+        "P7",
+        89,
+        91
+      ],
+      [
+        "P12",
+        91,
+        92
+      ],
+      [
+        "P8",
+        92,
+        94
+      ],
+      [
+        "P9",
+        94,
+        96
+      ],
+      [
+        "P10",
+        96,
+        97
+      ],
+      [
+        "P4",
+        97,
+        98
+      ],
+      [
+        "P11",
+        98,
+        100
+      ],
+      [
+        "P12",
+        100,
+        102
+      ],
+      [
+        "P10",
+        102,
+        103
+      ],
+      [
+        "P4",
+        103,
+        105
+      ],
+      [
+        "P5",
+        105,
+        107
+      ],
+      [
+        "P7",
+        107,
+        111
+      ],
+      [
+        "P8",
+        111,
+        115
+      ],
+      [
+        "P9",
+        115,
+        119
+      ],
+      [
+        "P11",
+        119,
+        123
+      ],
+      [
+        "P10",
+        123,
+        127
+      ],
+      [
+        "P4",
+        127,
+        129
+      ],
+      [
+        "P7",
+        129,
+        133
+      ],
+      [
+        "P8",
+        133,
+        136
+      ],
+      [
+        "P9",
+        136,
+        137
+      ],
+      [
+        "P11",
+        137,
+        140
+      ],
+      [
+        "P10",
+        140,
+        144
+      ],
+      [
+        "P7",
+        144,
+        148
+      ],
+      [
+        "P10",
+        148,
+        150
+      ],
+      [
+        "P7",
+        150,
+        154
+      ],
+      [
+        "P7",
+        154,
+        158
+      ],
+      [
+        "P10",
+        164,
+        165
+      ],
+      [
+        "P7",
+        174,
+        175
+      ]
+    ],
+    "baseline_timeline": [
+      [
+        "P1",
+        6,
+        7
+      ],
+      [
+        "P1",
+        7,
+        9
+      ],
+      [
+        "P1",
+        9,
+        13
+      ],
+      [
+        "P1",
+        13,
+        17
+      ],
+      [
+        "P1",
+        17,
+        21
+      ],
+      [
+        "P1",
+        21,
+        25
+      ],
+      [
+        "P1",
+        25,
+        27
+      ],
+      [
+        "P1",
+        43,
+        44
+      ],
+      [
+        "P2",
+        46,
+        47
+      ],
+      [
+        "P2",
+        47,
+        49
+      ],
+      [
+        "P2",
+        49,
+        53
+      ],
+      [
+        "P3",
+        53,
+        54
+      ],
+      [
+        "P4",
+        54,
+        55
+      ],
+      [
+        "P5",
+        55,
+        56
+      ],
+      [
+        "P3",
+        56,
+        58
+      ],
+      [
+        "P6",
+        58,
+        59
+      ],
+      [
+        "P4",
+        59,
+        61
+      ],
+      [
+        "P5",
+        61,
+        63
+      ],
+      [
+        "P6",
+        63,
+        64
+      ],
+      [
+        "P2",
+        64,
+        65
+      ],
+      [
+        "P3",
+        65,
+        69
+      ],
+      [
+        "P7",
+        69,
+        70
+      ],
+      [
+        "P7",
+        70,
+        72
+      ],
+      [
+        "P4",
+        72,
+        75
+      ],
+      [
+        "P8",
+        75,
+        76
+      ],
+      [
+        "P9",
+        76,
+        77
+      ],
+      [
+        "P8",
+        77,
+        79
+      ],
+      [
+        "P10",
+        79,
+        80
+      ],
+      [
+        "P9",
+        80,
+        82
+      ],
+      [
+        "P11",
+        82,
+        83
+      ],
+      [
+        "P10",
+        83,
+        85
+      ],
+      [
+        "P11",
+        85,
+        87
+      ],
+      [
+        "P5",
+        87,
+        89
+      ],
+      [
+        "P3",
+        89,
+        90
+      ],
+      [
+        "P7",
+        90,
+        91
+      ],
+      [
+        "P12",
+        91,
+        92
+      ],
+      [
+        "P12",
+        92,
+        94
+      ],
+      [
+        "P4",
+        94,
+        95
+      ],
+      [
+        "P8",
+        95,
+        99
+      ],
+      [
+        "P9",
+        99,
+        103
+      ],
+      [
+        "P10",
+        103,
+        107
+      ],
+      [
+        "P11",
+        107,
+        111
+      ],
+      [
+        "P7",
+        111,
+        114
+      ],
+      [
+        "P4",
+        114,
+        118
+      ],
+      [
+        "P8",
+        118,
+        121
+      ],
+      [
+        "P9",
+        121,
+        122
+      ],
+      [
+        "P10",
+        122,
+        126
+      ],
+      [
+        "P11",
+        126,
+        129
+      ],
+      [
+        "P7",
+        129,
+        133
+      ],
+      [
+        "P4",
+        133,
+        137
+      ],
+      [
+        "P10",
+        137,
+        139
+      ],
+      [
+        "P7",
+        139,
+        143
+      ],
+      [
+        "P4",
+        143,
+        145
+      ],
+      [
+        "P7",
+        145,
+        149
+      ],
+      [
+        "P7",
+        149,
+        153
+      ],
+      [
+        "P10",
+        153,
+        154
+      ],
+      [
+        "P4",
+        161,
+        162
+      ],
+      [
+        "P4",
+        162,
+        164
+      ],
+      [
+        "P4",
+        164,
+        166
+      ],
+      [
+        "P7",
+        169,
+        170
+      ]
+    ]
+  },
+  {
+    "seed": 9703000103,
+    "family": "sustained_arrivals",
+    "p95": 19.549999999999994,
+    "baseline_p95": 1.0,
+    "witnesses": [
+      {
+        "departure": 51,
+        "observed_arrival_timestamps": [
+          9,
+          21,
+          28
+        ],
+        "observed_ready_count": 2.0,
+        "observed_first_service_ready_count": 0.0,
+        "quiet_ticks": 23.0,
+        "v6_would_block": true
+      }
+    ],
+    "processes": [
+      {
+        "pid": "P2",
+        "arrival": 21,
+        "first_dispatch": 21,
+        "response": 0,
+        "baseline_first_dispatch": 21,
+        "baseline_response": 0,
+        "crosses_baseline_p95": false
+      },
+      {
+        "pid": "P3",
+        "arrival": 21,
+        "first_dispatch": 22,
+        "response": 1,
+        "baseline_first_dispatch": 22,
+        "baseline_response": 1,
+        "crosses_baseline_p95": false
+      },
+      {
+        "pid": "P8",
+        "arrival": 57,
+        "first_dispatch": 57,
+        "response": 0,
+        "baseline_first_dispatch": 58,
+        "baseline_response": 1,
+        "crosses_baseline_p95": false
+      },
+      {
+        "pid": "P18",
+        "arrival": 119,
+        "first_dispatch": 119,
+        "response": 0,
+        "baseline_first_dispatch": 119,
+        "baseline_response": 0,
+        "crosses_baseline_p95": false
+      },
+      {
+        "pid": "P1",
+        "arrival": 9,
+        "first_dispatch": 9,
+        "response": 0,
+        "baseline_first_dispatch": 9,
+        "baseline_response": 0,
+        "crosses_baseline_p95": false
+      },
+      {
+        "pid": "P4",
+        "arrival": 28,
+        "first_dispatch": 28,
+        "response": 0,
+        "baseline_first_dispatch": 28,
+        "baseline_response": 0,
+        "crosses_baseline_p95": false
+      },
+      {
+        "pid": "P12",
+        "arrival": 91,
+        "first_dispatch": 91,
+        "response": 0,
+        "baseline_first_dispatch": 91,
+        "baseline_response": 0,
+        "crosses_baseline_p95": false
+      },
+      {
+        "pid": "P17",
+        "arrival": 107,
+        "first_dispatch": 107,
+        "response": 0,
+        "baseline_first_dispatch": 107,
+        "baseline_response": 0,
+        "crosses_baseline_p95": false
+      },
+      {
+        "pid": "P24",
+        "arrival": 163,
+        "first_dispatch": 163,
+        "response": 0,
+        "baseline_first_dispatch": 163,
+        "baseline_response": 0,
+        "crosses_baseline_p95": false
+      },
+      {
+        "pid": "P9",
+        "arrival": 61,
+        "first_dispatch": 75,
+        "response": 14,
+        "baseline_first_dispatch": 61,
+        "baseline_response": 0,
+        "crosses_baseline_p95": true
+      },
+      {
+        "pid": "P11",
+        "arrival": 77,
+        "first_dispatch": 78,
+        "response": 1,
+        "baseline_first_dispatch": 77,
+        "baseline_response": 0,
+        "crosses_baseline_p95": false
+      },
+      {
+        "pid": "P14",
+        "arrival": 93,
+        "first_dispatch": 94,
+        "response": 1,
+        "baseline_first_dispatch": 94,
+        "baseline_response": 1,
+        "crosses_baseline_p95": false
+      },
+      {
+        "pid": "P5",
+        "arrival": 52,
+        "first_dispatch": 72,
+        "response": 20,
+        "baseline_first_dispatch": 52,
+        "baseline_response": 0,
+        "crosses_baseline_p95": true
+      },
+      {
+        "pid": "P6",
+        "arrival": 53,
+        "first_dispatch": 73,
+        "response": 20,
+        "baseline_first_dispatch": 53,
+        "baseline_response": 0,
+        "crosses_baseline_p95": true
+      },
+      {
+        "pid": "P20",
+        "arrival": 129,
+        "first_dispatch": 129,
+        "response": 0,
+        "baseline_first_dispatch": 129,
+        "baseline_response": 0,
+        "crosses_baseline_p95": false
+      },
+      {
+        "pid": "P23",
+        "arrival": 143,
+        "first_dispatch": 143,
+        "response": 0,
+        "baseline_first_dispatch": 143,
+        "baseline_response": 0,
+        "crosses_baseline_p95": false
+      },
+      {
+        "pid": "P15",
+        "arrival": 97,
+        "first_dispatch": 97,
+        "response": 0,
+        "baseline_first_dispatch": 97,
+        "baseline_response": 0,
+        "crosses_baseline_p95": false
+      },
+      {
+        "pid": "P21",
+        "arrival": 129,
+        "first_dispatch": 130,
+        "response": 1,
+        "baseline_first_dispatch": 130,
+        "baseline_response": 1,
+        "crosses_baseline_p95": false
+      },
+      {
+        "pid": "P16",
+        "arrival": 102,
+        "first_dispatch": 102,
+        "response": 0,
+        "baseline_first_dispatch": 102,
+        "baseline_response": 0,
+        "crosses_baseline_p95": false
+      },
+      {
+        "pid": "P10",
+        "arrival": 74,
+        "first_dispatch": 77,
+        "response": 3,
+        "baseline_first_dispatch": 74,
+        "baseline_response": 0,
+        "crosses_baseline_p95": true
+      },
+      {
+        "pid": "P7",
+        "arrival": 57,
+        "first_dispatch": 74,
+        "response": 17,
+        "baseline_first_dispatch": 57,
+        "baseline_response": 0,
+        "crosses_baseline_p95": true
+      },
+      {
+        "pid": "P19",
+        "arrival": 124,
+        "first_dispatch": 124,
+        "response": 0,
+        "baseline_first_dispatch": 124,
+        "baseline_response": 0,
+        "crosses_baseline_p95": false
+      },
+      {
+        "pid": "P13",
+        "arrival": 93,
+        "first_dispatch": 93,
+        "response": 0,
+        "baseline_first_dispatch": 93,
+        "baseline_response": 0,
+        "crosses_baseline_p95": false
+      },
+      {
+        "pid": "P22",
+        "arrival": 142,
+        "first_dispatch": 142,
+        "response": 0,
+        "baseline_first_dispatch": 142,
+        "baseline_response": 0,
+        "crosses_baseline_p95": false
+      }
+    ],
+    "decisions": [
+      {
+        "time": 10,
+        "selected": "MLFQ",
+        "active": "MLFQ",
+        "accepted": false,
+        "reason": "arrival_risk",
+        "features": {
+          "ready_count": 1.0,
+          "blocked_count": 0.0,
+          "completed_burst_mean": 0.0,
+          "completed_burst_variance": 0.0,
+          "observed_service_mean": 1,
+          "observed_service_variance": 0,
+          "priority_mean": 1,
+          "ready_wait_mean": 0,
+          "ready_wait_max": 0.0,
+          "recent_arrivals": 1.0,
+          "io_returns": 0.0,
+          "io_return_ratio": 0.0,
+          "active_policy_index": 4.0,
+          "dwell_remaining_ticks": 10.0,
+          "first_service_ready_count": 0.0,
+          "first_service_wait_max": 0.0,
+          "ready_wait_p50": 0.0,
+          "ready_wait_p95": 0.0,
+          "arrival_quiet_ticks": 1.0
+        }
+      },
+      {
+        "time": 20,
+        "selected": "MLFQ",
+        "active": "MLFQ",
+        "accepted": false,
+        "reason": "arrival_risk",
+        "features": {
+          "ready_count": 1.0,
+          "blocked_count": 0.0,
+          "completed_burst_mean": 0.0,
+          "completed_burst_variance": 0.0,
+          "observed_service_mean": 11,
+          "observed_service_variance": 0,
+          "priority_mean": 1,
+          "ready_wait_mean": 0,
+          "ready_wait_max": 0.0,
+          "recent_arrivals": 0.0,
+          "io_returns": 0.0,
+          "io_return_ratio": 0.0,
+          "active_policy_index": 4.0,
+          "dwell_remaining_ticks": 0.0,
+          "first_service_ready_count": 0.0,
+          "first_service_wait_max": 0.0,
+          "ready_wait_p50": 0.0,
+          "ready_wait_p95": 0.0,
+          "arrival_quiet_ticks": 11.0
+        }
+      },
+      {
+        "time": 31,
+        "selected": "MLFQ",
+        "active": "MLFQ",
+        "accepted": false,
+        "reason": "arrival_risk",
+        "features": {
+          "ready_count": 4.0,
+          "blocked_count": 0.0,
+          "completed_burst_mean": 0.0,
+          "completed_burst_variance": 0.0,
+          "observed_service_mean": 5.5,
+          "observed_service_variance": 18.75,
+          "priority_mean": 1.5,
+          "ready_wait_mean": 3.25,
+          "ready_wait_max": 6.0,
+          "recent_arrivals": 3.0,
+          "io_returns": 0.0,
+          "io_return_ratio": 0.0,
+          "active_policy_index": 4.0,
+          "dwell_remaining_ticks": 0.0,
+          "first_service_ready_count": 0.0,
+          "first_service_wait_max": 0.0,
+          "ready_wait_p50": 3.5,
+          "ready_wait_p95": 5.699999999999999,
+          "arrival_quiet_ticks": 3.0
+        }
+      },
+      {
+        "time": 41,
+        "selected": "MLFQ",
+        "active": "MLFQ",
+        "accepted": false,
+        "reason": "arrival_risk",
+        "features": {
+          "ready_count": 4.0,
+          "blocked_count": 0.0,
+          "completed_burst_mean": 0.0,
+          "completed_burst_variance": 0.0,
+          "observed_service_mean": 8,
+          "observed_service_variance": 19,
+          "priority_mean": 1.5,
+          "ready_wait_mean": 4.5,
+          "ready_wait_max": 10.0,
+          "recent_arrivals": 0.0,
+          "io_returns": 0.0,
+          "io_return_ratio": 0.0,
+          "active_policy_index": 4.0,
+          "dwell_remaining_ticks": 0.0,
+          "first_service_ready_count": 0.0,
+          "first_service_wait_max": 0.0,
+          "ready_wait_p50": 4.0,
+          "ready_wait_p95": 9.399999999999999,
+          "arrival_quiet_ticks": 13.0
+        }
+      },
+      {
+        "time": 51,
+        "selected": "Priority",
+        "active": "Priority",
+        "accepted": true,
+        "reason": "accepted",
+        "features": {
+          "ready_count": 2.0,
+          "blocked_count": 0.0,
+          "completed_burst_mean": 10,
+          "completed_burst_variance": 0,
+          "observed_service_mean": 10.5,
+          "observed_service_variance": 8.25,
+          "priority_mean": 1.5,
+          "ready_wait_mean": 8,
+          "ready_wait_max": 10.0,
+          "recent_arrivals": 0.0,
+          "io_returns": 0.0,
+          "io_return_ratio": 0.0,
+          "active_policy_index": 4.0,
+          "dwell_remaining_ticks": 0.0,
+          "first_service_ready_count": 0.0,
+          "first_service_wait_max": 0.0,
+          "ready_wait_p50": 8.0,
+          "ready_wait_p95": 9.8,
+          "arrival_quiet_ticks": 23.0
+        }
+      },
+      {
+        "time": 64,
+        "selected": "MLFQ",
+        "active": "Priority",
+        "accepted": false,
+        "reason": "response_dwell_blocked",
+        "features": {
+          "ready_count": 5.0,
+          "blocked_count": 1.0,
+          "completed_burst_mean": 12,
+          "completed_burst_variance": 28.5,
+          "observed_service_mean": 11,
+          "observed_service_variance": 26.8,
+          "priority_mean": 2.8333333333333335,
+          "ready_wait_mean": 10.4,
+          "ready_wait_max": 19.0,
+          "recent_arrivals": 5.0,
+          "io_returns": 0.0,
+          "io_return_ratio": 0.0,
+          "active_policy_index": 2.0,
+          "dwell_remaining_ticks": 7.0,
+          "first_service_ready_count": 4.0,
+          "first_service_wait_max": 12.0,
+          "ready_wait_p50": 11.0,
+          "ready_wait_p95": 17.599999999999998,
+          "arrival_quiet_ticks": 3.0
+        }
+      },
+      {
+        "time": 72,
+        "selected": "MLFQ",
+        "active": "MLFQ",
+        "accepted": true,
+        "reason": "excursion_expired",
+        "features": {
+          "ready_count": 5.0,
+          "blocked_count": 1.0,
+          "completed_burst_mean": 12.6,
+          "completed_burst_variance": 24.24,
+          "observed_service_mean": 12.6,
+          "observed_service_variance": 24.24,
+          "priority_mean": 2.8333333333333335,
+          "ready_wait_mean": 14,
+          "ready_wait_max": 20.0,
+          "recent_arrivals": 0.0,
+          "io_returns": 1.0,
+          "io_return_ratio": 1.0,
+          "active_policy_index": 2.0,
+          "dwell_remaining_ticks": 0.0,
+          "first_service_ready_count": 4.0,
+          "first_service_wait_max": 20.0,
+          "ready_wait_p50": 15.0,
+          "ready_wait_p95": 19.8,
+          "arrival_quiet_ticks": 11.0
+        }
+      },
+      {
+        "time": 80,
+        "selected": "MLFQ",
+        "active": "MLFQ",
+        "accepted": false,
+        "reason": "arrival_risk",
+        "features": {
+          "ready_count": 8.0,
+          "blocked_count": 0.0,
+          "completed_burst_mean": 12.6,
+          "completed_burst_variance": 24.24,
+          "observed_service_mean": 6.454545454545454,
+          "observed_service_variance": 48.79338842975206,
+          "priority_mean": 2.5,
+          "ready_wait_mean": 3.5,
+          "ready_wait_max": 7.0,
+          "recent_arrivals": 2.0,
+          "io_returns": 1.0,
+          "io_return_ratio": 0.3333333333333333,
+          "active_policy_index": 4.0,
+          "dwell_remaining_ticks": 12.0,
+          "first_service_ready_count": 0.0,
+          "first_service_wait_max": 0.0,
+          "ready_wait_p50": 3.5,
+          "ready_wait_p95": 6.6499999999999995,
+          "arrival_quiet_ticks": 3.0
+        }
+      },
+      {
+        "time": 90,
+        "selected": "MLFQ",
+        "active": "MLFQ",
+        "accepted": false,
+        "reason": "arrival_risk",
+        "features": {
+          "ready_count": 8.0,
+          "blocked_count": 0.0,
+          "completed_burst_mean": 12.6,
+          "completed_burst_variance": 24.24,
+          "observed_service_mean": 7.363636363636363,
+          "observed_service_variance": 47.50413223140496,
+          "priority_mean": 2.5,
+          "ready_wait_mean": 6.625,
+          "ready_wait_max": 12.0,
+          "recent_arrivals": 0.0,
+          "io_returns": 0.0,
+          "io_return_ratio": 0.0,
+          "active_policy_index": 4.0,
+          "dwell_remaining_ticks": 2.0,
+          "first_service_ready_count": 0.0,
+          "first_service_wait_max": 0.0,
+          "ready_wait_p50": 7.0,
+          "ready_wait_p95": 11.649999999999999,
+          "arrival_quiet_ticks": 13.0
+        }
+      },
+      {
+        "time": 101,
+        "selected": "MLFQ",
+        "active": "MLFQ",
+        "accepted": false,
+        "reason": "arrival_risk",
+        "features": {
+          "ready_count": 12.0,
+          "blocked_count": 0.0,
+          "completed_burst_mean": 12.6,
+          "completed_burst_variance": 24.24,
+          "observed_service_mean": 6.133333333333334,
+          "observed_service_variance": 43.04888888888889,
+          "priority_mean": 2.6666666666666665,
+          "ready_wait_mean": 8.75,
+          "ready_wait_max": 19.0,
+          "recent_arrivals": 4.0,
+          "io_returns": 0.0,
+          "io_return_ratio": 0.0,
+          "active_policy_index": 4.0,
+          "dwell_remaining_ticks": 0.0,
+          "first_service_ready_count": 0.0,
+          "first_service_wait_max": 0.0,
+          "ready_wait_p50": 7.5,
+          "ready_wait_p95": 17.9,
+          "arrival_quiet_ticks": 4.0
+        }
+      },
+      {
+        "time": 110,
+        "selected": "MLFQ",
+        "active": "MLFQ",
+        "accepted": false,
+        "reason": "arrival_risk",
+        "features": {
+          "ready_count": 14.0,
+          "blocked_count": 0.0,
+          "completed_burst_mean": 12.6,
+          "completed_burst_variance": 24.24,
+          "observed_service_mean": 5.9411764705882355,
+          "observed_service_variance": 37.70242214532872,
+          "priority_mean": 2.7142857142857144,
+          "ready_wait_mean": 12.714285714285714,
+          "ready_wait_max": 28.0,
+          "recent_arrivals": 2.0,
+          "io_returns": 0.0,
+          "io_return_ratio": 0.0,
+          "active_policy_index": 4.0,
+          "dwell_remaining_ticks": 0.0,
+          "first_service_ready_count": 0.0,
+          "first_service_wait_max": 0.0,
+          "ready_wait_p50": 10.0,
+          "ready_wait_p95": 26.7,
+          "arrival_quiet_ticks": 3.0
+        }
+      },
+      {
+        "time": 120,
+        "selected": "MLFQ",
+        "active": "MLFQ",
+        "accepted": false,
+        "reason": "arrival_risk",
+        "features": {
+          "ready_count": 15.0,
+          "blocked_count": 0.0,
+          "completed_burst_mean": 12.6,
+          "completed_burst_variance": 24.24,
+          "observed_service_mean": 6.166666666666667,
+          "observed_service_variance": 34.47222222222222,
+          "priority_mean": 2.6,
+          "ready_wait_mean": 15.466666666666667,
+          "ready_wait_max": 34.0,
+          "recent_arrivals": 1.0,
+          "io_returns": 0.0,
+          "io_return_ratio": 0.0,
+          "active_policy_index": 4.0,
+          "dwell_remaining_ticks": 0.0,
+          "first_service_ready_count": 0.0,
+          "first_service_wait_max": 0.0,
+          "ready_wait_p50": 15.0,
+          "ready_wait_p95": 32.599999999999994,
+          "arrival_quiet_ticks": 1.0
+        }
+      },
+      {
+        "time": 130,
+        "selected": "FCFS",
+        "active": "MLFQ",
+        "accepted": false,
+        "reason": "first_service_protection",
+        "features": {
+          "ready_count": 17.0,
+          "blocked_count": 0.0,
+          "completed_burst_mean": 11,
+          "completed_burst_variance": 33,
+          "observed_service_mean": 6.05,
+          "observed_service_variance": 31.1475,
+          "priority_mean": 2.588235294117647,
+          "ready_wait_mean": 17.470588235294116,
+          "ready_wait_max": 40.0,
+          "recent_arrivals": 3.0,
+          "io_returns": 0.0,
+          "io_return_ratio": 0.0,
+          "active_policy_index": 4.0,
+          "dwell_remaining_ticks": 0.0,
+          "first_service_ready_count": 1.0,
+          "first_service_wait_max": 1.0,
+          "ready_wait_p50": 18.0,
+          "ready_wait_p95": 34.39999999999999,
+          "arrival_quiet_ticks": 1.0
+        }
+      },
+      {
+        "time": 141,
+        "selected": "MLFQ",
+        "active": "MLFQ",
+        "accepted": false,
+        "reason": "arrival_risk",
+        "features": {
+          "ready_count": 15.0,
+          "blocked_count": 0.0,
+          "completed_burst_mean": 9.5,
+          "completed_burst_variance": 31.5,
+          "observed_service_mean": 6.285714285714286,
+          "observed_service_variance": 34.965986394557824,
+          "priority_mean": 2.7333333333333334,
+          "ready_wait_mean": 22.4,
+          "ready_wait_max": 40.0,
+          "recent_arrivals": 0.0,
+          "io_returns": 0.0,
+          "io_return_ratio": 0.0,
+          "active_policy_index": 4.0,
+          "dwell_remaining_ticks": 0.0,
+          "first_service_ready_count": 0.0,
+          "first_service_wait_max": 0.0,
+          "ready_wait_p50": 23.0,
+          "ready_wait_p95": 39.3,
+          "arrival_quiet_ticks": 12.0
+        }
+      },
+      {
+        "time": 151,
+        "selected": "MLFQ",
+        "active": "MLFQ",
+        "accepted": false,
+        "reason": "arrival_risk",
+        "features": {
+          "ready_count": 16.0,
+          "blocked_count": 0.0,
+          "completed_burst_mean": 9,
+          "completed_burst_variance": 30,
+          "observed_service_mean": 6.173913043478261,
+          "observed_service_variance": 32.05671077504726,
+          "priority_mean": 2.875,
+          "ready_wait_mean": 24.625,
+          "ready_wait_max": 46.0,
+          "recent_arrivals": 2.0,
+          "io_returns": 0.0,
+          "io_return_ratio": 0.0,
+          "active_policy_index": 4.0,
+          "dwell_remaining_ticks": 0.0,
+          "first_service_ready_count": 0.0,
+          "first_service_wait_max": 0.0,
+          "ready_wait_p50": 25.5,
+          "ready_wait_p95": 44.5,
+          "arrival_quiet_ticks": 8.0
+        }
+      },
+      {
+        "time": 160,
+        "selected": "MLFQ",
+        "active": "MLFQ",
+        "accepted": false,
+        "reason": "arrival_risk",
+        "features": {
+          "ready_count": 15.0,
+          "blocked_count": 0.0,
+          "completed_burst_mean": 8.5,
+          "completed_burst_variance": 29.25,
+          "observed_service_mean": 6.565217391304348,
+          "observed_service_variance": 30.158790170132324,
+          "priority_mean": 2.7333333333333334,
+          "ready_wait_mean": 20.133333333333333,
+          "ready_wait_max": 42.0,
+          "recent_arrivals": 0.0,
+          "io_returns": 0.0,
+          "io_return_ratio": 0.0,
+          "active_policy_index": 4.0,
+          "dwell_remaining_ticks": 0.0,
+          "first_service_ready_count": 0.0,
+          "first_service_wait_max": 0.0,
+          "ready_wait_p50": 19.0,
+          "ready_wait_p95": 41.3,
+          "arrival_quiet_ticks": 17.0
+        }
+      },
+      {
+        "time": 171,
+        "selected": "MLFQ",
+        "active": "MLFQ",
+        "accepted": false,
+        "reason": "arrival_risk",
+        "features": {
+          "ready_count": 15.0,
+          "blocked_count": 0.0,
+          "completed_burst_mean": 8,
+          "completed_burst_variance": 29.09090909090909,
+          "observed_service_mean": 6.75,
+          "observed_service_variance": 28.854166666666668,
+          "priority_mean": 2.7333333333333334,
+          "ready_wait_mean": 19.2,
+          "ready_wait_max": 42.0,
+          "recent_arrivals": 1.0,
+          "io_returns": 0.0,
+          "io_return_ratio": 0.0,
+          "active_policy_index": 4.0,
+          "dwell_remaining_ticks": 0.0,
+          "first_service_ready_count": 0.0,
+          "first_service_wait_max": 0.0,
+          "ready_wait_p50": 18.0,
+          "ready_wait_p95": 39.199999999999996,
+          "arrival_quiet_ticks": 8.0
+        }
+      },
+      {
+        "time": 183,
+        "selected": "Priority",
+        "active": "MLFQ",
+        "accepted": false,
+        "reason": "cost_margin",
+        "features": {
+          "ready_count": 14.0,
+          "blocked_count": 0.0,
+          "completed_burst_mean": 7.916666666666667,
+          "completed_burst_variance": 26.743055555555557,
+          "observed_service_mean": 7.25,
+          "observed_service_variance": 27.520833333333332,
+          "priority_mean": 2.7857142857142856,
+          "ready_wait_mean": 20.571428571428573,
+          "ready_wait_max": 37.0,
+          "recent_arrivals": 0.0,
+          "io_returns": 0.0,
+          "io_return_ratio": 0.0,
+          "active_policy_index": 4.0,
+          "dwell_remaining_ticks": 0.0,
+          "first_service_ready_count": 0.0,
+          "first_service_wait_max": 0.0,
+          "ready_wait_p50": 22.5,
+          "ready_wait_p95": 35.05,
+          "arrival_quiet_ticks": 20.0
+        }
+      },
+      {
+        "time": 190,
+        "selected": "Priority",
+        "active": "MLFQ",
+        "accepted": false,
+        "reason": "cost_margin",
+        "features": {
+          "ready_count": 13.0,
+          "blocked_count": 0.0,
+          "completed_burst_mean": 7.923076923076923,
+          "completed_burst_variance": 24.68639053254438,
+          "observed_service_mean": 7.541666666666667,
+          "observed_service_variance": 26.49826388888889,
+          "priority_mean": 2.923076923076923,
+          "ready_wait_mean": 23.153846153846153,
+          "ready_wait_max": 39.0,
+          "recent_arrivals": 0.0,
+          "io_returns": 0.0,
+          "io_return_ratio": 0.0,
+          "active_policy_index": 4.0,
+          "dwell_remaining_ticks": 0.0,
+          "first_service_ready_count": 0.0,
+          "first_service_wait_max": 0.0,
+          "ready_wait_p50": 25.0,
+          "ready_wait_p95": 37.8,
+          "arrival_quiet_ticks": 27.0
+        }
+      },
+      {
+        "time": 201,
+        "selected": "Priority",
+        "active": "MLFQ",
+        "accepted": false,
+        "reason": "cost_margin",
+        "features": {
+          "ready_count": 12.0,
+          "blocked_count": 0.0,
+          "completed_burst_mean": 7.857142857142857,
+          "completed_burst_variance": 22.979591836734695,
+          "observed_service_mean": 8,
+          "observed_service_variance": 24.5,
+          "priority_mean": 2.9166666666666665,
+          "ready_wait_mean": 19.166666666666668,
+          "ready_wait_max": 39.0,
+          "recent_arrivals": 0.0,
+          "io_returns": 0.0,
+          "io_return_ratio": 0.0,
+          "active_policy_index": 4.0,
+          "dwell_remaining_ticks": 0.0,
+          "first_service_ready_count": 0.0,
+          "first_service_wait_max": 0.0,
+          "ready_wait_p50": 20.0,
+          "ready_wait_p95": 37.349999999999994,
+          "arrival_quiet_ticks": 38.0
+        }
+      },
+      {
+        "time": 210,
+        "selected": "Priority",
+        "active": "MLFQ",
+        "accepted": false,
+        "reason": "cost_margin",
+        "features": {
+          "ready_count": 10.0,
+          "blocked_count": 0.0,
+          "completed_burst_mean": 8.125,
+          "completed_burst_variance": 20.609375,
+          "observed_service_mean": 8.375,
+          "observed_service_variance": 24.817708333333332,
+          "priority_mean": 2.5,
+          "ready_wait_mean": 20.4,
+          "ready_wait_max": 39.0,
+          "recent_arrivals": 0.0,
+          "io_returns": 0.0,
+          "io_return_ratio": 0.0,
+          "active_policy_index": 4.0,
+          "dwell_remaining_ticks": 0.0,
+          "first_service_ready_count": 0.0,
+          "first_service_wait_max": 0.0,
+          "ready_wait_p50": 18.5,
+          "ready_wait_p95": 37.199999999999996,
+          "arrival_quiet_ticks": 47.0
+        }
+      },
+      {
+        "time": 222,
+        "selected": "Priority",
+        "active": "MLFQ",
+        "accepted": false,
+        "reason": "cost_margin",
+        "features": {
+          "ready_count": 9.0,
+          "blocked_count": 0.0,
+          "completed_burst_mean": 8.176470588235293,
+          "completed_burst_variance": 19.439446366782008,
+          "observed_service_mean": 8.875,
+          "observed_service_variance": 23.859375,
+          "priority_mean": 2.5555555555555554,
+          "ready_wait_mean": 21.22222222222222,
+          "ready_wait_max": 39.0,
+          "recent_arrivals": 0.0,
+          "io_returns": 0.0,
+          "io_return_ratio": 0.0,
+          "active_policy_index": 4.0,
+          "dwell_remaining_ticks": 0.0,
+          "first_service_ready_count": 0.0,
+          "first_service_wait_max": 0.0,
+          "ready_wait_p50": 23.0,
+          "ready_wait_p95": 36.199999999999996,
+          "arrival_quiet_ticks": 59.0
+        }
+      },
+      {
+        "time": 230,
+        "selected": "Priority",
+        "active": "MLFQ",
+        "accepted": false,
+        "reason": "cost_margin",
+        "features": {
+          "ready_count": 9.0,
+          "blocked_count": 0.0,
+          "completed_burst_mean": 8.176470588235293,
+          "completed_burst_variance": 19.439446366782008,
+          "observed_service_mean": 9.208333333333334,
+          "observed_service_variance": 24.49826388888889,
+          "priority_mean": 2.5555555555555554,
+          "ready_wait_mean": 20,
+          "ready_wait_max": 37.0,
+          "recent_arrivals": 0.0,
+          "io_returns": 0.0,
+          "io_return_ratio": 0.0,
+          "active_policy_index": 4.0,
+          "dwell_remaining_ticks": 0.0,
+          "first_service_ready_count": 0.0,
+          "first_service_wait_max": 0.0,
+          "ready_wait_p50": 20.0,
+          "ready_wait_p95": 36.2,
+          "arrival_quiet_ticks": 67.0
+        }
+      },
+      {
+        "time": 242,
+        "selected": "Priority",
+        "active": "MLFQ",
+        "accepted": false,
+        "reason": "cost_margin",
+        "features": {
+          "ready_count": 7.0,
+          "blocked_count": 0.0,
+          "completed_burst_mean": 8.210526315789474,
+          "completed_burst_variance": 17.6398891966759,
+          "observed_service_mean": 9.708333333333334,
+          "observed_service_variance": 23.70659722222222,
+          "priority_mean": 2.2857142857142856,
+          "ready_wait_mean": 16.428571428571427,
+          "ready_wait_max": 32.0,
+          "recent_arrivals": 0.0,
+          "io_returns": 0.0,
+          "io_return_ratio": 0.0,
+          "active_policy_index": 4.0,
+          "dwell_remaining_ticks": 0.0,
+          "first_service_ready_count": 0.0,
+          "first_service_wait_max": 0.0,
+          "ready_wait_p50": 16.0,
+          "ready_wait_p95": 30.799999999999997,
+          "arrival_quiet_ticks": 79.0
+        }
+      },
+      {
+        "time": 250,
+        "selected": "Priority",
+        "active": "MLFQ",
+        "accepted": false,
+        "reason": "cost_margin",
+        "features": {
+          "ready_count": 7.0,
+          "blocked_count": 0.0,
+          "completed_burst_mean": 8.210526315789474,
+          "completed_burst_variance": 17.6398891966759,
+          "observed_service_mean": 10.041666666666666,
+          "observed_service_variance": 25.12326388888889,
+          "priority_mean": 2.2857142857142856,
+          "ready_wait_mean": 14.142857142857142,
+          "ready_wait_max": 28.0,
+          "recent_arrivals": 0.0,
+          "io_returns": 0.0,
+          "io_return_ratio": 0.0,
+          "active_policy_index": 4.0,
+          "dwell_remaining_ticks": 0.0,
+          "first_service_ready_count": 0.0,
+          "first_service_wait_max": 0.0,
+          "ready_wait_p50": 15.0,
+          "ready_wait_p95": 26.799999999999997,
+          "arrival_quiet_ticks": 87.0
+        }
+      },
+      {
+        "time": 261,
+        "selected": "Priority",
+        "active": "MLFQ",
+        "accepted": false,
+        "reason": "cost_margin",
+        "features": {
+          "ready_count": 5.0,
+          "blocked_count": 1.0,
+          "completed_burst_mean": 8.714285714285714,
+          "completed_burst_variance": 18.58503401360544,
+          "observed_service_mean": 10.5,
+          "observed_service_variance": 27.666666666666668,
+          "priority_mean": 2.1666666666666665,
+          "ready_wait_mean": 9.8,
+          "ready_wait_max": 19.0,
+          "recent_arrivals": 0.0,
+          "io_returns": 0.0,
+          "io_return_ratio": 0.0,
+          "active_policy_index": 4.0,
+          "dwell_remaining_ticks": 0.0,
+          "first_service_ready_count": 0.0,
+          "first_service_wait_max": 0.0,
+          "ready_wait_p50": 11.0,
+          "ready_wait_p95": 18.2,
+          "arrival_quiet_ticks": 98.0
+        }
+      },
+      {
+        "time": 272,
+        "selected": "MLFQ",
+        "active": "MLFQ",
+        "accepted": false,
+        "reason": "io_ready_pressure",
+        "features": {
+          "ready_count": 5.0,
+          "blocked_count": 1.0,
+          "completed_burst_mean": 9,
+          "completed_burst_variance": 19.454545454545453,
+          "observed_service_mean": 10.958333333333334,
+          "observed_service_variance": 31.95659722222222,
+          "priority_mean": 2.1666666666666665,
+          "ready_wait_mean": 10.4,
+          "ready_wait_max": 22.0,
+          "recent_arrivals": 0.0,
+          "io_returns": 1.0,
+          "io_return_ratio": 1.0,
+          "active_policy_index": 4.0,
+          "dwell_remaining_ticks": 0.0,
+          "first_service_ready_count": 0.0,
+          "first_service_wait_max": 0.0,
+          "ready_wait_p50": 11.0,
+          "ready_wait_p95": 20.599999999999998,
+          "arrival_quiet_ticks": 109.0
+        }
+      },
+      {
+        "time": 282,
+        "selected": "MLFQ",
+        "active": "MLFQ",
+        "accepted": false,
+        "reason": "io_ready_pressure",
+        "features": {
+          "ready_count": 5.0,
+          "blocked_count": 0.0,
+          "completed_burst_mean": 8.73913043478261,
+          "completed_burst_variance": 20.10586011342155,
+          "observed_service_mean": 11.375,
+          "observed_service_variance": 36.067708333333336,
+          "priority_mean": 2.4,
+          "ready_wait_mean": 10.4,
+          "ready_wait_max": 21.0,
+          "recent_arrivals": 0.0,
+          "io_returns": 1.0,
+          "io_return_ratio": 1.0,
+          "active_policy_index": 4.0,
+          "dwell_remaining_ticks": 0.0,
+          "first_service_ready_count": 0.0,
+          "first_service_wait_max": 0.0,
+          "ready_wait_p50": 10.0,
+          "ready_wait_p95": 19.599999999999998,
+          "arrival_quiet_ticks": 119.0
+        }
+      },
+      {
+        "time": 290,
+        "selected": "Priority",
+        "active": "MLFQ",
+        "accepted": false,
+        "reason": "cost_margin",
+        "features": {
+          "ready_count": 3.0,
+          "blocked_count": 1.0,
+          "completed_burst_mean": 9.04,
+          "completed_burst_variance": 24.0384,
+          "observed_service_mean": 11.708333333333334,
+          "observed_service_variance": 40.20659722222222,
+          "priority_mean": 2.5,
+          "ready_wait_mean": 4,
+          "ready_wait_max": 8.0,
+          "recent_arrivals": 0.0,
+          "io_returns": 0.0,
+          "io_return_ratio": 0.0,
+          "active_policy_index": 4.0,
+          "dwell_remaining_ticks": 0.0,
+          "first_service_ready_count": 0.0,
+          "first_service_wait_max": 0.0,
+          "ready_wait_p50": 4.0,
+          "ready_wait_p95": 7.6,
+          "arrival_quiet_ticks": 127.0
+        }
+      },
+      {
+        "time": 300,
+        "selected": "Priority",
+        "active": "MLFQ",
+        "accepted": false,
+        "reason": "cost_margin",
+        "features": {
+          "ready_count": 1.0,
+          "blocked_count": 3.0,
+          "completed_burst_mean": 10.321428571428571,
+          "completed_burst_variance": 35.78954081632653,
+          "observed_service_mean": 12.041666666666666,
+          "observed_service_variance": 46.03993055555556,
+          "priority_mean": 2.5,
+          "ready_wait_mean": 0,
+          "ready_wait_max": 0.0,
+          "recent_arrivals": 0.0,
+          "io_returns": 1.0,
+          "io_return_ratio": 1.0,
+          "active_policy_index": 4.0,
+          "dwell_remaining_ticks": 0.0,
+          "first_service_ready_count": 0.0,
+          "first_service_wait_max": 0.0,
+          "ready_wait_p50": 0.0,
+          "ready_wait_p95": 0.0,
+          "arrival_quiet_ticks": 137.0
+        }
+      },
+      {
+        "time": 310,
+        "selected": "Priority",
+        "active": "MLFQ",
+        "accepted": false,
+        "reason": "cost_margin",
+        "features": {
+          "ready_count": 1.0,
+          "blocked_count": 2.0,
+          "completed_burst_mean": 10.068965517241379,
+          "completed_burst_variance": 36.34007134363853,
+          "observed_service_mean": 12.166666666666666,
+          "observed_service_variance": 48.388888888888886,
+          "priority_mean": 2.6666666666666665,
+          "ready_wait_mean": 0,
+          "ready_wait_max": 0.0,
+          "recent_arrivals": 0.0,
+          "io_returns": 1.0,
+          "io_return_ratio": 1.0,
+          "active_policy_index": 4.0,
+          "dwell_remaining_ticks": 0.0,
+          "first_service_ready_count": 0.0,
+          "first_service_wait_max": 0.0,
+          "ready_wait_p50": 0.0,
+          "ready_wait_p95": 0.0,
+          "arrival_quiet_ticks": 147.0
+        }
+      }
+    ],
+    "dynamic_timeline": [
+      [
+        "P1",
+        9,
+        10
+      ],
+      [
+        "P1",
+        10,
+        12
+      ],
+      [
+        "P1",
+        12,
+        16
+      ],
+      [
+        "P1",
+        16,
+        20
+      ],
+      [
+        "P1",
+        20,
+        21
+      ],
+      [
+        "P2",
+        21,
+        22
+      ],
+      [
+        "P3",
+        22,
+        23
+      ],
+      [
+        "P2",
+        23,
+        25
+      ],
+      [
+        "P3",
+        25,
+        27
+      ],
+      [
+        "P1",
+        27,
+        28
+      ],
+      [
+        "P4",
+        28,
+        29
+      ],
+      [
+        "P4",
+        29,
+        31
+      ],
+      [
+        "P2",
+        31,
+        35
+      ],
+      [
+        "P3",
+        35,
+        39
+      ],
+      [
+        "P1",
+        39,
+        41
+      ],
+      [
+        "P4",
+        41,
+        45
+      ],
+      [
+        "P2",
+        45,
+        48
+      ],
+      [
+        "P3",
+        48,
+        51
+      ],
+      [
+        "P1",
+        51,
+        57
+      ],
+      [
+        "P8",
+        57,
+        64
+      ],
+      [
+        "P4",
+        64,
+        72
+      ],
+      [
+        "P5",
+        72,
+        73
+      ],
+      [
+        "P6",
+        73,
+        74
+      ],
+      [
+        "P7",
+        74,
+        75
+      ],
+      [
+        "P9",
+        75,
+        76
+      ],
+      [
+        "P1",
+        76,
+        77
+      ],
+      [
+        "P10",
+        77,
+        78
+      ],
+      [
+        "P11",
+        78,
+        79
+      ],
+      [
+        "P4",
+        79,
+        80
+      ],
+      [
+        "P5",
+        80,
+        82
+      ],
+      [
+        "P6",
+        82,
+        84
+      ],
+      [
+        "P7",
+        84,
+        86
+      ],
+      [
+        "P9",
+        86,
+        88
+      ],
+      [
+        "P1",
+        88,
+        90
+      ],
+      [
+        "P10",
+        90,
+        91
+      ],
+      [
+        "P12",
+        91,
+        92
+      ],
+      [
+        "P11",
+        92,
+        93
+      ],
+      [
+        "P13",
+        93,
+        94
+      ],
+      [
+        "P14",
+        94,
+        95
+      ],
+      [
+        "P4",
+        95,
+        97
+      ],
+      [
+        "P15",
+        97,
+        98
+      ],
+      [
+        "P10",
+        98,
+        99
+      ],
+      [
+        "P12",
+        99,
+        101
+      ],
+      [
+        "P11",
+        101,
+        102
+      ],
+      [
+        "P16",
+        102,
+        103
+      ],
+      [
+        "P13",
+        103,
+        105
+      ],
+      [
+        "P14",
+        105,
+        107
+      ],
+      [
+        "P17",
+        107,
+        108
+      ],
+      [
+        "P15",
+        108,
+        110
+      ],
+      [
+        "P16",
+        110,
+        112
+      ],
+      [
+        "P17",
+        112,
+        114
+      ],
+      [
+        "P5",
+        114,
+        118
+      ],
+      [
+        "P6",
+        118,
+        119
+      ],
+      [
+        "P18",
+        119,
+        120
+      ],
+      [
+        "P18",
+        120,
+        122
+      ],
+      [
+        "P7",
+        122,
+        124
+      ],
+      [
+        "P19",
+        124,
+        125
+      ],
+      [
+        "P19",
+        125,
+        127
+      ],
+      [
+        "P9",
+        127,
+        129
+      ],
+      [
+        "P20",
+        129,
+        130
+      ],
+      [
+        "P21",
+        130,
+        131
+      ],
+      [
+        "P20",
+        131,
+        133
+      ],
+      [
+        "P1",
+        133,
+        135
+      ],
+      [
+        "P21",
+        135,
+        137
+      ],
+      [
+        "P4",
+        137,
+        139
+      ],
+      [
+        "P10",
+        139,
+        141
+      ],
+      [
+        "P12",
+        141,
+        142
+      ],
+      [
+        "P22",
+        142,
+        143
+      ],
+      [
+        "P23",
+        143,
+        144
+      ],
+      [
+        "P11",
+        144,
+        146
+      ],
+      [
+        "P12",
+        146,
+        147
+      ],
+      [
+        "P22",
+        147,
+        149
+      ],
+      [
+        "P23",
+        149,
+        151
+      ],
+      [
+        "P13",
+        151,
+        153
+      ],
+      [
+        "P14",
+        153,
+        155
+      ],
+      [
+        "P15",
+        155,
+        157
+      ],
+      [
+        "P16",
+        157,
+        159
+      ],
+      [
+        "P17",
+        159,
+        160
+      ],
+      [
+        "P5",
+        160,
+        162
+      ],
+      [
+        "P6",
+        162,
+        163
+      ],
+      [
+        "P24",
+        163,
+        164
+      ],
+      [
+        "P6",
+        164,
+        165
+      ],
+      [
+        "P24",
+        165,
+        167
+      ],
+      [
+        "P7",
+        167,
+        169
+      ],
+      [
+        "P19",
+        169,
+        171
+      ],
+      [
+        "P9",
+        171,
+        173
+      ],
+      [
+        "P20",
+        173,
+        175
+      ],
+      [
+        "P21",
+        175,
+        179
+      ],
+      [
+        "P10",
+        179,
+        183
+      ],
+      [
+        "P11",
+        183,
+        186
+      ],
+      [
+        "P22",
+        186,
+        190
+      ],
+      [
+        "P23",
+        190,
+        193
+      ],
+      [
+        "P13",
+        193,
+        195
+      ],
+      [
+        "P14",
+        195,
+        197
+      ],
+      [
+        "P15",
+        197,
+        199
+      ],
+      [
+        "P16",
+        199,
+        201
+      ],
+      [
+        "P5",
+        201,
+        202
+      ],
+      [
+        "P6",
+        202,
+        206
+      ],
+      [
+        "P7",
+        206,
+        210
+      ],
+      [
+        "P19",
+        210,
+        214
+      ],
+      [
+        "P20",
+        214,
+        218
+      ],
+      [
+        "P21",
+        218,
+        222
+      ],
+      [
+        "P10",
+        222,
+        226
+      ],
+      [
+        "P22",
+        226,
+        230
+      ],
+      [
+        "P23",
+        230,
+        231
+      ],
+      [
+        "P13",
+        231,
+        235
+      ],
+      [
+        "P15",
+        235,
+        238
+      ],
+      [
+        "P16",
+        238,
+        242
+      ],
+      [
+        "P7",
+        242,
+        246
+      ],
+      [
+        "P19",
+        246,
+        250
+      ],
+      [
+        "P21",
+        250,
+        251
+      ],
+      [
+        "P10",
+        251,
+        253
+      ],
+      [
+        "P22",
+        253,
+        257
+      ],
+      [
+        "P13",
+        257,
+        261
+      ],
+      [
+        "P16",
+        261,
+        265
+      ],
+      [
+        "P10",
+        265,
+        266
+      ],
+      [
+        "P10",
+        266,
+        268
+      ],
+      [
+        "P7",
+        268,
+        272
+      ],
+      [
+        "P19",
+        272,
+        275
+      ],
+      [
+        "P16",
+        275,
+        276
+      ],
+      [
+        "P16",
+        276,
+        278
+      ],
+      [
+        "P22",
+        278,
+        282
+      ],
+      [
+        "P13",
+        282,
+        286
+      ],
+      [
+        "P10",
+        286,
+        288
+      ],
+      [
+        "P7",
+        288,
+        289
+      ],
+      [
+        "P19",
+        289,
+        290
+      ],
+      [
+        "P22",
+        290,
+        294
+      ],
+      [
+        "P13",
+        294,
+        296
+      ],
+      [
+        "P19",
+        296,
+        297
+      ],
+      [
+        "P22",
+        297,
+        298
+      ],
+      [
+        "P7",
+        300,
+        301
+      ],
+      [
+        "P7",
+        301,
+        303
+      ],
+      [
+        "P13",
+        310,
+        311
+      ],
+      [
+        "P13",
+        311,
+        312
+      ],
+      [
+        "P19",
+        312,
+        313
+      ],
+      [
+        "P13",
+        313,
+        314
+      ],
+      [
+        "P19",
+        314,
+        315
+      ],
+      [
+        "P13",
+        315,
+        317
+      ],
+      [
+        "P22",
+        318,
+        319
+      ],
+      [
+        "P22",
+        319,
+        321
+      ]
+    ],
+    "baseline_timeline": [
+      [
+        "P1",
+        9,
+        10
+      ],
+      [
+        "P1",
+        10,
+        12
+      ],
+      [
+        "P1",
+        12,
+        16
+      ],
+      [
+        "P1",
+        16,
+        20
+      ],
+      [
+        "P1",
+        20,
+        21
+      ],
+      [
+        "P2",
+        21,
+        22
+      ],
+      [
+        "P3",
+        22,
+        23
+      ],
+      [
+        "P2",
+        23,
+        25
+      ],
+      [
+        "P3",
+        25,
+        27
+      ],
+      [
+        "P1",
+        27,
+        28
+      ],
+      [
+        "P4",
+        28,
+        29
+      ],
+      [
+        "P4",
+        29,
+        31
+      ],
+      [
+        "P2",
+        31,
+        35
+      ],
+      [
+        "P3",
+        35,
+        39
+      ],
+      [
+        "P1",
+        39,
+        41
+      ],
+      [
+        "P4",
+        41,
+        45
+      ],
+      [
+        "P2",
+        45,
+        48
+      ],
+      [
+        "P3",
+        48,
+        51
+      ],
+      [
+        "P1",
+        51,
+        52
+      ],
+      [
+        "P5",
+        52,
+        53
+      ],
+      [
+        "P6",
+        53,
+        54
+      ],
+      [
+        "P5",
+        54,
+        56
+      ],
+      [
+        "P6",
+        56,
+        57
+      ],
+      [
+        "P7",
+        57,
+        58
+      ],
+      [
+        "P8",
+        58,
+        59
+      ],
+      [
+        "P6",
+        59,
+        60
+      ],
+      [
+        "P7",
+        60,
+        61
+      ],
+      [
+        "P9",
+        61,
+        62
+      ],
+      [
+        "P8",
+        62,
+        64
+      ],
+      [
+        "P7",
+        64,
+        65
+      ],
+      [
+        "P9",
+        65,
+        67
+      ],
+      [
+        "P4",
+        67,
+        71
+      ],
+      [
+        "P1",
+        71,
+        74
+      ],
+      [
+        "P10",
+        74,
+        75
+      ],
+      [
+        "P10",
+        75,
+        77
+      ],
+      [
+        "P11",
+        77,
+        78
+      ],
+      [
+        "P11",
+        78,
+        80
+      ],
+      [
+        "P5",
+        80,
+        84
+      ],
+      [
+        "P6",
+        84,
+        88
+      ],
+      [
+        "P8",
+        88,
+        91
+      ],
+      [
+        "P12",
+        91,
+        92
+      ],
+      [
+        "P12",
+        92,
+        93
+      ],
+      [
+        "P13",
+        93,
+        94
+      ],
+      [
+        "P14",
+        94,
+        95
+      ],
+      [
+        "P12",
+        95,
+        96
+      ],
+      [
+        "P13",
+        96,
+        97
+      ],
+      [
+        "P15",
+        97,
+        98
+      ],
+      [
+        "P14",
+        98,
+        100
+      ],
+      [
+        "P13",
+        100,
+        101
+      ],
+      [
+        "P15",
+        101,
+        102
+      ],
+      [
+        "P16",
+        102,
+        103
+      ],
+      [
+        "P15",
+        103,
+        104
+      ],
+      [
+        "P16",
+        104,
+        106
+      ],
+      [
+        "P7",
+        106,
+        107
+      ],
+      [
+        "P17",
+        107,
+        108
+      ],
+      [
+        "P9",
+        108,
+        110
+      ],
+      [
+        "P7",
+        110,
+        111
+      ],
+      [
+        "P17",
+        111,
+        113
+      ],
+      [
+        "P4",
+        113,
+        115
+      ],
+      [
+        "P1",
+        115,
+        117
+      ],
+      [
+        "P10",
+        117,
+        119
+      ],
+      [
+        "P18",
+        119,
+        120
+      ],
+      [
+        "P18",
+        120,
+        122
+      ],
+      [
+        "P11",
+        122,
+        124
+      ],
+      [
+        "P19",
+        124,
+        125
+      ],
+      [
+        "P5",
+        125,
+        127
+      ],
+      [
+        "P1",
+        127,
+        128
+      ],
+      [
+        "P19",
+        128,
+        129
+      ],
+      [
+        "P20",
+        129,
+        130
+      ],
+      [
+        "P21",
+        130,
+        131
+      ],
+      [
+        "P1",
+        131,
+        133
+      ],
+      [
+        "P6",
+        133,
+        135
+      ],
+      [
+        "P19",
+        135,
+        136
+      ],
+      [
+        "P20",
+        136,
+        138
+      ],
+      [
+        "P21",
+        138,
+        140
+      ],
+      [
+        "P8",
+        140,
+        141
+      ],
+      [
+        "P12",
+        141,
+        142
+      ],
+      [
+        "P22",
+        142,
+        143
+      ],
+      [
+        "P23",
+        143,
+        144
+      ],
+      [
+        "P14",
+        144,
+        146
+      ],
+      [
+        "P13",
+        146,
+        148
+      ],
+      [
+        "P12",
+        148,
+        149
+      ],
+      [
+        "P22",
+        149,
+        151
+      ],
+      [
+        "P23",
+        151,
+        153
+      ],
+      [
+        "P15",
+        153,
+        155
+      ],
+      [
+        "P16",
+        155,
+        157
+      ],
+      [
+        "P9",
+        157,
+        159
+      ],
+      [
+        "P7",
+        159,
+        161
+      ],
+      [
+        "P17",
+        161,
+        162
+      ],
+      [
+        "P4",
+        162,
+        163
+      ],
+      [
+        "P24",
+        163,
+        164
+      ],
+      [
+        "P10",
+        164,
+        166
+      ],
+      [
+        "P4",
+        166,
+        167
+      ],
+      [
+        "P24",
+        167,
+        169
+      ],
+      [
+        "P11",
+        169,
+        171
+      ],
+      [
+        "P5",
+        171,
+        172
+      ],
+      [
+        "P1",
+        172,
+        174
+      ],
+      [
+        "P4",
+        174,
+        175
+      ],
+      [
+        "P4",
+        175,
+        177
+      ],
+      [
+        "P6",
+        177,
+        178
+      ],
+      [
+        "P19",
+        178,
+        180
+      ],
+      [
+        "P20",
+        180,
+        182
+      ],
+      [
+        "P21",
+        182,
+        184
+      ],
+      [
+        "P14",
+        184,
+        186
+      ],
+      [
+        "P13",
+        186,
+        190
+      ],
+      [
+        "P22",
+        190,
+        193
+      ],
+      [
+        "P23",
+        193,
+        195
+      ],
+      [
+        "P15",
+        195,
+        197
+      ],
+      [
+        "P16",
+        197,
+        199
+      ],
+      [
+        "P7",
+        199,
+        203
+      ],
+      [
+        "P10",
+        203,
+        207
+      ],
+      [
+        "P11",
+        207,
+        208
+      ],
+      [
+        "P4",
+        208,
+        210
+      ],
+      [
+        "P19",
+        210,
+        214
+      ],
+      [
+        "P20",
+        214,
+        218
+      ],
+      [
+        "P21",
+        218,
+        222
+      ],
+      [
+        "P13",
+        222,
+        226
+      ],
+      [
+        "P22",
+        226,
+        227
+      ],
+      [
+        "P23",
+        227,
+        229
+      ],
+      [
+        "P15",
+        229,
+        232
+      ],
+      [
+        "P16",
+        232,
+        236
+      ],
+      [
+        "P7",
+        236,
+        240
+      ],
+      [
+        "P10",
+        240,
+        244
+      ],
+      [
+        "P19",
+        244,
+        248
+      ],
+      [
+        "P21",
+        248,
+        251
+      ],
+      [
+        "P13",
+        251,
+        255
+      ],
+      [
+        "P22",
+        255,
+        256
+      ],
+      [
+        "P10",
+        256,
+        257
+      ],
+      [
+        "P10",
+        257,
+        259
+      ],
+      [
+        "P16",
+        259,
+        263
+      ],
+      [
+        "P7",
+        263,
+        267
+      ],
+      [
+        "P19",
+        267,
+        271
+      ],
+      [
+        "P13",
+        271,
+        273
+      ],
+      [
+        "P16",
+        273,
+        274
+      ],
+      [
+        "P16",
+        274,
+        276
+      ],
+      [
+        "P22",
+        276,
+        279
+      ],
+      [
+        "P10",
+        279,
+        281
+      ],
+      [
+        "P7",
+        281,
+        282
+      ],
+      [
+        "P19",
+        282,
+        283
+      ],
+      [
+        "P13",
+        283,
+        285
+      ],
+      [
+        "P22",
+        285,
+        289
+      ],
+      [
+        "P22",
+        289,
+        293
+      ],
+      [
+        "P7",
+        293,
+        294
+      ],
+      [
+        "P7",
+        294,
+        296
+      ],
+      [
+        "P22",
+        296,
+        298
+      ],
+      [
+        "P19",
+        298,
+        299
+      ],
+      [
+        "P13",
+        299,
+        300
+      ],
+      [
+        "P19",
+        300,
+        301
+      ],
+      [
+        "P13",
+        301,
+        303
+      ],
+      [
+        "P22",
+        303,
+        305
+      ],
+      [
+        "P13",
+        305,
+        307
+      ],
+      [
+        "P22",
+        307,
+        308
+      ],
+      [
+        "P22",
+        328,
+        329
+      ],
+      [
+        "P22",
+        329,
+        331
+      ]
+    ]
+  }
+]

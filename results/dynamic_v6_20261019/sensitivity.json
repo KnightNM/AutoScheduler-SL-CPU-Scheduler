@@ -1,0 +1,5974 @@
+{
+  "purpose": "Post-audit attribution and fixed-baseline sensitivity only; no selection or retuning",
+  "intervention": "Archived v5 model and (1,2,4)/40 MLFQ unchanged; only guard quiet window doubled in disposable process",
+  "source_sha256": "3ada39adbfa0c6c2011cf74c4e0a5b53706932cb01b93437d47f4b7b13ec9ac8",
+  "rows": [
+    {
+      "seed": 10603000000,
+      "family": "cohort_mix",
+      "policy": "V5 plus v6 guard",
+      "score": 0.0,
+      "p95_response": 0.0,
+      "worst_response": 0,
+      "starvation": 0,
+      "switches": 0,
+      "decision_p99_ms": 3.2441202500000004
+    },
+    {
+      "seed": 10603000000,
+      "family": "cohort_mix",
+      "policy": "Frozen v5 Tuned MLFQ",
+      "score": 0.0,
+      "p95_response": 0.0,
+      "worst_response": 0,
+      "starvation": 0,
+      "switches": 0,
+      "decision_p99_ms": null
+    },
+    {
+      "seed": 10603000001,
+      "family": "sustained_arrivals",
+      "policy": "V5 plus v6 guard",
+      "score": 0.1184151378484764,
+      "p95_response": 1.0,
+      "worst_response": 1,
+      "starvation": 42,
+      "switches": 0,
+      "decision_p99_ms": 0.33586059999999995
+    },
+    {
+      "seed": 10603000001,
+      "family": "sustained_arrivals",
+      "policy": "Frozen v5 Tuned MLFQ",
+      "score": 0.1184151378484764,
+      "p95_response": 1.0,
+      "worst_response": 1,
+      "starvation": 42,
+      "switches": 0,
+      "decision_p99_ms": null
+    },
+    {
+      "seed": 10603000002,
+      "family": "low_load",
+      "policy": "V5 plus v6 guard",
+      "score": 0.0,
+      "p95_response": 0.0,
+      "worst_response": 0,
+      "starvation": 0,
+      "switches": 0,
+      "decision_p99_ms": 0.31466507
+    },
+    {
+      "seed": 10603000002,
+      "family": "low_load",
+      "policy": "Frozen v5 Tuned MLFQ",
+      "score": 0.0,
+      "p95_response": 0.0,
+      "worst_response": 0,
+      "starvation": 0,
+      "switches": 0,
+      "decision_p99_ms": null
+    },
+    {
+      "seed": 10603000003,
+      "family": "long_io",
+      "policy": "V5 plus v6 guard",
+      "score": 0.1791098186404551,
+      "p95_response": 18.849999999999998,
+      "worst_response": 20,
+      "starvation": 24,
+      "switches": 2,
+      "decision_p99_ms": 0.3196152200000001
+    },
+    {
+      "seed": 10603000003,
+      "family": "long_io",
+      "policy": "Frozen v5 Tuned MLFQ",
+      "score": 0.17616605282115277,
+      "p95_response": 18.849999999999998,
+      "worst_response": 20,
+      "starvation": 24,
+      "switches": 0,
+      "decision_p99_ms": null
+    },
+    {
+      "seed": 10603000004,
+      "family": "repeated_changes",
+      "policy": "V5 plus v6 guard",
+      "score": 0.0,
+      "p95_response": 0.0,
+      "worst_response": 0,
+      "starvation": 0,
+      "switches": 0,
+      "decision_p99_ms": 0.5960887599999999
+    },
+    {
+      "seed": 10603000004,
+      "family": "repeated_changes",
+      "policy": "Frozen v5 Tuned MLFQ",
+      "score": 0.0,
+      "p95_response": 0.0,
+      "worst_response": 0,
+      "starvation": 0,
+      "switches": 0,
+      "decision_p99_ms": null
+    },
+    {
+      "seed": 10603000005,
+      "family": "homogeneous_batch",
+      "policy": "V5 plus v6 guard",
+      "score": 0.09214165464165462,
+      "p95_response": 10.45,
+      "worst_response": 11,
+      "starvation": 11,
+      "switches": 10,
+      "decision_p99_ms": 0.23492291999999998
+    },
+    {
+      "seed": 10603000005,
+      "family": "homogeneous_batch",
+      "policy": "Frozen v5 Tuned MLFQ",
+      "score": 0.1939935064935065,
+      "p95_response": 10.45,
+      "worst_response": 11,
+      "starvation": 12,
+      "switches": 0,
+      "decision_p99_ms": null
+    },
+    {
+      "seed": 10603000006,
+      "family": "cohort_mix",
+      "policy": "V5 plus v6 guard",
+      "score": 0.05676552363299348,
+      "p95_response": 0.0,
+      "worst_response": 0,
+      "starvation": 0,
+      "switches": 0,
+      "decision_p99_ms": 0.23860529
+    },
+    {
+      "seed": 10603000006,
+      "family": "cohort_mix",
+      "policy": "Frozen v5 Tuned MLFQ",
+      "score": 0.05676552363299348,
+      "p95_response": 0.0,
+      "worst_response": 0,
+      "starvation": 0,
+      "switches": 0,
+      "decision_p99_ms": null
+    },
+    {
+      "seed": 10603000007,
+      "family": "sustained_arrivals",
+      "policy": "V5 plus v6 guard",
+      "score": 0.17848354969921307,
+      "p95_response": 0.0,
+      "worst_response": 0,
+      "starvation": 9,
+      "switches": 0,
+      "decision_p99_ms": 0.27060471999999997
+    },
+    {
+      "seed": 10603000007,
+      "family": "sustained_arrivals",
+      "policy": "Frozen v5 Tuned MLFQ",
+      "score": 0.17848354969921307,
+      "p95_response": 0.0,
+      "worst_response": 0,
+      "starvation": 9,
+      "switches": 0,
+      "decision_p99_ms": null
+    },
+    {
+      "seed": 10603000008,
+      "family": "low_load",
+      "policy": "V5 plus v6 guard",
+      "score": 0.0,
+      "p95_response": 0.0,
+      "worst_response": 0,
+      "starvation": 0,
+      "switches": 0,
+      "decision_p99_ms": 0.2536545
+    },
+    {
+      "seed": 10603000008,
+      "family": "low_load",
+      "policy": "Frozen v5 Tuned MLFQ",
+      "score": 0.0,
+      "p95_response": 0.0,
+      "worst_response": 0,
+      "starvation": 0,
+      "switches": 0,
+      "decision_p99_ms": null
+    },
+    {
+      "seed": 10603000009,
+      "family": "long_io",
+      "policy": "V5 plus v6 guard",
+      "score": 0.3942974021029499,
+      "p95_response": 2.0,
+      "worst_response": 2,
+      "starvation": 0,
+      "switches": 2,
+      "decision_p99_ms": 0.27531756
+    },
+    {
+      "seed": 10603000009,
+      "family": "long_io",
+      "policy": "Frozen v5 Tuned MLFQ",
+      "score": 0.506417026622394,
+      "p95_response": 2.0,
+      "worst_response": 2,
+      "starvation": 0,
+      "switches": 0,
+      "decision_p99_ms": null
+    },
+    {
+      "seed": 10603000010,
+      "family": "repeated_changes",
+      "policy": "V5 plus v6 guard",
+      "score": 0.12654729099071066,
+      "p95_response": 2.0,
+      "worst_response": 2,
+      "starvation": 10,
+      "switches": 2,
+      "decision_p99_ms": 0.28726224
+    },
+    {
+      "seed": 10603000010,
+      "family": "repeated_changes",
+      "policy": "Frozen v5 Tuned MLFQ",
+      "score": 0.1248694386417174,
+      "p95_response": 2.0,
+      "worst_response": 2,
+      "starvation": 9,
+      "switches": 0,
+      "decision_p99_ms": null
+    },
+    {
+      "seed": 10603000011,
+      "family": "homogeneous_batch",
+      "policy": "V5 plus v6 guard",
+      "score": 0.07034676420368946,
+      "p95_response": 44.65,
+      "worst_response": 47,
+      "starvation": 47,
+      "switches": 33,
+      "decision_p99_ms": 0.3442525599999996
+    },
+    {
+      "seed": 10603000011,
+      "family": "homogeneous_batch",
+      "policy": "Frozen v5 Tuned MLFQ",
+      "score": 0.22604539823897687,
+      "p95_response": 44.65,
+      "worst_response": 47,
+      "starvation": 48,
+      "switches": 0,
+      "decision_p99_ms": null
+    },
+    {
+      "seed": 10603000012,
+      "family": "cohort_mix",
+      "policy": "V5 plus v6 guard",
+      "score": 0.10080296562157429,
+      "p95_response": 21.65,
+      "worst_response": 24,
+      "starvation": 48,
+      "switches": 0,
+      "decision_p99_ms": 0.3720618399999998
+    },
+    {
+      "seed": 10603000012,
+      "family": "cohort_mix",
+      "policy": "Frozen v5 Tuned MLFQ",
+      "score": 0.10080296562157429,
+      "p95_response": 21.65,
+      "worst_response": 24,
+      "starvation": 48,
+      "switches": 0,
+      "decision_p99_ms": null
+    },
+    {
+      "seed": 10603000013,
+      "family": "sustained_arrivals",
+      "policy": "V5 plus v6 guard",
+      "score": 0.26633521988030184,
+      "p95_response": 0.75,
+      "worst_response": 1,
+      "starvation": 0,
+      "switches": 0,
+      "decision_p99_ms": 0.33243891999999997
+    },
+    {
+      "seed": 10603000013,
+      "family": "sustained_arrivals",
+      "policy": "Frozen v5 Tuned MLFQ",
+      "score": 0.26633521988030184,
+      "p95_response": 0.75,
+      "worst_response": 1,
+      "starvation": 0,
+      "switches": 0,
+      "decision_p99_ms": null
+    },
+    {
+      "seed": 10603000014,
+      "family": "low_load",
+      "policy": "V5 plus v6 guard",
+      "score": 0.0,
+      "p95_response": 0.0,
+      "worst_response": 0,
+      "starvation": 0,
+      "switches": 0,
+      "decision_p99_ms": 0.27883624
+    },
+    {
+      "seed": 10603000014,
+      "family": "low_load",
+      "policy": "Frozen v5 Tuned MLFQ",
+      "score": 0.0,
+      "p95_response": 0.0,
+      "worst_response": 0,
+      "starvation": 0,
+      "switches": 0,
+      "decision_p99_ms": null
+    },
+    {
+      "seed": 10603000015,
+      "family": "long_io",
+      "policy": "V5 plus v6 guard",
+      "score": 0.17172780581269326,
+      "p95_response": 2.0,
+      "worst_response": 2,
+      "starvation": 0,
+      "switches": 2,
+      "decision_p99_ms": 0.3515203799999999
+    },
+    {
+      "seed": 10603000015,
+      "family": "long_io",
+      "policy": "Frozen v5 Tuned MLFQ",
+      "score": 0.4778797845986055,
+      "p95_response": 2.0,
+      "worst_response": 2,
+      "starvation": 0,
+      "switches": 0,
+      "decision_p99_ms": null
+    },
+    {
+      "seed": 10603000016,
+      "family": "repeated_changes",
+      "policy": "V5 plus v6 guard",
+      "score": 0.0,
+      "p95_response": 0.0,
+      "worst_response": 0,
+      "starvation": 0,
+      "switches": 0,
+      "decision_p99_ms": 0.24046984
+    },
+    {
+      "seed": 10603000016,
+      "family": "repeated_changes",
+      "policy": "Frozen v5 Tuned MLFQ",
+      "score": 0.0,
+      "p95_response": 0.0,
+      "worst_response": 0,
+      "starvation": 0,
+      "switches": 0,
+      "decision_p99_ms": null
+    },
+    {
+      "seed": 10603000017,
+      "family": "homogeneous_batch",
+      "policy": "V5 plus v6 guard",
+      "score": 0.07456857583492876,
+      "p95_response": 44.65,
+      "worst_response": 47,
+      "starvation": 47,
+      "switches": 32,
+      "decision_p99_ms": 0.35944360000000003
+    },
+    {
+      "seed": 10603000017,
+      "family": "homogeneous_batch",
+      "policy": "Frozen v5 Tuned MLFQ",
+      "score": 0.23932075622208043,
+      "p95_response": 44.65,
+      "worst_response": 47,
+      "starvation": 48,
+      "switches": 0,
+      "decision_p99_ms": null
+    },
+    {
+      "seed": 10603000018,
+      "family": "cohort_mix",
+      "policy": "V5 plus v6 guard",
+      "score": 0.06319352539957243,
+      "p95_response": 2.0,
+      "worst_response": 2,
+      "starvation": 4,
+      "switches": 0,
+      "decision_p99_ms": 0.43383095999999977
+    },
+    {
+      "seed": 10603000018,
+      "family": "cohort_mix",
+      "policy": "Frozen v5 Tuned MLFQ",
+      "score": 0.06319352539957243,
+      "p95_response": 2.0,
+      "worst_response": 2,
+      "starvation": 4,
+      "switches": 0,
+      "decision_p99_ms": null
+    },
+    {
+      "seed": 10603000019,
+      "family": "sustained_arrivals",
+      "policy": "V5 plus v6 guard",
+      "score": 0.12377735436538811,
+      "p95_response": 1.0,
+      "worst_response": 1,
+      "starvation": 20,
+      "switches": 0,
+      "decision_p99_ms": 0.27936469
+    },
+    {
+      "seed": 10603000019,
+      "family": "sustained_arrivals",
+      "policy": "Frozen v5 Tuned MLFQ",
+      "score": 0.12377735436538811,
+      "p95_response": 1.0,
+      "worst_response": 1,
+      "starvation": 20,
+      "switches": 0,
+      "decision_p99_ms": null
+    },
+    {
+      "seed": 10603000020,
+      "family": "low_load",
+      "policy": "V5 plus v6 guard",
+      "score": 0.0,
+      "p95_response": 0.0,
+      "worst_response": 0,
+      "starvation": 0,
+      "switches": 0,
+      "decision_p99_ms": 0.38404572000000003
+    },
+    {
+      "seed": 10603000020,
+      "family": "low_load",
+      "policy": "Frozen v5 Tuned MLFQ",
+      "score": 0.0,
+      "p95_response": 0.0,
+      "worst_response": 0,
+      "starvation": 0,
+      "switches": 0,
+      "decision_p99_ms": null
+    },
+    {
+      "seed": 10603000021,
+      "family": "long_io",
+      "policy": "V5 plus v6 guard",
+      "score": 0.5003315405622473,
+      "p95_response": 2.0,
+      "worst_response": 2,
+      "starvation": 0,
+      "switches": 2,
+      "decision_p99_ms": 0.2411891
+    },
+    {
+      "seed": 10603000021,
+      "family": "long_io",
+      "policy": "Frozen v5 Tuned MLFQ",
+      "score": 0.40926624846602744,
+      "p95_response": 2.0,
+      "worst_response": 2,
+      "starvation": 0,
+      "switches": 0,
+      "decision_p99_ms": null
+    },
+    {
+      "seed": 10603000022,
+      "family": "repeated_changes",
+      "policy": "V5 plus v6 guard",
+      "score": 0.1812416136217917,
+      "p95_response": 2.849999999999998,
+      "worst_response": 3,
+      "starvation": 6,
+      "switches": 2,
+      "decision_p99_ms": 0.27438425
+    },
+    {
+      "seed": 10603000022,
+      "family": "repeated_changes",
+      "policy": "Frozen v5 Tuned MLFQ",
+      "score": 0.2029635725475421,
+      "p95_response": 2.849999999999998,
+      "worst_response": 3,
+      "starvation": 9,
+      "switches": 0,
+      "decision_p99_ms": null
+    },
+    {
+      "seed": 10603000023,
+      "family": "homogeneous_batch",
+      "policy": "V5 plus v6 guard",
+      "score": 0.07731032002876664,
+      "p95_response": 21.849999999999998,
+      "worst_response": 23,
+      "starvation": 23,
+      "switches": 26,
+      "decision_p99_ms": 0.35572436000000013
+    },
+    {
+      "seed": 10603000023,
+      "family": "homogeneous_batch",
+      "policy": "Frozen v5 Tuned MLFQ",
+      "score": 0.2269866954332974,
+      "p95_response": 21.849999999999998,
+      "worst_response": 23,
+      "starvation": 24,
+      "switches": 0,
+      "decision_p99_ms": null
+    },
+    {
+      "seed": 10603000024,
+      "family": "cohort_mix",
+      "policy": "V5 plus v6 guard",
+      "score": 0.0,
+      "p95_response": 0.0,
+      "worst_response": 0,
+      "starvation": 0,
+      "switches": 0,
+      "decision_p99_ms": 0.27945325
+    },
+    {
+      "seed": 10603000024,
+      "family": "cohort_mix",
+      "policy": "Frozen v5 Tuned MLFQ",
+      "score": 0.0,
+      "p95_response": 0.0,
+      "worst_response": 0,
+      "starvation": 0,
+      "switches": 0,
+      "decision_p99_ms": null
+    },
+    {
+      "seed": 10603000025,
+      "family": "sustained_arrivals",
+      "policy": "V5 plus v6 guard",
+      "score": 0.39425883256528405,
+      "p95_response": 0.8999999999999999,
+      "worst_response": 1,
+      "starvation": 0,
+      "switches": 0,
+      "decision_p99_ms": 0.22661734
+    },
+    {
+      "seed": 10603000025,
+      "family": "sustained_arrivals",
+      "policy": "Frozen v5 Tuned MLFQ",
+      "score": 0.39425883256528405,
+      "p95_response": 0.8999999999999999,
+      "worst_response": 1,
+      "starvation": 0,
+      "switches": 0,
+      "decision_p99_ms": null
+    },
+    {
+      "seed": 10603000026,
+      "family": "low_load",
+      "policy": "V5 plus v6 guard",
+      "score": 0.0,
+      "p95_response": 0.0,
+      "worst_response": 0,
+      "starvation": 0,
+      "switches": 0,
+      "decision_p99_ms": 0.24701286000000003
+    },
+    {
+      "seed": 10603000026,
+      "family": "low_load",
+      "policy": "Frozen v5 Tuned MLFQ",
+      "score": 0.0,
+      "p95_response": 0.0,
+      "worst_response": 0,
+      "starvation": 0,
+      "switches": 0,
+      "decision_p99_ms": null
+    },
+    {
+      "seed": 10603000027,
+      "family": "long_io",
+      "policy": "V5 plus v6 guard",
+      "score": 0.17491913270227477,
+      "p95_response": 18.849999999999998,
+      "worst_response": 20,
+      "starvation": 24,
+      "switches": 2,
+      "decision_p99_ms": 0.4346950999999997
+    },
+    {
+      "seed": 10603000027,
+      "family": "long_io",
+      "policy": "Frozen v5 Tuned MLFQ",
+      "score": 0.19201760530822798,
+      "p95_response": 18.849999999999998,
+      "worst_response": 20,
+      "starvation": 24,
+      "switches": 0,
+      "decision_p99_ms": null
+    },
+    {
+      "seed": 10603000028,
+      "family": "repeated_changes",
+      "policy": "V5 plus v6 guard",
+      "score": 0.19810170622164205,
+      "p95_response": 2.0,
+      "worst_response": 2,
+      "starvation": 8,
+      "switches": 4,
+      "decision_p99_ms": 0.5465933299999993
+    },
+    {
+      "seed": 10603000028,
+      "family": "repeated_changes",
+      "policy": "Frozen v5 Tuned MLFQ",
+      "score": 0.20587372694703066,
+      "p95_response": 2.0,
+      "worst_response": 2,
+      "starvation": 10,
+      "switches": 0,
+      "decision_p99_ms": null
+    },
+    {
+      "seed": 10603000029,
+      "family": "homogeneous_batch",
+      "policy": "V5 plus v6 guard",
+      "score": 0.1272461456671983,
+      "p95_response": 4.75,
+      "worst_response": 5,
+      "starvation": 4,
+      "switches": 4,
+      "decision_p99_ms": 0.2510636
+    },
+    {
+      "seed": 10603000029,
+      "family": "homogeneous_batch",
+      "policy": "Frozen v5 Tuned MLFQ",
+      "score": 0.2747208931419458,
+      "p95_response": 4.75,
+      "worst_response": 5,
+      "starvation": 6,
+      "switches": 0,
+      "decision_p99_ms": null
+    },
+    {
+      "seed": 10603000030,
+      "family": "cohort_mix",
+      "policy": "V5 plus v6 guard",
+      "score": 0.0,
+      "p95_response": 0.0,
+      "worst_response": 0,
+      "starvation": 0,
+      "switches": 0,
+      "decision_p99_ms": 0.35058395000000003
+    },
+    {
+      "seed": 10603000030,
+      "family": "cohort_mix",
+      "policy": "Frozen v5 Tuned MLFQ",
+      "score": 0.0,
+      "p95_response": 0.0,
+      "worst_response": 0,
+      "starvation": 0,
+      "switches": 0,
+      "decision_p99_ms": null
+    },
+    {
+      "seed": 10603000031,
+      "family": "sustained_arrivals",
+      "policy": "V5 plus v6 guard",
+      "score": 0.30322282645573834,
+      "p95_response": 2.0,
+      "worst_response": 2,
+      "starvation": 5,
+      "switches": 0,
+      "decision_p99_ms": 0.23614727999999996
+    },
+    {
+      "seed": 10603000031,
+      "family": "sustained_arrivals",
+      "policy": "Frozen v5 Tuned MLFQ",
+      "score": 0.30322282645573834,
+      "p95_response": 2.0,
+      "worst_response": 2,
+      "starvation": 5,
+      "switches": 0,
+      "decision_p99_ms": null
+    },
+    {
+      "seed": 10603000032,
+      "family": "low_load",
+      "policy": "V5 plus v6 guard",
+      "score": 0.0,
+      "p95_response": 0.0,
+      "worst_response": 0,
+      "starvation": 0,
+      "switches": 0,
+      "decision_p99_ms": 0.4992391199999997
+    },
+    {
+      "seed": 10603000032,
+      "family": "low_load",
+      "policy": "Frozen v5 Tuned MLFQ",
+      "score": 0.0,
+      "p95_response": 0.0,
+      "worst_response": 0,
+      "starvation": 0,
+      "switches": 0,
+      "decision_p99_ms": null
+    },
+    {
+      "seed": 10603000033,
+      "family": "long_io",
+      "policy": "V5 plus v6 guard",
+      "score": 0.17730206657673248,
+      "p95_response": 18.849999999999998,
+      "worst_response": 20,
+      "starvation": 24,
+      "switches": 2,
+      "decision_p99_ms": 0.511882
+    },
+    {
+      "seed": 10603000033,
+      "family": "long_io",
+      "policy": "Frozen v5 Tuned MLFQ",
+      "score": 0.18556197847100558,
+      "p95_response": 18.849999999999998,
+      "worst_response": 20,
+      "starvation": 24,
+      "switches": 0,
+      "decision_p99_ms": null
+    },
+    {
+      "seed": 10603000034,
+      "family": "repeated_changes",
+      "policy": "V5 plus v6 guard",
+      "score": 0.3421052631578948,
+      "p95_response": 0.0,
+      "worst_response": 0,
+      "starvation": 0,
+      "switches": 0,
+      "decision_p99_ms": 0.6052237799999993
+    },
+    {
+      "seed": 10603000034,
+      "family": "repeated_changes",
+      "policy": "Frozen v5 Tuned MLFQ",
+      "score": 0.3421052631578948,
+      "p95_response": 0.0,
+      "worst_response": 0,
+      "starvation": 0,
+      "switches": 0,
+      "decision_p99_ms": null
+    },
+    {
+      "seed": 10603000035,
+      "family": "homogeneous_batch",
+      "policy": "V5 plus v6 guard",
+      "score": 0.15200047630388186,
+      "p95_response": 4.75,
+      "worst_response": 5,
+      "starvation": 4,
+      "switches": 4,
+      "decision_p99_ms": 0.36206730000000004
+    },
+    {
+      "seed": 10603000035,
+      "family": "homogeneous_batch",
+      "policy": "Frozen v5 Tuned MLFQ",
+      "score": 0.3092402953084068,
+      "p95_response": 4.75,
+      "worst_response": 5,
+      "starvation": 6,
+      "switches": 0,
+      "decision_p99_ms": null
+    },
+    {
+      "seed": 10603000036,
+      "family": "cohort_mix",
+      "policy": "V5 plus v6 guard",
+      "score": 0.020488230165649518,
+      "p95_response": 1.0,
+      "worst_response": 1,
+      "starvation": 0,
+      "switches": 0,
+      "decision_p99_ms": 0.23050204
+    },
+    {
+      "seed": 10603000036,
+      "family": "cohort_mix",
+      "policy": "Frozen v5 Tuned MLFQ",
+      "score": 0.020488230165649518,
+      "p95_response": 1.0,
+      "worst_response": 1,
+      "starvation": 0,
+      "switches": 0,
+      "decision_p99_ms": null
+    },
+    {
+      "seed": 10603000037,
+      "family": "sustained_arrivals",
+      "policy": "V5 plus v6 guard",
+      "score": 0.23028858438257746,
+      "p95_response": 1.4499999999999993,
+      "worst_response": 2,
+      "starvation": 9,
+      "switches": 0,
+      "decision_p99_ms": 0.25309423999999997
+    },
+    {
+      "seed": 10603000037,
+      "family": "sustained_arrivals",
+      "policy": "Frozen v5 Tuned MLFQ",
+      "score": 0.23028858438257746,
+      "p95_response": 1.4499999999999993,
+      "worst_response": 2,
+      "starvation": 9,
+      "switches": 0,
+      "decision_p99_ms": null
+    },
+    {
+      "seed": 10603000038,
+      "family": "low_load",
+      "policy": "V5 plus v6 guard",
+      "score": 0.0,
+      "p95_response": 0.0,
+      "worst_response": 0,
+      "starvation": 0,
+      "switches": 0,
+      "decision_p99_ms": 0.23317189
+    },
+    {
+      "seed": 10603000038,
+      "family": "low_load",
+      "policy": "Frozen v5 Tuned MLFQ",
+      "score": 0.0,
+      "p95_response": 0.0,
+      "worst_response": 0,
+      "starvation": 0,
+      "switches": 0,
+      "decision_p99_ms": null
+    },
+    {
+      "seed": 10603000039,
+      "family": "long_io",
+      "policy": "V5 plus v6 guard",
+      "score": 0.21257261650044584,
+      "p95_response": 41.65,
+      "worst_response": 44,
+      "starvation": 48,
+      "switches": 2,
+      "decision_p99_ms": 0.6070606
+    },
+    {
+      "seed": 10603000039,
+      "family": "long_io",
+      "policy": "Frozen v5 Tuned MLFQ",
+      "score": 0.21666369782474842,
+      "p95_response": 41.65,
+      "worst_response": 44,
+      "starvation": 48,
+      "switches": 0,
+      "decision_p99_ms": null
+    },
+    {
+      "seed": 10603000040,
+      "family": "repeated_changes",
+      "policy": "V5 plus v6 guard",
+      "score": 0.533333333333333,
+      "p95_response": 0.0,
+      "worst_response": 0,
+      "starvation": 0,
+      "switches": 0,
+      "decision_p99_ms": 0.5792485999999998
+    },
+    {
+      "seed": 10603000040,
+      "family": "repeated_changes",
+      "policy": "Frozen v5 Tuned MLFQ",
+      "score": 0.533333333333333,
+      "p95_response": 0.0,
+      "worst_response": 0,
+      "starvation": 0,
+      "switches": 0,
+      "decision_p99_ms": null
+    },
+    {
+      "seed": 10603000041,
+      "family": "homogeneous_batch",
+      "policy": "V5 plus v6 guard",
+      "score": 0.47023809523809523,
+      "p95_response": 1.9,
+      "worst_response": 2,
+      "starvation": 0,
+      "switches": 1,
+      "decision_p99_ms": 0.44134107999999994
+    },
+    {
+      "seed": 10603000041,
+      "family": "homogeneous_batch",
+      "policy": "Frozen v5 Tuned MLFQ",
+      "score": 0.5178571428571428,
+      "p95_response": 1.9,
+      "worst_response": 2,
+      "starvation": 0,
+      "switches": 0,
+      "decision_p99_ms": null
+    },
+    {
+      "seed": 10603000042,
+      "family": "cohort_mix",
+      "policy": "V5 plus v6 guard",
+      "score": 0.04184422912905638,
+      "p95_response": 2.4499999999999993,
+      "worst_response": 3,
+      "starvation": 4,
+      "switches": 0,
+      "decision_p99_ms": 0.31423531999999993
+    },
+    {
+      "seed": 10603000042,
+      "family": "cohort_mix",
+      "policy": "Frozen v5 Tuned MLFQ",
+      "score": 0.04184422912905638,
+      "p95_response": 2.4499999999999993,
+      "worst_response": 3,
+      "starvation": 4,
+      "switches": 0,
+      "decision_p99_ms": null
+    },
+    {
+      "seed": 10603000043,
+      "family": "sustained_arrivals",
+      "policy": "V5 plus v6 guard",
+      "score": 0.18457534617218607,
+      "p95_response": 1.0,
+      "worst_response": 1,
+      "starvation": 5,
+      "switches": 0,
+      "decision_p99_ms": 0.2455998
+    },
+    {
+      "seed": 10603000043,
+      "family": "sustained_arrivals",
+      "policy": "Frozen v5 Tuned MLFQ",
+      "score": 0.18457534617218607,
+      "p95_response": 1.0,
+      "worst_response": 1,
+      "starvation": 5,
+      "switches": 0,
+      "decision_p99_ms": null
+    },
+    {
+      "seed": 10603000044,
+      "family": "low_load",
+      "policy": "V5 plus v6 guard",
+      "score": 0.0,
+      "p95_response": 0.0,
+      "worst_response": 0,
+      "starvation": 0,
+      "switches": 0,
+      "decision_p99_ms": 0.24807992
+    },
+    {
+      "seed": 10603000044,
+      "family": "low_load",
+      "policy": "Frozen v5 Tuned MLFQ",
+      "score": 0.0,
+      "p95_response": 0.0,
+      "worst_response": 0,
+      "starvation": 0,
+      "switches": 0,
+      "decision_p99_ms": null
+    },
+    {
+      "seed": 10603000045,
+      "family": "long_io",
+      "policy": "V5 plus v6 guard",
+      "score": 0.12763910875223988,
+      "p95_response": 7.449999999999999,
+      "worst_response": 8,
+      "starvation": 12,
+      "switches": 2,
+      "decision_p99_ms": 0.35697855
+    },
+    {
+      "seed": 10603000045,
+      "family": "long_io",
+      "policy": "Frozen v5 Tuned MLFQ",
+      "score": 0.18428373289320116,
+      "p95_response": 7.449999999999999,
+      "worst_response": 8,
+      "starvation": 12,
+      "switches": 0,
+      "decision_p99_ms": null
+    },
+    {
+      "seed": 10603000046,
+      "family": "repeated_changes",
+      "policy": "V5 plus v6 guard",
+      "score": 0.13719356666466132,
+      "p95_response": 6.0,
+      "worst_response": 7,
+      "starvation": 39,
+      "switches": 2,
+      "decision_p99_ms": 0.34467992000000003
+    },
+    {
+      "seed": 10603000046,
+      "family": "repeated_changes",
+      "policy": "Frozen v5 Tuned MLFQ",
+      "score": 0.14319381409754517,
+      "p95_response": 6.0,
+      "worst_response": 7,
+      "starvation": 41,
+      "switches": 0,
+      "decision_p99_ms": null
+    },
+    {
+      "seed": 10603000047,
+      "family": "homogeneous_batch",
+      "policy": "V5 plus v6 guard",
+      "score": 0.07791834002677375,
+      "p95_response": 21.849999999999998,
+      "worst_response": 23,
+      "starvation": 23,
+      "switches": 24,
+      "decision_p99_ms": 0.57307978
+    },
+    {
+      "seed": 10603000047,
+      "family": "homogeneous_batch",
+      "policy": "Frozen v5 Tuned MLFQ",
+      "score": 0.22560910307898263,
+      "p95_response": 21.849999999999998,
+      "worst_response": 23,
+      "starvation": 24,
+      "switches": 0,
+      "decision_p99_ms": null
+    },
+    {
+      "seed": 10603000048,
+      "family": "cohort_mix",
+      "policy": "V5 plus v6 guard",
+      "score": 0.008395522388059736,
+      "p95_response": 0.75,
+      "worst_response": 1,
+      "starvation": 0,
+      "switches": 0,
+      "decision_p99_ms": 0.43787476000000003
+    },
+    {
+      "seed": 10603000048,
+      "family": "cohort_mix",
+      "policy": "Frozen v5 Tuned MLFQ",
+      "score": 0.008395522388059736,
+      "p95_response": 0.75,
+      "worst_response": 1,
+      "starvation": 0,
+      "switches": 0,
+      "decision_p99_ms": null
+    },
+    {
+      "seed": 10603000049,
+      "family": "sustained_arrivals",
+      "policy": "V5 plus v6 guard",
+      "score": 0.40506584477444657,
+      "p95_response": 0.75,
+      "worst_response": 1,
+      "starvation": 2,
+      "switches": 0,
+      "decision_p99_ms": 0.33139199999999996
+    },
+    {
+      "seed": 10603000049,
+      "family": "sustained_arrivals",
+      "policy": "Frozen v5 Tuned MLFQ",
+      "score": 0.40506584477444657,
+      "p95_response": 0.75,
+      "worst_response": 1,
+      "starvation": 2,
+      "switches": 0,
+      "decision_p99_ms": null
+    },
+    {
+      "seed": 10603000050,
+      "family": "low_load",
+      "policy": "V5 plus v6 guard",
+      "score": 0.0,
+      "p95_response": 0.0,
+      "worst_response": 0,
+      "starvation": 0,
+      "switches": 0,
+      "decision_p99_ms": 0.24003414
+    },
+    {
+      "seed": 10603000050,
+      "family": "low_load",
+      "policy": "Frozen v5 Tuned MLFQ",
+      "score": 0.0,
+      "p95_response": 0.0,
+      "worst_response": 0,
+      "starvation": 0,
+      "switches": 0,
+      "decision_p99_ms": null
+    },
+    {
+      "seed": 10603000051,
+      "family": "long_io",
+      "policy": "V5 plus v6 guard",
+      "score": 0.1741531340779831,
+      "p95_response": 18.849999999999998,
+      "worst_response": 20,
+      "starvation": 24,
+      "switches": 2,
+      "decision_p99_ms": 0.36853452
+    },
+    {
+      "seed": 10603000051,
+      "family": "long_io",
+      "policy": "Frozen v5 Tuned MLFQ",
+      "score": 0.18528100054358548,
+      "p95_response": 18.849999999999998,
+      "worst_response": 20,
+      "starvation": 24,
+      "switches": 0,
+      "decision_p99_ms": null
+    },
+    {
+      "seed": 10603000052,
+      "family": "repeated_changes",
+      "policy": "V5 plus v6 guard",
+      "score": 0.12588443396226418,
+      "p95_response": 0.75,
+      "worst_response": 1,
+      "starvation": 0,
+      "switches": 0,
+      "decision_p99_ms": 0.55419416
+    },
+    {
+      "seed": 10603000052,
+      "family": "repeated_changes",
+      "policy": "Frozen v5 Tuned MLFQ",
+      "score": 0.12588443396226418,
+      "p95_response": 0.75,
+      "worst_response": 1,
+      "starvation": 0,
+      "switches": 0,
+      "decision_p99_ms": null
+    },
+    {
+      "seed": 10603000053,
+      "family": "homogeneous_batch",
+      "policy": "V5 plus v6 guard",
+      "score": 0.09022998913437161,
+      "p95_response": 10.45,
+      "worst_response": 11,
+      "starvation": 11,
+      "switches": 10,
+      "decision_p99_ms": 0.5053737999999994
+    },
+    {
+      "seed": 10603000053,
+      "family": "homogeneous_batch",
+      "policy": "Frozen v5 Tuned MLFQ",
+      "score": 0.1948116624411445,
+      "p95_response": 10.45,
+      "worst_response": 11,
+      "starvation": 12,
+      "switches": 0,
+      "decision_p99_ms": null
+    },
+    {
+      "seed": 10603000054,
+      "family": "cohort_mix",
+      "policy": "V5 plus v6 guard",
+      "score": 0.05787812487615106,
+      "p95_response": 4.0,
+      "worst_response": 5,
+      "starvation": 19,
+      "switches": 0,
+      "decision_p99_ms": 0.6184279899999997
+    },
+    {
+      "seed": 10603000054,
+      "family": "cohort_mix",
+      "policy": "Frozen v5 Tuned MLFQ",
+      "score": 0.05787812487615106,
+      "p95_response": 4.0,
+      "worst_response": 5,
+      "starvation": 19,
+      "switches": 0,
+      "decision_p99_ms": null
+    },
+    {
+      "seed": 10603000055,
+      "family": "sustained_arrivals",
+      "policy": "V5 plus v6 guard",
+      "score": 0.9044372171945702,
+      "p95_response": 0.0,
+      "worst_response": 0,
+      "starvation": 0,
+      "switches": 0,
+      "decision_p99_ms": 0.2998472
+    },
+    {
+      "seed": 10603000055,
+      "family": "sustained_arrivals",
+      "policy": "Frozen v5 Tuned MLFQ",
+      "score": 0.9044372171945702,
+      "p95_response": 0.0,
+      "worst_response": 0,
+      "starvation": 0,
+      "switches": 0,
+      "decision_p99_ms": null
+    },
+    {
+      "seed": 10603000056,
+      "family": "low_load",
+      "policy": "V5 plus v6 guard",
+      "score": 0.0,
+      "p95_response": 0.0,
+      "worst_response": 0,
+      "starvation": 0,
+      "switches": 0,
+      "decision_p99_ms": 0.3261521399999999
+    },
+    {
+      "seed": 10603000056,
+      "family": "low_load",
+      "policy": "Frozen v5 Tuned MLFQ",
+      "score": 0.0,
+      "p95_response": 0.0,
+      "worst_response": 0,
+      "starvation": 0,
+      "switches": 0,
+      "decision_p99_ms": null
+    },
+    {
+      "seed": 10603000057,
+      "family": "long_io",
+      "policy": "V5 plus v6 guard",
+      "score": 0.7471955128205133,
+      "p95_response": 0.0,
+      "worst_response": 0,
+      "starvation": 0,
+      "switches": 0,
+      "decision_p99_ms": 0.36483579999999993
+    },
+    {
+      "seed": 10603000057,
+      "family": "long_io",
+      "policy": "Frozen v5 Tuned MLFQ",
+      "score": 0.7471955128205133,
+      "p95_response": 0.0,
+      "worst_response": 0,
+      "starvation": 0,
+      "switches": 0,
+      "decision_p99_ms": null
+    },
+    {
+      "seed": 10603000058,
+      "family": "repeated_changes",
+      "policy": "V5 plus v6 guard",
+      "score": 0.4095907829091686,
+      "p95_response": 1.0,
+      "worst_response": 1,
+      "starvation": 0,
+      "switches": 2,
+      "decision_p99_ms": 0.24846880000000002
+    },
+    {
+      "seed": 10603000058,
+      "family": "repeated_changes",
+      "policy": "Frozen v5 Tuned MLFQ",
+      "score": 0.41175528507367076,
+      "p95_response": 1.0,
+      "worst_response": 1,
+      "starvation": 0,
+      "switches": 0,
+      "decision_p99_ms": null
+    },
+    {
+      "seed": 10603000059,
+      "family": "homogeneous_batch",
+      "policy": "V5 plus v6 guard",
+      "score": 0.1610275689223058,
+      "p95_response": 4.75,
+      "worst_response": 5,
+      "starvation": 4,
+      "switches": 4,
+      "decision_p99_ms": 0.3277297
+    },
+    {
+      "seed": 10603000059,
+      "family": "homogeneous_batch",
+      "policy": "Frozen v5 Tuned MLFQ",
+      "score": 0.34398496240601506,
+      "p95_response": 4.75,
+      "worst_response": 5,
+      "starvation": 6,
+      "switches": 0,
+      "decision_p99_ms": null
+    },
+    {
+      "seed": 10603000060,
+      "family": "cohort_mix",
+      "policy": "V5 plus v6 guard",
+      "score": 0.03179216336111464,
+      "p95_response": 4.0,
+      "worst_response": 4,
+      "starvation": 21,
+      "switches": 0,
+      "decision_p99_ms": 0.2747776
+    },
+    {
+      "seed": 10603000060,
+      "family": "cohort_mix",
+      "policy": "Frozen v5 Tuned MLFQ",
+      "score": 0.03179216336111464,
+      "p95_response": 4.0,
+      "worst_response": 4,
+      "starvation": 21,
+      "switches": 0,
+      "decision_p99_ms": null
+    },
+    {
+      "seed": 10603000061,
+      "family": "sustained_arrivals",
+      "policy": "V5 plus v6 guard",
+      "score": 0.374375,
+      "p95_response": 0.0,
+      "worst_response": 0,
+      "starvation": 2,
+      "switches": 0,
+      "decision_p99_ms": 0.26188629999999996
+    },
+    {
+      "seed": 10603000061,
+      "family": "sustained_arrivals",
+      "policy": "Frozen v5 Tuned MLFQ",
+      "score": 0.374375,
+      "p95_response": 0.0,
+      "worst_response": 0,
+      "starvation": 2,
+      "switches": 0,
+      "decision_p99_ms": null
+    },
+    {
+      "seed": 10603000062,
+      "family": "low_load",
+      "policy": "V5 plus v6 guard",
+      "score": 0.0,
+      "p95_response": 0.0,
+      "worst_response": 0,
+      "starvation": 0,
+      "switches": 0,
+      "decision_p99_ms": 0.39172276
+    },
+    {
+      "seed": 10603000062,
+      "family": "low_load",
+      "policy": "Frozen v5 Tuned MLFQ",
+      "score": 0.0,
+      "p95_response": 0.0,
+      "worst_response": 0,
+      "starvation": 0,
+      "switches": 0,
+      "decision_p99_ms": null
+    },
+    {
+      "seed": 10603000063,
+      "family": "long_io",
+      "policy": "V5 plus v6 guard",
+      "score": 0.6822922096625605,
+      "p95_response": 2.0,
+      "worst_response": 2,
+      "starvation": 1,
+      "switches": 2,
+      "decision_p99_ms": 0.24154847999999998
+    },
+    {
+      "seed": 10603000063,
+      "family": "long_io",
+      "policy": "Frozen v5 Tuned MLFQ",
+      "score": 0.3321858799270274,
+      "p95_response": 2.0,
+      "worst_response": 2,
+      "starvation": 0,
+      "switches": 0,
+      "decision_p99_ms": null
+    },
+    {
+      "seed": 10603000064,
+      "family": "repeated_changes",
+      "policy": "V5 plus v6 guard",
+      "score": 0.218039905010244,
+      "p95_response": 1.0,
+      "worst_response": 1,
+      "starvation": 0,
+      "switches": 2,
+      "decision_p99_ms": 0.28282250000000003
+    },
+    {
+      "seed": 10603000064,
+      "family": "repeated_changes",
+      "policy": "Frozen v5 Tuned MLFQ",
+      "score": 0.22167186626932392,
+      "p95_response": 1.0,
+      "worst_response": 1,
+      "starvation": 0,
+      "switches": 0,
+      "decision_p99_ms": null
+    },
+    {
+      "seed": 10603000065,
+      "family": "homogeneous_batch",
+      "policy": "V5 plus v6 guard",
+      "score": 0.07872227206360935,
+      "p95_response": 44.65,
+      "worst_response": 47,
+      "starvation": 47,
+      "switches": 54,
+      "decision_p99_ms": 0.4542675999999992
+    },
+    {
+      "seed": 10603000065,
+      "family": "homogeneous_batch",
+      "policy": "Frozen v5 Tuned MLFQ",
+      "score": 0.24282613858251098,
+      "p95_response": 44.65,
+      "worst_response": 47,
+      "starvation": 48,
+      "switches": 0,
+      "decision_p99_ms": null
+    },
+    {
+      "seed": 10603000066,
+      "family": "cohort_mix",
+      "policy": "V5 plus v6 guard",
+      "score": 0.06981284617774265,
+      "p95_response": 1.4499999999999993,
+      "worst_response": 2,
+      "starvation": 4,
+      "switches": 0,
+      "decision_p99_ms": 0.7127159199999997
+    },
+    {
+      "seed": 10603000066,
+      "family": "cohort_mix",
+      "policy": "Frozen v5 Tuned MLFQ",
+      "score": 0.06981284617774265,
+      "p95_response": 1.4499999999999993,
+      "worst_response": 2,
+      "starvation": 4,
+      "switches": 0,
+      "decision_p99_ms": null
+    },
+    {
+      "seed": 10603000067,
+      "family": "sustained_arrivals",
+      "policy": "V5 plus v6 guard",
+      "score": 0.1046194668808986,
+      "p95_response": 0.4499999999999993,
+      "worst_response": 1,
+      "starvation": 2,
+      "switches": 0,
+      "decision_p99_ms": 0.30390216
+    },
+    {
+      "seed": 10603000067,
+      "family": "sustained_arrivals",
+      "policy": "Frozen v5 Tuned MLFQ",
+      "score": 0.1046194668808986,
+      "p95_response": 0.4499999999999993,
+      "worst_response": 1,
+      "starvation": 2,
+      "switches": 0,
+      "decision_p99_ms": null
+    },
+    {
+      "seed": 10603000068,
+      "family": "low_load",
+      "policy": "V5 plus v6 guard",
+      "score": 0.0,
+      "p95_response": 0.0,
+      "worst_response": 0,
+      "starvation": 0,
+      "switches": 0,
+      "decision_p99_ms": 0.2541407
+    },
+    {
+      "seed": 10603000068,
+      "family": "low_load",
+      "policy": "Frozen v5 Tuned MLFQ",
+      "score": 0.0,
+      "p95_response": 0.0,
+      "worst_response": 0,
+      "starvation": 0,
+      "switches": 0,
+      "decision_p99_ms": null
+    },
+    {
+      "seed": 10603000069,
+      "family": "long_io",
+      "policy": "V5 plus v6 guard",
+      "score": 0.22982496310331213,
+      "p95_response": 2.0,
+      "worst_response": 2,
+      "starvation": 0,
+      "switches": 2,
+      "decision_p99_ms": 0.3811321599999998
+    },
+    {
+      "seed": 10603000069,
+      "family": "long_io",
+      "policy": "Frozen v5 Tuned MLFQ",
+      "score": 0.20642142610600714,
+      "p95_response": 2.0,
+      "worst_response": 2,
+      "starvation": 0,
+      "switches": 0,
+      "decision_p99_ms": null
+    },
+    {
+      "seed": 10603000070,
+      "family": "repeated_changes",
+      "policy": "V5 plus v6 guard",
+      "score": 0.28865712338104976,
+      "p95_response": 1.0,
+      "worst_response": 1,
+      "starvation": 0,
+      "switches": 2,
+      "decision_p99_ms": 0.2978899
+    },
+    {
+      "seed": 10603000070,
+      "family": "repeated_changes",
+      "policy": "Frozen v5 Tuned MLFQ",
+      "score": 0.28865712338104976,
+      "p95_response": 1.0,
+      "worst_response": 1,
+      "starvation": 0,
+      "switches": 0,
+      "decision_p99_ms": null
+    },
+    {
+      "seed": 10603000071,
+      "family": "homogeneous_batch",
+      "policy": "V5 plus v6 guard",
+      "score": 0.08024906890130351,
+      "p95_response": 44.65,
+      "worst_response": 47,
+      "starvation": 47,
+      "switches": 47,
+      "decision_p99_ms": 0.35621295999999997
+    },
+    {
+      "seed": 10603000071,
+      "family": "homogeneous_batch",
+      "policy": "Frozen v5 Tuned MLFQ",
+      "score": 0.24205432602778973,
+      "p95_response": 44.65,
+      "worst_response": 47,
+      "starvation": 48,
+      "switches": 0,
+      "decision_p99_ms": null
+    },
+    {
+      "seed": 10603000072,
+      "family": "cohort_mix",
+      "policy": "V5 plus v6 guard",
+      "score": 0.06590785148805839,
+      "p95_response": 1.0,
+      "worst_response": 1,
+      "starvation": 4,
+      "switches": 0,
+      "decision_p99_ms": 0.6050278399999999
+    },
+    {
+      "seed": 10603000072,
+      "family": "cohort_mix",
+      "policy": "Frozen v5 Tuned MLFQ",
+      "score": 0.06590785148805839,
+      "p95_response": 1.0,
+      "worst_response": 1,
+      "starvation": 4,
+      "switches": 0,
+      "decision_p99_ms": null
+    },
+    {
+      "seed": 10603000073,
+      "family": "sustained_arrivals",
+      "policy": "V5 plus v6 guard",
+      "score": 0.5882352941176471,
+      "p95_response": 0.0,
+      "worst_response": 0,
+      "starvation": 0,
+      "switches": 0,
+      "decision_p99_ms": 0.27608768
+    },
+    {
+      "seed": 10603000073,
+      "family": "sustained_arrivals",
+      "policy": "Frozen v5 Tuned MLFQ",
+      "score": 0.5882352941176471,
+      "p95_response": 0.0,
+      "worst_response": 0,
+      "starvation": 0,
+      "switches": 0,
+      "decision_p99_ms": null
+    },
+    {
+      "seed": 10603000074,
+      "family": "low_load",
+      "policy": "V5 plus v6 guard",
+      "score": 0.0,
+      "p95_response": 0.0,
+      "worst_response": 0,
+      "starvation": 0,
+      "switches": 0,
+      "decision_p99_ms": 0.26201074
+    },
+    {
+      "seed": 10603000074,
+      "family": "low_load",
+      "policy": "Frozen v5 Tuned MLFQ",
+      "score": 0.0,
+      "p95_response": 0.0,
+      "worst_response": 0,
+      "starvation": 0,
+      "switches": 0,
+      "decision_p99_ms": null
+    },
+    {
+      "seed": 10603000075,
+      "family": "long_io",
+      "policy": "V5 plus v6 guard",
+      "score": 0.19775007646135317,
+      "p95_response": 7.449999999999999,
+      "worst_response": 8,
+      "starvation": 11,
+      "switches": 2,
+      "decision_p99_ms": 0.25979603
+    },
+    {
+      "seed": 10603000075,
+      "family": "long_io",
+      "policy": "Frozen v5 Tuned MLFQ",
+      "score": 0.2296943899488312,
+      "p95_response": 7.449999999999999,
+      "worst_response": 8,
+      "starvation": 12,
+      "switches": 0,
+      "decision_p99_ms": null
+    },
+    {
+      "seed": 10603000076,
+      "family": "repeated_changes",
+      "policy": "V5 plus v6 guard",
+      "score": 0.13465853723600402,
+      "p95_response": 2.0,
+      "worst_response": 2,
+      "starvation": 8,
+      "switches": 4,
+      "decision_p99_ms": 0.3513573999999999
+    },
+    {
+      "seed": 10603000076,
+      "family": "repeated_changes",
+      "policy": "Frozen v5 Tuned MLFQ",
+      "score": 0.14018226882356544,
+      "p95_response": 2.0,
+      "worst_response": 2,
+      "starvation": 10,
+      "switches": 0,
+      "decision_p99_ms": null
+    },
+    {
+      "seed": 10603000077,
+      "family": "homogeneous_batch",
+      "policy": "V5 plus v6 guard",
+      "score": 0.14887457715326569,
+      "p95_response": 4.75,
+      "worst_response": 5,
+      "starvation": 4,
+      "switches": 4,
+      "decision_p99_ms": 0.27610120000000005
+    },
+    {
+      "seed": 10603000077,
+      "family": "homogeneous_batch",
+      "policy": "Frozen v5 Tuned MLFQ",
+      "score": 0.31983476450689563,
+      "p95_response": 4.75,
+      "worst_response": 5,
+      "starvation": 6,
+      "switches": 0,
+      "decision_p99_ms": null
+    },
+    {
+      "seed": 10603000078,
+      "family": "cohort_mix",
+      "policy": "V5 plus v6 guard",
+      "score": 0.0,
+      "p95_response": 0.0,
+      "worst_response": 0,
+      "starvation": 0,
+      "switches": 0,
+      "decision_p99_ms": 0.2318144
+    },
+    {
+      "seed": 10603000078,
+      "family": "cohort_mix",
+      "policy": "Frozen v5 Tuned MLFQ",
+      "score": 0.0,
+      "p95_response": 0.0,
+      "worst_response": 0,
+      "starvation": 0,
+      "switches": 0,
+      "decision_p99_ms": null
+    },
+    {
+      "seed": 10603000079,
+      "family": "sustained_arrivals",
+      "policy": "V5 plus v6 guard",
+      "score": 0.3595825407469243,
+      "p95_response": 0.75,
+      "worst_response": 1,
+      "starvation": 1,
+      "switches": 0,
+      "decision_p99_ms": 0.3117325799999999
+    },
+    {
+      "seed": 10603000079,
+      "family": "sustained_arrivals",
+      "policy": "Frozen v5 Tuned MLFQ",
+      "score": 0.3595825407469243,
+      "p95_response": 0.75,
+      "worst_response": 1,
+      "starvation": 1,
+      "switches": 0,
+      "decision_p99_ms": null
+    },
+    {
+      "seed": 10603000080,
+      "family": "low_load",
+      "policy": "V5 plus v6 guard",
+      "score": 0.0,
+      "p95_response": 0.0,
+      "worst_response": 0,
+      "starvation": 0,
+      "switches": 0,
+      "decision_p99_ms": 0.21246596
+    },
+    {
+      "seed": 10603000080,
+      "family": "low_load",
+      "policy": "Frozen v5 Tuned MLFQ",
+      "score": 0.0,
+      "p95_response": 0.0,
+      "worst_response": 0,
+      "starvation": 0,
+      "switches": 0,
+      "decision_p99_ms": null
+    },
+    {
+      "seed": 10603000081,
+      "family": "long_io",
+      "policy": "V5 plus v6 guard",
+      "score": 0.1775395378592589,
+      "p95_response": 18.849999999999998,
+      "worst_response": 20,
+      "starvation": 24,
+      "switches": 2,
+      "decision_p99_ms": 0.31457984
+    },
+    {
+      "seed": 10603000081,
+      "family": "long_io",
+      "policy": "Frozen v5 Tuned MLFQ",
+      "score": 0.183890668413204,
+      "p95_response": 18.849999999999998,
+      "worst_response": 20,
+      "starvation": 24,
+      "switches": 0,
+      "decision_p99_ms": null
+    },
+    {
+      "seed": 10603000082,
+      "family": "repeated_changes",
+      "policy": "V5 plus v6 guard",
+      "score": 0.4717948717948718,
+      "p95_response": 1.0,
+      "worst_response": 1,
+      "starvation": 0,
+      "switches": 2,
+      "decision_p99_ms": 0.28136042
+    },
+    {
+      "seed": 10603000082,
+      "family": "repeated_changes",
+      "policy": "Frozen v5 Tuned MLFQ",
+      "score": 0.4829059829059828,
+      "p95_response": 1.0,
+      "worst_response": 1,
+      "starvation": 0,
+      "switches": 0,
+      "decision_p99_ms": null
+    },
+    {
+      "seed": 10603000083,
+      "family": "homogeneous_batch",
+      "policy": "V5 plus v6 guard",
+      "score": 0.09586486654831977,
+      "p95_response": 10.45,
+      "worst_response": 11,
+      "starvation": 11,
+      "switches": 10,
+      "decision_p99_ms": 0.2404914
+    },
+    {
+      "seed": 10603000083,
+      "family": "homogeneous_batch",
+      "policy": "Frozen v5 Tuned MLFQ",
+      "score": 0.2013804540782958,
+      "p95_response": 10.45,
+      "worst_response": 11,
+      "starvation": 12,
+      "switches": 0,
+      "decision_p99_ms": null
+    },
+    {
+      "seed": 10603000084,
+      "family": "cohort_mix",
+      "policy": "V5 plus v6 guard",
+      "score": 0.05975383397377427,
+      "p95_response": 4.0,
+      "worst_response": 4,
+      "starvation": 23,
+      "switches": 0,
+      "decision_p99_ms": 0.26556072
+    },
+    {
+      "seed": 10603000084,
+      "family": "cohort_mix",
+      "policy": "Frozen v5 Tuned MLFQ",
+      "score": 0.05975383397377427,
+      "p95_response": 4.0,
+      "worst_response": 4,
+      "starvation": 23,
+      "switches": 0,
+      "decision_p99_ms": null
+    },
+    {
+      "seed": 10603000085,
+      "family": "sustained_arrivals",
+      "policy": "V5 plus v6 guard",
+      "score": 0.16141869299379324,
+      "p95_response": 0.0,
+      "worst_response": 1,
+      "starvation": 17,
+      "switches": 0,
+      "decision_p99_ms": 0.27906523000000005
+    },
+    {
+      "seed": 10603000085,
+      "family": "sustained_arrivals",
+      "policy": "Frozen v5 Tuned MLFQ",
+      "score": 0.16141869299379324,
+      "p95_response": 0.0,
+      "worst_response": 1,
+      "starvation": 17,
+      "switches": 0,
+      "decision_p99_ms": null
+    },
+    {
+      "seed": 10603000086,
+      "family": "low_load",
+      "policy": "V5 plus v6 guard",
+      "score": 0.0,
+      "p95_response": 0.0,
+      "worst_response": 0,
+      "starvation": 0,
+      "switches": 0,
+      "decision_p99_ms": 0.28164876
+    },
+    {
+      "seed": 10603000086,
+      "family": "low_load",
+      "policy": "Frozen v5 Tuned MLFQ",
+      "score": 0.0,
+      "p95_response": 0.0,
+      "worst_response": 0,
+      "starvation": 0,
+      "switches": 0,
+      "decision_p99_ms": null
+    },
+    {
+      "seed": 10603000087,
+      "family": "long_io",
+      "policy": "V5 plus v6 guard",
+      "score": 0.5706497843473892,
+      "p95_response": 0.0,
+      "worst_response": 0,
+      "starvation": 0,
+      "switches": 0,
+      "decision_p99_ms": 0.25334510000000005
+    },
+    {
+      "seed": 10603000087,
+      "family": "long_io",
+      "policy": "Frozen v5 Tuned MLFQ",
+      "score": 0.5706497843473892,
+      "p95_response": 0.0,
+      "worst_response": 0,
+      "starvation": 0,
+      "switches": 0,
+      "decision_p99_ms": null
+    },
+    {
+      "seed": 10603000088,
+      "family": "repeated_changes",
+      "policy": "V5 plus v6 guard",
+      "score": 0.0,
+      "p95_response": 0.0,
+      "worst_response": 0,
+      "starvation": 0,
+      "switches": 0,
+      "decision_p99_ms": 0.20408284
+    },
+    {
+      "seed": 10603000088,
+      "family": "repeated_changes",
+      "policy": "Frozen v5 Tuned MLFQ",
+      "score": 0.0,
+      "p95_response": 0.0,
+      "worst_response": 0,
+      "starvation": 0,
+      "switches": 0,
+      "decision_p99_ms": null
+    },
+    {
+      "seed": 10603000089,
+      "family": "homogeneous_batch",
+      "policy": "V5 plus v6 guard",
+      "score": 0.07954124189063949,
+      "p95_response": 21.849999999999998,
+      "worst_response": 23,
+      "starvation": 23,
+      "switches": 25,
+      "decision_p99_ms": 0.49876405999999984
+    },
+    {
+      "seed": 10603000089,
+      "family": "homogeneous_batch",
+      "policy": "Frozen v5 Tuned MLFQ",
+      "score": 0.2390793945010813,
+      "p95_response": 21.849999999999998,
+      "worst_response": 23,
+      "starvation": 24,
+      "switches": 0,
+      "decision_p99_ms": null
+    },
+    {
+      "seed": 10603000090,
+      "family": "cohort_mix",
+      "policy": "V5 plus v6 guard",
+      "score": 0.09915320932311593,
+      "p95_response": 22.65,
+      "worst_response": 25,
+      "starvation": 48,
+      "switches": 0,
+      "decision_p99_ms": 0.3258326399999999
+    },
+    {
+      "seed": 10603000090,
+      "family": "cohort_mix",
+      "policy": "Frozen v5 Tuned MLFQ",
+      "score": 0.09915320932311593,
+      "p95_response": 22.65,
+      "worst_response": 25,
+      "starvation": 48,
+      "switches": 0,
+      "decision_p99_ms": null
+    },
+    {
+      "seed": 10603000091,
+      "family": "sustained_arrivals",
+      "policy": "V5 plus v6 guard",
+      "score": 0.29927427996233397,
+      "p95_response": 0.0,
+      "worst_response": 0,
+      "starvation": 0,
+      "switches": 0,
+      "decision_p99_ms": 0.33314563999999997
+    },
+    {
+      "seed": 10603000091,
+      "family": "sustained_arrivals",
+      "policy": "Frozen v5 Tuned MLFQ",
+      "score": 0.29927427996233397,
+      "p95_response": 0.0,
+      "worst_response": 0,
+      "starvation": 0,
+      "switches": 0,
+      "decision_p99_ms": null
+    },
+    {
+      "seed": 10603000092,
+      "family": "low_load",
+      "policy": "V5 plus v6 guard",
+      "score": 0.0,
+      "p95_response": 0.0,
+      "worst_response": 0,
+      "starvation": 0,
+      "switches": 0,
+      "decision_p99_ms": 0.21085771
+    },
+    {
+      "seed": 10603000092,
+      "family": "low_load",
+      "policy": "Frozen v5 Tuned MLFQ",
+      "score": 0.0,
+      "p95_response": 0.0,
+      "worst_response": 0,
+      "starvation": 0,
+      "switches": 0,
+      "decision_p99_ms": null
+    },
+    {
+      "seed": 10603000093,
+      "family": "long_io",
+      "policy": "V5 plus v6 guard",
+      "score": 0.23324975453437377,
+      "p95_response": 2.0,
+      "worst_response": 2,
+      "starvation": 0,
+      "switches": 2,
+      "decision_p99_ms": 0.24397676
+    },
+    {
+      "seed": 10603000093,
+      "family": "long_io",
+      "policy": "Frozen v5 Tuned MLFQ",
+      "score": 0.29686418895405,
+      "p95_response": 2.0,
+      "worst_response": 2,
+      "starvation": 0,
+      "switches": 0,
+      "decision_p99_ms": null
+    },
+    {
+      "seed": 10603000094,
+      "family": "repeated_changes",
+      "policy": "V5 plus v6 guard",
+      "score": 0.36174738807309803,
+      "p95_response": 1.0,
+      "worst_response": 1,
+      "starvation": 0,
+      "switches": 0,
+      "decision_p99_ms": 0.3895628400000001
+    },
+    {
+      "seed": 10603000094,
+      "family": "repeated_changes",
+      "policy": "Frozen v5 Tuned MLFQ",
+      "score": 0.36174738807309803,
+      "p95_response": 1.0,
+      "worst_response": 1,
+      "starvation": 0,
+      "switches": 0,
+      "decision_p99_ms": null
+    },
+    {
+      "seed": 10603000095,
+      "family": "homogeneous_batch",
+      "policy": "V5 plus v6 guard",
+      "score": 0.07960817629492326,
+      "p95_response": 21.849999999999998,
+      "worst_response": 23,
+      "starvation": 23,
+      "switches": 25,
+      "decision_p99_ms": 0.26480153
+    },
+    {
+      "seed": 10603000095,
+      "family": "homogeneous_batch",
+      "policy": "Frozen v5 Tuned MLFQ",
+      "score": 0.2390793945010813,
+      "p95_response": 21.849999999999998,
+      "worst_response": 23,
+      "starvation": 24,
+      "switches": 0,
+      "decision_p99_ms": null
+    },
+    {
+      "seed": 10603000096,
+      "family": "cohort_mix",
+      "policy": "V5 plus v6 guard",
+      "score": 0.06941391941391922,
+      "p95_response": 0.0,
+      "worst_response": 0,
+      "starvation": 0,
+      "switches": 0,
+      "decision_p99_ms": 0.24714824999999999
+    },
+    {
+      "seed": 10603000096,
+      "family": "cohort_mix",
+      "policy": "Frozen v5 Tuned MLFQ",
+      "score": 0.06941391941391922,
+      "p95_response": 0.0,
+      "worst_response": 0,
+      "starvation": 0,
+      "switches": 0,
+      "decision_p99_ms": null
+    },
+    {
+      "seed": 10603000097,
+      "family": "sustained_arrivals",
+      "policy": "V5 plus v6 guard",
+      "score": 0.18041833576494914,
+      "p95_response": 1.4499999999999993,
+      "worst_response": 2,
+      "starvation": 8,
+      "switches": 0,
+      "decision_p99_ms": 0.27219013
+    },
+    {
+      "seed": 10603000097,
+      "family": "sustained_arrivals",
+      "policy": "Frozen v5 Tuned MLFQ",
+      "score": 0.18041833576494914,
+      "p95_response": 1.4499999999999993,
+      "worst_response": 2,
+      "starvation": 8,
+      "switches": 0,
+      "decision_p99_ms": null
+    },
+    {
+      "seed": 10603000098,
+      "family": "low_load",
+      "policy": "V5 plus v6 guard",
+      "score": 0.0,
+      "p95_response": 0.0,
+      "worst_response": 0,
+      "starvation": 0,
+      "switches": 0,
+      "decision_p99_ms": 0.25694804000000004
+    },
+    {
+      "seed": 10603000098,
+      "family": "low_load",
+      "policy": "Frozen v5 Tuned MLFQ",
+      "score": 0.0,
+      "p95_response": 0.0,
+      "worst_response": 0,
+      "starvation": 0,
+      "switches": 0,
+      "decision_p99_ms": null
+    },
+    {
+      "seed": 10603000099,
+      "family": "long_io",
+      "policy": "V5 plus v6 guard",
+      "score": 0.24797681516332082,
+      "p95_response": 7.449999999999999,
+      "worst_response": 8,
+      "starvation": 12,
+      "switches": 2,
+      "decision_p99_ms": 0.3209522000000001
+    },
+    {
+      "seed": 10603000099,
+      "family": "long_io",
+      "policy": "Frozen v5 Tuned MLFQ",
+      "score": 0.2898293953352449,
+      "p95_response": 7.449999999999999,
+      "worst_response": 8,
+      "starvation": 12,
+      "switches": 0,
+      "decision_p99_ms": null
+    },
+    {
+      "seed": 10603000100,
+      "family": "repeated_changes",
+      "policy": "V5 plus v6 guard",
+      "score": 0.19462483574939132,
+      "p95_response": 2.0,
+      "worst_response": 3,
+      "starvation": 6,
+      "switches": 2,
+      "decision_p99_ms": 0.2736362799999999
+    },
+    {
+      "seed": 10603000100,
+      "family": "repeated_changes",
+      "policy": "Frozen v5 Tuned MLFQ",
+      "score": 0.2109864552724085,
+      "p95_response": 2.0,
+      "worst_response": 3,
+      "starvation": 7,
+      "switches": 0,
+      "decision_p99_ms": null
+    },
+    {
+      "seed": 10603000101,
+      "family": "homogeneous_batch",
+      "policy": "V5 plus v6 guard",
+      "score": 0.07621996996996999,
+      "p95_response": 10.45,
+      "worst_response": 11,
+      "starvation": 11,
+      "switches": 11,
+      "decision_p99_ms": 0.29645688
+    },
+    {
+      "seed": 10603000101,
+      "family": "homogeneous_batch",
+      "policy": "Frozen v5 Tuned MLFQ",
+      "score": 0.17787162162162162,
+      "p95_response": 10.45,
+      "worst_response": 11,
+      "starvation": 12,
+      "switches": 0,
+      "decision_p99_ms": null
+    },
+    {
+      "seed": 10603000102,
+      "family": "cohort_mix",
+      "policy": "V5 plus v6 guard",
+      "score": 0.07844258285434666,
+      "p95_response": 1.0,
+      "worst_response": 1,
+      "starvation": 0,
+      "switches": 0,
+      "decision_p99_ms": 0.26095915999999997
+    },
+    {
+      "seed": 10603000102,
+      "family": "cohort_mix",
+      "policy": "Frozen v5 Tuned MLFQ",
+      "score": 0.07844258285434666,
+      "p95_response": 1.0,
+      "worst_response": 1,
+      "starvation": 0,
+      "switches": 0,
+      "decision_p99_ms": null
+    },
+    {
+      "seed": 10603000103,
+      "family": "sustained_arrivals",
+      "policy": "V5 plus v6 guard",
+      "score": 0.10171071082681295,
+      "p95_response": 0.8499999999999979,
+      "worst_response": 1,
+      "starvation": 18,
+      "switches": 0,
+      "decision_p99_ms": 0.26860916
+    },
+    {
+      "seed": 10603000103,
+      "family": "sustained_arrivals",
+      "policy": "Frozen v5 Tuned MLFQ",
+      "score": 0.10171071082681295,
+      "p95_response": 0.8499999999999979,
+      "worst_response": 1,
+      "starvation": 18,
+      "switches": 0,
+      "decision_p99_ms": null
+    },
+    {
+      "seed": 10603000104,
+      "family": "low_load",
+      "policy": "V5 plus v6 guard",
+      "score": 0.0,
+      "p95_response": 0.0,
+      "worst_response": 0,
+      "starvation": 0,
+      "switches": 0,
+      "decision_p99_ms": 0.23739752
+    },
+    {
+      "seed": 10603000104,
+      "family": "low_load",
+      "policy": "Frozen v5 Tuned MLFQ",
+      "score": 0.0,
+      "p95_response": 0.0,
+      "worst_response": 0,
+      "starvation": 0,
+      "switches": 0,
+      "decision_p99_ms": null
+    },
+    {
+      "seed": 10603000105,
+      "family": "long_io",
+      "policy": "V5 plus v6 guard",
+      "score": 0.2136987656848689,
+      "p95_response": 41.65,
+      "worst_response": 44,
+      "starvation": 48,
+      "switches": 2,
+      "decision_p99_ms": 0.45982458
+    },
+    {
+      "seed": 10603000105,
+      "family": "long_io",
+      "policy": "Frozen v5 Tuned MLFQ",
+      "score": 0.21815780192763604,
+      "p95_response": 41.65,
+      "worst_response": 44,
+      "starvation": 48,
+      "switches": 0,
+      "decision_p99_ms": null
+    },
+    {
+      "seed": 10603000106,
+      "family": "repeated_changes",
+      "policy": "V5 plus v6 guard",
+      "score": 0.14100913941462512,
+      "p95_response": 2.0,
+      "worst_response": 2,
+      "starvation": 5,
+      "switches": 0,
+      "decision_p99_ms": 0.4408384399999994
+    },
+    {
+      "seed": 10603000106,
+      "family": "repeated_changes",
+      "policy": "Frozen v5 Tuned MLFQ",
+      "score": 0.14100913941462512,
+      "p95_response": 2.0,
+      "worst_response": 2,
+      "starvation": 5,
+      "switches": 0,
+      "decision_p99_ms": null
+    },
+    {
+      "seed": 10603000107,
+      "family": "homogeneous_batch",
+      "policy": "V5 plus v6 guard",
+      "score": 0.41145833333333337,
+      "p95_response": 1.9,
+      "worst_response": 2,
+      "starvation": 0,
+      "switches": 1,
+      "decision_p99_ms": 0.320248
+    },
+    {
+      "seed": 10603000107,
+      "family": "homogeneous_batch",
+      "policy": "Frozen v5 Tuned MLFQ",
+      "score": 0.453125,
+      "p95_response": 1.9,
+      "worst_response": 2,
+      "starvation": 0,
+      "switches": 0,
+      "decision_p99_ms": null
+    },
+    {
+      "seed": 10603000108,
+      "family": "cohort_mix",
+      "policy": "V5 plus v6 guard",
+      "score": 0.0,
+      "p95_response": 0.0,
+      "worst_response": 0,
+      "starvation": 0,
+      "switches": 0,
+      "decision_p99_ms": 0.2664669
+    },
+    {
+      "seed": 10603000108,
+      "family": "cohort_mix",
+      "policy": "Frozen v5 Tuned MLFQ",
+      "score": 0.0,
+      "p95_response": 0.0,
+      "worst_response": 0,
+      "starvation": 0,
+      "switches": 0,
+      "decision_p99_ms": null
+    },
+    {
+      "seed": 10603000109,
+      "family": "sustained_arrivals",
+      "policy": "V5 plus v6 guard",
+      "score": 0.16023579722681586,
+      "p95_response": 1.0,
+      "worst_response": 1,
+      "starvation": 16,
+      "switches": 0,
+      "decision_p99_ms": 0.30624756
+    },
+    {
+      "seed": 10603000109,
+      "family": "sustained_arrivals",
+      "policy": "Frozen v5 Tuned MLFQ",
+      "score": 0.16023579722681586,
+      "p95_response": 1.0,
+      "worst_response": 1,
+      "starvation": 16,
+      "switches": 0,
+      "decision_p99_ms": null
+    },
+    {
+      "seed": 10603000110,
+      "family": "low_load",
+      "policy": "V5 plus v6 guard",
+      "score": 0.0,
+      "p95_response": 0.0,
+      "worst_response": 0,
+      "starvation": 0,
+      "switches": 0,
+      "decision_p99_ms": 0.43893530000000014
+    },
+    {
+      "seed": 10603000110,
+      "family": "low_load",
+      "policy": "Frozen v5 Tuned MLFQ",
+      "score": 0.0,
+      "p95_response": 0.0,
+      "worst_response": 0,
+      "starvation": 0,
+      "switches": 0,
+      "decision_p99_ms": null
+    },
+    {
+      "seed": 10603000111,
+      "family": "long_io",
+      "policy": "V5 plus v6 guard",
+      "score": 0.14633924406245608,
+      "p95_response": 7.449999999999999,
+      "worst_response": 8,
+      "starvation": 11,
+      "switches": 2,
+      "decision_p99_ms": 0.3781079000000001
+    },
+    {
+      "seed": 10603000111,
+      "family": "long_io",
+      "policy": "Frozen v5 Tuned MLFQ",
+      "score": 0.2723838516868682,
+      "p95_response": 7.449999999999999,
+      "worst_response": 8,
+      "starvation": 12,
+      "switches": 0,
+      "decision_p99_ms": null
+    },
+    {
+      "seed": 10603000112,
+      "family": "repeated_changes",
+      "policy": "V5 plus v6 guard",
+      "score": 0.21233325427973243,
+      "p95_response": 2.0,
+      "worst_response": 3,
+      "starvation": 8,
+      "switches": 2,
+      "decision_p99_ms": 0.29453599999999996
+    },
+    {
+      "seed": 10603000112,
+      "family": "repeated_changes",
+      "policy": "Frozen v5 Tuned MLFQ",
+      "score": 0.22391970704265576,
+      "p95_response": 2.0,
+      "worst_response": 3,
+      "starvation": 9,
+      "switches": 0,
+      "decision_p99_ms": null
+    },
+    {
+      "seed": 10603000113,
+      "family": "homogeneous_batch",
+      "policy": "V5 plus v6 guard",
+      "score": 0.12529411764705883,
+      "p95_response": 4.75,
+      "worst_response": 5,
+      "starvation": 4,
+      "switches": 3,
+      "decision_p99_ms": 0.39600883000000003
+    },
+    {
+      "seed": 10603000113,
+      "family": "homogeneous_batch",
+      "policy": "Frozen v5 Tuned MLFQ",
+      "score": 0.1995798319327731,
+      "p95_response": 4.75,
+      "worst_response": 5,
+      "starvation": 6,
+      "switches": 0,
+      "decision_p99_ms": null
+    },
+    {
+      "seed": 10603000114,
+      "family": "cohort_mix",
+      "policy": "V5 plus v6 guard",
+      "score": 0.07117480220084316,
+      "p95_response": 5.0,
+      "worst_response": 5,
+      "starvation": 23,
+      "switches": 0,
+      "decision_p99_ms": 0.2758885
+    },
+    {
+      "seed": 10603000114,
+      "family": "cohort_mix",
+      "policy": "Frozen v5 Tuned MLFQ",
+      "score": 0.07117480220084316,
+      "p95_response": 5.0,
+      "worst_response": 5,
+      "starvation": 23,
+      "switches": 0,
+      "decision_p99_ms": null
+    },
+    {
+      "seed": 10603000115,
+      "family": "sustained_arrivals",
+      "policy": "V5 plus v6 guard",
+      "score": 0.20917865917865916,
+      "p95_response": 0.75,
+      "worst_response": 1,
+      "starvation": 0,
+      "switches": 0,
+      "decision_p99_ms": 0.22137936
+    },
+    {
+      "seed": 10603000115,
+      "family": "sustained_arrivals",
+      "policy": "Frozen v5 Tuned MLFQ",
+      "score": 0.20917865917865916,
+      "p95_response": 0.75,
+      "worst_response": 1,
+      "starvation": 0,
+      "switches": 0,
+      "decision_p99_ms": null
+    },
+    {
+      "seed": 10603000116,
+      "family": "low_load",
+      "policy": "V5 plus v6 guard",
+      "score": 0.0,
+      "p95_response": 0.0,
+      "worst_response": 0,
+      "starvation": 0,
+      "switches": 0,
+      "decision_p99_ms": 0.22418524
+    },
+    {
+      "seed": 10603000116,
+      "family": "low_load",
+      "policy": "Frozen v5 Tuned MLFQ",
+      "score": 0.0,
+      "p95_response": 0.0,
+      "worst_response": 0,
+      "starvation": 0,
+      "switches": 0,
+      "decision_p99_ms": null
+    },
+    {
+      "seed": 10603000117,
+      "family": "long_io",
+      "policy": "V5 plus v6 guard",
+      "score": 0.5458866669088274,
+      "p95_response": 0.0,
+      "worst_response": 0,
+      "starvation": 0,
+      "switches": 0,
+      "decision_p99_ms": 0.21407752
+    },
+    {
+      "seed": 10603000117,
+      "family": "long_io",
+      "policy": "Frozen v5 Tuned MLFQ",
+      "score": 0.5458866669088274,
+      "p95_response": 0.0,
+      "worst_response": 0,
+      "starvation": 0,
+      "switches": 0,
+      "decision_p99_ms": null
+    },
+    {
+      "seed": 10603000118,
+      "family": "repeated_changes",
+      "policy": "V5 plus v6 guard",
+      "score": 0.0,
+      "p95_response": 0.0,
+      "worst_response": 0,
+      "starvation": 0,
+      "switches": 0,
+      "decision_p99_ms": 0.21184265000000002
+    },
+    {
+      "seed": 10603000118,
+      "family": "repeated_changes",
+      "policy": "Frozen v5 Tuned MLFQ",
+      "score": 0.0,
+      "p95_response": 0.0,
+      "worst_response": 0,
+      "starvation": 0,
+      "switches": 0,
+      "decision_p99_ms": null
+    },
+    {
+      "seed": 10603000119,
+      "family": "homogeneous_batch",
+      "policy": "V5 plus v6 guard",
+      "score": 0.08242237008871992,
+      "p95_response": 10.45,
+      "worst_response": 11,
+      "starvation": 11,
+      "switches": 10,
+      "decision_p99_ms": 0.25229925000000003
+    },
+    {
+      "seed": 10603000119,
+      "family": "homogeneous_batch",
+      "policy": "Frozen v5 Tuned MLFQ",
+      "score": 0.18825253485424587,
+      "p95_response": 10.45,
+      "worst_response": 11,
+      "starvation": 12,
+      "switches": 0,
+      "decision_p99_ms": null
+    },
+    {
+      "seed": 10603000120,
+      "family": "cohort_mix",
+      "policy": "V5 plus v6 guard",
+      "score": 0.0849688468169422,
+      "p95_response": 23.65,
+      "worst_response": 26,
+      "starvation": 48,
+      "switches": 0,
+      "decision_p99_ms": 0.30468495
+    },
+    {
+      "seed": 10603000120,
+      "family": "cohort_mix",
+      "policy": "Frozen v5 Tuned MLFQ",
+      "score": 0.0849688468169422,
+      "p95_response": 23.65,
+      "worst_response": 26,
+      "starvation": 48,
+      "switches": 0,
+      "decision_p99_ms": null
+    },
+    {
+      "seed": 10603000121,
+      "family": "sustained_arrivals",
+      "policy": "V5 plus v6 guard",
+      "score": 0.16772923320923422,
+      "p95_response": 0.0,
+      "worst_response": 0,
+      "starvation": 4,
+      "switches": 0,
+      "decision_p99_ms": 0.26776964999999997
+    },
+    {
+      "seed": 10603000121,
+      "family": "sustained_arrivals",
+      "policy": "Frozen v5 Tuned MLFQ",
+      "score": 0.16772923320923422,
+      "p95_response": 0.0,
+      "worst_response": 0,
+      "starvation": 4,
+      "switches": 0,
+      "decision_p99_ms": null
+    },
+    {
+      "seed": 10603000122,
+      "family": "low_load",
+      "policy": "V5 plus v6 guard",
+      "score": 0.0,
+      "p95_response": 0.0,
+      "worst_response": 0,
+      "starvation": 0,
+      "switches": 0,
+      "decision_p99_ms": 0.45362108
+    },
+    {
+      "seed": 10603000122,
+      "family": "low_load",
+      "policy": "Frozen v5 Tuned MLFQ",
+      "score": 0.0,
+      "p95_response": 0.0,
+      "worst_response": 0,
+      "starvation": 0,
+      "switches": 0,
+      "decision_p99_ms": null
+    },
+    {
+      "seed": 10603000123,
+      "family": "long_io",
+      "policy": "V5 plus v6 guard",
+      "score": 0.21990071807743616,
+      "p95_response": 41.65,
+      "worst_response": 44,
+      "starvation": 48,
+      "switches": 2,
+      "decision_p99_ms": 0.475958
+    },
+    {
+      "seed": 10603000123,
+      "family": "long_io",
+      "policy": "Frozen v5 Tuned MLFQ",
+      "score": 0.2154300413492194,
+      "p95_response": 41.65,
+      "worst_response": 44,
+      "starvation": 48,
+      "switches": 0,
+      "decision_p99_ms": null
+    },
+    {
+      "seed": 10603000124,
+      "family": "repeated_changes",
+      "policy": "V5 plus v6 guard",
+      "score": 0.10846025554047943,
+      "p95_response": 2.0,
+      "worst_response": 2,
+      "starvation": 9,
+      "switches": 2,
+      "decision_p99_ms": 0.6197611800000005
+    },
+    {
+      "seed": 10603000124,
+      "family": "repeated_changes",
+      "policy": "Frozen v5 Tuned MLFQ",
+      "score": 0.11473569651741293,
+      "p95_response": 2.0,
+      "worst_response": 2,
+      "starvation": 10,
+      "switches": 0,
+      "decision_p99_ms": null
+    },
+    {
+      "seed": 10603000125,
+      "family": "homogeneous_batch",
+      "policy": "V5 plus v6 guard",
+      "score": 0.074098596043395,
+      "p95_response": 44.65,
+      "worst_response": 47,
+      "starvation": 47,
+      "switches": 31,
+      "decision_p99_ms": 0.3308475700000001
+    },
+    {
+      "seed": 10603000125,
+      "family": "homogeneous_batch",
+      "policy": "Frozen v5 Tuned MLFQ",
+      "score": 0.2232822803658796,
+      "p95_response": 44.65,
+      "worst_response": 47,
+      "starvation": 48,
+      "switches": 0,
+      "decision_p99_ms": null
+    },
+    {
+      "seed": 10603000126,
+      "family": "cohort_mix",
+      "policy": "V5 plus v6 guard",
+      "score": 0.09894489613476763,
+      "p95_response": 22.0,
+      "worst_response": 24,
+      "starvation": 48,
+      "switches": 0,
+      "decision_p99_ms": 0.6348266599999998
+    },
+    {
+      "seed": 10603000126,
+      "family": "cohort_mix",
+      "policy": "Frozen v5 Tuned MLFQ",
+      "score": 0.09894489613476763,
+      "p95_response": 22.0,
+      "worst_response": 24,
+      "starvation": 48,
+      "switches": 0,
+      "decision_p99_ms": null
+    },
+    {
+      "seed": 10603000127,
+      "family": "sustained_arrivals",
+      "policy": "V5 plus v6 guard",
+      "score": 0.25647225337280327,
+      "p95_response": 0.0,
+      "worst_response": 0,
+      "starvation": 9,
+      "switches": 0,
+      "decision_p99_ms": 0.36023859999999996
+    },
+    {
+      "seed": 10603000127,
+      "family": "sustained_arrivals",
+      "policy": "Frozen v5 Tuned MLFQ",
+      "score": 0.25647225337280327,
+      "p95_response": 0.0,
+      "worst_response": 0,
+      "starvation": 9,
+      "switches": 0,
+      "decision_p99_ms": null
+    },
+    {
+      "seed": 10603000128,
+      "family": "low_load",
+      "policy": "V5 plus v6 guard",
+      "score": 0.0,
+      "p95_response": 0.0,
+      "worst_response": 0,
+      "starvation": 0,
+      "switches": 0,
+      "decision_p99_ms": 0.2758131
+    },
+    {
+      "seed": 10603000128,
+      "family": "low_load",
+      "policy": "Frozen v5 Tuned MLFQ",
+      "score": 0.0,
+      "p95_response": 0.0,
+      "worst_response": 0,
+      "starvation": 0,
+      "switches": 0,
+      "decision_p99_ms": null
+    },
+    {
+      "seed": 10603000129,
+      "family": "long_io",
+      "policy": "V5 plus v6 guard",
+      "score": 0.21345347898048894,
+      "p95_response": 41.65,
+      "worst_response": 44,
+      "starvation": 48,
+      "switches": 2,
+      "decision_p99_ms": 0.4769834500000003
+    },
+    {
+      "seed": 10603000129,
+      "family": "long_io",
+      "policy": "Frozen v5 Tuned MLFQ",
+      "score": 0.2144030346132778,
+      "p95_response": 41.65,
+      "worst_response": 44,
+      "starvation": 48,
+      "switches": 0,
+      "decision_p99_ms": null
+    },
+    {
+      "seed": 10603000130,
+      "family": "repeated_changes",
+      "policy": "V5 plus v6 guard",
+      "score": 0.13888752700881235,
+      "p95_response": 6.0,
+      "worst_response": 6,
+      "starvation": 37,
+      "switches": 2,
+      "decision_p99_ms": 0.3978962799999992
+    },
+    {
+      "seed": 10603000130,
+      "family": "repeated_changes",
+      "policy": "Frozen v5 Tuned MLFQ",
+      "score": 0.14281566342781357,
+      "p95_response": 6.0,
+      "worst_response": 6,
+      "starvation": 40,
+      "switches": 0,
+      "decision_p99_ms": null
+    },
+    {
+      "seed": 10603000131,
+      "family": "homogeneous_batch",
+      "policy": "V5 plus v6 guard",
+      "score": 0.2611111111111111,
+      "p95_response": 1.9,
+      "worst_response": 2,
+      "starvation": 0,
+      "switches": 1,
+      "decision_p99_ms": 0.3731867
+    },
+    {
+      "seed": 10603000131,
+      "family": "homogeneous_batch",
+      "policy": "Frozen v5 Tuned MLFQ",
+      "score": 0.2611111111111111,
+      "p95_response": 1.9,
+      "worst_response": 2,
+      "starvation": 0,
+      "switches": 0,
+      "decision_p99_ms": null
+    },
+    {
+      "seed": 10603000132,
+      "family": "cohort_mix",
+      "policy": "V5 plus v6 guard",
+      "score": 0.052383570627500924,
+      "p95_response": 4.0,
+      "worst_response": 5,
+      "starvation": 22,
+      "switches": 0,
+      "decision_p99_ms": 0.28198666
+    },
+    {
+      "seed": 10603000132,
+      "family": "cohort_mix",
+      "policy": "Frozen v5 Tuned MLFQ",
+      "score": 0.052383570627500924,
+      "p95_response": 4.0,
+      "worst_response": 5,
+      "starvation": 22,
+      "switches": 0,
+      "decision_p99_ms": null
+    },
+    {
+      "seed": 10603000133,
+      "family": "sustained_arrivals",
+      "policy": "V5 plus v6 guard",
+      "score": 0.43267576752899417,
+      "p95_response": 1.0,
+      "worst_response": 1,
+      "starvation": 3,
+      "switches": 0,
+      "decision_p99_ms": 0.26016819999999996
+    },
+    {
+      "seed": 10603000133,
+      "family": "sustained_arrivals",
+      "policy": "Frozen v5 Tuned MLFQ",
+      "score": 0.43267576752899417,
+      "p95_response": 1.0,
+      "worst_response": 1,
+      "starvation": 3,
+      "switches": 0,
+      "decision_p99_ms": null
+    },
+    {
+      "seed": 10603000134,
+      "family": "low_load",
+      "policy": "V5 plus v6 guard",
+      "score": 0.0,
+      "p95_response": 0.0,
+      "worst_response": 0,
+      "starvation": 0,
+      "switches": 0,
+      "decision_p99_ms": 0.21935643999999999
+    },
+    {
+      "seed": 10603000134,
+      "family": "low_load",
+      "policy": "Frozen v5 Tuned MLFQ",
+      "score": 0.0,
+      "p95_response": 0.0,
+      "worst_response": 0,
+      "starvation": 0,
+      "switches": 0,
+      "decision_p99_ms": null
+    },
+    {
+      "seed": 10603000135,
+      "family": "long_io",
+      "policy": "V5 plus v6 guard",
+      "score": 0.43842954990215266,
+      "p95_response": 2.0,
+      "worst_response": 2,
+      "starvation": 0,
+      "switches": 2,
+      "decision_p99_ms": 0.29356811999999993
+    },
+    {
+      "seed": 10603000135,
+      "family": "long_io",
+      "policy": "Frozen v5 Tuned MLFQ",
+      "score": 0.4496433212409984,
+      "p95_response": 2.0,
+      "worst_response": 2,
+      "starvation": 0,
+      "switches": 0,
+      "decision_p99_ms": null
+    },
+    {
+      "seed": 10603000136,
+      "family": "repeated_changes",
+      "policy": "V5 plus v6 guard",
+      "score": 0.0,
+      "p95_response": 0.0,
+      "worst_response": 0,
+      "starvation": 0,
+      "switches": 0,
+      "decision_p99_ms": 0.23791685999999995
+    },
+    {
+      "seed": 10603000136,
+      "family": "repeated_changes",
+      "policy": "Frozen v5 Tuned MLFQ",
+      "score": 0.0,
+      "p95_response": 0.0,
+      "worst_response": 0,
+      "starvation": 0,
+      "switches": 0,
+      "decision_p99_ms": null
+    },
+    {
+      "seed": 10603000137,
+      "family": "homogeneous_batch",
+      "policy": "V5 plus v6 guard",
+      "score": 0.32305194805194803,
+      "p95_response": 1.9,
+      "worst_response": 2,
+      "starvation": 0,
+      "switches": 1,
+      "decision_p99_ms": 0.2633638
+    },
+    {
+      "seed": 10603000137,
+      "family": "homogeneous_batch",
+      "policy": "Frozen v5 Tuned MLFQ",
+      "score": 0.32305194805194803,
+      "p95_response": 1.9,
+      "worst_response": 2,
+      "starvation": 0,
+      "switches": 0,
+      "decision_p99_ms": null
+    },
+    {
+      "seed": 10603000138,
+      "family": "cohort_mix",
+      "policy": "V5 plus v6 guard",
+      "score": 0.12564018210318106,
+      "p95_response": 22.65,
+      "worst_response": 25,
+      "starvation": 48,
+      "switches": 2,
+      "decision_p99_ms": 0.3444655
+    },
+    {
+      "seed": 10603000138,
+      "family": "cohort_mix",
+      "policy": "Frozen v5 Tuned MLFQ",
+      "score": 0.10676627707782371,
+      "p95_response": 22.65,
+      "worst_response": 25,
+      "starvation": 48,
+      "switches": 0,
+      "decision_p99_ms": null
+    },
+    {
+      "seed": 10603000139,
+      "family": "sustained_arrivals",
+      "policy": "V5 plus v6 guard",
+      "score": 0.11967047290521468,
+      "p95_response": 0.0,
+      "worst_response": 0,
+      "starvation": 4,
+      "switches": 0,
+      "decision_p99_ms": 0.4595099199999999
+    },
+    {
+      "seed": 10603000139,
+      "family": "sustained_arrivals",
+      "policy": "Frozen v5 Tuned MLFQ",
+      "score": 0.11967047290521468,
+      "p95_response": 0.0,
+      "worst_response": 0,
+      "starvation": 4,
+      "switches": 0,
+      "decision_p99_ms": null
+    },
+    {
+      "seed": 10603000140,
+      "family": "low_load",
+      "policy": "V5 plus v6 guard",
+      "score": 0.0,
+      "p95_response": 0.0,
+      "worst_response": 0,
+      "starvation": 0,
+      "switches": 0,
+      "decision_p99_ms": 0.4656156000000001
+    },
+    {
+      "seed": 10603000140,
+      "family": "low_load",
+      "policy": "Frozen v5 Tuned MLFQ",
+      "score": 0.0,
+      "p95_response": 0.0,
+      "worst_response": 0,
+      "starvation": 0,
+      "switches": 0,
+      "decision_p99_ms": null
+    },
+    {
+      "seed": 10603000141,
+      "family": "long_io",
+      "policy": "V5 plus v6 guard",
+      "score": 0.21410806869977045,
+      "p95_response": 41.65,
+      "worst_response": 44,
+      "starvation": 48,
+      "switches": 2,
+      "decision_p99_ms": 0.45203684
+    },
+    {
+      "seed": 10603000141,
+      "family": "long_io",
+      "policy": "Frozen v5 Tuned MLFQ",
+      "score": 0.21705916999432837,
+      "p95_response": 41.65,
+      "worst_response": 44,
+      "starvation": 48,
+      "switches": 0,
+      "decision_p99_ms": null
+    },
+    {
+      "seed": 10603000142,
+      "family": "repeated_changes",
+      "policy": "V5 plus v6 guard",
+      "score": 0.15912467376028908,
+      "p95_response": 2.0,
+      "worst_response": 3,
+      "starvation": 9,
+      "switches": 4,
+      "decision_p99_ms": 0.33643231999999984
+    },
+    {
+      "seed": 10603000142,
+      "family": "repeated_changes",
+      "policy": "Frozen v5 Tuned MLFQ",
+      "score": 0.15599611858395235,
+      "p95_response": 2.0,
+      "worst_response": 3,
+      "starvation": 9,
+      "switches": 0,
+      "decision_p99_ms": null
+    },
+    {
+      "seed": 10603000143,
+      "family": "homogeneous_batch",
+      "policy": "V5 plus v6 guard",
+      "score": 0.2717948717948718,
+      "p95_response": 1.9,
+      "worst_response": 2,
+      "starvation": 0,
+      "switches": 1,
+      "decision_p99_ms": 0.24938883999999997
+    },
+    {
+      "seed": 10603000143,
+      "family": "homogeneous_batch",
+      "policy": "Frozen v5 Tuned MLFQ",
+      "score": 0.2717948717948718,
+      "p95_response": 1.9,
+      "worst_response": 2,
+      "starvation": 0,
+      "switches": 0,
+      "decision_p99_ms": null
+    },
+    {
+      "seed": 10603000144,
+      "family": "cohort_mix",
+      "policy": "V5 plus v6 guard",
+      "score": 0.043795620437956206,
+      "p95_response": 0.0,
+      "worst_response": 0,
+      "starvation": 0,
+      "switches": 0,
+      "decision_p99_ms": 0.21597987
+    },
+    {
+      "seed": 10603000144,
+      "family": "cohort_mix",
+      "policy": "Frozen v5 Tuned MLFQ",
+      "score": 0.043795620437956206,
+      "p95_response": 0.0,
+      "worst_response": 0,
+      "starvation": 0,
+      "switches": 0,
+      "decision_p99_ms": null
+    },
+    {
+      "seed": 10603000145,
+      "family": "sustained_arrivals",
+      "policy": "V5 plus v6 guard",
+      "score": 0.19886946984065876,
+      "p95_response": 2.0,
+      "worst_response": 3,
+      "starvation": 48,
+      "switches": 0,
+      "decision_p99_ms": 0.31265741999999996
+    },
+    {
+      "seed": 10603000145,
+      "family": "sustained_arrivals",
+      "policy": "Frozen v5 Tuned MLFQ",
+      "score": 0.19886946984065876,
+      "p95_response": 2.0,
+      "worst_response": 3,
+      "starvation": 48,
+      "switches": 0,
+      "decision_p99_ms": null
+    },
+    {
+      "seed": 10603000146,
+      "family": "low_load",
+      "policy": "V5 plus v6 guard",
+      "score": 0.0,
+      "p95_response": 0.0,
+      "worst_response": 0,
+      "starvation": 0,
+      "switches": 0,
+      "decision_p99_ms": 0.29131358
+    },
+    {
+      "seed": 10603000146,
+      "family": "low_load",
+      "policy": "Frozen v5 Tuned MLFQ",
+      "score": 0.0,
+      "p95_response": 0.0,
+      "worst_response": 0,
+      "starvation": 0,
+      "switches": 0,
+      "decision_p99_ms": null
+    },
+    {
+      "seed": 10603000147,
+      "family": "long_io",
+      "policy": "V5 plus v6 guard",
+      "score": 0.4706027274290797,
+      "p95_response": 2.0,
+      "worst_response": 2,
+      "starvation": 1,
+      "switches": 2,
+      "decision_p99_ms": 0.27728731
+    },
+    {
+      "seed": 10603000147,
+      "family": "long_io",
+      "policy": "Frozen v5 Tuned MLFQ",
+      "score": 0.2895195074703721,
+      "p95_response": 2.0,
+      "worst_response": 2,
+      "starvation": 0,
+      "switches": 0,
+      "decision_p99_ms": null
+    },
+    {
+      "seed": 10603000148,
+      "family": "repeated_changes",
+      "policy": "V5 plus v6 guard",
+      "score": 0.0,
+      "p95_response": 0.0,
+      "worst_response": 0,
+      "starvation": 0,
+      "switches": 0,
+      "decision_p99_ms": 0.2251789
+    },
+    {
+      "seed": 10603000148,
+      "family": "repeated_changes",
+      "policy": "Frozen v5 Tuned MLFQ",
+      "score": 0.0,
+      "p95_response": 0.0,
+      "worst_response": 0,
+      "starvation": 0,
+      "switches": 0,
+      "decision_p99_ms": null
+    },
+    {
+      "seed": 10603000149,
+      "family": "homogeneous_batch",
+      "policy": "V5 plus v6 guard",
+      "score": 0.4376984126984127,
+      "p95_response": 1.9,
+      "worst_response": 2,
+      "starvation": 0,
+      "switches": 1,
+      "decision_p99_ms": 0.21144471999999997
+    },
+    {
+      "seed": 10603000149,
+      "family": "homogeneous_batch",
+      "policy": "Frozen v5 Tuned MLFQ",
+      "score": 0.48214285714285715,
+      "p95_response": 1.9,
+      "worst_response": 2,
+      "starvation": 0,
+      "switches": 0,
+      "decision_p99_ms": null
+    },
+    {
+      "seed": 10603000150,
+      "family": "cohort_mix",
+      "policy": "V5 plus v6 guard",
+      "score": 0.0,
+      "p95_response": 0.0,
+      "worst_response": 0,
+      "starvation": 0,
+      "switches": 0,
+      "decision_p99_ms": 0.20264464999999998
+    },
+    {
+      "seed": 10603000150,
+      "family": "cohort_mix",
+      "policy": "Frozen v5 Tuned MLFQ",
+      "score": 0.0,
+      "p95_response": 0.0,
+      "worst_response": 0,
+      "starvation": 0,
+      "switches": 0,
+      "decision_p99_ms": null
+    },
+    {
+      "seed": 10603000151,
+      "family": "sustained_arrivals",
+      "policy": "V5 plus v6 guard",
+      "score": 0.15200916583330762,
+      "p95_response": 0.8499999999999979,
+      "worst_response": 1,
+      "starvation": 18,
+      "switches": 0,
+      "decision_p99_ms": 0.30867891999999997
+    },
+    {
+      "seed": 10603000151,
+      "family": "sustained_arrivals",
+      "policy": "Frozen v5 Tuned MLFQ",
+      "score": 0.15200916583330762,
+      "p95_response": 0.8499999999999979,
+      "worst_response": 1,
+      "starvation": 18,
+      "switches": 0,
+      "decision_p99_ms": null
+    },
+    {
+      "seed": 10603000152,
+      "family": "low_load",
+      "policy": "V5 plus v6 guard",
+      "score": 0.0,
+      "p95_response": 0.0,
+      "worst_response": 0,
+      "starvation": 0,
+      "switches": 0,
+      "decision_p99_ms": 0.24355416000000002
+    },
+    {
+      "seed": 10603000152,
+      "family": "low_load",
+      "policy": "Frozen v5 Tuned MLFQ",
+      "score": 0.0,
+      "p95_response": 0.0,
+      "worst_response": 0,
+      "starvation": 0,
+      "switches": 0,
+      "decision_p99_ms": null
+    },
+    {
+      "seed": 10603000153,
+      "family": "long_io",
+      "policy": "V5 plus v6 guard",
+      "score": 0.39689497497112053,
+      "p95_response": 0.0,
+      "worst_response": 0,
+      "starvation": 0,
+      "switches": 2,
+      "decision_p99_ms": 0.22224444000000002
+    },
+    {
+      "seed": 10603000153,
+      "family": "long_io",
+      "policy": "Frozen v5 Tuned MLFQ",
+      "score": 0.4179039071973062,
+      "p95_response": 0.0,
+      "worst_response": 0,
+      "starvation": 0,
+      "switches": 0,
+      "decision_p99_ms": null
+    },
+    {
+      "seed": 10603000154,
+      "family": "repeated_changes",
+      "policy": "V5 plus v6 guard",
+      "score": 0.22159943714821762,
+      "p95_response": 2.0,
+      "worst_response": 2,
+      "starvation": 8,
+      "switches": 2,
+      "decision_p99_ms": 0.2922014
+    },
+    {
+      "seed": 10603000154,
+      "family": "repeated_changes",
+      "policy": "Frozen v5 Tuned MLFQ",
+      "score": 0.22159943714821762,
+      "p95_response": 2.0,
+      "worst_response": 2,
+      "starvation": 8,
+      "switches": 0,
+      "decision_p99_ms": null
+    },
+    {
+      "seed": 10603000155,
+      "family": "homogeneous_batch",
+      "policy": "V5 plus v6 guard",
+      "score": 0.17645249487354747,
+      "p95_response": 4.75,
+      "worst_response": 5,
+      "starvation": 4,
+      "switches": 4,
+      "decision_p99_ms": 0.29545190000000005
+    },
+    {
+      "seed": 10603000155,
+      "family": "homogeneous_batch",
+      "policy": "Frozen v5 Tuned MLFQ",
+      "score": 0.35697197539302805,
+      "p95_response": 4.75,
+      "worst_response": 5,
+      "starvation": 6,
+      "switches": 0,
+      "decision_p99_ms": null
+    },
+    {
+      "seed": 10603000156,
+      "family": "cohort_mix",
+      "policy": "V5 plus v6 guard",
+      "score": 0.19989694703192173,
+      "p95_response": 0.75,
+      "worst_response": 1,
+      "starvation": 0,
+      "switches": 0,
+      "decision_p99_ms": 0.26734636
+    },
+    {
+      "seed": 10603000156,
+      "family": "cohort_mix",
+      "policy": "Frozen v5 Tuned MLFQ",
+      "score": 0.19989694703192173,
+      "p95_response": 0.75,
+      "worst_response": 1,
+      "starvation": 0,
+      "switches": 0,
+      "decision_p99_ms": null
+    },
+    {
+      "seed": 10603000157,
+      "family": "sustained_arrivals",
+      "policy": "V5 plus v6 guard",
+      "score": 0.15649016221303103,
+      "p95_response": 1.0,
+      "worst_response": 1,
+      "starvation": 17,
+      "switches": 0,
+      "decision_p99_ms": 0.29104831999999997
+    },
+    {
+      "seed": 10603000157,
+      "family": "sustained_arrivals",
+      "policy": "Frozen v5 Tuned MLFQ",
+      "score": 0.15649016221303103,
+      "p95_response": 1.0,
+      "worst_response": 1,
+      "starvation": 17,
+      "switches": 0,
+      "decision_p99_ms": null
+    },
+    {
+      "seed": 10603000158,
+      "family": "low_load",
+      "policy": "V5 plus v6 guard",
+      "score": 0.0,
+      "p95_response": 0.0,
+      "worst_response": 0,
+      "starvation": 0,
+      "switches": 0,
+      "decision_p99_ms": 0.29199231999999997
+    },
+    {
+      "seed": 10603000158,
+      "family": "low_load",
+      "policy": "Frozen v5 Tuned MLFQ",
+      "score": 0.0,
+      "p95_response": 0.0,
+      "worst_response": 0,
+      "starvation": 0,
+      "switches": 0,
+      "decision_p99_ms": null
+    },
+    {
+      "seed": 10603000159,
+      "family": "long_io",
+      "policy": "V5 plus v6 guard",
+      "score": 0.1906413234355016,
+      "p95_response": 18.849999999999998,
+      "worst_response": 20,
+      "starvation": 24,
+      "switches": 2,
+      "decision_p99_ms": 0.34718592
+    },
+    {
+      "seed": 10603000159,
+      "family": "long_io",
+      "policy": "Frozen v5 Tuned MLFQ",
+      "score": 0.18966905857008354,
+      "p95_response": 18.849999999999998,
+      "worst_response": 20,
+      "starvation": 24,
+      "switches": 0,
+      "decision_p99_ms": null
+    },
+    {
+      "seed": 10603000160,
+      "family": "repeated_changes",
+      "policy": "V5 plus v6 guard",
+      "score": 0.0,
+      "p95_response": 0.0,
+      "worst_response": 0,
+      "starvation": 0,
+      "switches": 0,
+      "decision_p99_ms": 0.27953528
+    },
+    {
+      "seed": 10603000160,
+      "family": "repeated_changes",
+      "policy": "Frozen v5 Tuned MLFQ",
+      "score": 0.0,
+      "p95_response": 0.0,
+      "worst_response": 0,
+      "starvation": 0,
+      "switches": 0,
+      "decision_p99_ms": null
+    },
+    {
+      "seed": 10603000161,
+      "family": "homogeneous_batch",
+      "policy": "V5 plus v6 guard",
+      "score": 0.32305194805194803,
+      "p95_response": 1.9,
+      "worst_response": 2,
+      "starvation": 0,
+      "switches": 1,
+      "decision_p99_ms": 0.27747570999999993
+    },
+    {
+      "seed": 10603000161,
+      "family": "homogeneous_batch",
+      "policy": "Frozen v5 Tuned MLFQ",
+      "score": 0.32305194805194803,
+      "p95_response": 1.9,
+      "worst_response": 2,
+      "starvation": 0,
+      "switches": 0,
+      "decision_p99_ms": null
+    },
+    {
+      "seed": 10603000162,
+      "family": "cohort_mix",
+      "policy": "V5 plus v6 guard",
+      "score": 0.10397273386318612,
+      "p95_response": 22.0,
+      "worst_response": 24,
+      "starvation": 48,
+      "switches": 0,
+      "decision_p99_ms": 0.4173295
+    },
+    {
+      "seed": 10603000162,
+      "family": "cohort_mix",
+      "policy": "Frozen v5 Tuned MLFQ",
+      "score": 0.10397273386318612,
+      "p95_response": 22.0,
+      "worst_response": 24,
+      "starvation": 48,
+      "switches": 0,
+      "decision_p99_ms": null
+    },
+    {
+      "seed": 10603000163,
+      "family": "sustained_arrivals",
+      "policy": "V5 plus v6 guard",
+      "score": 0.29808006535947706,
+      "p95_response": 0.75,
+      "worst_response": 1,
+      "starvation": 1,
+      "switches": 0,
+      "decision_p99_ms": 0.25257440000000003
+    },
+    {
+      "seed": 10603000163,
+      "family": "sustained_arrivals",
+      "policy": "Frozen v5 Tuned MLFQ",
+      "score": 0.29808006535947706,
+      "p95_response": 0.75,
+      "worst_response": 1,
+      "starvation": 1,
+      "switches": 0,
+      "decision_p99_ms": null
+    },
+    {
+      "seed": 10603000164,
+      "family": "low_load",
+      "policy": "V5 plus v6 guard",
+      "score": 0.0,
+      "p95_response": 0.0,
+      "worst_response": 0,
+      "starvation": 0,
+      "switches": 0,
+      "decision_p99_ms": 0.23885204000000002
+    },
+    {
+      "seed": 10603000164,
+      "family": "low_load",
+      "policy": "Frozen v5 Tuned MLFQ",
+      "score": 0.0,
+      "p95_response": 0.0,
+      "worst_response": 0,
+      "starvation": 0,
+      "switches": 0,
+      "decision_p99_ms": null
+    },
+    {
+      "seed": 10603000165,
+      "family": "long_io",
+      "policy": "V5 plus v6 guard",
+      "score": 0.591811651184177,
+      "p95_response": 0.0,
+      "worst_response": 0,
+      "starvation": 0,
+      "switches": 0,
+      "decision_p99_ms": 0.23579761999999999
+    },
+    {
+      "seed": 10603000165,
+      "family": "long_io",
+      "policy": "Frozen v5 Tuned MLFQ",
+      "score": 0.591811651184177,
+      "p95_response": 0.0,
+      "worst_response": 0,
+      "starvation": 0,
+      "switches": 0,
+      "decision_p99_ms": null
+    },
+    {
+      "seed": 10603000166,
+      "family": "repeated_changes",
+      "policy": "V5 plus v6 guard",
+      "score": 0.09822613035877126,
+      "p95_response": 6.0,
+      "worst_response": 7,
+      "starvation": 40,
+      "switches": 4,
+      "decision_p99_ms": 0.3661390799999997
+    },
+    {
+      "seed": 10603000166,
+      "family": "repeated_changes",
+      "policy": "Frozen v5 Tuned MLFQ",
+      "score": 0.1088473191277855,
+      "p95_response": 6.0,
+      "worst_response": 7,
+      "starvation": 41,
+      "switches": 0,
+      "decision_p99_ms": null
+    },
+    {
+      "seed": 10603000167,
+      "family": "homogeneous_batch",
+      "policy": "V5 plus v6 guard",
+      "score": 0.11162843004948265,
+      "p95_response": 4.75,
+      "worst_response": 5,
+      "starvation": 4,
+      "switches": 4,
+      "decision_p99_ms": 0.3350269
+    },
+    {
+      "seed": 10603000167,
+      "family": "homogeneous_batch",
+      "policy": "Frozen v5 Tuned MLFQ",
+      "score": 0.23043184885290147,
+      "p95_response": 4.75,
+      "worst_response": 5,
+      "starvation": 6,
+      "switches": 0,
+      "decision_p99_ms": null
+    },
+    {
+      "seed": 10603000168,
+      "family": "cohort_mix",
+      "policy": "V5 plus v6 guard",
+      "score": 0.0,
+      "p95_response": 0.0,
+      "worst_response": 0,
+      "starvation": 0,
+      "switches": 0,
+      "decision_p99_ms": 0.23013145000000002
+    },
+    {
+      "seed": 10603000168,
+      "family": "cohort_mix",
+      "policy": "Frozen v5 Tuned MLFQ",
+      "score": 0.0,
+      "p95_response": 0.0,
+      "worst_response": 0,
+      "starvation": 0,
+      "switches": 0,
+      "decision_p99_ms": null
+    },
+    {
+      "seed": 10603000169,
+      "family": "sustained_arrivals",
+      "policy": "V5 plus v6 guard",
+      "score": 0.42290772093403667,
+      "p95_response": 0.0,
+      "worst_response": 0,
+      "starvation": 3,
+      "switches": 0,
+      "decision_p99_ms": 0.20780288
+    },
+    {
+      "seed": 10603000169,
+      "family": "sustained_arrivals",
+      "policy": "Frozen v5 Tuned MLFQ",
+      "score": 0.42290772093403667,
+      "p95_response": 0.0,
+      "worst_response": 0,
+      "starvation": 3,
+      "switches": 0,
+      "decision_p99_ms": null
+    },
+    {
+      "seed": 10603000170,
+      "family": "low_load",
+      "policy": "V5 plus v6 guard",
+      "score": 0.0,
+      "p95_response": 0.0,
+      "worst_response": 0,
+      "starvation": 0,
+      "switches": 0,
+      "decision_p99_ms": 0.2538668
+    },
+    {
+      "seed": 10603000170,
+      "family": "low_load",
+      "policy": "Frozen v5 Tuned MLFQ",
+      "score": 0.0,
+      "p95_response": 0.0,
+      "worst_response": 0,
+      "starvation": 0,
+      "switches": 0,
+      "decision_p99_ms": null
+    },
+    {
+      "seed": 10603000171,
+      "family": "long_io",
+      "policy": "V5 plus v6 guard",
+      "score": 0.37382396536972645,
+      "p95_response": 2.0,
+      "worst_response": 2,
+      "starvation": 0,
+      "switches": 0,
+      "decision_p99_ms": 0.23778013999999997
+    },
+    {
+      "seed": 10603000171,
+      "family": "long_io",
+      "policy": "Frozen v5 Tuned MLFQ",
+      "score": 0.37382396536972645,
+      "p95_response": 2.0,
+      "worst_response": 2,
+      "starvation": 0,
+      "switches": 0,
+      "decision_p99_ms": null
+    },
+    {
+      "seed": 10603000172,
+      "family": "repeated_changes",
+      "policy": "V5 plus v6 guard",
+      "score": 0.0,
+      "p95_response": 0.0,
+      "worst_response": 0,
+      "starvation": 0,
+      "switches": 0,
+      "decision_p99_ms": 0.21770116
+    },
+    {
+      "seed": 10603000172,
+      "family": "repeated_changes",
+      "policy": "Frozen v5 Tuned MLFQ",
+      "score": 0.0,
+      "p95_response": 0.0,
+      "worst_response": 0,
+      "starvation": 0,
+      "switches": 0,
+      "decision_p99_ms": null
+    },
+    {
+      "seed": 10603000173,
+      "family": "homogeneous_batch",
+      "policy": "V5 plus v6 guard",
+      "score": 0.07804881211743958,
+      "p95_response": 44.65,
+      "worst_response": 47,
+      "starvation": 48,
+      "switches": 30,
+      "decision_p99_ms": 0.37742226999999995
+    },
+    {
+      "seed": 10603000173,
+      "family": "homogeneous_batch",
+      "policy": "Frozen v5 Tuned MLFQ",
+      "score": 0.23813414254590726,
+      "p95_response": 44.65,
+      "worst_response": 47,
+      "starvation": 48,
+      "switches": 0,
+      "decision_p99_ms": null
+    },
+    {
+      "seed": 10603000174,
+      "family": "cohort_mix",
+      "policy": "V5 plus v6 guard",
+      "score": 0.0,
+      "p95_response": 0.0,
+      "worst_response": 0,
+      "starvation": 0,
+      "switches": 0,
+      "decision_p99_ms": 0.31705099999999997
+    },
+    {
+      "seed": 10603000174,
+      "family": "cohort_mix",
+      "policy": "Frozen v5 Tuned MLFQ",
+      "score": 0.0,
+      "p95_response": 0.0,
+      "worst_response": 0,
+      "starvation": 0,
+      "switches": 0,
+      "decision_p99_ms": null
+    },
+    {
+      "seed": 10603000175,
+      "family": "sustained_arrivals",
+      "policy": "V5 plus v6 guard",
+      "score": 0.17673237755547969,
+      "p95_response": 0.0,
+      "worst_response": 1,
+      "starvation": 20,
+      "switches": 0,
+      "decision_p99_ms": 0.27556811999999997
+    },
+    {
+      "seed": 10603000175,
+      "family": "sustained_arrivals",
+      "policy": "Frozen v5 Tuned MLFQ",
+      "score": 0.17673237755547969,
+      "p95_response": 0.0,
+      "worst_response": 1,
+      "starvation": 20,
+      "switches": 0,
+      "decision_p99_ms": null
+    },
+    {
+      "seed": 10603000176,
+      "family": "low_load",
+      "policy": "V5 plus v6 guard",
+      "score": 0.0,
+      "p95_response": 0.0,
+      "worst_response": 0,
+      "starvation": 0,
+      "switches": 0,
+      "decision_p99_ms": 0.33667815999999995
+    },
+    {
+      "seed": 10603000176,
+      "family": "low_load",
+      "policy": "Frozen v5 Tuned MLFQ",
+      "score": 0.0,
+      "p95_response": 0.0,
+      "worst_response": 0,
+      "starvation": 0,
+      "switches": 0,
+      "decision_p99_ms": null
+    },
+    {
+      "seed": 10603000177,
+      "family": "long_io",
+      "policy": "V5 plus v6 guard",
+      "score": 0.17131181695520606,
+      "p95_response": 18.849999999999998,
+      "worst_response": 20,
+      "starvation": 24,
+      "switches": 2,
+      "decision_p99_ms": 0.443091
+    },
+    {
+      "seed": 10603000177,
+      "family": "long_io",
+      "policy": "Frozen v5 Tuned MLFQ",
+      "score": 0.17505864026886697,
+      "p95_response": 18.849999999999998,
+      "worst_response": 20,
+      "starvation": 24,
+      "switches": 0,
+      "decision_p99_ms": null
+    },
+    {
+      "seed": 10603000178,
+      "family": "repeated_changes",
+      "policy": "V5 plus v6 guard",
+      "score": 0.1723890448849587,
+      "p95_response": 1.4499999999999993,
+      "worst_response": 2,
+      "starvation": 0,
+      "switches": 0,
+      "decision_p99_ms": 0.6198811100000001
+    },
+    {
+      "seed": 10603000178,
+      "family": "repeated_changes",
+      "policy": "Frozen v5 Tuned MLFQ",
+      "score": 0.1723890448849587,
+      "p95_response": 1.4499999999999993,
+      "worst_response": 2,
+      "starvation": 0,
+      "switches": 0,
+      "decision_p99_ms": null
+    },
+    {
+      "seed": 10603000179,
+      "family": "homogeneous_batch",
+      "policy": "V5 plus v6 guard",
+      "score": 0.24615384615384614,
+      "p95_response": 1.9,
+      "worst_response": 2,
+      "starvation": 0,
+      "switches": 1,
+      "decision_p99_ms": 0.24806391
+    },
+    {
+      "seed": 10603000179,
+      "family": "homogeneous_batch",
+      "policy": "Frozen v5 Tuned MLFQ",
+      "score": 0.2717948717948718,
+      "p95_response": 1.9,
+      "worst_response": 2,
+      "starvation": 0,
+      "switches": 0,
+      "decision_p99_ms": null
+    },
+    {
+      "seed": 10603000180,
+      "family": "cohort_mix",
+      "policy": "V5 plus v6 guard",
+      "score": 0.0,
+      "p95_response": 0.0,
+      "worst_response": 0,
+      "starvation": 0,
+      "switches": 0,
+      "decision_p99_ms": 0.23161645
+    },
+    {
+      "seed": 10603000180,
+      "family": "cohort_mix",
+      "policy": "Frozen v5 Tuned MLFQ",
+      "score": 0.0,
+      "p95_response": 0.0,
+      "worst_response": 0,
+      "starvation": 0,
+      "switches": 0,
+      "decision_p99_ms": null
+    },
+    {
+      "seed": 10603000181,
+      "family": "sustained_arrivals",
+      "policy": "V5 plus v6 guard",
+      "score": 0.13202395594559496,
+      "p95_response": 0.0,
+      "worst_response": 1,
+      "starvation": 44,
+      "switches": 0,
+      "decision_p99_ms": 0.3072814
+    },
+    {
+      "seed": 10603000181,
+      "family": "sustained_arrivals",
+      "policy": "Frozen v5 Tuned MLFQ",
+      "score": 0.13202395594559496,
+      "p95_response": 0.0,
+      "worst_response": 1,
+      "starvation": 44,
+      "switches": 0,
+      "decision_p99_ms": null
+    },
+    {
+      "seed": 10603000182,
+      "family": "low_load",
+      "policy": "V5 plus v6 guard",
+      "score": 0.0,
+      "p95_response": 0.0,
+      "worst_response": 0,
+      "starvation": 0,
+      "switches": 0,
+      "decision_p99_ms": 0.37120111
+    },
+    {
+      "seed": 10603000182,
+      "family": "low_load",
+      "policy": "Frozen v5 Tuned MLFQ",
+      "score": 0.0,
+      "p95_response": 0.0,
+      "worst_response": 0,
+      "starvation": 0,
+      "switches": 0,
+      "decision_p99_ms": null
+    },
+    {
+      "seed": 10603000183,
+      "family": "long_io",
+      "policy": "V5 plus v6 guard",
+      "score": 0.1596730485234728,
+      "p95_response": 7.449999999999999,
+      "worst_response": 8,
+      "starvation": 11,
+      "switches": 2,
+      "decision_p99_ms": 0.3935905
+    },
+    {
+      "seed": 10603000183,
+      "family": "long_io",
+      "policy": "Frozen v5 Tuned MLFQ",
+      "score": 0.11561453185309425,
+      "p95_response": 7.449999999999999,
+      "worst_response": 8,
+      "starvation": 12,
+      "switches": 0,
+      "decision_p99_ms": null
+    },
+    {
+      "seed": 10603000184,
+      "family": "repeated_changes",
+      "policy": "V5 plus v6 guard",
+      "score": 0.11243411927527282,
+      "p95_response": 2.0,
+      "worst_response": 2,
+      "starvation": 8,
+      "switches": 2,
+      "decision_p99_ms": 0.2945294499999998
+    },
+    {
+      "seed": 10603000184,
+      "family": "repeated_changes",
+      "policy": "Frozen v5 Tuned MLFQ",
+      "score": 0.13040869183116938,
+      "p95_response": 2.0,
+      "worst_response": 2,
+      "starvation": 10,
+      "switches": 0,
+      "decision_p99_ms": null
+    },
+    {
+      "seed": 10603000185,
+      "family": "homogeneous_batch",
+      "policy": "V5 plus v6 guard",
+      "score": 0.08074363111676544,
+      "p95_response": 21.849999999999998,
+      "worst_response": 23,
+      "starvation": 23,
+      "switches": 25,
+      "decision_p99_ms": 0.39453675
+    },
+    {
+      "seed": 10603000185,
+      "family": "homogeneous_batch",
+      "policy": "Frozen v5 Tuned MLFQ",
+      "score": 0.2401829211530704,
+      "p95_response": 21.849999999999998,
+      "worst_response": 23,
+      "starvation": 24,
+      "switches": 0,
+      "decision_p99_ms": null
+    },
+    {
+      "seed": 10603000186,
+      "family": "cohort_mix",
+      "policy": "V5 plus v6 guard",
+      "score": 0.05562317907272657,
+      "p95_response": 2.0,
+      "worst_response": 2,
+      "starvation": 4,
+      "switches": 0,
+      "decision_p99_ms": 0.33153731999999997
+    },
+    {
+      "seed": 10603000186,
+      "family": "cohort_mix",
+      "policy": "Frozen v5 Tuned MLFQ",
+      "score": 0.05562317907272657,
+      "p95_response": 2.0,
+      "worst_response": 2,
+      "starvation": 4,
+      "switches": 0,
+      "decision_p99_ms": null
+    },
+    {
+      "seed": 10603000187,
+      "family": "sustained_arrivals",
+      "policy": "V5 plus v6 guard",
+      "score": 0.2339413037942449,
+      "p95_response": 0.0,
+      "worst_response": 0,
+      "starvation": 0,
+      "switches": 0,
+      "decision_p99_ms": 0.236238
+    },
+    {
+      "seed": 10603000187,
+      "family": "sustained_arrivals",
+      "policy": "Frozen v5 Tuned MLFQ",
+      "score": 0.2339413037942449,
+      "p95_response": 0.0,
+      "worst_response": 0,
+      "starvation": 0,
+      "switches": 0,
+      "decision_p99_ms": null
+    },
+    {
+      "seed": 10603000188,
+      "family": "low_load",
+      "policy": "V5 plus v6 guard",
+      "score": 0.0,
+      "p95_response": 0.0,
+      "worst_response": 0,
+      "starvation": 0,
+      "switches": 0,
+      "decision_p99_ms": 0.23720406000000002
+    },
+    {
+      "seed": 10603000188,
+      "family": "low_load",
+      "policy": "Frozen v5 Tuned MLFQ",
+      "score": 0.0,
+      "p95_response": 0.0,
+      "worst_response": 0,
+      "starvation": 0,
+      "switches": 0,
+      "decision_p99_ms": null
+    },
+    {
+      "seed": 10603000189,
+      "family": "long_io",
+      "policy": "V5 plus v6 guard",
+      "score": 0.21251980572417795,
+      "p95_response": 0.0,
+      "worst_response": 0,
+      "starvation": 0,
+      "switches": 0,
+      "decision_p99_ms": 0.27105605999999993
+    },
+    {
+      "seed": 10603000189,
+      "family": "long_io",
+      "policy": "Frozen v5 Tuned MLFQ",
+      "score": 0.21251980572417795,
+      "p95_response": 0.0,
+      "worst_response": 0,
+      "starvation": 0,
+      "switches": 0,
+      "decision_p99_ms": null
+    },
+    {
+      "seed": 10603000190,
+      "family": "repeated_changes",
+      "policy": "V5 plus v6 guard",
+      "score": 0.13122292701557936,
+      "p95_response": 1.8499999999999979,
+      "worst_response": 2,
+      "starvation": 10,
+      "switches": 2,
+      "decision_p99_ms": 0.28210999999999997
+    },
+    {
+      "seed": 10603000190,
+      "family": "repeated_changes",
+      "policy": "Frozen v5 Tuned MLFQ",
+      "score": 0.1387530474975071,
+      "p95_response": 1.8499999999999979,
+      "worst_response": 2,
+      "starvation": 11,
+      "switches": 0,
+      "decision_p99_ms": null
+    },
+    {
+      "seed": 10603000191,
+      "family": "homogeneous_batch",
+      "policy": "V5 plus v6 guard",
+      "score": 0.4376984126984127,
+      "p95_response": 1.9,
+      "worst_response": 2,
+      "starvation": 0,
+      "switches": 1,
+      "decision_p99_ms": 0.23112991
+    },
+    {
+      "seed": 10603000191,
+      "family": "homogeneous_batch",
+      "policy": "Frozen v5 Tuned MLFQ",
+      "score": 0.48214285714285715,
+      "p95_response": 1.9,
+      "worst_response": 2,
+      "starvation": 0,
+      "switches": 0,
+      "decision_p99_ms": null
+    },
+    {
+      "seed": 10603000192,
+      "family": "cohort_mix",
+      "policy": "V5 plus v6 guard",
+      "score": 0.0909090909090908,
+      "p95_response": 0.0,
+      "worst_response": 0,
+      "starvation": 0,
+      "switches": 0,
+      "decision_p99_ms": 0.223773
+    },
+    {
+      "seed": 10603000192,
+      "family": "cohort_mix",
+      "policy": "Frozen v5 Tuned MLFQ",
+      "score": 0.0909090909090908,
+      "p95_response": 0.0,
+      "worst_response": 0,
+      "starvation": 0,
+      "switches": 0,
+      "decision_p99_ms": null
+    },
+    {
+      "seed": 10603000193,
+      "family": "sustained_arrivals",
+      "policy": "V5 plus v6 guard",
+      "score": 0.48687182382834543,
+      "p95_response": 1.75,
+      "worst_response": 2,
+      "starvation": 1,
+      "switches": 0,
+      "decision_p99_ms": 0.29106364
+    },
+    {
+      "seed": 10603000193,
+      "family": "sustained_arrivals",
+      "policy": "Frozen v5 Tuned MLFQ",
+      "score": 0.48687182382834543,
+      "p95_response": 1.75,
+      "worst_response": 2,
+      "starvation": 1,
+      "switches": 0,
+      "decision_p99_ms": null
+    },
+    {
+      "seed": 10603000194,
+      "family": "low_load",
+      "policy": "V5 plus v6 guard",
+      "score": 0.0,
+      "p95_response": 0.0,
+      "worst_response": 0,
+      "starvation": 0,
+      "switches": 0,
+      "decision_p99_ms": 0.40588724
+    },
+    {
+      "seed": 10603000194,
+      "family": "low_load",
+      "policy": "Frozen v5 Tuned MLFQ",
+      "score": 0.0,
+      "p95_response": 0.0,
+      "worst_response": 0,
+      "starvation": 0,
+      "switches": 0,
+      "decision_p99_ms": null
+    },
+    {
+      "seed": 10603000195,
+      "family": "long_io",
+      "policy": "V5 plus v6 guard",
+      "score": 0.2149793873974107,
+      "p95_response": 41.65,
+      "worst_response": 44,
+      "starvation": 48,
+      "switches": 2,
+      "decision_p99_ms": 0.5204319100000001
+    },
+    {
+      "seed": 10603000195,
+      "family": "long_io",
+      "policy": "Frozen v5 Tuned MLFQ",
+      "score": 0.21936080641182698,
+      "p95_response": 41.65,
+      "worst_response": 44,
+      "starvation": 48,
+      "switches": 0,
+      "decision_p99_ms": null
+    },
+    {
+      "seed": 10603000196,
+      "family": "repeated_changes",
+      "policy": "V5 plus v6 guard",
+      "score": 0.43951113861386143,
+      "p95_response": 1.4499999999999993,
+      "worst_response": 2,
+      "starvation": 0,
+      "switches": 2,
+      "decision_p99_ms": 0.5166209500000005
+    },
+    {
+      "seed": 10603000196,
+      "family": "repeated_changes",
+      "policy": "Frozen v5 Tuned MLFQ",
+      "score": 0.4629486386138615,
+      "p95_response": 1.4499999999999993,
+      "worst_response": 2,
+      "starvation": 0,
+      "switches": 0,
+      "decision_p99_ms": null
+    },
+    {
+      "seed": 10603000197,
+      "family": "homogeneous_batch",
+      "policy": "V5 plus v6 guard",
+      "score": 0.07731593038821952,
+      "p95_response": 21.849999999999998,
+      "worst_response": 23,
+      "starvation": 23,
+      "switches": 24,
+      "decision_p99_ms": 0.4236736000000001
+    },
+    {
+      "seed": 10603000197,
+      "family": "homogeneous_batch",
+      "policy": "Frozen v5 Tuned MLFQ",
+      "score": 0.22560910307898263,
+      "p95_response": 21.849999999999998,
+      "worst_response": 23,
+      "starvation": 24,
+      "switches": 0,
+      "decision_p99_ms": null
+    },
+    {
+      "seed": 10603000198,
+      "family": "cohort_mix",
+      "policy": "V5 plus v6 guard",
+      "score": 0.03858006400379279,
+      "p95_response": 0.0,
+      "worst_response": 0,
+      "starvation": 0,
+      "switches": 0,
+      "decision_p99_ms": 0.28620238
+    },
+    {
+      "seed": 10603000198,
+      "family": "cohort_mix",
+      "policy": "Frozen v5 Tuned MLFQ",
+      "score": 0.03858006400379279,
+      "p95_response": 0.0,
+      "worst_response": 0,
+      "starvation": 0,
+      "switches": 0,
+      "decision_p99_ms": null
+    },
+    {
+      "seed": 10603000199,
+      "family": "sustained_arrivals",
+      "policy": "V5 plus v6 guard",
+      "score": 0.1260409484293858,
+      "p95_response": 1.0,
+      "worst_response": 2,
+      "starvation": 19,
+      "switches": 0,
+      "decision_p99_ms": 0.33774605
+    },
+    {
+      "seed": 10603000199,
+      "family": "sustained_arrivals",
+      "policy": "Frozen v5 Tuned MLFQ",
+      "score": 0.1260409484293858,
+      "p95_response": 1.0,
+      "worst_response": 2,
+      "starvation": 19,
+      "switches": 0,
+      "decision_p99_ms": null
+    },
+    {
+      "seed": 10603000200,
+      "family": "low_load",
+      "policy": "V5 plus v6 guard",
+      "score": 0.0,
+      "p95_response": 0.0,
+      "worst_response": 0,
+      "starvation": 0,
+      "switches": 0,
+      "decision_p99_ms": 0.24644782
+    },
+    {
+      "seed": 10603000200,
+      "family": "low_load",
+      "policy": "Frozen v5 Tuned MLFQ",
+      "score": 0.0,
+      "p95_response": 0.0,
+      "worst_response": 0,
+      "starvation": 0,
+      "switches": 0,
+      "decision_p99_ms": null
+    },
+    {
+      "seed": 10603000201,
+      "family": "long_io",
+      "policy": "V5 plus v6 guard",
+      "score": 0.17407963579431351,
+      "p95_response": 18.849999999999998,
+      "worst_response": 20,
+      "starvation": 24,
+      "switches": 2,
+      "decision_p99_ms": 0.3498815499999999
+    },
+    {
+      "seed": 10603000201,
+      "family": "long_io",
+      "policy": "Frozen v5 Tuned MLFQ",
+      "score": 0.18440901655847688,
+      "p95_response": 18.849999999999998,
+      "worst_response": 20,
+      "starvation": 24,
+      "switches": 0,
+      "decision_p99_ms": null
+    },
+    {
+      "seed": 10603000202,
+      "family": "repeated_changes",
+      "policy": "V5 plus v6 guard",
+      "score": 0.11402103125339344,
+      "p95_response": 2.0,
+      "worst_response": 2,
+      "starvation": 8,
+      "switches": 2,
+      "decision_p99_ms": 0.37929704
+    },
+    {
+      "seed": 10603000202,
+      "family": "repeated_changes",
+      "policy": "Frozen v5 Tuned MLFQ",
+      "score": 0.11575113505962181,
+      "p95_response": 2.0,
+      "worst_response": 2,
+      "starvation": 8,
+      "switches": 0,
+      "decision_p99_ms": null
+    },
+    {
+      "seed": 10603000203,
+      "family": "homogeneous_batch",
+      "policy": "V5 plus v6 guard",
+      "score": 0.07322112316528397,
+      "p95_response": 44.65,
+      "worst_response": 47,
+      "starvation": 47,
+      "switches": 31,
+      "decision_p99_ms": 0.46595589000000065
+    },
+    {
+      "seed": 10603000203,
+      "family": "homogeneous_batch",
+      "policy": "Frozen v5 Tuned MLFQ",
+      "score": 0.2232822803658796,
+      "p95_response": 44.65,
+      "worst_response": 47,
+      "starvation": 48,
+      "switches": 0,
+      "decision_p99_ms": null
+    },
+    {
+      "seed": 10603000204,
+      "family": "cohort_mix",
+      "policy": "V5 plus v6 guard",
+      "score": 0.0,
+      "p95_response": 0.0,
+      "worst_response": 0,
+      "starvation": 0,
+      "switches": 0,
+      "decision_p99_ms": 0.5174960399999999
+    },
+    {
+      "seed": 10603000204,
+      "family": "cohort_mix",
+      "policy": "Frozen v5 Tuned MLFQ",
+      "score": 0.0,
+      "p95_response": 0.0,
+      "worst_response": 0,
+      "starvation": 0,
+      "switches": 0,
+      "decision_p99_ms": null
+    },
+    {
+      "seed": 10603000205,
+      "family": "sustained_arrivals",
+      "policy": "V5 plus v6 guard",
+      "score": 0.10248408577013711,
+      "p95_response": 1.0,
+      "worst_response": 1,
+      "starvation": 33,
+      "switches": 0,
+      "decision_p99_ms": 0.34139785999999994
+    },
+    {
+      "seed": 10603000205,
+      "family": "sustained_arrivals",
+      "policy": "Frozen v5 Tuned MLFQ",
+      "score": 0.10248408577013711,
+      "p95_response": 1.0,
+      "worst_response": 1,
+      "starvation": 33,
+      "switches": 0,
+      "decision_p99_ms": null
+    },
+    {
+      "seed": 10603000206,
+      "family": "low_load",
+      "policy": "V5 plus v6 guard",
+      "score": 0.0,
+      "p95_response": 0.0,
+      "worst_response": 0,
+      "starvation": 0,
+      "switches": 0,
+      "decision_p99_ms": 0.27712443999999997
+    },
+    {
+      "seed": 10603000206,
+      "family": "low_load",
+      "policy": "Frozen v5 Tuned MLFQ",
+      "score": 0.0,
+      "p95_response": 0.0,
+      "worst_response": 0,
+      "starvation": 0,
+      "switches": 0,
+      "decision_p99_ms": null
+    },
+    {
+      "seed": 10603000207,
+      "family": "long_io",
+      "policy": "V5 plus v6 guard",
+      "score": 0.2107832221914125,
+      "p95_response": 41.65,
+      "worst_response": 44,
+      "starvation": 48,
+      "switches": 2,
+      "decision_p99_ms": 0.4548659999999998
+    },
+    {
+      "seed": 10603000207,
+      "family": "long_io",
+      "policy": "Frozen v5 Tuned MLFQ",
+      "score": 0.21755962552293878,
+      "p95_response": 41.65,
+      "worst_response": 44,
+      "starvation": 48,
+      "switches": 0,
+      "decision_p99_ms": null
+    },
+    {
+      "seed": 10603000208,
+      "family": "repeated_changes",
+      "policy": "V5 plus v6 guard",
+      "score": 0.28497203297722873,
+      "p95_response": 1.0,
+      "worst_response": 1,
+      "starvation": 0,
+      "switches": 2,
+      "decision_p99_ms": 0.8150020100000008
+    },
+    {
+      "seed": 10603000208,
+      "family": "repeated_changes",
+      "policy": "Frozen v5 Tuned MLFQ",
+      "score": 0.2755083105797524,
+      "p95_response": 1.0,
+      "worst_response": 1,
+      "starvation": 0,
+      "switches": 0,
+      "decision_p99_ms": null
+    },
+    {
+      "seed": 10603000209,
+      "family": "homogeneous_batch",
+      "policy": "V5 plus v6 guard",
+      "score": 0.37362637362637363,
+      "p95_response": 1.9,
+      "worst_response": 2,
+      "starvation": 0,
+      "switches": 1,
+      "decision_p99_ms": 0.26216799999999996
+    },
+    {
+      "seed": 10603000209,
+      "family": "homogeneous_batch",
+      "policy": "Frozen v5 Tuned MLFQ",
+      "score": 0.37362637362637363,
+      "p95_response": 1.9,
+      "worst_response": 2,
+      "starvation": 0,
+      "switches": 0,
+      "decision_p99_ms": null
+    },
+    {
+      "seed": 10603000210,
+      "family": "cohort_mix",
+      "policy": "V5 plus v6 guard",
+      "score": 0.05503573158914726,
+      "p95_response": 1.0,
+      "worst_response": 1,
+      "starvation": 4,
+      "switches": 0,
+      "decision_p99_ms": 0.25129515999999996
+    },
+    {
+      "seed": 10603000210,
+      "family": "cohort_mix",
+      "policy": "Frozen v5 Tuned MLFQ",
+      "score": 0.05503573158914726,
+      "p95_response": 1.0,
+      "worst_response": 1,
+      "starvation": 4,
+      "switches": 0,
+      "decision_p99_ms": null
+    },
+    {
+      "seed": 10603000211,
+      "family": "sustained_arrivals",
+      "policy": "V5 plus v6 guard",
+      "score": 0.34763888888888883,
+      "p95_response": 0.0,
+      "worst_response": 0,
+      "starvation": 0,
+      "switches": 0,
+      "decision_p99_ms": 0.33891599
+    },
+    {
+      "seed": 10603000211,
+      "family": "sustained_arrivals",
+      "policy": "Frozen v5 Tuned MLFQ",
+      "score": 0.34763888888888883,
+      "p95_response": 0.0,
+      "worst_response": 0,
+      "starvation": 0,
+      "switches": 0,
+      "decision_p99_ms": null
+    },
+    {
+      "seed": 10603000212,
+      "family": "low_load",
+      "policy": "V5 plus v6 guard",
+      "score": 0.0,
+      "p95_response": 0.0,
+      "worst_response": 0,
+      "starvation": 0,
+      "switches": 0,
+      "decision_p99_ms": 0.23422446
+    },
+    {
+      "seed": 10603000212,
+      "family": "low_load",
+      "policy": "Frozen v5 Tuned MLFQ",
+      "score": 0.0,
+      "p95_response": 0.0,
+      "worst_response": 0,
+      "starvation": 0,
+      "switches": 0,
+      "decision_p99_ms": null
+    },
+    {
+      "seed": 10603000213,
+      "family": "long_io",
+      "policy": "V5 plus v6 guard",
+      "score": 0.5155727585798376,
+      "p95_response": 2.0,
+      "worst_response": 2,
+      "starvation": 0,
+      "switches": 2,
+      "decision_p99_ms": 0.2950361999999999
+    },
+    {
+      "seed": 10603000213,
+      "family": "long_io",
+      "policy": "Frozen v5 Tuned MLFQ",
+      "score": 0.5398315186876544,
+      "p95_response": 2.0,
+      "worst_response": 2,
+      "starvation": 0,
+      "switches": 0,
+      "decision_p99_ms": null
+    },
+    {
+      "seed": 10603000214,
+      "family": "repeated_changes",
+      "policy": "V5 plus v6 guard",
+      "score": 0.2585800203077404,
+      "p95_response": 1.0,
+      "worst_response": 1,
+      "starvation": 0,
+      "switches": 0,
+      "decision_p99_ms": 0.28940917000000005
+    },
+    {
+      "seed": 10603000214,
+      "family": "repeated_changes",
+      "policy": "Frozen v5 Tuned MLFQ",
+      "score": 0.2585800203077404,
+      "p95_response": 1.0,
+      "worst_response": 1,
+      "starvation": 0,
+      "switches": 0,
+      "decision_p99_ms": null
+    },
+    {
+      "seed": 10603000215,
+      "family": "homogeneous_batch",
+      "policy": "V5 plus v6 guard",
+      "score": 0.07995983935742973,
+      "p95_response": 21.849999999999998,
+      "worst_response": 23,
+      "starvation": 23,
+      "switches": 25,
+      "decision_p99_ms": 0.3045778000000002
+    },
+    {
+      "seed": 10603000215,
+      "family": "homogeneous_batch",
+      "policy": "Frozen v5 Tuned MLFQ",
+      "score": 0.22560910307898263,
+      "p95_response": 21.849999999999998,
+      "worst_response": 23,
+      "starvation": 24,
+      "switches": 0,
+      "decision_p99_ms": null
+    },
+    {
+      "seed": 10603000216,
+      "family": "cohort_mix",
+      "policy": "V5 plus v6 guard",
+      "score": 0.05547441687175519,
+      "p95_response": 4.0,
+      "worst_response": 5,
+      "starvation": 22,
+      "switches": 0,
+      "decision_p99_ms": 0.28846313
+    },
+    {
+      "seed": 10603000216,
+      "family": "cohort_mix",
+      "policy": "Frozen v5 Tuned MLFQ",
+      "score": 0.05547441687175519,
+      "p95_response": 4.0,
+      "worst_response": 5,
+      "starvation": 22,
+      "switches": 0,
+      "decision_p99_ms": null
+    },
+    {
+      "seed": 10603000217,
+      "family": "sustained_arrivals",
+      "policy": "V5 plus v6 guard",
+      "score": 0.29099752360315734,
+      "p95_response": 0.0,
+      "worst_response": 0,
+      "starvation": 0,
+      "switches": 0,
+      "decision_p99_ms": 0.24753677999999996
+    },
+    {
+      "seed": 10603000217,
+      "family": "sustained_arrivals",
+      "policy": "Frozen v5 Tuned MLFQ",
+      "score": 0.29099752360315734,
+      "p95_response": 0.0,
+      "worst_response": 0,
+      "starvation": 0,
+      "switches": 0,
+      "decision_p99_ms": null
+    },
+    {
+      "seed": 10603000218,
+      "family": "low_load",
+      "policy": "V5 plus v6 guard",
+      "score": 0.0,
+      "p95_response": 0.0,
+      "worst_response": 0,
+      "starvation": 0,
+      "switches": 0,
+      "decision_p99_ms": 0.28682774
+    },
+    {
+      "seed": 10603000218,
+      "family": "low_load",
+      "policy": "Frozen v5 Tuned MLFQ",
+      "score": 0.0,
+      "p95_response": 0.0,
+      "worst_response": 0,
+      "starvation": 0,
+      "switches": 0,
+      "decision_p99_ms": null
+    },
+    {
+      "seed": 10603000219,
+      "family": "long_io",
+      "policy": "V5 plus v6 guard",
+      "score": 0.3638916939875592,
+      "p95_response": 2.0,
+      "worst_response": 2,
+      "starvation": 0,
+      "switches": 2,
+      "decision_p99_ms": 0.27967346000000004
+    },
+    {
+      "seed": 10603000219,
+      "family": "long_io",
+      "policy": "Frozen v5 Tuned MLFQ",
+      "score": 0.33247054291231504,
+      "p95_response": 2.0,
+      "worst_response": 2,
+      "starvation": 0,
+      "switches": 0,
+      "decision_p99_ms": null
+    },
+    {
+      "seed": 10603000220,
+      "family": "repeated_changes",
+      "policy": "V5 plus v6 guard",
+      "score": 0.0,
+      "p95_response": 0.0,
+      "worst_response": 0,
+      "starvation": 0,
+      "switches": 0,
+      "decision_p99_ms": 0.24475266
+    },
+    {
+      "seed": 10603000220,
+      "family": "repeated_changes",
+      "policy": "Frozen v5 Tuned MLFQ",
+      "score": 0.0,
+      "p95_response": 0.0,
+      "worst_response": 0,
+      "starvation": 0,
+      "switches": 0,
+      "decision_p99_ms": null
+    },
+    {
+      "seed": 10603000221,
+      "family": "homogeneous_batch",
+      "policy": "V5 plus v6 guard",
+      "score": 0.12874293785310736,
+      "p95_response": 4.75,
+      "worst_response": 5,
+      "starvation": 4,
+      "switches": 4,
+      "decision_p99_ms": 0.22471422000000002
+    },
+    {
+      "seed": 10603000221,
+      "family": "homogeneous_batch",
+      "policy": "Frozen v5 Tuned MLFQ",
+      "score": 0.25586158192090397,
+      "p95_response": 4.75,
+      "worst_response": 5,
+      "starvation": 6,
+      "switches": 0,
+      "decision_p99_ms": null
+    },
+    {
+      "seed": 10603000222,
+      "family": "cohort_mix",
+      "policy": "V5 plus v6 guard",
+      "score": 0.0,
+      "p95_response": 0.0,
+      "worst_response": 0,
+      "starvation": 0,
+      "switches": 0,
+      "decision_p99_ms": 0.2480505
+    },
+    {
+      "seed": 10603000222,
+      "family": "cohort_mix",
+      "policy": "Frozen v5 Tuned MLFQ",
+      "score": 0.0,
+      "p95_response": 0.0,
+      "worst_response": 0,
+      "starvation": 0,
+      "switches": 0,
+      "decision_p99_ms": null
+    },
+    {
+      "seed": 10603000223,
+      "family": "sustained_arrivals",
+      "policy": "V5 plus v6 guard",
+      "score": 0.49114121510673225,
+      "p95_response": 0.0,
+      "worst_response": 0,
+      "starvation": 0,
+      "switches": 0,
+      "decision_p99_ms": 0.17532314
+    },
+    {
+      "seed": 10603000223,
+      "family": "sustained_arrivals",
+      "policy": "Frozen v5 Tuned MLFQ",
+      "score": 0.49114121510673225,
+      "p95_response": 0.0,
+      "worst_response": 0,
+      "starvation": 0,
+      "switches": 0,
+      "decision_p99_ms": null
+    },
+    {
+      "seed": 10603000224,
+      "family": "low_load",
+      "policy": "V5 plus v6 guard",
+      "score": 0.0,
+      "p95_response": 0.0,
+      "worst_response": 0,
+      "starvation": 0,
+      "switches": 0,
+      "decision_p99_ms": 0.2440227
+    },
+    {
+      "seed": 10603000224,
+      "family": "low_load",
+      "policy": "Frozen v5 Tuned MLFQ",
+      "score": 0.0,
+      "p95_response": 0.0,
+      "worst_response": 0,
+      "starvation": 0,
+      "switches": 0,
+      "decision_p99_ms": null
+    },
+    {
+      "seed": 10603000225,
+      "family": "long_io",
+      "policy": "V5 plus v6 guard",
+      "score": 0.18404910391620655,
+      "p95_response": 18.849999999999998,
+      "worst_response": 20,
+      "starvation": 24,
+      "switches": 2,
+      "decision_p99_ms": 0.32062516
+    },
+    {
+      "seed": 10603000225,
+      "family": "long_io",
+      "policy": "Frozen v5 Tuned MLFQ",
+      "score": 0.18142374292907076,
+      "p95_response": 18.849999999999998,
+      "worst_response": 20,
+      "starvation": 24,
+      "switches": 0,
+      "decision_p99_ms": null
+    },
+    {
+      "seed": 10603000226,
+      "family": "repeated_changes",
+      "policy": "V5 plus v6 guard",
+      "score": 0.0,
+      "p95_response": 0.0,
+      "worst_response": 0,
+      "starvation": 0,
+      "switches": 0,
+      "decision_p99_ms": 0.31876295
+    },
+    {
+      "seed": 10603000226,
+      "family": "repeated_changes",
+      "policy": "Frozen v5 Tuned MLFQ",
+      "score": 0.0,
+      "p95_response": 0.0,
+      "worst_response": 0,
+      "starvation": 0,
+      "switches": 0,
+      "decision_p99_ms": null
+    },
+    {
+      "seed": 10603000227,
+      "family": "homogeneous_batch",
+      "policy": "V5 plus v6 guard",
+      "score": 0.3852941176470588,
+      "p95_response": 1.9,
+      "worst_response": 2,
+      "starvation": 0,
+      "switches": 1,
+      "decision_p99_ms": 0.25040772
+    },
+    {
+      "seed": 10603000227,
+      "family": "homogeneous_batch",
+      "policy": "Frozen v5 Tuned MLFQ",
+      "score": 0.4245098039215687,
+      "p95_response": 1.9,
+      "worst_response": 2,
+      "starvation": 0,
+      "switches": 0,
+      "decision_p99_ms": null
+    },
+    {
+      "seed": 10603000228,
+      "family": "cohort_mix",
+      "policy": "V5 plus v6 guard",
+      "score": 0.057384200507614204,
+      "p95_response": 2.0,
+      "worst_response": 2,
+      "starvation": 3,
+      "switches": 0,
+      "decision_p99_ms": 0.3059194499999999
+    },
+    {
+      "seed": 10603000228,
+      "family": "cohort_mix",
+      "policy": "Frozen v5 Tuned MLFQ",
+      "score": 0.057384200507614204,
+      "p95_response": 2.0,
+      "worst_response": 2,
+      "starvation": 3,
+      "switches": 0,
+      "decision_p99_ms": null
+    },
+    {
+      "seed": 10603000229,
+      "family": "sustained_arrivals",
+      "policy": "V5 plus v6 guard",
+      "score": 0.2111839606025652,
+      "p95_response": 0.4499999999999993,
+      "worst_response": 1,
+      "starvation": 4,
+      "switches": 0,
+      "decision_p99_ms": 0.2424191
+    },
+    {
+      "seed": 10603000229,
+      "family": "sustained_arrivals",
+      "policy": "Frozen v5 Tuned MLFQ",
+      "score": 0.2111839606025652,
+      "p95_response": 0.4499999999999993,
+      "worst_response": 1,
+      "starvation": 4,
+      "switches": 0,
+      "decision_p99_ms": null
+    },
+    {
+      "seed": 10603000230,
+      "family": "low_load",
+      "policy": "V5 plus v6 guard",
+      "score": 0.0,
+      "p95_response": 0.0,
+      "worst_response": 0,
+      "starvation": 0,
+      "switches": 0,
+      "decision_p99_ms": 0.24603608000000002
+    },
+    {
+      "seed": 10603000230,
+      "family": "low_load",
+      "policy": "Frozen v5 Tuned MLFQ",
+      "score": 0.0,
+      "p95_response": 0.0,
+      "worst_response": 0,
+      "starvation": 0,
+      "switches": 0,
+      "decision_p99_ms": null
+    },
+    {
+      "seed": 10603000231,
+      "family": "long_io",
+      "policy": "V5 plus v6 guard",
+      "score": 0.37591232251723283,
+      "p95_response": 0.0,
+      "worst_response": 0,
+      "starvation": 0,
+      "switches": 0,
+      "decision_p99_ms": 0.2285741
+    },
+    {
+      "seed": 10603000231,
+      "family": "long_io",
+      "policy": "Frozen v5 Tuned MLFQ",
+      "score": 0.37591232251723283,
+      "p95_response": 0.0,
+      "worst_response": 0,
+      "starvation": 0,
+      "switches": 0,
+      "decision_p99_ms": null
+    },
+    {
+      "seed": 10603000232,
+      "family": "repeated_changes",
+      "policy": "V5 plus v6 guard",
+      "score": 0.0,
+      "p95_response": 0.0,
+      "worst_response": 0,
+      "starvation": 0,
+      "switches": 0,
+      "decision_p99_ms": 0.22497545000000002
+    },
+    {
+      "seed": 10603000232,
+      "family": "repeated_changes",
+      "policy": "Frozen v5 Tuned MLFQ",
+      "score": 0.0,
+      "p95_response": 0.0,
+      "worst_response": 0,
+      "starvation": 0,
+      "switches": 0,
+      "decision_p99_ms": null
+    },
+    {
+      "seed": 10603000233,
+      "family": "homogeneous_batch",
+      "policy": "V5 plus v6 guard",
+      "score": 0.20535401331931305,
+      "p95_response": 4.75,
+      "worst_response": 5,
+      "starvation": 4,
+      "switches": 4,
+      "decision_p99_ms": 0.2304541
+    },
+    {
+      "seed": 10603000233,
+      "family": "homogeneous_batch",
+      "policy": "Frozen v5 Tuned MLFQ",
+      "score": 0.4356379249912373,
+      "p95_response": 4.75,
+      "worst_response": 5,
+      "starvation": 6,
+      "switches": 0,
+      "decision_p99_ms": null
+    },
+    {
+      "seed": 10603000234,
+      "family": "cohort_mix",
+      "policy": "V5 plus v6 guard",
+      "score": 0.05746786407503297,
+      "p95_response": 5.0,
+      "worst_response": 6,
+      "starvation": 17,
+      "switches": 0,
+      "decision_p99_ms": 0.27027956000000003
+    },
+    {
+      "seed": 10603000234,
+      "family": "cohort_mix",
+      "policy": "Frozen v5 Tuned MLFQ",
+      "score": 0.05746786407503297,
+      "p95_response": 5.0,
+      "worst_response": 6,
+      "starvation": 17,
+      "switches": 0,
+      "decision_p99_ms": null
+    },
+    {
+      "seed": 10603000235,
+      "family": "sustained_arrivals",
+      "policy": "V5 plus v6 guard",
+      "score": 0.11026455065447824,
+      "p95_response": 1.0,
+      "worst_response": 2,
+      "starvation": 46,
+      "switches": 0,
+      "decision_p99_ms": 0.3407172800000001
+    },
+    {
+      "seed": 10603000235,
+      "family": "sustained_arrivals",
+      "policy": "Frozen v5 Tuned MLFQ",
+      "score": 0.11026455065447824,
+      "p95_response": 1.0,
+      "worst_response": 2,
+      "starvation": 46,
+      "switches": 0,
+      "decision_p99_ms": null
+    },
+    {
+      "seed": 10603000236,
+      "family": "low_load",
+      "policy": "V5 plus v6 guard",
+      "score": 0.0,
+      "p95_response": 0.0,
+      "worst_response": 0,
+      "starvation": 0,
+      "switches": 0,
+      "decision_p99_ms": 0.26922346
+    },
+    {
+      "seed": 10603000236,
+      "family": "low_load",
+      "policy": "Frozen v5 Tuned MLFQ",
+      "score": 0.0,
+      "p95_response": 0.0,
+      "worst_response": 0,
+      "starvation": 0,
+      "switches": 0,
+      "decision_p99_ms": null
+    },
+    {
+      "seed": 10603000237,
+      "family": "long_io",
+      "policy": "V5 plus v6 guard",
+      "score": 0.21245518694122914,
+      "p95_response": 7.449999999999999,
+      "worst_response": 8,
+      "starvation": 10,
+      "switches": 2,
+      "decision_p99_ms": 0.28221315
+    },
+    {
+      "seed": 10603000237,
+      "family": "long_io",
+      "policy": "Frozen v5 Tuned MLFQ",
+      "score": 0.2543164703952525,
+      "p95_response": 7.449999999999999,
+      "worst_response": 8,
+      "starvation": 12,
+      "switches": 0,
+      "decision_p99_ms": null
+    },
+    {
+      "seed": 10603000238,
+      "family": "repeated_changes",
+      "policy": "V5 plus v6 guard",
+      "score": 0.0,
+      "p95_response": 0.0,
+      "worst_response": 0,
+      "starvation": 0,
+      "switches": 0,
+      "decision_p99_ms": 0.2311995
+    },
+    {
+      "seed": 10603000238,
+      "family": "repeated_changes",
+      "policy": "Frozen v5 Tuned MLFQ",
+      "score": 0.0,
+      "p95_response": 0.0,
+      "worst_response": 0,
+      "starvation": 0,
+      "switches": 0,
+      "decision_p99_ms": null
+    },
+    {
+      "seed": 10603000239,
+      "family": "homogeneous_batch",
+      "policy": "V5 plus v6 guard",
+      "score": 0.4226190476190476,
+      "p95_response": 1.9,
+      "worst_response": 2,
+      "starvation": 0,
+      "switches": 1,
+      "decision_p99_ms": 0.35102137
+    },
+    {
+      "seed": 10603000239,
+      "family": "homogeneous_batch",
+      "policy": "Frozen v5 Tuned MLFQ",
+      "score": 0.5178571428571428,
+      "p95_response": 1.9,
+      "worst_response": 2,
+      "starvation": 0,
+      "switches": 0,
+      "decision_p99_ms": null
+    }
+  ],
+  "ablation_pooled_p99_ms": 0.45222764,
+  "comparisons": {
+    "V5 plus v6 guard": {
+      "against_frozen_v5_static": {
+        "score_difference": {
+          "mean": -0.01971710672156052,
+          "ci_low": -0.02741770225077495,
+          "ci_high": -0.012164484817852256
+        },
+        "p95_response_difference": {
+          "mean": 0.0,
+          "ci_low": 0.0,
+          "ci_high": 0.0
+        },
+        "worst_response_difference": {
+          "mean": 0,
+          "ci_low": 0,
+          "ci_high": 0
+        },
+        "starvation_difference": {
+          "mean": -0.2375,
+          "ci_low": -0.31666666666666665,
+          "ci_high": -0.1625
+        },
+        "switches_difference": {
+          "mean": 2.7,
+          "ci_low": 1.8,
+          "ci_high": 3.712604166666665
+        }
+      },
+      "against_v5": {
+        "score_difference": {
+          "mean": 0.014246314090418329,
+          "ci_low": 0.008008662916186833,
+          "ci_high": 0.02092642155349003
+        },
+        "p95_response_difference": {
+          "mean": -0.05770833333333333,
+          "ci_low": -0.173125,
+          "ci_high": 0.0
+        },
+        "worst_response_difference": {
+          "mean": -0.07916666666666666,
+          "ci_low": -0.2375,
+          "ci_high": 0.0
+        },
+        "starvation_difference": {
+          "mean": 0.08333333333333333,
+          "ci_low": 0.0375,
+          "ci_high": 0.13333333333333333
+        },
+        "switches_difference": {
+          "mean": -0.22916666666666666,
+          "ci_low": -0.3125,
+          "ci_high": -0.15
+        }
+      },
+      "against_frozen_v5_static_gates": {
+        "primary_score": true,
+        "primary_p95": true,
+        "primary_starvation": true,
+        "latency": true,
+        "original_rr_score": true,
+        "original_rr_p95": true
+      },
+      "by_family": {
+        "cohort_mix": {
+          "score_difference": {
+            "mean": 0.0004718476256339338,
+            "ci_low": 0.0,
+            "ci_high": 0.0014155428769018013
+          },
+          "p95_response_difference": {
+            "mean": 0.0,
+            "ci_low": 0.0,
+            "ci_high": 0.0
+          },
+          "worst_response_difference": {
+            "mean": 0,
+            "ci_low": 0,
+            "ci_high": 0
+          },
+          "starvation_difference": {
+            "mean": 0,
+            "ci_low": 0,
+            "ci_high": 0
+          },
+          "switches_difference": {
+            "mean": 0.05,
+            "ci_low": 0.0,
+            "ci_high": 0.15
+          }
+        },
+        "homogeneous_batch": {
+          "score_difference": {
+            "mean": -0.11056980004600735,
+            "ci_low": -0.12958149714886869,
+            "ci_high": -0.09113460304458883
+          },
+          "p95_response_difference": {
+            "mean": 0.0,
+            "ci_low": 0.0,
+            "ci_high": 0.0
+          },
+          "worst_response_difference": {
+            "mean": 0,
+            "ci_low": 0,
+            "ci_high": 0
+          },
+          "starvation_difference": {
+            "mean": -0.9,
+            "ci_low": -1.125,
+            "ci_high": -0.675
+          },
+          "switches_difference": {
+            "mean": 13.25,
+            "ci_low": 9.05,
+            "ci_high": 17.925
+          }
+        },
+        "long_io": {
+          "score_difference": {
+            "mean": -0.004627174444529385,
+            "ci_low": -0.031268326517460816,
+            "ci_high": 0.02342213129954679
+          },
+          "p95_response_difference": {
+            "mean": 0.0,
+            "ci_low": 0.0,
+            "ci_high": 0.0
+          },
+          "worst_response_difference": {
+            "mean": 0,
+            "ci_low": 0,
+            "ci_high": 0
+          },
+          "starvation_difference": {
+            "mean": -0.075,
+            "ci_low": -0.225,
+            "ci_high": 0.05
+          },
+          "switches_difference": {
+            "mean": 1.65,
+            "ci_low": 1.4,
+            "ci_high": 1.85
+          }
+        },
+        "low_load": {
+          "score_difference": {
+            "mean": 0.0,
+            "ci_low": 0.0,
+            "ci_high": 0.0
+          },
+          "p95_response_difference": {
+            "mean": 0.0,
+            "ci_low": 0.0,
+            "ci_high": 0.0
+          },
+          "worst_response_difference": {
+            "mean": 0,
+            "ci_low": 0,
+            "ci_high": 0
+          },
+          "starvation_difference": {
+            "mean": 0,
+            "ci_low": 0,
+            "ci_high": 0
+          },
+          "switches_difference": {
+            "mean": 0,
+            "ci_low": 0,
+            "ci_high": 0
+          }
+        },
+        "repeated_changes": {
+          "score_difference": {
+            "mean": -0.0035775134644603314,
+            "ci_low": -0.005742626444201559,
+            "ci_high": -0.0015772364977689765
+          },
+          "p95_response_difference": {
+            "mean": 0.0,
+            "ci_low": 0.0,
+            "ci_high": 0.0
+          },
+          "worst_response_difference": {
+            "mean": 0,
+            "ci_low": 0,
+            "ci_high": 0
+          },
+          "starvation_difference": {
+            "mean": -0.45,
+            "ci_low": -0.75,
+            "ci_high": -0.1993750000000091
+          },
+          "switches_difference": {
+            "mean": 1.25,
+            "ci_low": 0.85,
+            "ci_high": 1.65
+          }
+        },
+        "sustained_arrivals": {
+          "score_difference": {
+            "mean": 0.0,
+            "ci_low": 0.0,
+            "ci_high": 0.0
+          },
+          "p95_response_difference": {
+            "mean": 0.0,
+            "ci_low": 0.0,
+            "ci_high": 0.0
+          },
+          "worst_response_difference": {
+            "mean": 0,
+            "ci_low": 0,
+            "ci_high": 0
+          },
+          "starvation_difference": {
+            "mean": 0,
+            "ci_low": 0,
+            "ci_high": 0
+          },
+          "switches_difference": {
+            "mean": 0,
+            "ci_low": 0,
+            "ci_high": 0
+          }
+        }
+      }
+    },
+    "policy_cost": {
+      "against_frozen_v5_static": {
+        "score_difference": {
+          "mean": -0.011677571454643864,
+          "ci_low": -0.019304827104486267,
+          "ci_high": -0.004522040522852617
+        },
+        "p95_response_difference": {
+          "mean": 6.650833333333333,
+          "ci_low": 5.257869791666666,
+          "ci_high": 8.129177083333333
+        },
+        "worst_response_difference": {
+          "mean": 7.154166666666667,
+          "ci_low": 5.683333333333334,
+          "ci_high": 8.725
+        },
+        "starvation_difference": {
+          "mean": -0.1625,
+          "ci_low": -0.2916666666666667,
+          "ci_high": -0.029166666666666667
+        },
+        "switches_difference": {
+          "mean": 1.9083333333333334,
+          "ci_low": 1.4208333333333334,
+          "ci_high": 2.466666666666667
+        }
+      },
+      "against_v5": {
+        "score_difference": {
+          "mean": 0.022285849357334984,
+          "ci_low": 0.013376061040735403,
+          "ci_high": 0.03133062993143224
+        },
+        "p95_response_difference": {
+          "mean": 6.593125,
+          "ci_low": 5.168708333333333,
+          "ci_high": 8.087765625
+        },
+        "worst_response_difference": {
+          "mean": 7.075,
+          "ci_low": 5.566666666666666,
+          "ci_high": 8.662604166666664
+        },
+        "starvation_difference": {
+          "mean": 0.15833333333333333,
+          "ci_low": 0.016666666666666666,
+          "ci_high": 0.30833333333333335
+        },
+        "switches_difference": {
+          "mean": -1.0208333333333333,
+          "ci_low": -1.9,
+          "ci_high": -0.3125
+        }
+      },
+      "against_frozen_v5_static_gates": {
+        "primary_score": true,
+        "primary_p95": false,
+        "primary_starvation": true,
+        "latency": true,
+        "original_rr_score": true,
+        "original_rr_p95": true
+      },
+      "by_family": {
+        "cohort_mix": {
+          "score_difference": {
+            "mean": 0.013101561254294621,
+            "ci_low": 0.0035205376665793115,
+            "ci_high": 0.02274528830246956
+          },
+          "p95_response_difference": {
+            "mean": 5.137499999999999,
+            "ci_low": 3.048718749999999,
+            "ci_high": 7.498843749999997
+          },
+          "worst_response_difference": {
+            "mean": 5.85,
+            "ci_low": 3.475,
+            "ci_high": 8.50062499999999
+          },
+          "starvation_difference": {
+            "mean": 0.2,
+            "ci_low": -0.025,
+            "ci_high": 0.5
+          },
+          "switches_difference": {
+            "mean": 0.0,
+            "ci_low": 0.0,
+            "ci_high": 0.0
+          }
+        },
+        "homogeneous_batch": {
+          "score_difference": {
+            "mean": -0.06215477177685282,
+            "ci_low": -0.08233456513425427,
+            "ci_high": -0.041951193791708814
+          },
+          "p95_response_difference": {
+            "mean": 14.5825,
+            "ci_low": 10.022499999999999,
+            "ci_high": 19.57
+          },
+          "worst_response_difference": {
+            "mean": 15.35,
+            "ci_low": 10.55,
+            "ci_high": 20.6
+          },
+          "starvation_difference": {
+            "mean": -0.75,
+            "ci_low": -1.0,
+            "ci_high": -0.5
+          },
+          "switches_difference": {
+            "mean": 6.55,
+            "ci_low": 4.325,
+            "ci_high": 9.0
+          }
+        },
+        "long_io": {
+          "score_difference": {
+            "mean": -0.01689033138640573,
+            "ci_low": -0.04387101084131006,
+            "ci_high": 0.006708663075644007
+          },
+          "p95_response_difference": {
+            "mean": 15.93625,
+            "ci_low": 11.4475,
+            "ci_high": 20.5675
+          },
+          "worst_response_difference": {
+            "mean": 16.775,
+            "ci_low": 12.05,
+            "ci_high": 21.65
+          },
+          "starvation_difference": {
+            "mean": -0.025,
+            "ci_low": -0.15,
+            "ci_high": 0.075
+          },
+          "switches_difference": {
+            "mean": 3.75,
+            "ci_low": 3.025,
+            "ci_high": 4.525
+          }
+        },
+        "low_load": {
+          "score_difference": {
+            "mean": 0.0,
+            "ci_low": 0.0,
+            "ci_high": 0.0
+          },
+          "p95_response_difference": {
+            "mean": 0.0,
+            "ci_low": 0.0,
+            "ci_high": 0.0
+          },
+          "worst_response_difference": {
+            "mean": 0.0,
+            "ci_low": 0.0,
+            "ci_high": 0.0
+          },
+          "starvation_difference": {
+            "mean": 0.0,
+            "ci_low": 0.0,
+            "ci_high": 0.0
+          },
+          "switches_difference": {
+            "mean": 0.0,
+            "ci_low": 0.0,
+            "ci_high": 0.0
+          }
+        },
+        "repeated_changes": {
+          "score_difference": {
+            "mean": -0.0034815342098520104,
+            "ci_low": -0.007608927239865082,
+            "ci_high": 0.0004587598954029361
+          },
+          "p95_response_difference": {
+            "mean": 2.0249999999999995,
+            "ci_low": 1.37625,
+            "ci_high": 2.7387499999999996
+          },
+          "worst_response_difference": {
+            "mean": 2.325,
+            "ci_low": 1.6,
+            "ci_high": 3.125
+          },
+          "starvation_difference": {
+            "mean": 0.025,
+            "ci_low": -0.425,
+            "ci_high": 0.5
+          },
+          "switches_difference": {
+            "mean": 1.15,
+            "ci_low": 0.75,
+            "ci_high": 1.55
+          }
+        },
+        "sustained_arrivals": {
+          "score_difference": {
+            "mean": -0.0006403526090472449,
+            "ci_low": -0.02279238269728641,
+            "ci_high": 0.01917845332269035
+          },
+          "p95_response_difference": {
+            "mean": 2.2237499999999994,
+            "ci_low": 0.9524999999999999,
+            "ci_high": 4.17375
+          },
+          "worst_response_difference": {
+            "mean": 2.625,
+            "ci_low": 1.225,
+            "ci_high": 4.7
+          },
+          "starvation_difference": {
+            "mean": -0.425,
+            "ci_low": -0.875,
+            "ci_high": 0.025
+          },
+          "switches_difference": {
+            "mean": 0.0,
+            "ci_low": 0.0,
+            "ci_high": 0.0
+          }
+        }
+      }
+    },
+    "Dynamic v5": {
+      "against_frozen_v5_static": {
+        "score_difference": {
+          "mean": -0.033963420811978846,
+          "ci_low": -0.04434140820482441,
+          "ci_high": -0.02389367822527353
+        },
+        "p95_response_difference": {
+          "mean": 0.05770833333333333,
+          "ci_low": 0.0,
+          "ci_high": 0.173125
+        },
+        "worst_response_difference": {
+          "mean": 0.07916666666666666,
+          "ci_low": 0.0,
+          "ci_high": 0.2375
+        },
+        "starvation_difference": {
+          "mean": -0.32083333333333336,
+          "ci_low": -0.42083333333333334,
+          "ci_high": -0.225
+        },
+        "switches_difference": {
+          "mean": 2.9291666666666667,
+          "ci_low": 2.0415625,
+          "ci_high": 3.941666666666667
+        }
+      },
+      "against_v5": {
+        "score_difference": {
+          "mean": 0.0,
+          "ci_low": 0.0,
+          "ci_high": 0.0
+        },
+        "p95_response_difference": {
+          "mean": 0.0,
+          "ci_low": 0.0,
+          "ci_high": 0.0
+        },
+        "worst_response_difference": {
+          "mean": 0,
+          "ci_low": 0,
+          "ci_high": 0
+        },
+        "starvation_difference": {
+          "mean": 0,
+          "ci_low": 0,
+          "ci_high": 0
+        },
+        "switches_difference": {
+          "mean": 0,
+          "ci_low": 0,
+          "ci_high": 0
+        }
+      },
+      "against_frozen_v5_static_gates": {
+        "primary_score": true,
+        "primary_p95": false,
+        "primary_starvation": true,
+        "latency": true,
+        "original_rr_score": true,
+        "original_rr_p95": true
+      },
+      "by_family": {
+        "cohort_mix": {
+          "score_difference": {
+            "mean": 0.0015925125441673966,
+            "ci_low": 0.00043911744806952695,
+            "ci_high": 0.003022803918077266
+          },
+          "p95_response_difference": {
+            "mean": 0.0,
+            "ci_low": 0.0,
+            "ci_high": 0.0
+          },
+          "worst_response_difference": {
+            "mean": 0,
+            "ci_low": 0,
+            "ci_high": 0
+          },
+          "starvation_difference": {
+            "mean": -0.1,
+            "ci_low": -0.2,
+            "ci_high": -0.025
+          },
+          "switches_difference": {
+            "mean": 0.3,
+            "ci_low": 0.1,
+            "ci_high": 0.55
+          }
+        },
+        "homogeneous_batch": {
+          "score_difference": {
+            "mean": -0.17839634189756579,
+            "ci_low": -0.19449931094224468,
+            "ci_high": -0.1631887172031404
+          },
+          "p95_response_difference": {
+            "mean": 0.0,
+            "ci_low": 0.0,
+            "ci_high": 0.0
+          },
+          "worst_response_difference": {
+            "mean": 0,
+            "ci_low": 0,
+            "ci_high": 0
+          },
+          "starvation_difference": {
+            "mean": -1.2,
+            "ci_low": -1.475,
+            "ci_high": -0.925
+          },
+          "switches_difference": {
+            "mean": 13.525,
+            "ci_low": 9.35,
+            "ci_high": 18.125624999999992
+          }
+        },
+        "long_io": {
+          "score_difference": {
+            "mean": -0.015669422780249125,
+            "ci_low": -0.04372245867968546,
+            "ci_high": 0.014479718154025902
+          },
+          "p95_response_difference": {
+            "mean": 0.0,
+            "ci_low": 0.0,
+            "ci_high": 0.0
+          },
+          "worst_response_difference": {
+            "mean": 0,
+            "ci_low": 0,
+            "ci_high": 0
+          },
+          "starvation_difference": {
+            "mean": -0.15,
+            "ci_low": -0.4,
+            "ci_high": 0.075
+          },
+          "switches_difference": {
+            "mean": 1.95,
+            "ci_low": 1.85,
+            "ci_high": 2.0
+          }
+        },
+        "low_load": {
+          "score_difference": {
+            "mean": 0.0,
+            "ci_low": 0.0,
+            "ci_high": 0.0
+          },
+          "p95_response_difference": {
+            "mean": 0.0,
+            "ci_low": 0.0,
+            "ci_high": 0.0
+          },
+          "worst_response_difference": {
+            "mean": 0,
+            "ci_low": 0,
+            "ci_high": 0
+          },
+          "starvation_difference": {
+            "mean": 0,
+            "ci_low": 0,
+            "ci_high": 0
+          },
+          "switches_difference": {
+            "mean": 0,
+            "ci_low": 0,
+            "ci_high": 0
+          }
+        },
+        "repeated_changes": {
+          "score_difference": {
+            "mean": -0.010556097227259852,
+            "ci_low": -0.024435946450231713,
+            "ci_high": 0.0029184991649418316
+          },
+          "p95_response_difference": {
+            "mean": 0.0,
+            "ci_low": 0.0,
+            "ci_high": 0.0
+          },
+          "worst_response_difference": {
+            "mean": 0,
+            "ci_low": 0,
+            "ci_high": 0
+          },
+          "starvation_difference": {
+            "mean": -0.475,
+            "ci_low": -0.825,
+            "ci_high": -0.15
+          },
+          "switches_difference": {
+            "mean": 1.75,
+            "ci_low": 1.35,
+            "ci_high": 2.15
+          }
+        },
+        "sustained_arrivals": {
+          "score_difference": {
+            "mean": -0.0007511755109657209,
+            "ci_low": -0.0022535265328971626,
+            "ci_high": 0.0
+          },
+          "p95_response_difference": {
+            "mean": 0.34624999999999995,
+            "ci_low": 0.0,
+            "ci_high": 1.0387499999999998
+          },
+          "worst_response_difference": {
+            "mean": 0.475,
+            "ci_low": 0.0,
+            "ci_high": 1.425
+          },
+          "starvation_difference": {
+            "mean": 0,
+            "ci_low": 0,
+            "ci_high": 0
+          },
+          "switches_difference": {
+            "mean": 0.05,
+            "ci_low": 0.0,
+            "ci_high": 0.15
+          }
+        }
+      }
+    }
+  }
+}

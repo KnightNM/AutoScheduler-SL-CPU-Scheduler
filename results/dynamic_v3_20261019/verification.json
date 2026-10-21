@@ -1,0 +1,16 @@
+{
+  "status": "PASS",
+  "regression_tests": 222,
+  "failures": 0,
+  "command": ".venv/bin/python -m unittest discover -s tests -v",
+  "test_log_sha256": "2ebae34f7f3a6324b688b93ef6d0659b6cd7d92233ce88d736d0e40cb6e0b443",
+  "protected_artifacts": 53,
+  "changed_protected_artifacts": [],
+  "changed_since_prefit_protocol": [],
+  "group_overlap": false,
+  "real_contract_sha256": "b12ea718f41279c3758d4c6172560ac0af01776537ef93092091a19cf2446067",
+  "real_config_validation": "PASS",
+  "demo_smoke": "PASS",
+  "graphify_update": "PASS_AST_ONLY",
+  "promoted": false
+}

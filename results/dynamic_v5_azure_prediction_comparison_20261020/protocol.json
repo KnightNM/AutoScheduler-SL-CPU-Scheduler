@@ -1,0 +1,62 @@
+{
+  "source_protocol": "results/dynamic_v5_azure_retrained_20261020/protocol.json",
+  "source_data_sha256": "07e46c24a1201b0d771b9feeb5e92a5f376cf3b1b3db32cbebec02b6086cbb42",
+  "features": [
+    "ready_count",
+    "blocked_count",
+    "completed_burst_mean",
+    "completed_burst_variance",
+    "observed_service_mean",
+    "observed_service_variance",
+    "priority_mean",
+    "ready_wait_mean",
+    "ready_wait_max",
+    "recent_arrivals",
+    "io_returns",
+    "io_return_ratio",
+    "active_policy_index",
+    "dwell_remaining_ticks",
+    "first_service_ready_count",
+    "first_service_wait_max",
+    "ready_wait_p50",
+    "ready_wait_p95",
+    "arrival_quiet_ticks"
+  ],
+  "actions": [
+    "FCFS",
+    "Round Robin",
+    "Priority",
+    "Priority RR",
+    "MLFQ",
+    "No Switch"
+  ],
+  "specifications": {
+    "regularized_tree": {
+      "max_depth": 2,
+      "min_samples_leaf": 30,
+      "random_state": 9701
+    },
+    "ridge": {
+      "alpha": 100.0,
+      "feature_scaling": "StandardScaler fitted on training only"
+    },
+    "random_forest": {
+      "n_estimators": 32,
+      "max_depth": 3,
+      "min_samples_leaf": 10,
+      "random_state": 9701,
+      "n_jobs": 1
+    }
+  },
+  "selection": "Require validation MAE AND RMSE strictly below training-mean dummy; minimize mean of MAE/dummy_MAE and RMSE/dummy_RMSE, then name.",
+  "aggregation": "Equal-weight all six raw score-delta outputs, pooled R2 matching historical reports. No target scaling/masking/clipping. Constant-output R2 undefined.",
+  "test_scope": "Previously inspected internal development groups, not independent generalization evidence.",
+  "holdout_evaluated": false,
+  "protected_sha256": {
+    "artifacts/dynamic_v5_azure_retrained/model.joblib": "9be6eb47f57b48388af57baa8b8dcbf57da8295b7ed751145df7fe3a84a19031",
+    "artifacts/dynamic_v5_azure_retrained/decision_costs.json": "07e46c24a1201b0d771b9feeb5e92a5f376cf3b1b3db32cbebec02b6086cbb42",
+    "results/dynamic_v5_azure_retrained_20261020/results.json": "6ed2159af2a395827eb60f4d2502cdf87a8b39688d56a8e56437be4df2596472",
+    "results/dynamic_v5_azure_retrained_20261020/REPORT.md": "8c0d12f11a529618f4aa5ca20b5e5d5e095a4a131981fff1807fd2d1b32e86a2",
+    "artifacts/dynamic_v5_20261019/policy_cost/model.joblib": "a8783b65b60aaf381694910affd7e2c2acce4c7c871911b782514d8e37064a64"
+  }
+}

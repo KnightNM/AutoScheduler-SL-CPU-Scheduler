@@ -1,0 +1,658 @@
+{
+  "FCFS": {
+    "mean_score": 0.33873048197292716,
+    "mean_p95_response": 185.53041666666667,
+    "mean_starvation": 14.983333333333333,
+    "mean_switches": 0,
+    "mean_regret_to_best_static": 0.20467586891119827,
+    "by_family": {
+      "cohort_mix": {
+        "traces": 20,
+        "mean_score": 0.6646895593595833,
+        "mean_p95_response": 124.275,
+        "mean_starvation": 17.5,
+        "mean_switches": 0
+      },
+      "homogeneous_batch": {
+        "traces": 20,
+        "mean_score": 0.25,
+        "mean_p95_response": 426.8825,
+        "mean_starvation": 17,
+        "mean_switches": 0
+      },
+      "long_io": {
+        "traces": 20,
+        "mean_score": 0.2581053826055804,
+        "mean_p95_response": 318.7125,
+        "mean_starvation": 24.65,
+        "mean_switches": 0
+      },
+      "low_load": {
+        "traces": 20,
+        "mean_score": 0.0,
+        "mean_p95_response": 0.0,
+        "mean_starvation": 0,
+        "mean_switches": 0
+      },
+      "repeated_changes": {
+        "traces": 20,
+        "mean_score": 0.44793810708620707,
+        "mean_p95_response": 131.31999999999996,
+        "mean_starvation": 12.35,
+        "mean_switches": 0
+      },
+      "sustained_arrivals": {
+        "traces": 20,
+        "mean_score": 0.4116498427861922,
+        "mean_p95_response": 111.99249999999999,
+        "mean_starvation": 18.4,
+        "mean_switches": 0
+      }
+    }
+  },
+  "Round Robin": {
+    "mean_score": 0.20029285953148898,
+    "mean_p95_response": 25.18375,
+    "mean_starvation": 17.125,
+    "mean_switches": 0,
+    "mean_regret_to_best_static": 0.06623824646976009,
+    "by_family": {
+      "cohort_mix": {
+        "traces": 20,
+        "mean_score": 0.28267712804532635,
+        "mean_p95_response": 30.055,
+        "mean_starvation": 19.65,
+        "mean_switches": 0
+      },
+      "homogeneous_batch": {
+        "traces": 20,
+        "mean_score": 0.24004886178448337,
+        "mean_p95_response": 38.0,
+        "mean_starvation": 21,
+        "mean_switches": 0
+      },
+      "long_io": {
+        "traces": 20,
+        "mean_score": 0.20803247649702153,
+        "mean_p95_response": 44.98,
+        "mean_starvation": 25.2,
+        "mean_switches": 0
+      },
+      "low_load": {
+        "traces": 20,
+        "mean_score": 0.0,
+        "mean_p95_response": 0.0,
+        "mean_starvation": 0,
+        "mean_switches": 0
+      },
+      "repeated_changes": {
+        "traces": 20,
+        "mean_score": 0.24795703673671013,
+        "mean_p95_response": 14.297499999999998,
+        "mean_starvation": 17.8,
+        "mean_switches": 0
+      },
+      "sustained_arrivals": {
+        "traces": 20,
+        "mean_score": 0.2230416541253925,
+        "mean_p95_response": 23.77,
+        "mean_starvation": 19.1,
+        "mean_switches": 0
+      }
+    }
+  },
+  "Priority": {
+    "mean_score": 0.319535542392668,
+    "mean_p95_response": 297.12375,
+    "mean_starvation": 13.1,
+    "mean_switches": 0,
+    "mean_regret_to_best_static": 0.18548092933093915,
+    "by_family": {
+      "cohort_mix": {
+        "traces": 20,
+        "mean_score": 0.5238077592403718,
+        "mean_p95_response": 163.92499999999998,
+        "mean_starvation": 17.05,
+        "mean_switches": 0
+      },
+      "homogeneous_batch": {
+        "traces": 20,
+        "mean_score": 0.25,
+        "mean_p95_response": 426.8825,
+        "mean_starvation": 17,
+        "mean_switches": 0
+      },
+      "long_io": {
+        "traces": 20,
+        "mean_score": 0.3559221040070985,
+        "mean_p95_response": 854.9274999999999,
+        "mean_starvation": 19.45,
+        "mean_switches": 0
+      },
+      "low_load": {
+        "traces": 20,
+        "mean_score": 0.0,
+        "mean_p95_response": 0.0,
+        "mean_starvation": 0,
+        "mean_switches": 0
+      },
+      "repeated_changes": {
+        "traces": 20,
+        "mean_score": 0.37994482518227357,
+        "mean_p95_response": 166.26999999999995,
+        "mean_starvation": 12.1,
+        "mean_switches": 0
+      },
+      "sustained_arrivals": {
+        "traces": 20,
+        "mean_score": 0.4075385659262643,
+        "mean_p95_response": 170.73749999999998,
+        "mean_starvation": 13,
+        "mean_switches": 0
+      }
+    }
+  },
+  "Priority RR": {
+    "mean_score": 0.8218969056784357,
+    "mean_p95_response": 44.39541666666666,
+    "mean_starvation": 17.675,
+    "mean_switches": 0,
+    "mean_regret_to_best_static": 0.6878422926167068,
+    "by_family": {
+      "cohort_mix": {
+        "traces": 20,
+        "mean_score": 0.7855316180877119,
+        "mean_p95_response": 51.615,
+        "mean_starvation": 20.25,
+        "mean_switches": 0
+      },
+      "homogeneous_batch": {
+        "traces": 20,
+        "mean_score": 0.7681595175550284,
+        "mean_p95_response": 60.0,
+        "mean_starvation": 21,
+        "mean_switches": 0
+      },
+      "long_io": {
+        "traces": 20,
+        "mean_score": 0.7627667521267019,
+        "mean_p95_response": 70.9025,
+        "mean_starvation": 25.2,
+        "mean_switches": 0
+      },
+      "low_load": {
+        "traces": 20,
+        "mean_score": 1.0,
+        "mean_p95_response": 1.0,
+        "mean_starvation": 0,
+        "mean_switches": 0
+      },
+      "repeated_changes": {
+        "traces": 20,
+        "mean_score": 0.8039959482121177,
+        "mean_p95_response": 34.57,
+        "mean_starvation": 19.6,
+        "mean_switches": 0
+      },
+      "sustained_arrivals": {
+        "traces": 20,
+        "mean_score": 0.8109275980890541,
+        "mean_p95_response": 48.285,
+        "mean_starvation": 20,
+        "mean_switches": 0
+      }
+    }
+  },
+  "MLFQ": {
+    "mean_score": 0.1556252151219788,
+    "mean_p95_response": 19.325,
+    "mean_starvation": 15.791666666666666,
+    "mean_switches": 0,
+    "mean_regret_to_best_static": 0.021570602060249917,
+    "by_family": {
+      "cohort_mix": {
+        "traces": 20,
+        "mean_score": 0.1078637785287945,
+        "mean_p95_response": 21.505,
+        "mean_starvation": 16.95,
+        "mean_switches": 0
+      },
+      "homogeneous_batch": {
+        "traces": 20,
+        "mean_score": 0.24004886178448337,
+        "mean_p95_response": 38.0,
+        "mean_starvation": 21,
+        "mean_switches": 0
+      },
+      "long_io": {
+        "traces": 20,
+        "mean_score": 0.21217908389699242,
+        "mean_p95_response": 42.98,
+        "mean_starvation": 25.2,
+        "mean_switches": 0
+      },
+      "low_load": {
+        "traces": 20,
+        "mean_score": 0.0,
+        "mean_p95_response": 0.0,
+        "mean_starvation": 0,
+        "mean_switches": 0
+      },
+      "repeated_changes": {
+        "traces": 20,
+        "mean_score": 0.19575769843891563,
+        "mean_p95_response": 5.7375,
+        "mean_starvation": 12.55,
+        "mean_switches": 0
+      },
+      "sustained_arrivals": {
+        "traces": 20,
+        "mean_score": 0.1779018680826869,
+        "mean_p95_response": 7.727499999999998,
+        "mean_starvation": 19.05,
+        "mean_switches": 0
+      }
+    }
+  },
+  "Tuned MLFQ": {
+    "mean_score": 0.1386606053670016,
+    "mean_p95_response": 7.706666666666666,
+    "mean_starvation": 15.283333333333333,
+    "mean_switches": 0,
+    "mean_regret_to_best_static": 0.00460599230527269,
+    "by_family": {
+      "cohort_mix": {
+        "traces": 20,
+        "mean_score": 0.06386641020816011,
+        "mean_p95_response": 4.97,
+        "mean_starvation": 15.9,
+        "mean_switches": 0
+      },
+      "homogeneous_batch": {
+        "traces": 20,
+        "mean_score": 0.20177163751688165,
+        "mean_p95_response": 19.0,
+        "mean_starvation": 21,
+        "mean_switches": 0
+      },
+      "long_io": {
+        "traces": 20,
+        "mean_score": 0.1973099644440541,
+        "mean_p95_response": 19.99,
+        "mean_starvation": 25.2,
+        "mean_switches": 0
+      },
+      "low_load": {
+        "traces": 20,
+        "mean_score": 0.0,
+        "mean_p95_response": 0.0,
+        "mean_starvation": 0,
+        "mean_switches": 0
+      },
+      "repeated_changes": {
+        "traces": 20,
+        "mean_score": 0.1968009984505235,
+        "mean_p95_response": 2.2799999999999994,
+        "mean_starvation": 11.35,
+        "mean_switches": 0
+      },
+      "sustained_arrivals": {
+        "traces": 20,
+        "mean_score": 0.1722146215823901,
+        "mean_p95_response": 0.0,
+        "mean_starvation": 18.25,
+        "mean_switches": 0
+      }
+    }
+  },
+  "classifier": {
+    "mean_score": 0.13809134690330122,
+    "mean_p95_response": 35.75833333333333,
+    "mean_starvation": 15.466666666666667,
+    "mean_switches": 6.25,
+    "mean_regret_to_best_static": 0.004036733841572314,
+    "by_family": {
+      "cohort_mix": {
+        "traces": 20,
+        "mean_score": 0.18309690286487837,
+        "mean_p95_response": 32.8075,
+        "mean_starvation": 17.55,
+        "mean_switches": 2.65
+      },
+      "homogeneous_batch": {
+        "traces": 20,
+        "mean_score": 0.11929869195984553,
+        "mean_p95_response": 77.94999999999999,
+        "mean_starvation": 19.45,
+        "mean_switches": 5.05
+      },
+      "long_io": {
+        "traces": 20,
+        "mean_score": 0.17053421972170538,
+        "mean_p95_response": 54.434999999999995,
+        "mean_starvation": 24.7,
+        "mean_switches": 17.5
+      },
+      "low_load": {
+        "traces": 20,
+        "mean_score": 0.0,
+        "mean_p95_response": 0.0,
+        "mean_starvation": 0,
+        "mean_switches": 0
+      },
+      "repeated_changes": {
+        "traces": 20,
+        "mean_score": 0.16566103040540456,
+        "mean_p95_response": 31.584999999999997,
+        "mean_starvation": 12.3,
+        "mean_switches": 8
+      },
+      "sustained_arrivals": {
+        "traces": 20,
+        "mean_score": 0.18995723646797338,
+        "mean_p95_response": 17.772499999999997,
+        "mean_starvation": 18.8,
+        "mean_switches": 4.3
+      }
+    },
+    "decision_p99_ms": 0.37129964000000004,
+    "max_workload_decision_p99_ms": 0.5701837800000007,
+    "comparisons": {
+      "FCFS": {
+        "score_difference": {
+          "mean": -0.20063913506962594,
+          "ci_low": -0.23392615612576517,
+          "ci_high": -0.16877442671186957
+        },
+        "p95_response_difference": {
+          "mean": -149.7720833333333,
+          "ci_low": -178.7168125,
+          "ci_high": -122.99830208333333
+        },
+        "starvation_difference": {
+          "mean": 0.48333333333333334,
+          "ci_low": 0.075,
+          "ci_high": 0.875
+        },
+        "wins": 96,
+        "ties": 20,
+        "losses": 4
+      },
+      "Round Robin": {
+        "score_difference": {
+          "mean": -0.06220151262818777,
+          "ci_low": -0.07633933320516373,
+          "ci_high": -0.048399556177471596
+        },
+        "p95_response_difference": {
+          "mean": 10.574583333333331,
+          "ci_low": 4.820406249999999,
+          "ci_high": 18.739229166666664
+        },
+        "starvation_difference": {
+          "mean": -1.6583333333333334,
+          "ci_low": -2.2002083333333333,
+          "ci_high": -1.1666666666666667
+        },
+        "wins": 91,
+        "ties": 20,
+        "losses": 9
+      },
+      "Priority": {
+        "score_difference": {
+          "mean": -0.18144419548936683,
+          "ci_low": -0.2067145490513344,
+          "ci_high": -0.1565992560865503
+        },
+        "p95_response_difference": {
+          "mean": -261.36541666666665,
+          "ci_low": -319.6832083333333,
+          "ci_high": -206.611875
+        },
+        "starvation_difference": {
+          "mean": 2.3666666666666667,
+          "ci_low": 1.75,
+          "ci_high": 3.0
+        },
+        "wins": 98,
+        "ties": 20,
+        "losses": 2
+      },
+      "Priority RR": {
+        "score_difference": {
+          "mean": -0.6838055587751345,
+          "ci_low": -0.7124626782805019,
+          "ci_high": -0.6560811779230848
+        },
+        "p95_response_difference": {
+          "mean": -8.637083333333335,
+          "ci_low": -14.469364583333334,
+          "ci_high": -0.6807916666666693
+        },
+        "starvation_difference": {
+          "mean": -2.2083333333333335,
+          "ci_low": -2.8666666666666667,
+          "ci_high": -1.6083333333333334
+        },
+        "wins": 120,
+        "ties": 0,
+        "losses": 0
+      },
+      "MLFQ": {
+        "score_difference": {
+          "mean": -0.0175338682186776,
+          "ci_low": -0.03288765049174601,
+          "ci_high": -0.00026792211285628955
+        },
+        "p95_response_difference": {
+          "mean": 16.43333333333333,
+          "ci_low": 10.81873958333333,
+          "ci_high": 24.43135416666666
+        },
+        "starvation_difference": {
+          "mean": -0.325,
+          "ci_low": -0.6083333333333333,
+          "ci_high": -0.03333333333333333
+        },
+        "wins": 62,
+        "ties": 26,
+        "losses": 32
+      },
+      "Tuned MLFQ": {
+        "score_difference": {
+          "mean": -0.0005692584637003762,
+          "ci_low": -0.01649928337710904,
+          "ci_high": 0.017108546961218607
+        },
+        "p95_response_difference": {
+          "mean": 28.051666666666662,
+          "ci_low": 21.403197916666663,
+          "ci_high": 36.823614583333324
+        },
+        "starvation_difference": {
+          "mean": 0.18333333333333332,
+          "ci_low": -0.16666666666666666,
+          "ci_high": 0.5416666666666666
+        },
+        "wins": 55,
+        "ties": 20,
+        "losses": 45
+      }
+    }
+  },
+  "policy_cost": {
+    "mean_score": 0.12077910641359102,
+    "mean_p95_response": 69.91791666666666,
+    "mean_starvation": 14.6,
+    "mean_switches": 1.1666666666666667,
+    "mean_regret_to_best_static": -0.013275506648137874,
+    "by_family": {
+      "cohort_mix": {
+        "traces": 20,
+        "mean_score": 0.11117272094051152,
+        "mean_p95_response": 22.0625,
+        "mean_starvation": 16.85,
+        "mean_switches": 0.75
+      },
+      "homogeneous_batch": {
+        "traces": 20,
+        "mean_score": 0.08015307716812929,
+        "mean_p95_response": 245.04499999999996,
+        "mean_starvation": 18.3,
+        "mean_switches": 1
+      },
+      "long_io": {
+        "traces": 20,
+        "mean_score": 0.17141232414225005,
+        "mean_p95_response": 100.10999999999997,
+        "mean_starvation": 22.75,
+        "mean_switches": 1.1
+      },
+      "low_load": {
+        "traces": 20,
+        "mean_score": 0.0,
+        "mean_p95_response": 0.0,
+        "mean_starvation": 0,
+        "mean_switches": 0
+      },
+      "repeated_changes": {
+        "traces": 20,
+        "mean_score": 0.1846848576230875,
+        "mean_p95_response": 44.5625,
+        "mean_starvation": 10.8,
+        "mean_switches": 3
+      },
+      "sustained_arrivals": {
+        "traces": 20,
+        "mean_score": 0.17725165860756772,
+        "mean_p95_response": 7.727499999999998,
+        "mean_starvation": 18.9,
+        "mean_switches": 1.15
+      }
+    },
+    "decision_p99_ms": 0.36282029000000054,
+    "max_workload_decision_p99_ms": 1.5844032499999998,
+    "comparisons": {
+      "FCFS": {
+        "score_difference": {
+          "mean": -0.21795137555933614,
+          "ci_low": -0.25427636107895385,
+          "ci_high": -0.18345308490847584
+        },
+        "p95_response_difference": {
+          "mean": -115.6125,
+          "ci_low": -133.87573958333334,
+          "ci_high": -97.76578125
+        },
+        "starvation_difference": {
+          "mean": -0.38333333333333336,
+          "ci_low": -0.875,
+          "ci_high": 0.09166666666666666
+        },
+        "wins": 95,
+        "ties": 20,
+        "losses": 5
+      },
+      "Round Robin": {
+        "score_difference": {
+          "mean": -0.07951375311789796,
+          "ci_low": -0.09503108168442889,
+          "ci_high": -0.06454613670183139
+        },
+        "p95_response_difference": {
+          "mean": 44.73416666666665,
+          "ci_low": 28.450864583333324,
+          "ci_high": 62.84846874999999
+        },
+        "starvation_difference": {
+          "mean": -2.525,
+          "ci_low": -3.191666666666667,
+          "ci_high": -1.9
+        },
+        "wins": 92,
+        "ties": 20,
+        "losses": 8
+      },
+      "Priority": {
+        "score_difference": {
+          "mean": -0.19875643597907702,
+          "ci_low": -0.2255250860433068,
+          "ci_high": -0.17240736394116662
+        },
+        "p95_response_difference": {
+          "mean": -227.20583333333332,
+          "ci_low": -281.9977395833333,
+          "ci_high": -177.1353125
+        },
+        "starvation_difference": {
+          "mean": 1.5,
+          "ci_low": 0.8833333333333333,
+          "ci_high": 2.15
+        },
+        "wins": 98,
+        "ties": 20,
+        "losses": 2
+      },
+      "Priority RR": {
+        "score_difference": {
+          "mean": -0.7011177992648446,
+          "ci_low": -0.7283303898016127,
+          "ci_high": -0.6752172508803924
+        },
+        "p95_response_difference": {
+          "mean": 25.52249999999999,
+          "ci_low": 9.643229166666659,
+          "ci_high": 43.35056249999999
+        },
+        "starvation_difference": {
+          "mean": -3.075,
+          "ci_low": -3.841666666666667,
+          "ci_high": -2.3583333333333334
+        },
+        "wins": 120,
+        "ties": 0,
+        "losses": 0
+      },
+      "MLFQ": {
+        "score_difference": {
+          "mean": -0.034846108708387794,
+          "ci_low": -0.04727839340679817,
+          "ci_high": -0.022810430801651224
+        },
+        "p95_response_difference": {
+          "mean": 50.59291666666665,
+          "ci_low": 34.71079166666666,
+          "ci_high": 68.21429166666665
+        },
+        "starvation_difference": {
+          "mean": -1.1916666666666667,
+          "ci_low": -1.55,
+          "ci_high": -0.85
+        },
+        "wins": 57,
+        "ties": 48,
+        "losses": 15
+      },
+      "Tuned MLFQ": {
+        "score_difference": {
+          "mean": -0.017881498953410565,
+          "ci_low": -0.029948382217311,
+          "ci_high": -0.005960042787802175
+        },
+        "p95_response_difference": {
+          "mean": 62.211249999999986,
+          "ci_low": 45.22526041666666,
+          "ci_high": 81.12857291666666
+        },
+        "starvation_difference": {
+          "mean": -0.6833333333333333,
+          "ci_low": -1.1083333333333334,
+          "ci_high": -0.25
+        },
+        "wins": 60,
+        "ties": 20,
+        "losses": 40
+      }
+    }
+  }
+}

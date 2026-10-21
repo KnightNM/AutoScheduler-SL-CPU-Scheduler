@@ -1,0 +1,725 @@
+{
+  "schema_version": 1,
+  "synthetic_tuning": "closed",
+  "next_phase": "interactive_dashboard",
+  "approved_ml_models": [],
+  "promotion": false,
+  "approval_blockers": [
+    "Synthetic results cannot select the final real-data model; locked real-trace gates remain required."
+  ],
+  "research_candidate": "dynamic_v5_policy_cost",
+  "recommended_static": {
+    "name": "Tuned MLFQ",
+    "parameters": {
+      "quanta": [
+        1,
+        2,
+        4
+      ],
+      "aging_threshold": 40,
+      "context_switch_cost": 0
+    },
+    "scope": "simulator baseline only; not a real-Linux scheduler performance claim",
+    "selection_source": "results/dynamic_v5_20261019/static_selection.json",
+    "fresh_measurements": "results/dynamic_v6_20261019/sensitivity.json"
+  },
+  "checkpoint": {
+    "path": "results/dynamic_v6_20261019/CHECKPOINT.json",
+    "sha256": "eb759b21d16301b9056f3ca65faf9296ba816eee5c6593ccc1287637c1487b56",
+    "decision": {
+      "schema_version": 1,
+      "synthetic_tuning": "closed",
+      "next_phase": "interactive_dashboard",
+      "promoted_model": null,
+      "research_candidate": "dynamic_v5_policy_cost",
+      "recommended_static": {
+        "name": "Tuned MLFQ",
+        "parameters": {
+          "quanta": [
+            1,
+            2,
+            4
+          ],
+          "aging_threshold": 40,
+          "context_switch_cost": 0
+        },
+        "scope": "simulator baseline only; not a real-Linux scheduler performance claim",
+        "selection_source": "results/dynamic_v5_20261019/static_selection.json",
+        "fresh_measurements": "results/dynamic_v6_20261019/sensitivity.json"
+      },
+      "v6_prespecified_development_and_audit_gates_pass": true,
+      "v6_previous_frozen_static_response_check_pass": false,
+      "v6_real_trace_approval_established": false,
+      "decision": "Do not promote v6. Its independently retuned static parameters confound guard attribution; the fresh v6 model regresses versus v5 and the previous frozen static response envelope. Guard-only ablation improves response modestly but sacrifices score. Retain v5 for research and the prior tuned static baseline for simulator use.",
+      "gate_provenance": {
+        "prespecified": "results/dynamic_v6_20261019/research_summary.json",
+        "post_audit_fixed_baseline_sensitivity_not_selection": "results/dynamic_v6_20261019/sensitivity.json",
+        "locked_real_contract": "configs/real_desktop_ml.json"
+      }
+    }
+  },
+  "algorithms": [
+    {
+      "name": "FCFS",
+      "eligibility": "observed_state_eligible",
+      "parameters": {}
+    },
+    {
+      "name": "SJF",
+      "eligibility": "oracle_only",
+      "parameters": {}
+    },
+    {
+      "name": "SRTF",
+      "eligibility": "oracle_only",
+      "parameters": {}
+    },
+    {
+      "name": "Round Robin",
+      "eligibility": "observed_state_eligible",
+      "parameters": {
+        "quantum": 2
+      }
+    },
+    {
+      "name": "Priority",
+      "eligibility": "observed_state_eligible",
+      "parameters": {}
+    },
+    {
+      "name": "Priority RR",
+      "eligibility": "observed_state_eligible",
+      "parameters": {
+        "quantum": 2,
+        "aging_interval": 8,
+        "context_switch_cost": 1
+      }
+    },
+    {
+      "name": "MLFQ",
+      "eligibility": "observed_state_eligible",
+      "parameters": {
+        "quanta": [
+          2,
+          4,
+          8
+        ],
+        "aging_threshold": 20
+      }
+    },
+    {
+      "name": "RR20-SRTF",
+      "eligibility": "oracle_only",
+      "parameters": {
+        "rr_quantum": 1,
+        "switch_tick": 20
+      }
+    }
+  ],
+  "models": [
+    {
+      "id": "dynamic_v2_classifier",
+      "version": "v2",
+      "family": "classifier",
+      "status": "historical",
+      "scope": "SYNTHETIC_DEVELOPMENT_ONLY",
+      "approved": false,
+      "requires_archived_runtime": true,
+      "development_audit_accepted": null,
+      "artifact": {
+        "path": "artifacts/dynamic_v2_20261019/candidates/classifier/model.joblib",
+        "available": true,
+        "sha256": "50a5de58ca8437703620be50dda5a7c9481afed30eab374b8872f4b0272d6260",
+        "validated": true
+      },
+      "report": "results/dynamic_v2_20261019/REPORT.md",
+      "summary": "results/dynamic_v2_20261019/research_summary.json",
+      "summary_sha256": "f3b932702aabfa905bdbe9bd49bd51785e4a05b898f339f7eb4403ed3cdbf421"
+    },
+    {
+      "id": "dynamic_v2_policy_cost",
+      "version": "v2",
+      "family": "policy_cost",
+      "status": "historical",
+      "scope": "SYNTHETIC_DEVELOPMENT_ONLY",
+      "approved": false,
+      "requires_archived_runtime": true,
+      "development_audit_accepted": null,
+      "artifact": {
+        "path": "artifacts/dynamic_v2_20261019/candidates/policy_cost/model.joblib",
+        "available": true,
+        "sha256": "afad163bb722774826f5932c7d28fac1c01299b577ea9074cc4b9663d2ca9f5e",
+        "validated": true
+      },
+      "report": "results/dynamic_v2_20261019/REPORT.md",
+      "summary": "results/dynamic_v2_20261019/research_summary.json",
+      "summary_sha256": "f3b932702aabfa905bdbe9bd49bd51785e4a05b898f339f7eb4403ed3cdbf421"
+    },
+    {
+      "id": "dynamic_v3_classifier",
+      "version": "v3",
+      "family": "classifier",
+      "status": "historical",
+      "scope": "SYNTHETIC_DEVELOPMENT_ONLY",
+      "approved": false,
+      "requires_archived_runtime": true,
+      "development_audit_accepted": {
+        "original_gates": false,
+        "score_vs_development_selected_static": false,
+        "p95_vs_development_selected_static": false,
+        "starvation_vs_development_selected_static": false,
+        "latency_all_recorded_passes": false,
+        "synthetic_comparator_gates": false
+      },
+      "artifact": {
+        "path": "artifacts/dynamic_v3_20261019/candidates/classifier/model.joblib",
+        "available": true,
+        "sha256": "e3574cfe1c9f94e2fddac698f13091cc80350ed7c75b10ce2540e690c11097e7",
+        "validated": true
+      },
+      "report": "results/dynamic_v3_20261019/REPORT.md",
+      "summary": "results/dynamic_v3_20261019/research_summary.json",
+      "summary_sha256": "3e8cd3d107c07e29cd93fe8b268c6ba35ae47cd165dd6d10a593ee9e1ec5674c"
+    },
+    {
+      "id": "dynamic_v3_policy_cost",
+      "version": "v3",
+      "family": "policy_cost",
+      "status": "historical",
+      "scope": "SYNTHETIC_DEVELOPMENT_ONLY",
+      "approved": false,
+      "requires_archived_runtime": true,
+      "development_audit_accepted": {
+        "original_gates": true,
+        "score_vs_development_selected_static": false,
+        "p95_vs_development_selected_static": false,
+        "starvation_vs_development_selected_static": false,
+        "latency_all_recorded_passes": false,
+        "synthetic_comparator_gates": false
+      },
+      "artifact": {
+        "path": "artifacts/dynamic_v3_20261019/candidates/policy_cost/model.joblib",
+        "available": true,
+        "sha256": "0a992716fc7eec40c728bceddf7562fde5d64208a7f1e7894a4d615167e7b380",
+        "validated": true
+      },
+      "report": "results/dynamic_v3_20261019/REPORT.md",
+      "summary": "results/dynamic_v3_20261019/research_summary.json",
+      "summary_sha256": "3e8cd3d107c07e29cd93fe8b268c6ba35ae47cd165dd6d10a593ee9e1ec5674c"
+    },
+    {
+      "id": "dynamic_v4_classifier",
+      "version": "v4",
+      "family": "classifier",
+      "status": "historical",
+      "scope": "SYNTHETIC_DEVELOPMENT_ONLY",
+      "approved": false,
+      "requires_archived_runtime": true,
+      "development_audit_accepted": {
+        "audit_gates": {
+          "primary_score": false,
+          "primary_response": false,
+          "primary_starvation": false,
+          "latency": true,
+          "original_rr_score": true,
+          "original_rr_p95": true
+        },
+        "audit_eligible": false,
+        "development_validation_eligible": false,
+        "accepted": false
+      },
+      "artifact": {
+        "path": "artifacts/dynamic_v4_20261019/classifier/model.joblib",
+        "available": true,
+        "sha256": "33967a3e390de93856d36d710ce3f3111a1d0529362df9691a3c747dccd7acbb",
+        "validated": true
+      },
+      "report": "results/dynamic_v4_20261019/REPORT.md",
+      "summary": "results/dynamic_v4_20261019/research_summary.json",
+      "summary_sha256": "039ff8017aa0d20640774dea61bf148df6f6675f851aa00dcf3516a53c249109"
+    },
+    {
+      "id": "dynamic_v4_policy_cost",
+      "version": "v4",
+      "family": "policy_cost",
+      "status": "historical",
+      "scope": "SYNTHETIC_DEVELOPMENT_ONLY",
+      "approved": false,
+      "requires_archived_runtime": true,
+      "development_audit_accepted": {
+        "audit_gates": {
+          "primary_score": true,
+          "primary_response": false,
+          "primary_starvation": true,
+          "latency": true,
+          "original_rr_score": true,
+          "original_rr_p95": false
+        },
+        "audit_eligible": false,
+        "development_validation_eligible": false,
+        "accepted": false
+      },
+      "artifact": {
+        "path": "artifacts/dynamic_v4_20261019/policy_cost/model.joblib",
+        "available": true,
+        "sha256": "dee9d9ff71a26b01a1c11072f5aa58254c23c46911273b1a568244db1e114744",
+        "validated": true
+      },
+      "report": "results/dynamic_v4_20261019/REPORT.md",
+      "summary": "results/dynamic_v4_20261019/research_summary.json",
+      "summary_sha256": "039ff8017aa0d20640774dea61bf148df6f6675f851aa00dcf3516a53c249109"
+    },
+    {
+      "id": "dynamic_v5_classifier",
+      "version": "v5",
+      "family": "classifier",
+      "status": "experimental",
+      "scope": "SYNTHETIC_DEVELOPMENT_ONLY",
+      "approved": false,
+      "requires_archived_runtime": false,
+      "development_audit_accepted": false,
+      "artifact": {
+        "path": "artifacts/dynamic_v5_20261019/classifier/model.joblib",
+        "available": true,
+        "sha256": "52343c981ea37aa3760f5f8218cb69fbb6cedc0afed7434f983023adb437edde",
+        "validated": true
+      },
+      "report": "results/dynamic_v5_20261019/REPORT.md",
+      "summary": "results/dynamic_v5_20261019/research_summary.json",
+      "summary_sha256": "b2ecae05a12ca94097f9175bd6e9abc556741582742be15c18c568a3cecf4505"
+    },
+    {
+      "id": "dynamic_v5_policy_cost",
+      "version": "v5",
+      "family": "policy_cost",
+      "status": "experimental",
+      "scope": "SYNTHETIC_DEVELOPMENT_ONLY",
+      "approved": false,
+      "requires_archived_runtime": false,
+      "development_audit_accepted": false,
+      "artifact": {
+        "path": "artifacts/dynamic_v5_20261019/policy_cost/model.joblib",
+        "available": true,
+        "sha256": "a8783b65b60aaf381694910affd7e2c2acce4c7c871911b782514d8e37064a64",
+        "validated": true
+      },
+      "report": "results/dynamic_v5_20261019/REPORT.md",
+      "summary": "results/dynamic_v5_20261019/research_summary.json",
+      "summary_sha256": "b2ecae05a12ca94097f9175bd6e9abc556741582742be15c18c568a3cecf4505"
+    },
+    {
+      "id": "dynamic_v6_classifier",
+      "version": "v6",
+      "family": "classifier",
+      "status": "experimental",
+      "scope": "SYNTHETIC_DEVELOPMENT_ONLY",
+      "approved": false,
+      "requires_archived_runtime": false,
+      "development_audit_accepted": false,
+      "artifact": {
+        "path": "artifacts/dynamic_v6_20261019/classifier/model.joblib",
+        "available": true,
+        "sha256": "d6909eaf2f478bf5684e6f14581f04dfddb15c20907fe288361a283d28f6a45a",
+        "validated": true
+      },
+      "report": "results/dynamic_v6_20261019/REPORT.md",
+      "summary": "results/dynamic_v6_20261019/research_summary.json",
+      "summary_sha256": "3f3d904b30de0a8168b13cc5674ba03392bce3bbc91c471f963c017fbe52b506"
+    },
+    {
+      "id": "dynamic_v6_policy_cost",
+      "version": "v6",
+      "family": "policy_cost",
+      "status": "experimental",
+      "scope": "SYNTHETIC_DEVELOPMENT_ONLY",
+      "approved": false,
+      "requires_archived_runtime": false,
+      "development_audit_accepted": true,
+      "artifact": {
+        "path": "artifacts/dynamic_v6_20261019/policy_cost/model.joblib",
+        "available": true,
+        "sha256": "19bcd917fb6fcfec13480464cd58204a06ccb7fb0a7661dcbb1e90ba5aeba412",
+        "validated": true
+      },
+      "report": "results/dynamic_v6_20261019/REPORT.md",
+      "summary": "results/dynamic_v6_20261019/research_summary.json",
+      "summary_sha256": "3f3d904b30de0a8168b13cc5674ba03392bce3bbc91c471f963c017fbe52b506"
+    }
+  ],
+  "score_weights": {
+    "avg_waiting_time": 0.3,
+    "avg_response_time": 0.25,
+    "avg_turnaround_time": 0.2,
+    "cpu_utilization": 0.15,
+    "throughput": 0.1
+  },
+  "metric_definitions": {
+    "weighted_score": {
+      "unit": "dimensionless",
+      "aggregation": "mean over workloads; lower is better"
+    },
+    "p95_response": {
+      "unit": "simulator_tick",
+      "aggregation": "mean of workload first-response P95s"
+    },
+    "worst_first_response": {
+      "unit": "simulator_tick",
+      "aggregation": "maximum over all processes"
+    },
+    "starvation": {
+      "unit": "processes_per_workload",
+      "aggregation": "mean frozen fairness starvation count"
+    },
+    "switches": {
+      "unit": "switches_per_workload",
+      "aggregation": "mean accepted policy transitions"
+    },
+    "decision_p99": {
+      "unit": "millisecond",
+      "aggregation": "pooled routing decision P99; simulator controller only"
+    },
+    "max_workload_decision_p99": {
+      "unit": "millisecond",
+      "aggregation": "maximum workload routing P99; latency gate input"
+    }
+  },
+  "evaluations": [
+    {
+      "id": "dynamic_v5_20261019",
+      "scope": "SYNTHETIC_DEVELOPMENT_ONLY",
+      "source": "results/dynamic_v5_20261019/research_summary.json",
+      "source_sha256": "b2ecae05a12ca94097f9175bd6e9abc556741582742be15c18c568a3cecf4505",
+      "audit_seed": 9703,
+      "workloads": 240,
+      "primary_static_comparator": "Tuned MLFQ",
+      "tuned_static_parameters": {
+        "quanta": [
+          1,
+          2,
+          4
+        ],
+        "aging_threshold": 40,
+        "context_switch_cost": 0
+      },
+      "policy_model_ids": {
+        "FCFS": null,
+        "Round Robin": null,
+        "Priority": null,
+        "Priority RR": null,
+        "MLFQ": null,
+        "Tuned MLFQ": null,
+        "classifier": "dynamic_v5_classifier",
+        "policy_cost": "dynamic_v5_policy_cost",
+        "Dynamic v4": "dynamic_v4_policy_cost"
+      },
+      "metrics": {
+        "FCFS": {
+          "weighted_score": 0.295652416678589,
+          "p95_response": 172.49541666666664,
+          "worst_first_response": 1363,
+          "starvation": 13.666666666666666,
+          "switches": 0,
+          "decision_p99": null,
+          "max_workload_decision_p99": null
+        },
+        "Round Robin": {
+          "weighted_score": 0.21303627248745674,
+          "p95_response": 22.038541666666667,
+          "worst_first_response": 94,
+          "starvation": 15.004166666666666,
+          "switches": 0,
+          "decision_p99": null,
+          "max_workload_decision_p99": null
+        },
+        "Priority": {
+          "weighted_score": 0.29229992995497733,
+          "p95_response": 262.8025,
+          "worst_first_response": 1979,
+          "starvation": 12.225,
+          "switches": 0,
+          "decision_p99": null,
+          "max_workload_decision_p99": null
+        },
+        "Priority RR": {
+          "weighted_score": 0.8449638083729669,
+          "p95_response": 41.48374999999999,
+          "worst_first_response": 141,
+          "starvation": 15.9125,
+          "switches": 0,
+          "decision_p99": null,
+          "max_workload_decision_p99": null
+        },
+        "MLFQ": {
+          "weighted_score": 0.18147500692542143,
+          "p95_response": 18.118541666666665,
+          "worst_first_response": 94,
+          "starvation": 14.545833333333333,
+          "switches": 0,
+          "decision_p99": null,
+          "max_workload_decision_p99": null
+        },
+        "Tuned MLFQ": {
+          "weighted_score": 0.16756360971544262,
+          "p95_response": 7.487291666666666,
+          "worst_first_response": 47,
+          "starvation": 14.066666666666666,
+          "switches": 0,
+          "decision_p99": null,
+          "max_workload_decision_p99": null
+        },
+        "classifier": {
+          "weighted_score": 0.16742143298946557,
+          "p95_response": 7.580416666666666,
+          "worst_first_response": 47,
+          "starvation": 14.0625,
+          "switches": 0.26666666666666666,
+          "decision_p99": 0.5552426400000022,
+          "max_workload_decision_p99": 0.7545786999999967
+        },
+        "policy_cost": {
+          "weighted_score": 0.13588730490040574,
+          "p95_response": 7.645,
+          "worst_first_response": 47,
+          "starvation": 13.679166666666667,
+          "switches": 3.8541666666666665,
+          "decision_p99": 0.5206916400000001,
+          "max_workload_decision_p99": 1.050304760000001
+        },
+        "Dynamic v4": {
+          "weighted_score": 0.13176718898415912,
+          "p95_response": 15.559375,
+          "worst_first_response": 88,
+          "starvation": 13.545833333333333,
+          "switches": 4.791666666666667,
+          "decision_p99": 0.5089764,
+          "max_workload_decision_p99": 2.178602870000001
+        }
+      },
+      "safety_gates": {
+        "classifier": {
+          "primary_score": false,
+          "primary_p95": false,
+          "primary_starvation": true,
+          "latency": true,
+          "original_rr_score": true,
+          "original_rr_p95": true
+        },
+        "policy_cost": {
+          "primary_score": true,
+          "primary_p95": false,
+          "primary_starvation": true,
+          "latency": true,
+          "original_rr_score": true,
+          "original_rr_p95": true
+        }
+      },
+      "paired_confidence_intervals": "results/dynamic_v5_20261019/audit/summary.json",
+      "development_selected": "policy_cost",
+      "accepted_after_audit": null
+    },
+    {
+      "id": "dynamic_v6_20261019",
+      "scope": "SYNTHETIC_DEVELOPMENT_ONLY",
+      "source": "results/dynamic_v6_20261019/research_summary.json",
+      "source_sha256": "3f3d904b30de0a8168b13cc5674ba03392bce3bbc91c471f963c017fbe52b506",
+      "audit_seed": 10603,
+      "workloads": 240,
+      "primary_static_comparator": "Tuned MLFQ",
+      "tuned_static_parameters": {
+        "quanta": [
+          2,
+          4,
+          8
+        ],
+        "aging_threshold": 40,
+        "context_switch_cost": 0
+      },
+      "policy_model_ids": {
+        "FCFS": null,
+        "Round Robin": null,
+        "Priority": null,
+        "Priority RR": null,
+        "MLFQ": null,
+        "Tuned MLFQ": null,
+        "classifier": "dynamic_v6_classifier",
+        "policy_cost": "dynamic_v6_policy_cost",
+        "Dynamic v5": "dynamic_v5_policy_cost"
+      },
+      "metrics": {
+        "FCFS": {
+          "weighted_score": 0.29746324116763145,
+          "p95_response": 131.97708333333333,
+          "worst_first_response": 1410,
+          "starvation": 9.604166666666666,
+          "switches": 0,
+          "decision_p99": null,
+          "max_workload_decision_p99": null
+        },
+        "Round Robin": {
+          "weighted_score": 0.21777434053018405,
+          "p95_response": 17.01125,
+          "worst_first_response": 94,
+          "starvation": 10.620833333333334,
+          "switches": 0,
+          "decision_p99": null,
+          "max_workload_decision_p99": null
+        },
+        "Priority": {
+          "weighted_score": 0.2861656587948892,
+          "p95_response": 199.31437499999998,
+          "worst_first_response": 1874,
+          "starvation": 8.4375,
+          "switches": 0,
+          "decision_p99": null,
+          "max_workload_decision_p99": null
+        },
+        "Priority RR": {
+          "weighted_score": 0.8540552883140654,
+          "p95_response": 33.40229166666666,
+          "worst_first_response": 141,
+          "starvation": 11.445833333333333,
+          "switches": 0,
+          "decision_p99": null,
+          "max_workload_decision_p99": null
+        },
+        "MLFQ": {
+          "weighted_score": 0.18622662107812532,
+          "p95_response": 13.625416666666666,
+          "worst_first_response": 94,
+          "starvation": 10.016666666666667,
+          "switches": 0,
+          "decision_p99": null,
+          "max_workload_decision_p99": null
+        },
+        "Tuned MLFQ": {
+          "weighted_score": 0.18257258241304397,
+          "p95_response": 12.365208333333332,
+          "worst_first_response": 94,
+          "starvation": 9.875,
+          "switches": 0,
+          "decision_p99": null,
+          "max_workload_decision_p99": null
+        },
+        "classifier": {
+          "weighted_score": 0.17691347588054981,
+          "p95_response": 12.365208333333332,
+          "worst_first_response": 94,
+          "starvation": 9.879166666666666,
+          "switches": 1.7208333333333334,
+          "decision_p99": 0.49162267000000065,
+          "max_workload_decision_p99": 0.8380417500000001
+        },
+        "policy_cost": {
+          "weighted_score": 0.16687962240421686,
+          "p95_response": 12.365208333333332,
+          "worst_first_response": 94,
+          "starvation": 9.716666666666667,
+          "switches": 1.9083333333333334,
+          "decision_p99": 0.42324849999999997,
+          "max_workload_decision_p99": 0.9662400199999996
+        },
+        "Dynamic v5": {
+          "weighted_score": 0.14459377304688187,
+          "p95_response": 5.772083333333333,
+          "worst_first_response": 47,
+          "starvation": 9.558333333333334,
+          "switches": 2.9291666666666667,
+          "decision_p99": 0.5071332100000003,
+          "max_workload_decision_p99": 2.7112139000000006
+        }
+      },
+      "safety_gates": {
+        "classifier": {
+          "primary_score": true,
+          "primary_p95": true,
+          "primary_starvation": false,
+          "latency": true,
+          "original_rr_score": true,
+          "original_rr_p95": true
+        },
+        "policy_cost": {
+          "primary_score": true,
+          "primary_p95": true,
+          "primary_starvation": true,
+          "latency": true,
+          "original_rr_score": true,
+          "original_rr_p95": true
+        }
+      },
+      "paired_confidence_intervals": "results/dynamic_v6_20261019/audit/summary.json",
+      "development_selected": "policy_cost",
+      "accepted_after_audit": "policy_cost"
+    },
+    {
+      "id": "v6_fixed_v5_static_sensitivity",
+      "scope": "POST_AUDIT_EXPLANATION_ONLY_NOT_SELECTION",
+      "source": "results/dynamic_v6_20261019/sensitivity.json",
+      "source_sha256": "3327ec7c66b99f96589bb819a897c7ff3cc3fe75812d60c00de7634ad35bf5d2",
+      "audit_seed": 10603,
+      "workloads": 240,
+      "metrics": {
+        "V5 plus v6 guard": {
+          "weighted_score": 0.15884008713730022,
+          "p95_response": 5.7143749999999995,
+          "worst_first_response": 47,
+          "starvation": 9.641666666666667,
+          "switches": 2.7,
+          "decision_p99": 0.45222764,
+          "max_workload_decision_p99": 3.2441202500000004
+        },
+        "Frozen v5 Tuned MLFQ": {
+          "weighted_score": 0.17855719385886074,
+          "p95_response": 5.7143749999999995,
+          "worst_first_response": 47,
+          "starvation": 9.879166666666666,
+          "switches": 0,
+          "decision_p99": null,
+          "max_workload_decision_p99": null
+        }
+      },
+      "safety_gates": {
+        "V5 plus v6 guard": {
+          "primary_score": true,
+          "primary_p95": true,
+          "primary_starvation": true,
+          "latency": true,
+          "original_rr_score": true,
+          "original_rr_p95": true
+        },
+        "policy_cost": {
+          "primary_score": true,
+          "primary_p95": false,
+          "primary_starvation": true,
+          "latency": true,
+          "original_rr_score": true,
+          "original_rr_p95": true
+        },
+        "Dynamic v5": {
+          "primary_score": true,
+          "primary_p95": false,
+          "primary_starvation": true,
+          "latency": true,
+          "original_rr_score": true,
+          "original_rr_p95": true
+        }
+      },
+      "primary_static_comparator": "Frozen v5 Tuned MLFQ",
+      "tuned_static_parameters": {
+        "quanta": [
+          1,
+          2,
+          4
+        ],
+        "aging_threshold": 40,
+        "context_switch_cost": 0
+      },
+      "policy_model_ids": {
+        "V5 plus v6 guard": null,
+        "Frozen v5 Tuned MLFQ": null
+      },
+      "note": "Disposable guard-only intervention has no trained or approved deployment artifact."
+    }
+  ],
+  "loading_contract": "Only load validated artifacts using their saved configuration and schema. Never substitute controller settings silently.",
+  "real_data_contract": "configs/real_desktop_ml.json"
+}

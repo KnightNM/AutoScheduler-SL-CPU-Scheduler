@@ -1,0 +1,10 @@
+{
+  "static_latency_unavailable": [
+    "FCFS",
+    "Priority",
+    "Priority RR",
+    "Round Robin"
+  ],
+  "raw_record_correction": "Initial baseline_rows.json uses zero for an empty timing list in these wrappers. Derived CSV/report/summary correctly show unavailable; raw records are retained. Harness now emits null.",
+  "scheduling_metrics_affected": false
+}

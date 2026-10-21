@@ -1,0 +1,38 @@
+{
+  "train": {
+    "nonzero_states": 5,
+    "metrics_on_nonzero_differences": {
+      "existing_tree": {
+        "mae": 3.175820274857272e-05,
+        "rmse": 6.560202912050295e-05,
+        "r_squared": 0.7818343252455079
+      },
+      "training_mean_dummy": {
+        "mae": 7.068089257253064e-05,
+        "rmse": 0.00015280705359067473,
+        "r_squared": -0.1836919113056772
+      }
+    },
+    "actionable_states": 0,
+    "actionable_quality": null,
+    "reason": "No state clears the frozen margin"
+  },
+  "validation": {
+    "nonzero_states": 2,
+    "metrics_on_nonzero_differences": {
+      "existing_tree": {
+        "mae": 2.109802470532176e-05,
+        "rmse": 3.827985536906404e-05,
+        "r_squared": 0.8615557484587314
+      },
+      "training_mean_dummy": {
+        "mae": 6.414148089590393e-05,
+        "rmse": 0.00010990115809040954,
+        "r_squared": -0.1411398953617382
+      }
+    },
+    "actionable_states": 0,
+    "actionable_quality": null,
+    "reason": "No state clears the frozen margin"
+  }
+}

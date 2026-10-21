@@ -1,0 +1,182 @@
+[
+  {
+    "workload_id": "azure-d03-0059",
+    "status": "COMPLETE",
+    "rows": 12,
+    "seconds": 18.68485737100127
+  },
+  {
+    "workload_id": "azure-d07-0142",
+    "status": "COMPLETE",
+    "rows": 12,
+    "seconds": 7.339286704998813
+  },
+  {
+    "workload_id": "azure-d10-0187",
+    "status": "COMPLETE",
+    "rows": 12,
+    "seconds": 22.86664959599875
+  },
+  {
+    "workload_id": "azure-d05-0094",
+    "status": "COMPLETE",
+    "rows": 12,
+    "seconds": 15.59332348099997
+  },
+  {
+    "workload_id": "azure-d14-0284",
+    "status": "COMPLETE",
+    "rows": 12,
+    "seconds": 0.8231749170008698
+  },
+  {
+    "workload_id": "azure-d03-0058",
+    "status": "COMPLETE",
+    "rows": 12,
+    "seconds": 1.432219841000915
+  },
+  {
+    "workload_id": "azure-d06-0110",
+    "status": "COMPLETE",
+    "rows": 12,
+    "seconds": 0.14891201499995077
+  },
+  {
+    "workload_id": "azure-d01-0005",
+    "status": "COMPLETE",
+    "rows": 12,
+    "seconds": 0.0391805929975817
+  },
+  {
+    "workload_id": "azure-d14-0274",
+    "status": "COMPLETE",
+    "rows": 12,
+    "seconds": 1.8259644749996369
+  },
+  {
+    "workload_id": "azure-d06-0108",
+    "status": "COMPLETE",
+    "rows": 12,
+    "seconds": 0.3290766230056761
+  },
+  {
+    "workload_id": "azure-d07-0126",
+    "status": "COMPLETE",
+    "rows": 12,
+    "seconds": 0.1513450560014462
+  },
+  {
+    "workload_id": "azure-d13-0251",
+    "status": "COMPLETE",
+    "rows": 12,
+    "seconds": 0.09897862700017868
+  },
+  {
+    "workload_id": "azure-d09-0175",
+    "status": "COMPLETE",
+    "rows": 12,
+    "seconds": 0.19114676499884808
+  },
+  {
+    "workload_id": "azure-d14-0275",
+    "status": "COMPLETE",
+    "rows": 12,
+    "seconds": 0.5072808479962987
+  },
+  {
+    "workload_id": "azure-d03-0054",
+    "status": "COMPLETE",
+    "rows": 12,
+    "seconds": 0.09727064800244989
+  },
+  {
+    "workload_id": "azure-d07-0136",
+    "status": "COMPLETE",
+    "rows": 12,
+    "seconds": 0.07420158899913076
+  },
+  {
+    "workload_id": "azure-d05-0085",
+    "status": "COMPLETE",
+    "rows": 12,
+    "seconds": 0.5921850649974658
+  },
+  {
+    "workload_id": "azure-d13-0264",
+    "status": "COMPLETE",
+    "rows": 12,
+    "seconds": 0.727466459000425
+  },
+  {
+    "workload_id": "azure-d04-0066",
+    "status": "COMPLETE",
+    "rows": 12,
+    "seconds": 0.11526623299869243
+  },
+  {
+    "workload_id": "azure-d10-0188",
+    "status": "COMPLETE",
+    "rows": 12,
+    "seconds": 0.0853927019998082
+  },
+  {
+    "workload_id": "azure-d13-0258",
+    "status": "COMPLETE",
+    "rows": 12,
+    "seconds": 0.10305075500218663
+  },
+  {
+    "workload_id": "azure-d09-0170",
+    "status": "COMPLETE",
+    "rows": 12,
+    "seconds": 0.10866064299625577
+  },
+  {
+    "workload_id": "azure-d05-0093",
+    "status": "COMPLETE",
+    "rows": 12,
+    "seconds": 0.1469976869993843
+  },
+  {
+    "workload_id": "azure-d14-0268",
+    "status": "COMPLETE",
+    "rows": 12,
+    "seconds": 0.07075512599840295
+  },
+  {
+    "workload_id": "azure-d02-0040",
+    "status": "COMPLETE",
+    "rows": 12,
+    "seconds": 1.7400078540013055
+  },
+  {
+    "workload_id": "azure-d04-0064",
+    "status": "COMPLETE",
+    "rows": 12,
+    "seconds": 0.8145197720004944
+  },
+  {
+    "workload_id": "azure-d09-0172",
+    "status": "COMPLETE",
+    "rows": 12,
+    "seconds": 0.14343482699769083
+  },
+  {
+    "workload_id": "azure-d05-0087",
+    "status": "COMPLETE",
+    "rows": 12,
+    "seconds": 0.8834751339963987
+  },
+  {
+    "workload_id": "azure-d11-0207",
+    "status": "COMPLETE",
+    "rows": 12,
+    "seconds": 0.2892514760023914
+  },
+  {
+    "workload_id": "azure-d05-0101",
+    "status": "COMPLETE",
+    "rows": 12,
+    "seconds": 0.6015413879940752
+  }
+]

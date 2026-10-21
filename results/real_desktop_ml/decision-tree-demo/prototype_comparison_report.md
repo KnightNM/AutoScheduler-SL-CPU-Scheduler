@@ -2,7 +2,6 @@
 
 ## Status
 
-
 Development-only offline replay screening. This is not evidence of Linux kernel scheduler performance.
 
 ## Data
@@ -48,11 +47,11 @@ Cost MAE and R² evaluate cost prediction. Action-selection accuracy is agreemen
 
 | Model | Validation cost | Locked-test cost | Cost MAE | Cost R² | Oracle-action agreement | P99 ms | Selected |
 | --- | ---: | ---: | ---: | ---: | ---: | ---: | --- |
-| Dummy | 0.685690 | 0.750000 | 0.308525 | -0.02382965765073841 | 0.000 | 0.036167 | No |
-| Ridge | 0.000000 | 0.000000 | 0.379499 | -1.0489882557663641 | 1.000 | 0.443459 | Yes |
-| Decision Tree | 0.000000 | 0.000000 | 0.286773 | -0.21291044619005595 | 1.000 | 0.167833 | No |
-| Random Forest | 0.000000 | 0.000000 | 0.268659 | -0.21975569198560096 | 1.000 | 5.338667 | No |
-| Histogram Gradient Boosting | 0.000000 | 0.000049 | 0.246823 | -0.011734859106435236 | 0.958 | 18.829000 | No |
+| Dummy | 0.685690 | 0.750000 | 0.308525 | -0.02382965765073841 | 0.000 | 0.089667 | No |
+| Ridge | 0.000000 | 0.000000 | 0.379499 | -1.0489882557663641 | 1.000 | 0.520542 | Yes |
+| Decision Tree | 0.000000 | 0.000000 | 0.286773 | -0.21291044619005595 | 1.000 | 0.109417 | No |
+| Random Forest | 0.000000 | 0.000000 | 0.268659 | -0.21975569198560096 | 1.000 | 5.758875 | No |
+| Histogram Gradient Boosting | 0.000000 | 0.000049 | 0.246823 | -0.011734859106435236 | 0.958 | 10.824083 | No |
 
 ## Interpretation
 

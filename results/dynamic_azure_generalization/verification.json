@@ -1,0 +1,62 @@
+{
+  "focused_tests": {
+    "count": 119,
+    "result": "PASS",
+    "modules": [
+      "test_azure_generalization",
+      "test_azure_runtime_equivalence",
+      "test_azure_external_pilot",
+      "test_dynamic",
+      "test_dynamic_contract",
+      "test_dynamic_v3",
+      "test_dynamic_v4",
+      "test_dynamic_v5",
+      "test_dynamic_v6",
+      "test_mlfq",
+      "test_schedulers",
+      "test_fairness"
+    ]
+  },
+  "before_behavioral_change_equivalence_tests": {
+    "count": 2,
+    "result": "PASS"
+  },
+  "protected_files": 51,
+  "protected_hashes_unchanged": true,
+  "preserved_runtime_matches_head": {
+    "simulator/engine.py": "4710963b08df4cf4e773d4e80e76e4313d0f5b8571c35532a6a4c298f65fa5ce",
+    "autoscheduler/dynamic.py": "5dfe1af2dde6b62f61f1212899dfa21f03604499fadd6d46d8064c548a1bf4a0"
+  },
+  "real_config": "PASS",
+  "git_diff_check": "PASS",
+  "graphify_ast_update": "PASS",
+  "baseline_attempts": 119,
+  "baseline_timeouts": 8,
+  "complete_workloads_all_policies": 12,
+  "runtime_budget_seconds_per_policy": 20,
+  "bounded_profiles_seconds_per_policy_before_and_after": 8,
+  "diagnostic_replays": "Original 14 completed pilot workloads plus one 25-job post-baseline representative; no holdout evaluation",
+  "unverified": [
+    "Full repository test suite",
+    "Complete high-load/peak results beyond fixed caps",
+    "Untouched holdout performance",
+    "Real Linux/kernel performance",
+    "New model improvements (none trained)",
+    "Dashboard build/runtime (unchanged)"
+  ],
+  "branch": "research/azure-generalization",
+  "head": "cb5ad638abcd26b9f9363d1393a4d8da49af3dbe",
+  "python": "3.12.3",
+  "platform": "Linux-6.6.87.2-microsoft-standard-WSL2-x86_64-with-glibc2.39",
+  "source_sha256": {
+    "simulator/engine.py": "ebf56d6924e34c6dbb1e03a8fd9fb930d01cf6962d1610a86fc7c7565cdce8a9",
+    "autoscheduler/dynamic.py": "9943aae3cff89410c2d12410cd787fd5372040dd251222163dcffe99690aa875",
+    "autoscheduler/azure_generalization.py": "b5f985bdf128d7815924bd963de68172e8196fd32ffb74e2d5f1f6d2d5b42dfa",
+    "autoscheduler/azure_generalization_evaluation.py": "b1478dc3d25073e0678200dc048d80fb16778fd1a61bddc6aa0a5b5ce098b747",
+    "autoscheduler/azure_generalization_report.py": "95f4464a3d85c8893ca9a63a32812e4ba515a017de695465218b4f0d56b68cd5"
+  },
+  "training_performed": false,
+  "model_promoted": false,
+  "frontend_modified": false,
+  "pushed_or_merged": false
+}

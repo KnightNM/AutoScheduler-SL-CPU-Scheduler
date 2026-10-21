@@ -1,0 +1,28 @@
+{
+  "before": "v2_selected_policy_cost",
+  "after": "v3_development_selected_classifier",
+  "traces": 1000,
+  "seed": 2026,
+  "differences": {
+    "weighted_score": {
+      "mean": -0.01997832106005745,
+      "ci_low": -0.0212994295714065,
+      "ci_high": -0.018665445690130712
+    },
+    "p95_response": {
+      "mean": -8.867049999999999,
+      "ci_low": -9.79075625,
+      "ci_high": -7.907443749999999
+    },
+    "starvation": {
+      "mean": -0.091,
+      "ci_low": -0.119,
+      "ci_high": -0.063
+    },
+    "switches": {
+      "mean": 3.076,
+      "ci_low": 2.906975,
+      "ci_high": 3.2460249999999995
+    }
+  }
+}

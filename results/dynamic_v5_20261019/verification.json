@@ -1,0 +1,22 @@
+{
+  "status": "PASS",
+  "regression_tests": 245,
+  "focused_v5_tests": 14,
+  "failures": 0,
+  "preserved_manifest_paths": 142,
+  "changed_preserved_paths": [],
+  "prefit_source_drift": [],
+  "exact_mlfq_control_matches": 240,
+  "group_overlap": false,
+  "old_1000_used_for_selection": false,
+  "locked_real_tests_accessed": false,
+  "promoted": false,
+  "development_selected": "policy_cost",
+  "accepted_after_audit": null,
+  "real_config_validation": "PASS",
+  "graphify_update": "PASS_AST_ONLY",
+  "regression_log_sha256": "64d4116a3e1b4d55ff057a0a0c5dce92764e85dd87be114acb656576c9d88c43",
+  "training_data_sha256": "fb14b6c799ade2f30afdf89b76f490bbb062f413064b1f3bd15760a583aa8380",
+  "split_sha256": "c03a512f4a239e3df2686b6a4a810bb095c425a7def7ebcf76a1f96ccd51f745",
+  "model_hashes_verified": true
+}

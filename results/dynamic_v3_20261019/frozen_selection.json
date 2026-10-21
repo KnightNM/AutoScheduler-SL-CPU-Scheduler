@@ -1,0 +1,45 @@
+{
+  "selected": "classifier",
+  "family_validation": {
+    "classifier": {
+      "validation_schedule_score": 0.12053609615317504,
+      "validation_schedule_p95_response": 31.573333333333327,
+      "validation_schedule_starvation": 15.316666666666666
+    },
+    "policy_cost": {
+      "validation_schedule_score": 0.1281978136986615,
+      "validation_schedule_p95_response": 73.52583333333332,
+      "validation_schedule_starvation": 14.5
+    }
+  },
+  "static_validation": {
+    "seed": 7302,
+    "traces": 60,
+    "static_scores": {
+      "FCFS": 0.3210758124079938,
+      "Round Robin": 0.1955237767435091,
+      "Priority": 0.3217751271997636,
+      "Priority RR": 0.8239242486691057,
+      "MLFQ": 0.16297340456846848
+    },
+    "static_baseline": "MLFQ"
+  },
+  "tuned_static_parameters": {
+    "quanta": [
+      1,
+      2,
+      4
+    ],
+    "aging_threshold": 40,
+    "context_switch_cost": 0
+  },
+  "comparison_baseline": "Tuned MLFQ",
+  "comparison_validation_scores": {
+    "FCFS": 0.3210758124079938,
+    "Round Robin": 0.1955237767435091,
+    "Priority": 0.3217751271997636,
+    "Priority RR": 0.8239242486691057,
+    "MLFQ": 0.16297340456846848,
+    "Tuned MLFQ": 0.14554930089669704
+  }
+}

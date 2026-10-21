@@ -1,0 +1,133 @@
+{
+  "parameters": {
+    "quanta": [
+      1,
+      2,
+      4
+    ],
+    "aging_threshold": 40,
+    "context_switch_cost": 0
+  },
+  "candidates": [
+    {
+      "parameters": {
+        "quanta": [
+          1,
+          2,
+          4
+        ],
+        "aging_threshold": 10,
+        "context_switch_cost": 0
+      },
+      "validation_score": 0.158981492541622
+    },
+    {
+      "parameters": {
+        "quanta": [
+          1,
+          2,
+          4
+        ],
+        "aging_threshold": 20,
+        "context_switch_cost": 0
+      },
+      "validation_score": 0.15251554742058052
+    },
+    {
+      "parameters": {
+        "quanta": [
+          1,
+          2,
+          4
+        ],
+        "aging_threshold": 40,
+        "context_switch_cost": 0
+      },
+      "validation_score": 0.14554930089669704
+    },
+    {
+      "parameters": {
+        "quanta": [
+          2,
+          4,
+          8
+        ],
+        "aging_threshold": 10,
+        "context_switch_cost": 0
+      },
+      "validation_score": 0.17412019415650193
+    },
+    {
+      "parameters": {
+        "quanta": [
+          2,
+          4,
+          8
+        ],
+        "aging_threshold": 20,
+        "context_switch_cost": 0
+      },
+      "validation_score": 0.16297340456846848
+    },
+    {
+      "parameters": {
+        "quanta": [
+          2,
+          4,
+          8
+        ],
+        "aging_threshold": 40,
+        "context_switch_cost": 0
+      },
+      "validation_score": 0.15764505337932666
+    },
+    {
+      "parameters": {
+        "quanta": [
+          4,
+          8,
+          16
+        ],
+        "aging_threshold": 10,
+        "context_switch_cost": 0
+      },
+      "validation_score": 0.20441298109219833
+    },
+    {
+      "parameters": {
+        "quanta": [
+          4,
+          8,
+          16
+        ],
+        "aging_threshold": 20,
+        "context_switch_cost": 0
+      },
+      "validation_score": 0.19034347747501273
+    },
+    {
+      "parameters": {
+        "quanta": [
+          4,
+          8,
+          16
+        ],
+        "aging_threshold": 40,
+        "context_switch_cost": 0
+      },
+      "validation_score": 0.17255220686204772
+    }
+  ],
+  "validation": {
+    "seed": 7302,
+    "traces": 60,
+    "static_scores": {
+      "FCFS": 0.3210758124079938,
+      "Round Robin": 0.1955237767435091,
+      "Priority": 0.3217751271997636,
+      "Priority RR": 0.8239242486691057,
+      "MLFQ": 0.16297340456846848
+    },
+    "static_baseline": "MLFQ"
+  }
+}

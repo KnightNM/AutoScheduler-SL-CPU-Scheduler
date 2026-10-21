@@ -1,0 +1,72 @@
+{
+  "status": "POST_HOC_PARAMETER_SENSITIVITY_NOT_TUNING",
+  "reference": "unchanged_frozen_six_bounds",
+  "frozen_parameters_unchanged": true,
+  "variants": {
+    "RR_q1": {
+      "mean_score": 0.19603526335652965,
+      "mean_p95": 27.625449999999997,
+      "wins_against_frozen_mlfq": 356
+    },
+    "RR_q2": {
+      "mean_score": 0.2206835778022094,
+      "mean_p95": 51.519299999999994,
+      "wins_against_frozen_mlfq": 0
+    },
+    "RR_q4": {
+      "mean_score": 0.2576857826063481,
+      "mean_p95": 89.12015,
+      "wins_against_frozen_mlfq": 0
+    },
+    "RR_q8": {
+      "mean_score": 0.32764294271500644,
+      "mean_p95": 135.86845,
+      "wins_against_frozen_mlfq": 0
+    },
+    "MLFQ_(1, 2, 4)_aging10": {
+      "mean_score": 0.17945643140507475,
+      "mean_p95": 19.35055,
+      "wins_against_frozen_mlfq": 999
+    },
+    "MLFQ_(1, 2, 4)_aging20": {
+      "mean_score": 0.16503543492004302,
+      "mean_p95": 9.097299999999999,
+      "wins_against_frozen_mlfq": 1000
+    },
+    "MLFQ_(1, 2, 4)_aging40": {
+      "mean_score": 0.14638063797105025,
+      "mean_p95": 4.539199999999999,
+      "wins_against_frozen_mlfq": 1000
+    },
+    "MLFQ_(2, 4, 8)_aging10": {
+      "mean_score": 0.20656985394057473,
+      "mean_p95": 43.79705,
+      "wins_against_frozen_mlfq": 1
+    },
+    "MLFQ_(2, 4, 8)_aging20": {
+      "mean_score": 0.19244224935626364,
+      "mean_p95": 35.8518,
+      "wins_against_frozen_mlfq": 0
+    },
+    "MLFQ_(2, 4, 8)_aging40": {
+      "mean_score": 0.17139104964600263,
+      "mean_p95": 23.571099999999998,
+      "wins_against_frozen_mlfq": 1000
+    },
+    "MLFQ_(4, 8, 16)_aging10": {
+      "mean_score": 0.2467825174414258,
+      "mean_p95": 82.57759999999999,
+      "wins_against_frozen_mlfq": 0
+    },
+    "MLFQ_(4, 8, 16)_aging20": {
+      "mean_score": 0.23653742127486124,
+      "mean_p95": 78.19699999999999,
+      "wins_against_frozen_mlfq": 0
+    },
+    "MLFQ_(4, 8, 16)_aging40": {
+      "mean_score": 0.21779732454984832,
+      "mean_p95": 67.1443,
+      "wins_against_frozen_mlfq": 2
+    }
+  }
+}

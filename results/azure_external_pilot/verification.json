@@ -1,0 +1,21 @@
+{
+  "focused_azure_integration_tests": 4,
+  "small_simulation_smoke": "PASS: six-process short_jobs, Round Robin, makespan21",
+  "frontend_build": "PASS",
+  "dashboard_api_results_smoke": "PASS: catalog Azure summary and offline metadata equal saved files",
+  "completed_workloads": 14,
+  "attempted_workloads": 15,
+  "policy_workload_pairs": 98,
+  "protected_input_model_metadata_report_hashes_unchanged": true,
+  "evaluator_source_hashes_match": true,
+  "external_selection_accuracy_evaluated": false,
+  "dynamic_v5_inference_evaluated": true,
+  "no_training_tuning_or_regeneration": true,
+  "push_or_merge": false,
+  "not_verified": [
+    "Peak snapshot excluded by 90-second runtime cap; no peak-load result.",
+    "High-load mixed-hour cohort omitted for CPU-budget reasons.",
+    "No population/generalization, real-kernel validation or statistical-superiority claim.",
+    "No full Azure suite, broad benchmark, browser suite or synthetic experiment rerun."
+  ]
+}

@@ -1,0 +1,6 @@
+{
+  "scope": "One saved-test-row batch-one predict call per state after one warmup; no feature extraction or guards; standalone Python microbenchmark, not kernel time",
+  "samples": 72,
+  "mean_ms": 0.050504069444444445,
+  "p99_ms": 0.12681897000000003
+}

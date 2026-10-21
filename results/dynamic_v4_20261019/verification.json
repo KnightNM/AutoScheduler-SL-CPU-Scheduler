@@ -1,0 +1,19 @@
+{
+  "status": "PASS",
+  "regression_tests": 231,
+  "failures": 0,
+  "protected_artifacts": 122,
+  "changed_protected_artifacts": [],
+  "prefit_source_drift": [],
+  "protected_control_exact_static_matches": 120,
+  "static_wins_against_default_mlfq": {
+    "FCFS": 20,
+    "Round Robin": 17,
+    "Priority": 16,
+    "Priority RR": 1
+  },
+  "old_1000_audit_replayed": false,
+  "promoted": false,
+  "real_config_validation": "PASS",
+  "graphify_update": "PASS_AST_ONLY"
+}

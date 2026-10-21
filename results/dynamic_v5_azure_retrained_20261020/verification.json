@@ -1,0 +1,11 @@
+{
+  "six_head_original_loader_passed": true,
+  "candidate_metrics_equal_tuned_per_workload": true,
+  "protected_files_unchanged": 32,
+  "prior_research_hashes_unchanged": 289,
+  "score_reduction_vs_original_percent": 33.93000573723466,
+  "training_runs": 1,
+  "evaluation_runs": 1,
+  "holdout_evaluated": false,
+  "frontend_changed": false
+}

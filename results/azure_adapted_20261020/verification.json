@@ -1,0 +1,55 @@
+{
+  "focused_tests": {
+    "count": 112,
+    "result": "PASS"
+  },
+  "frontend_build": "PASS",
+  "live_api_results_smoke": "PASS",
+  "simulation_playback_smoke": "PASS",
+  "new_frontend_asset_served": "PASS",
+  "graphify_ast_update": "PASS",
+  "protected_paths": 213,
+  "protected_hashes_unchanged": true,
+  "frozen_model_hash_matches": true,
+  "labeling": {
+    "workloads": 30,
+    "decision_states": 360,
+    "action_cost_pairs": 1440,
+    "timeouts": 0
+  },
+  "test": {
+    "workloads": 6,
+    "processes": 115,
+    "source_groups": 6,
+    "decision_rows": 72,
+    "policy_attempts": 48,
+    "timeouts": 0,
+    "historically_examined_source_groups": 2
+  },
+  "validation": {
+    "workloads": 6,
+    "policy_attempts": 48,
+    "timeouts": 0
+  },
+  "reserved_final_holdout_groups": 73,
+  "reserved_final_holdout_evaluated": false,
+  "not_verified": [
+    "Untouched final-holdout generalization",
+    "High-contention and large-queue coverage",
+    "Real Linux kernel performance",
+    "Full repository test suite",
+    "Browser interactions beyond build/served bundle and API/playback smoke"
+  ],
+  "promoted": false,
+  "pushed_or_merged": false,
+  "model_sha256": "c5b49844df05be069ed9daa718e5d22eb423c63aeede339d9ddc3172aaa31fc8",
+  "source_sha256": {
+    "autoscheduler/azure_adaptation.py": "1675f9955fe9c434b0cc327201564be7b6f8f46c6ab78e1c371d7a8fc2669c55",
+    "autoscheduler/azure_adaptation_report.py": "2bf9c88e0a31e42fd6f57224b8981aa66901e493a79c1e35a7e464e1c17d8a59",
+    "autoscheduler/dynamic.py": "d0dedbf73d00fe4156ff07ce2af65f127768a9c4fe15f9e7feffca37fcd7c807",
+    "dashboard/adapter.py": "2e048e0882c5ba56db30032c386fbf055a817a4988a67e9cf6c65c020a03f68b",
+    "dashboard/web/src/AzureAdapted.jsx": "9dc27f3c0ced15f2bdc03c5d17ca1ecf1c2cd1311966fd9ec0af00e28955493e"
+  },
+  "url": "http://127.0.0.1:8000",
+  "start_command": "bash dashboard/start.sh"
+}

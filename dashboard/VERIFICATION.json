@@ -1,0 +1,35 @@
+{
+  "status": "PASS",
+  "branch": "frontend/review-dashboard",
+  "frontend_build": "PASS",
+  "backend_start_script": "PASS",
+  "targeted_python_tests": 28,
+  "browser": {
+    "status": "PASS",
+    "workloadAlgorithmPairs": 24,
+    "pages": 4,
+    "viewports": [
+      1440,
+      1024,
+      768,
+      320
+    ],
+    "playback": "start/pause/resume/step/reset/completion",
+    "consoleErrors": [],
+    "externalRequests": []
+  },
+  "unchanged_original_file_checksums": 359,
+  "unchanged_saved_dynamic_model_hashes": 10,
+  "original_uncommitted_patch_unchanged": true,
+  "existing_scheduler_and_ml_logic_changed": false,
+  "historical_reports_or_manifest_changed": false,
+  "training_or_dataset_pipeline_run": false,
+  "large_experiments_run": false,
+  "built_assets_bytes": 279449,
+  "known_limitations": [
+    "Matching fitted offline six-policy model binary unavailable; saved metadata only.",
+    "Dynamic ML is presented as saved research, not live switching.",
+    "Ready membership reconstructed from timeline; internal policy queue order not exposed.",
+    "All execution is a local single-CPU simulation, not a kernel scheduler."
+  ]
+}

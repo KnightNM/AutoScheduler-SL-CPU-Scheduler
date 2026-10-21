@@ -1,0 +1,559 @@
+{
+  "status": "READ_ONLY_DIAGNOSTIC_NO_RETRAINING_NO_PRODUCTION_CHANGES",
+  "traces": 1000,
+  "seed": 2026,
+  "score_weights": {
+    "avg_waiting_time": 0.3,
+    "avg_response_time": 0.25,
+    "avg_turnaround_time": 0.2,
+    "cpu_utilization": 0.15,
+    "throughput": 0.1
+  },
+  "wins_count_exact_optimal_ties_for_each_policy": true,
+  "parity_and_accounting": {
+    "workload_policy_cases": 1750,
+    "workloads_per_policy": 250,
+    "random_seed": 912850,
+    "checks": [
+      "exact_static_dynamic_timeline_and_process_metrics",
+      "per_pid_cpu_service_conservation",
+      "positive_nonoverlapping_timeline",
+      "independent_idle_gap_accounting",
+      "busy_plus_idle_plus_switch_equals_makespan",
+      "switch_charges_match_frozen_policy_configuration",
+      "nonnegative_waiting"
+    ]
+  },
+  "scenarios": {
+    "frozen_asymmetric": {
+      "bounds": {
+        "eligible5": {
+          "reference_policies": [
+            "FCFS",
+            "Round Robin",
+            "Priority",
+            "Priority RR",
+            "MLFQ"
+          ],
+          "mean_scores": {
+            "FCFS": 0.29976383982485544,
+            "Round Robin": 0.12167159490907416,
+            "Priority": 0.26712890377904436,
+            "Priority RR": 0.787320085800895,
+            "MLFQ": 0.08865049521165334
+          },
+          "wins": {
+            "FCFS": 0,
+            "Round Robin": 2,
+            "Priority": 0,
+            "Priority RR": 0,
+            "MLFQ": 998
+          },
+          "mean_mlfq_minus_rr_score": -0.033021099697420814,
+          "degenerate_ranges": {
+            "avg_waiting_time": 0,
+            "avg_response_time": 0,
+            "avg_turnaround_time": 0,
+            "cpu_utilization": 0,
+            "throughput": 0
+          }
+        },
+        "historical6": {
+          "reference_policies": [
+            "FCFS",
+            "SJF",
+            "SRTF",
+            "Round Robin",
+            "Priority",
+            "Priority RR"
+          ],
+          "mean_scores": {
+            "FCFS": 0.39082358405274886,
+            "Round Robin": 0.2206835778022094,
+            "Priority": 0.4059968049950706,
+            "Priority RR": 0.7750955465789992,
+            "MLFQ": 0.19244224935626364
+          },
+          "wins": {
+            "FCFS": 0,
+            "Round Robin": 0,
+            "Priority": 0,
+            "Priority RR": 0,
+            "MLFQ": 1000
+          },
+          "mean_mlfq_minus_rr_score": -0.028241328445945763,
+          "degenerate_ranges": {
+            "avg_waiting_time": 0,
+            "avg_response_time": 0,
+            "avg_turnaround_time": 0,
+            "cpu_utilization": 0,
+            "throughput": 0
+          }
+        },
+        "static7": {
+          "reference_policies": [
+            "FCFS",
+            "SJF",
+            "SRTF",
+            "Round Robin",
+            "Priority",
+            "Priority RR",
+            "MLFQ"
+          ],
+          "mean_scores": {
+            "FCFS": 0.3965561144008964,
+            "Round Robin": 0.23430824317144622,
+            "Priority": 0.4060042715300471,
+            "Priority RR": 0.7873195168041999,
+            "MLFQ": 0.20690780086542962
+          },
+          "wins": {
+            "FCFS": 0,
+            "Round Robin": 0,
+            "Priority": 0,
+            "Priority RR": 0,
+            "MLFQ": 1000
+          },
+          "mean_mlfq_minus_rr_score": -0.027400442306016598,
+          "degenerate_ranges": {
+            "avg_waiting_time": 0,
+            "avg_response_time": 0,
+            "avg_turnaround_time": 0,
+            "cpu_utilization": 0,
+            "throughput": 0
+          }
+        }
+      },
+      "raw_mean_mlfq_minus_rr": {
+        "avg_waiting_time": -9.888970343137254,
+        "avg_response_time": -10.54820330882353,
+        "avg_turnaround_time": -9.888970343137254,
+        "cpu_utilization": -0.000008174868621319442,
+        "throughput": -8.836152236774836e-7
+      },
+      "mlfq_zero_service_intervals": {
+        "interval_count": 0,
+        "affected_workloads": 0,
+        "examples": [],
+        "measured_from_engine_rerun": false
+      }
+    },
+    "equal_cost_0": {
+      "bounds": {
+        "eligible5": {
+          "reference_policies": [
+            "FCFS",
+            "Round Robin",
+            "Priority",
+            "Priority RR",
+            "MLFQ"
+          ],
+          "mean_scores": {
+            "FCFS": 0.6677356214731319,
+            "Round Robin": 0.3618191096249564,
+            "Priority": 0.47120422986758354,
+            "Priority RR": 0.3604334187832925,
+            "MLFQ": 0.28813650210143266
+          },
+          "wins": {
+            "FCFS": 27,
+            "Round Robin": 4,
+            "Priority": 105,
+            "Priority RR": 42,
+            "MLFQ": 823
+          },
+          "mean_mlfq_minus_rr_score": -0.07368260752352374,
+          "degenerate_ranges": {
+            "avg_waiting_time": 0,
+            "avg_response_time": 0,
+            "avg_turnaround_time": 0,
+            "cpu_utilization": 47,
+            "throughput": 47
+          }
+        },
+        "historical6": {
+          "reference_policies": [
+            "FCFS",
+            "SJF",
+            "SRTF",
+            "Round Robin",
+            "Priority",
+            "Priority RR"
+          ],
+          "mean_scores": {
+            "FCFS": 0.6854387045798598,
+            "Round Robin": 0.43534010753151947,
+            "Priority": 0.733980141395932,
+            "Priority RR": 0.4370874935115883,
+            "MLFQ": 0.3945107661074843
+          },
+          "wins": {
+            "FCFS": 1,
+            "Round Robin": 3,
+            "Priority": 14,
+            "Priority RR": 14,
+            "MLFQ": 968
+          },
+          "mean_mlfq_minus_rr_score": -0.04082934142403516,
+          "degenerate_ranges": {
+            "avg_waiting_time": 0,
+            "avg_response_time": 0,
+            "avg_turnaround_time": 0,
+            "cpu_utilization": 17,
+            "throughput": 17
+          }
+        },
+        "static7": {
+          "reference_policies": [
+            "FCFS",
+            "SJF",
+            "SRTF",
+            "Round Robin",
+            "Priority",
+            "Priority RR",
+            "MLFQ"
+          ],
+          "mean_scores": {
+            "FCFS": 0.691042185575978,
+            "Round Robin": 0.4487908825055487,
+            "Priority": 0.7339056598644743,
+            "Priority RR": 0.45038419103710725,
+            "MLFQ": 0.4087973722431045
+          },
+          "wins": {
+            "FCFS": 2,
+            "Round Robin": 3,
+            "Priority": 17,
+            "Priority RR": 15,
+            "MLFQ": 963
+          },
+          "mean_mlfq_minus_rr_score": -0.03999351026244424,
+          "degenerate_ranges": {
+            "avg_waiting_time": 0,
+            "avg_response_time": 0,
+            "avg_turnaround_time": 0,
+            "cpu_utilization": 17,
+            "throughput": 17
+          }
+        }
+      },
+      "raw_mean_mlfq_minus_rr": {
+        "avg_waiting_time": -9.888970343137254,
+        "avg_response_time": -10.54820330882353,
+        "avg_turnaround_time": -9.888970343137254,
+        "cpu_utilization": -0.000008174868621319442,
+        "throughput": -8.836152236774836e-7
+      },
+      "mlfq_zero_service_intervals": {
+        "interval_count": 0,
+        "affected_workloads": 0,
+        "examples": [],
+        "measured_from_engine_rerun": true
+      }
+    },
+    "equal_cost_1": {
+      "bounds": {
+        "eligible5": {
+          "reference_policies": [
+            "FCFS",
+            "Round Robin",
+            "Priority",
+            "Priority RR",
+            "MLFQ"
+          ],
+          "mean_scores": {
+            "FCFS": 0.3477457295535352,
+            "Round Robin": 0.7597322221371402,
+            "Priority": 0.26163864081263305,
+            "Priority RR": 0.7492036100044549,
+            "MLFQ": 0.708308052426305
+          },
+          "wins": {
+            "FCFS": 134,
+            "Round Robin": 0,
+            "Priority": 866,
+            "Priority RR": 0,
+            "MLFQ": 0
+          },
+          "mean_mlfq_minus_rr_score": -0.05142416971083519,
+          "degenerate_ranges": {
+            "avg_waiting_time": 0,
+            "avg_response_time": 0,
+            "avg_turnaround_time": 0,
+            "cpu_utilization": 0,
+            "throughput": 0
+          }
+        },
+        "historical6": {
+          "reference_policies": [
+            "FCFS",
+            "SJF",
+            "SRTF",
+            "Round Robin",
+            "Priority",
+            "Priority RR"
+          ],
+          "mean_scores": {
+            "FCFS": 0.4314426976009785,
+            "Round Robin": 0.7486661250272746,
+            "Priority": 0.4265163236174481,
+            "Priority RR": 0.7401278216839967,
+            "MLFQ": 0.7056779034519538
+          },
+          "wins": {
+            "FCFS": 489,
+            "Round Robin": 0,
+            "Priority": 511,
+            "Priority RR": 0,
+            "MLFQ": 0
+          },
+          "mean_mlfq_minus_rr_score": -0.042988221575320784,
+          "degenerate_ranges": {
+            "avg_waiting_time": 0,
+            "avg_response_time": 0,
+            "avg_turnaround_time": 0,
+            "cpu_utilization": 0,
+            "throughput": 0
+          }
+        },
+        "static7": {
+          "reference_policies": [
+            "FCFS",
+            "SJF",
+            "SRTF",
+            "Round Robin",
+            "Priority",
+            "Priority RR",
+            "MLFQ"
+          ],
+          "mean_scores": {
+            "FCFS": 0.43715802986388824,
+            "Round Robin": 0.760712671130253,
+            "Priority": 0.42648819746703825,
+            "Priority RR": 0.7520973410020464,
+            "MLFQ": 0.7184141168426709
+          },
+          "wins": {
+            "FCFS": 443,
+            "Round Robin": 0,
+            "Priority": 557,
+            "Priority RR": 0,
+            "MLFQ": 0
+          },
+          "mean_mlfq_minus_rr_score": -0.04229855428758211,
+          "degenerate_ranges": {
+            "avg_waiting_time": 0,
+            "avg_response_time": 0,
+            "avg_turnaround_time": 0,
+            "cpu_utilization": 0,
+            "throughput": 0
+          }
+        }
+      },
+      "raw_mean_mlfq_minus_rr": {
+        "avg_waiting_time": -10.642431903594773,
+        "avg_response_time": -10.843975285947712,
+        "avg_turnaround_time": -10.64243190359477,
+        "cpu_utilization": 0.01002780415574018,
+        "throughput": 0.0006033119788054391
+      },
+      "mlfq_zero_service_intervals": {
+        "interval_count": 15,
+        "affected_workloads": 15,
+        "examples": [
+          {
+            "seed": 2026000013,
+            "timeline": [
+              [
+                "cpu_intensive_8",
+                634,
+                638
+              ],
+              [
+                "CS",
+                638,
+                639
+              ],
+              [
+                "cpu_intensive_6",
+                639,
+                639
+              ],
+              [
+                "CS",
+                639,
+                640
+              ],
+              [
+                "cpu_intensive_8",
+                640,
+                642
+              ]
+            ]
+          },
+          {
+            "seed": 2026000033,
+            "timeline": [
+              [
+                "mixed_8",
+                734,
+                735
+              ],
+              [
+                "CS",
+                735,
+                736
+              ],
+              [
+                "mixed_3",
+                736,
+                736
+              ],
+              [
+                "CS",
+                736,
+                737
+              ],
+              [
+                "mixed_8",
+                737,
+                739
+              ]
+            ]
+          },
+          {
+            "seed": 2026000093,
+            "timeline": [
+              [
+                "mixed_2",
+                705,
+                706
+              ],
+              [
+                "CS",
+                706,
+                707
+              ],
+              [
+                "mixed_10",
+                707,
+                707
+              ],
+              [
+                "CS",
+                707,
+                708
+              ],
+              [
+                "mixed_2",
+                708,
+                710
+              ]
+            ]
+          }
+        ],
+        "measured_from_engine_rerun": true
+      }
+    }
+  },
+  "default_eligible5_rr_winners": [
+    {
+      "seed": 2026000479,
+      "weighted_scores": {
+        "eligible5": {
+          "FCFS": 0.13098336627720084,
+          "Round Robin": 0.08530278027072527,
+          "Priority": 0.2573565244953347,
+          "Priority RR": 0.7752618092691622,
+          "MLFQ": 0.08577457795431975
+        },
+        "historical6": {
+          "FCFS": 0.29707939240674625,
+          "Round Robin": 0.22366301546391754,
+          "Priority": 0.4329364214025512,
+          "Priority RR": 0.764724749241894,
+          "MLFQ": 0.2195124081976438
+        },
+        "static7": {
+          "FCFS": 0.3032940247861946,
+          "Round Robin": 0.23485953952808866,
+          "Priority": 0.4329364214025512,
+          "Priority RR": 0.7752618092691622,
+          "MLFQ": 0.23123389175257733
+        }
+      },
+      "raw_metrics": {
+        "Round Robin": {
+          "avg_waiting_time": 386.7,
+          "avg_response_time": 26.433333333333334,
+          "avg_turnaround_time": 413.6,
+          "cpu_utilization": 1,
+          "throughput": 0.0423728813559322
+        },
+        "MLFQ": {
+          "avg_waiting_time": 392.96666666666664,
+          "avg_response_time": 13.033333333333333,
+          "avg_turnaround_time": 419.8666666666667,
+          "cpu_utilization": 1,
+          "throughput": 0.0423728813559322
+        }
+      },
+      "mlfq_minus_rr_eligible5_score": 0.0004717976835944826
+    },
+    {
+      "seed": 2026000532,
+      "weighted_scores": {
+        "eligible5": {
+          "FCFS": 0.19316250784751288,
+          "Round Robin": 0.1245962910223296,
+          "Priority": 0.2641831511365609,
+          "Priority RR": 0.7757193423155972,
+          "MLFQ": 0.12463311229481468
+        },
+        "historical6": {
+          "FCFS": 0.33721902255583197,
+          "Round Robin": 0.22936616507067947,
+          "Priority": 0.41462394761018906,
+          "Priority RR": 0.7647041207474845,
+          "MLFQ": 0.22529570937366378
+        },
+        "static7": {
+          "FCFS": 0.3416898818635463,
+          "Round Robin": 0.24106975036412548,
+          "Priority": 0.41462394761018906,
+          "Priority RR": 0.7757193423155972,
+          "MLFQ": 0.23757409940720475
+        }
+      },
+      "raw_metrics": {
+        "Round Robin": {
+          "avg_waiting_time": 399.73333333333335,
+          "avg_response_time": 27.5,
+          "avg_turnaround_time": 426.53333333333336,
+          "cpu_utilization": 1,
+          "throughput": 0.044977511244377814
+        },
+        "MLFQ": {
+          "avg_waiting_time": 406.93333333333334,
+          "avg_response_time": 13.833333333333334,
+          "avg_turnaround_time": 433.73333333333335,
+          "cpu_utilization": 1,
+          "throughput": 0.044977511244377814
+        }
+      },
+      "mlfq_minus_rr_eligible5_score": 0.00003682127248508249
+    }
+  ],
+  "findings": {
+    "frozen_switch_costs": "Only Priority RR charges one tick; other eligible policies charge zero. This matches the frozen contract and is a modeling asymmetry, not an implementation mismatch.",
+    "normalization": "No degenerate historical-six metric spans occur on the original1000 default workloads. Eligible-only bounds change two winners; default MLFQ raw advantages over RR remain.",
+    "equal_cost_1_caveat": "Nonzero-cost MLFQ selects a ready item before overhead and releases events during overhead without reselecting before service. A stale aging deadline can then force a zero-service dispatch, followed by preemption, last_pid update, and another switch charge. In seed2026000013 at639, the chosen cpu_intensive_6 is level1, cpu_intensive_8 has just returned at level0, and cpu_intensive_5 has an aging deadline639. This is outside frozen MLFQ cost0; equalcost1 results are sensitivity outputs of this implementation, not an independently validated alternative policy.",
+    "feature_aging_repro": {
+      "processes": "A(arrival0,cpu3); P1..P21(arrival1..21,cpu1); P23(arrival23,cpu1)",
+      "state": "Dispatch MLFQ until current_time23. A last served[0,2], remained ready continuously since2, promoted at22.",
+      "expected_continuous_ready_wait": 21,
+      "reported_ready_wait_max": 1,
+      "cause": "_age_mlfq resets _Ready.time for aging; extractor uses the same timestamp for ready waiting. Completion-based static waiting metrics are unaffected."
+    }
+  }
+}

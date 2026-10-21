@@ -1,0 +1,1205 @@
+{
+  "rows": [
+    {
+      "seed": 8403000000,
+      "family": "cohort_mix",
+      "policy": "Dynamic v3",
+      "score": 0.15326340262676047,
+      "p95_response": 27.699999999999996,
+      "starvation": 24,
+      "switches": 2,
+      "decision_p99_ms": 2.2046252000000015
+    },
+    {
+      "seed": 8403000001,
+      "family": "sustained_arrivals",
+      "policy": "Dynamic v3",
+      "score": 0.17735765804743575,
+      "p95_response": 4.799999999999997,
+      "starvation": 9,
+      "switches": 4,
+      "decision_p99_ms": 0.2201568
+    },
+    {
+      "seed": 8403000002,
+      "family": "low_load",
+      "policy": "Dynamic v3",
+      "score": 0.0,
+      "p95_response": 0.0,
+      "starvation": 0,
+      "switches": 0,
+      "decision_p99_ms": 0.26425387
+    },
+    {
+      "seed": 8403000003,
+      "family": "long_io",
+      "policy": "Dynamic v3",
+      "score": 0.35346706081081075,
+      "p95_response": 1.9,
+      "starvation": 0,
+      "switches": 2,
+      "decision_p99_ms": 0.1924161
+    },
+    {
+      "seed": 8403000004,
+      "family": "repeated_changes",
+      "policy": "Dynamic v3",
+      "score": 0.0,
+      "p95_response": 0.0,
+      "starvation": 0,
+      "switches": 0,
+      "decision_p99_ms": 0.27956428
+    },
+    {
+      "seed": 8403000005,
+      "family": "homogeneous_batch",
+      "policy": "Dynamic v3",
+      "score": 0.2708333333333333,
+      "p95_response": 3.8,
+      "starvation": 0,
+      "switches": 1,
+      "decision_p99_ms": 0.26076411
+    },
+    {
+      "seed": 8403000006,
+      "family": "cohort_mix",
+      "policy": "Dynamic v3",
+      "score": 0.0,
+      "p95_response": 0.0,
+      "starvation": 0,
+      "switches": 0,
+      "decision_p99_ms": 0.29120665
+    },
+    {
+      "seed": 8403000007,
+      "family": "sustained_arrivals",
+      "policy": "Dynamic v3",
+      "score": 0.25020336632178736,
+      "p95_response": 0.4499999999999993,
+      "starvation": 12,
+      "switches": 1,
+      "decision_p99_ms": 0.20183706
+    },
+    {
+      "seed": 8403000008,
+      "family": "low_load",
+      "policy": "Dynamic v3",
+      "score": 0.0,
+      "p95_response": 0.0,
+      "starvation": 0,
+      "switches": 0,
+      "decision_p99_ms": 0.29017447999999996
+    },
+    {
+      "seed": 8403000009,
+      "family": "long_io",
+      "policy": "Dynamic v3",
+      "score": 0.21728902943096964,
+      "p95_response": 17.9,
+      "starvation": 10,
+      "switches": 11,
+      "decision_p99_ms": 0.24562966
+    },
+    {
+      "seed": 8403000010,
+      "family": "repeated_changes",
+      "policy": "Dynamic v3",
+      "score": 0.0,
+      "p95_response": 0.0,
+      "starvation": 0,
+      "switches": 0,
+      "decision_p99_ms": 0.36750081999999995
+    },
+    {
+      "seed": 8403000011,
+      "family": "homogeneous_batch",
+      "policy": "Dynamic v3",
+      "score": 0.07021419009370818,
+      "p95_response": 43.699999999999996,
+      "starvation": 24,
+      "switches": 1,
+      "decision_p99_ms": 0.22734694
+    },
+    {
+      "seed": 8403000012,
+      "family": "cohort_mix",
+      "policy": "Dynamic v3",
+      "score": 0.1861497415154152,
+      "p95_response": 92.3,
+      "starvation": 48,
+      "switches": 7,
+      "decision_p99_ms": 0.29306612
+    },
+    {
+      "seed": 8403000013,
+      "family": "sustained_arrivals",
+      "policy": "Dynamic v3",
+      "score": 0.3265630951733145,
+      "p95_response": 0.8999999999999999,
+      "starvation": 0,
+      "switches": 1,
+      "decision_p99_ms": 0.57494476
+    },
+    {
+      "seed": 8403000014,
+      "family": "low_load",
+      "policy": "Dynamic v3",
+      "score": 0.0,
+      "p95_response": 0.0,
+      "starvation": 0,
+      "switches": 0,
+      "decision_p99_ms": 0.2325991
+    },
+    {
+      "seed": 8403000015,
+      "family": "long_io",
+      "policy": "Dynamic v3",
+      "score": 0.7699809082944308,
+      "p95_response": 1.9,
+      "starvation": 0,
+      "switches": 2,
+      "decision_p99_ms": 0.41373474999999993
+    },
+    {
+      "seed": 8403000016,
+      "family": "repeated_changes",
+      "policy": "Dynamic v3",
+      "score": 0.5555555555555556,
+      "p95_response": 1.5,
+      "starvation": 0,
+      "switches": 2,
+      "decision_p99_ms": 0.3385985199999999
+    },
+    {
+      "seed": 8403000017,
+      "family": "homogeneous_batch",
+      "policy": "Dynamic v3",
+      "score": 0.0793482111229189,
+      "p95_response": 20.9,
+      "starvation": 11,
+      "switches": 7,
+      "decision_p99_ms": 0.25183903999999996
+    },
+    {
+      "seed": 8403000018,
+      "family": "cohort_mix",
+      "policy": "Dynamic v3",
+      "score": 0.0078053609503503235,
+      "p95_response": 1.0,
+      "starvation": 0,
+      "switches": 1,
+      "decision_p99_ms": 0.21265677
+    },
+    {
+      "seed": 8403000019,
+      "family": "sustained_arrivals",
+      "policy": "Dynamic v3",
+      "score": 0.1564465267861731,
+      "p95_response": 6.2499999999999964,
+      "starvation": 6,
+      "switches": 3,
+      "decision_p99_ms": 0.35958996
+    },
+    {
+      "seed": 8403000020,
+      "family": "low_load",
+      "policy": "Dynamic v3",
+      "score": 0.0,
+      "p95_response": 0.0,
+      "starvation": 0,
+      "switches": 0,
+      "decision_p99_ms": 0.21508658000000003
+    },
+    {
+      "seed": 8403000021,
+      "family": "long_io",
+      "policy": "Dynamic v3",
+      "score": 0.1457614386826923,
+      "p95_response": 17.9,
+      "starvation": 11,
+      "switches": 8,
+      "decision_p99_ms": 0.27072636
+    },
+    {
+      "seed": 8403000022,
+      "family": "repeated_changes",
+      "policy": "Dynamic v3",
+      "score": 0.20016137527596292,
+      "p95_response": 52.54999999999997,
+      "starvation": 0,
+      "switches": 4,
+      "decision_p99_ms": 0.2491035
+    },
+    {
+      "seed": 8403000023,
+      "family": "homogeneous_batch",
+      "policy": "Dynamic v3",
+      "score": 0.2505494505494505,
+      "p95_response": 9.5,
+      "starvation": 5,
+      "switches": 3,
+      "decision_p99_ms": 0.23450152000000002
+    },
+    {
+      "seed": 8403000024,
+      "family": "cohort_mix",
+      "policy": "Dynamic v3",
+      "score": 0.05497321295221676,
+      "p95_response": 5.449999999999999,
+      "starvation": 5,
+      "switches": 0,
+      "decision_p99_ms": 0.23682096
+    },
+    {
+      "seed": 8403000025,
+      "family": "sustained_arrivals",
+      "policy": "Dynamic v3",
+      "score": 0.14996362311686165,
+      "p95_response": 15.349999999999998,
+      "starvation": 2,
+      "switches": 3,
+      "decision_p99_ms": 0.21199278
+    },
+    {
+      "seed": 8403000026,
+      "family": "low_load",
+      "policy": "Dynamic v3",
+      "score": 0.0,
+      "p95_response": 0.0,
+      "starvation": 0,
+      "switches": 0,
+      "decision_p99_ms": 0.34121680000000004
+    },
+    {
+      "seed": 8403000027,
+      "family": "long_io",
+      "policy": "Dynamic v3",
+      "score": 0.17864098055683558,
+      "p95_response": 6.75,
+      "starvation": 0,
+      "switches": 7,
+      "decision_p99_ms": 0.27445427
+    },
+    {
+      "seed": 8403000028,
+      "family": "repeated_changes",
+      "policy": "Dynamic v3",
+      "score": 0.2545524907015243,
+      "p95_response": 59.45,
+      "starvation": 0,
+      "switches": 8,
+      "decision_p99_ms": 0.22370292
+    },
+    {
+      "seed": 8403000029,
+      "family": "homogeneous_batch",
+      "policy": "Dynamic v3",
+      "score": 0.1923083840569416,
+      "p95_response": 108.3,
+      "starvation": 47,
+      "switches": 4,
+      "decision_p99_ms": 0.5798009399999998
+    },
+    {
+      "seed": 8403000030,
+      "family": "cohort_mix",
+      "policy": "Dynamic v3",
+      "score": 0.1721732730697425,
+      "p95_response": 62.24999999999999,
+      "starvation": 48,
+      "switches": 6,
+      "decision_p99_ms": 0.38292158
+    },
+    {
+      "seed": 8403000031,
+      "family": "sustained_arrivals",
+      "policy": "Dynamic v3",
+      "score": 0.35348872825287925,
+      "p95_response": 1.7999999999999998,
+      "starvation": 0,
+      "switches": 1,
+      "decision_p99_ms": 0.29552296999999994
+    },
+    {
+      "seed": 8403000032,
+      "family": "low_load",
+      "policy": "Dynamic v3",
+      "score": 0.0,
+      "p95_response": 0.0,
+      "starvation": 0,
+      "switches": 0,
+      "decision_p99_ms": 0.20715503999999998
+    },
+    {
+      "seed": 8403000033,
+      "family": "long_io",
+      "policy": "Dynamic v3",
+      "score": 0.2943422004133557,
+      "p95_response": 6.75,
+      "starvation": 1,
+      "switches": 9,
+      "decision_p99_ms": 0.32068799
+    },
+    {
+      "seed": 8403000034,
+      "family": "repeated_changes",
+      "policy": "Dynamic v3",
+      "score": 0.1222227011719464,
+      "p95_response": 43.699999999999996,
+      "starvation": 5,
+      "switches": 10,
+      "decision_p99_ms": 0.27914409999999995
+    },
+    {
+      "seed": 8403000035,
+      "family": "homogeneous_batch",
+      "policy": "Dynamic v3",
+      "score": 0.23397848239623073,
+      "p95_response": 121.3,
+      "starvation": 46,
+      "switches": 5,
+      "decision_p99_ms": 0.47094979999999903
+    },
+    {
+      "seed": 8403000036,
+      "family": "cohort_mix",
+      "policy": "Dynamic v3",
+      "score": 0.1653678023296343,
+      "p95_response": 3.4499999999999993,
+      "starvation": 7,
+      "switches": 2,
+      "decision_p99_ms": 0.42861309999999997
+    },
+    {
+      "seed": 8403000037,
+      "family": "sustained_arrivals",
+      "policy": "Dynamic v3",
+      "score": 0.4059452812042704,
+      "p95_response": 0.0,
+      "starvation": 2,
+      "switches": 0,
+      "decision_p99_ms": 0.20789264
+    },
+    {
+      "seed": 8403000038,
+      "family": "low_load",
+      "policy": "Dynamic v3",
+      "score": 0.0,
+      "p95_response": 0.0,
+      "starvation": 0,
+      "switches": 0,
+      "decision_p99_ms": 0.28380138
+    },
+    {
+      "seed": 8403000039,
+      "family": "long_io",
+      "policy": "Dynamic v3",
+      "score": 0.34976329667116507,
+      "p95_response": 6.75,
+      "starvation": 0,
+      "switches": 6,
+      "decision_p99_ms": 0.40159875
+    },
+    {
+      "seed": 8403000040,
+      "family": "repeated_changes",
+      "policy": "Dynamic v3",
+      "score": 0.13163480970673083,
+      "p95_response": 67.3,
+      "starvation": 44,
+      "switches": 22,
+      "decision_p99_ms": 0.3955038799999996
+    },
+    {
+      "seed": 8403000041,
+      "family": "homogeneous_batch",
+      "policy": "Dynamic v3",
+      "score": 0.030217973342645928,
+      "p95_response": 69.69999999999999,
+      "starvation": 22,
+      "switches": 3,
+      "decision_p99_ms": 0.5134152000000001
+    },
+    {
+      "seed": 8403000042,
+      "family": "cohort_mix",
+      "policy": "Dynamic v3",
+      "score": 0.13498941183825403,
+      "p95_response": 26.699999999999996,
+      "starvation": 23,
+      "switches": 4,
+      "decision_p99_ms": 0.25277212
+    },
+    {
+      "seed": 8403000043,
+      "family": "sustained_arrivals",
+      "policy": "Dynamic v3",
+      "score": 0.15729048743011256,
+      "p95_response": 32.949999999999996,
+      "starvation": 46,
+      "switches": 4,
+      "decision_p99_ms": 0.37371452000000016
+    },
+    {
+      "seed": 8403000044,
+      "family": "low_load",
+      "policy": "Dynamic v3",
+      "score": 0.0,
+      "p95_response": 0.0,
+      "starvation": 0,
+      "switches": 0,
+      "decision_p99_ms": 0.40249484
+    },
+    {
+      "seed": 8403000045,
+      "family": "long_io",
+      "policy": "Dynamic v3",
+      "score": 0.17736204532805905,
+      "p95_response": 35.19999999999999,
+      "starvation": 9,
+      "switches": 12,
+      "decision_p99_ms": 0.26281284
+    },
+    {
+      "seed": 8403000046,
+      "family": "repeated_changes",
+      "policy": "Dynamic v3",
+      "score": 0.10382287060157361,
+      "p95_response": 31.849999999999998,
+      "starvation": 8,
+      "switches": 10,
+      "decision_p99_ms": 0.3227600399999998
+    },
+    {
+      "seed": 8403000047,
+      "family": "homogeneous_batch",
+      "policy": "Dynamic v3",
+      "score": 0.2837837837837838,
+      "p95_response": 3.8,
+      "starvation": 0,
+      "switches": 0,
+      "decision_p99_ms": 0.20195021
+    },
+    {
+      "seed": 8403000048,
+      "family": "cohort_mix",
+      "policy": "Dynamic v3",
+      "score": 0.0,
+      "p95_response": 0.0,
+      "starvation": 0,
+      "switches": 0,
+      "decision_p99_ms": 0.24963752
+    },
+    {
+      "seed": 8403000049,
+      "family": "sustained_arrivals",
+      "policy": "Dynamic v3",
+      "score": 0.20887285991402976,
+      "p95_response": 2.0,
+      "starvation": 3,
+      "switches": 2,
+      "decision_p99_ms": 0.22274865
+    },
+    {
+      "seed": 8403000050,
+      "family": "low_load",
+      "policy": "Dynamic v3",
+      "score": 0.0,
+      "p95_response": 0.0,
+      "starvation": 0,
+      "switches": 0,
+      "decision_p99_ms": 0.2841938
+    },
+    {
+      "seed": 8403000051,
+      "family": "long_io",
+      "policy": "Dynamic v3",
+      "score": 0.06260278304870326,
+      "p95_response": 1.9,
+      "starvation": 0,
+      "switches": 3,
+      "decision_p99_ms": 0.34927856
+    },
+    {
+      "seed": 8403000052,
+      "family": "repeated_changes",
+      "policy": "Dynamic v3",
+      "score": 0.0731707317073171,
+      "p95_response": 1.5,
+      "starvation": 0,
+      "switches": 3,
+      "decision_p99_ms": 0.28952806
+    },
+    {
+      "seed": 8403000053,
+      "family": "homogeneous_batch",
+      "policy": "Dynamic v3",
+      "score": 0.030217973342645928,
+      "p95_response": 69.69999999999999,
+      "starvation": 22,
+      "switches": 3,
+      "decision_p99_ms": 0.38573992
+    },
+    {
+      "seed": 8403000054,
+      "family": "cohort_mix",
+      "policy": "Dynamic v3",
+      "score": 0.07021433850702144,
+      "p95_response": 4.449999999999999,
+      "starvation": 4,
+      "switches": 2,
+      "decision_p99_ms": 0.25622232
+    },
+    {
+      "seed": 8403000055,
+      "family": "sustained_arrivals",
+      "policy": "Dynamic v3",
+      "score": 0.43389423076923084,
+      "p95_response": 0.0,
+      "starvation": 0,
+      "switches": 0,
+      "decision_p99_ms": 0.1897725
+    },
+    {
+      "seed": 8403000056,
+      "family": "low_load",
+      "policy": "Dynamic v3",
+      "score": 0.0,
+      "p95_response": 0.0,
+      "starvation": 0,
+      "switches": 0,
+      "decision_p99_ms": 0.27638638
+    },
+    {
+      "seed": 8403000057,
+      "family": "long_io",
+      "policy": "Dynamic v3",
+      "score": 0.47540667460618175,
+      "p95_response": 1.9,
+      "starvation": 0,
+      "switches": 3,
+      "decision_p99_ms": 0.26747864000000005
+    },
+    {
+      "seed": 8403000058,
+      "family": "repeated_changes",
+      "policy": "Dynamic v3",
+      "score": 0.03958723644422165,
+      "p95_response": 5.0,
+      "starvation": 3,
+      "switches": 6,
+      "decision_p99_ms": 0.27353616
+    },
+    {
+      "seed": 8403000059,
+      "family": "homogeneous_batch",
+      "policy": "Dynamic v3",
+      "score": 0.1920729791605197,
+      "p95_response": 109.3,
+      "starvation": 47,
+      "switches": 4,
+      "decision_p99_ms": 0.4699346399999999
+    },
+    {
+      "seed": 8403000060,
+      "family": "cohort_mix",
+      "policy": "Dynamic v3",
+      "score": 0.36893115942029003,
+      "p95_response": 4.5,
+      "starvation": 0,
+      "switches": 2,
+      "decision_p99_ms": 0.71491488
+    },
+    {
+      "seed": 8403000061,
+      "family": "sustained_arrivals",
+      "policy": "Dynamic v3",
+      "score": 0.16822241380357372,
+      "p95_response": 23.949999999999978,
+      "starvation": 8,
+      "switches": 3,
+      "decision_p99_ms": 0.24773794
+    },
+    {
+      "seed": 8403000062,
+      "family": "low_load",
+      "policy": "Dynamic v3",
+      "score": 0.0,
+      "p95_response": 0.0,
+      "starvation": 0,
+      "switches": 0,
+      "decision_p99_ms": 0.23475075
+    },
+    {
+      "seed": 8403000063,
+      "family": "long_io",
+      "policy": "Dynamic v3",
+      "score": 0.23801756693423776,
+      "p95_response": 32.29999999999999,
+      "starvation": 11,
+      "switches": 6,
+      "decision_p99_ms": 0.31511401
+    },
+    {
+      "seed": 8403000064,
+      "family": "repeated_changes",
+      "policy": "Dynamic v3",
+      "score": 0.055812742933433926,
+      "p95_response": 8.549999999999994,
+      "starvation": 5,
+      "switches": 7,
+      "decision_p99_ms": 0.30583888
+    },
+    {
+      "seed": 8403000065,
+      "family": "homogeneous_batch",
+      "policy": "Dynamic v3",
+      "score": 0.25519848771266546,
+      "p95_response": 9.5,
+      "starvation": 6,
+      "switches": 0,
+      "decision_p99_ms": 0.2396875
+    },
+    {
+      "seed": 8403000066,
+      "family": "cohort_mix",
+      "policy": "Dynamic v3",
+      "score": 0.18648505865236928,
+      "p95_response": 12.899999999999999,
+      "starvation": 3,
+      "switches": 2,
+      "decision_p99_ms": 0.22532776000000002
+    },
+    {
+      "seed": 8403000067,
+      "family": "sustained_arrivals",
+      "policy": "Dynamic v3",
+      "score": 0.1786041532326803,
+      "p95_response": 29.89999999999997,
+      "starvation": 13,
+      "switches": 8,
+      "decision_p99_ms": 0.24618375
+    },
+    {
+      "seed": 8403000068,
+      "family": "low_load",
+      "policy": "Dynamic v3",
+      "score": 0.0,
+      "p95_response": 0.0,
+      "starvation": 0,
+      "switches": 0,
+      "decision_p99_ms": 0.2822708
+    },
+    {
+      "seed": 8403000069,
+      "family": "long_io",
+      "policy": "Dynamic v3",
+      "score": 0.21285494729789997,
+      "p95_response": 113.3,
+      "starvation": 48,
+      "switches": 22,
+      "decision_p99_ms": 0.4518386200000001
+    },
+    {
+      "seed": 8403000070,
+      "family": "repeated_changes",
+      "policy": "Dynamic v3",
+      "score": 0.0,
+      "p95_response": 0.0,
+      "starvation": 0,
+      "switches": 1,
+      "decision_p99_ms": 0.38527999999999996
+    },
+    {
+      "seed": 8403000071,
+      "family": "homogeneous_batch",
+      "policy": "Dynamic v3",
+      "score": 0.029379110645480485,
+      "p95_response": 68.69999999999999,
+      "starvation": 22,
+      "switches": 3,
+      "decision_p99_ms": 0.31662931
+    },
+    {
+      "seed": 8403000072,
+      "family": "cohort_mix",
+      "policy": "Dynamic v3",
+      "score": 0.012380952380952388,
+      "p95_response": 0.0,
+      "starvation": 0,
+      "switches": 0,
+      "decision_p99_ms": 0.31830983
+    },
+    {
+      "seed": 8403000073,
+      "family": "sustained_arrivals",
+      "policy": "Dynamic v3",
+      "score": 0.20285967600282565,
+      "p95_response": 14.699999999999996,
+      "starvation": 21,
+      "switches": 2,
+      "decision_p99_ms": 0.33596944000000006
+    },
+    {
+      "seed": 8403000074,
+      "family": "low_load",
+      "policy": "Dynamic v3",
+      "score": 0.0,
+      "p95_response": 0.0,
+      "starvation": 0,
+      "switches": 0,
+      "decision_p99_ms": 0.26641234
+    },
+    {
+      "seed": 8403000075,
+      "family": "long_io",
+      "policy": "Dynamic v3",
+      "score": 0.48117780228710766,
+      "p95_response": 1.9,
+      "starvation": 0,
+      "switches": 0,
+      "decision_p99_ms": 0.23614964
+    },
+    {
+      "seed": 8403000076,
+      "family": "repeated_changes",
+      "policy": "Dynamic v3",
+      "score": 0.1404126942141402,
+      "p95_response": 42.3,
+      "starvation": 44,
+      "switches": 14,
+      "decision_p99_ms": 0.44142423999999997
+    },
+    {
+      "seed": 8403000077,
+      "family": "homogeneous_batch",
+      "policy": "Dynamic v3",
+      "score": 0.2208333333333333,
+      "p95_response": 9.5,
+      "starvation": 5,
+      "switches": 3,
+      "decision_p99_ms": 0.3355990000000001
+    },
+    {
+      "seed": 8403000078,
+      "family": "cohort_mix",
+      "policy": "Dynamic v3",
+      "score": 0.16242534700447353,
+      "p95_response": 4.449999999999999,
+      "starvation": 4,
+      "switches": 2,
+      "decision_p99_ms": 0.23546511999999997
+    },
+    {
+      "seed": 8403000079,
+      "family": "sustained_arrivals",
+      "policy": "Dynamic v3",
+      "score": 0.16224042476805928,
+      "p95_response": 9.649999999999988,
+      "starvation": 2,
+      "switches": 1,
+      "decision_p99_ms": 0.25709880999999996
+    },
+    {
+      "seed": 8403000080,
+      "family": "low_load",
+      "policy": "Dynamic v3",
+      "score": 0.0,
+      "p95_response": 0.0,
+      "starvation": 0,
+      "switches": 0,
+      "decision_p99_ms": 0.22281991
+    },
+    {
+      "seed": 8403000081,
+      "family": "long_io",
+      "policy": "Dynamic v3",
+      "score": 0.21371525533290237,
+      "p95_response": 6.75,
+      "starvation": 0,
+      "switches": 6,
+      "decision_p99_ms": 0.22751332999999999
+    },
+    {
+      "seed": 8403000082,
+      "family": "repeated_changes",
+      "policy": "Dynamic v3",
+      "score": 0.3125,
+      "p95_response": 0.0,
+      "starvation": 0,
+      "switches": 3,
+      "decision_p99_ms": 0.23252184
+    },
+    {
+      "seed": 8403000083,
+      "family": "homogeneous_batch",
+      "policy": "Dynamic v3",
+      "score": 0.10552763819095479,
+      "p95_response": 9.5,
+      "starvation": 4,
+      "switches": 4,
+      "decision_p99_ms": 0.23088329000000002
+    },
+    {
+      "seed": 8403000084,
+      "family": "cohort_mix",
+      "policy": "Dynamic v3",
+      "score": 0.12361089674332457,
+      "p95_response": 29.849999999999998,
+      "starvation": 24,
+      "switches": 4,
+      "decision_p99_ms": 0.3626520999999999
+    },
+    {
+      "seed": 8403000085,
+      "family": "sustained_arrivals",
+      "policy": "Dynamic v3",
+      "score": 0.2003324750433667,
+      "p95_response": 16.19999999999999,
+      "starvation": 1,
+      "switches": 3,
+      "decision_p99_ms": 0.2338035
+    },
+    {
+      "seed": 8403000086,
+      "family": "low_load",
+      "policy": "Dynamic v3",
+      "score": 0.0,
+      "p95_response": 0.0,
+      "starvation": 0,
+      "switches": 0,
+      "decision_p99_ms": 0.23331860000000001
+    },
+    {
+      "seed": 8403000087,
+      "family": "long_io",
+      "policy": "Dynamic v3",
+      "score": 0.18333545324948883,
+      "p95_response": 116.3,
+      "starvation": 48,
+      "switches": 20,
+      "decision_p99_ms": 0.38287390000000004
+    },
+    {
+      "seed": 8403000088,
+      "family": "repeated_changes",
+      "policy": "Dynamic v3",
+      "score": 0.0,
+      "p95_response": 0.0,
+      "starvation": 0,
+      "switches": 0,
+      "decision_p99_ms": 0.4597565199999999
+    },
+    {
+      "seed": 8403000089,
+      "family": "homogeneous_batch",
+      "policy": "Dynamic v3",
+      "score": 0.030740722627062934,
+      "p95_response": 95.49999999999994,
+      "starvation": 22,
+      "switches": 3,
+      "decision_p99_ms": 0.43687349999999986
+    },
+    {
+      "seed": 8403000090,
+      "family": "cohort_mix",
+      "policy": "Dynamic v3",
+      "score": 0.4103818714173776,
+      "p95_response": 3.75,
+      "starvation": 0,
+      "switches": 3,
+      "decision_p99_ms": 0.27952556
+    },
+    {
+      "seed": 8403000091,
+      "family": "sustained_arrivals",
+      "policy": "Dynamic v3",
+      "score": 0.14063920454545453,
+      "p95_response": 1.0,
+      "starvation": 0,
+      "switches": 1,
+      "decision_p99_ms": 0.23801860000000002
+    },
+    {
+      "seed": 8403000092,
+      "family": "low_load",
+      "policy": "Dynamic v3",
+      "score": 0.0,
+      "p95_response": 0.0,
+      "starvation": 0,
+      "switches": 0,
+      "decision_p99_ms": 0.24206624
+    },
+    {
+      "seed": 8403000093,
+      "family": "long_io",
+      "policy": "Dynamic v3",
+      "score": 0.13141633180779977,
+      "p95_response": 17.9,
+      "starvation": 11,
+      "switches": 14,
+      "decision_p99_ms": 0.5762777399999995
+    },
+    {
+      "seed": 8403000094,
+      "family": "repeated_changes",
+      "policy": "Dynamic v3",
+      "score": 0.14260175423435884,
+      "p95_response": 5.849999999999998,
+      "starvation": 5,
+      "switches": 7,
+      "decision_p99_ms": 0.2603922
+    },
+    {
+      "seed": 8403000095,
+      "family": "homogeneous_batch",
+      "policy": "Dynamic v3",
+      "score": 0.20498907998908,
+      "p95_response": 31.249999999999982,
+      "starvation": 11,
+      "switches": 2,
+      "decision_p99_ms": 0.31499863000000006
+    },
+    {
+      "seed": 8403000096,
+      "family": "cohort_mix",
+      "policy": "Dynamic v3",
+      "score": 0.17995713156376847,
+      "p95_response": 61.3,
+      "starvation": 48,
+      "switches": 5,
+      "decision_p99_ms": 0.3196280400000001
+    },
+    {
+      "seed": 8403000097,
+      "family": "sustained_arrivals",
+      "policy": "Dynamic v3",
+      "score": 0.16051201185109387,
+      "p95_response": 50.65,
+      "starvation": 41,
+      "switches": 10,
+      "decision_p99_ms": 0.3974650699999999
+    },
+    {
+      "seed": 8403000098,
+      "family": "low_load",
+      "policy": "Dynamic v3",
+      "score": 0.0,
+      "p95_response": 0.0,
+      "starvation": 0,
+      "switches": 0,
+      "decision_p99_ms": 0.3967980799999997
+    },
+    {
+      "seed": 8403000099,
+      "family": "long_io",
+      "policy": "Dynamic v3",
+      "score": 0.10257833828161944,
+      "p95_response": 41.999999999999986,
+      "starvation": 10,
+      "switches": 8,
+      "decision_p99_ms": 0.37829320000000033
+    },
+    {
+      "seed": 8403000100,
+      "family": "repeated_changes",
+      "policy": "Dynamic v3",
+      "score": 0.08758485492324741,
+      "p95_response": 42.65,
+      "starvation": 44,
+      "switches": 14,
+      "decision_p99_ms": 0.49441384
+    },
+    {
+      "seed": 8403000101,
+      "family": "homogeneous_batch",
+      "policy": "Dynamic v3",
+      "score": 0.2795031055900621,
+      "p95_response": 9.5,
+      "starvation": 6,
+      "switches": 0,
+      "decision_p99_ms": 0.5281994000000001
+    },
+    {
+      "seed": 8403000102,
+      "family": "cohort_mix",
+      "policy": "Dynamic v3",
+      "score": -0.0023156168025397494,
+      "p95_response": 4.0,
+      "starvation": 4,
+      "switches": 0,
+      "decision_p99_ms": 0.2755645199999999
+    },
+    {
+      "seed": 8403000103,
+      "family": "sustained_arrivals",
+      "policy": "Dynamic v3",
+      "score": 0.2145554039889769,
+      "p95_response": 1.0,
+      "starvation": 6,
+      "switches": 2,
+      "decision_p99_ms": 0.3301808399999999
+    },
+    {
+      "seed": 8403000104,
+      "family": "low_load",
+      "policy": "Dynamic v3",
+      "score": 0.0,
+      "p95_response": 0.0,
+      "starvation": 0,
+      "switches": 0,
+      "decision_p99_ms": 0.3142040599999999
+    },
+    {
+      "seed": 8403000105,
+      "family": "long_io",
+      "policy": "Dynamic v3",
+      "score": 0.18111209729721792,
+      "p95_response": 136.3,
+      "starvation": 48,
+      "switches": 20,
+      "decision_p99_ms": 0.39874704999999994
+    },
+    {
+      "seed": 8403000106,
+      "family": "repeated_changes",
+      "policy": "Dynamic v3",
+      "score": 0.14696386170151154,
+      "p95_response": 17.699999999999996,
+      "starvation": 9,
+      "switches": 8,
+      "decision_p99_ms": 0.37261643000000044
+    },
+    {
+      "seed": 8403000107,
+      "family": "homogeneous_batch",
+      "policy": "Dynamic v3",
+      "score": 0.17572492176013965,
+      "p95_response": 110.3,
+      "starvation": 47,
+      "switches": 4,
+      "decision_p99_ms": 0.5156477599999995
+    },
+    {
+      "seed": 8403000108,
+      "family": "cohort_mix",
+      "policy": "Dynamic v3",
+      "score": 0.09760568175825082,
+      "p95_response": 4.449999999999999,
+      "starvation": 3,
+      "switches": 0,
+      "decision_p99_ms": 0.4075422799999998
+    },
+    {
+      "seed": 8403000109,
+      "family": "sustained_arrivals",
+      "policy": "Dynamic v3",
+      "score": 0.2800766493775372,
+      "p95_response": 21.45,
+      "starvation": 4,
+      "switches": 5,
+      "decision_p99_ms": 0.28165232
+    },
+    {
+      "seed": 8403000110,
+      "family": "low_load",
+      "policy": "Dynamic v3",
+      "score": 0.0,
+      "p95_response": 0.0,
+      "starvation": 0,
+      "switches": 0,
+      "decision_p99_ms": 0.20128356
+    },
+    {
+      "seed": 8403000111,
+      "family": "long_io",
+      "policy": "Dynamic v3",
+      "score": 0.19928146333813412,
+      "p95_response": 104.3,
+      "starvation": 48,
+      "switches": 25,
+      "decision_p99_ms": 0.4055600999999997
+    },
+    {
+      "seed": 8403000112,
+      "family": "repeated_changes",
+      "policy": "Dynamic v3",
+      "score": 0.10579996913407849,
+      "p95_response": 84.3,
+      "starvation": 45,
+      "switches": 17,
+      "decision_p99_ms": 0.5242610199999999
+    },
+    {
+      "seed": 8403000113,
+      "family": "homogeneous_batch",
+      "policy": "Dynamic v3",
+      "score": 0.18527059724544395,
+      "p95_response": 129.3,
+      "starvation": 47,
+      "switches": 4,
+      "decision_p99_ms": 0.36100010000000005
+    },
+    {
+      "seed": 8403000114,
+      "family": "cohort_mix",
+      "policy": "Dynamic v3",
+      "score": 0.12500000000000022,
+      "p95_response": 0.0,
+      "starvation": 0,
+      "switches": 0,
+      "decision_p99_ms": 0.55166705
+    },
+    {
+      "seed": 8403000115,
+      "family": "sustained_arrivals",
+      "policy": "Dynamic v3",
+      "score": 0.11325497630331753,
+      "p95_response": 3.4499999999999993,
+      "starvation": 7,
+      "switches": 2,
+      "decision_p99_ms": 0.2229134
+    },
+    {
+      "seed": 8403000116,
+      "family": "low_load",
+      "policy": "Dynamic v3",
+      "score": 0.0,
+      "p95_response": 0.0,
+      "starvation": 0,
+      "switches": 0,
+      "decision_p99_ms": 0.23500100000000002
+    },
+    {
+      "seed": 8403000117,
+      "family": "long_io",
+      "policy": "Dynamic v3",
+      "score": 0.1940387326041846,
+      "p95_response": 108.3,
+      "starvation": 48,
+      "switches": 39,
+      "decision_p99_ms": 0.38132259000000013
+    },
+    {
+      "seed": 8403000118,
+      "family": "repeated_changes",
+      "policy": "Dynamic v3",
+      "score": 0.3000000000000004,
+      "p95_response": 1.5,
+      "starvation": 0,
+      "switches": 1,
+      "decision_p99_ms": 0.3224346399999999
+    },
+    {
+      "seed": 8403000119,
+      "family": "homogeneous_batch",
+      "policy": "Dynamic v3",
+      "score": 0.09018375241779494,
+      "p95_response": 30.799999999999983,
+      "starvation": 10,
+      "switches": 11,
+      "decision_p99_ms": 0.21247813
+    }
+  ],
+  "pooled_p99_ms": 0.438699
+}

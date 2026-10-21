@@ -1,0 +1,440 @@
+{
+  "status": "SMALL_EXTERNAL_AZURE_DERIVED_PILOT",
+  "attempted_workloads": 15,
+  "completed_workloads": 14,
+  "selected_strata_counts": {
+    "low_load": 3,
+    "medium_load": 3,
+    "high_rate_control": 3,
+    "mixed_functions": 3,
+    "high_load_hour_sample": 2,
+    "peak_rate_snapshot": 1
+  },
+  "completed_strata_counts": {
+    "low_load": 3,
+    "medium_load": 3,
+    "high_rate_control": 3,
+    "mixed_functions": 3,
+    "high_load_hour_sample": 2
+  },
+  "completed_azure_cohort_counts": {
+    "retained_control": 12,
+    "high_load_hour_sample": 2
+  },
+  "processes_over_100": 2,
+  "policy_means": {
+    "FCFS": {
+      "avg_waiting_ms": 0.2754761904761905,
+      "avg_response_ms": 0.2754761904761905,
+      "avg_turnaround_ms": 273.29374542124543,
+      "p95_response_ms": 0.0,
+      "throughput_jobs_per_ms": 8.597265659200094e-05,
+      "utilization_fraction": 0.0014201224065069913,
+      "weighted_score": 0.019686039422881527
+    },
+    "Round Robin": {
+      "avg_waiting_ms": 0.5503571428571429,
+      "avg_response_ms": 0.003880952380952381,
+      "avg_turnaround_ms": 273.5686263736264,
+      "p95_response_ms": 0.0,
+      "throughput_jobs_per_ms": 8.597265659200094e-05,
+      "utilization_fraction": 0.0014201224065069913,
+      "weighted_score": 0.01428408644433042
+    },
+    "Priority": {
+      "avg_waiting_ms": 0.2754761904761905,
+      "avg_response_ms": 0.2754761904761905,
+      "avg_turnaround_ms": 273.29374542124543,
+      "p95_response_ms": 0.0,
+      "throughput_jobs_per_ms": 8.597265659200094e-05,
+      "utilization_fraction": 0.0014201224065069913,
+      "weighted_score": 0.019686039422881527
+    },
+    "Priority RR": {
+      "avg_waiting_ms": 1.956625763125763,
+      "avg_response_ms": 0.8389114774114774,
+      "avg_turnaround_ms": 274.974894993895,
+      "p95_response_ms": 0.925,
+      "throughput_jobs_per_ms": 8.597263221639613e-05,
+      "utilization_fraction": 0.0014201220027502274,
+      "weighted_score": 0.9154030327214685
+    },
+    "MLFQ": {
+      "avg_waiting_ms": 0.5530952380952381,
+      "avg_response_ms": 0.001392857142857143,
+      "avg_turnaround_ms": 273.5713644688645,
+      "p95_response_ms": 0.0,
+      "throughput_jobs_per_ms": 8.597265659200094e-05,
+      "utilization_fraction": 0.0014201224065069913,
+      "weighted_score": 0.013182271968053404
+    },
+    "Tuned MLFQ": {
+      "avg_waiting_ms": 0.5519166666666666,
+      "avg_response_ms": 0.0003214285714285714,
+      "avg_turnaround_ms": 273.5701858974359,
+      "p95_response_ms": 0.0,
+      "throughput_jobs_per_ms": 8.597265659200094e-05,
+      "utilization_fraction": 0.0014201224065069913,
+      "weighted_score": 0.01377637027765149
+    },
+    "Dynamic v5": {
+      "avg_waiting_ms": 0.5519166666666666,
+      "avg_response_ms": 0.0003214285714285714,
+      "avg_turnaround_ms": 273.5701858974359,
+      "p95_response_ms": 0.0,
+      "throughput_jobs_per_ms": 8.597265659200094e-05,
+      "utilization_fraction": 0.0014201224065069913,
+      "weighted_score": 0.01377637027765149
+    }
+  },
+  "by_stratum": {
+    "low_load": {
+      "FCFS": {
+        "avg_waiting_ms": 0.0,
+        "avg_response_ms": 0.0,
+        "avg_turnaround_ms": 326.6666666666667,
+        "p95_response_ms": 0.0,
+        "throughput_jobs_per_ms": 9.102059205028254e-07,
+        "utilization_fraction": 0.0002560891438265569,
+        "weighted_score": 0.0
+      },
+      "Round Robin": {
+        "avg_waiting_ms": 0.0,
+        "avg_response_ms": 0.0,
+        "avg_turnaround_ms": 326.6666666666667,
+        "p95_response_ms": 0.0,
+        "throughput_jobs_per_ms": 9.102059205028254e-07,
+        "utilization_fraction": 0.0002560891438265569,
+        "weighted_score": 0.0
+      },
+      "Priority": {
+        "avg_waiting_ms": 0.0,
+        "avg_response_ms": 0.0,
+        "avg_turnaround_ms": 326.6666666666667,
+        "p95_response_ms": 0.0,
+        "throughput_jobs_per_ms": 9.102059205028254e-07,
+        "utilization_fraction": 0.0002560891438265569,
+        "weighted_score": 0.0
+      },
+      "Priority RR": {
+        "avg_waiting_ms": 0.4166666666666667,
+        "avg_response_ms": 0.4166666666666667,
+        "avg_turnaround_ms": 327.0833333333333,
+        "p95_response_ms": 0.65,
+        "throughput_jobs_per_ms": 9.102056412410995e-07,
+        "utilization_fraction": 0.00025608908661050363,
+        "weighted_score": 0.6666666666666666
+      },
+      "MLFQ": {
+        "avg_waiting_ms": 0.0,
+        "avg_response_ms": 0.0,
+        "avg_turnaround_ms": 326.6666666666667,
+        "p95_response_ms": 0.0,
+        "throughput_jobs_per_ms": 9.102059205028254e-07,
+        "utilization_fraction": 0.0002560891438265569,
+        "weighted_score": 0.0
+      },
+      "Tuned MLFQ": {
+        "avg_waiting_ms": 0.0,
+        "avg_response_ms": 0.0,
+        "avg_turnaround_ms": 326.6666666666667,
+        "p95_response_ms": 0.0,
+        "throughput_jobs_per_ms": 9.102059205028254e-07,
+        "utilization_fraction": 0.0002560891438265569,
+        "weighted_score": 0.0
+      },
+      "Dynamic v5": {
+        "avg_waiting_ms": 0.0,
+        "avg_response_ms": 0.0,
+        "avg_turnaround_ms": 326.6666666666667,
+        "p95_response_ms": 0.0,
+        "throughput_jobs_per_ms": 9.102059205028254e-07,
+        "utilization_fraction": 0.0002560891438265569,
+        "weighted_score": 0.0
+      }
+    },
+    "medium_load": {
+      "FCFS": {
+        "avg_waiting_ms": 0.0,
+        "avg_response_ms": 0.0,
+        "avg_turnaround_ms": 407.6666666666667,
+        "p95_response_ms": 0.0,
+        "throughput_jobs_per_ms": 2.880511103665645e-06,
+        "utilization_fraction": 0.0010530742206095736,
+        "weighted_score": 0.0
+      },
+      "Round Robin": {
+        "avg_waiting_ms": 0.0,
+        "avg_response_ms": 0.0,
+        "avg_turnaround_ms": 407.6666666666667,
+        "p95_response_ms": 0.0,
+        "throughput_jobs_per_ms": 2.880511103665645e-06,
+        "utilization_fraction": 0.0010530742206095736,
+        "weighted_score": 0.0
+      },
+      "Priority": {
+        "avg_waiting_ms": 0.0,
+        "avg_response_ms": 0.0,
+        "avg_turnaround_ms": 407.6666666666667,
+        "p95_response_ms": 0.0,
+        "throughput_jobs_per_ms": 2.880511103665645e-06,
+        "utilization_fraction": 0.0010530742206095736,
+        "weighted_score": 0.0
+      },
+      "Priority RR": {
+        "avg_waiting_ms": 0.8777777777777778,
+        "avg_response_ms": 0.8777777777777778,
+        "avg_turnaround_ms": 408.5444444444444,
+        "p95_response_ms": 1.0,
+        "throughput_jobs_per_ms": 2.8805102452733257e-06,
+        "utilization_fraction": 0.0010530739080348056,
+        "weighted_score": 1.0
+      },
+      "MLFQ": {
+        "avg_waiting_ms": 0.0,
+        "avg_response_ms": 0.0,
+        "avg_turnaround_ms": 407.6666666666667,
+        "p95_response_ms": 0.0,
+        "throughput_jobs_per_ms": 2.880511103665645e-06,
+        "utilization_fraction": 0.0010530742206095736,
+        "weighted_score": 0.0
+      },
+      "Tuned MLFQ": {
+        "avg_waiting_ms": 0.0,
+        "avg_response_ms": 0.0,
+        "avg_turnaround_ms": 407.6666666666667,
+        "p95_response_ms": 0.0,
+        "throughput_jobs_per_ms": 2.880511103665645e-06,
+        "utilization_fraction": 0.0010530742206095736,
+        "weighted_score": 0.0
+      },
+      "Dynamic v5": {
+        "avg_waiting_ms": 0.0,
+        "avg_response_ms": 0.0,
+        "avg_turnaround_ms": 407.6666666666667,
+        "p95_response_ms": 0.0,
+        "throughput_jobs_per_ms": 2.880511103665645e-06,
+        "utilization_fraction": 0.0010530742206095736,
+        "weighted_score": 0.0
+      }
+    },
+    "high_rate_control": {
+      "FCFS": {
+        "avg_waiting_ms": 0.0,
+        "avg_response_ms": 0.0,
+        "avg_turnaround_ms": 33.333333333333336,
+        "p95_response_ms": 0.0,
+        "throughput_jobs_per_ms": 1.1383139421066276e-05,
+        "utilization_fraction": 0.0004139434709572497,
+        "weighted_score": 0.0
+      },
+      "Round Robin": {
+        "avg_waiting_ms": 0.0,
+        "avg_response_ms": 0.0,
+        "avg_turnaround_ms": 33.333333333333336,
+        "p95_response_ms": 0.0,
+        "throughput_jobs_per_ms": 1.1383139421066276e-05,
+        "utilization_fraction": 0.0004139434709572497,
+        "weighted_score": 0.0
+      },
+      "Priority": {
+        "avg_waiting_ms": 0.0,
+        "avg_response_ms": 0.0,
+        "avg_turnaround_ms": 33.333333333333336,
+        "p95_response_ms": 0.0,
+        "throughput_jobs_per_ms": 1.1383139421066276e-05,
+        "utilization_fraction": 0.0004139434709572497,
+        "weighted_score": 0.0
+      },
+      "Priority RR": {
+        "avg_waiting_ms": 0.9712962962962963,
+        "avg_response_ms": 0.9712962962962963,
+        "avg_turnaround_ms": 34.30462962962963,
+        "p95_response_ms": 1.0,
+        "throughput_jobs_per_ms": 1.1383136179161297e-05,
+        "utilization_fraction": 0.0004139433545128702,
+        "weighted_score": 1.0
+      },
+      "MLFQ": {
+        "avg_waiting_ms": 0.0,
+        "avg_response_ms": 0.0,
+        "avg_turnaround_ms": 33.333333333333336,
+        "p95_response_ms": 0.0,
+        "throughput_jobs_per_ms": 1.1383139421066276e-05,
+        "utilization_fraction": 0.0004139434709572497,
+        "weighted_score": 0.0
+      },
+      "Tuned MLFQ": {
+        "avg_waiting_ms": 0.0,
+        "avg_response_ms": 0.0,
+        "avg_turnaround_ms": 33.333333333333336,
+        "p95_response_ms": 0.0,
+        "throughput_jobs_per_ms": 1.1383139421066276e-05,
+        "utilization_fraction": 0.0004139434709572497,
+        "weighted_score": 0.0
+      },
+      "Dynamic v5": {
+        "avg_waiting_ms": 0.0,
+        "avg_response_ms": 0.0,
+        "avg_turnaround_ms": 33.333333333333336,
+        "p95_response_ms": 0.0,
+        "throughput_jobs_per_ms": 1.1383139421066276e-05,
+        "utilization_fraction": 0.0004139434709572497,
+        "weighted_score": 0.0
+      }
+    },
+    "mixed_functions": {
+      "FCFS": {
+        "avg_waiting_ms": 1.2430555555555556,
+        "avg_response_ms": 1.2430555555555556,
+        "avg_turnaround_ms": 505.66164529914533,
+        "p95_response_ms": 0.0,
+        "throughput_jobs_per_ms": 8.423326239844718e-06,
+        "utilization_fraction": 0.003756945952862794,
+        "weighted_score": 0.08333333333333333
+      },
+      "Round Robin": {
+        "avg_waiting_ms": 2.4791666666666665,
+        "avg_response_ms": 0.006944444444444444,
+        "avg_turnaround_ms": 506.8977564102564,
+        "p95_response_ms": 0.0,
+        "throughput_jobs_per_ms": 8.423326239844718e-06,
+        "utilization_fraction": 0.003756945952862794,
+        "weighted_score": 0.05091906408745983
+      },
+      "Priority": {
+        "avg_waiting_ms": 1.2430555555555556,
+        "avg_response_ms": 1.2430555555555556,
+        "avg_turnaround_ms": 505.66164529914533,
+        "p95_response_ms": 0.0,
+        "throughput_jobs_per_ms": 8.423326239844718e-06,
+        "utilization_fraction": 0.003756945952862794,
+        "weighted_score": 0.08333333333333333
+      },
+      "Priority RR": {
+        "avg_waiting_ms": 5.95801282051282,
+        "avg_response_ms": 0.9580128205128206,
+        "avg_turnaround_ms": 510.3766025641026,
+        "p95_response_ms": 1.0,
+        "throughput_jobs_per_ms": 8.423323846374078e-06,
+        "utilization_fraction": 0.003756944883972523,
+        "weighted_score": 0.9385474860335196
+      },
+      "MLFQ": {
+        "avg_waiting_ms": 2.506944444444444,
+        "avg_response_ms": 0.0,
+        "avg_turnaround_ms": 506.9255341880342,
+        "p95_response_ms": 0.0,
+        "throughput_jobs_per_ms": 8.423326239844718e-06,
+        "utilization_fraction": 0.003756945952862794,
+        "weighted_score": 0.05158730158730138
+      },
+      "Tuned MLFQ": {
+        "avg_waiting_ms": 2.486111111111111,
+        "avg_response_ms": 0.0,
+        "avg_turnaround_ms": 506.9047008547009,
+        "p95_response_ms": 0.0,
+        "throughput_jobs_per_ms": 8.423326239844718e-06,
+        "utilization_fraction": 0.003756945952862794,
+        "weighted_score": 0.050736961451246954
+      },
+      "Dynamic v5": {
+        "avg_waiting_ms": 2.486111111111111,
+        "avg_response_ms": 0.0,
+        "avg_turnaround_ms": 506.9047008547009,
+        "p95_response_ms": 0.0,
+        "throughput_jobs_per_ms": 8.423326239844718e-06,
+        "utilization_fraction": 0.003756945952862794,
+        "weighted_score": 0.050736961451246954
+      }
+    },
+    "high_load_hour_sample": {
+      "FCFS": {
+        "avg_waiting_ms": 0.06375,
+        "avg_response_ms": 0.06375,
+        "avg_turnaround_ms": 3.06375,
+        "p95_response_ms": 0.0,
+        "throughput_jobs_per_ms": 0.0005664128221163874,
+        "utilization_fraction": 0.0017207776631646776,
+        "weighted_score": 0.012802275960170697
+      },
+      "Round Robin": {
+        "avg_waiting_ms": 0.13375,
+        "avg_response_ms": 0.01675,
+        "avg_turnaround_ms": 3.13375,
+        "p95_response_ms": 0.0,
+        "throughput_jobs_per_ms": 0.0005664128221163874,
+        "utilization_fraction": 0.0017207776631646776,
+        "weighted_score": 0.023610008979123187
+      },
+      "Priority": {
+        "avg_waiting_ms": 0.06375,
+        "avg_response_ms": 0.06375,
+        "avg_turnaround_ms": 3.06375,
+        "p95_response_ms": 0.0,
+        "throughput_jobs_per_ms": 0.0005664128221163874,
+        "utilization_fraction": 0.0017207776631646776,
+        "weighted_score": 0.012802275960170697
+      },
+      "Priority RR": {
+        "avg_waiting_ms": 1.36075,
+        "avg_response_ms": 1.03675,
+        "avg_turnaround_ms": 4.36075,
+        "p95_response_ms": 1.0,
+        "throughput_jobs_per_ms": 0.0005664126616466982,
+        "utilization_fraction": 0.0017207771695555382,
+        "weighted_score": 1.0
+      },
+      "MLFQ": {
+        "avg_waiting_ms": 0.11125,
+        "avg_response_ms": 0.00975,
+        "avg_turnaround_ms": 3.11125,
+        "p95_response_ms": 0.0,
+        "throughput_jobs_per_ms": 0.0005664128221163874,
+        "utilization_fraction": 0.0017207776631646776,
+        "weighted_score": 0.014894951395421747
+      },
+      "Tuned MLFQ": {
+        "avg_waiting_ms": 0.13425,
+        "avg_response_ms": 0.00225,
+        "avg_turnaround_ms": 3.13425,
+        "p95_response_ms": 0.0,
+        "throughput_jobs_per_ms": 0.0005664128221163874,
+        "utilization_fraction": 0.0017207776631646776,
+        "weighted_score": 0.020329149766689997
+      },
+      "Dynamic v5": {
+        "avg_waiting_ms": 0.13425,
+        "avg_response_ms": 0.00225,
+        "avg_turnaround_ms": 3.13425,
+        "p95_response_ms": 0.0,
+        "throughput_jobs_per_ms": 0.0005664128221163874,
+        "utilization_fraction": 0.0017207776631646776,
+        "weighted_score": 0.020329149766689997
+      }
+    }
+  },
+  "aggregation": "Unweighted mean over complete workloads; not invocation-weighted or representative Azure performance. Throughput/utilization use simulator start-to-completion, not full source exposure.",
+  "ml_inference_evaluated": true,
+  "ml_model": "artifacts/dynamic_v5_20261019/policy_cost/model.joblib",
+  "ml_unavailable_reason": null,
+  "external_selection_accuracy": null,
+  "selection_accuracy_reason": "No matching fitted six-policy classifier binary; dynamic excursion actions are not comparable to whole-workload static reference labels.",
+  "excluded_workloads": [
+    {
+      "workload_id": "azure-refined-d13-0207",
+      "stratum": "peak_rate_snapshot",
+      "reason": "Prespecified 90-second whole-workload runtime budget exceeded"
+    }
+  ],
+  "score_scope": "Fixed five eligible static-policy bounds within each workload; same weights; NOT comparable to historical six-reference scores.",
+  "time_interpretation": "1 tick = 1 ms; no rescaling or calibration",
+  "limitations": [
+    "Daily wall-clock means proxy CPU demand; individual CPU/I/O demand is unavailable.",
+    "Arrivals are reconstructed from minute bins; snapshots assume conditional uniform order statistics, not observed microbursts.",
+    "All priorities are neutral zero and no I/O bursts are supplied by Azure.",
+    "Frozen 2-ms RR quanta, 8/20/40-ms aging and 10-ms dynamic epochs were not calibrated for Azure; synthetic-to-ms feature/domain shift remains.",
+    "Small, CPU-budget-biased purposeful strata; possible source-hour overlap; no significance, population ranking or kernel-validation claims."
+  ],
+  "protected_hashes_unchanged": true
+}

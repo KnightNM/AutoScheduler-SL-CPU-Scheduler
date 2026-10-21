@@ -1,0 +1,23 @@
+{
+  "schema_version": 1,
+  "synthetic_tuning": "closed",
+  "next_phase": "interactive_dashboard",
+  "promoted_model": null,
+  "research_candidate": "dynamic_v5_policy_cost",
+  "recommended_static": {
+    "name": "Tuned MLFQ",
+    "parameters": {"quanta": [1, 2, 4], "aging_threshold": 40, "context_switch_cost": 0},
+    "scope": "simulator baseline only; not a real-Linux scheduler performance claim",
+    "selection_source": "results/dynamic_v5_20261019/static_selection.json",
+    "fresh_measurements": "results/dynamic_v6_20261019/sensitivity.json"
+  },
+  "v6_prespecified_development_and_audit_gates_pass": true,
+  "v6_previous_frozen_static_response_check_pass": false,
+  "v6_real_trace_approval_established": false,
+  "decision": "Do not promote v6. Its independently retuned static parameters confound guard attribution; the fresh v6 model regresses versus v5 and the previous frozen static response envelope. Guard-only ablation improves response modestly but sacrifices score. Retain v5 for research and the prior tuned static baseline for simulator use.",
+  "gate_provenance": {
+    "prespecified": "results/dynamic_v6_20261019/research_summary.json",
+    "post_audit_fixed_baseline_sensitivity_not_selection": "results/dynamic_v6_20261019/sensitivity.json",
+    "locked_real_contract": "configs/real_desktop_ml.json"
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "decision_states": 360,
+  "reference_action_counts": {
+    "No Switch": 356,
+    "Round Robin": 4
+  },
+  "largest_reference_switch_benefit": 7.817735090456801e-05,
+  "rows_meeting_frozen_margin": 0,
+  "frozen_switch_margin": 0.005,
+  "maximum_leaf_predicted_advantage": 2.2042939646416126e-06
+}

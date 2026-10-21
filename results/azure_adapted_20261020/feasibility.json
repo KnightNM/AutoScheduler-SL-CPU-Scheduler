@@ -1,0 +1,20 @@
+[
+  {
+    "workload_id": "azure-d14-0274",
+    "stratum": "low",
+    "seconds": 0.5637619300032384,
+    "status": "COMPLETE"
+  },
+  {
+    "workload_id": "azure-d03-0058",
+    "stratum": "mixed_low",
+    "seconds": 0.3595058360006078,
+    "status": "COMPLETE"
+  },
+  {
+    "workload_id": "azure-d10-0187",
+    "stratum": "medium",
+    "seconds": 7.227241220003634,
+    "status": "COMPLETE"
+  }
+]

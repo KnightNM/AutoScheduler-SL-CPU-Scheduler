@@ -304,7 +304,7 @@
   "gates": {
     "confidence_gate": false,
     "data_sufficient": false,
-    "decision_p99_ms": 0.348917,
+    "decision_p99_ms": 0.418375,
     "fairness": {
       "comparator_mean_post_io_max_response_time": 0.0,
       "comparator_mean_starvation_count": 0.0,
@@ -334,7 +334,7 @@
   "model_comparison": {
     "Decision Tree": {
       "action_selection_accuracy": 1.0,
-      "decision_p99_ms": 0.167833,
+      "decision_p99_ms": 0.109417,
       "locked_test_realized_cost": 0.0,
       "selected": false,
       "settings": {
@@ -347,7 +347,7 @@
     },
     "Dummy": {
       "action_selection_accuracy": 0.0,
-      "decision_p99_ms": 0.036167,
+      "decision_p99_ms": 0.089667,
       "locked_test_realized_cost": 0.75,
       "selected": false,
       "settings": {
@@ -359,7 +359,7 @@
     },
     "Histogram Gradient Boosting": {
       "action_selection_accuracy": 0.9576271186440678,
-      "decision_p99_ms": 18.829,
+      "decision_p99_ms": 10.824083,
       "locked_test_realized_cost": 4.858780735556044e-05,
       "selected": false,
       "settings": {
@@ -373,7 +373,7 @@
     },
     "Random Forest": {
       "action_selection_accuracy": 1.0,
-      "decision_p99_ms": 5.338667,
+      "decision_p99_ms": 5.758875,
       "locked_test_realized_cost": 0.0,
       "selected": false,
       "settings": {
@@ -387,7 +387,7 @@
     },
     "Ridge": {
       "action_selection_accuracy": 1.0,
-      "decision_p99_ms": 0.443459,
+      "decision_p99_ms": 0.520542,
       "locked_test_realized_cost": 0.0,
       "selected": true,
       "settings": {
@@ -396,19 +396,6 @@
       "test_cost_mae": 0.3794986462605443,
       "test_cost_r2": -1.0489882557663641,
       "validation_realized_cost": 0.0
-    }
-  },
-  "prototype_sufficiency": {
-    "data_sufficient": false,
-    "minimum_total_trace_groups": 15,
-    "minimum_trace_groups_per_split": 3,
-    "scope": "offline_replay_model_comparison_only",
-    "status": "INSUFFICIENT_FOR_PROTOTYPE_COMPARISON",
-    "total_trace_groups": 6,
-    "trace_group_counts": {
-      "test": 1,
-      "train": 4,
-      "validation": 1
     }
   },
   "row_counts": {

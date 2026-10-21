@@ -1,0 +1,90 @@
+{
+  "status": "RETROSPECTIVE_DIAGNOSIS_NOT_SELECTION",
+  "workloads_reproduced": 240,
+  "mechanism_counts_overlap": {
+    "classifier": {
+      "regressed_processes": 19,
+      "arrived_under_mlfq": 1,
+      "arrived_under_other": 18,
+      "legal_return_missed": 0,
+      "dwell_delayed": 10,
+      "initial_dispatch_delayed": 19,
+      "switch_overhead_delayed": 16
+    },
+    "policy_cost": {
+      "regressed_processes": 342,
+      "arrived_under_mlfq": 11,
+      "arrived_under_other": 331,
+      "legal_return_missed": 84,
+      "dwell_delayed": 54,
+      "initial_dispatch_delayed": 342,
+      "switch_overhead_delayed": 0
+    }
+  },
+  "families": {
+    "classifier": {
+      "cohort_mix": {
+        "mean_p95_difference": 1.7625,
+        "positive_excess_sum": 35.25,
+        "regressed_workloads": 3
+      },
+      "homogeneous_batch": {
+        "mean_p95_difference": 0.0,
+        "positive_excess_sum": 0,
+        "regressed_workloads": 0
+      },
+      "long_io": {
+        "mean_p95_difference": 0.0,
+        "positive_excess_sum": 0,
+        "regressed_workloads": 0
+      },
+      "low_load": {
+        "mean_p95_difference": 0.0,
+        "positive_excess_sum": 0,
+        "regressed_workloads": 0
+      },
+      "repeated_changes": {
+        "mean_p95_difference": 0.0,
+        "positive_excess_sum": 0,
+        "regressed_workloads": 0
+      },
+      "sustained_arrivals": {
+        "mean_p95_difference": 1.2174999999999998,
+        "positive_excess_sum": 24.349999999999994,
+        "regressed_workloads": 3
+      }
+    },
+    "policy_cost": {
+      "cohort_mix": {
+        "mean_p95_difference": 3.8149999999999995,
+        "positive_excess_sum": 76.3,
+        "regressed_workloads": 3
+      },
+      "homogeneous_batch": {
+        "mean_p95_difference": 0.0,
+        "positive_excess_sum": 0,
+        "regressed_workloads": 0
+      },
+      "long_io": {
+        "mean_p95_difference": 0.0,
+        "positive_excess_sum": 0,
+        "regressed_workloads": 0
+      },
+      "low_load": {
+        "mean_p95_difference": 0.0,
+        "positive_excess_sum": 0,
+        "regressed_workloads": 0
+      },
+      "repeated_changes": {
+        "mean_p95_difference": 30.307499999999997,
+        "positive_excess_sum": 606.15,
+        "regressed_workloads": 12
+      },
+      "sustained_arrivals": {
+        "mean_p95_difference": 16.6925,
+        "positive_excess_sum": 333.84999999999997,
+        "regressed_workloads": 15
+      }
+    }
+  }
+}

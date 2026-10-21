@@ -22,6 +22,11 @@ class _Ready:
     from_io: bool
     queue_level: int = 0
     quantum_used: int = 0
+    aging_since: int | None = None
+
+    def __post_init__(self):
+        if self.aging_since is None:
+            self.aging_since = self.time
 
 
 def simulate(
@@ -86,13 +91,14 @@ def simulate(
         nonlocal sequence
         if policy != "mlfq":
             return
-        for item in sorted(ready, key=lambda candidate: candidate.sequence):
-            if item.queue_level > 0 and current_time - item.time >= (aging_threshold or 1):
-                item.queue_level -= 1
-                item.quantum_used = 0
-                item.time = current_time
-                item.sequence = sequence
-                sequence += 1
+        eligible = (item for item in ready if item.queue_level > 0
+                    and current_time - item.aging_since >= (aging_threshold or 1))
+        for item in sorted(eligible, key=lambda candidate: candidate.sequence):
+            item.queue_level -= 1
+            item.quantum_used = 0
+            item.aging_since = current_time
+            item.sequence = sequence
+            sequence += 1
 
     def take_ready() -> _Ready:
         age_ready()
@@ -102,7 +108,7 @@ def simulate(
             index = min(
                 range(len(ready)),
                 key=lambda i: (
-                    max(1, ready[i].priority - (current_time - ready[i].time) // (aging_interval or 1)),
+                    1 if ready[i].priority <= 1 else max(1, ready[i].priority - (current_time - ready[i].time) // (aging_interval or 1)),
                     ready[i].sequence,
                 ),
             )
@@ -148,6 +154,12 @@ def simulate(
             timeline.append(("CS", current_time, current_time + context_switch_cost))
             current_time += context_switch_cost
             release(current_time)
+            if policy == "mlfq":
+                # The overhead is paid once. Settle the destination using all
+                # arrivals, I/O returns, and promotions observed at its end.
+                ready.append(ready_process)
+                ready_process = take_ready()
+                process = ready_process.process
         if ready_process.from_io:
             process.post_io_response_times.append(current_time - ready_process.time)
         if process.start_time == -1:
@@ -164,7 +176,7 @@ def simulate(
                     next_events = ([pending[0].arrival_time] if pending else [])
                     next_events.extend(wake_time for wake_time, *_ in blocked)
                     next_events.extend(
-                        item.time + (aging_threshold or 1)
+                        item.aging_since + (aging_threshold or 1)
                         for item in ready
                         if item.queue_level > 0
                     )

@@ -20,7 +20,6 @@ from autoscheduler.dataset import build_dataset, save_dataset
 from autoscheduler.dynamic import (
     DYNAMIC_FEATURE_NAMES,
     DynamicRouterConfig,
-    build_dynamic_dataset,
     evaluate_dynamic,
     save_dynamic_evaluation,
     tune_dynamic_config,
@@ -41,7 +40,7 @@ from autoscheduler.workloads import PROFILES, generate_workload
 
 
 DEFAULT_MODEL = Path("artifacts/model.joblib")
-DEFAULT_DYNAMIC_MODEL = Path("artifacts/dynamic_model.joblib")
+DEFAULT_DYNAMIC_MODEL = Path("artifacts/dynamic_v5/model.joblib")
 DEFAULT_BENEFIT_ROOT = Path("results/rr_srtf_benefit")
 DEFAULT_MLFQ_ROOT = Path("results/mlfq_baseline")
 
@@ -284,32 +283,65 @@ def _latency(arguments) -> None:
 
 
 def _dynamic_train(arguments) -> None:
-    tuning = tune_dynamic_config(arguments.tuning_traces, arguments.seed)
+    from autoscheduler.dynamic_training import build_training_data, prepare_validation, validation_metrics
+
+    if arguments.tune_router:
+        tuning = tune_dynamic_config(arguments.tuning_traces, arguments.seed,
+                                     policy_track=arguments.policy_track, model_kind=arguments.model_kind,
+                                     initial_policy=arguments.initial_policy,
+                                     fallback_policy=None if arguments.fallback_policy == "hold" else arguments.fallback_policy)
+    else:
+        explicit = DynamicRouterConfig(arguments.epoch_ticks, arguments.dwell_epochs, arguments.confidence,
+                                       arguments.policy_track, arguments.initial_policy,
+                                       None if arguments.fallback_policy == "hold" else arguments.fallback_policy)
+        tuning = {"method": "explicit_configuration", "selected": explicit.__dict__}
     config = DynamicRouterConfig(**tuning["selected"])
-    rows = build_dynamic_dataset(arguments.traces, arguments.seed, config)
+    from dataclasses import replace
+    config = replace(config, explicit_no_switch=True, response_tail_protection=arguments.response_tail_protection)
+    tuning["selected"] = config.__dict__
+    development = "v4" if arguments.workload_suite == "v4" else arguments.workload_suite == "development"
+    rows, occupancy = build_training_data(arguments.traces, arguments.seed, config,
+                                          Path(arguments.model).with_suffix(".split.json"), development=development)
+    cases, validation = prepare_validation(arguments.tuning_traces, arguments.seed + 1_000_000, config,
+                                           development=development)
     save_dataset(rows, arguments.dataset)
     report = train_model(
         rows, arguments.model, arguments.seed, feature_names=DYNAMIC_FEATURE_NAMES,
-        metadata={"dynamic_config": config.__dict__, "dynamic_tuning": tuning},
+        metadata={"dynamic_config": config.__dict__, "dynamic_tuning": tuning,
+                  "static_baseline": validation["static_baseline"]},
         group_key="seed",
+        model_kind=arguments.model_kind,
+        scheduler_validation=lambda model: validation_metrics(model, cases, config),
+        refit=False,
     )
     report["dynamic_tuning"] = tuning
+    report["occupancy"] = occupancy
+    report["whole_workload_validation"] = validation
     Path(arguments.model).with_suffix(".json").write_text(json.dumps(report, indent=2), encoding="utf-8")
     print(f"Dynamic rows: {report['rows']}")
     print(f"Router config: {config}")
     print(f"Model: {arguments.model}")
+    if report["diagnostic_only"]:
+        print(f"No development-eligible ML candidate; retain {validation['static_baseline']}.")
 
 
 def _dynamic_evaluate(arguments) -> None:
     metadata = load_model_metadata(arguments.model)
-    config = DynamicRouterConfig(**metadata.get("dynamic_config", {}))
-    model = load_model(arguments.model, DYNAMIC_FEATURE_NAMES)
-    rows, summary = evaluate_dynamic(model, arguments.traces, arguments.seed, config)
+    if "dynamic_config" not in metadata:
+        raise ValueError("saved model lacks dynamic configuration; retrain with dynamic-train")
+    config = DynamicRouterConfig(**metadata["dynamic_config"])
+    rr_config = metadata.get("priority_rr_config")
+    model = load_model(arguments.model, DYNAMIC_FEATURE_NAMES, expected_dynamic_config=config, expected_priority_rr_config=rr_config)
+    rows, summary = evaluate_dynamic(model, arguments.traces, arguments.seed, config, rr_config,
+                                     frozen_static_baseline=metadata["static_baseline"])
+    summary["selected_for_development"] = metadata.get("selected_for_development") is True
+    summary["promoted"] = False
     save_dynamic_evaluation(rows, summary, arguments.output)
     print(f"P95 response gate: {summary['p95_response_gate']}")
     print(f"Weighted score gate: {summary['weighted_score_gate']}")
     print(f"Latency gate: {summary['latency_gate']}")
-    print(f"Eligible: {summary['eligible']}")
+    print(f"Original RR-relative eligibility: {summary['eligible']}")
+    print(f"Selected under development constraints: {summary['selected_for_development']}")
     print(f"Results: {arguments.output}")
 
 
@@ -457,18 +489,29 @@ def build_parser() -> argparse.ArgumentParser:
     model_bakeoff.set_defaults(handler=_model_bakeoff)
 
     dynamic_train = commands.add_parser("dynamic-train", help="tune and train safe epoch router")
-    dynamic_train.add_argument("--traces", type=int, default=100)
-    dynamic_train.add_argument("--tuning-traces", type=int, default=20)
+    dynamic_train.add_argument("--traces", type=int, default=144)
+    dynamic_train.add_argument("--tuning-traces", type=int, default=60)
     dynamic_train.add_argument("--seed", type=int, default=42)
+    dynamic_train.add_argument("--policy-track", choices=("realistic", "oracle_simulation"), default="realistic")
+    dynamic_train.add_argument("--model-kind", choices=("classifier", "policy_cost"), default="policy_cost")
+    dynamic_train.add_argument("--initial-policy", default="Round Robin")
+    dynamic_train.add_argument("--fallback-policy", default="hold", help="eligible policy or hold (historical behavior)")
+    dynamic_train.add_argument("--workload-suite", choices=("v4", "development", "historical"), default="v4")
+    dynamic_train.add_argument("--epoch-ticks", type=int, default=10)
+    dynamic_train.add_argument("--dwell-epochs", type=int, default=2)
+    dynamic_train.add_argument("--confidence", type=float, default=.8)
+    dynamic_train.add_argument("--response-tail-protection", action="store_true",
+                               help="bounded excursions and observed-pressure guard; requires MLFQ fallback")
+    dynamic_train.add_argument("--tune-router", action="store_true", help="optional legacy synthetic router search")
     dynamic_train.add_argument("--model", default=str(DEFAULT_DYNAMIC_MODEL))
-    dynamic_train.add_argument("--dataset", default="artifacts/dynamic_training.csv")
+    dynamic_train.add_argument("--dataset", default="artifacts/dynamic_v5/training.csv")
     dynamic_train.set_defaults(handler=_dynamic_train)
 
     dynamic_evaluate = commands.add_parser("dynamic-evaluate", help="evaluate safe epoch router")
     dynamic_evaluate.add_argument("--traces", type=int, default=1_000)
     dynamic_evaluate.add_argument("--seed", type=int, default=2026)
     dynamic_evaluate.add_argument("--model", default=str(DEFAULT_DYNAMIC_MODEL))
-    dynamic_evaluate.add_argument("--output", default="results/dynamic")
+    dynamic_evaluate.add_argument("--output", default="results/dynamic_v5")
     dynamic_evaluate.set_defaults(handler=_dynamic_evaluate)
 
     benefit_train = commands.add_parser("benefit-train", help="train conservative RR-versus-SRTF benefit regressor")

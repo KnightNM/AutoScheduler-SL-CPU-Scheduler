@@ -1,0 +1,128 @@
+{
+  "status": "SYNTHETIC_DEVELOPMENT_ONLY",
+  "promotion": false,
+  "python": "3.12.3 (main, Aug 31 2026, 10:18:26) [GCC 13.3.0]",
+  "seeds": {
+    "train": 10601,
+    "validation": 10602,
+    "audit": 10603
+  },
+  "experiment_version": 6,
+  "single_correction": "observed quiet admission window in dwell periods; no threshold search",
+  "traces": {
+    "train": 144,
+    "validation": 84,
+    "audit": 240
+  },
+  "config_before_static_tuning": {
+    "epoch_ticks": 10,
+    "dwell_epochs": 2,
+    "confidence_threshold": 0.8,
+    "policy_track": "realistic",
+    "initial_policy": "MLFQ",
+    "fallback_policy": "MLFQ",
+    "label_horizon_ticks": null,
+    "label_continuation": "MLFQ",
+    "first_service_protection": true,
+    "explicit_no_switch": true,
+    "mlfq_quanta": [
+      2,
+      4,
+      8
+    ],
+    "mlfq_aging_threshold": 20,
+    "response_tail_protection": true,
+    "arrival_quiet_dwell_periods": 2
+  },
+  "workloads": "unchanged_v4_six_family_generator; new seeds; no outcome filtering",
+  "selection": "eligible_families_only_then_realized_score; None means retain static comparator",
+  "classifier_grid": [
+    [
+      3,
+      10,
+      null
+    ],
+    [
+      3,
+      10,
+      "balanced"
+    ],
+    [
+      5,
+      10,
+      null
+    ],
+    [
+      5,
+      10,
+      "balanced"
+    ],
+    [
+      8,
+      10,
+      null
+    ],
+    [
+      8,
+      10,
+      "balanced"
+    ]
+  ],
+  "cost_grid": [
+    [
+      3,
+      10,
+      null
+    ],
+    [
+      5,
+      10,
+      null
+    ],
+    [
+      8,
+      10,
+      null
+    ]
+  ],
+  "refit": false,
+  "static_grid": {
+    "quanta": [
+      [
+        1,
+        2,
+        4
+      ],
+      [
+        2,
+        4,
+        8
+      ],
+      [
+        4,
+        8,
+        16
+      ]
+    ],
+    "aging": [
+      10,
+      20,
+      40
+    ]
+  },
+  "gate_definitions": "primary score CI_high<0; P95 CI_high<=0; mean starvation<=baseline; max workload routing P99<10ms; original RR gates unchanged",
+  "confidence_intervals": "paired workload percentile bootstrap; 10000 resamples; seed2027; family CIs exploratory",
+  "old_1000_and_locked_real_tests": "NOT_USED",
+  "previous_model_sha256": "a8783b65b60aaf381694910affd7e2c2acce4c7c871911b782514d8e37064a64",
+  "previous_source_sha256": "81ee543f93a9853471e6f156f96f9f96157dca2780c436f8b278a76967bd1f83",
+  "source_sha256": {
+    "autoscheduler/dynamic.py": "5dfe1af2dde6b62f61f1212899dfa21f03604499fadd6d46d8064c548a1bf4a0",
+    "autoscheduler/model.py": "62bb49fce36adcccf998cf6c625e3ef0ff1621f3fe419394a208c003f07603cb",
+    "autoscheduler/dynamic_training.py": "6301b9035b7b5e17326d27c971835a7bbe9d23d9dcac78c48ebca993c900a1b6",
+    "autoscheduler/development_workloads.py": "217ce16276d63400018a617249c190d9fc6989c9334a2fbb11a6a55c07fa33ee",
+    "autoscheduler/dynamic_v5_experiment.py": "9b3a827ca9d74285dae935a9804e9262aa63714f75f5ae082644de06d7e48d84",
+    "autoscheduler/evaluation.py": "96d26272501c110da3d20ecde9c22f86e567220756943e2643a7d18606957c5f",
+    "simulator/engine.py": "4710963b08df4cf4e773d4e80e76e4313d0f5b8571c35532a6a4c298f65fa5ce",
+    "configs/real_desktop_ml.json": "b12ea718f41279c3758d4c6172560ac0af01776537ef93092091a19cf2446067"
+  }
+}

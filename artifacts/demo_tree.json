@@ -14,6 +14,8 @@
   },
   "max_depth": 3,
   "min_samples_leaf": 10,
+  "class_weight": null,
+  "model_kind": "classifier",
   "validation_accuracy": 0.768,
   "validation_mean_regret": 0.005696578226037969,
   "test_accuracy": 0.7306666666666667,
@@ -55,76 +57,89 @@
     {
       "max_depth": 3,
       "min_samples_leaf": 10,
+      "class_weight": null,
       "validation_accuracy": 0.768,
       "validation_mean_regret": 0.005696578226037969
     },
     {
       "max_depth": 3,
       "min_samples_leaf": 5,
+      "class_weight": null,
       "validation_accuracy": 0.768,
       "validation_mean_regret": 0.005696578226037969
     },
     {
       "max_depth": 3,
       "min_samples_leaf": 1,
+      "class_weight": null,
       "validation_accuracy": 0.7653333333333333,
       "validation_mean_regret": 0.005816708492718251
     },
     {
       "max_depth": 5,
       "min_samples_leaf": 10,
+      "class_weight": null,
       "validation_accuracy": 0.7493333333333333,
       "validation_mean_regret": 0.00742546166242736
     },
     {
       "max_depth": 5,
       "min_samples_leaf": 5,
+      "class_weight": null,
       "validation_accuracy": 0.7626666666666667,
       "validation_mean_regret": 0.007148201003626748
     },
     {
       "max_depth": 5,
       "min_samples_leaf": 1,
+      "class_weight": null,
       "validation_accuracy": 0.7573333333333333,
       "validation_mean_regret": 0.0074280901565562775
     },
     {
       "max_depth": 8,
       "min_samples_leaf": 10,
+      "class_weight": null,
       "validation_accuracy": 0.7333333333333333,
       "validation_mean_regret": 0.0072654366370801665
     },
     {
       "max_depth": 8,
       "min_samples_leaf": 5,
+      "class_weight": null,
       "validation_accuracy": 0.7333333333333333,
       "validation_mean_regret": 0.00843215974436717
     },
     {
       "max_depth": 8,
       "min_samples_leaf": 1,
+      "class_weight": null,
       "validation_accuracy": 0.7226666666666667,
       "validation_mean_regret": 0.008634678754900905
     },
     {
       "max_depth": null,
       "min_samples_leaf": 10,
+      "class_weight": null,
       "validation_accuracy": 0.7226666666666667,
       "validation_mean_regret": 0.00786491738010925
     },
     {
       "max_depth": null,
       "min_samples_leaf": 5,
+      "class_weight": null,
       "validation_accuracy": 0.7253333333333334,
       "validation_mean_regret": 0.009184781997077824
     },
     {
       "max_depth": null,
       "min_samples_leaf": 1,
+      "class_weight": null,
       "validation_accuracy": 0.6853333333333333,
       "validation_mean_regret": 0.011853748622423424
     }
   ],
+  "selection_basis": "validation_action_regret",
   "priority_rr_tuning": {
     "samples": 375,
     "seed": 42,
