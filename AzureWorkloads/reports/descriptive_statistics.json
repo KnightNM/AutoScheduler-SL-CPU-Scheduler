@@ -1,0 +1,454 @@
+{
+  "before": {
+    "workloads": 286,
+    "jobs": 72408,
+    "sizes": {
+      "n": 286,
+      "min": 1.0,
+      "mean": 253.17482517482517,
+      "p50": 20.0,
+      "p95": 1983.0,
+      "p99": 2000.0,
+      "max": 2000.0
+    },
+    "realized_arrival_rate_per_second": {
+      "n": 286,
+      "min": 0.0002777777777777778,
+      "mean": 0.07032634032634033,
+      "p50": 0.005555555555555556,
+      "p95": 0.5508333333333333,
+      "p99": 0.5555555555555556,
+      "max": 0.5555555555555556
+    },
+    "burst_proxy_ms": {
+      "n": 72408,
+      "min": 1.0,
+      "mean": 4287.78452657165,
+      "p50": 482.0,
+      "p95": 5776.0,
+      "p99": 86134.0,
+      "max": 1800409.0
+    },
+    "sampling_fraction": {
+      "n": 286,
+      "min": 1.0,
+      "mean": 1.0,
+      "p50": 1.0,
+      "p95": 1.0,
+      "p99": 1.0,
+      "max": 1.0
+    },
+    "unique_reconstructed_invocations": 72047,
+    "selected_source_hour_contexts": 380,
+    "source_hour_context_invocations": 72047
+  },
+  "after": {
+    "workloads": 510,
+    "jobs": 520408,
+    "sizes": {
+      "n": 510,
+      "min": 1.0,
+      "mean": 1020.4078431372549,
+      "p50": 751.5,
+      "p95": 2000.0,
+      "p99": 2000.0,
+      "max": 2000.0
+    },
+    "realized_arrival_rate_per_second": {
+      "n": 510,
+      "min": 0.0002777777777777778,
+      "mean": 185.5289948735516,
+      "p50": 0.20875,
+      "p95": 1659.131727255837,
+      "p99": 2094.563585004448,
+      "max": 2503.1289111389237
+    },
+    "burst_proxy_ms": {
+      "n": 520408,
+      "min": 1.0,
+      "mean": 13387.549722525404,
+      "p50": 840.0,
+      "p95": 149039.34999993996,
+      "p99": 263012.0,
+      "max": 1800409.0
+    },
+    "sampling_fraction": {
+      "n": 510,
+      "min": 0.00023438805614719007,
+      "mean": 0.607354918080881,
+      "p50": 1.0,
+      "p95": 1.0,
+      "p99": 1.0,
+      "max": 1.0
+    },
+    "unique_reconstructed_invocations": 520007,
+    "selected_source_hour_contexts": 660,
+    "source_hour_context_invocations": 313894596
+  },
+  "cohorts": {
+    "high_load_hour_sample": {
+      "workloads": 112,
+      "jobs": 224000,
+      "sizes": {
+        "n": 112,
+        "min": 2000.0,
+        "mean": 2000.0,
+        "p50": 2000.0,
+        "p95": 2000.0,
+        "p99": 2000.0,
+        "max": 2000.0
+      },
+      "realized_arrival_rate_per_second": {
+        "n": 112,
+        "min": 0.5555555555555556,
+        "mean": 0.5555555555555555,
+        "p50": 0.5555555555555556,
+        "p95": 0.5555555555555556,
+        "p99": 0.5555555555555556,
+        "max": 0.5555555555555556
+      },
+      "burst_proxy_ms": {
+        "n": 224000,
+        "min": 1.0,
+        "mean": 1061.357142857143,
+        "p50": 935.5,
+        "p95": 1769.0,
+        "p99": 10336.0,
+        "max": 11808.0
+      },
+      "sampling_fraction": {
+        "n": 112,
+        "min": 0.00023438805614719007,
+        "mean": 0.16246221702648447,
+        "p50": 0.08906039591805161,
+        "p95": 0.4603495346785271,
+        "p99": 0.542076585146752,
+        "max": 0.5555555555555556
+      },
+      "unique_reconstructed_invocations": 224000,
+      "selected_source_hour_contexts": 112,
+      "source_hour_context_invocations": 310430335
+    },
+    "high_load_mixed_hour_sample": {
+      "workloads": 56,
+      "jobs": 112000,
+      "sizes": {
+        "n": 56,
+        "min": 2000.0,
+        "mean": 2000.0,
+        "p50": 2000.0,
+        "p95": 2000.0,
+        "p99": 2000.0,
+        "max": 2000.0
+      },
+      "realized_arrival_rate_per_second": {
+        "n": 56,
+        "min": 0.5555555555555556,
+        "mean": 0.5555555555555555,
+        "p50": 0.5555555555555556,
+        "p95": 0.5555555555555556,
+        "p99": 0.5555555555555556,
+        "max": 0.5555555555555556
+      },
+      "burst_proxy_ms": {
+        "n": 112000,
+        "min": 1.0,
+        "mean": 55879.19708928571,
+        "p50": 92.0,
+        "p95": 263012.0,
+        "p99": 326449.0,
+        "max": 646965.0
+      },
+      "sampling_fraction": {
+        "n": 56,
+        "min": 0.0028526478990961385,
+        "mean": 0.09883239222170197,
+        "p50": 0.10372249551478394,
+        "p95": 0.18823843128923826,
+        "p99": 0.2345938842319684,
+        "max": 0.2818092151613358
+      },
+      "unique_reconstructed_invocations": 112000,
+      "selected_source_hour_contexts": 168,
+      "source_hour_context_invocations": 3392214
+    },
+    "local_rate_snapshot": {
+      "workloads": 56,
+      "jobs": 112000,
+      "sizes": {
+        "n": 56,
+        "min": 2000.0,
+        "mean": 2000.0,
+        "p50": 2000.0,
+        "p95": 2000.0,
+        "p99": 2000.0,
+        "max": 2000.0
+      },
+      "realized_arrival_rate_per_second": {
+        "n": 56,
+        "min": 1294.4983818770227,
+        "mean": 1687.6132271222257,
+        "p50": 1654.9444289243477,
+        "p95": 2122.235284468382,
+        "p99": 2486.111347466162,
+        "max": 2503.1289111389237
+      },
+      "burst_proxy_ms": {
+        "n": 112000,
+        "min": 65.0,
+        "mean": 1431.2857142857142,
+        "p50": 1641.0,
+        "p95": 1769.0,
+        "p99": 1769.0,
+        "max": 1769.0
+      },
+      "sampling_fraction": {
+        "n": 56,
+        "min": 0.00023438805614719007,
+        "mean": 0.0003683205333529414,
+        "p50": 0.0003682220720186395,
+        "p95": 0.00043136086202743787,
+        "p99": 0.0004601853837875545,
+        "max": 0.0004693439768031433
+      },
+      "unique_reconstructed_invocations": 112000,
+      "selected_source_hour_contexts": 56,
+      "source_hour_context_invocations": 310046793
+    },
+    "retained_control": {
+      "workloads": 286,
+      "jobs": 72408,
+      "sizes": {
+        "n": 286,
+        "min": 1.0,
+        "mean": 253.17482517482517,
+        "p50": 20.0,
+        "p95": 1983.0,
+        "p99": 2000.0,
+        "max": 2000.0
+      },
+      "realized_arrival_rate_per_second": {
+        "n": 286,
+        "min": 0.0002777777777777778,
+        "mean": 0.07032634032634033,
+        "p50": 0.005555555555555556,
+        "p95": 0.5508333333333333,
+        "p99": 0.5555555555555556,
+        "max": 0.5555555555555556
+      },
+      "burst_proxy_ms": {
+        "n": 72408,
+        "min": 1.0,
+        "mean": 4287.78452657165,
+        "p50": 482.0,
+        "p95": 5776.0,
+        "p99": 86134.0,
+        "max": 1800409.0
+      },
+      "sampling_fraction": {
+        "n": 286,
+        "min": 1.0,
+        "mean": 1.0,
+        "p50": 1.0,
+        "p95": 1.0,
+        "p99": 1.0,
+        "max": 1.0
+      },
+      "unique_reconstructed_invocations": 72047,
+      "selected_source_hour_contexts": 380,
+      "source_hour_context_invocations": 72047
+    }
+  },
+  "coverage": {
+    "total_recorded_invocations": 12495810846,
+    "old_cap_ineligible_hours": 255612,
+    "old_cap_ineligible_positive_hour_percent": 3.5941945515356024,
+    "old_cap_ineligible_invocations": 11792466817,
+    "old_cap_ineligible_invocation_percent": 94.37136142929737,
+    "after_cap_only_ineligible_invocations": 0,
+    "before_unique_sampled_invocation_percent": 0.0005765692269826793,
+    "after_unique_sampled_invocation_percent": 0.004161450636606411,
+    "before_unsampled_invocation_percent": 99.99942343077302,
+    "after_unsampled_invocation_percent": 99.9958385493634,
+    "before_selected_context_invocation_percent": 0.0005765692269826793,
+    "after_selected_context_invocation_percent": 2.5119986199253326,
+    "note": "Cap eligibility, selected source-hour context volume, and actual sampled occurrences are distinct. No claim of 100% traffic coverage."
+  },
+  "stratified_minute_shape_total_variation": {
+    "n": 168,
+    "min": 0.0007832292595896656,
+    "mean": 0.0044433459486660784,
+    "p50": 0.004011543904738354,
+    "p95": 0.0070783364655899045,
+    "p99": 0.008891149927939402,
+    "max": 0.010921633124035306
+  },
+  "within_minute_sampling_fraction": {
+    "n": 15394,
+    "min": 0.00023113974261471242,
+    "mean": 0.12561283152998734,
+    "p50": 0.1,
+    "p95": 0.40350877192982454,
+    "p99": 0.5348837209302325,
+    "max": 1.0
+  },
+  "snapshot_rate_error_percent": {
+    "n": 56,
+    "min": -4.870002638906124,
+    "mean": -0.40534069172488374,
+    "p50": -0.8235185816515611,
+    "p95": 4.364431206551539,
+    "p99": 5.60619578785382,
+    "max": 6.134214426561968
+  },
+  "rounding": {
+    "tick_ms": 1,
+    "positive_published_means": 651505,
+    "zero_published_means": 11417,
+    "fractional_positive_means": 0,
+    "absolute_error_ms": {
+      "n": 651505,
+      "min": 0.0,
+      "mean": 0.0,
+      "p50": 0.0,
+      "p95": 0.0,
+      "p99": 0.0,
+      "max": 0.0
+    },
+    "relative_error_percent": {
+      "n": 651505,
+      "min": 0.0,
+      "mean": 0.0,
+      "p50": 0.0,
+      "p95": 0.0,
+      "p99": 0.0,
+      "max": 0.0
+    },
+    "short_duration_bins": [
+      {
+        "label": "0 < mean <= 1 ms",
+        "rows": 3594,
+        "absolute_error_ms": {
+          "n": 3594,
+          "min": 0.0,
+          "mean": 0.0,
+          "p50": 0.0,
+          "p95": 0.0,
+          "p99": 0.0,
+          "max": 0.0
+        },
+        "relative_error_percent": {
+          "n": 3594,
+          "min": 0.0,
+          "mean": 0.0,
+          "p50": 0.0,
+          "p95": 0.0,
+          "p99": 0.0,
+          "max": 0.0
+        }
+      },
+      {
+        "label": "1 < mean <= 4 ms",
+        "rows": 7020,
+        "absolute_error_ms": {
+          "n": 7020,
+          "min": 0.0,
+          "mean": 0.0,
+          "p50": 0.0,
+          "p95": 0.0,
+          "p99": 0.0,
+          "max": 0.0
+        },
+        "relative_error_percent": {
+          "n": 7020,
+          "min": 0.0,
+          "mean": 0.0,
+          "p50": 0.0,
+          "p95": 0.0,
+          "p99": 0.0,
+          "max": 0.0
+        }
+      },
+      {
+        "label": "4 < mean <= 10 ms",
+        "rows": 11990,
+        "absolute_error_ms": {
+          "n": 11990,
+          "min": 0.0,
+          "mean": 0.0,
+          "p50": 0.0,
+          "p95": 0.0,
+          "p99": 0.0,
+          "max": 0.0
+        },
+        "relative_error_percent": {
+          "n": 11990,
+          "min": 0.0,
+          "mean": 0.0,
+          "p50": 0.0,
+          "p95": 0.0,
+          "p99": 0.0,
+          "max": 0.0
+        }
+      }
+    ],
+    "hypothetical_fractional_examples": [
+      {
+        "mean_ms": 0.1,
+        "burst_ticks": 1,
+        "relative_error_percent": 900.0
+      },
+      {
+        "mean_ms": 0.5,
+        "burst_ticks": 1,
+        "relative_error_percent": 100.0
+      },
+      {
+        "mean_ms": 1.2,
+        "burst_ticks": 2,
+        "relative_error_percent": 66.66666666666667
+      },
+      {
+        "mean_ms": 2.25,
+        "burst_ticks": 3,
+        "relative_error_percent": 33.333333333333336
+      }
+    ],
+    "selected_job_absolute_error_ms": {
+      "n": 520408,
+      "min": 0.0,
+      "mean": 0.0,
+      "p50": 0.0,
+      "p95": 0.0,
+      "p99": 0.0,
+      "max": 0.0
+    },
+    "selected_job_relative_error_percent": {
+      "n": 520408,
+      "min": 0.0,
+      "mean": 0.0,
+      "p50": 0.0,
+      "p95": 0.0,
+      "p99": 0.0,
+      "max": 0.0
+    }
+  },
+  "observed_daily_function_mean_ms": {
+    "n": 662922,
+    "min": 0.0,
+    "mean": 10039.355705497781,
+    "p50": 672.0,
+    "p95": 42644.89999999991,
+    "p99": 224665.13000000175,
+    "max": 1800409.0
+  },
+  "job_burst_proxy_ms": {
+    "n": 520408,
+    "min": 1.0,
+    "mean": 13387.549722525404,
+    "p50": 840.0,
+    "p95": 149039.34999993996,
+    "p99": 263012.0,
+    "max": 1800409.0
+  }
+}

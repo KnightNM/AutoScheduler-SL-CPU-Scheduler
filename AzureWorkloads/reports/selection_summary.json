@@ -1,0 +1,805 @@
+{
+  "seed": 42,
+  "max_jobs": 2000,
+  "workload_count": 510,
+  "job_count": 520408,
+  "size_summary": {
+    "n": 510,
+    "min": 1.0,
+    "mean": 1020.4078431372549,
+    "p50": 751.5,
+    "p95": 2000.0,
+    "p99": 2000.0,
+    "max": 2000.0
+  },
+  "burst_proxy_ms": {
+    "n": 520408,
+    "min": 1.0,
+    "mean": 13387.549722525404,
+    "p50": 840.0,
+    "p95": 149039.34999993996,
+    "p99": 263012.0,
+    "max": 1800409.0
+  },
+  "unusable_function_day_rows": 16623,
+  "missing_windows_excluded": 0,
+  "days": [
+    {
+      "day": 1,
+      "candidate_windows": 1084800,
+      "eligible_windows": 495583,
+      "zero_windows": 570604,
+      "over_cap_windows": 18613,
+      "over_cap_invocations": 859530247,
+      "rate_tertiles_jobs_per_hour": [
+        4.0,
+        20.0
+      ],
+      "duration_tertiles_ms": [
+        202.0,
+        1506.0
+      ],
+      "candidate_size_summary": {
+        "n": 1084800,
+        "min": 0.0,
+        "mean": 825.6472852138643,
+        "p50": 0.0,
+        "p95": 240.0,
+        "p99": 4757.020000000019,
+        "max": 5659057.0
+      },
+      "candidate_fano_summary": {
+        "n": 1084800,
+        "min": 0.0,
+        "mean": 7.077411852592265,
+        "p50": 0.0,
+        "p95": 3.933333333333344,
+        "p99": 55.06666666666664,
+        "max": 108547.58720711873
+      }
+    },
+    {
+      "day": 2,
+      "candidate_windows": 1096200,
+      "eligible_windows": 503678,
+      "zero_windows": 573399,
+      "over_cap_windows": 19123,
+      "over_cap_invocations": 869405954,
+      "rate_tertiles_jobs_per_hour": [
+        4.0,
+        20.0
+      ],
+      "duration_tertiles_ms": [
+        207.0,
+        1498.0
+      ],
+      "candidate_size_summary": {
+        "n": 1096200,
+        "min": 0.0,
+        "mean": 826.6289664294836,
+        "p50": 0.0,
+        "p95": 240.0,
+        "p99": 4933.0,
+        "max": 5749532.0
+      },
+      "candidate_fano_summary": {
+        "n": 1096200,
+        "min": 0.0,
+        "mean": 7.3598634696680945,
+        "p50": 0.0,
+        "p95": 4.0999999999999925,
+        "p99": 57.033333333333374,
+        "max": 164106.7979803315
+      }
+    },
+    {
+      "day": 3,
+      "candidate_windows": 1100352,
+      "eligible_windows": 505016,
+      "zero_windows": 576161,
+      "over_cap_windows": 19175,
+      "over_cap_invocations": 873744268,
+      "rate_tertiles_jobs_per_hour": [
+        4.0,
+        20.0
+      ],
+      "duration_tertiles_ms": [
+        205.0,
+        1525.0
+      ],
+      "candidate_size_summary": {
+        "n": 1100352,
+        "min": 0.0,
+        "mean": 827.3393641307509,
+        "p50": 0.0,
+        "p95": 240.0,
+        "p99": 5027.489999999991,
+        "max": 5446487.0
+      },
+      "candidate_fano_summary": {
+        "n": 1100352,
+        "min": 0.0,
+        "mean": 7.028350742152491,
+        "p50": 0.0,
+        "p95": 4.048256495776175,
+        "p99": 55.55842611428238,
+        "max": 125537.83000966856
+      }
+    },
+    {
+      "day": 4,
+      "candidate_windows": 1112136,
+      "eligible_windows": 506999,
+      "zero_windows": 585763,
+      "over_cap_windows": 19374,
+      "over_cap_invocations": 893609415,
+      "rate_tertiles_jobs_per_hour": [
+        4.0,
+        20.0
+      ],
+      "duration_tertiles_ms": [
+        209.0,
+        1528.0
+      ],
+      "candidate_size_summary": {
+        "n": 1112136,
+        "min": 0.0,
+        "mean": 837.1192408122747,
+        "p50": 0.0,
+        "p95": 240.0,
+        "p99": 5082.649999999907,
+        "max": 5586232.0
+      },
+      "candidate_fano_summary": {
+        "n": 1112136,
+        "min": 0.0,
+        "mean": 7.3251512959277045,
+        "p50": 0.0,
+        "p95": 4.038862800741643,
+        "p99": 57.033333333333466,
+        "max": 128038.15174957087
+      }
+    },
+    {
+      "day": 5,
+      "candidate_windows": 1090896,
+      "eligible_windows": 503786,
+      "zero_windows": 568023,
+      "over_cap_windows": 19087,
+      "over_cap_invocations": 867223548,
+      "rate_tertiles_jobs_per_hour": [
+        4.0,
+        20.0
+      ],
+      "duration_tertiles_ms": [
+        212.0,
+        1524.0
+      ],
+      "candidate_size_summary": {
+        "n": 1090896,
+        "min": 0.0,
+        "mean": 828.9091269928573,
+        "p50": 0.0,
+        "p95": 244.0,
+        "p99": 5263.250000000233,
+        "max": 5494233.0
+      },
+      "candidate_fano_summary": {
+        "n": 1090896,
+        "min": 0.0,
+        "mean": 7.381157289247254,
+        "p50": 0.0,
+        "p95": 4.0,
+        "p99": 57.0,
+        "max": 122948.05454884913
+      }
+    },
+    {
+      "day": 6,
+      "candidate_windows": 846912,
+      "eligible_windows": 446962,
+      "zero_windows": 383218,
+      "over_cap_windows": 16732,
+      "over_cap_invocations": 782458686,
+      "rate_tertiles_jobs_per_hour": [
+        5.0,
+        20.0
+      ],
+      "duration_tertiles_ms": [
+        208.0,
+        1541.0
+      ],
+      "candidate_size_summary": {
+        "n": 846912,
+        "min": 0.0,
+        "mean": 963.0105323811683,
+        "p50": 1.0,
+        "p95": 359.0,
+        "p99": 6311.890000000014,
+        "max": 5374907.0
+      },
+      "candidate_fano_summary": {
+        "n": 846912,
+        "min": 0.0,
+        "mean": 8.11100626093484,
+        "p50": 0.020797720797720777,
+        "p95": 4.0,
+        "p99": 61.982327825310136,
+        "max": 143976.35829482865
+      }
+    },
+    {
+      "day": 7,
+      "candidate_windows": 837456,
+      "eligible_windows": 442700,
+      "zero_windows": 378517,
+      "over_cap_windows": 16239,
+      "over_cap_invocations": 756850174,
+      "rate_tertiles_jobs_per_hour": [
+        5.0,
+        20.0
+      ],
+      "duration_tertiles_ms": [
+        209.0,
+        1549.0
+      ],
+      "candidate_size_summary": {
+        "n": 837456,
+        "min": 0.0,
+        "mean": 942.3319684855085,
+        "p50": 1.0,
+        "p95": 354.0,
+        "p99": 6034.449999999953,
+        "max": 5600645.0
+      },
+      "candidate_fano_summary": {
+        "n": 837456,
+        "min": 0.0,
+        "mean": 7.974905552207511,
+        "p50": 0.022222222222222223,
+        "p95": 3.933333333333344,
+        "p99": 59.47684852344652,
+        "max": 137274.12393643774
+      }
+    },
+    {
+      "day": 8,
+      "candidate_windows": 1098552,
+      "eligible_windows": 505367,
+      "zero_windows": 574761,
+      "over_cap_windows": 18424,
+      "over_cap_invocations": 808766070,
+      "rate_tertiles_jobs_per_hour": [
+        4.0,
+        20.0
+      ],
+      "duration_tertiles_ms": [
+        215.0,
+        1557.0
+      ],
+      "candidate_size_summary": {
+        "n": 1098552,
+        "min": 0.0,
+        "mean": 770.009200292749,
+        "p50": 0.0,
+        "p95": 240.0,
+        "p99": 4917.489999999991,
+        "max": 5542368.0
+      },
+      "candidate_fano_summary": {
+        "n": 1098552,
+        "min": 0.0,
+        "mean": 6.446882372354764,
+        "p50": 0.0,
+        "p95": 3.933333333333344,
+        "p99": 54.89999999999992,
+        "max": 108306.14172045901
+      }
+    },
+    {
+      "day": 9,
+      "candidate_windows": 1114488,
+      "eligible_windows": 512619,
+      "zero_windows": 583202,
+      "over_cap_windows": 18667,
+      "over_cap_invocations": 812307372,
+      "rate_tertiles_jobs_per_hour": [
+        4.0,
+        20.0
+      ],
+      "duration_tertiles_ms": [
+        218.0,
+        1558.0
+      ],
+      "candidate_size_summary": {
+        "n": 1114488,
+        "min": 0.0,
+        "mean": 762.3662094163418,
+        "p50": 0.0,
+        "p95": 240.0,
+        "p99": 5066.129999999888,
+        "max": 5539214.0
+      },
+      "candidate_fano_summary": {
+        "n": 1114488,
+        "min": 0.0,
+        "mean": 7.239787199119144,
+        "p50": 0.0,
+        "p95": 3.933333333333344,
+        "p99": 54.42612219089122,
+        "max": 197173.24965400854
+      }
+    },
+    {
+      "day": 10,
+      "candidate_windows": 1132200,
+      "eligible_windows": 516409,
+      "zero_windows": 596730,
+      "over_cap_windows": 19061,
+      "over_cap_invocations": 817973065,
+      "rate_tertiles_jobs_per_hour": [
+        4.0,
+        20.0
+      ],
+      "duration_tertiles_ms": [
+        214.0,
+        1551.0
+      ],
+      "candidate_size_summary": {
+        "n": 1132200,
+        "min": 0.0,
+        "mean": 755.721498851793,
+        "p50": 0.0,
+        "p95": 240.0,
+        "p99": 4889.0,
+        "max": 5674816.0
+      },
+      "candidate_fano_summary": {
+        "n": 1132200,
+        "min": 0.0,
+        "mean": 6.958374718666687,
+        "p50": 0.0,
+        "p95": 3.936824817108752,
+        "p99": 54.812564282778474,
+        "max": 121900.01350189873
+      }
+    },
+    {
+      "day": 11,
+      "candidate_windows": 1125024,
+      "eligible_windows": 514534,
+      "zero_windows": 591277,
+      "over_cap_windows": 19213,
+      "over_cap_invocations": 837409366,
+      "rate_tertiles_jobs_per_hour": [
+        4.0,
+        20.0
+      ],
+      "duration_tertiles_ms": [
+        215.0,
+        1567.0
+      ],
+      "candidate_size_summary": {
+        "n": 1125024,
+        "min": 0.0,
+        "mean": 777.6263484156782,
+        "p50": 0.0,
+        "p95": 240.0,
+        "p99": 5243.540000000037,
+        "max": 5632232.0
+      },
+      "candidate_fano_summary": {
+        "n": 1125024,
+        "min": 0.0,
+        "mean": 7.18435537216981,
+        "p50": 0.0,
+        "p95": 3.9839251984474497,
+        "p99": 55.04733151636801,
+        "max": 121607.1632407476
+      }
+    },
+    {
+      "day": 12,
+      "candidate_windows": 1104528,
+      "eligible_windows": 508295,
+      "zero_windows": 577411,
+      "over_cap_windows": 18822,
+      "over_cap_invocations": 837214788,
+      "rate_tertiles_jobs_per_hour": [
+        4.0,
+        20.0
+      ],
+      "duration_tertiles_ms": [
+        216.0,
+        1566.0
+      ],
+      "candidate_size_summary": {
+        "n": 1104528,
+        "min": 0.0,
+        "mean": 791.3130595150145,
+        "p50": 0.0,
+        "p95": 240.0,
+        "p99": 5283.729999999981,
+        "max": 5627232.0
+      },
+      "candidate_fano_summary": {
+        "n": 1104528,
+        "min": 0.0,
+        "mean": 7.000370359082028,
+        "p50": 0.0,
+        "p95": 3.933333333333339,
+        "p99": 54.89999999999992,
+        "max": 153185.16530115844
+      }
+    },
+    {
+      "day": 13,
+      "candidate_windows": 853056,
+      "eligible_windows": 449727,
+      "zero_windows": 386502,
+      "over_cap_windows": 16827,
+      "over_cap_invocations": 883714658,
+      "rate_tertiles_jobs_per_hour": [
+        5.0,
+        20.0
+      ],
+      "duration_tertiles_ms": [
+        207.0,
+        1562.0
+      ],
+      "candidate_size_summary": {
+        "n": 853056,
+        "min": 0.0,
+        "mean": 1074.370116381574,
+        "p50": 1.0,
+        "p95": 355.0,
+        "p99": 6387.899999999907,
+        "max": 7169951.0
+      },
+      "candidate_fano_summary": {
+        "n": 853056,
+        "min": 0.0,
+        "mean": 7.8471334476372645,
+        "p50": 0.017516525023607156,
+        "p95": 3.933333333333344,
+        "p99": 62.067839945291965,
+        "max": 122759.65625162353
+      }
+    },
+    {
+      "day": 14,
+      "candidate_windows": 849528,
+      "eligible_windows": 444515,
+      "zero_windows": 388758,
+      "over_cap_windows": 16255,
+      "over_cap_invocations": 892259206,
+      "rate_tertiles_jobs_per_hour": [
+        5.0,
+        20.0
+      ],
+      "duration_tertiles_ms": [
+        207.0,
+        1573.0
+      ],
+      "candidate_size_summary": {
+        "n": 849528,
+        "min": 0.0,
+        "mean": 1087.8752307163506,
+        "p50": 1.0,
+        "p95": 325.0,
+        "p99": 5971.459999999963,
+        "max": 8532858.0
+      },
+      "candidate_fano_summary": {
+        "n": 849528,
+        "min": 0.0,
+        "mean": 7.630768261234853,
+        "p50": 0.005478180129990719,
+        "p95": 3.8465370370370047,
+        "p99": 58.53204919852838,
+        "max": 127493.35967270042
+      }
+    }
+  ],
+  "minute_count_histogram": {
+    "edges": [
+      0.0,
+      1.0,
+      2.0,
+      5.0,
+      10.0,
+      20.0,
+      50.0,
+      100.0,
+      200.0,
+      500.0,
+      1000.0,
+      2000.0,
+      5000.0,
+      10000.0,
+      100000.0,
+      1000000.0,
+      9007199254740992.0
+    ],
+    "counts": [
+      750408358,
+      75545577,
+      25076495,
+      12148767,
+      7961651,
+      6605541,
+      4915174,
+      2996345,
+      2313455,
+      1138808,
+      758655,
+      482790,
+      148372,
+      201704,
+      3108,
+      0
+    ]
+  },
+  "schema_version": 2,
+  "high_load_days": [
+    {
+      "day": 1,
+      "valid_hour_windows": 1084800,
+      "positive_hour_windows": 514196,
+      "usable_invocations": 895662175,
+      "over_cap_windows": 18613,
+      "over_cap_invocations": 859530247,
+      "new_groups": 16,
+      "over_cap_size_summary": {
+        "n": 18613,
+        "min": 2001.0,
+        "mean": 46179.02793746306,
+        "p50": 6131.0,
+        "p95": 128021.99999999937,
+        "p99": 795851.5600000023,
+        "max": 5659057.0
+      }
+    },
+    {
+      "day": 2,
+      "valid_hour_windows": 1096200,
+      "positive_hour_windows": 522801,
+      "usable_invocations": 906150673,
+      "over_cap_windows": 19123,
+      "over_cap_invocations": 869405954,
+      "new_groups": 16,
+      "over_cap_size_summary": {
+        "n": 19123,
+        "min": 2001.0,
+        "mean": 45463.889243319565,
+        "p50": 6174.0,
+        "p95": 120712.8999999998,
+        "p99": 816726.5599999991,
+        "max": 5749532.0
+      }
+    },
+    {
+      "day": 3,
+      "valid_hour_windows": 1100352,
+      "positive_hour_windows": 524191,
+      "usable_invocations": 910364524,
+      "over_cap_windows": 19175,
+      "over_cap_invocations": 873744268,
+      "new_groups": 16,
+      "over_cap_size_summary": {
+        "n": 19175,
+        "min": 2001.0,
+        "mean": 45566.84578878748,
+        "p50": 6256.0,
+        "p95": 118443.7999999999,
+        "p99": 748377.1599999993,
+        "max": 5446487.0
+      }
+    },
+    {
+      "day": 4,
+      "valid_hour_windows": 1112136,
+      "positive_hour_windows": 526373,
+      "usable_invocations": 930990444,
+      "over_cap_windows": 19374,
+      "over_cap_invocations": 893609415,
+      "new_groups": 16,
+      "over_cap_size_summary": {
+        "n": 19374,
+        "min": 2001.0,
+        "mean": 46124.15685970889,
+        "p50": 6358.0,
+        "p95": 128038.39999999973,
+        "p99": 807212.9700000003,
+        "max": 5586232.0
+      }
+    },
+    {
+      "day": 5,
+      "valid_hour_windows": 1090896,
+      "positive_hour_windows": 522873,
+      "usable_invocations": 904253651,
+      "over_cap_windows": 19087,
+      "over_cap_invocations": 867223548,
+      "new_groups": 16,
+      "over_cap_size_summary": {
+        "n": 19087,
+        "min": 2001.0,
+        "mean": 45435.29878975219,
+        "p50": 6453.0,
+        "p95": 120648.10000000015,
+        "p99": 805388.3999999978,
+        "max": 5494233.0
+      }
+    },
+    {
+      "day": 6,
+      "valid_hour_windows": 846912,
+      "positive_hour_windows": 463694,
+      "usable_invocations": 815585176,
+      "over_cap_windows": 16732,
+      "over_cap_invocations": 782458686,
+      "new_groups": 16,
+      "over_cap_size_summary": {
+        "n": 16732,
+        "min": 2001.0,
+        "mean": 46764.205474539805,
+        "p50": 6458.0,
+        "p95": 117071.19999999987,
+        "p99": 669651.8699999994,
+        "max": 5374907.0
+      }
+    },
+    {
+      "day": 7,
+      "valid_hour_windows": 837456,
+      "positive_hour_windows": 458939,
+      "usable_invocations": 789161561,
+      "over_cap_windows": 16239,
+      "over_cap_invocations": 756850174,
+      "new_groups": 16,
+      "over_cap_size_summary": {
+        "n": 16239,
+        "min": 2001.0,
+        "mean": 46606.944639448244,
+        "p50": 6354.0,
+        "p95": 122980.59999999996,
+        "p99": 670681.9799999954,
+        "max": 5600645.0
+      }
+    },
+    {
+      "day": 8,
+      "valid_hour_windows": 1098552,
+      "positive_hour_windows": 523791,
+      "usable_invocations": 845895147,
+      "over_cap_windows": 18424,
+      "over_cap_invocations": 808766070,
+      "new_groups": 16,
+      "over_cap_size_summary": {
+        "n": 18424,
+        "min": 2001.0,
+        "mean": 43897.42021276596,
+        "p50": 6552.5,
+        "p95": 118604.64999999973,
+        "p99": 693493.6400000023,
+        "max": 5542368.0
+      }
+    },
+    {
+      "day": 9,
+      "valid_hour_windows": 1114488,
+      "positive_hour_windows": 531286,
+      "usable_invocations": 849647992,
+      "over_cap_windows": 18667,
+      "over_cap_invocations": 812307372,
+      "new_groups": 16,
+      "over_cap_size_summary": {
+        "n": 18667,
+        "min": 2001.0,
+        "mean": 43515.68929126266,
+        "p50": 6690.0,
+        "p95": 112976.20000000001,
+        "p99": 685853.2400000001,
+        "max": 5539214.0
+      }
+    },
+    {
+      "day": 10,
+      "valid_hour_windows": 1132200,
+      "positive_hour_windows": 535470,
+      "usable_invocations": 855627881,
+      "over_cap_windows": 19061,
+      "over_cap_invocations": 817973065,
+      "new_groups": 16,
+      "over_cap_size_summary": {
+        "n": 19061,
+        "min": 2001.0,
+        "mean": 42913.43922144693,
+        "p50": 6498.0,
+        "p95": 113056.0,
+        "p99": 683001.8000000047,
+        "max": 5674816.0
+      }
+    },
+    {
+      "day": 11,
+      "valid_hour_windows": 1125024,
+      "positive_hour_windows": 533747,
+      "usable_invocations": 874848305,
+      "over_cap_windows": 19213,
+      "over_cap_invocations": 837409366,
+      "new_groups": 16,
+      "over_cap_size_summary": {
+        "n": 19213,
+        "min": 2001.0,
+        "mean": 43585.56008952272,
+        "p50": 6792.0,
+        "p95": 112038.59999999937,
+        "p99": 695317.9600000003,
+        "max": 5632232.0
+      }
+    },
+    {
+      "day": 12,
+      "valid_hour_windows": 1104528,
+      "positive_hour_windows": 527117,
+      "usable_invocations": 874027431,
+      "over_cap_windows": 18822,
+      "over_cap_invocations": 837214788,
+      "new_groups": 16,
+      "over_cap_size_summary": {
+        "n": 18822,
+        "min": 2001.0,
+        "mean": 44480.6496652853,
+        "p50": 6808.0,
+        "p95": 119520.2000000001,
+        "p99": 712553.1600000022,
+        "max": 5627232.0
+      }
+    },
+    {
+      "day": 13,
+      "valid_hour_windows": 853056,
+      "positive_hour_windows": 466554,
+      "usable_invocations": 916497874,
+      "over_cap_windows": 16827,
+      "over_cap_invocations": 883714658,
+      "new_groups": 16,
+      "over_cap_size_summary": {
+        "n": 16827,
+        "min": 2001.0,
+        "mean": 52517.659594699,
+        "p50": 6536.0,
+        "p95": 134432.09999999954,
+        "p99": 736236.7600000007,
+        "max": 7169951.0
+      }
+    },
+    {
+      "day": 14,
+      "valid_hour_windows": 849528,
+      "positive_hour_windows": 460770,
+      "usable_invocations": 924180469,
+      "over_cap_windows": 16255,
+      "over_cap_invocations": 892259206,
+      "new_groups": 16,
+      "over_cap_size_summary": {
+        "n": 16255,
+        "min": 2001.0,
+        "mean": 54891.369178714245,
+        "p50": 6238.0,
+        "p95": 138602.69999999995,
+        "p99": 716392.3399999999,
+        "max": 8532858.0
+      }
+    }
+  ],
+  "retained_control_count": 286,
+  "cap_only_excluded_windows_after": 0,
+  "cap_only_excluded_invocations_after": 0,
+  "protected_observation_sha256": {
+    "cleaned/azure_cleaned.csv": "612265d2df23cfe15da3d71a780a79ea7e0bba6fe6bc79e0ee531b3c59c91e48",
+    "cleaned/azure_durations_cleaned.csv": "3340fc41a31ba272afe904accbe55eb6473b05d89ef88b77d5a6d47a3e9c4420"
+  }
+}

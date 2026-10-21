@@ -1,0 +1,6 @@
+# Original downloads and generated data are distributed in the handoff ZIP.
+raw/
+extracted/
+cleaned/
+__pycache__/
+*.pyc

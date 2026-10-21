@@ -1,0 +1,206 @@
+{
+  "archive": "azurefunctions_dataset2019_azurefunctions-dataset2019.tar.xz",
+  "archive_sha256": "aff8b3ca7240a41a109e4ee598e0a96e45fcb92e7b8395ac19cb3748cd260d89",
+  "files": [
+    {
+      "path": "app_memory_percentiles.anon.d01.csv",
+      "bytes": 2949996,
+      "sha256": "3444e012b40889489daaf1f8110b75427dd8165158df08afa743f3837f92d50e"
+    },
+    {
+      "path": "app_memory_percentiles.anon.d02.csv",
+      "bytes": 2986686,
+      "sha256": "810d3bb82c16e3247eaa0302cbd6be66fc391dc3f22c8e2fa10f37c28db5a646"
+    },
+    {
+      "path": "app_memory_percentiles.anon.d03.csv",
+      "bytes": 3007555,
+      "sha256": "55593388dba74fd3d548a579cea7bbb3181a0dccf250a7211d91cb94428df8b4"
+    },
+    {
+      "path": "app_memory_percentiles.anon.d04.csv",
+      "bytes": 3025755,
+      "sha256": "3ddcfd0ffe3a816598c2c880ad03985c3512ab3a5e485f5d4e10ca802a3a35d1"
+    },
+    {
+      "path": "app_memory_percentiles.anon.d05.csv",
+      "bytes": 3023976,
+      "sha256": "180f865d6c09090bd706f5a862ab01503c3e8d146f31fd3713596cf9806f2ba3"
+    },
+    {
+      "path": "app_memory_percentiles.anon.d06.csv",
+      "bytes": 2538596,
+      "sha256": "afe4f24a034466039057a53c0762cf732eec092f390893ac5f5ccf2446de0050"
+    },
+    {
+      "path": "app_memory_percentiles.anon.d07.csv",
+      "bytes": 2549430,
+      "sha256": "91149d7f453d5a5b06c1680416c3d45e3403dc3504c2ee4c5eb938a3ce9c1d9f"
+    },
+    {
+      "path": "app_memory_percentiles.anon.d08.csv",
+      "bytes": 3012783,
+      "sha256": "3284550e0d764a1e0d1693263fef3281ba5870f03077b7525564dbb442b4a7a0"
+    },
+    {
+      "path": "app_memory_percentiles.anon.d09.csv",
+      "bytes": 3025669,
+      "sha256": "501606c8a261480868a35e514387e015616d0994d4474d3f218537dfe7778458"
+    },
+    {
+      "path": "app_memory_percentiles.anon.d10.csv",
+      "bytes": 3085594,
+      "sha256": "ec24578ca7279d41ac403170a92b6eba69d5c776b32785644fa1c07f0baf694b"
+    },
+    {
+      "path": "app_memory_percentiles.anon.d11.csv",
+      "bytes": 3061341,
+      "sha256": "7d7fef81c085f1725c6a8a8346c657d94d66b1b87d0440b23eb21ef824b78e78"
+    },
+    {
+      "path": "app_memory_percentiles.anon.d12.csv",
+      "bytes": 3053003,
+      "sha256": "a9cec4a3f00eb5db664d5be339c309f927304a17f0898eb1db4d9cee70c9e7df"
+    },
+    {
+      "path": "function_durations_percentiles.anon.d01.csv",
+      "bytes": 12156002,
+      "sha256": "6bb4e9a918dff8bf021158cbb9470107b47f0a2003412f789d03cb23dce3a5d2"
+    },
+    {
+      "path": "function_durations_percentiles.anon.d02.csv",
+      "bytes": 12249024,
+      "sha256": "4986df9ca6284d21c79767ebabbf2ce7851cf26bfbb6bedbd39e44e5fa127af6"
+    },
+    {
+      "path": "function_durations_percentiles.anon.d03.csv",
+      "bytes": 12303513,
+      "sha256": "8c197c00304cebbb0e8c4392877fa84c990619c07e33369d25671d6e426cba83"
+    },
+    {
+      "path": "function_durations_percentiles.anon.d04.csv",
+      "bytes": 12449184,
+      "sha256": "ff54d6a15b78fcb19e790effc0a379b064058433f27d4e66177a360993d1c927"
+    },
+    {
+      "path": "function_durations_percentiles.anon.d05.csv",
+      "bytes": 12210188,
+      "sha256": "63fee5d1c8bf208d8d4719aa683ba495b3a10e4bf578652ba38d1e385129053b"
+    },
+    {
+      "path": "function_durations_percentiles.anon.d06.csv",
+      "bytes": 9607668,
+      "sha256": "36959f76b9e12f2d130563eeaf65d4beda6f6f71c4fc9704a9070da21e84df0a"
+    },
+    {
+      "path": "function_durations_percentiles.anon.d07.csv",
+      "bytes": 9490215,
+      "sha256": "cbb94daec594584c66ae4946fa939a141f7fd484c01a57369e1d37ecdbd11065"
+    },
+    {
+      "path": "function_durations_percentiles.anon.d08.csv",
+      "bytes": 12309329,
+      "sha256": "1aafbf4ad82012e80394e1b66f1ebeb1d8a7d7ab013aed5d7053572f79e71110"
+    },
+    {
+      "path": "function_durations_percentiles.anon.d09.csv",
+      "bytes": 12467266,
+      "sha256": "840feb19913d0c508df0304a24f2ee6b8560e0c0a064d88c459a3a8bd4a6f5ba"
+    },
+    {
+      "path": "function_durations_percentiles.anon.d10.csv",
+      "bytes": 12643303,
+      "sha256": "97ab377fbd70a10ff112a8a5f661e9b4c6e924db5ca6f17be8038b9bc9f9376b"
+    },
+    {
+      "path": "function_durations_percentiles.anon.d11.csv",
+      "bytes": 12591760,
+      "sha256": "9ab815f53ddd3bafdefff4c7fedf6350998bcf34bbf4067b901620bac14bbaaa"
+    },
+    {
+      "path": "function_durations_percentiles.anon.d12.csv",
+      "bytes": 12347713,
+      "sha256": "3e6d83960bc3e673419c9e5322bd14382fdd168c8e06250ba798eca7bb7913b8"
+    },
+    {
+      "path": "function_durations_percentiles.anon.d13.csv",
+      "bytes": 9688761,
+      "sha256": "05bccb777c3bd805be6276ddf8ce8877408867030bd178ae5eaa9dc740af58c9"
+    },
+    {
+      "path": "function_durations_percentiles.anon.d14.csv",
+      "bytes": 9631362,
+      "sha256": "16bd04ab2314cf320ee59e265f734b199582f01cb7faf54f291b9dad93152666"
+    },
+    {
+      "path": "invocations_per_function_md.anon.d01.csv",
+      "bytes": 145688809,
+      "sha256": "f9613ae91224d87b201ce8c7c618e80c94d6bf041992effb34c5aa710b3c20fa"
+    },
+    {
+      "path": "invocations_per_function_md.anon.d02.csv",
+      "bytes": 147225211,
+      "sha256": "12fbe81e4378d844f80a8f79f859f6a67ef7d49d43948e15817ddc0412509f93"
+    },
+    {
+      "path": "invocations_per_function_md.anon.d03.csv",
+      "bytes": 147847889,
+      "sha256": "e42aee023227e897240af550937f4c73b3d57500f2f2b601fdcf92d4b605dbf2"
+    },
+    {
+      "path": "invocations_per_function_md.anon.d04.csv",
+      "bytes": 149270715,
+      "sha256": "17e8e7f58e3b410d28c2ce148462ff6212e9e9bced6765723fb519af5d2b183d"
+    },
+    {
+      "path": "invocations_per_function_md.anon.d05.csv",
+      "bytes": 146543294,
+      "sha256": "0ca643c3e0377a7077163568650bba0c95cf4402be7db19159b825774694e4ff"
+    },
+    {
+      "path": "invocations_per_function_md.anon.d06.csv",
+      "bytes": 114734908,
+      "sha256": "87a11cd0d01ddeb0463be0683338b4fc6b28e78ba9eb75b524a5ea4f57c44139"
+    },
+    {
+      "path": "invocations_per_function_md.anon.d07.csv",
+      "bytes": 113443113,
+      "sha256": "80cb06531495741d762ac91642c996b613ad6de6c839b2f46482c36bbf882a68"
+    },
+    {
+      "path": "invocations_per_function_md.anon.d08.csv",
+      "bytes": 147549135,
+      "sha256": "26be533cef1c853ac2af714982929891984b26737287d185329d1875f16040d3"
+    },
+    {
+      "path": "invocations_per_function_md.anon.d09.csv",
+      "bytes": 149626915,
+      "sha256": "14cc620359b78313366e9d6a7d9705b43297bec54b9b50977815ff31c89ae143"
+    },
+    {
+      "path": "invocations_per_function_md.anon.d10.csv",
+      "bytes": 151944388,
+      "sha256": "e8229de8d550f5c79a9b5ff80177619ead0178d836e2b48080a19f3972741b6c"
+    },
+    {
+      "path": "invocations_per_function_md.anon.d11.csv",
+      "bytes": 151036615,
+      "sha256": "0e24d2dab9a6118fffd7e0fe30cc5f6e8ec19d2cc24f14fd282c4c36c7063b80"
+    },
+    {
+      "path": "invocations_per_function_md.anon.d12.csv",
+      "bytes": 148152217,
+      "sha256": "7e1377e71b580cbc2e38fac1d3f32d4a8bb01cf971d92e32992f4e28447cfb6f"
+    },
+    {
+      "path": "invocations_per_function_md.anon.d13.csv",
+      "bytes": 115495030,
+      "sha256": "395251affeba32baf8e6008e9fe5fd4254019f73fe9fe52235c4e69fe8effc4a"
+    },
+    {
+      "path": "invocations_per_function_md.anon.d14.csv",
+      "bytes": 114827241,
+      "sha256": "8b9b74861378cf5a41b3a05febec27f9fa30e567c813945cf36a94f1329f3901"
+    }
+  ]
+}

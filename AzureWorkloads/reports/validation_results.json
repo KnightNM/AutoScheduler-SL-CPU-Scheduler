@@ -1,0 +1,38 @@
+{
+  "passed": true,
+  "cleaned_invocation_rows": 618545,
+  "cleaned_duration_rows": 662927,
+  "missing_invocation_cells": 0,
+  "zero_invocation_intervals": 750408358,
+  "traceable_selected_source_rows": 580,
+  "scheduler_jobs": 520408,
+  "workloads": 510,
+  "minimum_workload_size": 1,
+  "maximum_workload_size": 2000,
+  "data_sha256": {
+    "azure_cleaned.csv": "612265d2df23cfe15da3d71a780a79ea7e0bba6fe6bc79e0ee531b3c59c91e48",
+    "azure_durations_cleaned.csv": "3340fc41a31ba272afe904accbe55eb6473b05d89ef88b77d5a6d47a3e9c4420",
+    "azure_scheduler_jobs.csv": "be2c0737d1fd36d412dfcaff96db8a71650dc73c2d40dca1737ff50c2193693a",
+    "evaluation_workloads.json": "f6d4cc183e046f51275634716de305a8b4d950c158bbf5df9371fe63d2f804f4"
+  },
+  "checks": [
+    "schemas",
+    "missing_values",
+    "duplicate_keys",
+    "invalid_durations",
+    "row_accounting",
+    "source_order",
+    "minute_counts",
+    "time_units",
+    "source_to_output_traceability",
+    "seeded_reproducibility",
+    "workload_sizes",
+    "Process_construction",
+    "no_invented_io",
+    "bounded_stratified_sampling",
+    "contiguous_snapshot_exposure",
+    "retained_baseline_controls",
+    "immutable_cleaned_observations"
+  ],
+  "package_hashes_checked": 0
+}

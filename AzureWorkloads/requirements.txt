@@ -1,0 +1,4 @@
+# Existing repository dependencies provide NumPy and Matplotlib.
+# Pandas adds bounded-memory CSV parsing and explicit missing-value handling.
+-r ../requirements.txt
+pandas>=2.0,<4

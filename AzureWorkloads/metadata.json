@@ -1,0 +1,317 @@
+{
+  "schema_version": 2,
+  "dataset": "Microsoft Azure Functions 2019",
+  "documentation": "https://github.com/Azure/AzurePublicDataset/blob/master/AzureFunctionsDataset2019.md",
+  "license": "CC-BY (upstream attribution requirement; see README)",
+  "attribution": "Shahrad et al., Serverless in the Wild, USENIX ATC 2020",
+  "source_archive": "azurefunctions_dataset2019_azurefunctions-dataset2019.tar.xz",
+  "source_archive_sha256": "aff8b3ca7240a41a109e4ee598e0a96e45fcb92e7b8395ac19cb3748cd260d89",
+  "repository_commit": "b0058f1728f2670cfa7226ef49ec336eae4f57a6",
+  "python": "3.12.3",
+  "dependencies": {
+    "numpy": "2.5.4",
+    "pandas": "3.0.6",
+    "matplotlib": "3.11.2",
+    "scikit-learn": "1.9.1"
+  },
+  "units": {
+    "arrival_time": "integer milliseconds relative to workload absolute_start_ms (hour start or local snapshot start)",
+    "absolute_arrival_time": "integer milliseconds since start of source day 1",
+    "burst_time": "ceil(positive daily wall-clock mean in ms), proxy only",
+    "source_minute": "original one-based column 1..1440"
+  },
+  "seed": 42,
+  "max_jobs_per_workload": 2000,
+  "window_minutes": 60,
+  "job_count": 520408,
+  "workload_count": 510,
+  "direct_columns": [
+    "HashOwner",
+    "HashApp",
+    "HashFunction",
+    "Trigger",
+    "day (filename)",
+    "source_minute (column name)",
+    "minute invocation counts",
+    "Average",
+    "Count",
+    "Minimum",
+    "Maximum",
+    "percentile_Average_*"
+  ],
+  "reconstructed_columns": [
+    "pid",
+    "arrival_time",
+    "absolute_arrival_time",
+    "burst_time",
+    "priority=0",
+    "invocation_ordinal",
+    "workload grouping"
+  ],
+  "bookkeeping_columns": [
+    "source_file",
+    "source_row",
+    "duration_row",
+    "match_status",
+    "duration_status",
+    "invocation_status"
+  ],
+  "limitations": [
+    "Wall-clock duration is not measured CPU demand",
+    "No per-invocation latency or arrival timestamps",
+    "No CPU/I/O phase information",
+    "No actual process priorities",
+    "No cold-start timing",
+    "Invocation bins are post-execution logs",
+    "Hourly samples attenuate absolute arrival rates; local snapshots assume uniform within-minute arrivals",
+    "Selected groups are not population-weighted; source windows can overlap across groups",
+    "Percentiles of interval averages are not sampled as per-invocation percentiles"
+  ],
+  "sampling_cohorts": [
+    "retained_control",
+    "high_load_hour_sample",
+    "high_load_mixed_hour_sample",
+    "local_rate_snapshot"
+  ],
+  "sampling_details": "Original counts, per-cell fractions/ordinals and snapshot exposures are stored per workload/source",
+  "rounding_analysis": {
+    "tick_ms": 1,
+    "positive_published_means": 651505,
+    "zero_published_means": 11417,
+    "fractional_positive_means": 0,
+    "absolute_error_ms": {
+      "n": 651505,
+      "min": 0.0,
+      "mean": 0.0,
+      "p50": 0.0,
+      "p95": 0.0,
+      "p99": 0.0,
+      "max": 0.0
+    },
+    "relative_error_percent": {
+      "n": 651505,
+      "min": 0.0,
+      "mean": 0.0,
+      "p50": 0.0,
+      "p95": 0.0,
+      "p99": 0.0,
+      "max": 0.0
+    },
+    "short_duration_bins": [
+      {
+        "label": "0 < mean <= 1 ms",
+        "rows": 3594,
+        "absolute_error_ms": {
+          "n": 3594,
+          "min": 0.0,
+          "mean": 0.0,
+          "p50": 0.0,
+          "p95": 0.0,
+          "p99": 0.0,
+          "max": 0.0
+        },
+        "relative_error_percent": {
+          "n": 3594,
+          "min": 0.0,
+          "mean": 0.0,
+          "p50": 0.0,
+          "p95": 0.0,
+          "p99": 0.0,
+          "max": 0.0
+        }
+      },
+      {
+        "label": "1 < mean <= 4 ms",
+        "rows": 7020,
+        "absolute_error_ms": {
+          "n": 7020,
+          "min": 0.0,
+          "mean": 0.0,
+          "p50": 0.0,
+          "p95": 0.0,
+          "p99": 0.0,
+          "max": 0.0
+        },
+        "relative_error_percent": {
+          "n": 7020,
+          "min": 0.0,
+          "mean": 0.0,
+          "p50": 0.0,
+          "p95": 0.0,
+          "p99": 0.0,
+          "max": 0.0
+        }
+      },
+      {
+        "label": "4 < mean <= 10 ms",
+        "rows": 11990,
+        "absolute_error_ms": {
+          "n": 11990,
+          "min": 0.0,
+          "mean": 0.0,
+          "p50": 0.0,
+          "p95": 0.0,
+          "p99": 0.0,
+          "max": 0.0
+        },
+        "relative_error_percent": {
+          "n": 11990,
+          "min": 0.0,
+          "mean": 0.0,
+          "p50": 0.0,
+          "p95": 0.0,
+          "p99": 0.0,
+          "max": 0.0
+        }
+      }
+    ],
+    "hypothetical_fractional_examples": [
+      {
+        "mean_ms": 0.1,
+        "burst_ticks": 1,
+        "relative_error_percent": 900.0
+      },
+      {
+        "mean_ms": 0.5,
+        "burst_ticks": 1,
+        "relative_error_percent": 100.0
+      },
+      {
+        "mean_ms": 1.2,
+        "burst_ticks": 2,
+        "relative_error_percent": 66.66666666666667
+      },
+      {
+        "mean_ms": 2.25,
+        "burst_ticks": 3,
+        "relative_error_percent": 33.333333333333336
+      }
+    ],
+    "selected_job_absolute_error_ms": {
+      "n": 520408,
+      "min": 0.0,
+      "mean": 0.0,
+      "p50": 0.0,
+      "p95": 0.0,
+      "p99": 0.0,
+      "max": 0.0
+    },
+    "selected_job_relative_error_percent": {
+      "n": 520408,
+      "min": 0.0,
+      "mean": 0.0,
+      "p50": 0.0,
+      "p95": 0.0,
+      "p99": 0.0,
+      "max": 0.0
+    }
+  },
+  "comparison": {
+    "total_recorded_invocations": 12495810846,
+    "old_cap_ineligible_hours": 255612,
+    "old_cap_ineligible_positive_hour_percent": 3.5941945515356024,
+    "old_cap_ineligible_invocations": 11792466817,
+    "old_cap_ineligible_invocation_percent": 94.37136142929737,
+    "after_cap_only_ineligible_invocations": 0,
+    "before_unique_sampled_invocation_percent": 0.0005765692269826793,
+    "after_unique_sampled_invocation_percent": 0.004161450636606411,
+    "before_unsampled_invocation_percent": 99.99942343077302,
+    "after_unsampled_invocation_percent": 99.9958385493634,
+    "before_selected_context_invocation_percent": 0.0005765692269826793,
+    "after_selected_context_invocation_percent": 2.5119986199253326,
+    "note": "Cap eligibility, selected source-hour context volume, and actual sampled occurrences are distinct. No claim of 100% traffic coverage."
+  },
+  "protected_observation_sha256": {
+    "cleaned/azure_cleaned.csv": "612265d2df23cfe15da3d71a780a79ea7e0bba6fe6bc79e0ee531b3c59c91e48",
+    "cleaned/azure_durations_cleaned.csv": "3340fc41a31ba272afe904accbe55eb6473b05d89ef88b77d5a6d47a3e9c4420"
+  },
+  "file_sha256": {
+    ".gitignore": "8a67608e1a0cf5ea29e3d940a2e53e317e8d15d417a03cf5f4a3f53318a9c865",
+    "README.md": "cc30027568ccc27de1dd8c86ad102b70be0d9d6dabed867b5b78c63e03777d03",
+    "cleaned/azure_cleaned.csv": "612265d2df23cfe15da3d71a780a79ea7e0bba6fe6bc79e0ee531b3c59c91e48",
+    "cleaned/azure_durations_cleaned.csv": "3340fc41a31ba272afe904accbe55eb6473b05d89ef88b77d5a6d47a3e9c4420",
+    "cleaned/azure_scheduler_jobs.csv": "be2c0737d1fd36d412dfcaff96db8a71650dc73c2d40dca1737ff50c2193693a",
+    "cleaned/evaluation_workloads.json": "f6d4cc183e046f51275634716de305a8b4d950c158bbf5df9371fe63d2f804f4",
+    "reports/baseline/azure_scheduler_jobs.csv": "2379706a9e1473290a0a22eb6906f8e0f4f8f7482edd391e4b2e331f36917daa",
+    "reports/baseline/descriptive_statistics.json": "17c65c1df7b91db04e9c8f6474e6d5d0b5b95bb606a10ef624dd48d4b8fbad7d",
+    "reports/baseline/evaluation_workloads.json": "675d09b247b0ff07a40a8071a54a1f8087bcad642d2a62f194484843bbd31138",
+    "reports/baseline/metadata.json": "f17c0f2c4f637ef60d6a737d8d052b77b58fb90c2d29d48e1d472c45fa14221d",
+    "reports/baseline/protected_inputs.json": "6e6df64dd58ea7643ce88bcb5724654fda831dcf59a834831299bbf764c244ad",
+    "reports/baseline/selection_summary.json": "d554d6753d62d66910da1c4063262d56a592583a0839fa409e259271f54d840c",
+    "reports/baseline/validation_results.json": "e280b47be27bf9da8ac181d4cc3fff507473447701569e619ca497610ca90117",
+    "reports/baseline/workload_manifest.csv": "8862e55c2e575cff30a995f80ebbc18830c845648a75fb453ff369742dbf4e3e",
+    "reports/before_after_comparison.json": "432ee2f1ec97d7ce847705ee971a8ae7dd77349b5bd03638b9904ce4b733dcf8",
+    "reports/cleaning_audit.csv": "d8b7225b08e895edb5057e084d0a81cff060ed564c90da4560e31e6bfe5c618b",
+    "reports/cleaning_summary.json": "ebedb2af2b703b12d92231f2eaea0c72d8913c49f49ebc7c86487eadd17503ae",
+    "reports/data_quality_report.md": "32d1f98ec240767ac4c0afc95166f999ba9cb9afa42c5f2200da25b8285bbc9d",
+    "reports/descriptive_statistics.json": "8ef11898ed439cf31b4ce48395947c36a5217cc965d6bedad10d7abc578a5299",
+    "reports/extraction_manifest.json": "4e3014a79edd41a3ae8a3de1ddff07281890f016692bdeb687db67dadffe02ef",
+    "reports/inspection.json": "7d0d3ea4d83b8e6a69006dd089bfba33ecf5f114a5901117d727871471e3959b",
+    "reports/plots/arrival_rate_distribution.png": "8ea61b1dd0107ad148e853fa0c4f4ff710c937c1dfd8651aeb8fcd2cdc60ab4e",
+    "reports/plots/before_after_distributions.png": "68f4eb9e8d1789883ea08b39976d8952a557088ad3f88bfc0e2c6d87e1586931",
+    "reports/plots/burstiness.png": "30622e46151ea84873cc99b86a8038f3ec1e708d2559451456db21f10ce55854",
+    "reports/plots/daily_variation.png": "78ed3a9ce4fca84a3cf10683d26f78143c4b31d80b49dcea724d468be1f0d754",
+    "reports/plots/execution_duration_distribution.png": "ef23f78bf750ad831852314970dd7b77d4cf39ec5fd20e1a6cdd6fc1856a529f",
+    "reports/plots/rounding_distortion.png": "5d2109547fa57b534b24784de728b943aaab34ce42bb973440959ffcb32ecc55",
+    "reports/plots/sampling_fractions.png": "7e33a3c8e7ab66af7f16bb41a1edac4b0f077033173007efc18e825fdf622237",
+    "reports/plots/selected_bursty_windows.png": "87ab6cd4374d63fd3b1330c2ac1ebb52443130ae3813ba74ffb2d3865f358e70",
+    "reports/plots/snapshot_rate_fidelity.png": "94ea193144db531e388cb52078fd4beedd939d3d33e8f0653398da8b400595d5",
+    "reports/plots/temporal_variation.png": "e2e3781ee53c21e2f94155d946f3df4fcee8c9020f82fe1e5df257cfbd3a006c",
+    "reports/plots/workload_size_distribution.png": "d5d05e76cb70570c2835b995eae5bc36526293136f06dae29c8ac8f7a78752fb",
+    "reports/rounding_analysis.json": "1bdff20fafb625fea5fdd5566d65c41b8b155a1b2e811a019e3e2aac8950a786",
+    "reports/selection_summary.json": "372f30a44c85604e925aa1522fc5a6beb4bc2493255244f71c27873b0e713437",
+    "reports/validation_results.json": "db6bf416996642cbd1724fc94baf9b14307f93e6c4bd5dba020b8bce13dbbd74",
+    "reports/workload_manifest.csv": "c28cdd46051601bdcee58a38950e2a92ee3ee7346f7ca56abab1fd2bc1d2d609",
+    "reports/workload_statistics.md": "bf29525a75764b1329c85c8e1464879d74624ab705bd46b143a18741b4cc6bd5",
+    "requirements.lock": "d3832a7767387e484e6bbee9f3aa9f433905155fb03ae3faefafb95c775748f9",
+    "requirements.txt": "a6e8df6929a6aa356eec2b52a0bf8624376b1ce9deca1fad5d3492f8b4125909",
+    "scripts/clean_azure.py": "771067b27f9eae24e62595b07729aaacab23e4bae795edcd4cb8a0bf4fa1037e",
+    "scripts/common.py": "d8e8feebe411503618e66bbd509ac0f1f496ac2f107ed73b9c0b95f16af42bb3",
+    "scripts/convert_workloads.py": "6522dd364dbd9808001fdc6f978dc73d9aac6b004dc166294a48979af0d84f78",
+    "scripts/extract_azure.py": "c71009f914f9f1d609a506bc4043d6cf258802c8e0c69836dcb9e2c4eeba66d8",
+    "scripts/package_azure.py": "739eeec1d6ac347ba2540db5181800622b4bce3e324c02eda4c85d0d7ecccb19",
+    "scripts/refine_workloads.py": "27fb960e1c04d60b48871626f41c625ade49d95963fb86af1d2598d3b0375f12",
+    "scripts/report_azure.py": "db54306046f5d0a7ccf846612688d74a12adfe02bdd1d6b75ea0cb80bdf1b2c1",
+    "scripts/validate_azure.py": "63cc5ecf8741adb300d13ad3af1658e1626f895fdb7cd411c0bcee34285c8960",
+    "tests/test_pipeline.py": "0f0580fd9e3797a75e46fbc3ad6cb0a6df69f5780f9071468763cfe14cabf380",
+    "tests/test_refinement.py": "b7e5219495d3fc802ef0da4ed32f771a3bd806226684c07b8bd74d008accd5be"
+  },
+  "validation": {
+    "passed": true,
+    "cleaned_invocation_rows": 618545,
+    "cleaned_duration_rows": 662927,
+    "missing_invocation_cells": 0,
+    "zero_invocation_intervals": 750408358,
+    "traceable_selected_source_rows": 580,
+    "scheduler_jobs": 520408,
+    "workloads": 510,
+    "minimum_workload_size": 1,
+    "maximum_workload_size": 2000,
+    "data_sha256": {
+      "azure_cleaned.csv": "612265d2df23cfe15da3d71a780a79ea7e0bba6fe6bc79e0ee531b3c59c91e48",
+      "azure_durations_cleaned.csv": "3340fc41a31ba272afe904accbe55eb6473b05d89ef88b77d5a6d47a3e9c4420",
+      "azure_scheduler_jobs.csv": "be2c0737d1fd36d412dfcaff96db8a71650dc73c2d40dca1737ff50c2193693a",
+      "evaluation_workloads.json": "f6d4cc183e046f51275634716de305a8b4d950c158bbf5df9371fe63d2f804f4"
+    },
+    "checks": [
+      "schemas",
+      "missing_values",
+      "duplicate_keys",
+      "invalid_durations",
+      "row_accounting",
+      "source_order",
+      "minute_counts",
+      "time_units",
+      "source_to_output_traceability",
+      "seeded_reproducibility",
+      "workload_sizes",
+      "Process_construction",
+      "no_invented_io",
+      "bounded_stratified_sampling",
+      "contiguous_snapshot_exposure",
+      "retained_baseline_controls",
+      "immutable_cleaned_observations"
+    ],
+    "package_hashes_checked": 0
+  }
+}

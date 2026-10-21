@@ -1,0 +1,3 @@
+# Preserve generated report bytes/checksums and recognize standard CSV CRLF.
+AzureWorkloads/reports/**/*.csv -text whitespace=cr-at-eol
+docs/workload_coverage/output/*.csv -text whitespace=cr-at-eol

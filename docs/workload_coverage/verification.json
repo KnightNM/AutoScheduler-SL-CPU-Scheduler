@@ -1,0 +1,16 @@
+{
+  "repeat_run_byte_identical": {
+    "stress.csv": true,
+    "assessment.json": true,
+    "profile_overlap.png": true,
+    "feature_correlations.csv": true,
+    "feature_distributions.png": true,
+    "correlations.png": true,
+    "metric_contributions.csv": true,
+    "workloads.csv": true
+  },
+  "protected_input_hashes_match": true,
+  "repository_unittest_count": 68,
+  "repository_unittest_result": "passed",
+  "report_local_links_valid": true
+}

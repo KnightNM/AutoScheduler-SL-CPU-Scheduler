@@ -1,0 +1,132 @@
+{
+  "tick_ms": 1,
+  "positive_published_means": 651505,
+  "zero_published_means": 11417,
+  "fractional_positive_means": 0,
+  "absolute_error_ms": {
+    "n": 651505,
+    "min": 0.0,
+    "mean": 0.0,
+    "p50": 0.0,
+    "p95": 0.0,
+    "p99": 0.0,
+    "max": 0.0
+  },
+  "relative_error_percent": {
+    "n": 651505,
+    "min": 0.0,
+    "mean": 0.0,
+    "p50": 0.0,
+    "p95": 0.0,
+    "p99": 0.0,
+    "max": 0.0
+  },
+  "short_duration_bins": [
+    {
+      "label": "0 < mean <= 1 ms",
+      "rows": 3594,
+      "absolute_error_ms": {
+        "n": 3594,
+        "min": 0.0,
+        "mean": 0.0,
+        "p50": 0.0,
+        "p95": 0.0,
+        "p99": 0.0,
+        "max": 0.0
+      },
+      "relative_error_percent": {
+        "n": 3594,
+        "min": 0.0,
+        "mean": 0.0,
+        "p50": 0.0,
+        "p95": 0.0,
+        "p99": 0.0,
+        "max": 0.0
+      }
+    },
+    {
+      "label": "1 < mean <= 4 ms",
+      "rows": 7020,
+      "absolute_error_ms": {
+        "n": 7020,
+        "min": 0.0,
+        "mean": 0.0,
+        "p50": 0.0,
+        "p95": 0.0,
+        "p99": 0.0,
+        "max": 0.0
+      },
+      "relative_error_percent": {
+        "n": 7020,
+        "min": 0.0,
+        "mean": 0.0,
+        "p50": 0.0,
+        "p95": 0.0,
+        "p99": 0.0,
+        "max": 0.0
+      }
+    },
+    {
+      "label": "4 < mean <= 10 ms",
+      "rows": 11990,
+      "absolute_error_ms": {
+        "n": 11990,
+        "min": 0.0,
+        "mean": 0.0,
+        "p50": 0.0,
+        "p95": 0.0,
+        "p99": 0.0,
+        "max": 0.0
+      },
+      "relative_error_percent": {
+        "n": 11990,
+        "min": 0.0,
+        "mean": 0.0,
+        "p50": 0.0,
+        "p95": 0.0,
+        "p99": 0.0,
+        "max": 0.0
+      }
+    }
+  ],
+  "hypothetical_fractional_examples": [
+    {
+      "mean_ms": 0.1,
+      "burst_ticks": 1,
+      "relative_error_percent": 900.0
+    },
+    {
+      "mean_ms": 0.5,
+      "burst_ticks": 1,
+      "relative_error_percent": 100.0
+    },
+    {
+      "mean_ms": 1.2,
+      "burst_ticks": 2,
+      "relative_error_percent": 66.66666666666667
+    },
+    {
+      "mean_ms": 2.25,
+      "burst_ticks": 3,
+      "relative_error_percent": 33.333333333333336
+    }
+  ],
+  "selected_job_absolute_error_ms": {
+    "n": 520408,
+    "min": 0.0,
+    "mean": 0.0,
+    "p50": 0.0,
+    "p95": 0.0,
+    "p99": 0.0,
+    "max": 0.0
+  },
+  "selected_job_relative_error_percent": {
+    "n": 520408,
+    "min": 0.0,
+    "mean": 0.0,
+    "p50": 0.0,
+    "p95": 0.0,
+    "p99": 0.0,
+    "max": 0.0
+  }
+}

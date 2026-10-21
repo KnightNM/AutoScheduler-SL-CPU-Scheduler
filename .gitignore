@@ -10,3 +10,37 @@ data/raw/
 data/processed/
 artifacts/real_desktop_ml/*.joblib
 graphify-out/
+
+# Azure downloads, extracted observations, and generated datasets stay local.
+/AutoScheduler_Azure_Cleaned.zip
+azurefunctions*.tar.xz
+/AzureWorkloads/**/*.tar.xz
+/AzureWorkloads/raw/
+/AzureWorkloads/extracted/
+/AzureWorkloads/cleaned/
+/AzureWorkloads/generated/
+/AzureWorkloads/evaluation_outputs/
+
+# Also cover dataset copies in reports/baseline/ or other Azure export folders.
+# Keep small report CSV/JSON files, metadata.json, scripts, tests, and plots.
+/AzureWorkloads/**/azure_cleaned*.csv
+/AzureWorkloads/**/azure_durations_cleaned*.csv
+/AzureWorkloads/**/azure_scheduler_jobs*.csv
+/AzureWorkloads/**/evaluation_workloads*.json
+/AzureWorkloads/**/azure_*.parquet
+/AzureWorkloads/**/evaluation_workloads*.parquet
+
+# Python and preprocessing temporary files; existing cache rules remain above.
+*.pyo
+.pytest_cache/
+/AzureWorkloads/tmp/
+/AzureWorkloads/temp/
+/AzureWorkloads/**/*.tmp
+/AzureWorkloads/**/*.part
+/AzureWorkloads/**/*.partial
+/AzureWorkloads/**/*.swp
+
+# Platform metadata and generated workload rows; retain analysis summaries/plots.
+.DS_Store
+/docs/workload_coverage/output/workloads.csv
+/docs/workload_coverage/output/stress.csv
