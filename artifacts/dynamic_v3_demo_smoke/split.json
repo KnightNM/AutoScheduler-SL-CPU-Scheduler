@@ -1,0 +1,30 @@
+{
+  "status": "SYNTHETIC_DEVELOPMENT_ONLY",
+  "seed": 7301,
+  "group_key": "seed",
+  "groups": {
+    "train": [
+      7301000000,
+      7301000001,
+      7301000003,
+      7301000007,
+      7301000008,
+      7301000009,
+      7301000010,
+      7301000011
+    ],
+    "validation": [
+      7301000004,
+      7301000006
+    ],
+    "test": [
+      7301000002,
+      7301000005
+    ]
+  },
+  "occupancy": "mixed_static_and_exploration_plus_train_only_pilot_rollouts",
+  "pilot": {
+    "max_depth": 5,
+    "min_samples_leaf": 10
+  }
+}

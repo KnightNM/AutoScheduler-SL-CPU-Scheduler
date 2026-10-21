@@ -1,0 +1,15 @@
+{
+  "selected": "classifier",
+  "metrics": {
+    "classifier": {
+      "validation_schedule_score": 0.20070548127076057,
+      "validation_schedule_p95_response": 44.19166666666666,
+      "validation_schedule_starvation": 16.666666666666668
+    },
+    "policy_cost": {
+      "validation_schedule_score": 0.2102022257995901,
+      "validation_schedule_p95_response": 26.616666666666667,
+      "validation_schedule_starvation": 17
+    }
+  }
+}
